@@ -10,27 +10,20 @@ The goal is not to disguise the source material. The goal is to preserve the edu
 
 The source edition contains five authored books and four source terms per book.
 
-Zimbabwe's secondary-school pathway runs from Form 1 to Form 6 and schools operate on a three-term calendar.
+The Zimbabwe core product is being structured across **Forms 1–4 only**, with three school terms per year. Forms 5–6 / A-Level are outside the scope of this edition.
 
-Therefore:
+The five authored source years are therefore being re-sequenced rather than relabelled.
 
-1. Never rename Grade 8–12 to Forms 1–5 and call the job complete.
-2. Never invent a sixth book without an editorial source.
-3. Preserve the source lesson IDs while the content is being re-sequenced.
-4. Treat source terms as learning cycles until the Zimbabwe three-term delivery sequence has been editorially rebuilt.
-5. Split the advanced source material deliberately to create a coherent Form 4, Form 5 and Form 6 progression.
+Current source allocation:
 
-## 2. Current placement model
+| Zimbabwe year | Source material |
+| --- | --- |
+| Form 1 | Grade 8 |
+| Form 2 | Corrected Grade 9 |
+| Form 3 | Grade 10 + Grade 11 Terms 1–2 |
+| Form 4 | Grade 11 Terms 3–4 + Grade 12 |
 
-| Source stage | Working Zimbabwe placement | Editorial action |
-| --- | --- | --- |
-| Grade 8 | Form 1 | Localise and re-sequence to three terms |
-| Grade 9 | Form 2 | Localise and re-sequence to three terms |
-| Grade 10 | Form 3 | Localise and re-sequence to three terms |
-| Grade 11 | Forms 4–5 bridge | Split into a Form 4 completion stage and a Form 5 advanced stage |
-| Grade 12 | Form 6 | Localise as final school-to-adulthood launch stage |
-
-The Forms 4–5 bridge is temporary product architecture. It must disappear once the editorial split is complete.
+This creates 12 Zimbabwe delivery terms. Form 4 is the Launch Year. See `ZIMBABWE-OLEVEL-ARCHITECTURE.md` for the detailed mapping.
 
 ## 3. HBC alignment lens
 
@@ -65,10 +58,12 @@ Every major unit should be able to answer four questions:
 Convert references only when the Zimbabwe equivalent is real and contextually correct.
 
 - DBE → HBC / Ministry of Primary and Secondary Education context as appropriate.
-- Grade language → Form or programme-stage language only after structural mapping.
-- matric → Form 6, O Level, A Level, school completion or post-school transition depending on the actual meaning.
+- Grade language → Form 1–4 or programme-stage language after final unit placement.
+- matric → O-Level completion, post-O-Level transition or school completion depending on meaning.
+- Grade 12 "Launch Year" concepts → Form 4 Launch Year.
 - South African university/funding processes → verified Zimbabwean routes.
 - NSFAS must never be replaced with a made-up "Zimbabwe NSFAS equivalent."
+- A-Level must not be inserted into the core Applied Commerce pathway simply because Forms 5–6 exist.
 
 ### Money
 
