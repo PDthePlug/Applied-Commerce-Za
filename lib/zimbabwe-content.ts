@@ -95,10 +95,22 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
   },
 };
 
+const SOUTH_AFRICAN_LANGUAGE_HEADER=/^\*\*(?:isiZulu|isiXhosa|Afrikaans|Sepedi|Setswana)\*\*$/i;
+
+function applyZimbabweStructuralDefaults(block:ContentBlock):ContentBlock{
+  if(block.kind!=="table"||block.rows.length===0) return block;
+  const header=block.rows[0];
+  if(header.length<3) return block;
+  const translationHeaders=header.slice(2);
+  if(!translationHeaders.every(cell=>SOUTH_AFRICAN_LANGUAGE_HEADER.test(cell.trim()))) return block;
+  return {...block,rows:block.rows.map(row=>row.slice(0,2))};
+}
+
 function applyBlockOverrides(blocks:ContentBlock[],overrides:ZimbabweBlockOverride[]=[]):ContentBlock[]{
-  if(!overrides.length) return blocks;
+  const prepared=blocks.map(applyZimbabweStructuralDefaults);
+  if(!overrides.length) return prepared;
   const byIndex=new Map(overrides.map(item=>[item.index,item]));
-  return blocks.flatMap((block,index)=>{
+  return prepared.flatMap((block,index)=>{
     const override=byIndex.get(index);
     if(!override) return [block];
     if(override.kind==="remove") return [];
@@ -115,12 +127,11 @@ function applyBlockOverrides(blocks:ContentBlock[],overrides:ZimbabweBlockOverri
 
 export function applyZimbabweUnitOverlay(unit:UnitContent):UnitContent{
   const override=zimbabweContentOverrides[unit.id];
-  if(!override) return unit;
   return {
     ...unit,
-    title:override.title ?? unit.title,
-    label:override.label ?? unit.label,
-    blocks:applyBlockOverrides(unit.blocks,override.blocks),
+    title:override?.title ?? unit.title,
+    label:override?.label ?? unit.label,
+    blocks:applyBlockOverrides(unit.blocks,override?.blocks),
   };
 }
 
