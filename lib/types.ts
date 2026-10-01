@@ -67,11 +67,13 @@ export type UnitContent = UnitSummary & {
 export type LearnerProfile = {
   displayName?: string;
   grade?: number;
+  form?: 1 | 2 | 3 | 4;
 };
 
 export type LearningState = {
   version: 1;
   activeGrade?: number;
+  activeForm?: 1 | 2 | 3 | 4;
   completed: Record<string, string>;
   responses: Record<string, string>;
   promptResponses: Record<string, string>;
