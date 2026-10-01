@@ -16,7 +16,10 @@ const bundle=(grade)=>{
   return JSON.parse(zlib.gunzipSync(Buffer.from(encoded,"base64")).toString("utf8"));
 };
 
-test("curriculum contains Grades 8 through 12",()=>{
+test("Zimbabwe edition preserves the five authored source stages",()=>{
+  assert.equal(index.product,"Applied Commerce Zimbabwe");
+  assert.equal(index.market,"Zimbabwe");
+  assert.equal(index.schoolPlacement,"Forms 1-6 / three-term target");
   assert.deepEqual(index.grades.map(x=>x.grade),[8,9,10,11,12]);
 });
 
