@@ -31,7 +31,7 @@ export default function InstitutionsPage() {
         </div>
       </div>
       <aside className="institutional-proof-card">
-        <span>Zimbabwe edition · Forms 1–6</span>
+        <span>Zimbabwe edition · Forms 1–4</span>
         <strong>HBC competencies → action → evidence → portfolio → reporting</strong>
         <p>Designed around the practical-learning and competency ambitions of the Heritage-Based Curriculum 2024–2030.</p>
         <div>
@@ -58,7 +58,7 @@ export default function InstitutionsPage() {
         <h2>Deploy Applied Commerce® Zimbabwe</h2>
         <p>Bring practical financial capability, enterprise and adult-readiness learning to secondary learners.</p>
         <ul>
-          <li>Forms 1–6 school-placement pathway</li>
+          <li>Forms 1–4 O-Level pathway</li>
           <li>HBC competency and project-learning alignment</li>
           <li>Digital activities, projects and reflection</li>
           <li>Automatic learner portfolio evidence</li>
@@ -121,7 +121,7 @@ export default function InstitutionsPage() {
     <section className="institutional-final-cta">
       <p className="eyebrow">Alignment note</p>
       <h2>Designed to support HBC competencies without claiming Ministry approval.</h2>
-      <p>The Zimbabwe edition is being localised for the three-term school calendar, Forms 1–6 and Zimbabwean economic life. Formal prescribed-textbook approval is a separate process.</p>
+      <p>The Zimbabwe edition is being localised for the three-term school calendar, Forms 1–4 and Zimbabwean economic life, with Form 4 as the Launch Year. Formal prescribed-textbook approval is a separate process.</p>
       <Link className="institutional-primary" href="/institutions/demo">Open the institutional demo <ArrowRight/></Link>
     </section>
   </div>;
