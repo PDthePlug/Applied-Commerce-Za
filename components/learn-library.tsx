@@ -8,5 +8,5 @@ import { useLearningStore } from "@/lib/learning-store";
 export function LearnLibrary(){
  const [index,setIndex]=useState<CurriculumIndex|null>(null); const {state}=useLearningStore();
  useEffect(()=>{curriculum.index().then(setIndex)},[]);
- return <div className="page library-page"><section className="page-intro"><p className="eyebrow">Zimbabwe secondary pathway</p><h1>Five stages. One journey through secondary school.</h1><p>Select a stage to open its learning map. The authored sequence is preserved while the Zimbabwe edition is mapped across Forms 1–6.</p></section><div className="grade-grid compact">{index?.grades.map(g=><GradeCard key={g.grade} grade={g} completed={Object.keys(state.completed).filter(id=>id.startsWith(`g${g.grade}-`)).length}/>)}</div></div>
+ return <div className="page library-page"><section className="page-intro"><p className="eyebrow">Zimbabwe secondary pathway</p><h1>Four O-Level years. One launch journey.</h1><p>The five authored source stages are being re-sequenced across Forms 1–4. Source-stage cards remain visible during migration so no content is lost while the 12-term Zimbabwe delivery layer is built.</p></section><div className="grade-grid compact">{index?.grades.map(g=><GradeCard key={g.grade} grade={g} completed={Object.keys(state.completed).filter(id=>id.startsWith(`g${g.grade}-`)).length}/>)}</div></div>
 }
