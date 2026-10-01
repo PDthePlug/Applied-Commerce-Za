@@ -6,7 +6,7 @@ import { curriculum } from "@/lib/curriculum";
 import type { GradeIndex, UnitContent, UnitSummary } from "@/lib/types";
 import { buildPortfolioDefinitions, responsesForPortfolio } from "@/lib/portfolio-model";
 import { useLearningStore } from "@/lib/learning-store";
-import { zimbabweStage } from "@/lib/zimbabwe";
+import { zimbabwePlacementForSource } from "@/lib/zimbabwe-curriculum";
 
 type Meta = UnitSummary & {grade:number;term:number};
 
@@ -62,7 +62,7 @@ export function PortfolioDashboard(){
       {artifacts.map(entry=><article className="portfolio-artifact" key={entry.definition.id}>
        <header>
         <div>
-         <p>{zimbabweStage(entry.meta.grade).schoolPlacement} · Learning cycle {entry.meta.term} · {entry.meta.label}</p>
+         <p>{(()=>{const p=zimbabwePlacementForSource(entry.meta.grade,entry.meta.term,entry.meta.startLesson,entry.meta.type); return `Form ${p.form} · Term ${p.term} · ${entry.meta.label}`;})()}</p>
          <h2>{entry.definition.title}</h2>
          <span>{entry.definition.instruction}</span>
         </div>
@@ -78,7 +78,7 @@ export function PortfolioDashboard(){
    <div className="portfolio-section-heading"><NotebookPen/><div><p className="eyebrow">Personal notes</p><h2>Notes you chose to keep</h2></div></div>
    <div className="portfolio-list">
     {notes.map(entry=><article key={entry.id}>
-     <header><div><p>{zimbabweStage(entry.meta.grade).schoolPlacement} · Learning cycle {entry.meta.term} · {entry.meta.label}</p><h2>{entry.meta.title}</h2></div><Link href={`/learn/${entry.meta.grade}/term/${entry.meta.term}/${entry.id}`}>Open <ArrowRight/></Link></header>
+     <header><div><p>{(()=>{const p=zimbabwePlacementForSource(entry.meta.grade,entry.meta.term,entry.meta.startLesson,entry.meta.type); return `Form ${p.form} · Term ${p.term} · ${entry.meta.label}`;})()}</p><h2>{entry.meta.title}</h2></div><Link href={`/learn/${entry.meta.grade}/term/${entry.meta.term}/${entry.id}`}>Open <ArrowRight/></Link></header>
      <p>{entry.value}</p>
     </article>)}
    </div>
