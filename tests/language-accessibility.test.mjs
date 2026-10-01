@@ -31,6 +31,25 @@ function bundle(grade){
       )),
       ...patch.units,
     ].sort((a,b)=>(a.startLesson??Number.MAX_SAFE_INTEGER)-(b.startLesson??Number.MAX_SAFE_INTEGER));
+
+    term.units=term.units.map(unit=>{
+      if(
+        grade!==9 ||
+        patch.term!==2 ||
+        unit.type!=="lesson" ||
+        typeof unit.startLesson!=="number" ||
+        unit.startLesson<23 ||
+        unit.startLesson>34
+      ) return unit;
+
+      const blocks=unit.blocks.filter(block=>!(
+        block.kind==="text" && (
+          /^Pride 2\.0 executing\.?$/i.test(block.text.trim()) ||
+          /^I will now complete Lessons 24[–-]34\b/i.test(block.text.trim())
+        )
+      ));
+      return {...unit,blocks};
+    });
   }
 
   return result;
