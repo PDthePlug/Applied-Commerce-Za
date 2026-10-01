@@ -25,10 +25,10 @@ const roles: {id:Role; label:string; detail:string; icon:typeof GraduationCap}[]
 ];
 
 const learners = [
-  {name:"Lerato M.",progress:82,evidence:11,status:"On track"},
-  {name:"Thabo N.",progress:74,evidence:9,status:"On track"},
-  {name:"Anele D.",progress:41,evidence:4,status:"Needs support"},
-  {name:"Karabo S.",progress:88,evidence:13,status:"On track"},
+  {name:"Tariro M.",progress:82,evidence:11,status:"On track"},
+  {name:"Tinashe N.",progress:74,evidence:9,status:"On track"},
+  {name:"Ruvimbo D.",progress:41,evidence:4,status:"Needs support"},
+  {name:"Tanaka S.",progress:88,evidence:13,status:"On track"},
 ];
 
 export function InstitutionalDemo() {
@@ -70,8 +70,8 @@ export function InstitutionalDemo() {
       <header className="institutional-demo-programme">
         <div>
           <span>Illustrative programme</span>
-          <h2>Youth Enterprise Accelerator</h2>
-          <p>Gauteng · Cohort A · 30 learners · 8-week programme</p>
+          <h2>Applied Commerce School Pilot</h2>
+          <p>Harare · Form 2 · Cohort A · 30 learners · one-term pilot</p>
         </div>
         <small>Demo environment</small>
       </header>
