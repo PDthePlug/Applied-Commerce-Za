@@ -99,8 +99,20 @@ test("Zimbabwe edition stays explicit about school placement and HBC status",()=
   const deployment=read("app/institutions/deploy/page.tsx");
   const config=read("lib/zimbabwe.ts");
   assert.match(shell,/zimbabweEdition\.editionLabel/);
-  assert.match(library,/Zimbabwe secondary pathway/);
-  assert.match(deployment,/Forms 1–6|Zimbabwean secondary learners/);
+  assert.match(library,/Zimbabwe O-Level pathway/);
+  assert.match(deployment,/Forms 1–4|Zimbabwean secondary learners/);
   assert.match(config,/Heritage-Based Curriculum 2024–2030/);
   assert.match(config,/does not imply Ministry approval/);
+});
+
+
+test("Zimbabwe learner navigation exposes four Forms and three terms",()=>{
+  const library=read("components/learn-library.tsx");
+  const formMap=read("components/form-map.tsx");
+  const route=read("app/learn/form/[form]/page.tsx");
+  assert.match(library,/Four Forms\. Three terms each/);
+  assert.match(library,/FormCard/);
+  assert.match(formMap,/All forms/);
+  assert.match(formMap,/Term \{term\.term\}/);
+  assert.match(route,/\[1,2,3,4\]/);
 });
