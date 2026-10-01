@@ -128,3 +128,15 @@ test("Zimbabwe Form maps expose HBC competency and project evidence metadata",()
   assert.match(config,/communication-teamwork/);
   assert.match(config,/planning-organising/);
 });
+
+
+test("Zimbabwe lesson localisation uses explicit source-preserving overlays",()=>{
+  const overlay=read("lib/zimbabwe-content.ts");
+  const reader=read("components/lesson-reader.tsx");
+  const delivery=read("lib/zimbabwe-curriculum.ts");
+  assert.match(overlay,/zimbabweContentOverrides/);
+  assert.match(overlay,/Source unit IDs remain unchanged/);
+  assert.match(reader,/applyZimbabweUnitOverlay/);
+  assert.match(delivery,/applyZimbabweSummaryOverlay/);
+  assert.doesNotMatch(overlay,/replaceAll\(/);
+});
