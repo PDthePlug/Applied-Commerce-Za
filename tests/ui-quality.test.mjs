@@ -155,3 +155,15 @@ test("Form 1 closing sequence is structurally localised for Zimbabwe",()=>{
   assert.doesNotMatch(overlay,/all four terms/);
   assert.doesNotMatch(overlay,/four terms of evidence/);
 });
+
+
+test("Form 1 three-term overlay contains no phantom fourth term or source-grade transitions",()=>{
+  const overlay=read("lib/zimbabwe-content.ts");
+  assert.doesNotMatch(overlay,/Term 4/);
+  assert.doesNotMatch(overlay,/Grade 8/);
+  assert.doesNotMatch(overlay,/Grade 9/);
+  assert.match(overlay,/FOUNDATIONS REVIEW AND PORTFOLIO CHECKPOINT/);
+  assert.match(overlay,/MY RELATIONSHIP WITH RESOURCES — NEXT CYCLE/);
+  assert.match(overlay,/WHAT HABITS TAUGHT ME — PROJECT REFLECTION/);
+  assert.match(overlay,/From Term 3: Financial identity, agency and your first capstone/);
+});
