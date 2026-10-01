@@ -5,6 +5,7 @@ import { ArrowRight, Archive, BookOpenCheck } from "lucide-react";
 import { curriculum } from "@/lib/curriculum";
 import type { CurriculumIndex } from "@/lib/types";
 import { useLearningStore } from "@/lib/learning-store";
+import { zimbabweStage } from "@/lib/zimbabwe";
 
 type ActiveLesson = {
   grade:number;
@@ -41,6 +42,7 @@ export function HomeDashboard(){
 
   const currentGrade=state.profile?.grade ?? state.activeGrade ?? 8;
   const gradeMeta=index?.grades.find(item=>item.grade===currentGrade);
+  const stage=zimbabweStage(currentGrade);
   const completed=Object.keys(state.completed).filter(id=>id.startsWith(`g${currentGrade}-`)).length;
   const progress=gradeMeta?.unitCount?Math.round(completed/gradeMeta.unitCount*100):0;
   const captured=Object.values(state.promptResponses).filter(value=>value.trim()).length;
@@ -72,7 +74,7 @@ export function HomeDashboard(){
       </div>
 
       <aside className="home-today-status" aria-label="Current grade progress">
-        <span>Grade {currentGrade}</span>
+        <span>{stage.stage} · {stage.schoolPlacement}</span>
         <strong>{hydrated?`${progress}% complete`:"Loading progress"}</strong>
         <div className="home-progress-track" aria-hidden="true"><i style={{width:`${progress}%`}}/></div>
         <small>{hydrated?`${completed} of ${gradeMeta?.unitCount ?? 0} lessons complete`:"Preparing your learning record"}</small>
@@ -82,15 +84,15 @@ export function HomeDashboard(){
     <section className="home-dashboard-grid" aria-label="Your learning today">
       <article className="home-dashboard-card home-continue-card">
         <p className="eyebrow">{state.lastOpened?"Continue your learning":"Start your learning"}</p>
-        <h2>{lesson?lesson.title:`Grade ${currentGrade}`}</h2>
+        <h2>{lesson?lesson.title:stage.schoolPlacement}</h2>
         <p>
           {lesson
-            ? `Grade ${lesson.grade} · Term ${lesson.term} · ${lesson.label}. Pick up exactly where you left off.`
-            : `Your Grade ${currentGrade} Applied Commerce journey is ready.`}
+            ? `${zimbabweStage(lesson.grade).schoolPlacement} · Learning cycle ${lesson.term} · ${lesson.label}. Pick up exactly where you left off.`
+            : `Your ${stage.schoolPlacement} Applied Commerce journey is ready.`}
         </p>
         <small><BookOpenCheck/> {captured} responses captured so far</small>
         <Link className="home-primary-action" href={continueHref}>
-          {state.lastOpened?"Continue learning":`Start Grade ${currentGrade}`} <ArrowRight/>
+          {state.lastOpened?"Continue learning":`Start ${stage.schoolPlacement}`} <ArrowRight/>
         </Link>
       </article>
 
