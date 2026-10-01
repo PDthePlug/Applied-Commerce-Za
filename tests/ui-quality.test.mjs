@@ -18,7 +18,7 @@ test("profile is part of the learner shell",()=>{
   const shell=read("components/app-shell.tsx");
   const profile=read("components/profile-dashboard.tsx");
   assert.match(shell,/href:"\/profile"/);
-  assert.match(profile,/Your Applied Commerce learning record/);
+  assert.match(profile,/Your Applied Commerce Zimbabwe learning record/);
   assert.ok(fs.existsSync("app/profile/page.tsx"));
 });
 
@@ -90,4 +90,17 @@ test("home adopts BIS Today hierarchy without a giant enclosing hero card",()=>{
   assert.match(home,/Continue your learning/);
   assert.doesNotMatch(home,/className="hero home-dashboard-hero"/);
   assert.doesNotMatch(home,/hero-metrics/);
+});
+
+
+test("Zimbabwe edition stays explicit about school placement and HBC status",()=>{
+  const shell=read("components/app-shell.tsx");
+  const library=read("components/learn-library.tsx");
+  const deployment=read("app/institutions/deploy/page.tsx");
+  const config=read("lib/zimbabwe.ts");
+  assert.match(shell,/zimbabweEdition\.editionLabel/);
+  assert.match(library,/Zimbabwe secondary pathway/);
+  assert.match(deployment,/Forms 1–6|Zimbabwean secondary learners/);
+  assert.match(config,/Heritage-Based Curriculum 2024–2030/);
+  assert.match(config,/does not imply Ministry approval/);
 });
