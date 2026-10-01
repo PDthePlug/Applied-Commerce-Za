@@ -189,6 +189,11 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
       {index:7,kind:"text",text:"📘 Form 2 Is Waiting"},
       {index:8,kind:"text",text:"Next year, you will be in Form 2. You will be older. You will have more choices. You will face new challenges."},
       {index:10,kind:"text",text:"Myah thinks about Form 2. She does not know exactly what it will bring. But she knows what she will carry: her notebook. Her questions. Her tracking skills. Her budgeting habits. Her 21-day tracker evidence. Her identity as someone who notices, who asks, who acts. Her final project — proof that she can earn, save, and complete something real. Her Tension/Experiment Log — three terms of data on her own becoming. Her Thinking Equations — compressed truths that have become part of how she sees the world. She writes: Form 2, I am coming. I do not know what you will ask of me. But I know what I will bring. I will bring everything I have learned. I will bring myself — the person I have become this year. That is enough. That is everything."},
+
+      {index:12,kind:"text",text:"From Term 1: Identity, beliefs, saving and first income. You learned to trace where your beliefs come from, set goals, begin saving, recognise value and gather evidence about who you are becoming."},
+      {index:13,kind:"text",text:"From Term 2: Earning, spending, budgeting and habit formation. You learned to follow money flows, price value, track spending, build a budget, notice leakages and begin changing repeated behaviour."},
+      {index:14,kind:"text",text:"From Term 3: Financial identity, agency and your first capstone. You learned that small steps compound, practised resilience after setbacks, completed a 21-day tracker, integrated identity, resources and habits, and produced evidence through your final project."},
+      {index:15,kind:"remove"},
       {index:16,kind:"text",text:"✍️ Activity 78: My Form 2 Intentions — With Bridge Statement"},
       {index:18,kind:"text",text:"What do you want to be true about you in Form 2?"},
       {index:24,kind:"text",text:"What is the ONE most important thing you will carry from Form 1 into Form 2? Write it as a statement of intention."},
