@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight, Check, CheckCircle2, Menu, NotebookPen, X } from "lucide-react";
 import { curriculum } from "@/lib/curriculum";
 import type { UnitContent } from "@/lib/types";
+import { applyZimbabweUnitOverlay } from "@/lib/zimbabwe-content";
 import { ContentBlocks } from "./content-blocks";
 import { useLearningStore } from "@/lib/learning-store";
 import {
@@ -27,7 +28,7 @@ export function LessonReader({grade,term,unitId}:{grade:number;term:number;unitI
  useEffect(()=>{
    let cancelled=false;
    (async()=>{
-     const loaded=await curriculum.unit(grade,term,unitId);
+     const loaded=applyZimbabweUnitOverlay(await curriculum.unit(grade,term,unitId));
      const mapped=zimbabwePlacementForSource(grade,term,loaded.startLesson,loaded.type);
      const form=await zimbabweCurriculum.form(mapped.form);
      if(cancelled) return;
