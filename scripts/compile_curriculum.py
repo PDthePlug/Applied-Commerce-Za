@@ -69,7 +69,7 @@ def source_note(text: str) -> bool:
 
 PART_SIZE = 40000
 reset_audit_counts()
-catalogue={'product':'Applied Commerce','formatVersion':2,'grades':[]}
+catalogue={'product':'Applied Commerce Zimbabwe','market':'Zimbabwe','edition':'Zimbabwe','sourceStructure':'Grades 8-12 / four source terms','schoolPlacement':'Forms 1-6 / three-term target','formatVersion':2,'grades':[]}
 for path in sorted(SOURCE_DIR.glob('APPLIED COMMERCE Grade *.docx')):
     grade=int(re.search(r'Grade (\d+)',path.name).group(1))
     doc=Document(path)
