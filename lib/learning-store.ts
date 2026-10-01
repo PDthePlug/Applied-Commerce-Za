@@ -20,6 +20,7 @@ function parse(raw: string): LearningState {
     return {
       version: 1,
       activeGrade: value.activeGrade,
+      activeForm: value.activeForm,
       completed: value.completed ?? {},
       responses: value.responses ?? {},
       promptResponses: value.promptResponses ?? {},
@@ -75,11 +76,19 @@ export function useLearningStore() {
 
   const setProfile = useCallback((patch:Partial<LearnerProfile>) => update(current => {
     const profile={...(current.profile ?? {}),...patch};
-    return {...current,profile,activeGrade:profile.grade ?? current.activeGrade};
+    return {
+      ...current,
+      profile,
+      activeGrade:profile.grade ?? current.activeGrade,
+      activeForm:profile.form ?? current.activeForm,
+    };
   }), [update]);
 
-  const setLastOpened = useCallback((grade:number, term:number, unitId:string) => update(current => ({
-    ...current, activeGrade:grade, lastOpened:{grade,term,unitId,at:new Date().toISOString()}
+  const setLastOpened = useCallback((grade:number, term:number, unitId:string, form?:1|2|3|4) => update(current => ({
+    ...current,
+    activeGrade:grade,
+    activeForm:form ?? current.activeForm,
+    lastOpened:{grade,term,unitId,at:new Date().toISOString()}
   })), [update]);
 
   const completedIds = useMemo(() => new Set(Object.keys(state.completed)), [state.completed]);
