@@ -6,6 +6,7 @@ import { ArrowLeft, ArrowRight, Check, FileText, LockOpen } from "lucide-react";
 import { zimbabweCurriculum } from "@/lib/zimbabwe-curriculum";
 import type { ZimbabweFormIndex } from "@/lib/zimbabwe-curriculum";
 import { useLearningStore } from "@/lib/learning-store";
+import { hbcCompetencyLabels } from "@/lib/zimbabwe";
 
 export function FormMap({form}:{form:number}){
   const [data,setData]=useState<ZimbabweFormIndex|null>(null);
@@ -50,8 +51,13 @@ export function FormMap({form}:{form:number}){
             <div><p>Term {term.term}</p><h2>{term.title}</h2></div>
           </header>
           <div className="term-stats">
-            <span>{lessons.length} lessons</span>
+            <span>{lessons.length} source lessons</span>
             {term.assessmentCount>0&&<span>{term.assessmentCount} assessment{term.assessmentCount>1?"s":""}</span>}
+          </div>
+          <div className="term-hbc-focus">
+            <small>HBC competency focus</small>
+            <div>{term.competencies.map(id=><span key={id}>{hbcCompetencyLabels[id]}</span>)}</div>
+            <p><strong>Project evidence:</strong> {term.projectFocus}</p>
           </div>
           <div className="progress-track small"><i style={{width:`${tp}%`}}/></div>
           <div className="term-preview">
