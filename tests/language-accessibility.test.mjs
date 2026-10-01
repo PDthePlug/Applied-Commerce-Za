@@ -12,7 +12,28 @@ function bundle(grade){
   const encoded=Array.from({length:meta.bundleParts},(_,i)=>
     fs.readFileSync(path.join(root,`grade-${grade}.part-${i+1}.b64`),"utf8").trim()
   ).join("");
-  return JSON.parse(zlib.gunzipSync(Buffer.from(encoded,"base64")).toString("utf8"));
+  const result=JSON.parse(zlib.gunzipSync(Buffer.from(encoded,"base64")).toString("utf8"));
+
+  for(const patchMeta of meta.patches??[]){
+    const patchEncoded=patchMeta.parts.map(part=>
+      fs.readFileSync(path.join(root,part),"utf8").trim()
+    ).join("");
+    const patch=JSON.parse(zlib.gunzipSync(Buffer.from(patchEncoded,"base64")).toString("utf8"));
+    const term=result.terms.find(item=>item.term===patch.term);
+    const patchedLessonNumbers=new Set(
+      patch.units.filter(u=>u.type==="lesson"&&typeof u.startLesson==="number").map(u=>u.startLesson)
+    );
+    term.units=[
+      ...term.units.filter(u=>!(
+        u.type==="lesson" &&
+        typeof u.startLesson==="number" &&
+        patchedLessonNumbers.has(u.startLesson)
+      )),
+      ...patch.units,
+    ].sort((a,b)=>(a.startLesson??Number.MAX_SAFE_INTEGER)-(b.startLesson??Number.MAX_SAFE_INTEGER));
+  }
+
+  return result;
 }
 
 function allText(){
