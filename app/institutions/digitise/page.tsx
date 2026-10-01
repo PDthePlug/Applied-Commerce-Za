@@ -77,13 +77,13 @@ export default function DigitiseProgrammePage() {
 
     <section className="institutional-pricing-section">
       <div className="institutional-section-heading">
-        <p className="eyebrow">Indicative implementation bands</p>
+        <p className="eyebrow">Indicative implementation bands · USD reference</p>
         <h2>Built as product infrastructure, not ordinary web development.</h2>
       </div>
       <div className="institutional-pricing-grid">
-        <article><span>Focused conversion</span><strong>R150k–R250k</strong><p>One defined programme with a focused operating model.</p></article>
-        <article><span>Programme operating system</span><strong>R250k–R500k</strong><p>Deeper roles, evidence, cohort management and reporting.</p></article>
-        <article><span>Enterprise</span><strong>R500k+</strong><p>Multiple programmes, integrations or larger organisational infrastructure.</p></article>
+        <article><span>Focused conversion</span><strong>US$8k–14k</strong><p>One defined programme with a focused operating model.</p></article>
+        <article><span>Programme operating system</span><strong>US$14k–28k</strong><p>Deeper roles, evidence, cohort management and reporting.</p></article>
+        <article><span>Enterprise</span><strong>US$28k+</strong><p>Multiple programmes, integrations or larger organisational infrastructure.</p></article>
       </div>
     </section>
 
