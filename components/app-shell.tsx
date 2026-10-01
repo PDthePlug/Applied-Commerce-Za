@@ -61,7 +61,7 @@ export function AppShell({children}:{children:React.ReactNode}) {
     {!focusedReader && <header className="topbar">
       <Brand
         href={institutional?"/institutions":"/"}
-        subtitle={institutional?"Learning Infrastructure":"Learning Platform"}
+        subtitle={institutional?"Zimbabwe · Institutions":"Zimbabwe Edition"}
       />
       {institutional
         ? <div className="topbar-note institutional-topbar-note"><Link href="/">Learner platform</Link><span>For institutions</span></div>
