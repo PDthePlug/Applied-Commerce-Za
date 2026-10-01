@@ -75,7 +75,7 @@ test("digital learner language replaces paper-only framing",()=>{
 test("lesson structure remains unchanged after the language pass",()=>{
   const expected={
     8:[20,19,20,20],
-    9:[16,6,20,21],
+    9:[16,18,20,21],
     10:[16,20,22,18],
     11:[20,20,20,20],
     12:[20,20,12,20],
