@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 };
 
 const included = [
-  "Applied Commerce Zimbabwe secondary-school pathway",
+  "Applied Commerce Zimbabwe Forms 1–4 O-Level pathway",
   "Heritage-Based Curriculum competency mapping",
   "Guided digital learner experience",
   "Activities, reflection, projects and assessments",
@@ -45,9 +45,8 @@ export default function DeployAppliedCommercePage() {
       <aside className="institutional-grade-journey">
         <span><strong>F1</strong><small>Money, beliefs & observation</small></span>
         <span><strong>F2</strong><small>Work, value & enterprise</small></span>
-        <span><strong>F3</strong><small>Systems & value creation</small></span>
-        <span><strong>F4–5</strong><small>Leadership, leverage & wealth bridge</small></span>
-        <span><strong>F6</strong><small>Launch & transition</small></span>
+        <span><strong>F3</strong><small>Assets, systems, leverage & leadership</small></span>
+        <span><strong>F4</strong><small>Wealth, adult systems & Life Launch</small></span>
       </aside>
     </section>
 
@@ -59,7 +58,7 @@ export default function DeployAppliedCommercePage() {
       </div>
       <div className="institutional-pricing-grid">
         <article><School/><span>One-term school pilot</span><strong>US$2,500</strong><p>One defined school cohort with onboarding, delivery support and outcome reporting.</p></article>
-        <article><Users/><span>School licence</span><strong>US$8,500 / year</strong><p>Whole-school access within an agreed learner and implementation scope.</p></article>
+        <article><Users/><span>School licence</span><strong>US$8,500 / year</strong><p>Forms 1–4 access within an agreed learner and implementation scope.</p></article>
         <article><Users/><span>Sponsored deployment</span><strong>US$18 / learner</strong><p>For funded school networks, foundations and youth programmes.</p></article>
       </div>
     </section>
