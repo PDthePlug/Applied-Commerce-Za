@@ -38,16 +38,16 @@ Zimbabwe uses three school terms per year. The four-year product therefore has *
 
 ### Form 1 — Identity, Money & Habits
 
-**Term 1 — Identity, Beliefs & Money Foundations**  
-Working source: Grade 8 lessons 1–20.
+**Term 1 — Identity, Beliefs, Saving & First Income**  
+Working source: Grade 8 lessons 1–26. **26 source lessons.**
 
-**Term 2 — Resources, Value, Budgeting & Habits**  
-Working source: Grade 8 lessons 21–50.
+**Term 2 — Earning, Spending, Budgeting & Habit Formation**  
+Working source: Grade 8 lessons 27–53. Grade 8 has no authored Lesson 36, so this range contains **26 source lessons**.
 
-**Term 3 — Habit Strength, Agency & First Capstone**  
-Working source: Grade 8 lessons 51–80.
+**Term 3 — Financial Identity, Agency & First Capstone**  
+Working source: Grade 8 lessons 54–80. **27 source lessons.**
 
-The Grade 8 source has 79 actual lesson units, so lesson-number ranges are editorial boundaries rather than a promise that every number exists exactly once. Final placement is driven by content continuity.
+The revised Form 1 split is deliberately balanced at **26 / 26 / 27 source lessons**. Lesson-number ranges remain editorial boundaries rather than a promise that each source lesson will remain one classroom period.
 
 ### Form 2 — Work, Value & Enterprise
 
@@ -60,7 +60,7 @@ Working source: Grade 9 lessons 26–50.
 **Term 3 — Community Enterprise & Portfolio**  
 Working source: Grade 9 lessons 51–75.
 
-This is now viable because lessons 23–34 have been restored to the source.
+This is now viable because lessons 23–34 have been restored to the source. The Form 2 split is **25 / 25 / 25 source lessons**.
 
 ### Form 3 — Assets, Systems, Leverage & Leadership
 
@@ -73,7 +73,7 @@ Source: Grade 10 Terms 3–4.
 **Term 3 — Leverage, Leadership & Responsibility**  
 Source: Grade 11 Terms 1–2.
 
-This is the deliberate compression point. The first half of the previous Grade 11 year moves into Form 3 so Form 4 is not overloaded.
+This is the deliberate compression point. The first half of the previous Grade 11 year moves into Form 3 so Form 4 is not overloaded. The source-unit distribution is **36 / 40 / 40**.
 
 ### Form 4 — The Launch Year
 
@@ -86,7 +86,7 @@ Source: Grade 12 Terms 1–2.
 **Term 3 — Risk, Protection, Integration & Life Launch**  
 Source: Grade 12 Terms 3–4.
 
-Form 4 is the final O-Level Applied Commerce year. Its capstone remains the Life Launch Plan, adapted for Zimbabwean education, work, enterprise, banking, tax, contracts, risk and post-school realities.
+Form 4 is the final O-Level Applied Commerce year. Its source-unit distribution is **40 / 40 / 32**. The capstone remains the Life Launch Plan, adapted for Zimbabwean education, work, enterprise, banking, tax, contracts, risk and post-school realities.
 
 ## Why this compression works
 
@@ -109,19 +109,23 @@ The Zimbabwe edition will **not**:
 - simply divide lesson counts mathematically without checking story and concept continuity;
 - claim that the current runtime source stages are the final learner-facing Zimbabwe structure.
 
-## Runtime transition
+## Runtime status
 
-The current platform still stores source material by the original Grade 8–12 bundle IDs. That is intentional for traceability.
+The platform now has a Zimbabwe delivery layer that exposes only Forms 1–4 and groups the original source lessons into the 12 target terms above while preserving the original Grade 8–12 lesson IDs underneath.
 
-The next runtime milestone is to introduce a Zimbabwe delivery layer that:
+Current protected delivery counts:
 
-1. exposes only Forms 1–4 to learners;
-2. groups source lessons into the 12 target terms above;
-3. preserves original lesson IDs behind the scenes;
-4. allows individual lessons to be moved without breaking saved learner evidence;
-5. converts source-term intros and assessments into the correct Zimbabwe term;
-6. records HBC competency mapping against each final unit;
-7. removes all visible Grade 8–12 source-language from the final learner navigation.
+| Form | Term 1 | Term 2 | Term 3 | Total source lessons |
+| --- | ---: | ---: | ---: | ---: |
+| Form 1 | 26 | 26 | 27 | 79 |
+| Form 2 | 25 | 25 | 25 | 75 |
+| Form 3 | 36 | 40 | 40 | 116 |
+| Form 4 | 40 | 40 | 32 | 112 |
+| **Total** |  |  |  | **382** |
+
+These are **source lesson units, not final classroom-period counts**. During manuscript localisation, tightly related lessons may be combined into longer Zimbabwe learning sequences. Original lesson IDs remain available for provenance and learner-evidence migration.
+
+The next curriculum milestone is unit-level HBC competency tagging, three-term manuscript restructuring and Zimbabwe-specific content localisation.
 
 ## A-Level
 
