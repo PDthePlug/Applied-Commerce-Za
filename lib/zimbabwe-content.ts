@@ -19,6 +19,146 @@ export type ZimbabweUnitOverride = {
  * Source unit IDs remain unchanged so learner evidence and provenance survive.
  */
 export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
+  "g8-t1-l01-001": {
+    blocks: [
+      {index:12,kind:"text",text:"Myah puts the coins in her pocket. She feels their weight all the way to the kombi rank. She does not ask where the money came from. She does not ask if there is enough. She does not ask what her mother gives up so she can get to school."},
+    ],
+  },
+  "g8-t1-l02-002": {
+    blocks: [
+      {index:30,kind:"table",rows:[
+        ["Source","Example"],
+        ["Family","“We do not waste money in this house.”"],
+        ["Community","“Everyone in our neighbourhood saves with a mukando or savings club.”"],
+        ["Experience","“Last time I spent all my money, I had nothing left for transport.”"],
+        ["What we are told directly","“Save for later.”"],
+        ["What we are told indirectly","“Again? You just got money yesterday?”"],
+        ["What we observe","Watching someone worry about bills"],
+      ]},
+    ],
+  },
+  "g8-t1-l04-004": {
+    blocks: [
+      {index:45,kind:"text",text:"This is how mukando groups work. This is how families work. This is how successful people work."},
+    ],
+  },
+  "g8-t1-l05-005": {
+    blocks: [
+      {index:8,kind:"text",text:"Myah is sitting at the kombi rank after school, watching people. She does this often — watching, noticing, writing in her notebook."},
+      {index:22,kind:"table",rows:[
+        ["Type","Timeframe","Example"],
+        ["Short-term","Days or weeks","Save enough for a school trip by next month"],
+        ["Long-term","Months or years","Save enough for a Form 4 school-leaving event"],
+      ]},
+    ],
+  },
+  "g8-t1-l06-006": {
+    blocks: [
+      {index:61,kind:"text",text:"Observe one person in your community for a day or two — a family member, a neighbour, a vendor near a kombi rank or market. Are they more like Nosipho (clear direction, steady progress) or more like Sipho (flexible, drifting, open to whatever comes)?"},
+    ],
+  },
+  "g8-t1-l10-010": {
+    blocks: [
+      {index:3,kind:"text",text:"Explain how mukando and community savings groups work."},
+      {index:6,kind:"table",rows:[
+        ["Term","Definition"],
+        ["Mukando","A Zimbabwean community savings arrangement where members pool agreed contributions"],
+        ["Contribution","The amount each member puts into the group according to its rules"],
+        ["Rotation","Taking turns to receive pooled funds in a rotating-savings model"],
+      ]},
+      {index:7,kind:"text",text:"📘 Saturday Afternoon in Highfield"},
+      {index:8,kind:"text",text:"It is Saturday afternoon in Highfield, Harare."},
+      {index:11,kind:"text",text:"This is a mukando."},
+      {index:12,kind:"text",text:"📘 What Is a Mukando?"},
+      {index:13,kind:"text",text:"A mukando is a Zimbabwean community savings arrangement. Members agree on rules and contribute money regularly. Some groups rotate the pooled amount so members receive it in turn. Others keep a shared pool and lend or invest according to agreed rules. The exact model can differ, but the discipline is collective: people save together and hold one another accountable."},
+      {index:14,kind:"text",text:"It is simple. It is practical. It is built on trust and rules. Mukando groups exist because:"},
+      {index:21,kind:"text",text:"The women in this Highfield story call their mukando “The Saturday Club.” They have been meeting for 12 years. In that time:"},
+      {index:29,kind:"text",text:"✍️ Activity 14: Mukando Discussion — And Design Your Own"},
+      {index:32,kind:"text",text:"1. Does anyone in your family belong to a mukando or another savings group? If yes, what kind?"},
+      {index:33,kind:"text",text:"2. Why do you think people can trust a mukando even when the group is informal? What rules or relationships make trust possible?"},
+      {index:34,kind:"text",text:"3. What can a mukando teach us about saving that an individual bank account cannot?"},
+      {index:36,kind:"text",text:"Part B: Design Your Own Mukando or Savings Group (Hypothetical)"},
+      {index:37,kind:"text",text:"If you started a savings group with five people you trust, what would the rules be?"},
+      {index:38,kind:"text",text:"Name of our group: _________________________________"},
+      {index:43,kind:"text",text:"What makes this group different from just saving alone: _________________________________"},
+      {index:51,kind:"text",text:"Saving is not only something wealthy people do. Families and communities have practised forms of saving for generations — putting money aside, pooling resources, building herds, buying assets, preparing for school costs, emergencies or business opportunities. Here is the deeper idea: saving requires believing in a future. It requires believing that tomorrow is worth preparing for. That is not only a financial skill. It is an act of hope. When you save, you are declaring that your future self matters."},
+      {index:54,kind:"text",text:"Question 1: Compare a mukando with a bank account. What is one possible advantage of saving with a trusted group? What is one possible advantage of a bank account? Which would work better for YOU right now? Defend your answer with at least one specific reason based on your real situation."},
+      {index:55,kind:"text",text:"Question 2: Look at your hypothetical savings-group design. What is the biggest risk? What is the biggest strength? If this were real, would you trust it with your money? Why or why not?"},
+      {index:57,kind:"text",text:"Ask someone in your family: “Have you ever been in a mukando or another savings group? What worked? What did not work? Would you do it again?”"},
+      {index:62,kind:"text",text:"If you cannot ask anyone: Research one type of mukando or community savings group used in Zimbabwe. Write down how it works, who it serves and one risk members need to manage."},
+      {index:64,kind:"text",text:"| Date | | | Lesson | Lesson 10 — Mukando and Community Saving | | Experiment/Observation | I asked someone about their experience with mukando or savings groups, or researched how one works. | | Result | | | Learning | | | Next Action | |"},
+    ],
+  },
+  "g8-t1-l11-011": {
+    blocks: [
+      {index:10,kind:"text",text:"Myah sits at the kombi rank, her notebook open. She has been thinking about what she wants. Understanding money. Helping her mother. Noticing what others miss."},
+    ],
+  },
+  "g8-t1-l12-012": {
+    blocks: [
+      {index:10,kind:"text",text:"3. Method 3: The Mukando Way. Save with a trusted group whose rules and contribution schedule you understand. The group can help keep you accountable."},
+      {index:30,kind:"text",text:"Here’s the tension: every system has a weakness. The jar at home is visible and simple — but it can be easy to dip into. A bank or formal savings account can be more secure — but may feel less immediate or require access you do not yet have. A mukando is community-powered — but depends on trust, clear rules and members contributing as agreed. The best system is not the one with the most features. It is the one whose risks you understand and can manage."},
+    ],
+  },
+  "g8-t1-l13-013": {
+    blocks: [
+      {index:27,kind:"text",text:"Grandmother’s mukando → pays out → buys food"},
+    ],
+  },
+  "g8-t1-l16-016": {
+    blocks: [
+      {index:7,kind:"text",text:"📘 Myah at the Kombi Rank"},
+      {index:8,kind:"text",text:"Myah is sitting at the kombi rank, waiting for transport home. It is hot. The sun is high. People are fanning themselves with newspapers. A baby is crying. A woman is wiping sweat from her forehead."},
+      {index:13,kind:"text",text:"She files it away. Years later, when she learns about problems and opportunities, she will remember this day. The hot kombi rank. The thirsty people. The baby crying."},
+      {index:47,kind:"text",text:"Question 1: What did Myah notice at the kombi rank? Did she solve the problem that day? Why not? What was the first step she took — even without acting?"},
+    ],
+  },
+  "g8-t1-l17-017": {
+    blocks: [
+      {index:10,kind:"text",text:"Sipho takes the money. He walks to the neighbourhood shop."},
+    ],
+  },
+  "g8-t1-l18-018": {
+    blocks: [
+      {index:8,kind:"text",text:"Before Myah and her mother moved to the new town, they lived in a small flat in Harare."},
+    ],
+  },
+  "g8-t2-l22-022": {
+    blocks: [
+      {index:7,kind:"text",text:"📘 Myah’s Question at the Tuckshop"},
+      {index:8,kind:"text",text:"It is Saturday afternoon. Myah is at Emmanuel’s tuckshop, watching money move."},
+      {index:12,kind:"text",text:"Emmanuel shrugs. “The delivery driver takes it to the wholesaler. The wholesaler pays the producer. The producer pays workers and suppliers. Those people spend it somewhere else. Maybe at another tuckshop. Maybe near the kombi rank. Maybe on airtime.”"},
+      {index:25,kind:"text",text:"But where do they get it? Follow the trail: Parents work → earn money → share with you. Grandmother’s mukando → pays out → buys food. Family business → sells things → makes income. Public support or a household transfer → supports the family. Money keeps moving because people create, earn, exchange, share and spend."},
+    ],
+  },
+  "g8-t2-l23-023": {
+    blocks: [
+      {index:12,kind:"text",text:"Their daughter, Palesa, is helping pack vetkoek into bags. Their son, age 12, is counting change for a tuckshop run. Even the youngest, age 8, is sweeping the yard."},
+      {index:20,kind:"table",rows:[
+        ["Type","Description","Examples"],
+        ["Formal work","Registered employment, regular pay and defined responsibilities","Teacher, nurse, shop assistant, warehouse worker"],
+        ["Informal work","Work or trade outside a formal employment arrangement","Street vendor, market trader, car wash, home baking"],
+        ["Family work","Unpaid household support","Caring for siblings, cooking, cleaning"],
+        ["Community work","Benefits the community, often unpaid","Mukando organising, helping neighbours"],
+        ["Self-work","Investing in your own growth","Studying, practising a skill"],
+      ]},
+    ],
+  },
+  "g8-t2-l24-024": {
+    title: "EMMANUEL’S TUCKSHOP — COSTS AND PROFIT",
+    blocks: [
+      {index:8,kind:"text",text:"Emmanuel is 15. He lives in Chitungwiza with his mother and two younger sisters. His mother runs a small tuckshop from their front room. It sells everyday items such as bread, milk, cool drinks, snacks and airtime. It is small — but it is theirs."},
+      {index:9,kind:"text",text:"After school, Emmanuel helps. Myah visits on a Saturday, curious about how the shop actually works. She has been thinking about money flows, and a tuckshop is a useful place to see them in action."},
+      {index:59,kind:"text",text:"Find a small business in your community — a tuckshop, market stall, vendor, car wash or another trader. Observe it for 10 minutes. Write down:"},
+    ],
+  },
+  "g8-t2-l26-026": {
+    blocks: [
+      {index:15,kind:"text",text:"Active income: Tuckshop sales (the family works for this). A parent’s part-time cleaning job."},
+      {index:16,kind:"text",text:"Passive or delayed income: A mukando payout at an agreed time. Interest on savings. Rent from an asset, where applicable."},
+      {index:52,kind:"text",text:"If you cannot ask anyone: Research one type of passive or delayed income that exists in Zimbabwe — for example a mukando payout, rental income or interest from a savings account. Write down what you learn and one risk involved."},
+    ],
+  },
   "g8-t1-l20-020": {
     title: "FOUNDATIONS REVIEW AND PORTFOLIO CHECKPOINT",
     blocks: [
@@ -44,7 +184,7 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
     blocks: [
       {index:2,kind:"text",text:"Recall key learning from the Form 1 foundations cycle."},
       {index:3,kind:"text",text:"Identify what you are bringing forward into the resources cycle."},
-      {index:18,kind:"text",text:"“Before we continue, I want you to think. What did you learn in the foundations cycle that you are still carrying?”"},
+      {index:13,kind:"text",text:"Myah puts the coins in her pocket. Same weight. Same kombi rank. Same mother."},\n      {index:18,kind:"text",text:"“Before we continue, I want you to think. What did you learn in the foundations cycle that you are still carrying?”"},\n      {index:19,kind:"text",text:"Myah thinks. She remembers Lerato, who taught herself to braid. She remembers Nosipho, who had a goal and followed it. She remembers Sipho, who had no goals — and how Sipho began to change, fixing a chair with his hands. She remembers the mukando women, saving together for years. She remembers her own mother, counting coins every morning."},
       {index:20,kind:"text",text:"Ms. Daniels continues. “In the foundations cycle, you learned that your identity shapes your money choices. You learned that beliefs come from family, community and experience. You learned to set goals and to save. You conducted experiments. You kept a Log. You learned to notice.”"},
       {index:22,kind:"text",text:"“All of that is still inside you. You do not start this resources cycle empty. You start with everything you already are — and everything you have already done.”"},
       {index:28,kind:"text",text:"What did you learn in the foundations cycle that you are still carrying? Write one specific thing — a lesson, an experiment result, a Thinking Equation, a moment of clarity."},
