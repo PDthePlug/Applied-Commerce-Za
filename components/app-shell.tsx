@@ -8,10 +8,10 @@ import { zimbabweEdition } from "@/lib/zimbabwe";
 
 const nav=[
   {href:"/",label:"Home",detail:"Your Applied Commerce starting point",icon:Home},
-  {href:"/learn",label:"Learn",detail:"Stages, learning cycles and lessons",icon:BookOpen},
+  {href:"/learn",label:"Learn",detail:"Forms, terms and lessons",icon:BookOpen},
   {href:"/portfolio",label:"Portfolio",detail:"Evidence captured from your work",icon:Archive},
   {href:"/progress",label:"Progress",detail:"See what you have completed",icon:BarChart3},
-  {href:"/profile",label:"Profile",detail:"Your learner record and current stage",icon:UserRound},
+  {href:"/profile",label:"Profile",detail:"Your learner record and current Form",icon:UserRound},
 ];
 
 export function AppShell({children}:{children:React.ReactNode}) {
