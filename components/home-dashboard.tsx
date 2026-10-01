@@ -5,7 +5,7 @@ import Link from "next/link";
 import { ArrowRight, Archive, BookOpenCheck } from "lucide-react";
 import { curriculum } from "@/lib/curriculum";
 import { useLearningStore } from "@/lib/learning-store";
-import { zimbabweCurriculum, zimbabwePlacementForSource } from "@/lib/zimbabwe-curriculum";
+import { defaultZimbabweFormForSourceGrade, zimbabweCurriculum, zimbabwePlacementForSource } from "@/lib/zimbabwe-curriculum";
 import type { ZimbabweFormIndex } from "@/lib/zimbabwe-curriculum";
 
 type ActiveLesson = {
@@ -20,7 +20,7 @@ export function HomeDashboard(){
   const [activeLesson,setActiveLesson]=useState<ActiveLesson|null>(null);
   const {state,hydrated}=useLearningStore();
 
-  const currentForm=state.profile?.form ?? state.activeForm ?? 1;
+  const currentForm=state.profile?.form ?? state.activeForm ?? defaultZimbabweFormForSourceGrade(state.activeGrade);
 
   useEffect(()=>{
     zimbabweCurriculum.form(currentForm).then(setFormData).catch(()=>setFormData(null));
