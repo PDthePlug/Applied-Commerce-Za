@@ -203,6 +203,152 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
       {index:60,kind:"text",text:"| Date | | | Lesson | Lesson 21 — Resources-Cycle Intention | | Experiment/Observation | I set my intention for the resources cycle and shared it (or wrote it down). | | Result | | | Learning | | | Next Action | |"},
     ],
   },
+  "g8-t2-l27-027": {
+    blocks: [
+      {index:9,kind:"table",rows:[
+        ["Way to Earn","Example"],
+        ["Helping neighbours","Wash a car, carry goods, help with a task"],
+        ["Selling things","Snacks, drinks, handmade items"],
+        ["Skills","Braiding hair, fixing phones, tutoring"],
+        ["Chores at home","Sometimes paid, sometimes not"],
+        ["Small jobs","Assist at a tuckshop, market stall or kombi rank"],
+      ]},
+    ],
+  },
+  "g8-t2-l28-028": {
+    blocks: [
+      {index:11,kind:"text",text:"Myah walks through the kombi rank, her notebook open. She sees: people are hot. People are thirsty. People are bored. People carry heavy things with nowhere to put them. Each problem is a signal. Each signal is a possibility."},
+    ],
+  },
+  "g8-t2-l29-029": {
+    blocks: [
+      {index:8,kind:"text",text:"Thandi lives near Mutare. Her grandmother has a mango tree in the yard. Every season, the tree is heavy with fruit — more than they can eat."},
+      {index:9,kind:"text",text:"One year, Thandi had an idea. She picked the mangoes. She washed them until they shone. She arranged them in a crate. She walked to the side of the road near the kombi rank."},
+      {index:53,kind:"text",text:"If you cannot ask anyone: Research what similar things sell for — at a market, near a kombi rank, at a tuckshop, or elsewhere in your community. Write down the prices and the currency used. What do you notice?"},
+    ],
+  },
+  "g8-t2-l35-035": {
+    blocks: [
+      {index:9,kind:"text",text:"The one where: Auntie sells vetkoek near the kombi rank. Uncle fixes cars in his yard. Neighbours lend each other sugar. Mukando groups meet regularly. Tuckshops sell everyday items in small quantities."},
+      {index:11,kind:"text",text:"Myah walks through her neighbourhood, notebook open. She counts: tuckshops, hair salons, car washes, a woman selling vegetables on the corner, a man fixing shoes under a tree. Many of these businesses operate informally. They may not have payslips or formal employment contracts. But they are creating value. They are feeding families. She writes: There is an economy here that textbooks can miss. It runs on cash, mobile payments, trust and relationships. It becomes visible when you learn to look."},
+      {index:13,kind:"text",text:"Across Zimbabwe, many people earn livelihoods in the informal economy. Formal paperwork may differ from one business to another, but the economic activity is real: customers exchange money for value, households earn income, relationships create trust, and small enterprises support communities."},
+      {index:37,kind:"text",text:"This week, buy something from someone in your community — a tuckshop, market trader, vendor, neighbour or another small seller. Notice how the transaction feels different from buying at a large shop."},
+      {index:54,kind:"text",text:"Imagine a busy corner in Mbare, Harare. Within a short walk you might find:"},
+      {index:63,kind:"text",text:"The Tuckshop"},
+      {index:74,kind:"text",text:"School learners buy at the tuckshop → get their hair done at Precious’s"},
+      {index:75,kind:"text",text:"Auntie Grace buys bread from the tuckshop"},
+      {index:76,kind:"text",text:"Precious buys a cool drink from the tuckshop"},
+      {index:84,kind:"text",text:"Auntie Grace ←→ Tuckshop owner ←→ ? Precious ←→ ?"},
+      {index:101,kind:"text",text:"Here’s the tension: this web of interdependence is also fragile. If the tuckshop raises prices, other households feel it. If the kombi rank moves, Auntie Grace may lose customers. If one family moves away, the web changes. Interdependence is strength — but it is also vulnerability. The same connections that sustain a community can also transmit a shock."},
+    ],
+  },
+  "g8-t2-l39-038": {
+    blocks: [
+      {index:8,kind:"text",text:"Busisiwe is 14. She lives in Bulawayo with her mother and two younger brothers. Her mother manages the household money, but it is hard."},
+    ],
+  },
+  "g8-t3-l43-042": {
+    title: "THE MUKANDO HABIT",
+    blocks: [
+      {index:2,kind:"text",text:"Explain how mukando savings groups can create saving habits through accountability."},
+      {index:4,kind:"text",text:"Design your own “Habit Mukando” for accountability."},
+      {index:8,kind:"text",text:"Remember the Highfield mukando story from earlier in Form 1? Every meeting, the members contribute as agreed. They repeat the routine over months and years."},
+      {index:10,kind:"text",text:"Myah thinks about this. The mukando members do not rely only on willpower. They rely on one another, agreed rules and a repeated routine. The habit is not just saving. The habit is showing up. The habit is being part of something. She writes: What if I had a “Habit Mukando”? A group of people who expected me to show up for my own goals? Would that make it easier?"},
+      {index:11,kind:"text",text:"📘 How Mukando Builds Habit"},
+      {index:12,kind:"table",rows:[
+        ["Habit Element","How Mukando Uses It"],
+        ["Cue","The agreed meeting or contribution date arrives"],
+        ["Routine","Check in and make the agreed contribution"],
+        ["Reward","Progress toward a shared or personal goal"],
+        ["Repetition","The same pattern is repeated"],
+        ["Accountability","Other members expect you to show up"],
+        ["Identity","“I am someone who keeps my commitments”"],
+      ]},
+      {index:15,kind:"text",text:"Accountability = The Mukando Principle"},
+      {index:19,kind:"text",text:"✍️ Activity 43: My Habit Mukando — With Accountability Design"},
+      {index:21,kind:"text",text:"In this class, you will work in Habit Mukando groups — fixed groups of 5 learners who hold one another accountable for habit tracking."},
+      {index:22,kind:"text",text:"Write the names of your Habit Mukando members:"},
+      {index:28,kind:"text",text:"Your Habit Mukando will:"},
+      {index:39,kind:"text",text:"Write one sentence you will say to your Habit Mukando this week about the habit you are tracking: “This week, I commit to _________________. If I struggle, I will _________________.”"},
+      {index:42,kind:"text",text:"Key idea: A mukando works because the group helps turn an intention into a repeated commitment. Your habits do not need to be solitary. The right group can carry you when your willpower fails."},
+      {index:43,kind:"text",text:"Here’s the tension: a group can also pull you down. If your group normalises bad habits — overspending, complaining, giving up — you may absorb those too. The question is not just whether you have a group. The question is what your group is normalising. Choose your Habit Mukando carefully. Their expectations will shape your behaviour. Their normal can become your normal."},
+      {index:47,kind:"text",text:"Question 1: Why can it be easier to save with a mukando than alone? What might happen if a member repeatedly misses an agreed contribution or check-in? How could you create “mukando power” for a habit you want to build, such as studying or exercising?"},
+      {index:48,kind:"text",text:"Question 2: Think of your Habit Mukando group. What happens if ONE member stops showing up? What happens if TWO stop? What does this tell you about the strength — and fragility — of group accountability? What is YOUR responsibility to your group?"},
+      {index:54,kind:"text",text:"If you cannot tell anyone: Write a letter to yourself. Promise yourself you will check in on your own progress in one week. Put the letter where you will see it. The letter becomes your accountability check-in."},
+    ],
+  },
+  "g8-t3-l52-051": {
+    blocks: [
+      {index:8,kind:"text",text:"Habits are not just personal. Families have habits too. Some family habits: eating together, saving together through a mukando or savings club, helping with chores, sharing money when someone needs it, planning for the future."},
+    ],
+  },
+  "g8-t3-l55-054": {
+    blocks: [
+      {index:12,kind:"text",text:"You have met earners throughout this year: Lerato (braiding hair), Emmanuel (helping at the tuckshop), Thandi (selling mangoes), Precious (hair stall), Uncle Solly (car wash), Sipho (fixing things with his hands), Thabo (delivery service and fixing things)."},
+    ],
+  },
+  "g8-t3-l56-055": {
+    blocks: [
+      {index:10,kind:"text",text:"You have met planners: Nosipho (planned to be a teacher), Busisiwe (tracked to help her family plan), the Molefe family (Sunday planning habit), mukando members (planned for future needs)."},
+    ],
+  },
+  "g8-t3-l57-056": {
+    blocks: [
+      {index:51,kind:"text",text:"My Habit Mukando members will check in with me on (day of week): _________________________________"},
+      {index:65,kind:"text",text:"Question 1: What habit will you track? Why did you choose this habit? What is your Habit Mukando’s first check-in day? What will you do if you miss a day?"},
+    ],
+  },
+  "g8-t3-l58-057": {
+    blocks: [
+      {index:25,kind:"text",text:"Part D: Habit Mukando Check-In"},
+      {index:26,kind:"text",text:"Share with your Habit Mukando: What worked? What did not? What will you change? Listen to their experiences. What can you learn from them?"},
+      {index:27,kind:"text",text:"One thing I learned from my Habit Mukando: _________________________________"},
+      {index:37,kind:"text",text:"Share your Week 1 progress with your Habit Mukando or someone at home. Even if you missed days. Even if it is hard. Saying it out loud — or writing it down — helps."},
+    ],
+  },
+  "g8-t3-l59-058": {
+    blocks: [
+      {index:22,kind:"text",text:"Part D: Habit Mukando Check-In"},
+      {index:34,kind:"text",text:"Tell your Habit Mukando or someone at home about your midpoint progress. Be honest — share the wins AND the struggles. Ask: “Any advice for the final week?”"},
+    ],
+  },
+  "g8-t4-l65-064": {
+    title: "INTRODUCTION TO FINAL PROJECT",
+    blocks: [
+      {index:28,kind:"text",text:"Here’s the tension: a final project is also an ending. It is the last major piece of work you will do in Form 1. After this, you move on. The people you have met — Myah, Thabo, Sipho, Lerato, the mukando members, Emmanuel, Thandi, Karabo — will stay with you. But you will not be in Form 1 anymore. The final project is your bridge out of Form 1. Make it count. But do not let the weight of “lastness” paralyse you. Done is better than perfect. Finished is better than flawless."},
+      {index:29,kind:"text",text:"Your Next Step: What do you want to leave behind in Form 1? What do you want to carry forward into Form 2? Your final project is the bridge between the two. What kind of bridge do you want to build?"},
+    ],
+  },
+  "g8-t4-l66-065": {
+    blocks: [
+      {index:39,kind:"text",text:"Choose a business (tuckshop, market stall, vendor, car wash, hair salon, etc.)"},
+    ],
+  },
+  "g8-t4-l69-068": {
+    blocks: [
+      {index:8,kind:"text",text:"Possibilities: Tuckshop. Market trader. Street vendor. Car wash. Hair salon. Kombi-rank activity. Mukando member. Small repair shop. Someone selling from their home."},
+    ],
+  },
+  "g8-t4-l73-072": {
+    blocks: [
+      {index:40,kind:"text",text:"Here’s the tension: completion can also bring a strange emptiness. You have been working toward this. And now it is done. What now? The answer is: you carry it with you. The evidence does not disappear when the project ends. It becomes part of your portfolio — and part of your identity. You are now someone who has completed a final project in Form 1. No one can take that from you. But do not rest on it too long. Completion opens the door to the next thing. Be proud. Then be ready."},
+    ],
+  },
+  "g8-t4-l76-075": {
+    title: "FINAL PROJECT PRESENTATIONS — DAY 2 AND CELEBRATION",
+    blocks: [
+      {index:27,kind:"text",text:"Question 1: What did you learn from someone else’s project that you will carry with you? How do you feel now that your project — and your Form 1 journey — is nearly complete?"},
+    ],
+  },
+  "g8-t4-l77-076": {
+    blocks: [
+      {index:6,kind:"text",text:"You completed a final project in Form 1. That is something many adults never do."},
+      {index:8,kind:"text",text:"Myah sits at the kombi rank — the same bench where she sat at the beginning of the year. The same kombis. The same vendors. The same flow of people. But she sees differently now. She sees the money flowing. She sees the habits at work. She sees identities being built, transaction by transaction. She writes: I am not the same person who sat here at the beginning of the year. That person was just beginning to notice. This person notices, asks, tracks, budgets, saves, plans, earns, and acts. This person completed a final project. This person has evidence. That is growth. That is becoming. That is enough."},
+      {index:21,kind:"text",text:"What is ONE thing from this project that you will carry with you into Form 2 and beyond? Not the project itself — the learning, the capacity, the evidence of who you became through doing it."},
+      {index:30,kind:"text",text:"Your Habit Mukando"},
+      {index:38,kind:"text",text:"Your Next Step: Who is ONE person you have not yet thanked — someone whose support made your final project possible, or made your Form 1 year meaningful? Thank them. This week. In person, in writing, in a message. Do not let the year end without saying it."},
+    ],
+  },
   "g8-t2-l40-039": {
     title: "BUILDING YOUR FIRST BUDGET AND PROGRESS REFLECTION",
     blocks: [
@@ -226,7 +372,7 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
       {index:53,kind:"text",text:"What is one thing I learned about myself from these experiments that I did not know at the start of the habit project?"},
       {index:54,kind:"text",text:"What experiment do I want to continue into the integration and final-project work ahead?"},
       {index:56,kind:"text",text:"✍️ Activity 64: Letter to My Future Self — Habit Project"},
-      {index:63,kind:"text",text:"What you hope for the rest of Form 1"},
+      {index:63,kind:"text",text:"What you hope for the rest of Form 1"},\n      {index:66,kind:"text",text:"From me, in Form 1 Date: _____________________"},
       {index:67,kind:"text",text:"📂 Portfolio: Keep this letter somewhere safe. Read it near the end of Form 1."},
       {index:70,kind:"text",text:"Here’s the tension: the ability to observe, adjust, and persist is more valuable than any single habit you tracked. You now know how to change. And once you know how to change, you can become anyone you want to become. But the review habit is a muscle. Use it or lose it. It is easy to finish the project and go back to old ways — to stop tracking, stop noticing, stop adjusting. The real test is not whether you tracked for 21 days. It is whether you track again when you need to. The real test is whether you keep using what you learned when nobody is checking."},
       {index:74,kind:"text",text:"During the rest of Form 1 — your final Zimbabwe term — you will bring everything together. You will review who you were and see who you have become. You will complete a final project that demonstrates what you have learned. You will assemble your complete portfolio. And you will write a final letter to your future self — the self who can open it in Form 4. This next phase is not about pretending everything is new. It is about proving to yourself that the ideas have become part of how you act."},
@@ -239,7 +385,7 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
   "g8-t4-l61-060": {
     title: "REVIEW — MY MONEY IDENTITY",
     blocks: [
-      {index:2,kind:"text",text:"Recall key learning from your early Form 1 identity work."},
+      {index:2,kind:"text",text:"Recall key learning from your early Form 1 identity work."},\n      {index:11,kind:"text",text:"The Highfield mukando members — proving that community creates accountability"},\n      {index:22,kind:"text",text:"Saving stories from your community — mukando, savings clubs, livestock or other ways families prepare for future needs"},
       {index:8,kind:"text",text:"Earlier in Form 1, you asked: Who am I with money?"},
       {index:24,kind:"text",text:"Myah flips through her earliest Form 1 notebook. The Identity Map she drew in Lesson 1. The Family Belief Inventory. The questions she wrote on the very first page: Where does the money come from? What does Mama give up? Why do some people have more coins than others?"},
       {index:30,kind:"text",text:"What is one thing you learned during your identity work that stayed with you? What is one belief about money that has changed for you this year?"},
@@ -254,7 +400,7 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
   "g8-t4-l62-061": {
     title: "REVIEW — MY RESOURCES",
     blocks: [
-      {index:2,kind:"text",text:"Recall key learning from your money-and-resources work."},
+      {index:2,kind:"text",text:"Recall key learning from your money-and-resources work."},\n      {index:10,kind:"text",text:"Emmanuel at the tuckshop — learning that every product has a story, and profit helps a small business survive"},
       {index:7,kind:"text",text:"📘 Where We Went with Resources"},
       {index:8,kind:"text",text:"During the money-and-resources cycle, you asked: Where does money come from, and where does it go?"},
       {index:26,kind:"text",text:"Myah reviews her money-and-resources work. The money flow diagrams. The budget she built. The spending tracker. The leakages she found. She writes: I started by thinking money just appeared — from parents, from jobs, from somewhere. I now know it flows. It comes from value. It goes where I spend it. I can track it. I can budget it. I can choose where it goes. That is power."},
@@ -274,13 +420,13 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
   "g8-t4-l63-062": {
     title: "REVIEW — MY HABITS",
     blocks: [
-      {index:2,kind:"text",text:"Recall key learning from your habit work."},
+      {index:2,kind:"text",text:"Recall key learning from your habit work."},\n      {index:10,kind:"text",text:"The mukando members again — showing the power of routine and accountability"},
       {index:7,kind:"text",text:"📘 Where We Went with Habits"},
       {index:8,kind:"text",text:"During the habit cycle, you asked: What small things, done regularly, change everything?"},
       {index:31,kind:"text",text:"✍️ Activity 63: Habit Memory — With Review-Habit Audit"},
       {index:48,kind:"text",text:"Here’s the tension: the review habit is a muscle. Use it or lose it. It is easy to finish the 21-day project and go back to old ways — to stop tracking, stop noticing, stop adjusting. The real test is not whether you tracked for 21 days. It is whether you are still tracking now. It is whether you will track again when you need to. The review habit may be one of the most important things you learned from the habit work. Do you still have it? Or did you leave it behind with the tracker sheet?"},
       {index:51,kind:"text",text:"Question 1: Look at your 21-day habit tracker. What pattern did you notice in your habit performance? What helped you succeed on your best days? What did you learn about yourself from tracking this habit?"},
-      {index:54,kind:"text",text:"Show someone your 21-day habit tracker — if you still have it. Tell them what 21 days taught you about yourself. Ask them: “What habit do you see in me that I might not see in myself?”"},
+      {index:49,kind:"text",text:"Your Next Step: What is one way you can keep the review habit alive after Form 1 ends? A monthly review? A weekly check-in? A commitment to track something every term? Design your maintenance plan now, before the year ends."},\n      {index:52,kind:"text",text:"Question 2: The review habit — noticing and adjusting your habits — is more valuable than any single habit. Have you kept it alive? If yes, how? If no, what happened? What is ONE way to restart it before Form 1 ends?"},\n      {index:54,kind:"text",text:"Show someone your 21-day habit tracker — if you still have it. Tell them what 21 days taught you about yourself. Ask them: “What habit do you see in me that I might not see in myself?”"},
       {index:60,kind:"text",text:"| Date | | | Lesson | Lesson 63 — Habits Review | | Experiment/Observation | I reviewed my habit learning and audited my current review habit. | | Result | | | Learning | | | Next Action | |"},
     ],
   },
@@ -305,7 +451,7 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
         ["2","Earning, Spending, Budgeting & Habit Formation","How do money choices and repeated actions shape my direction?"],
         ["3","Financial Identity, Agency & First Capstone","Who am I becoming, and what evidence can I carry forward?"],
       ]},
-      {index:23,kind:"text",text:"Mama Rose — who proves that business is people (you will meet her properly in Form 2)"},
+      {index:14,kind:"text",text:"The Highfield mukando members — who proved that community creates accountability"},\n      {index:15,kind:"text",text:"Emmanuel — learning business at the tuckshop, tracing supply chains"},\n      {index:23,kind:"text",text:"Mama Rose — who proves that business is people (you will meet her properly in Form 2)"},
       {index:38,kind:"text",text:"Look through your portfolio — all three terms. List the pieces of evidence that prove your growth."},
       {index:39,kind:"text",text:"Evidence from Term 1 (identity, beliefs, saving, first income):"},
       {index:40,kind:"text",text:"Evidence from Term 2 (earning, spending, budgeting, habit formation):"},
