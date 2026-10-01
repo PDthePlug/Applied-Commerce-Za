@@ -80,6 +80,13 @@ export function zimbabwePlacementForSource(
   throw new Error(`Source Grade ${sourceGrade} is outside the Zimbabwe O-Level source map.`);
 }
 
+export function defaultZimbabweFormForSourceGrade(sourceGrade?:number):1|2|3|4 {
+  if(sourceGrade===9) return 2;
+  if(sourceGrade===10||sourceGrade===11) return 3;
+  if(sourceGrade===12) return 4;
+  return 1;
+}
+
 function sourceGradesForForm(form:1|2|3|4){
   if(form===1) return [8];
   if(form===2) return [9];
