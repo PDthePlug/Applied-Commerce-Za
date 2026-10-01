@@ -312,6 +312,8 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
   },
   "g8-t2-l27-027": {
     blocks: [
+      {index:33,kind:"text",text:"US$0.50 here. US$1 there. It may not seem like much at first."},
+      {index:34,kind:"text",text:"But: US$1 a day = US$7 a week ≈ US$30 a month ≈ US$365 a year. Small earnings can become meaningful when repeated."},
       {index:9,kind:"table",rows:[
         ["Way to Earn","Example"],
         ["Helping neighbours","Wash a car, carry goods, help with a task"],
@@ -324,11 +326,21 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
   },
   "g8-t2-l28-028": {
     blocks: [
+      {index:57,kind:"text",text:"If you cannot share with anyone: Write a short plan for how you would test your solution — the smallest, cheapest, fastest test possible. If you had only a small starting budget, what would you do tomorrow?"},
       {index:11,kind:"text",text:"Myah walks through the kombi rank, her notebook open. She sees: people are hot. People are thirsty. People are bored. People carry heavy things with nowhere to put them. Each problem is a signal. Each signal is a possibility."},
     ],
   },
   "g8-t2-l29-029": {
     blocks: [
+      {index:12,kind:"text",text:"“Um... US$0.20 each?”"},
+      {index:14,kind:"text",text:"US$0.80. Thandi’s first income."},
+      {index:15,kind:"text",text:"That day, Thandi learned: you can start with what you have — the mangoes were free from her grandmother’s tree. Price is a conversation — she picked US$0.20, but could have asked US$0.30. People will buy if you offer something they want. Small amounts add up — by the end of the day, she had US$4.20."},
+      {index:21,kind:"table",rows:[["Lesson","What It Means"],["Start with what you have","The mangoes were free"],["Price is a conversation","She picked US$0.20 and learned she could test a higher price"],["People will buy","If you offer value"],["Small adds up","US$4.20 in one afternoon"],["Dignity in earning","She could provide for herself"]]},
+      {index:26,kind:"text",text:"1. Thandi sold mangoes for US$0.20 each. She sold 30 mangoes. How much did she earn? US$ _______"},
+      {index:27,kind:"text",text:"2. A buyer offered US$0.15 each for 10 mangoes. If she agrees, how much does she earn from that sale? US$ _______"},
+      {index:28,kind:"text",text:"3. She sells 10 at US$0.15 and 20 at US$0.20. What is her total? US$ _______"},
+      {index:40,kind:"text",text:"Here’s the tension: the power to name a price is the power to value what you offer. Thandi could have asked US$0.10. She could have asked US$0.30. The choice was hers — but the market also responds. Name too high, and customers may walk away. Name too low, and you may undervalue your effort and make the work unsustainable. Pricing is not only math. It is a decision about value, customers and sustainability."},
+      {index:44,kind:"text",text:"Question 1: Thandi could have charged US$0.30 for her mangoes instead of US$0.20. Why might she have chosen the lower price? What are the advantages and disadvantages? What would you have charged? Why?"},
       {index:8,kind:"text",text:"Thandi lives near Mutare. Her grandmother has a mango tree in the yard. Every season, the tree is heavy with fruit — more than they can eat."},
       {index:9,kind:"text",text:"One year, Thandi had an idea. She picked the mangoes. She washed them until they shone. She arranged them in a crate. She walked to the side of the road near the kombi rank."},
       {index:53,kind:"text",text:"If you cannot ask anyone: Research what similar things sell for — at a market, near a kombi rank, at a tuckshop, or elsewhere in your community. Write down the prices and the currency used. What do you notice?"},
@@ -336,6 +348,9 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
   },
   "g8-t2-l35-035": {
     blocks: [
+      {index:56,kind:"text",text:"US$2 for a regular wash, US$3 for a full service"},
+      {index:60,kind:"text",text:"US$3 for a car, US$5 for a larger vehicle"},
+      {index:68,kind:"text",text:"US$3 for plaits, US$5 if you want beads"},
       {index:9,kind:"text",text:"The one where: Auntie sells vetkoek near the kombi rank. Uncle fixes cars in his yard. Neighbours lend each other sugar. Mukando groups meet regularly. Tuckshops sell everyday items in small quantities."},
       {index:11,kind:"text",text:"Myah walks through her neighbourhood, notebook open. She counts: tuckshops, hair salons, car washes, a woman selling vegetables on the corner, a man fixing shoes under a tree. Many of these businesses operate informally. They may not have payslips or formal employment contracts. But they are creating value. They are feeding families. She writes: There is an economy here that textbooks can miss. It runs on cash, mobile payments, trust and relationships. It becomes visible when you learn to look."},
       {index:13,kind:"text",text:"Across Zimbabwe, many people earn livelihoods in the informal economy. Formal paperwork may differ from one business to another, but the economic activity is real: customers exchange money for value, households earn income, relationships create trust, and small enterprises support communities."},
@@ -351,6 +366,9 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
   },
   "g8-t2-l39-038": {
     blocks: [
+      {index:10,kind:"table",rows:[["Date","Item","Amount"],["1 March","Kombi to work","US$3.00"],["1 March","Bread","US$1.40"],["1 March","Milk","US$1.80"],["2 March","Kombi","US$3.00"],["2 March","Airtime","US$1.20"],["2 March","Vegetables","US$4.50"]]},
+      {index:12,kind:"text",text:"“Transport costs are huge,” Busisiwe says. “They can become about US$60 in a month. The small daily buys also add up. We did not see the pattern until we wrote it down.”"},
+      {index:39,kind:"text",text:"Start your own tracking notebook this week — or continue the one you started. Write down everything you spend. Every amount, with the currency clearly labelled. No judgment. Just noticing. At the end of the week, ask yourself: “What does this record tell me that I did not know before?”"},
       {index:8,kind:"text",text:"Busisiwe is 14. She lives in Bulawayo with her mother and two younger brothers. Her mother manages the household money, but it is hard."},
     ],
   },
@@ -401,6 +419,7 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
   },
   "g8-t3-l57-056": {
     blocks: [
+      {index:14,kind:"text",text:"Track every amount I spend"},
       {index:51,kind:"text",text:"My Habit Mukando members will check in with me on (day of week): _________________________________"},
       {index:65,kind:"text",text:"Question 1: What habit will you track? Why did you choose this habit? What is your Habit Mukando’s first check-in day? What will you do if you miss a day?"},
     ],
@@ -456,9 +475,140 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
       {index:38,kind:"text",text:"Your Next Step: Who is ONE person you have not yet thanked — someone whose support made your final project possible, or made your Form 1 year meaningful? Thank them. This week. In person, in writing, in a message. Do not let the year end without saying it."},
     ],
   },
+  "g8-t2-l31-031": {
+    blocks: [
+      {index:13,kind:"text",text:"Price (US$9.99 can feel cheaper than US$10 even though the difference is tiny)"},
+    ],
+  },
+  "g8-t2-l32-032": {
+    blocks: [
+      {index:11,kind:"text",text:"Myah looks at her own spending. Airtime. She buys it regularly. Need or want? She uses it to call her mother when she is working late. That feels like a need. She uses it to scroll social media when she is bored. That feels like a want. The same amount of money. Two different purposes. The line is not just blurry — it moves depending on the moment."},
+      {index:19,kind:"text",text:"Your family has US$20 left after paying all essential bills. You must choose between TWO of the following. You cannot have all four. Which two do you choose — and why?"},
+      {index:20,kind:"text",text:"School shoes for your younger sibling (US$12)"},
+      {index:21,kind:"text",text:"Data for homework this month (US$6)"},
+      {index:22,kind:"text",text:"A birthday gift for your grandmother (US$8)"},
+      {index:23,kind:"text",text:"Airtime for your phone (US$4)"},
+      {index:40,kind:"text",text:"If you cannot observe a trade-off: Imagine you had US$10 and had to choose between something for yourself and something for your family. Write what you would choose — and be honest about the struggle."},
+    ],
+  },
+  "g8-t2-l33-033": {
+    blocks: [
+      {index:8,kind:"text",text:"Karabo saved for months. A little here. A little there. She wanted the takkies everyone had — the ones with the white soles and the logo that said “you belong.”"},
+      {index:36,kind:"text",text:"Here’s the tension: not everyone can afford to be generous. Karabo had saved money. She had a choice. What about the person who has nothing to give — whose available money goes to survival? Does that person lack values? No. They lack resources. Generosity is beautiful. But generosity from abundance is different from generosity from sacrifice. Karabo sacrificed. Not everyone can."},
+    ],
+  },
+  "g8-t2-l34-034": {
+    blocks: [
+      {index:11,kind:"text",text:"School shoes: Price US$15, Value = you can go to school"},
+      {index:12,kind:"text",text:"Takkies: Price US$30, Value = status, belonging, maybe happiness"},
+      {index:16,kind:"table",rows:[["Item","Cheap Price","What Happens","Real Cost"],["Shoes","US$8","Fall apart quickly","Buy again = US$16"],["Phone","US$50","Breaks quickly","Buy again = US$100"],["Food","US$0.50","Makes you sick","Medicine + suffering"]]},
+      {index:26,kind:"table",rows:[["Item","Price","Situation","Good Value? Why?"],["School shoes","US$15","Last all year",""],["Takkies","US$30","Last 3 months",""],["Loaf of bread","US$1.20","Feeds family",""],["Cheaper bread","US$0.80","Goes stale tomorrow",""],["Data bundle","US$2.90","Lasts a week",""],["Data bundle","US$10","Lasts a month",""]]},
+    ],
+  },
+  "g8-t2-l37-036": {
+    blocks: [
+      {index:14,kind:"text",text:"Myah looks at her notebook. She has been tracking her money for weeks — every coin, note or digital payment, and every expense. She has the data. Now she needs a plan."},
+      {index:53,kind:"text",text:"If you cannot share with anyone: Review your budget yourself. Ask: If I had to cut one small expense from this budget, where would it come from? The answer tells you what is truly essential."},
+    ],
+  },
+  "g8-t2-l38-037": {
+    blocks: [
+      {index:8,kind:"text",text:"Themba gets US$5 pocket money every Friday. By Sunday, it is gone. He does not know where it went. It just... disappears. His grandmother says: “Money burns a hole in your pocket.”"},
+      {index:11,kind:"table",rows:[["Day","What","Amount"],["Friday","Cool drink after school","US$0.80"],["Friday","Airtime","US$1.20"],["Saturday","Sweets","US$0.50"],["Saturday","Data","US$1.00"],["Saturday","Chips","US$0.70"],["Sunday","Church offering","US$0.20"],["Sunday","Cool drink","US$0.60"],["Total","","US$5.00"]]},
+      {index:12,kind:"text",text:"He looks at the list. He cannot believe it. US$1.40 on cool drinks. US$1.20 on airtime. US$1.00 on data. US$1.20 on sweets and chips. Only the US$0.20 offering is something he does not regret."},
+      {index:22,kind:"text",text:"For one week, track everything you spend. Every amount."},
+      {index:31,kind:"text",text:"Key idea: Themba thought his money was disappearing. It was not. It was leaking. Small drops, unnoticed, until the bucket was empty. Your money does not disappear. It goes somewhere. Every amount has a story. Tracking tells that story."},
+      {index:32,kind:"text",text:"Here’s the tension: tracking requires honesty. It requires looking at your choices without flinching. It requires admitting that the money did not vanish — you spent it. That admission can be uncomfortable. But it is also freeing. Because if you spent it, you can choose to spend it differently. The money you do not track can control you. The money you track gives you information you can use. And if tracking every tiny amount is unrealistic, choose a simpler system you can actually maintain."},
+      {index:38,kind:"text",text:"Question 2: Themba spent US$1.40 on cool drinks in one weekend. If he cut that to US$0.70 and saved the other US$0.70, about how much could he save in four weeks? In one year? Do the math. What could that money help him do?"},
+      {index:46,kind:"text",text:"| Date | | | Lesson | Lesson 38 — One-Week Spending Tracker | | Experiment/Observation | I tracked every amount I spent for one week (or tracked time). | | Result | | | Learning | | | Next Action | |"},
+    ],
+  },
+  "g8-t3-l41-040": {
+    blocks: [
+      {index:14,kind:"text",text:"She stares at the page. She has been tracking her money for weeks — every amount, every expense. She tracked her spending earlier in Form 1. She budgeted. She calculated profit and loss. But she has never tracked her habits. She has never really looked at her own morning. She has never asked herself why she keeps doing something that makes her feel worse."},
+    ],
+  },
+  "g8-t3-l42-041": {
+    blocks: [
+      {index:44,kind:"text",text:"Choose one tiny new habit to try this week. Make it so small it feels almost too easy. Example: Drink a glass of water before school. Say thank you to one person. Save a very small amount. Do it every day. Notice how it feels — especially on the days when it feels pointless."},
+    ],
+  },
+  "g8-t3-l44-043": {
+    blocks: [
+      {index:11,kind:"text",text:"She decides: every Friday, when she receives money for school, she will put a small fixed amount into her savings before she does anything else. Before spending. Before thinking. The saving place is somewhere safe where she can track her progress. The routine is simple. The decision is already made."},
+    ],
+  },
+  "g8-t3-l45-044": {
+    blocks: [
+      {index:8,kind:"text",text:"One small saving can feel like nothing. But repeated action changes the result:"},
+      {index:9,kind:"text",text:"US$0.50 a day = US$3.50 a week ≈ US$15 a month ≈ US$182.50 a year"},
+      {index:12,kind:"text",text:"Myah calculates this in her notebook. She does not have US$0.50 to save every day. But she could save US$0.20 a week. US$0.20 a week = US$10.40 over 52 weeks. Not nothing. A start. She writes: The amount does not matter as much as the consistency. Every week I save, I vote for “I am a saver.” After enough votes, I will believe it."},
+    ],
+  },
+  "g8-t3-l46-045": {
+    blocks: [
+      {index:8,kind:"text",text:"Imagine you save US$1 a week."},
+      {index:9,kind:"text",text:"After one year: US$52"},
+      {index:10,kind:"text",text:"After five years: US$260 — before any interest"},
+      {index:11,kind:"text",text:"After ten years: US$520 — before any interest"},
+      {index:15,kind:"text",text:"Year 1: US$10.00 earns 2% interest → US$10.20"},
+      {index:16,kind:"text",text:"Year 2: US$10.20 earns about US$0.20 interest → about US$10.40"},
+      {index:17,kind:"text",text:"Year 3: about US$10.40 earns about US$0.21 interest → about US$10.61"},
+      {index:23,kind:"text",text:"If you saved US$0.50 a week for a year, how much would you have? What could you do with that money? Now imagine you did that for five years. What changes?"},
+      {index:27,kind:"text",text:"Start with US$10. Add US$1 every week. No interest."},
+      {index:28,kind:"text",text:"After 1 year: US$10 + (US$1 × 52) = US$ _______"},
+      {index:30,kind:"text",text:"Year 1: US$62 + 5% = US$ _______   Year 2: Add US$52 = US$_______ + 5% = US$ _______   Year 3: Add US$52 = US$_______ + 5% = US$ _______"},
+    ],
+  },
+  "g8-t3-l49-048": {
+    blocks: [
+      {index:12,kind:"text",text:"Remember Sipho from earlier in Form 1? He had no goals. Then he started saving US$0.50 a week. He did it for six weeks straight. He was proud."},
+      {index:13,kind:"text",text:"Then week seven came. His friends wanted to go to the movies. He had US$3 saved. He used it all."},
+      {index:20,kind:"text",text:"And something else happened. Remember the chair he fixed earlier in Form 1? Ms. Daniels noticed that Sipho’s hands knew things his mouth could not yet say. Now, Sipho is starting to see it too. He fixed a neighbour’s bicycle last week. He charged US$3. He saved US$2 of it. The boy who spent everything on sweets is becoming someone different — one small choice, one small repair, one restart at a time."},
+    ],
+  },
+  "g8-t3-l50-049": {
+    blocks: [
+      {index:16,kind:"text",text:"One week, he really wanted something that cost US$5. But he had nothing left. He had spent his available money on sweets and airtime."},
+      {index:19,kind:"text",text:"The next week, he saved US$2.50. The week after, he saved US$2.50 again. In two weeks, he had US$5. He bought what he wanted."},
+    ],
+  },
+  "g8-t3-l53-052": {
+    blocks: [
+      {index:18,kind:"table",rows:[["Action","Evidence","Identity"],["I saved US$0.50 today","“I save money”","I am a saver"],["I helped my sister","“I help others”","I am a helper"],["I gave up on my goal","“I quit”","I am a quitter"]]},
+      {index:42,kind:"text",text:"Here’s the tension: you are always voting. Every action is a vote for some identity. The question is not whether you are voting. The question is which identity you are voting for. When you save, you vote for “I am a saver.” When you repeatedly break a promise to yourself, you cast a different vote. There is no day off from becoming. You are becoming someone, every day, through repeated choices. The only question is who."},
+    ],
+  },
+  "g8-t3-l54-053": {
+    blocks: [
+      {index:10,kind:"text",text:"You can be a saver with a very small weekly amount. You can be a saver with more. The amount matters for the goal, but the habit is what builds the identity."},
+      {index:29,kind:"text",text:"Key idea: The word “saver” sounds like someone who holds back. But think of it differently: a saver is sending money forward. You are not simply losing today’s spending power. You are sending resources to your future self. Your future self is not a stranger. Your future self is you. Send them something good."},
+      {index:30,kind:"text",text:"Here’s the tension: your present self also wants things. Your present self wants the cool drink, the airtime, the snack. Your present self is loud and urgent. Your future self is quiet and patient. Saving is a negotiation between your present self and your future self. Every time you save, you are telling your present self: “Not now. Later.” That is hard. And sometimes your present self should win because a need is real. The skill is learning to tell the difference."},
+    ],
+  },
+  "g8-t4-l67-066": {
+    blocks: [
+      {index:6,kind:"table",rows:[["Element","Details"],["Duration","4–6 weeks"],["Goal","Save for something specific"],["Earning","Through your own effort"],["Tracking","Record every amount earned and saved"],["Reflection","What helped? What got in the way? What did you learn about yourself?"],["Presentation","Share your journey — the goal, the process, the struggle, the outcome, the learning"]]},
+      {index:44,kind:"text",text:"Here’s the tension: the first earning is the hardest. The first sale, the first savings deposit — they can feel awkward, uncertain and small. You will wonder if it is worth it. It is. The first earning is not only about the money. It is about the proof: proof that you can create value and keep a promise to yourself. The hard part is starting. Start anyway. And remember: some weeks you may earn nothing. That is data, not a reason to quit."},
+      {index:45,kind:"text",text:"Your Next Step: What is the FIRST thing you will do to earn your first amount? When exactly will you do it? Name the day. Name the action."},
+      {index:50,kind:"text",text:"Take your first step this week. Earn your first amount, however small. Start."},
+    ],
+  },
+  "g8-t4-l71-070": {
+    blocks: [
+      {index:7,kind:"text",text:"Myah knocks on her first neighbour’s door. Mrs. Dlamini. She asks if she needs help with anything — shopping, cleaning, carrying things. Mrs. Dlamini says yes. She needs someone to fetch her medication from the clinic once a week. She will pay US$1.50. Myah writes it down. Her first earning. Her first customer. She thinks: This is not a big business. It is not even really a business. But it is something. It is a start. And every big thing started small."},
+    ],
+  },
+  "g8-t4-l72-071": {
+    blocks: [
+      {index:7,kind:"text",text:"Myah is three weeks into her earning and saving. She looks at her tracker. Week 1: US$3 earned, US$2 saved. Week 2: US$4.50 earned, US$3 saved. Week 3: US$2.50 earned, US$1.50 saved — she was sick one day and could not work. Total: US$10 earned, US$6.50 saved. Her goal is US$12. She is more than halfway there. She writes: I am ahead on savings but behind on earnings. I need to find one more customer, ask for a referral, or adjust the plan."},
+    ],
+  },
   "g8-t2-l40-039": {
     title: "BUILDING YOUR FIRST BUDGET AND PROGRESS REFLECTION",
     blocks: [
+      {index:9,kind:"text",text:"Myah looks at her tracking data. Her income is small — money from her mother, occasional small payments from helping neighbours. But even small money can be budgeted. She writes:"},
+      {index:10,kind:"text",text:"Needs: Transport US$1, school supplies US$0.50. Total US$1.50. Wants: Airtime US$0.50, snacks US$0.50. Total US$1. Savings: US$0.50 a week into my savings."},
       {index:22,kind:"text",text:"Part B: The Progress Reflection"},
       {index:43,kind:"text",text:"Your Next Step: What is ONE thing you will carry forward from this money-and-resources cycle into the habit work ahead — not a fact, but a capacity? A way of seeing? A habit of tracking? A question you are still asking? Name it. Then name one way you will use it."},
       {index:45,kind:"text",text:"How I will use it in the habit work ahead: _________________________________"},
@@ -527,6 +677,7 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
   "g8-t4-l63-062": {
     title: "REVIEW — MY HABITS",
     blocks: [
+      {index:18,kind:"text",text:"Small steps compound into bigger results — US$0.50 a day becomes US$182.50 over 365 days"},
       {index:2,kind:"text",text:"Recall key learning from your habit work."},\n      {index:10,kind:"text",text:"The mukando members again — showing the power of routine and accountability"},
       {index:7,kind:"text",text:"📘 Where We Went with Habits"},
       {index:8,kind:"text",text:"During the habit cycle, you asked: What small things, done regularly, change everything?"},
