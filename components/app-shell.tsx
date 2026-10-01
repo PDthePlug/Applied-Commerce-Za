@@ -4,13 +4,14 @@ import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { Archive, BarChart3, BookOpen, Home, Menu, UserRound, X } from "lucide-react";
 import { Brand } from "./brand";
+import { zimbabweEdition } from "@/lib/zimbabwe";
 
 const nav=[
   {href:"/",label:"Home",detail:"Your Applied Commerce starting point",icon:Home},
-  {href:"/learn",label:"Learn",detail:"Grades, terms and lessons",icon:BookOpen},
+  {href:"/learn",label:"Learn",detail:"Stages, learning cycles and lessons",icon:BookOpen},
   {href:"/portfolio",label:"Portfolio",detail:"Evidence captured from your work",icon:Archive},
   {href:"/progress",label:"Progress",detail:"See what you have completed",icon:BarChart3},
-  {href:"/profile",label:"Profile",detail:"Your learner record and current grade",icon:UserRound},
+  {href:"/profile",label:"Profile",detail:"Your learner record and current stage",icon:UserRound},
 ];
 
 export function AppShell({children}:{children:React.ReactNode}) {
@@ -64,7 +65,7 @@ export function AppShell({children}:{children:React.ReactNode}) {
       />
       {institutional
         ? <div className="topbar-note institutional-topbar-note"><Link href="/">Learner platform</Link><span>For institutions</span></div>
-        : <div className="topbar-note"><span>Grades 8–12</span><Link className="topbar-institution-link" href="/institutions">For institutions</Link></div>}
+        : <div className="topbar-note"><span>{zimbabweEdition.editionLabel} · {zimbabweEdition.schoolSpan}</span><Link className="topbar-institution-link" href="/institutions">For institutions</Link></div>}
     </header>}
     <main>{children}</main>
 
