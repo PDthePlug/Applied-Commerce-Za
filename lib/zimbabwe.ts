@@ -64,6 +64,31 @@ export type ZimbabweFormPlan = {
   sourceLessonCount: number;
 };
 
+export type ZimbabweTargetTerm = {
+  form: 1 | 2 | 3 | 4;
+  term: 1 | 2 | 3;
+  title: string;
+  source: string[];
+};
+
+export const zimbabweTargetTerms: ZimbabweTargetTerm[] = [
+  {form:1,term:1,title:"Identity, Beliefs & Money Foundations",source:["Grade 8 lessons 1–20"]},
+  {form:1,term:2,title:"Resources, Value, Budgeting & Habits",source:["Grade 8 lessons 21–50"]},
+  {form:1,term:3,title:"Habit Strength, Agency & First Capstone",source:["Grade 8 lessons 51–80"]},
+
+  {form:2,term:1,title:"Work, Value & How Money Moves",source:["Grade 9 lessons 1–25"]},
+  {form:2,term:2,title:"Enterprise Capability, Habits & Execution",source:["Grade 9 lessons 26–50"]},
+  {form:2,term:3,title:"Community Enterprise & Portfolio",source:["Grade 9 lessons 51–75"]},
+
+  {form:3,term:1,title:"Income, Saving, Investing & Assets",source:["Grade 10 Terms 1–2"]},
+  {form:3,term:2,title:"Systems, Tax & Financial Independence",source:["Grade 10 Terms 3–4"]},
+  {form:3,term:3,title:"Leverage, Leadership & Responsibility",source:["Grade 11 Terms 1–2"]},
+
+  {form:4,term:1,title:"Advanced Wealth, Growth & Legacy",source:["Grade 11 Terms 3–4"]},
+  {form:4,term:2,title:"Adult Money, Contracts, Work & Career Launch",source:["Grade 12 Terms 1–2"]},
+  {form:4,term:3,title:"Risk, Protection, Integration & Life Launch",source:["Grade 12 Terms 3–4"]},
+];
+
 export const zimbabweOLevelPlan: ZimbabweFormPlan[] = [
   {
     form: 1,
