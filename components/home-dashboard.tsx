@@ -1,27 +1,30 @@
 "use client";
+
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { ArrowRight, Archive, BookOpenCheck } from "lucide-react";
 import { curriculum } from "@/lib/curriculum";
-import type { CurriculumIndex } from "@/lib/types";
 import { useLearningStore } from "@/lib/learning-store";
-import { zimbabweStage } from "@/lib/zimbabwe";
+import { zimbabweCurriculum, zimbabwePlacementForSource } from "@/lib/zimbabwe-curriculum";
+import type { ZimbabweFormIndex } from "@/lib/zimbabwe-curriculum";
 
 type ActiveLesson = {
-  grade:number;
-  term:number;
   label:string;
   title:string;
+  form:1|2|3|4;
+  term:1|2|3;
 };
 
 export function HomeDashboard(){
-  const [index,setIndex]=useState<CurriculumIndex|null>(null);
+  const [formData,setFormData]=useState<ZimbabweFormIndex|null>(null);
   const [activeLesson,setActiveLesson]=useState<ActiveLesson|null>(null);
   const {state,hydrated}=useLearningStore();
 
+  const currentForm=state.profile?.form ?? state.activeForm ?? 1;
+
   useEffect(()=>{
-    curriculum.index().then(setIndex).catch(()=>setIndex(null));
-  },[]);
+    zimbabweCurriculum.form(currentForm).then(setFormData).catch(()=>setFormData(null));
+  },[currentForm]);
 
   useEffect(()=>{
     const last=state.lastOpened;
@@ -29,22 +32,26 @@ export function HomeDashboard(){
     let cancelled=false;
     curriculum.unit(last.grade,last.term,last.unitId)
       .then(unit=>{
+        const placement=zimbabwePlacementForSource(last.grade,last.term,unit.startLesson,unit.type);
         if(!cancelled) setActiveLesson({
-          grade:last.grade,
-          term:last.term,
           label:unit.label,
           title:unit.title,
+          form:placement.form,
+          term:placement.term,
         });
       })
       .catch(()=>{ if(!cancelled) setActiveLesson(null); });
     return ()=>{ cancelled=true; };
   },[state.lastOpened]);
 
-  const currentGrade=state.profile?.grade ?? state.activeGrade ?? 8;
-  const gradeMeta=index?.grades.find(item=>item.grade===currentGrade);
-  const stage=zimbabweStage(currentGrade);
-  const completed=Object.keys(state.completed).filter(id=>id.startsWith(`g${currentGrade}-`)).length;
-  const progress=gradeMeta?.unitCount?Math.round(completed/gradeMeta.unitCount*100):0;
+  const formLessonIds=new Set(
+    formData?.terms
+      .flatMap(term=>term.units)
+      .filter(unit=>unit.type==="lesson")
+      .map(unit=>unit.id) ?? []
+  );
+  const completed=Object.keys(state.completed).filter(id=>formLessonIds.has(id)).length;
+  const progress=formData?.unitCount?Math.round(completed/formData.unitCount*100):0;
   const captured=Object.values(state.promptResponses).filter(value=>value.trim()).length;
   const displayName=state.profile?.displayName?.trim();
   const firstName=displayName?.split(/\s+/)[0];
@@ -52,7 +59,7 @@ export function HomeDashboard(){
   const lesson=state.lastOpened?activeLesson:null;
   const continueHref=state.lastOpened
     ? `/learn/${state.lastOpened.grade}/term/${state.lastOpened.term}/${state.lastOpened.unitId}`
-    : `/learn/${currentGrade}`;
+    : `/learn/form/${currentForm}`;
 
   const greeting=state.lastOpened
     ? `Good to see you${firstName?`, ${firstName}`:""}.`
@@ -63,7 +70,7 @@ export function HomeDashboard(){
   return <div className="page home-page bis-home">
     <section className="home-today-hero">
       <div className="home-welcome-copy">
-        <p className="eyebrow">{state.lastOpened?"Today · Applied Commerce":"Applied Commerce · Your learning starts here"}</p>
+        <p className="eyebrow">{state.lastOpened?"Today · Applied Commerce Zimbabwe":"Applied Commerce Zimbabwe · Your learning starts here"}</p>
         <h1>{greeting}</h1>
         <p className="home-principle">Commerce is not something you memorise. It is something you learn to use.</p>
         <p className="home-lede">
@@ -73,26 +80,26 @@ export function HomeDashboard(){
         </p>
       </div>
 
-      <aside className="home-today-status" aria-label="Current grade progress">
-        <span>{stage.stage} · {stage.schoolPlacement}</span>
+      <aside className="home-today-status" aria-label="Current Form progress">
+        <span>Form {currentForm}{currentForm===4?" · Launch Year":""}</span>
         <strong>{hydrated?`${progress}% complete`:"Loading progress"}</strong>
         <div className="home-progress-track" aria-hidden="true"><i style={{width:`${progress}%`}}/></div>
-        <small>{hydrated?`${completed} of ${gradeMeta?.unitCount ?? 0} lessons complete`:"Preparing your learning record"}</small>
+        <small>{hydrated?`${completed} of ${formData?.unitCount ?? 0} lessons complete`:"Preparing your learning record"}</small>
       </aside>
     </section>
 
     <section className="home-dashboard-grid" aria-label="Your learning today">
       <article className="home-dashboard-card home-continue-card">
         <p className="eyebrow">{state.lastOpened?"Continue your learning":"Start your learning"}</p>
-        <h2>{lesson?lesson.title:stage.schoolPlacement}</h2>
+        <h2>{lesson?lesson.title:`Form ${currentForm} · ${formData?.title ?? "Applied Commerce"}`}</h2>
         <p>
           {lesson
-            ? `${zimbabweStage(lesson.grade).schoolPlacement} · Learning cycle ${lesson.term} · ${lesson.label}. Pick up exactly where you left off.`
-            : `Your ${stage.schoolPlacement} Applied Commerce journey is ready.`}
+            ? `Form ${lesson.form} · Term ${lesson.term} · ${lesson.label}. Pick up exactly where you left off.`
+            : `Your Form ${currentForm} Applied Commerce journey is ready.`}
         </p>
         <small><BookOpenCheck/> {captured} responses captured so far</small>
         <Link className="home-primary-action" href={continueHref}>
-          {state.lastOpened?"Continue learning":`Start ${stage.schoolPlacement}`} <ArrowRight/>
+          {state.lastOpened?"Continue learning":`Start Form ${currentForm}`} <ArrowRight/>
         </Link>
       </article>
 
