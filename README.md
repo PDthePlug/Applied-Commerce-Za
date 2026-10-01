@@ -2,88 +2,76 @@
 
 A Zimbabwe-market adaptation of the Applied Commerce® digital learning platform.
 
-This repository was created from the South African `PDthePlug/Applied-Commerce-` baseline. The original repository remains untouched. The Zimbabwe edition preserves the product architecture that already works — focused reading, visible progression, learner evidence, portfolio capture, strong mobile ergonomics and institutional reporting — while localising the school model, economic context and commercial proposition for Zimbabwe.
+This repository was created from the South African `PDthePlug/Applied-Commerce-` baseline. The original repository remains untouched.
 
-## Current adaptation status
+## Product scope
 
-The source intellectual property is currently five authored learner books: Grades 8, 9, 10, 11 and 12, each organised into four source terms.
+The Zimbabwe core programme is now being designed for the **four-year O-Level pathway only: Forms 1–4**.
 
-Zimbabwean secondary schooling is structured differently: Forms 1–4 at lower secondary, Forms 5–6 at upper secondary, and a three-term school calendar. **This repository does not silently rename five source books into six Forms.**
+Forms 5–6 / A-Level are intentionally out of scope. The five authored South African source years are being re-sequenced into four Zimbabwe years and three terms per year, with **Form 4 as the Launch Year**.
 
-The platform therefore separates:
+## Source correction
 
-- the **authored source stage** used internally by the runtime;
-- the **Zimbabwe school-placement layer** shown to schools and learners;
-- the **editorial restructuring work** required before a full Forms 1–6 curriculum edition is treated as complete.
+The source repository was updated after this Zimbabwe fork was created. Its authoritative correction for **Grade 9 Term 2 lessons 23–34** has now been ported into this repository.
 
-Current placement model:
+The corrected Grade 9 source contains:
 
-| Authored source | Zimbabwe placement |
+- 75 lessons for the year;
+- 18 lessons in source Term 2 rather than 6;
+- the restored lesson-number sequence 23–34;
+- runtime patch loading and regression tests that protect the restored content.
+
+## Four-year source allocation
+
+| Zimbabwe year | Source material |
 | --- | --- |
-| Grade 8 source | Stage 1 · Form 1 |
-| Grade 9 source | Stage 2 · Form 2 |
-| Grade 10 source | Stage 3 · Form 3 |
-| Grade 11 source | Stage 4 · Forms 4–5 bridge |
-| Grade 12 source | Stage 5 · Form 6 |
+| Form 1 | Grade 8 |
+| Form 2 | Corrected Grade 9 |
+| Form 3 | Grade 10 + Grade 11 Terms 1–2 |
+| Form 4 | Grade 11 Terms 3–4 + Grade 12 |
 
-The Forms 4–5 bridge is deliberately explicit. It marks the material that must be split and re-sequenced editorially rather than pretending the systems are identical.
+See `docs/ZIMBABWE-OLEVEL-ARCHITECTURE.md` for the 12-term delivery model.
 
 ## Zimbabwe edition principles
 
-The adaptation is being built around the practical ambitions of Zimbabwe's Heritage-Based Curriculum 2024–2030: problem solving, critical thinking, communication, teamwork, leadership, research, innovation, entrepreneurial skills, business and financial literacy, self-management, planning and organising, and learning through real projects.
+The adaptation preserves the Myah Life Design Framework™, learner evidence model, projects, reflection, recurring narrative and developmental progression while localising the economic and institutional context.
 
-This is an **alignment proposition**, not a claim of Ministry approval, prescribed-textbook status or ZIMSEC endorsement.
+The working alignment lens is Zimbabwe's Heritage-Based Curriculum 2024–2030. This is an **alignment proposition**, not a claim of Ministry approval, ZIMSEC endorsement or prescribed-textbook status.
 
 ## Localisation rules
 
-The Zimbabwe edition must preserve the Myah Life Design Framework™, the authored learning progression, behavioural experiments, portfolio evidence and core pedagogical intent while localising the surrounding economic world.
+The Zimbabwe edition must localise meaning, not simply replace words.
 
 Examples include:
 
-- DBE framing → Zimbabwe HBC competency framing;
-- South African school language → Forms, O Level, A Level and Zimbabwean transition language where contextually correct;
-- rand-only examples → Zimbabwe's current multi-currency reality, with ZiG and USD used deliberately rather than mechanically;
-- SARS → ZIMRA where the lesson genuinely concerns Zimbabwean tax administration;
-- NSFAS → verified Zimbabwean tertiary funding routes rather than a fabricated direct equivalent;
-- stokvel → mukando / savings club where that is the culturally correct example;
-- spaza/taxi-rank/community examples → Zimbabwean equivalents such as tuckshops, markets, kombis and locally recognisable economic settings where the story requires localisation;
-- South African place names → Zimbabwean settings only when the narrative can be changed without damaging continuity.
+- DBE framing → Zimbabwe HBC / Ministry context where relevant;
+- Grade 8–12 navigation → Forms 1–4 delivery structure;
+- four source terms → three Zimbabwe delivery terms per year;
+- rand-only examples → credible Zimbabwe multi-currency examples;
+- SARS → ZIMRA only where the function is genuinely equivalent;
+- NSFAS → verified Zimbabwean tertiary-funding routes, not a fabricated direct equivalent;
+- stokvel → mukando / savings-club contexts where appropriate;
+- spaza / taxi-rank scenes → credible Zimbabwean trading and transport settings;
+- South African school-leaving language → Zimbabwe O-Level and post-O-Level transition language.
 
-See `docs/ZIMBABWE-LOCALISATION.md` for the working editorial standard.
+See `docs/ZIMBABWE-LOCALISATION.md` for the full editorial standard.
 
-## Platform milestone
+## Runtime status
 
-The current production-shaped platform includes:
+The platform still stores source content internally using the original Grade 8–12 IDs. This preserves traceability and learner evidence while the Zimbabwe delivery layer is being built.
 
-- five authored learning stages mapped to a Zimbabwe school-placement layer;
-- focused lesson reader with previous/next navigation;
-- activities, reflections, checkpoints, stories, equations and portfolio cues;
-- learner notes and responses;
-- completion tracking and portfolio evidence;
-- responsive learner shell;
-- institutional offer and school-pilot positioning;
-- learner, facilitator, programme-manager and sponsor demo perspectives.
+The final Zimbabwe learner navigation will expose only:
 
-## Curriculum build
-
-The runtime curriculum is generated from source DOCX files:
-
-```bash
-python scripts/compile_curriculum.py /path/to/books public/curriculum
-```
-
-The original source filenames remain supported while editorially localised Zimbabwe manuscripts are developed.
+- Form 1;
+- Form 2;
+- Form 3;
+- Form 4 · Launch Year.
 
 ## Development
 
 ```bash
 npm install
 npm run dev
-```
-
-Checks:
-
-```bash
 npm test
 npm run typecheck
 npm run lint
@@ -92,4 +80,4 @@ npm run build
 
 ## Source-preservation rule
 
-Do not manufacture lesson numbering, silently remove authored tension, or bulk-replace national terms without checking meaning. Zimbabwe localisation is an editorial adaptation, not a string-replacement exercise.
+Do not manufacture lesson numbering, silently remove authored tension, or bulk-replace national terms without checking meaning. Zimbabwe localisation is an editorial restructuring, not a string-replacement exercise.
