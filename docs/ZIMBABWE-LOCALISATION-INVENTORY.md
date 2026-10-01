@@ -27,7 +27,7 @@
 
 ### P0 — Structural
 - Re-sequence four source terms into Zimbabwe's three-term school rhythm.
-- Complete the Form 4 / Form 5 split instead of leaving the temporary bridge.
+- Preserve the approved Form 1–4 O-Level allocation and remove any remaining A-Level assumptions.
 - Map each unit to its intended HBC competency / project outcome.
 
 ### P1 — Learner-critical factual context
