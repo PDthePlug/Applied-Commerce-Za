@@ -46,7 +46,7 @@ export function zimbabwePlacementForSource(
 ):ZimbabwePlacement {
   if(sourceGrade===8){
     const term=startLesson!=null
-      ? (startLesson<=20?1:startLesson<=50?2:3)
+      ? (startLesson<=26?1:startLesson<=53?2:3)
       : (sourceTerm<=1?1:sourceTerm===2?2:3);
     return {form:1,term:asTerm(term)};
   }
