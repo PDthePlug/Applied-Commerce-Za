@@ -1,0 +1,146 @@
+import { curriculum } from "./curriculum";
+import type { UnitSummary } from "./types";
+import { zimbabweOLevelPlan, zimbabweTargetTerms } from "./zimbabwe";
+
+export type ZimbabwePlacement = {
+  form: 1 | 2 | 3 | 4;
+  term: 1 | 2 | 3;
+};
+
+export type ZimbabweUnitRef = UnitSummary & {
+  sourceGrade: number;
+  sourceTerm: number;
+  href: string;
+};
+
+export type ZimbabweDeliveryTerm = {
+  term: 1 | 2 | 3;
+  title: string;
+  units: ZimbabweUnitRef[];
+  assessmentCount: number;
+};
+
+export type ZimbabweFormIndex = {
+  form: 1 | 2 | 3 | 4;
+  title: string;
+  purpose: string;
+  unitCount: number;
+  terms: ZimbabweDeliveryTerm[];
+};
+
+function asForm(value:number):1|2|3|4 {
+  if(value===1||value===2||value===3||value===4) return value;
+  throw new Error(`Unsupported Zimbabwe form: ${value}`);
+}
+
+function asTerm(value:number):1|2|3 {
+  if(value===1||value===2||value===3) return value;
+  throw new Error(`Unsupported Zimbabwe term: ${value}`);
+}
+
+export function zimbabwePlacementForSource(
+  sourceGrade:number,
+  sourceTerm:number,
+  startLesson?:number,
+  type:"lesson"|"assessment"="lesson",
+):ZimbabwePlacement {
+  if(sourceGrade===8){
+    const term=startLesson!=null
+      ? (startLesson<=20?1:startLesson<=50?2:3)
+      : (sourceTerm<=1?1:sourceTerm===2?2:3);
+    return {form:1,term:asTerm(term)};
+  }
+
+  if(sourceGrade===9){
+    let term:number;
+    if(type==="assessment"){
+      term=sourceTerm===1?1:sourceTerm===2?2:3;
+    }else{
+      term=startLesson!=null
+        ? (startLesson<=25?1:startLesson<=50?2:3)
+        : (sourceTerm===1?1:sourceTerm===2?2:3);
+    }
+    return {form:2,term:asTerm(term)};
+  }
+
+  if(sourceGrade===10){
+    return {form:3,term:sourceTerm<=2?1:2};
+  }
+
+  if(sourceGrade===11){
+    return sourceTerm<=2
+      ? {form:3,term:3}
+      : {form:4,term:1};
+  }
+
+  if(sourceGrade===12){
+    return {form:4,term:sourceTerm<=2?2:3};
+  }
+
+  throw new Error(`Source Grade ${sourceGrade} is outside the Zimbabwe O-Level source map.`);
+}
+
+function sourceGradesForForm(form:1|2|3|4){
+  if(form===1) return [8];
+  if(form===2) return [9];
+  if(form===3) return [10,11];
+  return [11,12];
+}
+
+export const zimbabweCurriculum = {
+  form: async(formValue:number):Promise<ZimbabweFormIndex>=>{
+    const form=asForm(formValue);
+    const plan=zimbabweOLevelPlan.find(item=>item.form===form);
+    if(!plan) throw new Error(`Form ${form} is not configured.`);
+
+    const sourceGrades=sourceGradesForForm(form);
+    const grades=await Promise.all(sourceGrades.map(grade=>curriculum.grade(grade)));
+    const terms:[ZimbabweDeliveryTerm,ZimbabweDeliveryTerm,ZimbabweDeliveryTerm]=[1,2,3].map(termValue=>{
+      const term=asTerm(termValue);
+      const architecture=zimbabweTargetTerms.find(item=>item.form===form&&item.term===term);
+      return {
+        term,
+        title:architecture?.title ?? `Term ${term}`,
+        units:[],
+        assessmentCount:0,
+      };
+    }) as [ZimbabweDeliveryTerm,ZimbabweDeliveryTerm,ZimbabweDeliveryTerm];
+
+    for(const grade of grades){
+      for(const sourceTerm of grade.terms){
+        for(const unit of sourceTerm.units){
+          const placement=zimbabwePlacementForSource(grade.grade,sourceTerm.term,unit.startLesson,unit.type);
+          if(placement.form!==form) continue;
+          terms[placement.term-1].units.push({
+            ...unit,
+            sourceGrade:grade.grade,
+            sourceTerm:sourceTerm.term,
+            href:`/learn/${grade.grade}/term/${sourceTerm.term}/${unit.id}`,
+          });
+        }
+
+        for(const assessment of sourceTerm.assessments){
+          const placement=zimbabwePlacementForSource(grade.grade,sourceTerm.term,assessment.startLesson,assessment.type);
+          if(placement.form!==form) continue;
+          terms[placement.term-1].assessmentCount+=1;
+          terms[placement.term-1].units.push({
+            ...assessment,
+            sourceGrade:grade.grade,
+            sourceTerm:sourceTerm.term,
+            href:`/learn/${grade.grade}/term/${sourceTerm.term}/${assessment.id}`,
+          });
+        }
+      }
+    }
+
+    return {
+      form,
+      title:plan.title,
+      purpose:plan.purpose,
+      unitCount:terms.reduce((sum,term)=>sum+term.units.filter(unit=>unit.type==="lesson").length,0),
+      terms,
+    };
+  },
+
+  allForms: async()=>Promise.all([1,2,3,4].map(form=>zimbabweCurriculum.form(form))),
+};
