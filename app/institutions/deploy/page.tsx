@@ -3,17 +3,18 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight, Check, School, Users } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Deploy Applied Commerce",
-  description: "Institutional deployment options for the Applied Commerce Grades 8–12 learning journey.",
+  title: "Deploy Applied Commerce Zimbabwe",
+  description: "Institutional deployment options for Applied Commerce in Zimbabwean secondary schools.",
 };
 
 const included = [
-  "Grades 8–12 Applied Commerce learning journey",
+  "Applied Commerce Zimbabwe secondary-school pathway",
+  "Heritage-Based Curriculum competency mapping",
   "Guided digital learner experience",
   "Activities, reflection, projects and assessments",
   "Automatic portfolio evidence capture",
   "Learner progress and completion records",
-  "Facilitator and institutional visibility",
+  "Teacher and institutional visibility",
 ];
 
 export default function DeployAppliedCommercePage() {
@@ -21,11 +22,11 @@ export default function DeployAppliedCommercePage() {
     <Link className="institutional-back" href="/institutions"><ArrowLeft/> For institutions</Link>
 
     <section className="institutional-detail-hero">
-      <p className="eyebrow">Offer 01 · Deploy Applied Commerce®</p>
-      <h1>Economic agency and adult readiness, from Grade 8 to Grade 12.</h1>
+      <p className="eyebrow">Offer 01 · Applied Commerce Zimbabwe</p>
+      <h1>Financial capability, enterprise and adult readiness for Zimbabwean secondary learners.</h1>
       <p>
-        Applied Commerce is a structured five-grade learning journey designed to help learners understand money, work,
-        value, enterprise and opportunity by using what they learn in the real world.
+        Applied Commerce is a structured learning journey that helps learners understand money, work, value, enterprise and
+        opportunity by applying what they learn to real decisions, projects and economic life around them.
       </p>
       <div className="institutional-actions">
         <Link className="institutional-primary" href="/institutions/demo">View institutional demo <ArrowRight/></Link>
@@ -35,37 +36,38 @@ export default function DeployAppliedCommercePage() {
 
     <section className="institutional-detail-grid">
       <article>
-        <p className="eyebrow">What institutions receive</p>
+        <p className="eyebrow">What schools receive</p>
         <h2>More than access to content.</h2>
         <div className="institutional-check-list">
           {included.map(item=><span key={item}><Check/> {item}</span>)}
         </div>
       </article>
       <aside className="institutional-grade-journey">
-        <span><strong>8</strong><small>Money, beliefs & observation</small></span>
-        <span><strong>9</strong><small>Work, value & enterprise</small></span>
-        <span><strong>10</strong><small>Systems & value creation</small></span>
-        <span><strong>11</strong><small>Leadership, leverage & wealth</small></span>
-        <span><strong>12</strong><small>Launch & transition</small></span>
+        <span><strong>F1</strong><small>Money, beliefs & observation</small></span>
+        <span><strong>F2</strong><small>Work, value & enterprise</small></span>
+        <span><strong>F3</strong><small>Systems & value creation</small></span>
+        <span><strong>F4–5</strong><small>Leadership, leverage & wealth bridge</small></span>
+        <span><strong>F6</strong><small>Launch & transition</small></span>
       </aside>
     </section>
 
     <section className="institutional-pricing-section">
       <div className="institutional-section-heading">
-        <p className="eyebrow">Launch commercial model</p>
-        <h2>Start with a defined pilot, then scale.</h2>
-        <p>These are current commercial anchors for early institutional conversations; larger deployments are scoped separately.</p>
+        <p className="eyebrow">Indicative Zimbabwe launch model</p>
+        <h2>Start with one defined pilot, prove the learning, then scale.</h2>
+        <p>USD figures are reference prices. Where applicable, schools can be quoted an equivalent ZiG amount at the prevailing official rate.</p>
       </div>
       <div className="institutional-pricing-grid">
-        <article><School/><span>Pilot</span><strong>R45,000</strong><p>Single-grade, defined-cohort implementation.</p></article>
-        <article><Users/><span>Institutional licence</span><strong>R150,000 / year</strong><p>Grades 8–12 for an agreed institutional scope.</p></article>
-        <article><Users/><span>Sponsored deployment</span><strong>R325 / learner</strong><p>Useful for funded school or community access.</p></article>
+        <article><School/><span>One-term school pilot</span><strong>US$2,500</strong><p>One defined school cohort with onboarding, delivery support and outcome reporting.</p></article>
+        <article><Users/><span>School licence</span><strong>US$8,500 / year</strong><p>Whole-school access within an agreed learner and implementation scope.</p></article>
+        <article><Users/><span>Sponsored deployment</span><strong>US$18 / learner</strong><p>For funded school networks, foundations and youth programmes.</p></article>
       </div>
     </section>
 
     <section className="institutional-final-cta compact-cta">
-      <p className="eyebrow">Proof before procurement</p>
-      <h2>See how the learner journey connects to institutional evidence.</h2>
+      <p className="eyebrow">Pilot principle</p>
+      <h2>Proof before a national-scale commitment.</h2>
+      <p>Start with one school or cohort, measure participation and learner evidence, then use the results to decide what should scale.</p>
       <Link className="institutional-primary" href="/institutions/demo">Open the demo <ArrowRight/></Link>
     </section>
   </div>;
