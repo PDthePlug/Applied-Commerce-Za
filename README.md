@@ -8,7 +8,7 @@ This repository was created from the South African `PDthePlug/Applied-Commerce-`
 
 The Zimbabwe core programme is now being designed for the **four-year O-Level pathway only: Forms 1–4**.
 
-Forms 5–6 / A-Level are intentionally out of scope. The five authored South African source years are being re-sequenced into four Zimbabwe years and three terms per year, with **Form 4 as the Launch Year**.
+Forms 5–6 / A-Level are intentionally out of scope. The five authored South African source years are being re-sequenced into four Zimbabwe years and three terms per year, with **Form 4 as the Launch Year**. The runtime currently preserves **382 source lesson units** for traceability; these are not assumed to be 382 classroom periods, because related source lessons can be merged during the Zimbabwe manuscript pass.
 
 ## Source correction
 
