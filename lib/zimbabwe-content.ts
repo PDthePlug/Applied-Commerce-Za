@@ -2,7 +2,8 @@ import type { ContentBlock, UnitContent, UnitSummary } from "./types";
 
 export type ZimbabweBlockOverride =
   | {index:number; kind:"text"; text:string}
-  | {index:number; kind:"table"; rows:string[][]};
+  | {index:number; kind:"table"; rows:string[][]}
+  | {index:number; kind:"remove"};
 
 export type ZimbabweUnitOverride = {
   title?: string;
@@ -22,17 +23,18 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {};
 function applyBlockOverrides(blocks:ContentBlock[],overrides:ZimbabweBlockOverride[]=[]):ContentBlock[]{
   if(!overrides.length) return blocks;
   const byIndex=new Map(overrides.map(item=>[item.index,item]));
-  return blocks.map((block,index)=>{
+  return blocks.flatMap((block,index)=>{
     const override=byIndex.get(index);
-    if(!override) return block;
+    if(!override) return [block];
+    if(override.kind==="remove") return [];
 
     if(override.kind==="text"){
       if(block.kind!=="text") throw new Error(`Zimbabwe override expects text block at index ${index}.`);
-      return {...block,text:override.text};
+      return [{...block,text:override.text}];
     }
 
     if(block.kind!=="table") throw new Error(`Zimbabwe override expects table block at index ${index}.`);
-    return {...block,rows:override.rows};
+    return [{...block,rows:override.rows}];
   });
 }
 
