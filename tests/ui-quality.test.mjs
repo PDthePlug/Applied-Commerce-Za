@@ -116,3 +116,15 @@ test("Zimbabwe learner navigation exposes four Forms and three terms",()=>{
   assert.match(formMap,/Term \{term\.term\}/);
   assert.match(route,/\[1,2,3,4\]/);
 });
+
+
+test("Zimbabwe Form maps expose HBC competency and project evidence metadata",()=>{
+  const map=read("components/form-map.tsx");
+  const config=read("lib/zimbabwe.ts");
+  assert.match(map,/HBC competency focus/);
+  assert.match(map,/Project evidence:/);
+  assert.match(map,/source lessons/);
+  assert.match(config,/business-financial-literacy/);
+  assert.match(config,/communication-teamwork/);
+  assert.match(config,/planning-organising/);
+});
