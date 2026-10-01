@@ -3,8 +3,8 @@ import "./globals.css";
 import { AppShell } from "@/components/app-shell";
 
 export const metadata: Metadata = {
-  title: { default: "Applied Commerce", template: "%s · Applied Commerce" },
-  description: "Applied Commerce learning platform for Grades 8–12.",
+  title: { default: "Applied Commerce Zimbabwe", template: "%s · Applied Commerce Zimbabwe" },
+  description: "Applied Commerce Zimbabwe — practical financial capability, enterprise and life-readiness learning for secondary school."
 };
 
 export default function RootLayout({children}:{children:React.ReactNode}) {
