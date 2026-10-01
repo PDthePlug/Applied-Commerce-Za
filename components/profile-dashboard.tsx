@@ -4,12 +4,12 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { ArrowRight, Archive, BookOpenCheck, Database, NotebookPen } from "lucide-react";
 import { useLearningStore } from "@/lib/learning-store";
-import { zimbabweCurriculum } from "@/lib/zimbabwe-curriculum";
+import { defaultZimbabweFormForSourceGrade, zimbabweCurriculum } from "@/lib/zimbabwe-curriculum";
 import type { ZimbabweFormIndex } from "@/lib/zimbabwe-curriculum";
 
 export function ProfileDashboard(){
   const {state,setProfile}=useLearningStore();
-  const form=(state.profile?.form ?? state.activeForm ?? 1) as 1|2|3|4;
+  const form=(state.profile?.form ?? state.activeForm ?? defaultZimbabweFormForSourceGrade(state.activeGrade)) as 1|2|3|4;
   const [formData,setFormData]=useState<ZimbabweFormIndex|null>(null);
 
   useEffect(()=>{
