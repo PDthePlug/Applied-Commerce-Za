@@ -6,9 +6,11 @@ import { curriculum } from "@/lib/curriculum";
 import type { TermIndex, UnitContent, UnitSummary } from "@/lib/types";
 import { ContentBlocks } from "./content-blocks";
 import { useLearningStore } from "@/lib/learning-store";
+import { zimbabweStage } from "@/lib/zimbabwe";
 
 export function LessonReader({grade,term,unitId}:{grade:number;term:number;unitId:string}){
  const [termData,setTermData]=useState<TermIndex|null>(null); const [unit,setUnit]=useState<UnitContent|null>(null); const [menu,setMenu]=useState(false);
+ const stage=zimbabweStage(grade);
  const {state,completedIds,markComplete,saveResponse,savePromptResponse,setLastOpened}=useLearningStore();
  useEffect(()=>{Promise.all([curriculum.term(grade,term),curriculum.unit(grade,term,unitId)]).then(([t,u])=>{setTermData(t);setUnit(u);setLastOpened(grade,term,unitId);window.scrollTo(0,0);});},[grade,term,unitId,setLastOpened]);
  const sequence=useMemo<UnitSummary[]>(()=>termData?[...termData.units,...termData.assessments]:[],[termData]);
@@ -18,19 +20,19 @@ export function LessonReader({grade,term,unitId}:{grade:number;term:number;unitI
  const unitHref=(u:UnitSummary)=>`/learn/${grade}/term/${term}/${u.id}`;
  return <div className="reader-shell">
   <header className="reader-topbar">
-   <Link href={`/learn/${grade}`} className="reader-brand"><span>AC</span><div><strong>Grade {grade}</strong><small>Term {term}</small></div></Link>
+   <Link href={`/learn/${grade}`} className="reader-brand"><span>AC</span><div><strong>{stage.schoolPlacement}</strong><small>Learning cycle {term}</small></div></Link>
    <div className="reader-progress"><span>{unit.label}</span><div className="progress-track"><i style={{width:`${pct}%`}}/></div><strong>{pos+1}/{sequence.length}</strong></div>
    <button className="reader-menu-button" onClick={()=>setMenu(true)} aria-label="Open term map"><Menu/></button>
   </header>
   <aside className={`reader-rail ${menu?"open":""}`}>
-   <div className="rail-head"><div><p>Grade {grade}</p><strong>Term {term}</strong></div><button onClick={()=>setMenu(false)} aria-label="Close"><X/></button></div>
-   <Link className="rail-back" href={`/learn/${grade}`}><ArrowLeft/> Grade map</Link>
+   <div className="rail-head"><div><p>{stage.stage}</p><strong>{stage.schoolPlacement} · Cycle {term}</strong></div><button onClick={()=>setMenu(false)} aria-label="Close"><X/></button></div>
+   <Link className="rail-back" href={`/learn/${grade}`}><ArrowLeft/> Stage map</Link>
    <nav>{sequence.map((u,i)=><Link onClick={()=>setMenu(false)} className={`${u.id===unitId?"current":""} ${completedIds.has(u.id)?"complete":""}`} href={unitHref(u)} key={u.id}><span>{completedIds.has(u.id)?<Check/>:i+1}</span><div><small>{u.label}</small><strong>{u.title}</strong></div></Link>)}</nav>
   </aside>
   {menu&&<button className="reader-scrim" onClick={()=>setMenu(false)} aria-label="Close menu"/>}
   <main className="reader-stage">
     <article className="lesson-document">
-      <header className="lesson-heading"><p className="eyebrow">Grade {grade} · Term {term} · {unit.label}</p><h1>{unit.title}</h1></header>
+      <header className="lesson-heading"><p className="eyebrow">{stage.schoolPlacement} · Learning cycle {term} · {unit.label}</p><h1>{unit.title}</h1></header>
       <ContentBlocks
         blocks={unit.blocks}
         unitId={unitId}
@@ -46,7 +48,7 @@ export function LessonReader({grade,term,unitId}:{grade:number;term:number;unitI
     </section>
     <footer className="reader-footer">
       {prev?<Link href={unitHref(prev)}><ArrowLeft/><span><small>Previous</small><strong>{prev.title}</strong></span></Link>:<span/>}
-      {next?<Link className="next" href={unitHref(next)}><span><small>Next</small><strong>{next.title}</strong></span><ArrowRight/></Link>:<Link className="next" href={`/learn/${grade}`}><span><small>Term complete</small><strong>Return to Grade {grade}</strong></span><ArrowRight/></Link>}
+      {next?<Link className="next" href={unitHref(next)}><span><small>Next</small><strong>{next.title}</strong></span><ArrowRight/></Link>:<Link className="next" href={`/learn/${grade}`}><span><small>Learning cycle complete</small><strong>Return to {stage.schoolPlacement}</strong></span><ArrowRight/></Link>}
     </footer>
   </main>
  </div>
