@@ -1,6 +1,7 @@
 import { curriculum } from "./curriculum";
 import type { UnitSummary } from "./types";
 import { zimbabweOLevelPlan, zimbabweTargetTerms } from "./zimbabwe";
+import type { HbcCompetencyId } from "./zimbabwe";
 
 export type ZimbabwePlacement = {
   form: 1 | 2 | 3 | 4;
@@ -18,6 +19,8 @@ export type ZimbabweDeliveryTerm = {
   title: string;
   units: ZimbabweUnitRef[];
   assessmentCount: number;
+  competencies: HbcCompetencyId[];
+  projectFocus: string;
 };
 
 export type ZimbabweFormIndex = {
@@ -109,6 +112,8 @@ export const zimbabweCurriculum = {
         title:architecture?.title ?? `Term ${term}`,
         units:[],
         assessmentCount:0,
+        competencies:architecture?.competencies ?? [],
+        projectFocus:architecture?.projectFocus ?? "",
       };
     };
     const terms:[ZimbabweDeliveryTerm,ZimbabweDeliveryTerm,ZimbabweDeliveryTerm]=[
