@@ -8,5 +8,5 @@ import { useLearningStore } from "@/lib/learning-store";
 export function LearnLibrary(){
  const [index,setIndex]=useState<CurriculumIndex|null>(null); const {state}=useLearningStore();
  useEffect(()=>{curriculum.index().then(setIndex)},[]);
- return <div className="page library-page"><section className="page-intro"><p className="eyebrow">Curriculum library</p><h1>Five grades. One learning journey.</h1><p>Select a grade to open its four-term map. Lesson numbering, projects and assessments follow the authored curriculum.</p></section><div className="grade-grid compact">{index?.grades.map(g=><GradeCard key={g.grade} grade={g} completed={Object.keys(state.completed).filter(id=>id.startsWith(`g${g.grade}-`)).length}/>)}</div></div>
+ return <div className="page library-page"><section className="page-intro"><p className="eyebrow">Zimbabwe secondary pathway</p><h1>Five stages. One journey through secondary school.</h1><p>Select a stage to open its learning map. The authored sequence is preserved while the Zimbabwe edition is mapped across Forms 1–6.</p></section><div className="grade-grid compact">{index?.grades.map(g=><GradeCard key={g.grade} grade={g} completed={Object.keys(state.completed).filter(id=>id.startsWith(`g${g.grade}-`)).length}/>)}</div></div>
 }
