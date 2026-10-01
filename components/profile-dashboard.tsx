@@ -6,6 +6,7 @@ import { ArrowRight, Archive, BookOpenCheck, Database, NotebookPen } from "lucid
 import { curriculum } from "@/lib/curriculum";
 import type { CurriculumIndex } from "@/lib/types";
 import { useLearningStore } from "@/lib/learning-store";
+import { zimbabweStage } from "@/lib/zimbabwe";
 
 export function ProfileDashboard(){
   const [index,setIndex]=useState<CurriculumIndex|null>(null);
@@ -14,6 +15,7 @@ export function ProfileDashboard(){
 
   const grade=state.profile?.grade ?? state.activeGrade ?? 8;
   const gradeMeta=index?.grades.find(item=>item.grade===grade);
+  const stage=zimbabweStage(grade);
   const completed=Object.keys(state.completed).filter(id=>id.startsWith(`g${grade}-`)).length;
   const responseCount=Object.values(state.promptResponses).filter(value=>value.trim()).length;
   const noteCount=Object.values(state.responses).filter(value=>value.trim()).length;
@@ -30,15 +32,15 @@ export function ProfileDashboard(){
       <div>
         <p className="eyebrow">Profile</p>
         <h1>{name}</h1>
-        <p>Your Applied Commerce learning record, current grade and evidence at a glance.</p>
+        <p>Your Applied Commerce Zimbabwe learning record, current school stage and evidence at a glance.</p>
       </div>
       <div className="profile-identity">
         <label>Name
           <input value={state.profile?.displayName ?? ""} onChange={event=>setProfile({displayName:event.target.value})} placeholder="Add your name"/>
         </label>
-        <label>Current grade
+        <label>Current stage
           <select value={grade} onChange={event=>setProfile({grade:Number(event.target.value)})}>
-            {gradeOptions.map(value=><option key={value} value={value}>Grade {value}</option>)}
+            {gradeOptions.map(value=>{ const optionStage=zimbabweStage(value); return <option key={value} value={value}>{optionStage.stage} · {optionStage.schoolPlacement}</option>; })}
           </select>
         </label>
       </div>
@@ -47,7 +49,7 @@ export function ProfileDashboard(){
     <section className="profile-grid">
       <article className="profile-card">
         <div className="profile-card-icon"><BookOpenCheck aria-hidden="true"/></div>
-        <div><p className="eyebrow">Learning progress</p><h2>Grade {grade}</h2></div>
+        <div><p className="eyebrow">Learning progress</p><h2>{stage.schoolPlacement}</h2></div>
         <strong className="metric">{pct}%</strong>
         <p>{completed} of {gradeMeta?.unitCount ?? 0} lessons complete.</p>
         <Link href={continueHref}>Continue learning <ArrowRight/></Link>
