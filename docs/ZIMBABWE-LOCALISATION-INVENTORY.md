@@ -12,8 +12,8 @@
 | Grade 8 → Form 1 working stage | 8 | 8 | 275 | 79 | 28 | 18 | 2 | 0 | 0 | 14 |
 | Grade 9 → Form 2 working stage | 1 | 2 | 198 | 16 | 20 | 27 | 0 | 0 | 0 | 14 |
 | Grade 10 → Form 3 working stage | 19 | 2 | 475 | 11 | 30 | 23 | 0 | 0 | 0 | 5 |
-| Grade 11 → Forms 4–5 bridge | 17 | 2 | 312 | 11 | 22 | 21 | 19 | 0 | 0 | 9 |
-| Grade 12 → Form 6 working stage | 9 | 2 | 118 | 0 | 8 | 5 | 43 | 25 | 2 | 9 |
+| Grade 11 → Form 3 / Form 4 split source | 17 | 2 | 312 | 11 | 22 | 21 | 19 | 0 | 0 | 9 |
+| Grade 12 → Form 4 Launch Year source | 9 | 2 | 118 | 0 | 8 | 5 | 43 | 25 | 2 | 9 |
 
 ### What the counts mean
 
@@ -66,5 +66,5 @@ A source book is **not** considered adapted merely because these counts reach ze
 1. **Form 1 / source Grade 8** — establish the Zimbabwe voice, money model and mukando/community-economy conventions.
 2. **Form 2 / source Grade 9** — enterprise and work contexts.
 3. **Form 3 / source Grade 10** — value creation and systems.
-4. **Forms 4–5 / source Grade 11** — perform the structural split while localising.
-5. **Form 6 / source Grade 12** — rebuild matric/NSFAS/SARS transitions around Zimbabwean school-leaving, tertiary and employment realities.
+4. **Form 3 / source Grade 11 Terms 1–2** — localise leverage and leadership as the advanced bridge into the final year.
+5. **Form 4 / source Grade 11 Terms 3–4 + Grade 12** — rebuild wealth, legacy, matric/NSFAS/SARS-era transitions around Zimbabwean O-Level school-leaving, tertiary, work and enterprise realities.
