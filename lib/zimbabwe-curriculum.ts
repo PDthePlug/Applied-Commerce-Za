@@ -102,8 +102,7 @@ export const zimbabweCurriculum = {
 
     const sourceGrades=sourceGradesForForm(form);
     const grades=await Promise.all(sourceGrades.map(grade=>curriculum.grade(grade)));
-    const terms:[ZimbabweDeliveryTerm,ZimbabweDeliveryTerm,ZimbabweDeliveryTerm]=[1,2,3].map(termValue=>{
-      const term=asTerm(termValue);
+    const makeTerm=(term:1|2|3):ZimbabweDeliveryTerm=>{
       const architecture=zimbabweTargetTerms.find(item=>item.form===form&&item.term===term);
       return {
         term,
@@ -111,7 +110,12 @@ export const zimbabweCurriculum = {
         units:[],
         assessmentCount:0,
       };
-    }) as [ZimbabweDeliveryTerm,ZimbabweDeliveryTerm,ZimbabweDeliveryTerm];
+    };
+    const terms:[ZimbabweDeliveryTerm,ZimbabweDeliveryTerm,ZimbabweDeliveryTerm]=[
+      makeTerm(1),
+      makeTerm(2),
+      makeTerm(3),
+    ];
 
     for(const grade of grades){
       for(const sourceTerm of grade.terms){
