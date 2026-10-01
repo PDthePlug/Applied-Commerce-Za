@@ -21,6 +21,7 @@ export type ZimbabweUnitOverride = {
 export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
   "g8-t1-l01-001": {
     blocks: [
+      {index:10,kind:"text",text:"She rubs her eyes and sees her mother at the kitchen table, counting a small pile of notes and coins. She pushes the money toward Myah."},
       {index:12,kind:"text",text:"Myah puts the coins in her pocket. She feels their weight all the way to the kombi rank. She does not ask where the money came from. She does not ask if there is enough. She does not ask what her mother gives up so she can get to school."},
     ],
   },
@@ -54,11 +55,13 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
   },
   "g8-t1-l06-006": {
     blocks: [
+      {index:17,kind:"text",text:"She saves a little whenever she can for application and school-related costs."},
       {index:61,kind:"text",text:"Observe one person in your community for a day or two — a family member, a neighbour, a vendor near a kombi rank or market. Are they more like Nosipho (clear direction, steady progress) or more like Sipho (flexible, drifting, open to whatever comes)?"},
     ],
   },
   "g8-t1-l10-010": {
     blocks: [
+      {index:10,kind:"text",text:"On the table: a tin. An old biscuit tin, painted once, now silver showing through. One by one, each woman places her agreed contribution in the tin. The amount follows the group’s rules for that cycle. The tin fills. The routine is familiar because they have been doing this for years."},
       {index:3,kind:"text",text:"Explain how mukando and community savings groups work."},
       {index:6,kind:"table",rows:[
         ["Term","Definition"],
@@ -91,17 +94,23 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
   },
   "g8-t1-l11-011": {
     blocks: [
+      {index:12,kind:"text",text:"She writes: I will save US$12 by the end of this term. US$1 a week. I will keep it somewhere safe where I can track it growing. This is not just about the money. This is about becoming someone who keeps promises to herself."},
       {index:10,kind:"text",text:"Myah sits at the kombi rank, her notebook open. She has been thinking about what she wants. Understanding money. Helping her mother. Noticing what others miss."},
     ],
   },
   "g8-t1-l12-012": {
     blocks: [
+      {index:27,kind:"text",text:"US$1 every week is better than US$10 once if your goal is to build a saving habit. This is the compound effect of behaviour: small, regular actions build bigger results."},
+      {index:37,kind:"text",text:"Set up your saving method this week. Start with an amount that is realistic for you — even a very small one. After one week, record:"},
       {index:10,kind:"text",text:"3. Method 3: The Mukando Way. Save with a trusted group whose rules and contribution schedule you understand. The group can help keep you accountable."},
       {index:30,kind:"text",text:"Here’s the tension: every system has a weakness. The jar at home is visible and simple — but it can be easy to dip into. A bank or formal savings account can be more secure — but may feel less immediate or require access you do not yet have. A mukando is community-powered — but depends on trust, clear rules and members contributing as agreed. The best system is not the one with the most features. It is the one whose risks you understand and can manage."},
     ],
   },
   "g8-t1-l13-013": {
     blocks: [
+      {index:4,kind:"text",text:"Trace where one amount of money in your life came from."},
+      {index:49,kind:"text",text:"Key idea: Money is not just a thing. It carries a story. Every note, coin or digital payment you have ever received has travelled through choices, work, exchange and value created by people you may never meet. Your money is a library of stories. Learn to read them."},
+      {index:65,kind:"text",text:"| Date | | | Lesson | Lesson 13 — Money Flow Tracing | | Experiment/Observation | I traced one amount received and one amount spent. I asked a seller where something came from. | | Result | | | Learning | | | Next Action | |"},
       {index:27,kind:"text",text:"Grandmother’s mukando → pays out → buys food"},
     ],
   },
@@ -115,16 +124,31 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
   },
   "g8-t1-l17-017": {
     blocks: [
+      {index:8,kind:"text",text:"Sipho is nine years old. His grandmother gives him US$2. His first pocket money."},
+      {index:12,kind:"text",text:"He spends the whole US$2 on sweets."},
+      {index:14,kind:"text",text:"The next day, his friend shows him a small toy car. It costs US$1.50. Sipho wants it."},
+      {index:16,kind:"text",text:"He asks his grandmother. She says: “You had US$2 yesterday. What happened to it?”"},
+      {index:37,kind:"text",text:"Think of ONE choice you regret. Not a life-changing one — a small one, like Sipho spending all his pocket money."},
+      {index:45,kind:"text",text:"Key idea: Every choice is a vote. A vote for the person you are becoming. Sipho spending all his pocket money on sweets was not only about US$2. It was a vote for “I am someone who chooses pleasure now over value later.”"},
+      {index:50,kind:"text",text:"Question 1: What choice did Sipho make with his US$2? What was the consequence? What did he learn?"},
+      {index:51,kind:"text",text:"Question 2: Sipho learned from his pocket-money mistake — but he also made other mistakes, and will make more. What is ONE recurring money mistake you make? What would it take to break the pattern — not just once, but permanently? What is the first step?"},
       {index:10,kind:"text",text:"Sipho takes the money. He walks to the neighbourhood shop."},
     ],
   },
   "g8-t1-l18-018": {
     blocks: [
+      {index:44,kind:"text",text:"If you cannot do the full routine, what is the smallest version you can still do? (Ten minutes of homework instead of an hour. Save a smaller amount instead of your full target. Read one page instead of one chapter.)"},
       {index:8,kind:"text",text:"Before Myah and her mother moved to the new town, they lived in a small flat in Harare."},
     ],
   },
   "g8-t2-l22-022": {
     blocks: [
+      {index:3,kind:"text",text:"Identify the original source of value behind money that changes hands."},
+      {index:9,kind:"text",text:"A woman buys bread for US$1.40. She hands over a US$2 note. Emmanuel gives her US$0.60 change. Myah watches the US$2 go into the till."},
+      {index:10,kind:"text",text:"Later, Emmanuel’s mother takes US$20 from the till and gives it to a supplier delivering cool drinks. The supplier puts the money away and leaves."},
+      {index:14,kind:"text",text:"“Yes. Money is like water. It flows. It rarely stays still. The same US$2 that bought bread this morning might be in someone else’s till by tonight, and paying a worker or buying school shoes later.”"},
+      {index:46,kind:"text",text:"Key idea: You now believe money flows from value. You are partly right. Every amount you receive traces back to someone, somewhere, who created something another person wanted or needed."},
+      {index:51,kind:"text",text:"Question 1: Trace the flow of the last US$2 — or another clearly identified amount — that you or your family received. How many hands might it have passed through before it reached you? Where did the original value come from?"},
       {index:7,kind:"text",text:"📘 Myah’s Question at the Tuckshop"},
       {index:8,kind:"text",text:"It is Saturday afternoon. Myah is at Emmanuel’s tuckshop, watching money move."},
       {index:12,kind:"text",text:"Emmanuel shrugs. “The delivery driver takes it to the wholesaler. The wholesaler pays the producer. The producer pays workers and suppliers. Those people spend it somewhere else. Maybe at another tuckshop. Maybe near the kombi rank. Maybe on airtime.”"},
@@ -133,6 +157,8 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
   },
   "g8-t2-l23-023": {
     blocks: [
+      {index:10,kind:"text",text:"Mr. Ndlovu is in the front yard, setting up buckets and sponges. His car-wash sign is hand-painted: “Ndlovu Car Wash — US$3 car, US$5 pickup.” He has been doing this every Saturday for six years."},
+      {index:40,kind:"text",text:"Key idea: The economy measures paid work in money. But money does not measure care. It does not measure love. It does not measure the grandmother who holds the family together without a salary. You are not your wage. You are your work. And your work is not only what you are paid for."},
       {index:12,kind:"text",text:"Their daughter, Palesa, is helping pack vetkoek into bags. Their son, age 12, is counting change for a tuckshop run. Even the youngest, age 8, is sweeping the yard."},
       {index:20,kind:"table",rows:[
         ["Type","Description","Examples"],
@@ -147,6 +173,18 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
   "g8-t2-l24-024": {
     title: "EMMANUEL’S TUCKSHOP — COSTS AND PROFIT",
     blocks: [
+      {index:14,kind:"text",text:"They buy a crate of cool drinks for US$12.00 (cost)."},
+      {index:15,kind:"text",text:"They sell each bottle for US$0.80."},
+      {index:16,kind:"text",text:"The crate has 24 bottles → US$19.20 income."},
+      {index:17,kind:"text",text:"Profit = US$19.20 – US$12.00 = US$7.20."},
+      {index:18,kind:"text",text:"“US$7.20 is not just extra money,” Emmanuel says. “It can help buy food, cover school costs, or buy more stock. Sometimes there is very little left.”"},
+      {index:27,kind:"text",text:"1. They buy 10 loaves of bread for US$0.80 each. How much is the total cost? US$ _______"},
+      {index:28,kind:"text",text:"2. They sell each loaf for US$1.00. If they sell all 10, what is the income? US$ _______"},
+      {index:43,kind:"text",text:"Assets (what they own): US$50.00 (stock, cash, fridge)"},
+      {index:44,kind:"text",text:"Owner’s Equity (what his mother put in): US$50.00"},
+      {index:45,kind:"text",text:"Liabilities (what they owe): US$0.00 (no debt)"},
+      {index:46,kind:"text",text:"The equation works: US$50.00 = US$50.00 + US$0.00"},
+      {index:56,kind:"text",text:"Question 1: Calculate: If Emmanuel’s shop buys 10 loaves at US$0.80 each and sells them at US$1.00 each, but 2 go stale, what is the profit or loss? Show your working."},
       {index:8,kind:"text",text:"Emmanuel is 15. He lives in Chitungwiza with his mother and two younger sisters. His mother runs a small tuckshop from their front room. It sells everyday items such as bread, milk, cool drinks, snacks and airtime. It is small — but it is theirs."},
       {index:9,kind:"text",text:"After school, Emmanuel helps. Myah visits on a Saturday, curious about how the shop actually works. She has been thinking about money flows, and a tuckshop is a useful place to see them in action."},
       {index:59,kind:"text",text:"Find a small business in your community — a tuckshop, market stall, vendor, car wash or another trader. Observe it for 10 minutes. Write down:"},
@@ -154,14 +192,82 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
   },
   "g8-t2-l26-026": {
     blocks: [
+      {index:12,kind:"text",text:"Myah thinks about her own income — the money from her mother, the occasional small payment from helping a neighbour. All active. All requiring someone’s effort. She writes: Is there a way to earn money that does not require trading time for it? Is that even possible for someone my age?"},
+      {index:36,kind:"text",text:"If you could start ONE tiny passive or delayed income stream — even something that earned a small amount each month — what would it be? Think: interest on savings? Renting out something you own with permission? Something else?"},
+      {index:42,kind:"text",text:"Your Next Step: What is one small step you could take, even now, to begin building a passive or delayed income stream? Think: saving money that earns interest, planting something that produces fruit to sell later, or creating something once that can be sold more than once. Name your seed."},
       {index:15,kind:"text",text:"Active income: Tuckshop sales (the family works for this). A parent’s part-time cleaning job."},
       {index:16,kind:"text",text:"Passive or delayed income: A mukando payout at an agreed time. Interest on savings. Rent from an asset, where applicable."},
       {index:52,kind:"text",text:"If you cannot ask anyone: Research one type of passive or delayed income that exists in Zimbabwe — for example a mukando payout, rental income or interest from a savings account. Write down what you learn and one risk involved."},
     ],
   },
+  "g8-t1-l03-003": {
+    blocks: [
+      {index:18,kind:"text",text:"They paid. One small amount. Then another. Then another. The exact amount mattered less than the fact that someone was willing to pay for value."},
+    ],
+  },
+  "g8-t1-l07-007": {
+    blocks: [
+      {index:45,kind:"text",text:"For the next three days, track every amount of money that comes in and every amount that goes out. For each, ask: What value did this money represent? What was I building? What was I breaking?"},
+      {index:56,kind:"text",text:"Question 2: Based on your audit, what is ONE specific change you will make in how you use money this week? “Spend less” is not a change. “No airtime purchases before 5pm” is a change. “Save a small amount before spending anything” is a change. Write the exact change."},
+    ],
+  },
+  "g8-t1-l09-009": {
+    blocks: [
+      {index:33,kind:"text",text:"If you save a small amount every week, you are practising being a saver."},
+      {index:34,kind:"text",text:"If you save one large amount once and never repeat the behaviour, you are someone who saved once."},
+      {index:39,kind:"text",text:"Key idea: You do not need a lot to be a saver. You need consistency. A river does not cut through rock because it is powerful. It cuts through rock because it is consistent. Drop by drop. Day after day. Year after year. Saving a small amount each week may not feel like much. But the amount is not the only point. Every time you save, you cast a vote for “I am someone who thinks about tomorrow.” After enough votes, the identity begins to lock in."},
+      {index:45,kind:"text",text:"Question 2: What is the SMALLEST amount you could save this week without making life harder at home? If the answer is “nothing, I have nothing right now,” then the question changes: What would need to change for saving to become possible? Name that change."},
+      {index:49,kind:"text",text:"This week, save SOMETHING if you can. Put it somewhere specific. If you cannot save money, save another resource: time (10 minutes set aside for a goal), effort (one extra chore without being asked), airtime, water or electricity. The experiment is about practising the behaviour of setting something aside for later."},
+    ],
+  },
+  "g8-t1-l15-015": {
+    blocks: [
+      {index:29,kind:"text",text:"She asked the class who had fixed it. No one answered. But she noticed Sipho — the same Sipho who had spent all his pocket money on sweets and regretted it — looking down at his hands. His fingers had small cuts on them, the kind you get from working with something sharp."},
+    ],
+  },
+  "g8-t1-l19-019": {
+    blocks: [
+      {index:56,kind:"text",text:"Question 2: Trust takes years to build and seconds to break. What is ONE thing you will do this week to either (a) build trust with someone, or (b) repair trust you have damaged? Be specific. “Be more trustworthy” is not an action. “Pay back the small amount I owe my friend by Friday” is an action."},
+    ],
+  },
+  "g8-t2-l25-025": {
+    blocks: [
+      {index:20,kind:"table",rows:[
+        ["Date","What","Amount"],
+        ["1 March","Sold bread","US$4.00"],
+        ["1 March","Sold cool drink","US$2.40"],
+        ["2 March","Sold bread","US$3.20"],
+        ["2 March","Sold milk","US$1.80"],
+      ]},
+      {index:24,kind:"table",rows:[
+        ["Date","What","Amount"],
+        ["3 March","Sold sweets","US$1.50"],
+        ["3 March","Sold cool drink","US$1.60"],
+        ["4 March","Sold bread","US$4.00"],
+        ["4 March","Sold milk","US$1.80"],
+      ]},
+      {index:28,kind:"table",rows:[
+        ["Date","Paid to","What for","Amount"],
+        ["1 March","Wholesaler","Bread (10 loaves)","US$8.00"],
+        ["2 March","Utility account","Electricity","US$5.00"],
+        ["3 March","Tuckshop","Milk","US$3.60"],
+      ]},
+      {index:32,kind:"table",rows:[
+        ["Date","Paid to","What for","Amount"],
+        ["5 March","Wholesaler","Cool drink","US$12.00"],
+        ["5 March","Kombi","Transport","US$2.00"],
+        ["6 March","Utility account","Water","US$3.00"],
+      ]},
+      {index:57,kind:"text",text:"Here’s the tension: records only work if you are honest with them. It is tempting to skip small expenses. “It was only a little. It does not matter.” It is tempting to round numbers in your favour. But the records know. Over time, small dishonesty compounds into large ignorance. The person you cheat when you falsify your records is yourself."},
+      {index:61,kind:"text",text:"Question 1: Emmanuel’s shop had total income of US$8.90 and total expenses of US$17.00 in the examples above. What was the profit or loss? What does a negative number mean for a business?"},
+      {index:64,kind:"text",text:"Start a simple journal for one week. Write down every time money comes in and every time money goes out. Even the small things. After one week, review your journal."},
+      {index:71,kind:"text",text:"| Date | | | Lesson | Lesson 25 — One-Week Money Journal | | Experiment/Observation | I tracked every amount of money in and out for one week (or tracked time). | | Result | | | Learning | | | Next Action | |"},
+    ],
+  },
   "g8-t1-l20-020": {
     title: "FOUNDATIONS REVIEW AND PORTFOLIO CHECKPOINT",
     blocks: [
+      {index:19,kind:"text",text:"Sipho — who spent all his first pocket money on sweets, and who fixed a chair with his hands"},
       {index:2,kind:"text",text:"Assess your learning from the first Form 1 foundations cycle."},
       {index:6,kind:"text",text:"📘 Looking Back at Your Foundations"},
       {index:20,kind:"text",text:"The mukando women you met in the saving story"},
@@ -182,6 +288,7 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
   "g8-t2-l21-021": {
     title: "MY RELATIONSHIP WITH RESOURCES — NEXT CYCLE",
     blocks: [
+      {index:11,kind:"text",text:"She rubs her eyes and sees her mother at the kitchen table, counting a small pile of notes and coins. She pushes the money toward Myah."},
       {index:2,kind:"text",text:"Recall key learning from the Form 1 foundations cycle."},
       {index:3,kind:"text",text:"Identify what you are bringing forward into the resources cycle."},
       {index:13,kind:"text",text:"Myah puts the coins in her pocket. Same weight. Same kombi rank. Same mother."},
