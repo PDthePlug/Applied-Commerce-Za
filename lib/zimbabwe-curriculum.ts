@@ -2,6 +2,7 @@ import { curriculum } from "./curriculum";
 import type { UnitSummary } from "./types";
 import { zimbabweOLevelPlan, zimbabweTargetTerms } from "./zimbabwe";
 import type { HbcCompetencyId } from "./zimbabwe";
+import { applyZimbabweSummaryOverlay } from "./zimbabwe-content";
 
 export type ZimbabwePlacement = {
   form: 1 | 2 | 3 | 4;
@@ -127,24 +128,24 @@ export const zimbabweCurriculum = {
         for(const unit of sourceTerm.units){
           const placement=zimbabwePlacementForSource(grade.grade,sourceTerm.term,unit.startLesson,unit.type);
           if(placement.form!==form) continue;
-          terms[placement.term-1].units.push({
+          terms[placement.term-1].units.push(applyZimbabweSummaryOverlay({
             ...unit,
             sourceGrade:grade.grade,
             sourceTerm:sourceTerm.term,
             href:`/learn/${grade.grade}/term/${sourceTerm.term}/${unit.id}`,
-          });
+          }));
         }
 
         for(const assessment of sourceTerm.assessments){
           const placement=zimbabwePlacementForSource(grade.grade,sourceTerm.term,assessment.startLesson,assessment.type);
           if(placement.form!==form) continue;
           terms[placement.term-1].assessmentCount+=1;
-          terms[placement.term-1].units.push({
+          terms[placement.term-1].units.push(applyZimbabweSummaryOverlay({
             ...assessment,
             sourceGrade:grade.grade,
             sourceTerm:sourceTerm.term,
             href:`/learn/${grade.grade}/term/${sourceTerm.term}/${assessment.id}`,
-          });
+          }));
         }
       }
     }
