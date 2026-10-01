@@ -1,46 +1,48 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { ArrowRight, Archive, BookOpenCheck, Database, NotebookPen } from "lucide-react";
-import { curriculum } from "@/lib/curriculum";
-import type { CurriculumIndex } from "@/lib/types";
 import { useLearningStore } from "@/lib/learning-store";
-import { zimbabweStage } from "@/lib/zimbabwe";
+import { zimbabweCurriculum } from "@/lib/zimbabwe-curriculum";
+import type { ZimbabweFormIndex } from "@/lib/zimbabwe-curriculum";
 
 export function ProfileDashboard(){
-  const [index,setIndex]=useState<CurriculumIndex|null>(null);
   const {state,setProfile}=useLearningStore();
-  useEffect(()=>{curriculum.index().then(setIndex)},[]);
+  const form=(state.profile?.form ?? state.activeForm ?? 1) as 1|2|3|4;
+  const [formData,setFormData]=useState<ZimbabweFormIndex|null>(null);
 
-  const grade=state.profile?.grade ?? state.activeGrade ?? 8;
-  const gradeMeta=index?.grades.find(item=>item.grade===grade);
-  const stage=zimbabweStage(grade);
-  const completed=Object.keys(state.completed).filter(id=>id.startsWith(`g${grade}-`)).length;
+  useEffect(()=>{
+    zimbabweCurriculum.form(form).then(setFormData);
+  },[form]);
+
+  const lessonIds=new Set(
+    formData?.terms.flatMap(term=>term.units).filter(unit=>unit.type==="lesson").map(unit=>unit.id) ?? []
+  );
+  const completed=Object.keys(state.completed).filter(id=>lessonIds.has(id)).length;
   const responseCount=Object.values(state.promptResponses).filter(value=>value.trim()).length;
   const noteCount=Object.values(state.responses).filter(value=>value.trim()).length;
-  const pct=gradeMeta?.unitCount?Math.round(completed/gradeMeta.unitCount*100):0;
+  const pct=formData?.unitCount?Math.round(completed/formData.unitCount*100):0;
   const continueHref=state.lastOpened
     ? `/learn/${state.lastOpened.grade}/term/${state.lastOpened.term}/${state.lastOpened.unitId}`
-    : `/learn/${grade}`;
+    : `/learn/form/${form}`;
 
   const name=state.profile?.displayName?.trim() || "Learner";
-  const gradeOptions=useMemo(()=>index?.grades.map(item=>item.grade) ?? [8,9,10,11,12],[index]);
 
   return <div className="profile-page">
     <section className="profile-hero">
       <div>
         <p className="eyebrow">Profile</p>
         <h1>{name}</h1>
-        <p>Your Applied Commerce Zimbabwe learning record, current school stage and evidence at a glance.</p>
+        <p>Your Applied Commerce Zimbabwe learning record, current Form and evidence at a glance.</p>
       </div>
       <div className="profile-identity">
         <label>Name
           <input value={state.profile?.displayName ?? ""} onChange={event=>setProfile({displayName:event.target.value})} placeholder="Add your name"/>
         </label>
-        <label>Current stage
-          <select value={grade} onChange={event=>setProfile({grade:Number(event.target.value)})}>
-            {gradeOptions.map(value=>{ const optionStage=zimbabweStage(value); return <option key={value} value={value}>{optionStage.stage} · {optionStage.schoolPlacement}</option>; })}
+        <label>Current Form
+          <select value={form} onChange={event=>setProfile({form:Number(event.target.value) as 1|2|3|4})}>
+            {[1,2,3,4].map(value=><option key={value} value={value}>Form {value}{value===4?" · Launch Year":""}</option>)}
           </select>
         </label>
       </div>
@@ -49,9 +51,9 @@ export function ProfileDashboard(){
     <section className="profile-grid">
       <article className="profile-card">
         <div className="profile-card-icon"><BookOpenCheck aria-hidden="true"/></div>
-        <div><p className="eyebrow">Learning progress</p><h2>{stage.schoolPlacement}</h2></div>
+        <div><p className="eyebrow">Learning progress</p><h2>Form {form}{form===4?" · Launch Year":""}</h2></div>
         <strong className="metric">{pct}%</strong>
-        <p>{completed} of {gradeMeta?.unitCount ?? 0} lessons complete.</p>
+        <p>{completed} of {formData?.unitCount ?? 0} lessons complete.</p>
         <Link href={continueHref}>Continue learning <ArrowRight/></Link>
       </article>
 
