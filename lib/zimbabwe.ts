@@ -72,9 +72,9 @@ export type ZimbabweTargetTerm = {
 };
 
 export const zimbabweTargetTerms: ZimbabweTargetTerm[] = [
-  {form:1,term:1,title:"Identity, Beliefs & Money Foundations",source:["Grade 8 lessons 1–20"]},
-  {form:1,term:2,title:"Resources, Value, Budgeting & Habits",source:["Grade 8 lessons 21–50"]},
-  {form:1,term:3,title:"Habit Strength, Agency & First Capstone",source:["Grade 8 lessons 51–80"]},
+  {form:1,term:1,title:"Identity, Beliefs, Saving & First Income",source:["Grade 8 lessons 1–26"]},
+  {form:1,term:2,title:"Earning, Spending, Budgeting & Habit Formation",source:["Grade 8 lessons 27–53"]},
+  {form:1,term:3,title:"Financial Identity, Agency & First Capstone",source:["Grade 8 lessons 54–80"]},
 
   {form:2,term:1,title:"Work, Value & How Money Moves",source:["Grade 9 lessons 1–25"]},
   {form:2,term:2,title:"Enterprise Capability, Habits & Execution",source:["Grade 9 lessons 26–50"]},
