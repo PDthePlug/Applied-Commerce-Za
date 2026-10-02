@@ -9,6 +9,7 @@ export type ZimbabweUnitOverride = {
   title?: string;
   label?: string;
   blocks?: ZimbabweBlockOverride[];
+  textReplacements?: Array<{from:string;to:string}>;
 };
 
 /**
@@ -402,6 +403,31 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
       {index:54,kind:"text",text:"If you cannot tell anyone: Write a letter to yourself. Promise yourself you will check in on your own progress in one week. Put the letter where you will see it. The letter becomes your accountability check-in."},
     ],
   },
+  "g8-t3-l51-050": {
+    title: "THE GARDENERS OF MASHONALAND EAST",
+    textReplacements: [
+      {
+        from:"The Mkhize family lives in a village in Limpopo.",
+        to:"The Moyo family lives in a village in Mashonaland East.",
+      },
+      {
+        from:"Then Granny Mkhize had an idea.",
+        to:"Then Gogo Moyo had an idea.",
+      },
+      {
+        from:"Granny Mkhize says:",
+        to:"Gogo Moyo says:",
+      },
+      {
+        from:"What habits did the Mkhize family need to build the garden?",
+        to:"What habits did the Moyo family need to build the garden?",
+      },
+      {
+        from:"What would Granny Mkhize say?",
+        to:"What would Gogo Moyo say?",
+      },
+    ],
+  },
   "g8-t3-l52-051": {
     blocks: [
       {index:8,kind:"text",text:"Habits are not just personal. Families have habits too. Some family habits: eating together, saving together through a mukando or savings club, helping with chores, sharing money when someone needs it, planning for the future."},
@@ -789,6 +815,18 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
   },
 };
 
+export const zimbabweReviewedNeutralUnitIds = [
+  "g8-t1-l08-008",
+  "g8-t1-l14-014",
+  "g8-t2-l30-030",
+  "g8-t3-l47-046",
+  "g8-t3-l48-047",
+  "g8-t4-l68-067",
+  "g8-t4-l70-069",
+  "g8-t4-l74-073",
+  "g8-t4-l75-074",
+] as const;
+
 const SOUTH_AFRICAN_LANGUAGE_HEADER=/^\*\*(?:isiZulu|isiXhosa|Afrikaans|Sepedi|Setswana)\*\*$/i;
 
 function applyZimbabweStructuralDefaults(block:ContentBlock):ContentBlock{
@@ -798,6 +836,21 @@ function applyZimbabweStructuralDefaults(block:ContentBlock):ContentBlock{
   const translationHeaders=header.slice(2);
   if(!translationHeaders.every(cell=>SOUTH_AFRICAN_LANGUAGE_HEADER.test(cell.trim()))) return block;
   return {...block,rows:block.rows.map(row=>row.slice(0,2))};
+}
+
+function applyReviewedTextReplacements(
+  blocks:ContentBlock[],
+  replacements:Array<{from:string;to:string}>=[],
+):ContentBlock[]{
+  if(!replacements.length) return blocks;
+  return blocks.map(block=>{
+    if(block.kind!=="text") return block;
+    let text=block.text;
+    for(const replacement of replacements){
+      if(text.includes(replacement.from)) text=text.replaceAll(replacement.from,replacement.to);
+    }
+    return {...block,text};
+  });
 }
 
 function applyBlockOverrides(blocks:ContentBlock[],overrides:ZimbabweBlockOverride[]=[]):ContentBlock[]{
@@ -825,7 +878,10 @@ export function applyZimbabweUnitOverlay(unit:UnitContent):UnitContent{
     ...unit,
     title:override?.title ?? unit.title,
     label:override?.label ?? unit.label,
-    blocks:applyBlockOverrides(unit.blocks,override?.blocks),
+    blocks:applyReviewedTextReplacements(
+      applyBlockOverrides(unit.blocks,override?.blocks),
+      override?.textReplacements,
+    ),
   };
 }
 
