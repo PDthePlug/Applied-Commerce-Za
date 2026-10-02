@@ -854,11 +854,11 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
   "g9-t2-l26-025": {
     title: "THE MUKANDO SYSTEM",
     textReplacements: [
-      {from:"Stokvel",to:"Mukando"},
-      {from:"stokvel",to:"mukando"},
+      {from:"In South Africa, stokvels handle billions of rands every year. They are not informal. They are essential.",to:"In Zimbabwe, mukando and other community savings arrangements are part of how many families pool resources, create accountability and prepare for larger expenses. Their exact rules differ from group to group."},
       {from:"Stokvels",to:"Mukando groups"},
       {from:"stokvels",to:"mukando groups"},
-      {from:"In South Africa, mukando groups handle billions of rands every year. They are not informal. They are essential.",to:"In Zimbabwe, mukando and other community savings arrangements are part of how many families pool resources, create accountability and prepare for larger expenses. Their exact rules differ from group to group."},
+      {from:"Stokvel",to:"Mukando"},
+      {from:"stokvel",to:"mukando"},
     ],
   },
   "g9-t2-l34-033": {
@@ -998,7 +998,7 @@ export const zimbabweReviewedNeutralUnitIds = [
   "g8-t4-l75-074",
 ] as const;
 
-const SOUTH_AFRICAN_LANGUAGE_HEADER=/^\*\*(?:isiZulu|isiXhosa|Afrikaans|Sepedi|Setswana)\*\*$/i;
+const SOUTH_AFRICAN_LANGUAGE_HEADER=/^(?:\*\*)?(?:isiZulu|isiXhosa|Afrikaans|Sepedi|Setswana)(?:\*\*)?$/i;
 
 function applyZimbabweStructuralDefaults(block:ContentBlock):ContentBlock{
   if(block.kind!=="table"||block.rows.length===0) return block;
