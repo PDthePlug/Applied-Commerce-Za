@@ -78,6 +78,9 @@ jobs:
       - name: Zimbabwe Form 4 Term 3 detail
         run: TARGET_GRADE=12 SOURCE_TERMS=3,4 node scripts/audit_zimbabwe_form4_range.mjs
 
+      - name: Zimbabwe Form 4 runtime localisation audit
+        run: node scripts/audit_zimbabwe_form4_runtime.mjs
+
       - name: Typecheck
         run: npm run typecheck
 
