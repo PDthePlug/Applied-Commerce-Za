@@ -848,9 +848,102 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
       {from:"I traced one rand received and one rand spent as far back and forward as I could.",to:"I traced one amount received and one amount spent as far back and forward as I could."},
     ],
   },
+  "g9-t2-l18-019": {
+    textReplacements: [
+      {from:"Crèche salary: R3,200",to:"Early childhood centre salary: US$220"},
+      {from:"Saturday baking: R600–R900 (varies)",to:"Saturday baking: US$40–US$60 (varies)"},
+      {from:"Child support grant: R510",to:"Family support / other household income: US$35"},
+      {from:"Thabo's delivery contribution: R200–R400 (varies)",to:"Thabo's delivery contribution: US$20–US$30 (varies)"},
+      {from:"Rent: R1,400",to:"Rent: US$100"},
+      {from:"Electricity: R350 (prepaid, runs out fast in winter)",to:"Electricity: US$25 (illustrative household amount)"},
+      {from:"Transport: R480 (taxis to work and school)",to:"Transport: US$45 (kombis and other local travel)"},
+      {from:"Food: R1,200 (mostly from the spaza shop and the wholesaler)",to:"Food: US$100 (mostly from the tuckshop, market and wholesaler)"},
+      {from:"Airtime: R150",to:"Airtime: US$10"},
+      {from:"School costs: R200 (fees, supplies, uniform pieces)",to:"School costs: US$15 (supplies and other school needs)"},
+      {from:"Stokvel contribution: R200",to:"Mukando contribution: US$15"},
+      {from:"\"The crèche pays the rent,\" Grace says. \"The baking pays for everything else. The grant covers food. Thabo's money covers his own costs, mostly. The stokvel is for December — school uniforms for the new year, Christmas food, the one time of year we do not count every rand.\"",to:"\"My salary covers the biggest fixed costs,\" Grace says. \"The baking helps with food and everyday needs. Family support helps when it is available. Thabo contributes to some of his own costs. The mukando helps us prepare for larger expenses instead of facing them all at once.\""},
+      {from:"Key idea: Your household's money map is a portrait of its priorities. Where the money goes, there your family's heart is also. School fees mean you value education. Stokvel contributions mean you value community. Airtime means you value connection. The map does not lie.",to:"Key idea: Your household's money map is a portrait of its priorities and constraints. School costs can show a commitment to education. Mukando contributions can show preparation and community accountability. Airtime can represent connection or work. The map does not judge the household; it helps you see patterns clearly."},
+    ],
+    tableTextReplacements: [
+      {from:"Government grants",to:"Public / household support"},
+      {from:"Child support, old age pension",to:"Eligible support, pensions or household transfers"},
+      {from:"Spaza shop",to:"Tuckshop"},
+      {from:"Stokvels",to:"Mukando / savings groups"},
+      {from:"Rotating savings payouts",to:"Agreed group savings payouts"},
+    ],
+  },
+  "g9-t2-l19-020": {
+    textReplacements: [
+      {from:"Emmanuel is seventeen now. He still helps at his family's spaza shop in Katlehong. But he sees it differently than he did a year ago. A year ago, he saw shelves and customers. Now he sees a whole world behind every item.",to:"Emmanuel is seventeen now. He still helps at his family's tuckshop in Chitungwiza. But he sees it differently than he did a year ago. A year ago, he saw shelves and customers. Now he sees a whole world behind every item."},
+      {from:"\"And not all of them paid fairly,\" Emmanuel says quietly. \"The farm workers — I read that some of them earn R23 an hour. The truck driver might earn more. The bakery owner earns the most. The farmer depends on the weather and the global wheat price. One bad season and the whole chain feels it.\"",to:"\"And not everyone in the chain has the same bargaining power,\" Emmanuel says quietly. \"A farm worker may earn very little compared with the value that appears later in the chain. A driver carries transport risk. A bakery owner carries business risk. A farmer depends on weather and input prices. One shock can travel through the whole chain.\""},
+      {from:"A cool drink: Factory makes drink → Distributor transports to wholesaler → Wholesaler sells to spaza shop → Spaza shop sells to you.",to:"A cool drink: Factory makes drink → Distributor transports to wholesaler → Wholesaler sells to tuckshop → Tuckshop sells to you."},
+      {from:"Here’s the tension: gratitude without justice is sentiment. It is easy to feel thankful for the farm worker while doing nothing about the fact that she earns R23 an hour and cannot feed her own children properly. It is easy to appreciate the truck driver while accepting a system where fuel prices rise and his wages do not. The supply chain is not just a series of transactions. It is a series of power relationships. Some people in the chain have choices. Some do not. Your gratitude matters — but it is not a substitute for asking harder questions. Who has power in this chain? Who does not? What would it take to shift that?",to:"Here’s the tension: gratitude without fairness is not enough. It is easy to appreciate the farm worker while ignoring whether workers receive a fair share of the value they help create. It is easy to appreciate the driver while ignoring rising operating costs. A supply chain is not only a series of transactions; it also contains power relationships. Some people have more choices than others. Ask the harder questions: Who carries the risk? Who captures the value? Who has bargaining power? What could make the chain fairer?"},
+    ],
+    tableTextReplacements: [
+      {from:"Spaza shop",to:"Tuckshop"},
+    ],
+  },
+  "g9-t2-l20-021": {
+    textReplacements: [
+      {from:"Price: R2.",to:"Illustrative price: US$0.20."},
+    ],
+  },
+  "g9-t2-l21-022": {
+    textReplacements: [
+      {from:"\"One bottle of my peri-peri sauce sells for R18 at the supermarket. Here is where that R18 goes.\"",to:"\"One bottle of my peri-peri sauce sells for an illustrative US$1.80 at the supermarket. Here is how that US$1.80 can be shared across the chain.\""},
+      {from:"Farmer (chillies, onions, garlic): R1.80 per bottle's worth of ingredients. The farmer sells in bulk, tiny margins, dependent on weather and market prices.",to:"Farmer (chillies, onions, garlic): about US$0.18 per bottle's worth of ingredients in this example. The farmer sells in bulk, on thin margins, and remains exposed to weather and market prices."},
+      {from:"My factory: We buy ingredients, pay workers, pay rent, pay electricity, make the sauce, bottle it, label it. Our cost per bottle is about R7. We sell to the distributor for R10. Our margin is R3 per bottle — and from that R3, I pay myself last.",to:"My factory: We buy ingredients, pay workers, pay rent and utilities, make the sauce, bottle it and label it. In this example our cost is about US$0.70 per bottle. We sell to the distributor for US$1.00. The US$0.30 difference still has to cover risk, reinvestment and the owner's return."},
+      {from:"Distributor: They transport, warehouse, and deliver to supermarkets. They buy at R10, sell at R13. Margin: R3.",to:"Distributor: They transport, warehouse and deliver to shops. In this example they buy at US$1.00 and sell at US$1.30. Difference: US$0.30 before their full operating costs."},
+      {from:"Supermarket: They buy at R13, sell at R18. Margin: R5 per bottle — the biggest single margin in the chain. For putting it on a shelf.",to:"Retailer: In this example the retailer buys at US$1.30 and sells at US$1.80. The US$0.50 difference is not pure profit: it also helps cover staff, premises, losses and other operating costs. The question remains: who captures how much value, and why?"},
+    ],
+    tableTextReplacements: [
+      {from:"~R0.50",to:"~US$0.05"},
+      {from:"~R2.00",to:"~US$0.20"},
+      {from:"~R1.00",to:"~US$0.10"},
+      {from:"~R3.00",to:"~US$0.30"},
+      {from:"Spaza shop",to:"Tuckshop"},
+    ],
+  },
+  "g9-t2-l22-023": {
+    textReplacements: [
+      {from:"Nosipho — the same Nosipho who has wanted to be a teacher since Grade 3 — volunteers at a crèche in Tembisa three afternoons a week. She helps with the younger children, reads to them, and watches how the crèche operates.",to:"Nosipho — the same Nosipho who has wanted to be a teacher since she was younger — volunteers at an early childhood centre in Harare three afternoons a week. She helps with younger children, reads to them, and watches how the centre operates."},
+    ],
+    tableTextReplacements: [
+      {from:"A taxi driver who owns his taxi",to:"A kombi operator who owns the vehicle"},
+      {from:"A taxi driver who drives someone else's taxi",to:"A kombi driver who drives someone else's vehicle"},
+    ],
+  },
+  "g9-t2-l23-024": {
+    textReplacements: [
+      {from:"Myah leans forward. \"Like tracing a rand through my community?\"",to:"Myah leans forward. \"Like tracing money and value through my community?\""},
+      {from:"\"Start where you live. Start with your street. Start with the taxi rank. Start with the shops you know. Every rand has a story. Your job is to follow it.\"",to:"\"Start where you live. Start with your street. Start with the kombi rank, market or shops you know. Every amount has a story. Your job is to follow the value and the money.\""},
+    ],
+    tableReplacements: [
+      {
+        cellIncludes:"40% of Term 2 grade",
+        rows:[
+          ["Element","Description"],
+          ["Duration","3 weeks of observation and mapping"],
+          ["What you will create","A visual Community Money Map with analysis and reflection"],
+          ["Presentation","5–7 minute presentation to the class"],
+          ["Assessment","Form 2 Term 1 portfolio evidence"],
+        ],
+      },
+    ],
+    tableTextReplacements: [
+      {from:"stokvels",to:"mukando / savings groups"},
+      {from:"grants",to:"support / transfers"},
+    ],
+  },
   "g9-t2-l24-025": {
     title: "THE KOMBI-RANK ECONOMY",
     textReplacements: [
+      {from:"15 people buy vetkoek from Auntie Grace at R5 each. That is R75 in her pocket.",to:"15 people buy vetkoek from Auntie Grace at an illustrative US$0.50 each. That is US$7.50 in sales."},
+      {from:"8 people buy coffee from the woman with the flask. That is R40.",to:"8 people buy coffee at an illustrative US$0.50 each. That is US$4.00 in sales."},
+      {from:"3 taxi drivers buy airtime from the vendor. That is R30.",to:"3 kombi drivers buy airtime worth US$1.00 each. That is US$3.00 in sales."},
+      {from:"12 people buy cold drinks from the spaza shop across the street. That is R72.",to:"12 people buy cold drinks from the tuckshop across the street at US$0.60 each. That is US$7.20 in sales."},
+      {from:"The spaza shop owner sends most of his money to the distributor. Most of it leaves.",to:"The tuckshop owner uses part of the sales to replace stock from suppliers outside the immediate community. That portion flows outward while some value stays through local wages, services and household spending."},
+      {from:"Choose ONE place in your community to observe. It could be a taxi rank, a spaza shop, a market, a street corner, or a community hall.",to:"Choose ONE place in your community to observe. It could be a kombi rank, a tuckshop, a market, a street corner, or a community hall."},
       {from:"Taxi Rank",to:"Kombi Rank"},
       {from:"Taxi rank",to:"Kombi rank"},
       {from:"taxi rank",to:"kombi rank"},
@@ -862,6 +955,9 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
   },
   "g9-t2-l25-026": {
     textReplacements: [
+      {from:"Total: about R4,760",to:"Total: about US$330"},
+      {from:"Total: about R3,980",to:"Total: about US$310"},
+      {from:"Child support grant: R510",to:"Family support / other household income: US$35"},
       {from:"Income (Monthly):",to:"Illustrative Income (Monthly):"},
       {from:"Crèche salary: R3,200",to:"Crèche salary: US$220"},
       {from:"Saturday baking: R600–R900 (average R750)",to:"Saturday baking: US$40–US$60 (average US$50)"},
@@ -880,6 +976,7 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
       {from:"But that R780 is for emergencies, repairs, school fees, Christmas. It is not extra. It is protection.",to:"But that US$20 is for emergencies, repairs and school costs. It is not extra. It is protection."},
     ],
     tableTextReplacements: [
+      {from:"Taxi Rank Economy",to:"Kombi-Rank Economy"},
       {from:"R3,200",to:"US$220"},
       {from:"R750",to:"US$50"},
       {from:"R510",to:"US$35"},
@@ -899,6 +996,12 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
   },
   "g9-t2-l27-028": {
     textReplacements: [
+      {from:"Myah has been mapping the taxi rank for three weeks. She has tracked money in. She has tracked money out. Now she is mapping the leaks.",to:"Myah has been mapping the kombi rank for three weeks. She has tracked money in. She has tracked money out. Now she is examining which outflows strengthen local value and which leave without much local return."},
+      {from:"She draws a large circle on a piece of paper. Inside, she writes everything that happens at the taxi rank. Outside, she writes everything that leaves.",to:"She draws a large circle on a piece of paper. Inside, she writes everything that happens at the kombi rank. Outside, she writes the payments and value flows that leave the immediate community."},
+      {from:"Money spent at the spaza shop (some of it)",to:"Money spent at the tuckshop (some of it)"},
+      {from:"Airtime purchased from the network provider (who is based in Johannesburg)",to:"Airtime purchased from a national network provider outside the immediate community"},
+      {from:"Myah stares at the map. \"Most of the money leaves,\" she says. \"The taxi rank is like a sieve. The money flows in, but most of it flows out. Very little stays.\"",to:"Myah stares at the map. \"A lot of the money moves outward,\" she says. \"The kombi rank connects our community to a much bigger economy. The question is not whether money leaves — it must — but what value stays, what comes back, and what we can strengthen locally.\""},
+      {from:"Your Move: What is one leak you could reduce in your own life? Could you buy from a local shop instead of a chain? Could you save in a stokvel instead of a bank? Could you support a local business instead of a distant one?",to:"Your Move: What is one outflow you could examine more carefully in your own life? Could a local supplier meet the need? Could a trusted mukando or formal savings option help you prepare better? Could you support a local business where the value and price make sense? The goal is not to keep all money local; it is to make deliberate choices."},
       {from:"Every rand that leaves without return is a leak.",to:"Every amount that leaves without strengthening value, resilience or a real need deserves a second look."},
       {from:"Every Rand That Leaves Without Return Is a Leak",to:"Every Outflow Should Have a Reason"},
     ],
@@ -941,6 +1044,85 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
     tableTextReplacements: [
       {from:"Stokvel",to:"Mukando"},
       {from:"stokvel",to:"mukando"},
+    ],
+  },
+  "g9-t2-l28-029": {
+    textReplacements: [
+      {from:"She has observed the taxi rank for three weeks",to:"She has observed the kombi rank for three weeks"},
+      {from:"She has not looked at the stokvels in her community",to:"She has not looked at the mukando or savings groups in her community"},
+      {from:"The taxi rank is a river of money, but most of it flows out",to:"The kombi rank is a river of money, connecting local trade to a wider economy"},
+      {from:"The stokvels are a way to keep some money local",to:"Mukando and savings groups can help households pool resources and plan ahead"},
+      {from:"She needs to investigate stokvels",to:"She needs to investigate mukando or savings groups"},
+    ],
+  },
+  "g9-t2-l29-030": {
+    textReplacements: [
+      {from:"Myah looks at her completed map. It covers the taxi rank, the spaza shop, the stokvels, the elders, the leaks. It tells the story of money in her community.",to:"Myah looks at her completed map. It covers the kombi rank, the tuckshop, mukando groups, elders, local businesses and outward flows. It tells the story of money and value in her community."},
+      {from:"Money flows through the taxi rank, the spaza shop, and the stokvels",to:"Money flows through the kombi rank, the tuckshop, markets and mukando groups"},
+      {from:"Money spent at the spaza shop (some of it)",to:"Money spent at the tuckshop (some of it)"},
+      {from:"Money saved in stokvels (all of it)",to:"Money pooled through mukando / savings groups (according to the group's rules)"},
+      {from:"\"My community is a river of money. Most of it flows in and then flows out. Very little stays. The stokvels are a way to keep some money local. The spaza shop is a way to keep some money local. But most of the money leaves. If we could keep more money in the community, we could build schools, roads, clinics. We could survive shocks. We could be stronger.\"",to:"\"My community is a river of money and value. Some flows stay nearby and some connect us to suppliers, employers and services elsewhere. Mukando groups, local businesses and local services can strengthen resilience. The goal is not to trap money inside one place. It is to understand the flows well enough to create more useful local value and withstand shocks.\""},
+    ],
+  },
+  "g9-t2-l31-032": {
+    textReplacements: [
+      {from:"What I learned: My community is a river of money. Most of it leaves. The stokvels are a way to keep some money local. The spaza shop is a way to keep some money local. But most of the money flows out and never returns.",to:"What I learned: My community is a river of money and value. Mukando groups, tuckshops and local services can strengthen local resilience, while other payments connect the community to the wider economy."},
+      {from:"My action plan: I will start a community savings group with my friends. We will each save R10 a week. We will use the money to buy things from local businesses. We will keep the money in the community.",to:"My action plan: I will design a small savings-and-local-value experiment with people I trust. We will agree on a realistic contribution in a clearly labelled currency, set transparent rules, and decide what local need or opportunity the pooled resources could support."},
+    ],
+  },
+  "g9-t2-l32-033": {
+    title:"FORM 2 TERM 1 LEARNING JOURNEY MAP",
+    textReplacements: [
+      {from:"Map your learning journey across Term 2.",to:"Map your learning journey across Form 2 Term 1."},
+      {from:"Myah sits at Mama Rose's kitchen, flipping through her notebook one final time for Term 2.",to:"Myah sits at Mama Rose's kitchen, flipping through her notebook as Form 2 Term 1 comes to a close."},
+      {from:"Lesson 17: Every rand has a story. Money is stored value.",to:"Lesson 17: Every amount has a story. Money carries value through an economy."},
+      {from:"Lesson 27: Every rand that leaves without return is a leak.",to:"Lesson 27: Every outflow should have a reason. Trace what value leaves, stays or returns."},
+      {from:"Draw a timeline of your learning journey through Term 2. Start at Lesson 17. End at Lesson 31. Mark the key lessons, the key insights, and the key moments.",to:"Draw a timeline of your learning journey through Form 2 Term 1. Include the enterprise foundations from Lessons 1–16 and the money-and-community work from Lessons 17–31. Mark the key lessons, insights and moments."},
+      {from:"The Danger: You will forget some of what you learned. That is normal. But you will not forget the insights. You will not forget the feeling of tracing a rand. You will not forget the map.",to:"The Danger: You will forget some details. That is normal. But the important insights can stay: value is created, money moves, communities contain systems, and observation becomes useful when it leads to better action."},
+      {from:"Your Move: What is the one thing from Term 2 that you will remember forever? Why that one?",to:"Your Move: What is the one thing from Form 2 Term 1 that you want to remember? Why that one?"},
+      {from:"Question 2: How has your understanding of money changed since the beginning of Term 2? What evidence do you have of that change?",to:"Question 2: How has your understanding of work, value and money changed since the beginning of Form 2 Term 1? What evidence do you have of that change?"},
+      {from:"☐ I have mapped my learning journey across Term 2.",to:"☐ I have mapped my learning journey across Form 2 Term 1."},
+    ],
+    tableTextReplacements:[
+      {from:"Lesson 32 — Learning Journey Map",to:"Lesson 32 — Form 2 Term 1 Learning Journey Map"},
+      {from:"I mapped my learning journey across Term 2.",to:"I mapped my learning journey across Form 2 Term 1."},
+    ],
+  },
+  "g9-t2-l33-034": {
+    title:"FORM 2 TERM 1 REFLECTION — WORK, VALUE & MONEY",
+    textReplacements: [
+      {from:"Compile your complete Term 2 Portfolio.",to:"Compile your complete Form 2 Term 1 portfolio."},
+      {from:"Identify what you will carry forward into Term 3.",to:"Identify what you will carry forward into Form 2 Term 2."},
+      {from:"📘 Myah's Term 2 Reflection",to:"📘 Myah's Form 2 Term 1 Reflection"},
+      {from:"I started Term 2 thinking money was just something you earn and spend. I end Term 2 knowing it is a story. Every rand has a journey. Every rand has a source. Every rand has a destination.",to:"I started Form 2 Term 1 thinking enterprise was mostly about earning and money was mostly about spending. I end the term seeing a system: people create value, money carries that value through households and communities, and every amount has a source, a purpose and a destination."},
+      {from:"I am not the same person who started Applied Commerce in Term 1. I am not even the same person who started Applied Commerce at the start of this term. I know more. I see more. I can do more.",to:"I am not the same person who started Form 2 Term 1. I know more. I see more. I can do more."},
+      {from:"✍️ Activity 33: My Term 2 Reflection",to:"✍️ Activity 33: My Form 2 Term 1 Reflection"},
+      {from:"8. The 1-10 Scale: At the start of the term, you were a \"1\" on the community money awareness scale. Where are you now — honestly? What is the exact number? What is the ONE thing you need to do in Term 3 to move up by a single point?",to:"8. The 1-10 Scale: At the start of Form 2 Term 1, where were you on the work-value-money awareness scale? Where are you now — honestly? What is the exact number? What is the ONE thing you need to do in Form 2 Term 2 to move up by a single point?"},
+      {from:"The Truth: You are not the same person who started Applied Commerce at the start of Term 2. You know more about money. You know more about your community. You know more about yourself. That is growth.",to:"The Truth: You are not the same learner who started Form 2 Term 1. You know more about work, value, money and your community. You also have evidence of what you can observe and do. That is growth."},
+      {from:"The Danger: The person who started Term 2 is still inside you. The old beliefs, the old habits, the old ways of ignoring money flows — they are still there. They just got quieter.",to:"The Danger: old beliefs and old ways of ignoring money flows do not disappear because you completed a project. They can return when you stop paying attention."},
+      {from:"Your Move: Growth is not a one-time achievement. It is a daily choice. What is one thing you will do differently in Term 3 because of what you learned this term?",to:"Your Move: Growth is not a one-time achievement. What is one thing you will do differently in Form 2 Term 2 because of what you learned this term?"},
+      {from:"Question 1: What is the biggest difference between who you were at the start of Term 2 and who you are now?",to:"Question 1: What is the biggest difference between who you were at the start of Form 2 Term 1 and who you are now?"},
+      {from:"Question 2: What is one thing you will carry forward from Term 2 into Term 3 — and into your life?",to:"Question 2: What is one thing you will carry forward from Form 2 Term 1 into Term 2 — and into your life?"},
+      {from:"Share your Term 2 reflection with someone who matters to you. Let them witness your growth. Or keep it private. It is yours.",to:"Share your Form 2 Term 1 reflection with someone who matters to you. Let them witness your growth. Or keep it private. It is yours."},
+      {from:"☐ I have compiled my complete Term 2 Portfolio.",to:"☐ I have compiled my complete Form 2 Term 1 portfolio."},
+      {from:"☐ I have identified what I will carry forward into Term 3.",to:"☐ I have identified what I will carry forward into Form 2 Term 2."},
+    ],
+    tableReplacements:[
+      {
+        cellIncludes:"Every rand has a story",
+        rows:[
+          ["Lessons","What We Learned"],
+          ["1–16","Values, enterprise, skills, customers, pricing and the courage to act"],
+          ["17–22","Money origins, households, supply chains, value chains, employers and employees"],
+          ["23–31","Community Money Map — observation, outflows, local value and an action plan"],
+          ["32–33","Learning journey, evidence and Form 2 Term 1 reflection"],
+        ],
+      },
+    ],
+    tableTextReplacements:[
+      {from:"Lesson 33 — Term 2 Final Reflection",to:"Lesson 33 — Form 2 Term 1 Final Reflection"},
+      {from:"I reflected on my entire Term 2 journey — money flows, community, and growth.",to:"I reflected on my entire Form 2 Term 1 journey — enterprise, money flows, community and growth."},
+      {from:"What I will carry into Term 3:",to:"What I will carry into Form 2 Term 2:"},
     ],
   },
   "g9-t2-l34-035": {
