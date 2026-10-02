@@ -66,7 +66,7 @@ for(const grade of [10,11]){
         id:unit.id,
         title:unit.title,
         hits,
-        examples:examples.slice(0,10),
+        examples:examples.slice(0,2),
       });
     }
   }
