@@ -409,6 +409,7 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
   },
   "g8-t3-l55-054": {
     blocks: [
+      {index:43,kind:"text",text:"This week, try one small way to earn. It could be helping a neighbour, selling something, offering a service. Even a very small earning counts. Even one customer counts."},
       {index:12,kind:"text",text:"You have met earners throughout this year: Lerato (braiding hair), Emmanuel (helping at the tuckshop), Thandi (selling mangoes), Precious (hair stall), Uncle Solly (car wash), Sipho (fixing things with his hands), Thabo (delivery service and fixing things)."},
     ],
   },
