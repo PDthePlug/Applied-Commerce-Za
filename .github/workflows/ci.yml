@@ -45,6 +45,9 @@ jobs:
       - name: Zimbabwe Form 2 Term 3 detail
         run: START_LESSON=55 END_LESSON=75 node scripts/audit_zimbabwe_form2_range.mjs
 
+      - name: Zimbabwe Form 3 compiled-unit audit
+        run: node scripts/audit_zimbabwe_form3_units.mjs
+
       - name: Typecheck
         run: npm run typecheck
 
