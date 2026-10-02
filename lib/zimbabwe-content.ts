@@ -1476,8 +1476,8 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
         cellIncludes:"Work and Value",
         rows:[
           ["Term","Theme","What We Learned"],
-          ["Term 1","Work, Value & How Money Moves","Values, enterprise, skills, customers, pricing, early money flows and household economics"],
-          ["Term 2","Community Money, Habits & Execution","Community saving, money mapping, habits, resilience, decision making, digital habits and the completed Habit Transformation project"],
+          ["Term 1","Enterprise, Money & Community","Values, enterprise, skills, customers, pricing, household economics and the completed Community Money Map"],
+          ["Term 2","Habits, Agency & Execution","Habits, goals, time, resilience, decision making, digital habits and the completed Habit Transformation project"],
           ["Term 3","Community Enterprise & Portfolio","Ahead: apply what you know to a real community need and build evidence through action"],
         ],
       },
@@ -1490,15 +1490,181 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
       {from:"Term 2: Where money comes from. Supply chains. Value chains. Her Community Money Map of the taxi rank. The leaks. Mr. Patel's honesty. \"Every rand has a story. Most of the money leaves my community. I cannot un-see it.\"",to:"Term 2: Community saving, money flows, the Community Money Map, habits, resilience and execution. She learned to see systems around her and patterns inside herself."},
       {from:"Term 3: Habits. Growth mindset. Grit. Resilience. Procrastination. Self-discipline. Environment design. Her 21-day phone challenge. Fourteen ticks. Seven crosses. The meta-habit. \"I can change. Not because someone told me. Because I have evidence.\"",to:"Across both terms, the evidence has accumulated: enterprise action, money-flow data, a community map, a 21-day habit tracker and repeated proof that she can notice, act, review and adjust."},
       {from:"Term 1 (Values and Enterprise):",to:"Term 1 (Work, value and how money moves):"},
-      {from:"Term 2 (Money Flows and Community):",to:"Term 2 (Community money, habits and execution):"},
+      {from:"Term 2 (Money Flows and Community):",to:"Term 2 (Habits, agency and execution):"},
       {from:"Term 3 (Habits and Mindset):",to:"Term 3 readiness — what I want to carry into community enterprise:"},
       {from:"That gap is not failure. It is your starting point for Term 4.",to:"That gap is not failure. It is useful information for Term 3."},
       {from:"How I might address it in Term 4:",to:"How I might address it in Term 3:"},
     ],
   },
+  "g9-t4-l56-046": {
+    textReplacements: [
+      {from:"Ms. Daniels meets Myah at the taxi rank. The same bench. The same flows of money Myah mapped in Term 2. Everything looks different when you have learned to see.",to:"Ms. Daniels meets Myah at the kombi rank. The same bench. The same flows of money Myah mapped in Form 2 Term 1. Everything looks different when you have learned to see."},
+      {from:"\"Two: What you are good at. Your talents. The skills you have built — in Grade 8, in Grade 9, in your life.\"",to:"\"Two: What you are good at. Your talents. The skills you have built — in Form 1, in Form 2, and in your life.\""},
+      {from:"What she cares about: Her mother. The elders at the taxi rank. Justice. Fairness. People who are invisible to the system. Young people who need to understand money the way she learned to understand it.",to:"What she cares about: Her mother. The elders around the kombi rank and neighbourhood. Justice. Fairness. People who are easy for systems to overlook. Young people who need practical ways to understand money and agency."},
+      {from:"What her community needs: The taxi rank is a river of money, but most of it leaks. Elders need help with parcels — and they need company. Young people need to learn what she has learned.",to:"What her community needs: The kombi rank connects many money and value flows. Elders may need help with parcels — and sometimes company. Younger learners may benefit from practical financial capability."},
+      {from:"She writes in her notebook: A financial literacy workshop for younger students? Something that teaches them what I wish I had known in Grade 8? A project that combines everything I have learned and everything I can do?",to:"She writes in her notebook: A financial capability workshop for younger learners? Something that teaches what I wish I had practised earlier in Form 1? A project that combines what I have learned with what I can actually do?"},
+    ],
+  },
+  "g9-t4-l57-047": {
+    tableTextReplacements: [
+      {from:"Spaza shop",to:"Tuckshop"},
+      {from:"Stokvel",to:"Mukando / savings group"},
+      {from:"stokvel",to:"mukando / savings group"},
+    ],
+  },
+  "g9-t4-l58-048": {
+    title:"PROJECT LAUNCH — MY COMMUNITY ENTERPRISE PROJECT",
+    textReplacements: [
+      {from:"Ms. Daniels gathers everyone at the community hall. The end of the year is close. This is the final project of Grade 9. The room feels different — charged with something between excitement and gravity.",to:"Ms. Daniels gathers everyone at the community hall. The end of Form 2 is getting closer. This is the final applied project of the year. The room feels different — charged with something between excitement and gravity."},
+      {from:"\"This is it. Your Grade 9 final project. You will design and complete a project that demonstrates everything you have learned. Identity. Resources. Habits. Enterprise. Community. Resilience. Everything.\"",to:"\"This is it. Your Form 2 final applied project. You will design and complete a project that brings together what you have learned: identity, resources, habits, enterprise, community, resilience and evidence.\""},
+      {from:"OPTION B: IMPROVE SOMETHING EXISTING Help an existing community effort grow or improve. Partner with a stokvel, a kitchen, a crèche, a local business. Add value to something already working. Best for learners who prefer collaboration.",to:"OPTION B: IMPROVE SOMETHING EXISTING Help an existing community effort grow or improve. Partner with a mukando or savings group, a kitchen, an early childhood centre, a local business or another community effort. Add value to something already working. Best for learners who prefer collaboration."},
+      {from:"\"This is not about leaving school. This is about proving your agency. It is for anyone — whether you are heading to Grade 10 or not — who wants to know: can I create value from nothing but my own skills, attention, and effort?\"",to:"\"This is not about leaving school. Form 3 comes next. This project is about proving your agency now: can you use your skills, attention, relationships and effort to create useful value while continuing your education?\""},
+      {from:"(For Option D, the \"Impact\" is measured in rands earned, customers served, and skills proven.)",to:"(For Option D, impact may include money earned in a clearly labelled currency, customers served, skills demonstrated and evidence of repeat demand.)"},
+      {from:"My Survival Asset: What is the ONE skill or resource I have right now that could generate R20 by tomorrow? _________________________________",to:"My Survival Asset: What is ONE skill or resource I have right now that could create the equivalent of US$2 in useful value by tomorrow — without risking essential money or safety? _________________________________"},
+      {from:"The 50% Rule: If I make R50, I will spend R___ on myself/family and R___ on buying more supplies/tools.",to:"My Seed-Capital Rule: If I earn US$5 in this example, how much must I protect to replace stock or maintain tools before I spend the rest? US$_____ protected; US$_____ available for other needs."},
+    ],
+    tableReplacements: [
+      {
+        cellIncludes:"The First Rand",
+        rows:[
+          ["Step","Question","Action"],
+          ["1. The Asset Audit","What do I already own or control?","List your hands, skills, tools, space, relationships and knowledge."],
+          ["2. The Immediate Need","What specific problem can I solve today?","Choose a real, observable need — not a giant problem you cannot test."],
+          ["3. The Zero-Cost Prototype","How can I test before spending money?","Offer the service to one person for feedback; borrow appropriate tools; use what you already have."],
+          ["4. The First Sale","What is the smallest unit of useful value someone may pay for?","One item, one tutoring session, one delivery, one simple service or another small test."],
+          ["5. The Survival Loop","How do I protect tomorrow's ability to operate?","Replace stock and protect essential seed capital before treating the rest as spendable."],
+        ],
+      },
+    ],
+  },
+  "g9-t4-l59-049": {
+    textReplacements: [
+      {from:"\"I would be your first customer. And I know three other ladies on this street who would be second, third, and fourth. Mrs. Dube cannot walk to the clinic alone. Mrs. Moloi's daughter moved to Cape Town — she has no one for shopping. Mrs. September is nearly blind — she needs someone to read her letters and her bills.\"",to:"\"I would be your first customer. And I know three other ladies on this street who would be second, third and fourth. Mrs. Dube cannot walk to the clinic alone. Mrs. Moloi's daughter moved to Bulawayo — she has no one nearby for shopping. Mrs. September has poor eyesight — she sometimes needs help reading letters and bills.\""},
+    ],
+  },
+  "g9-t4-l60-050": {
+    textReplacements: [
+      {from:"Thabo is at Emmanuel's spaza shop, a blank page before him. He chose Option B — Improve Something Existing. He will expand his delivery service to include the visit component Myah identified — not just dropping parcels, but staying for ten minutes. Talking. Noticing if something is wrong.",to:"Thabo is at Emmanuel's tuckshop, a blank page before him. He chose Option B — Improve Something Existing. He will expand his delivery service to include the visit component Myah identified — not just dropping parcels, but staying for ten minutes. Talking. Noticing if something seems wrong."},
+      {from:"Project: Elder Delivery and Visit Service (Expanded) Need: Elders in my route need parcels delivered AND someone to check on them. Solution: Weekly deliveries plus a 10-minute wellness check. R20 per delivery — R5 more than before, because the visit adds value. Free for those who genuinely cannot pay. Beneficiaries: Mrs. Nkosi, Mrs. Dube, Mrs. Moloi, Mrs. September. Start with four. Grow slowly. Resources needed: My bike (already have). Airtime for communication. A simple checklist for each visit — medication taken? Food in the house? Anything broken? Anyone to contact? Who can help: Myah (partnering on visits). Mr. Daniels (bike repairs). Emmanuel (discounted supplies for elders). Steps:",to:"Project: Elder Delivery and Visit Service (Expanded) Need: Elders on my route need parcels delivered and some would value a brief check-in. Solution: Weekly deliveries plus a 10-minute visit. Illustrative price: US$2 per delivery — US$0.50 more than the earlier delivery-only service because the visit adds time and value. Where someone genuinely cannot pay, the team can decide whether sponsorship or a no-fee visit is sustainable. Beneficiaries: Mrs. Nkosi, Mrs. Dube, Mrs. Moloi, Mrs. September. Start with four. Grow slowly. Resources needed: My bike, airtime for communication and a simple visit checklist. The checklist is not medical diagnosis; it is basic observation: Is there an urgent practical need? Is there someone the elder wants contacted? Who can help: Myah, Mr. Daniels for bike repairs and Emmanuel for local supplies. Steps:"},
+    ],
+  },
+  "g9-t4-l61-051": {
+    textReplacements: [
+      {from:"\"We do not have R205.\"",to:"\"We do not have US$20.50.\""},
+      {from:"They decide to print five copies first. Cost: R68. They will take pre-orders — ask five families to pay R30 each before the books are made. If all five say yes, the project funds itself. If only three say yes, they print three copies. No debt. No risk.",to:"They decide to print five copies first. Illustrative cost: US$6.80. They will take pre-orders — ask five families to pay US$3 each before the books are made. If all five say yes, the first print run is funded. If only three say yes, they print three copies. No borrowing for an untested demand forecast."},
+      {from:"Key idea: You do not need a lot of money to start something that matters. You need a plan, a clear ask, and the willingness to start with what you have. Atlehang's cookbook started with R205 — and she did not have it. But she found a way: pre-orders, smaller print run, no debt. The money you do not have is not a reason to stop. It is a problem to solve — and you have been solving problems all year. A budget is not a restriction. It is a map. It shows you where your resources need to go.",to:"Key idea: You do not always need a large budget to start something that matters. You need a plan, a clear ask and evidence. Atlehang's illustrative cookbook budget was US$20.50 — and she did not have it. She reduced the first print run and used pre-orders to test demand before spending. A budget is not only a restriction. It is a map of what the project requires and where the risks are."},
+      {from:"Here’s the tension: a budget is also a mirror. It shows you what you truly value — not what you SAY you value, but what you are willing to spend money on. If your budget has R50 for printing but R0 for thanking the people who helped you, what does that say? If your budget assumes someone else will cover the gap, what is your plan if they say no? And here is the hardest truth: some projects should not happen — yet. If the budget requires money you do not have and cannot raise ethically, the most agentic choice might be to wait. To save. To build toward it. Not every idea must be executed NOW. Some ideas need time to become possible. Knowing which is which is wisdom.",to:"Here’s the tension: a budget is also a mirror. It shows priorities and assumptions. If your budget allocates US$5 to printing but nothing to an essential project cost, what does that reveal? If you assume someone else will cover the gap, what happens if they say no? Some projects should not happen yet. If the project requires money you do not have and cannot raise ethically, the responsible choice may be to redesign, save, build partnerships or wait. Not every idea must be executed immediately."},
+    ],
+    tableReplacements: [
+      {
+        cellIncludes:"Paper for printing",
+        rows:[
+          ["Item","Illustrative Cost"],
+          ["Paper for printing (15 copies, 20 pages each)","US$9.00"],
+          ["Cardboard for covers","US$3.00"],
+          ["Binding (staples and glue)","US$2.50"],
+          ["Photocopying","US$6.00"],
+          ["Total","US$20.50"],
+        ],
+      },
+    ],
+    tableTextReplacements: [
+      {from:"Taxis to get supplies, visit people",to:"Kombis or other transport to get supplies and visit people"},
+    ],
+  },
+  "g9-t4-l62-052": {
+    textReplacements: [
+      {from:"He sits at Emmanuel's spaza shop with a list: Who can help?",to:"He sits at Emmanuel's tuckshop with a list: Who can help?"},
+    ],
+    tableTextReplacements: [
+      {from:"Spaza shop owners",to:"Tuckshop owners"},
+      {from:"stokvels",to:"mukando / savings groups"},
+    ],
+  },
+  "g9-t4-l63-053": {
+    textReplacements: [
+      {from:"She hands over the parcel. Stays. They talk. Mrs. Nkosi tells her about her garden, about the clinic appointment next week, about the letter from her daughter in Johannesburg that she has not been able to read because her glasses broke. Myah reads the letter aloud. It is full of love and worry and promises to visit soon. Mrs. Nkosi's eyes fill with tears.",to:"She hands over the parcel. Stays. They talk. Mrs. Nkosi tells her about her garden, about the clinic appointment next week, about a letter from her daughter in Gweru that she has not been able to read because her glasses broke. With permission, Myah reads the letter aloud. It is full of love, worry and promises to visit soon. Mrs. Nkosi's eyes fill with tears."},
+    ],
+  },
+  "g9-t4-l66-056": {
+    textReplacements: [
+      {from:"Here’s the tension: completion also brings a strange emptiness. You have been working toward this. And now it is done. What now? The answer: you carry it with you. The evidence does not disappear when the project ends. It becomes part of your portfolio — and part of your identity. You are now someone who has completed a final project in Grade 9. No one can take that from you. But do not rest on it too long. Completion opens the door to the next thing. Be proud. Then be ready.",to:"Here’s the tension: completion can bring a strange emptiness. You have been working toward this, and now it is done. The evidence does not disappear when the project ends. It becomes part of your portfolio and part of what you know you can do. You are now someone who has completed a substantial Form 2 community project. Be proud of the evidence, then carry the learning forward into Form 3."},
+    ],
+  },
+  "g9-t4-l69-059": {
+    textReplacements: [
+      {from:"Sipho presents — his High-Agency Challenge. He chose Option D. \"I fixed appliances. Kettles. Radios. I started with zero capital — just my hands and what I knew. My first customer paid me R30 to fix a radio. I used R15 for food and R15 for a screwdriver set. Now I have tools. I have regular customers. I proved to myself that I can create value from nothing — and that is a kind of freedom no one can take from me.\"",to:"Sipho presents — his High-Agency Challenge. He chose Option D. \"I fixed simple items I knew how to handle safely. My first customer paid me US$3 in this illustrative example. I used part for a household need and put part into a tool fund. Now I have better tools and repeat customers. I proved that practical skill can create value when I use it responsibly.\""},
+    ],
+  },
+  "g9-t4-l70-060": {
+    textReplacements: [
+      {from:"\"I started Grade 9 waiting for a grant committee to say yes. I followed every rule. I did everything right. And I got silence. So I stopped waiting. I borrowed a cooler box. I sold water. I mapped money flows. I tracked my habits. And this term, I started visiting elders — not just delivering parcels, but staying. Talking. Reading letters. Being present.\"",to:"\"I started Form 2 waiting for a committee to say yes. I followed every rule and got silence. So I stopped treating permission as the only path. I borrowed a cooler box. I tested selling water. I mapped money flows. I tracked my habits. And this term, I worked with elders — not just delivering parcels, but staying, talking and being present.\""},
+      {from:"\"I am not the same person who started Grade 8. I am not even the same person who started this term. I know what I value. I know how money moves. I know that I can change — because I have evidence. And I know that I do not need anyone's permission to create value. I just need to see a need and move toward it.\"",to:"\"I am not the same person who started Form 1. I am not even the same person who started this term. I know what I value. I know more about how money moves. I know I can change because I have evidence. And I know that when I see a real need, I can test a responsible way to move toward it.\""},
+      {from:"\"Some of you will go on to Grade 10. Some of you will take a different path. Both paths require the same thing: seeing a need and moving toward it. Both paths have dignity. The only shame is standing at the fork and refusing to walk. Do not refuse to walk. Walk. Whatever path you choose, walk it with the same attention, the same persistence, the same agency you have shown this year.\"",to:"\"Form 3 comes next. Your interests may differ — academic, practical, technical, creative, entrepreneurial — and your responsibilities outside school may differ too. What you carry forward is the same discipline: notice carefully, learn, act responsibly, review evidence and keep building capability.\""},
+      {from:"Question 1: What did you learn from someone else's project that you will carry with you? How do you feel now that your Grade 9 journey is nearly complete?",to:"Question 1: What did you learn from someone else's project that you will carry with you? How do you feel now that your Form 2 journey is nearly complete?"},
+    ],
+  },
+  "g9-t4-l71-061": {
+    textReplacements: [
+      {from:"What is ONE thing from this project that you will carry with you into Grade 10 and beyond — not the project itself, but the capacity, the insight, the evidence of who you became through doing it?",to:"What is ONE thing from this project that you will carry with you into Form 3 and beyond — not the project itself, but the capability, insight or evidence you built through doing it?"},
+    ],
+  },
+  "g9-t4-l72-062": {
+    textReplacements: [
+      {from:"What is ONE thing your community could do together — a cooperative, a stokvel, a shared resource, a regular event — that no individual could do alone?",to:"What is ONE thing your community could do together — a cooperative, a mukando or savings group, a shared resource, a regular event — that no individual could do alone?"},
+    ],
+  },
+  "g9-t4-l73-063": {
+    title:"FORM 3 DIRECTION — WHAT WILL I STRENGTHEN NEXT?",
+    rangeReplacements: [
+      {
+        startIncludes:"Understand the subject choice implications for Grade 10 — and the alternatives.",
+        endIncludes:"What is my plan for the first month after Grade 9? _________________________________",
+        replacement:[
+          {kind:"text",type:"paragraph",text:"Use your Form 2 evidence to choose what you want to strengthen next. Form 3 is the next stage of your secondary-school journey. You do not need to decide your entire future now."},
+          {kind:"text",type:"paragraph",text:"Different learners will have different interests and responsibilities. Some will lean toward academic subjects, some toward technical or practical skills, some toward enterprise, and many will combine these. The useful question is not 'Which label am I?' It is 'Which capabilities and learning areas do I need to strengthen next, and what evidence will show that I did?'"},
+          {kind:"text",type:"activity",text:"✍️ Activity 73: My Form 3 Direction Plan\n\n1. One capability I want to strengthen in Form 3: _________________________________\n2. One school subject or learning area I need to take more seriously: _________________________________\n3. One practical skill or project I want to continue outside ordinary classwork: _________________________________\n4. One person I can ask for guidance or feedback: _________________________________\n5. By the end of Form 3 Term 1, the evidence I want to have is: _________________________________"},
+          {kind:"text",type:"reflection",text:"A direction plan should keep doors open while giving you something concrete to practise. It can change when new evidence appears. Changing a plan after learning is not failure; it is informed adjustment."},
+        ],
+      },
+    ],
+    textReplacements: [
+      {from:"| Date | | | Lesson | Lesson 73 — Path Forward | | Experiment/Observation | I evaluated my options after Grade 9 and made a Path Forward declaration. | | Result | My path: | | Learning | | | Next Action | |",to:"| Date | | | Lesson | Lesson 73 — Form 3 Direction | | Experiment/Observation | I reviewed my Form 2 evidence and built a Form 3 direction plan. | | Result | Capability I will strengthen: | | Learning | | | Next Action | First evidence I will create: | |"},
+    ],
+  },
+  "g9-t4-l74-064": {
+    title:"FORM 2 PORTFOLIO & LETTER TO FUTURE SELF",
+    rangeReplacements: [
+      {
+        startIncludes:"Term 1: ☐ Strategic Audit",
+        endIncludes:"Term 4: ☐ Year in Review",
+        replacement:[
+          {kind:"text",type:"section",text:"Form 2 Term 1 — Enterprise, Money & Community"},
+          {kind:"text",type:"paragraph",text:"☐ Strategic Audit and Values work (Lessons 1–2)\n☐ Work, enterprise, skills, customers and pricing evidence (Lessons 3–15)\n☐ Enterprise Foundations checkpoint (Lesson 16)\n☐ Money-flow, household, supply-chain and value-chain evidence (Lessons 17–22)\n☐ Community Money Map project, presentation and action plan (Lessons 23–31)\n☐ Term 1 learning journey, reflection and future-self letter (Lessons 32–34)"},
+          {kind:"text",type:"section",text:"Form 2 Term 2 — Habits, Agency & Execution"},
+          {kind:"text",type:"paragraph",text:"☐ Habit identity, tiny habits, goals and time evidence (Lessons 35–38)\n☐ Procrastination, resilience, grit and learning-from-failure evidence (Lessons 39–42)\n☐ Growth mindset, self-discipline, decisions, peer pressure and digital safety evidence (Lessons 43–49)\n☐ Completed 21-day Habit Transformation project and reflection (Lessons 50–54)"},
+          {kind:"text",type:"section",text:"Form 2 Term 3 — Community Enterprise & Portfolio"},
+          {kind:"text",type:"paragraph",text:"☐ Year-so-far review and community-project idea (Lessons 55–57)\n☐ Community project launch, needs assessment, design, budget and partnerships (Lessons 58–62)\n☐ Execution, midpoint review, problem solving and completion (Lessons 63–66)\n☐ Storytelling, presentation and audience evidence (Lessons 67–70)\n☐ Project reflection, community synthesis and Form 3 direction plan (Lessons 71–73)\n☐ Final Form 2 portfolio and future-self letter (Lesson 74)"},
+        ],
+      },
+    ],
+    textReplacements: [
+      {from:"Organize your complete Grade 9 portfolio — four terms of evidence.",to:"Organize your complete Form 2 portfolio — three terms of evidence."},
+      {from:"📘 Your Complete Grade 9 Portfolio",to:"📘 Your Complete Form 2 Portfolio"},
+      {from:"Go through the checklist above. Check off everything you have. Find anything that is missing. Your portfolio is the story of your Grade 9 journey. Make it as complete as you can.",to:"Go through the checklist above. Check off everything you have and find anything that is missing. Your portfolio is the evidence story of your Form 2 journey. Make it as complete and honest as you can."},
+      {from:"Write a letter to yourself. Address it to \"Future Me.\" You will read this at the end of Grade 10 — or whenever you need to remember who you were and how far you have come.",to:"Write a letter to yourself. Address it to \"Future Me.\" Read it at the end of Form 3 — or whenever you need to remember who you were and how far you have come."},
+      {from:"From me, in Grade 9 Date: _____________________",to:"From me, in Form 2 Date: _____________________"},
+      {from:"📂 Portfolio: Keep this letter somewhere safe. Read it at the end of Grade 10 — or whenever you need to remember.",to:"📂 Portfolio: Keep this letter somewhere safe. Read it at the end of Form 3 — or whenever you need to remember."},
+      {from:"Your Next Step: What is the most important thing you want your future self to remember about who you were in Grade 9? Write it clearly. The future is coming. Your future self is waiting.",to:"Your Next Step: What is the most important thing you want your future self to remember about who you were in Form 2? Write it clearly. Form 3 is coming. Your future self is waiting."},
+      {from:"| Date | | | Lesson | Lesson 74 — Final Portfolio and Letter | | Experiment/Observation | I compiled my complete Grade 9 portfolio and wrote my final letter to my future self. | | Result | | | Learning | | | Next Action | Carry everything forward. |",to:"| Date | | | Lesson | Lesson 74 — Form 2 Portfolio and Letter | | Experiment/Observation | I compiled my complete Form 2 portfolio and wrote my final letter to my future self. | | Result | | | Learning | | | Next Action | Carry the evidence into Form 3. |"},
+    ],
+  },
   "g9-t4-l75-065": {
     title: "FAREWELL TO FORM 2",
     textReplacements: [
+      {from:"\"You were the main character of this story — but you did not know it at the start. In Grade 8, you were the quiet observer. You noticed things. You asked questions. In Grade 9, you became the protagonist. You walked into the grant office. You borrowed a cooler box. You sold water. You mapped money flows. You tracked your habits. You built a visit service for elders. You chose your path.\"",to:"\"You were the main character of this story — but you did not know it at the start. In Form 1, you were the quiet observer. You noticed things. You asked questions. In Form 2, you became more active. You walked into the committee office. You borrowed a cooler box. You tested a small water business. You mapped money flows. You tracked your habits. You built a community project. You created evidence.\""},
+      {from:"You finished Grade 9.",to:"You finished Form 2."},
+      {from:"You are not the same person who started Grade 8. You are not even the same person who started this term.",to:"You are not the same person who started Form 1. You are not even the same person who started this term."},
       {from:"Say a final goodbye to Grade 9 — with gratitude, pride, and forward momentum.",to:"Say a final goodbye to Form 2 — with gratitude, pride, and forward momentum."},
       {from:"In Grade 8, you were the quiet observer. You noticed things. You asked questions. In Grade 9, you became the protagonist.",to:"In Form 1, you were the quiet observer. You noticed things. You asked questions. In Form 2, you became the protagonist."},
       {from:"You have evidence — four terms of it — that you can act on the world and create change.",to:"You have evidence — three terms of it — that you can act on the world and create change."},
