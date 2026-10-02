@@ -41,7 +41,7 @@ const rules=[
   ["spaza",/\bspaza\b/i],
   ["stokvel",/\bstokvels?\b/i],
   ["sa-place",/\b(?:Johannesburg|Soweto|Tembisa|Cape Town|Durban|Umlazi|Pretoria|Atteridgeville|Limpopo|Katlehong|Alexandra)\b/i],
-  ["source-grade",/\bGrade\s+(?:9|10|11|12)\b/i],
+  ["source-grade",/\bGrade\s+(?:8|9|10|11|12)\b/i],
   ["matric",/\bmatric\b/i],
   ["uif-sdl",/\b(?:UIF|SDL)\b/i],
   ["tfsa",/\bTFSA\b|Tax-Free Savings Account/i],
