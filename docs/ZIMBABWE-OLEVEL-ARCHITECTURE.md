@@ -52,17 +52,23 @@ The revised Form 1 split is deliberately balanced at **26 / 26 / 27 source lesso
 ### Form 2 — Work, Value & Enterprise
 
 **Term 1 — Work, Value & How Money Moves**  
-Working source: Grade 9 lessons 1–25.
+Working source: Grade 9 lessons 1–34. **34 source lessons.**
 
-**Term 2 — Enterprise Capability, Habits & Execution**  
-Working source: Grade 9 lessons 26–54. **29 source lessons.**
+**Term 2 — Habits, Agency & Execution**  
+Working source: Grade 9 lessons 35–54. **20 source lessons.**
 
 **Term 3 — Community Enterprise & Portfolio**  
 Working source: Grade 9 lessons 55–75. **21 source lessons.**
 
-This is now viable because lessons 23–34 have been restored to the source. The Form 2 split is deliberately **25 / 29 / 21 source lessons** rather than mathematically even.
+This is now viable because lessons 23–34 have been restored to the source. The Form 2 split is deliberately **34 / 20 / 21 source lessons** rather than mathematically even.
 
-The reason is pedagogical: Lesson 50 launches a 21-day Habit Transformation project and Lessons 51–54 complete, reflect on and integrate that project. Splitting Term 2 at Lesson 50 would send learners into a school-term boundary immediately after project launch. Keeping Lessons 26–54 together preserves the full execution cycle, while Lessons 55–75 form a clean community-enterprise and portfolio term.
+The reason is pedagogical. Lesson 23 launches the Community Money Map project and Lessons 24–34 execute, present, reflect on and close that cycle. Lesson 50 then launches the 21-day Habit Transformation project and Lessons 51–54 complete, reflect on and integrate it. The three Zimbabwe terms therefore follow complete authored project cycles:
+
+- Term 1: enterprise foundations + Community Money Map;
+- Term 2: habits, agency + completed Habit Transformation;
+- Term 3: community enterprise + final portfolio.
+
+Source lesson units are not assumed to equal classroom periods, so preserving conceptual and project continuity takes priority over equal raw counts.
 
 ### Form 3 — Assets, Systems, Leverage & Leadership
 
@@ -120,7 +126,7 @@ Current protected delivery counts:
 | Form | Term 1 | Term 2 | Term 3 | Total source lessons |
 | --- | ---: | ---: | ---: | ---: |
 | Form 1 | 26 | 26 | 27 | 79 |
-| Form 2 | 25 | 29 | 21 | 75 |
+| Form 2 | 34 | 20 | 21 | 75 |
 | Form 3 | 36 | 40 | 40 | 116 |
 | Form 4 | 40 | 40 | 32 | 112 |
 | **Total** |  |  |  | **382** |
