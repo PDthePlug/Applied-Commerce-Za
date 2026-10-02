@@ -1213,6 +1213,360 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
       {from:"You finished Term 1 of Grade 10.",to:"You completed the first Form 3 learning cycle: value creation, business systems and enterprise architecture. Form 3 Term 1 continues with saving, investing and assets."},
     ],
   },
+  "g10-t2-l17-017": {
+    title:"SAVING VS INVESTING — PROTECTING MONEY FOR DIFFERENT JOBS",
+    textReplacements: [
+      {from:"📘 The R800 That Shrank",to:"📘 The US$80 That Lost Purchasing Power"},
+      {from:"Myah has R800 in a savings account. She put it there eight months ago, after her water business stabilized. She has not touched it. She checks the balance: R812. R12 interest.",to:"Myah has US$80 in a savings account in this illustrative example. She put it there eight months ago and has not touched it. She checks the balance: US$81.20. The number is slightly higher."},
+      {from:"She shows her mother. \"Eight months. R12. That is R1.50 a month.\"",to:"She shows her mother. \"Eight months. US$1.20 earned. The balance grew — but only a little.\""},
+      {from:"Myah does not understand. Her mother pulls out an old receipt from a drawer. \"This is what bread cost when you were born. R4.50. Now it is R14. The R800 you saved — it is still R800. But what it can buy is less. Every year, a little less. That is inflation. It does not break down your door. It just quietly takes your money's ability to do things. Saving protects the number. It does not protect the value.\"",to:"Myah does not understand. Her mother explains: \"Prices can rise over time. If the return on your savings is lower than inflation, the balance may grow while its purchasing power falls. Saving and investing therefore do different jobs. Savings prioritise access and stability; investing accepts more risk in pursuit of long-term growth.\""},
+      {from:"Myah stares at the receipt. R4.50. She cannot remember bread ever costing R4.50. She looks at her bank balance. R812. The number is growing — R1.50 a month. But what it can buy is shrinking — faster than R1.50 a month.",to:"Myah looks at the balance again. The number rose, but she now understands that the useful question is what the money can buy when she needs it."},
+      {from:"If inflation is 6% per year and your savings earn 2% interest, are you gaining or losing purchasing power? By how much per year? If your R800 sits in savings for 5 years at 2% interest while inflation is 6%, what can it buy then that it can buy now?",to:"In a hypothetical example where inflation is 6% per year and savings earn 2%, are you gaining or losing purchasing power? By roughly how much per year? Use US$80 as the starting amount for the calculation. These rates are for maths practice, not current Zimbabwe rates."},
+      {from:"Key idea: Myah's R800 is safe. The bank will not lose it. No one will steal it. But safety is not the same as growth. While her money sits in savings earning R1.50 a month, the price of everything she needs — bread, transport, airtime — is rising faster. She is not being robbed by a thief. She is being eroded by time. Saving protects the number. Investing protects the value. They are different tools for different purposes.",to:"Key idea: saving and investing solve different problems. A savings account can prioritise access and lower risk, but returns may not keep pace with inflation. Investing offers higher growth potential but also the possibility of loss. Neither tool is automatically 'better.' The right choice depends on purpose, time horizon, liquidity needs and risk."},
+      {from:"Question 2: If you had R1,000 and a goal to use it in 6 months, would you save or invest? Why? If the goal was 10 years away, would your answer change? What does the difference reveal about how time horizon determines strategy?",to:"Question 2: If you had US$100 for a goal six months away, would you save or invest? Why? If the same goal were ten years away, would your answer change? Explain how time horizon affects strategy."},
+      {from:"Find out the current interest rate on a savings account at a South African bank. Find out the current inflation rate. Compare them. If someone saved R1,000 for a year, would they gain or lose purchasing power? By how much? Write down what you find.",to:"Research one current Zimbabwe savings product from a regulated provider and find the latest published inflation figure from a credible source. Record the date of both figures. Compare them, but do not assume one product or one month's inflation represents the future."},
+    ],
+    tableTextReplacements: [
+      {from:"stokvel",to:"mukando or savings group"},
+      {from:"Stokvel",to:"Mukando or savings group"},
+    ],
+  },
+  "g10-t2-l18-018": {
+    textReplacements: [
+      {from:"📘 Themba's R2,000 Mistake — Revisited With New Eyes",to:"📘 Themba's US$200 Mistake — Revisited With New Eyes"},
+      {from:"\"Last year I told you about losing R2,000 on an online business idea. I said I learned about risk. But I did not tell you the whole story.\"",to:"\"Last year I told you about losing US$200 on an online business idea in this illustrative story. I said I learned about risk. But I did not tell you the whole story.\""},
+      {from:"\"I did not just lose R2,000. I borrowed R1,000 of it from my grandmother. She gave it to me because she believed in me. When the business failed, I could not pay her back for six months. Six months of her looking at me with disappointment she was too kind to say out loud. Six months of me avoiding her house because I could not face her.\"",to:"\"I did not just lose US$200. I had borrowed US$100 of it from my grandmother. When the business failed, I could not repay her for six months. The financial loss damaged trust too.\""},
+      {from:"\"The R2,000 loss was bad. The shame was worse. And I did not factor the shame into my risk calculation. I only thought about the money. I did not think about what it would feel like to lose money that was not mine. What it would do to the person who gave it to me. What it would do to our relationship.\"",to:"\"The US$200 loss was bad, but the relationship cost was worse. I had calculated financial risk and ignored human risk — especially because part of the money was not mine.\""},
+      {from:"\"That risk is not just about numbers. It is about what you can afford to lose — not just financially, but emotionally, relationally, psychologically. I could not afford to lose R2,000. But more than that, I could not afford to lose my grandmother's trust. I lost both because I only calculated the financial risk. I did not calculate the human risk. Now I do. Before I invest in anything, I ask: If this goes to zero — not just the money, but everything attached to it — can I survive that? If the answer is no, I do not invest. No matter how good the return looks.\"",to:"\"Risk is not only the amount on the screen. I now ask: if this goes badly, what else is attached — debt, trust, essential money, time or reputation? If the downside would damage something I cannot afford to lose, the position is too large or the funding source is wrong.\""},
+      {from:"If you invested R500 and it dropped to R250, how would you feel? ☐ I would panic and sell immediately ☐ I would be uncomfortable but hold on ☐ I would see it as a buying opportunity ☐ I do not know — I have never been tested",to:"If an illustrative US$50 investment fell to US$25, how would you feel? ☐ I would panic and sell immediately ☐ I would be uncomfortable but review my plan before acting ☐ I might consider adding only if the original case still holds and I can afford the risk ☐ I do not know — I have never been tested"},
+    ],
+  },
+  "g10-t2-l19-019": {
+    textReplacements: [
+      {from:"\"Not money. Time. Knowledge. I have been teaching the younger women at the stokvel. Not just how to save — they know that. How to invest. How to think about risk. How to read a payslip. How to check a credit score. The things I learned too late. I am giving them what I did not have: the knowledge, early enough to use it.\"",to:"\"Not money. Time. Knowledge. I have been teaching younger women after their mukando meeting. Not just how to save — they know that. We talk about investing, risk, payslips and how to check a credit record. I am giving them knowledge early enough to use it.\""},
+      {from:"She pulls out a piece of paper. On it, she has written names. \"Thirteen women. They meet with me every Saturday, after the stokvel meeting. I teach them for an hour. They teach each other. Some of them have opened tax-free savings accounts. Two of them have started small businesses. One of them — my neighbour's daughter, Palesa — she is 19. She has already started a retirement annuity. Nineteen! When I was 19, I did not know what retirement was.\"",to:"She pulls out a piece of paper. On it, she has written names. \"Thirteen women. They meet with me every Saturday after the mukando meeting. I teach for an hour, then they teach one another. Some have opened formal savings or investment accounts with regulated providers. Two have started small businesses. One has already begun a long-term retirement saving habit. The exact product matters less than starting with understanding.\""},
+      {from:"Example: If you invest R1,000 at 8%, it will double to R2,000 in about 9 years. In another 9 years, it will double again to R4,000. In 36 years (4 doubles), it becomes about R16,000.",to:"Hypothetical maths example: if US$100 grows at a constant 8% annually, the Rule of 72 suggests a doubling time of about 9 years. Four approximate doublings would turn US$100 into roughly US$1,600. Real returns are not constant or guaranteed."},
+      {from:"Example: Save R1,000 at 10% compound interest for 3 years.",to:"Hypothetical example: compound US$100 at 10% per year for 3 years."},
+      {from:"With simple interest, you would have R1,300 after 3 years. Compound interest gave you R1,331 — an extra R31. Over longer periods, the difference is enormous.",to:"With simple interest in this example, you would have US$130 after 3 years. Compound growth gives US$133.10 — an extra US$3.10. Over long periods, the gap can become much larger."},
+      {from:"If you invest R1,000 at 8%, about how much will it be worth in 36 years (doubles every 9 years = 4 doubles)? R _______",to:"Using the Rule of 72 approximation, if US$100 grows at 8%, about how much would four doublings produce? US$ _______"},
+      {from:"Using the start-age table above: If you start saving R500/month at age 20, about how much will you have at retirement? R _______",to:"Using the illustrative start-age table above, what is the lesson about starting earlier even when the monthly contribution is small? Do not treat the displayed growth rate as guaranteed."},
+      {from:"Key idea: Gogo Maria learned about compound interest too late to use it for money. But she found another currency: people. Every woman she teaches becomes a teacher. Every teacher reaches more women. That is compounding — not in rands, but in lives changed. The mathematics is the same. The currency is different. You do not need money to start compounding. You need something to invest — knowledge, time, skill — and the patience to let it grow.",to:"Key idea: Gogo Maria learned about compounding late, but she recognised the pattern beyond money. Knowledge can also spread through repeated teaching. Financial compounding is mathematical; social learning is not literally the same formula, but the analogy is useful: small repeated contributions can accumulate into something much larger."},
+      {from:"Question 1: Using the Rule of 72, how long does it take money to double at 9%? Show your calculation. If you invest R100 at age 16 at 9%, about how many times will it double by age 70? What will it be worth?",to:"Question 1: Using the Rule of 72, about how long does money take to double at a hypothetical 9% return? If US$10 compounded at that constant rate from age 16 to 70, estimate the number of doublings and final amount. State clearly that the return is hypothetical."},
+    ],
+    tableReplacements: [
+      {
+        cellIncludes:"R1,100",
+        rows:[
+          ["Year","Start","Interest (10%)","End"],
+          ["1","US$100.00","US$10.00","US$110.00"],
+          ["2","US$110.00","US$11.00","US$121.00"],
+          ["3","US$121.00","US$12.10","US$133.10"],
+        ],
+      },
+      {
+        cellIncludes:"R270,000",
+        rows:[
+          ["Start Age","Illustrative Monthly Contribution","Years","Total Contributed","Illustrative Growth at 8%"],
+          ["20","US$50","45","US$27,000","Approx. US$230,000"],
+          ["30","US$50","35","US$21,000","Approx. US$110,000"],
+          ["40","US$50","25","US$15,000","Approx. US$47,500"],
+          ["50","US$50","15","US$9,000","Approx. US$17,000"],
+        ],
+      },
+    ],
+  },
+  "g10-t2-l21-021": {
+    textReplacements: [
+      {from:"Here’s the tension: starting small feels pointless. One sewing machine. One R100 investment. One skill learned. It feels like nothing. It feels like it will never add up to anything. That feeling — the feeling of pointlessness — is what stops most people. They cannot see the factory in the sewing machine. The strategist sees what others cannot: the compound curve, the long arc, the invisible growth that happens underground before anything breaks the surface.",to:"Here’s the tension: starting small can feel pointless. One sewing machine. One US$10 investment in this illustration. One skill learned. It feels too small to matter. But asset building often begins with a productive tool or capability that can create the next increment of value. The strategist asks what the first small asset makes possible next."},
+    ],
+  },
+  "g10-t2-l22-022": {
+    textReplacements: [
+      {from:"A local supermarket chain wants to stock their produce. Mangoes. Avocados. Herbs. All of it. They want consistent supply, professional packaging, delivery to their distribution centre. The contract would triple their revenue. But it requires investment — R8,000 for packaging equipment, a delivery vehicle rental, and certification. The cooperative has R4,800 in savings.",to:"A supermarket wants to stock their produce. Mangoes, avocados, herbs. It wants consistent supply, professional packaging and reliable delivery. In this illustrative example, meeting the requirements needs US$800 for packaging equipment, transport setup and compliance costs. The cooperative has US$480 saved."},
+      {from:"They have three options. Option one: take a loan. Borrow the R3,200 they need. Option two: bring in two new members who have capital to contribute. New members mean new equity. New equity means dilution — the six current members would own less of a bigger pie. Option three: say no to the supermarket. Stay small. Keep doing what they are doing. Risk that someone else says yes and takes the opportunity forever.",to:"They have three options. One: borrow the US$320 gap, after checking total cost and affordability. Two: admit new members who bring capital, which changes ownership and decision rights. Three: decline or renegotiate the opportunity and remain smaller for now. Each option carries a different risk."},
+    ],
+  },
+  "g10-t2-l23-023": {
+    title:"DEBT — PURPOSE, COST & RISK",
+    textReplacements: [
+      {from:"\"I want to tell you about two loans I took,\" she says. \"One nearly destroyed me. The other built everything I have. They were the same amount. R20,000. The difference was what I did with the money.\"",to:"\"I want to tell you about two loans I took,\" she says. \"They were the same illustrative amount — US$2,000 — but they served very different purposes and created very different risks.\""},
+      {from:"She tells the first story. Five years ago. She borrowed R20,000 to buy a car. A beautiful car. Leather seats. She felt successful driving it. The repayments were R2,100 a month for five years. Total cost: R126,000. For a R20,000 loan. The car is now worth about R35,000. It did not generate a single rand of income. It was a liability from day one. She is still paying it off.",to:"She tells the first story. She borrowed US$2,000 for a vehicle mainly for personal use. The repayments and fees stretched her budget, while the vehicle lost value and did not generate income. The lesson was not that every car is 'bad debt'; it was that the borrowing cost and purpose did not fit her cash flow."},
+      {from:"Then the second story. Three years ago. She borrowed R20,000 to buy industrial ovens. The repayments were the same. R2,100 a month. But the ovens let her cater for twice as many events. They generated R6,000 a month in new income. They paid for themselves in four months. Everything after that was profit. The ovens are still working. Still earning. That debt bought her an asset. An asset that put money in her pocket every month.",to:"Then the second story. She borrowed the same US$2,000 for industrial ovens. The ovens increased productive capacity and generated additional cash flow. That did not make the debt automatically safe — demand could have failed — but she had a clearer repayment case because the asset could help produce income."},
+      {from:"\"Same amount. Same interest rate. Same bank. One debt nearly destroyed me. The other built my business. The difference was not the debt. The difference was what the debt bought. Good debt buys you an asset. Bad debt buys you a feeling. Learn the difference before you borrow a single rand.\"",to:"\"Same borrowed amount, very different use. Debt is not automatically good because it buys an asset or automatically bad because it buys consumption. Ask: what is the total cost, what cash flow will repay it, what happens if the plan fails, and can I still meet essential needs?\""},
+      {from:"Key idea: Mrs. Khumalo's two loans were identical on paper. R20,000. Same bank. Same interest rate. The difference was what the money bought. The car bought a feeling. The ovens bought income. The strategist does not ask \"Can I afford the repayments?\" The strategist asks \"Does this debt buy me an asset or a liability?\" If the answer is liability, the repayments are irrelevant. You cannot afford a liability. No one can.",to:"Key idea: loan purpose matters, but purpose is not enough. Productive debt can still fail and consumption debt can sometimes be necessary. A better test asks about total borrowing cost, affordability, repayment source, downside risk, lender legitimacy and what the borrower gives up to make the payments."},
+      {from:"Your Next Step: If you had to borrow R5,000 tomorrow, what would you use it for? Would that purchase put money in your pocket — or take it out? Be honest. The bank will not ask this question. You must.",to:"Your Next Step: if you were considering an illustrative US$500 loan, what would it fund? What is the repayment source? What happens if your income falls? What information would you need from the lender before deciding?"},
+      {from:"Question 2: Mrs. Khumalo's car loan: R20,000 borrowed, total repayment R126,000 over five years. Was the problem the interest rate, or was the problem what she did with the money? If she had bought the ovens first and the car second, would the car still have been bad debt? Why or why not?",to:"Question 2: compare borrowing for a personal-use vehicle with borrowing for productive equipment. Why is 'what the debt buys' important but insufficient? Include affordability, total cost, risk and repayment source."},
+      {from:"If you cannot ask anyone: Research the total cost of a R10,000 loan at 20% interest over 3 years. How much do you actually pay back? Write down the number. Let it sink in.",to:"If you cannot ask anyone: find a current loan illustration from a legitimate Zimbabwe lender. Record the principal, interest rate, fees, repayment period and total amount repayable. Do not apply for the loan; use the disclosure for learning."},
+    ],
+    tableTextReplacements: [
+      {from:"Borrowing R5,000 for a laptop to do freelance work",to:"Borrowing US$500 for a laptop used for paid freelance work"},
+      {from:"Borrowing R3,000 for a new phone when your old one works",to:"Borrowing US$300 for a new phone when your current one works"},
+      {from:"Borrowing R20,000 for a car to use for Uber",to:"Borrowing US$2,000 toward a vehicle used for paid transport work"},
+      {from:"Borrowing R1,000 for a friend's birthday party",to:"Borrowing US$100 for a social event"},
+      {from:"Borrowing R10,000 for tools to start a repair business",to:"Borrowing US$1,000 for tools for a tested repair business"},
+    ],
+  },
+  "g10-t2-l24-024": {
+    title:"MANAGING DEBT — WHY THE MINIMUM CAN COST MORE",
+    textReplacements: [
+      {from:"📘 The R85 That Kept Sipho Trapped",to:"📘 The US$8.50 Minimum That Moved Too Slowly"},
+      {from:"Sipho has a store account. He bought a phone on credit — R3,000, payable over 24 months. The minimum payment is R85 per month. R85 feels small. Manageable. Almost nothing.",to:"Sipho has a store account in this illustrative example. He bought a phone on credit for US$300. The minimum payment shown on the statement is US$8.50 per month. It feels small and manageable."},
+      {from:"He has been paying R85 for eight months. He checked his balance last week. After eight payments totaling R680, he still owes R2,540. He has paid R680 — and only R460 has gone toward the phone. R220 has gone to interest.",to:"After eight US$8.50 payments, he has paid US$68 in total, but the balance has fallen much less because part of each payment went to finance charges. He finally reads the statement instead of judging the debt by the monthly payment alone."},
+      {from:"He brought the statement to Myah at Emmanuel's spaza shop. \"I have paid for eight months. I still owe almost the whole thing. How is that possible?\"",to:"He brings the statement to Myah at Emmanuel's tuckshop. \"I have paid for eight months. Why has the balance fallen so slowly?\""},
+      {from:"Myah studied the statement. Interest rate: 22% per year. Minimum payment: R85. If Sipho continues paying R85, it will take him 44 months — nearly four years — to pay off a R3,000 phone. Total cost: about R3,740. The phone will be worth maybe R800 by then.",to:"Myah studies the illustration. The rate, fees and minimum-payment rule mean a small payment can stretch the repayment period. The exact result depends on the contract. The lesson is to read the annual rate, fees, payment schedule and total amount repayable — not only the minimum."},
+      {from:"\"Pay more. Even R50 more makes a difference. At R135 per month, you pay it off in about 28 months instead of 44. You save over R500 in interest. At R200 per month, you pay it off in 17 months. You save over R900. The more you pay above the minimum, the faster you are free — and the less the freedom costs.\"",to:"\"If your agreement allows extra payments without a penalty, paying more can reduce interest and time. But first check the contract. If you cannot afford more, the answer is not shame. It may be budgeting, contacting the lender early, restructuring where legitimate, increasing income or prioritising the most expensive debt.\""},
+      {from:"Sipho increased his payment to R150 starting that month. He will be free of the phone debt in 24 months instead of 44. He will save R470 in interest.",to:"Sipho checks the agreement and chooses a larger payment he can sustain. The important change is that he now knows the trade-off between monthly payment, repayment time and total cost."},
+      {from:"R1,000 debt at 2% monthly interest, R50 minimum payment:",to:"Illustrative US$100 debt at 2% monthly interest with a US$5 payment:"},
+      {from:"At this rate, it takes 23 months to repay. Total interest: R287. After three payments totaling R150, only R91.81 has gone to principal. The rest is interest.",to:"This simplified illustration shows why early payments can contain both principal and interest. Use the table to calculate how the balance changes; real agreements may also include fees."},
+      {from:"You owe R2,000 on a store card. Interest rate: 18% per year (1.5% per month). Minimum payment: R60 per month.",to:"For maths practice, imagine a US$200 balance at a hypothetical 18% annual rate (1.5% per month). This is not a current Zimbabwe product quote."},
+      {from:"How much do you save by paying R150 instead of R60? R _______ How much sooner are you free? _______ months",to:"Using the illustrative table, compare the highest and lowest monthly payments. How much interest and time differ?"},
+      {from:"Here’s the tension: sometimes the minimum payment is all you can afford. When every rand is spoken for, when survival is the priority, paying more than the minimum is not a choice — it is a luxury. The advice to \"pay more than the minimum\" assumes you have more to pay. Not everyone does. If you cannot pay more, do not blame yourself. But do not pretend the minimum is enough either. The minimum keeps you alive. It does not set you free. The gap between surviving and freedom is what you must work to close — not through shame, but through strategy.",to:"Here’s the tension: sometimes the contractual minimum is all a household can afford. Advice to pay extra assumes there is extra money. If there is not, the strategy shifts to understanding the agreement, preventing new expensive debt, contacting the lender before default, protecting essential needs and looking for legitimate ways to improve cash flow."},
+      {from:"Your Next Step: If you were advising Sipho — and he genuinely could not afford more than R85 — what would you tell him to do? What options does someone have when they cannot pay more than the minimum?",to:"Your Next Step: if Sipho genuinely cannot afford more than the contractual minimum, what responsible options should he investigate before missing payments?"},
+      {from:"Question 1: Why is paying only the minimum payment dangerous? Use Sipho's numbers to explain: R3,000 at 22%, paying R85/month.",to:"Question 1: why can a small minimum payment make debt expensive over time? Explain using principal, interest, fees and repayment period rather than memorising one product example."},
+      {from:"Question 2: If Sipho genuinely cannot afford more than R85 per month, what should he do? List at least two strategies beyond \"pay more.\" Think: income, expenses, negotiation, refinancing, prioritization.",to:"Question 2: if Sipho cannot afford more than the minimum, list at least two responsible strategies beyond 'pay more.' Consider income, expenses, lender communication, legitimate restructuring and debt prioritisation."},
+      {from:"If you have no debt: Research the interest rate on a typical store card in South Africa. Calculate the total cost of a R2,000 purchase if you pay only the minimum.",to:"If you have no debt: find a current Zimbabwe credit example from a legitimate provider. Record the rate, fees, minimum-payment rule and total amount repayable. Do not apply for credit for this exercise."},
+    ],
+    tableReplacements: [
+      {
+        cellIncludes:"R970",
+        rows:[
+          ["Month","Balance","Interest Added (2%)","Payment","New Balance"],
+          ["1","US$100.00","US$2.00","US$5.00","US$97.00"],
+          ["2","US$97.00","US$1.94","US$5.00","US$93.94"],
+          ["3","US$93.94","US$1.88","US$5.00","US$90.82"],
+        ],
+      },
+      {
+        cellIncludes:"Minimum + R40",
+        rows:[
+          ["Payment Strategy","Illustrative Monthly Payment","Effect"],
+          ["Minimum only","US$6","Longest repayment and highest interest of these examples"],
+          ["Minimum + US$4","US$10","Faster repayment and lower interest"],
+          ["Minimum + US$9","US$15","Fastest repayment and lowest interest of these examples"],
+        ],
+      },
+    ],
+    tableTextReplacements: [
+      {from:"Even R10 extra saves interest and time",to:"An affordable extra payment can reduce interest and time if the agreement permits it"},
+    ],
+  },
+  "g10-t2-l25-025": {
+    title:"CREDIT RECORDS — THE FILE LENDERS MAY READ",
+    textReplacements: [
+      {from:"credit scores",to:"credit records"},
+      {from:"Credit scores",to:"Credit records"},
+      {from:"credit score",to:"credit record"},
+      {from:"Credit score",to:"Credit record"},
+      {from:"Last month, he applied for a small car loan — R60,000. The bank said no.",to:"Last month, he applied for a small vehicle loan in an illustrative example. The lender said no after reviewing affordability and credit information."},
+      {from:"If you cannot ask anyone: Research how to check your credit score in South Africa. Write down the steps. One day you will need them.",to:"If you cannot ask anyone: research Zimbabwe's Central Credit Registry through the Reserve Bank of Zimbabwe. Write down what a credit report/record is used for and where a consumer can find current official guidance."},
+    ],
+    tableTextReplacements: [
+      {from:"credit scores",to:"credit records"},
+      {from:"Credit scores",to:"Credit records"},
+      {from:"credit score",to:"credit record"},
+      {from:"Credit score",to:"Credit record"},
+    ],
+  },
+  "g10-t2-l26-026": {
+    title:"INVESTMENT VEHICLES — MATCHING THE TOOL TO THE GOAL",
+    textReplacements: [
+      {from:"Identify different investment vehicles available in South Africa.",to:"Identify broad saving and investment vehicle categories relevant to Zimbabwe, and explain why current provider availability must be verified."},
+      {from:"\"Five vehicles. Each one has a job. The savings account is not trying to grow — it is my buffer. The TFSA is my long-term engine. The retail bonds are for a specific goal — a laptop upgrade in five years. The unit trust is for wealth building. The stokvel is community, not just money. The key is not picking the 'best' vehicle. The key is matching the vehicle to the goal. A savings account is a terrible place for retirement money. An ETF is a terrible place for emergency funds. The vehicle must fit the purpose.\"",to:"\"Different vehicles have different jobs. Emergency savings prioritise access. A fixed deposit trades access for a known term. A collective investment scheme or listed security may offer growth potential but can lose value. A mukando can support saving discipline but depends on the group's rules and trust. The goal is not to pick one 'best' vehicle. It is to match purpose, time horizon, liquidity, fees and risk.\""},
+      {from:"📘 Investment Vehicles in South Africa",to:"📘 Saving and Investment Vehicle Categories"},
+      {from:"If you had R1,000 to invest today, what would you do with it — and why? What is the PURPOSE of that money? Have you matched the vehicle to the purpose, or are you just chasing returns?",to:"If you had an illustrative US$100 available, what job would the money need to do first? Emergency buffer, short-term goal or long-term growth? Only after defining the job should you compare vehicles."},
+      {from:"If you had R5,000 to allocate across different vehicles, how would you divide it? Why?",to:"If you had an illustrative US$500 to allocate across different purposes, how would you divide it? Explain the role of each allocation."},
+      {from:"Question 1: Name three investment vehicles available in South Africa. For each, state: risk level, minimum investment, and best use.",to:"Question 1: name three saving or investment vehicle categories relevant to Zimbabwe. For each, state the main purpose, risk, liquidity and what current information must be checked before using a real provider."},
+      {from:"Research one investment vehicle you did not know about before this lesson. Find out: minimum investment, expected returns, risk level, and how to access it in South Africa. Write down what you learn.",to:"Research one saving or investment product offered through a regulated Zimbabwe provider or market participant. Record the provider, regulator where applicable, minimum amount, fees, liquidity and stated risk. Record the date because product terms can change."},
+    ],
+    tableReplacements: [
+      {
+        cellIncludes:"TFSA (ETF)",
+        rows:[
+          ["Vehicle","Illustrative Amount","Purpose","Time Horizon","Main Risk / Constraint"],
+          ["Savings account","US$300","Emergency buffer","Immediate","Return may lag inflation"],
+          ["Fixed deposit","US$100","Defined medium-term goal","Fixed term","Limited access before maturity"],
+          ["Collective investment scheme","US$250","Long-term growth","5+ years","Market and fee risk"],
+          ["Listed securities","US$150","Long-term growth / ownership","Long term","Prices can fall; diversification matters"],
+          ["Mukando / savings group","US$20 per cycle","Saving discipline / agreed group goal","Group-defined","Trust and group-rule risk"],
+        ],
+      },
+      {
+        cellIncludes:"Retail bonds",
+        rows:[
+          ["Vehicle Category","What It Is","Typical Risk Pattern","Best Use"],
+          ["Savings account","Deposit with a regulated bank","Lower market risk; inflation and institution terms still matter","Emergency and short-term needs"],
+          ["Fixed deposit","Deposit locked for an agreed term","Lower market volatility but lower liquidity","Known medium-term goals"],
+          ["Collective investment scheme","Pooled investments managed under a fund structure","Market and fee risk","Diversified long-term investing"],
+          ["Listed shares / securities","Ownership or exposure traded on a securities market","Market and company risk","Long-term growth where appropriate"],
+          ["Mukando / savings group","Community saving arrangement under agreed rules","Trust, governance and liquidity depend on the group","Saving discipline and shared goals"],
+        ],
+      },
+      {
+        cellIncludes:"Emergency fund (R3,000)",
+        rows:[
+          ["Goal","Time Horizon","Vehicle Features to Prioritise","Why?"],
+          ["Emergency fund","Immediate","Liquidity, capital stability, low fees","Money must be accessible"],
+          ["Education cost in 3 years","3 years","Known term, controlled risk, appropriate liquidity","Short horizon limits risk capacity"],
+          ["Retirement / long-term wealth","Decades","Diversification, fees, regulated access, growth potential","Long horizon can tolerate more variability"],
+          ["Large purchase in 8 years","8 years","Balanced growth, diversification and liquidity plan","Goal has time but still a fixed date"],
+        ],
+      },
+    ],
+  },
+  "g10-t2-l27-027": {
+    title:"FUNDS, LISTED SECURITIES & FEES — TUMELO'S COMPARISON",
+    textReplacements: [
+      {from:"Distinguish between ETFs, unit trusts, and retail bonds.",to:"Distinguish between pooled funds, listed securities and lower-volatility saving options, with attention to fees and regulation."},
+      {from:"Tumelo is 25. He started investing at 18 — R200 a month into a unit trust his bank recommended. He was proud of himself. He was building wealth. He was doing what responsible adults do.",to:"Tumelo is 25. In this illustrative story, he started investing US$20 a month at 18 into a managed fund. He was proud that he had started early."},
+      {from:"The unit trust had a Total Expense Ratio of 2.5%. That means for every R1,000 he invested, R25 went to fees — every year, regardless of performance. Over seven years, he had paid nearly R3,000 in fees. His returns after fees were barely beating inflation.",to:"The fund had an illustrative annual expense ratio of 2.5%. That means fees reduce returns whether the market rises or falls. Tumelo realises that a small annual percentage can compound into a large difference over many years."},
+      {from:"He switched. He moved his money to an ETF tracking the same market index. The TER was 0.3%. His annual fees dropped from R625 to R75 per R25,000 invested. Same exposure. Same market. Drastically different cost.",to:"He compares the managed fund with a lower-fee index-tracking structure where such a regulated product is available. The lesson is not that one structure is always better; it is that similar market exposure can carry very different fees, service and tracking choices."},
+      {from:"He tells Myah at Mama Rose's kitchen: \"The bank did not tell me about the fees. They told me about the returns. But fees are guaranteed. Returns are not. A 2.5% fee on a fund that earns 8% means you keep 5.5%. That 2.5% compounds against you — just like interest compounds for you. Over 30 years, the difference between a 0.3% fee and a 2.5% fee on R500 a month is hundreds of thousands of rands. Fees are the silent killer of wealth. No one talks about them because they are boring. But boring things compound too.\"",to:"He tells Myah: \"Returns are uncertain, but disclosed fees are costs you can compare before investing. If two products give similar exposure and one charges much more, that difference compounds too. I need to compare fees, risk, liquidity, regulation and what the product actually holds — not only the return headline.\""},
+      {from:"📘 Comparing ETFs, Unit Trusts, and Retail Bonds",to:"📘 Comparing Investment Structures and Fees"},
+      {from:"Imagine you invest R500 per month for 30 years. Average return: 8% per year.",to:"For a maths illustration, imagine investing US$50 per month for 30 years at an assumed 8% annual return before fees. The return is hypothetical, not promised."},
+      {from:"Question 1: What is the difference between an ETF and a unit trust? Which typically has lower fees — and why? What is a retail bond, and who issues it?",to:"Question 1: what is the difference between an exchange-traded fund structure and a managed collective investment scheme? What fees, liquidity, market exposure and provider regulation should you compare?"},
+      {from:"Find one financial product — a savings account, a funeral plan, a stokvel, anything — that you or your family uses. Find out: what are the fees? Are they clearly stated, or hidden? Write down what you discover.",to:"Find one financial product your household knows — a savings account, insurance policy, mukando or investment product. What fees or charges apply? Are they clearly stated? Record the source and date."},
+    ],
+    tableReplacements: [
+      {
+        cellIncludes:"Retail bond",
+        rows:[
+          ["Feature","ETF Structure","Collective Investment Scheme","Fixed Deposit"],
+          ["What it is","Basket of securities traded on an exchange where available","Pooled fund managed under an investment mandate","Bank deposit locked for an agreed term"],
+          ["Main costs","Trading/platform costs and fund expenses","Management and other disclosed fund fees","Early-access restrictions and product terms"],
+          ["Risk","Market risk","Depends on underlying assets","Lower market volatility; institution and inflation risks remain"],
+          ["Liquidity","Usually market-dependent","Depends on fund rules","Limited until maturity"],
+          ["Best comparison question","What index/assets, total fees and liquidity?","What mandate, assets, fees and track record?","What rate, term, penalties and access rules?"],
+        ],
+      },
+    ],
+    tableTextReplacements: [
+      {from:"Retail bond",to:"Fixed deposit"},
+      {from:"retail bond",to:"fixed deposit"},
+    ],
+  },
+  "g10-t2-l28-028": {
+    textReplacements: [
+      {from:"\"Year five. The factory was making profit. Not much. R30,000 a year. I had a choice. I could take that R30,000 home. Live better. Buy a car. Or I could reinvest it. Buy more machines. Hire more workers. Grow.\"",to:"\"Year five. In this illustrative example, the factory was making US$3,000 a year in profit. I had a choice: take it all home, or reinvest part of it in machines, people and capacity.\""},
+      {from:"He pauses. \"My wife wanted me to take it. My children needed things. My neighbours thought I was crazy — working so hard and driving an old car. But I reinvested. Every rand. For three years. I lived on almost nothing. My family sacrificed. And at the end of year eight, the factory was making R100,000 a year. The R90,000 I had reinvested over three years was now generating an extra R70,000 a year — every year. The reinvestment paid for itself in less than two years. Everything after that was profit.\"",to:"He pauses. \"In the simplified case, I reinvested US$3,000 a year for three years — US$9,000 total. By the end of the period, annual profit had increased by about US$7,000 compared with the earlier base. That did not happen automatically; demand, execution and timing could have gone badly. Reinvestment worked in this story because productive capacity and sales grew together.\""},
+      {from:"Myah does the math in her notebook: R90,000 reinvested over 3 years → R70,000 annual increase in profit. Payback period: 1.3 years. After that, R70,000/year forever. That is a 78% annual return on the reinvested money. No bank. No stock market. No investment vehicle offers 78% returns. The highest-return investment Mr. Patel could make was in himself. In his own business. In his own capacity to produce.",to:"Myah does the simplified arithmetic: US$9,000 reinvested over three years and an illustrative US$7,000 annual profit increase implies about 78% of the reinvested amount. She writes a warning next to it: this is one business example, not a guaranteed annual return. Business reinvestment can also fail or lose capital."},
+      {from:"Total reinvested over 3 years: R90,000. Annual profit increase: R70,000. Return on reinvestment: 78%.",to:"Illustrative total reinvested over 3 years: US$9,000. Illustrative annual profit increase: US$7,000. Ratio to reinvested amount: about 78%."},
+      {from:"Mr. Patel reinvested R90,000 over 3 years. That reinvestment generated an additional R70,000 per year in profit. What was the annual return on his reinvestment?",to:"In the simplified example, US$9,000 was reinvested and the annual profit increase was US$7,000. What percentage is US$7,000 of US$9,000? Why should you not treat that percentage as a guaranteed future return?"},
+      {from:"Question 2: If you had R5,000 and had to choose between investing in a unit trust (8% expected return) and investing in a tool that could start a business (uncertain return, but potentially much higher), which would you choose? Why? What factors influence your decision beyond the numbers?",to:"Question 2: if you had an illustrative US$500, compare putting it into a diversified regulated investment versus buying a productive tool for a tested business idea. What factors matter beyond the headline return — diversification, demand, liquidity, skill, concentration risk and time?"},
+      {from:"If you cannot ask anyone: Design your own self-investment. If you had to spend R1,000 on something that would increase your future earning capacity, what would it be? Why?",to:"If you cannot ask anyone: design a self-investment. If you had an illustrative US$100 to increase future earning capacity, what would you spend it on, and what evidence suggests it could help?"},
+    ],
+    tableReplacements: [
+      {
+        cellIncludes:"R30,000",
+        rows:[
+          ["Year","Illustrative Profit","Reinvested","Taken Home","Result"],
+          ["1","US$3,000","US$3,000","US$0","Bought more tools"],
+          ["2","US$4,500","US$3,000","US$1,500","Hired first employee"],
+          ["3","US$7,000","US$3,000","US$4,000","Added production capacity"],
+          ["4","US$10,000","US$3,000","US$7,000","Business operating at larger scale"],
+        ],
+      },
+    ],
+  },
+  "g10-t2-l29-029": {
+    title:"FINANCIAL PLANNING — ZINHLE'S ONE-PAGE SYSTEM",
+    textReplacements: [
+      {from:"Zinhle has been offered a full-time job starting next year. She will earn R8,000 a month. She has exactly six months to prepare. She sits down with Myah at the library and pulls out a single piece of paper.",to:"Zinhle has been offered a full-time job starting next year. In this illustrative example she expects about US$800 a month before deductions. She has six months to prepare. She sits down with Myah at the library and pulls out a single piece of paper."},
+      {from:"\"The fun budget. R750 feels like a lot — until it is the end of the month and I am tired and I want to buy something I do not need. The fun budget is the first place I overspend. So I put a rule on it: cash only. When the cash is gone, it is gone. No card. No exceptions. Rules protect me from myself.\"",to:"\"My non-essential budget is US$75 in this illustration. That is the first place I overspend. So I set a rule: once the planned amount is used, I stop. The exact method can change, but I need a boundary I can actually follow.\""},
+    ],
+    tableReplacements: [
+      {
+        cellIncludes:"TFSA: max out R36,000/year",
+        rows:[
+          ["Section","Illustrative Detail"],
+          ["Goals","Emergency fund: US$1,000 over 12 months. Build a long-term investment habit through a regulated provider. Review retirement/pension options when employment begins."],
+          ["Current net worth","US$720 (savings + investments − debt)"],
+          ["Monthly budget","Income: US$545. Essentials: US$220. Long-term investing/saving: US$150. Non-essential: US$75. Buffer: US$100."],
+          ["Debt strategy","Avoid borrowing that has no clear repayment plan; compare total cost before signing."],
+          ["Protection","Emergency fund first; then investigate appropriate regulated insurance as responsibilities grow."],
+          ["Tax","Understand PAYE and check current ZIMRA guidance rather than memorising old brackets."],
+          ["Retirement","Learn how NSSA, employment-linked pensions and personal long-term saving may fit together where applicable."],
+          ["Review","Every 3 months; adjust as life and rules change."],
+        ],
+      },
+    ],
+  },
+  "g10-t2-l30-030": {
+    textReplacements: [
+      {from:"Themba is 20. He has recovered from the R2,000 loss. He has four income streams. He has been investing R300 a month into a unit trust for the past year. But he has been doing something that troubles him.",to:"Themba is 20. He has recovered from the earlier US$200 loss in this illustrative story. He has several income streams and has been investing US$30 a month through a diversified fund for the past year."},
+      {from:"\"Dollar-cost averaging. I invest R300 on the same day every month. No matter what. Market up? R300 goes in. Market down? R300 goes in. I do not think about it. I do not try to predict. I just execute. When the market is down, my R300 buys more shares. When it is up, it buys fewer. Over time, I pay the average price. Not the best price. Not the worst. The average. And the average, compounded over thirty years, is enough.\"",to:"\"Regular investing means I contribute US$30 on the same day every month in this example. When prices are lower, the same contribution buys more units; when prices are higher, it buys fewer. It removes some timing emotion, but it does not guarantee a profit and it does not make a poor investment good.\""},
+      {from:"R300 invested monthly, regardless of share price:",to:"Illustrative US$30 invested monthly, regardless of share price:"},
+      {from:"Average cost per share: R47.67 — lower than the average price of R48.75. The strategy works because it removes emotion from the equation.",to:"Illustrative average cost per unit: about US$4.77 compared with an average quoted price of US$4.88. The lesson is about consistent purchasing, not a promise that regular investing will always outperform."},
+      {from:"Your Next Step: If you were investing R200 a month and the market dropped 30% in one month, what would you do? Keep investing? Stop? Invest more? Why? What does your answer reveal about your emotional readiness for real investing?",to:"Your Next Step: if you were regularly investing US$20 a month and the market dropped 30%, what would you review before acting? Consider time horizon, emergency cash, diversification, why the asset fell and whether the original plan still fits."},
+    ],
+    tableReplacements: [
+      {
+        cellIncludes:"R1,200",
+        rows:[
+          ["Month","Amount Invested","Illustrative Unit Price","Units Bought"],
+          ["Jan","US$30","US$5.00","6"],
+          ["Feb","US$30","US$4.00","7.5"],
+          ["Mar","US$30","US$6.00","5"],
+          ["Apr","US$30","US$4.50","6.67"],
+          ["Total","US$120","Avg US$4.88","25.17"],
+        ],
+      },
+    ],
+  },
+  "g10-t2-l31-031": {
+    tableTextReplacements: [
+      {from:"cooperative, stokvel, community project",to:"cooperative, mukando / savings group, community project"},
+    ],
+  },
+  "g10-t2-l32-032": {
+    textReplacements: [
+      {from:"Myah is researching for her personal investment plan. She needs a vehicle for her medium-term goal: R10,000 for a financial literacy certification course in 4 years. She compares:",to:"Myah is researching for her personal investment plan. In this illustrative example, her medium-term goal is US$1,000 for a course in four years. She compares categories and then checks current products from regulated providers:"},
+      {from:"She calculates: to reach R10,000 in 4 years, she needs to save R190 per month at 6.5% (fixed deposit) or R175 per month at 8% (retail bond). The retail bond is the better fit — locked, safe, predictable. She will use a TFSA for her longer-term goal.",to:"She does not choose from a textbook rate. She records the date, provider, fees, access rules and current quoted return for each real option she researches. For the classroom plan, she uses conservative scenarios and labels every assumed return as hypothetical."},
+    ],
+    tableReplacements: [
+      {
+        cellIncludes:"Retail bond (3yr)",
+        rows:[
+          ["Option Category","What to Research","Risk / Constraint","Access"],
+          ["Savings account","Current interest, fees, currency and provider regulation","Return may lag inflation","Usually high"],
+          ["Fixed deposit","Current quoted rate, term, early-access rules","Funds locked; inflation risk","Low until maturity"],
+          ["Collective investment scheme","Mandate, underlying assets, fees, licensed manager","Market risk; returns variable","Depends on fund rules"],
+          ["Listed securities / ETF structure where available","Market, diversification, broker/platform fees and liquidity","Market volatility; product availability must be verified","Market-dependent"],
+        ],
+      },
+    ],
+  },
+  "g10-t2-l33-033": {
+    textReplacements: [
+      {from:"Goal 1 (Medium-term): R10,000 for financial literacy certification (4 years)",to:"Goal 1 (Medium-term): US$1,000 for a skills or certification course (4 years)"},
+      {from:"Vehicle: Retail bond (3-year, 8%)",to:"Vehicle category: fixed deposit or other suitable regulated medium-term option after current comparison"},
+      {from:"Monthly savings needed: R175",to:"Illustrative monthly contribution target: US$17.50 before updating for current rates and fees"},
+      {from:"Failure signal: If I have not saved R5,000 by end of Year 2, I must increase income or extend timeline.",to:"Failure signal: if I have not reached US$500 by the end of Year 2, I must review contribution, income, costs or timeline."},
+      {from:"Vehicle: TFSA (ETF, 0.3% fee)",to:"Vehicle category: diversified long-term investment through a regulated provider; exact product and fees to be verified"},
+      {from:"Monthly contribution: R200 (starting now, increasing with income)",to:"Illustrative monthly contribution: US$20, reviewed as income changes"},
+      {from:"Goal 3 (Short-term): Emergency fund (R3,000)",to:"Goal 3 (Short-term): Emergency fund (US$300 illustrative target)"},
+      {from:"Monthly contribution: R100",to:"Illustrative monthly contribution: US$10"},
+      {from:"Failure signal: If I have not reached R3,000 in 18 months, I must redirect funds from Goal 1 temporarily.",to:"Failure signal: if I have not reached US$300 in 18 months, I must review priorities and redirect contributions if appropriate."},
+    ],
+  },
+  "g10-t2-l34-034": {
+    textReplacements: [
+      {from:"Thabo shares his plan: he wants to invest R300/month into a TFSA for a delivery vehicle upgrade in 5 years. Myah studies it.",to:"Thabo shares his plan: in this illustrative example he wants to invest US$30 per month toward a delivery-vehicle upgrade in five years using a diversified regulated investment vehicle appropriate to his risk and time horizon. Myah studies it."},
+      {from:"\"Your plan assumes you will earn R300 extra every month. What happens in a bad month — when the bike breaks, when customers are scarce? Where is the buffer?\"",to:"\"Your plan assumes you will always have US$30 available. What happens in a bad month — when the bike breaks or customers are scarce? Where is the buffer?\""},
+      {from:"Thabo pauses. He had not built a buffer. He adds one: in months where income drops below R1,500, the investment drops to R100. The R200 difference goes to emergency savings. The plan survives because it flexes.",to:"Thabo pauses. He had not built a buffer. He adds a rule: when income falls below the minimum level needed for essentials and operating costs, the long-term contribution reduces and the difference supports the emergency buffer. The plan survives because it flexes."},
+    ],
+  },
+  "g10-t2-l35-035": {
+    textReplacements: [
+      {from:"Atlehang presents her family's investment plan — a collective TFSA for the community kitchen's future building. She shows the fee comparison. She shows the failure signals. She shows the review schedule.",to:"Atlehang presents her family's investment plan for the community kitchen's future building. She compares regulated saving and investment categories, fees, access rules and failure signals. She also shows a review schedule because products and conditions can change."},
+    ],
+  },
+  "g10-t2-l36-036": {
+    textReplacements: [
+      {from:"Lesson 17: Saving vs investing. Her R800 that shrank. Inflation as slow theft. Lesson 18: Risk and return. Themba's R2,000 and the shame he did not calculate. Lesson 19: Compound interest. The Rule of 72. Gogo Maria planting seeds at 73. Lesson 20: Assets and liabilities. Mr. Patel's factory — and what it cost him besides money. Lesson 21: Building assets. The sewing machine that started everything. Lesson 22: Cooperatives. Thandi's growth decision. Choosing which risk to take. Lesson 23: Debt. Mrs. Khumalo's two loans — same amount, different outcomes. Lesson 24: Managing debt. Sipho's minimum payment trap. The amortization table. Lesson 25: Credit scores. Elder Mkhize, invisible to the banks he never owed. Lesson 26: Investment vehicles. Zinhle's portfolio — each vehicle with a job. Lesson 27: Fees. Tumelo's 2.5% that compounded against him. Lesson 28: Reinvestment. Mr. Patel's 78% return on betting on himself. Lesson 29: Financial planning. Zinhle's one-page plan. Lesson 30: Strategies. Themba's dollar-cost averaging. Removing emotion. Lessons 31-35: Her Investment Plan. Built. Tested. Presented.",to:"Lesson 17: saving versus investing and purchasing power. Lesson 18: financial and human risk. Lesson 19: compounding and the Rule of 72 using hypothetical returns. Lesson 20: assets and liabilities. Lesson 21: building an asset base. Lesson 22: cooperative growth and capital choices. Lesson 23: debt purpose, cost and risk. Lesson 24: minimum payments and total borrowing cost. Lesson 25: credit records and lender screening. Lesson 26: matching vehicles to goals. Lesson 27: fees and investment structures. Lesson 28: reinvestment and business risk. Lesson 29: one-page financial planning. Lesson 30: regular investing and emotional discipline. Lessons 31–35: an investment plan researched, tested and presented."},
+      {from:"From me, in Grade 10 Date: _____________________",to:"From me, in Form 3 Date: _____________________"},
+      {from:"You finished Term 2 of Grade 10.",to:"You completed Form 3 Term 1 — value creation, saving, investing, assets and financial planning."},
+    ],
+  },
   "g9-t1-l01-001": {
     textReplacements: [
       {from:"Recall key learning from Grade 8 and assess what you carry forward.",to:"Recall key learning from Form 1 and assess what you carry forward."},
