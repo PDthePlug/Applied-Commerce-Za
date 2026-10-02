@@ -167,3 +167,29 @@ test("Form 1 three-term overlay contains no phantom fourth term or source-grade 
   assert.match(overlay,/WHAT HABITS TAUGHT ME — PROJECT REFLECTION/);
   assert.match(overlay,/From Term 3: Financial identity, agency and your first capstone/);
 });
+
+
+test("Form 1 Zimbabwe overlay contains no South African edition residue already covered by localisation",()=>{
+  const overlay=read("lib/zimbabwe-content.ts");
+  for(const residue of [
+    /\bspaza\b/i,
+    /\bstokvel\b/i,
+    /taxi rank/i,
+    /South Africa/i,
+    /\bSoweto\b/i,
+    /\bUmlazi\b/i,
+    /\bJohannesburg\b/i,
+    /\bDurban\b/i,
+    /\bPretoria\b/i,
+    /\bGrade 8\b/i,
+    /\bGrade 9\b/i,
+    /\bGrade 12\b/i,
+    /\bTerm 4\b/i,
+    /\bR\s?\d/i,
+    /\brand(?:s)?\b/i,
+  ]) assert.doesNotMatch(overlay,residue);
+  assert.match(overlay,/\bmukando\b/i);
+  assert.match(overlay,/\btuckshop\b/i);
+  assert.match(overlay,/\bkombi\b/i);
+  assert.match(overlay,/US\$/);
+});
