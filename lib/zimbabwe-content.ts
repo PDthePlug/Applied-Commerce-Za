@@ -829,7 +829,7 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
     ],
   },
 
-  "g9-t2-l17-016": {
+  "g9-t2-l17-018": {
     textReplacements: [
       {from:"Identify the original value behind a rand in your own life.",to:"Identify the original value behind money in your own life."},
       {from:"📘 The R5 Note in Myah's Pocket",to:"📘 The Note in Myah's Pocket"},
@@ -848,7 +848,7 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
       {from:"I traced one rand received and one rand spent as far back and forward as I could.",to:"I traced one amount received and one amount spent as far back and forward as I could."},
     ],
   },
-  "g9-t2-l24-023": {
+  "g9-t2-l24-025": {
     title: "THE KOMBI-RANK ECONOMY",
     textReplacements: [
       {from:"Taxi Rank",to:"Kombi Rank"},
@@ -860,7 +860,7 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
       {from:"taxi",to:"kombi"},
     ],
   },
-  "g9-t2-l25-024": {
+  "g9-t2-l25-026": {
     textReplacements: [
       {from:"Income (Monthly):",to:"Illustrative Income (Monthly):"},
       {from:"Crèche salary: R3,200",to:"Crèche salary: US$220"},
@@ -897,13 +897,13 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
       {from:"R",to:"Currency + amount",exact:true},
     ],
   },
-  "g9-t2-l27-026": {
+  "g9-t2-l27-028": {
     textReplacements: [
       {from:"Every rand that leaves without return is a leak.",to:"Every amount that leaves without strengthening value, resilience or a real need deserves a second look."},
       {from:"Every Rand That Leaves Without Return Is a Leak",to:"Every Outflow Should Have a Reason"},
     ],
   },
-  "g9-t1-l16-015": {
+  "g9-t1-l16-016": {
     title: "ENTERPRISE FOUNDATIONS REVIEW AND PORTFOLIO",
     textReplacements: [
       {from:"The term is ending. Myah sits at Mama Rose's kitchen for the last time this term.",to:"The enterprise foundations cycle is closing. Myah sits at Mama Rose's kitchen to review what she has built so far. Form 2 Term 1 is not over yet — the next lessons turn toward how money moves through households and communities."},
@@ -926,7 +926,7 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
       {from:"Keep going. Term 2 awaits.",to:"Keep going. Form 2 Term 1 continues."},
     ],
   },
-  "g9-t2-l26-025": {
+  "g9-t2-l26-027": {
     title: "THE MUKANDO SYSTEM",
     textReplacements: [
       {from:"In South Africa, stokvels handle billions of rands every year. They are not informal. They are essential.",to:"In Zimbabwe, mukando and other community savings arrangements are part of how many families pool resources, create accountability and prepare for larger expenses. Their exact rules differ from group to group."},
@@ -943,7 +943,7 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
       {from:"stokvel",to:"mukando"},
     ],
   },
-  "g9-t2-l34-033": {
+  "g9-t2-l34-035": {
     title: "COMMUNITY MONEY MAP REFLECTION — LETTER TO MY FUTURE SELF",
     textReplacements: [
       {from:"Myah writes a final letter to her future self. She will read it at the end of Term 3 — or years from now, when she needs to remember who she was.",to:"Myah writes a letter to her future self at the end of the Community Money Map cycle. She will read it at the end of Form 2 Term 2 — or years from now, when she needs to remember who she was."},
@@ -961,7 +961,7 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
       {from:"Keep going. Term 3 awaits.",to:"Keep going. Form 2 Term 2 continues."},
     ],
   },
-  "g9-t3-l50-049": {
+  "g9-t3-l50-051": {
     title: "HABIT TRANSFORMATION PROJECT — LAUNCH",
     tableReplacements: [
       {
@@ -979,7 +979,7 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
       {from:"Habit Stokvel",to:"Habit Mukando"},
     ],
   },
-  "g9-t3-l54-053": {
+  "g9-t3-l54-055": {
     title: "TERM 2 REFLECTION — HABITS, EXECUTION & NEXT MOVE",
     tableReplacements: [
       {
@@ -1026,7 +1026,7 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
       {from:"I have made a preliminary Path Forward declaration.",to:"I have made a Term 3 readiness plan."},
     ],
   },
-  "g9-t4-l55-054": {
+  "g9-t4-l55-057": {
     title: "LOOKING BACK — WHAT WE HAVE LEARNED SO FAR",
     tableReplacements: [
       {
@@ -1053,7 +1053,7 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
       {from:"How I might address it in Term 4:",to:"How I might address it in Term 3:"},
     ],
   },
-  "g9-t4-l75-074": {
+  "g9-t4-l75-077": {
     title: "FAREWELL TO FORM 2",
     textReplacements: [
       {from:"Say a final goodbye to Grade 9 — with gratitude, pride, and forward momentum.",to:"Say a final goodbye to Form 2 — with gratitude, pride, and forward momentum."},
