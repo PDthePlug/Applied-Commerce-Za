@@ -42,7 +42,6 @@ const rules=[
   ["stokvel",/\bstokvels?\b/i],
   ["sa-place",/\b(?:Johannesburg|Soweto|Tembisa|Cape Town|Durban|Umlazi|Pretoria|Atteridgeville|Limpopo|Katlehong)\b/i],
   ["source-grade",/\bGrade\s+(?:8|9|10|11|12)\b/i],
-  ["source-term",/\bTerm\s+[1-4]\b/i],
   ["caps",/\bCAPS\b|\bDBE\b/i],
 ];
 
@@ -79,6 +78,9 @@ for(const term of bundle.terms){
     const unit=api.applyZimbabweUnitOverlay(normalized);
     const value=[unit.title,...unit.blocks.map(blockText)].join("\n");
     const hits=rules.filter(([,re])=>re.test(value)).map(([name])=>name);
+    const targetTerm=unit.startLesson<=34?1:unit.startLesson<=54?2:3;
+    const termMentions=[...value.matchAll(/\bTerm\s+([1-4])\b/gi)].map(match=>Number(match[1]));
+    if(termMentions.some(term=>term!==targetTerm)) hits.push("wrong-term");
     if(hits.length) rows.push({
       lesson:unit.startLesson,
       id:unit.id,
