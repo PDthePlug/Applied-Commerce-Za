@@ -27,6 +27,9 @@ jobs:
       - name: Curriculum tests
         run: npm test
 
+      - name: Zimbabwe Form 2 residue audit
+        run: node scripts/audit_zimbabwe_form2.mjs
+
       - name: Typecheck
         run: npm run typecheck
 
