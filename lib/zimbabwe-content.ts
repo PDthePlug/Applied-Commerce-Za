@@ -1009,6 +1009,210 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
       {from:"Every Rand That Leaves Without Return Is a Leak",to:"Every Outflow Should Have a Reason"},
     ],
   },
+  "g10-t1-l01-001": {
+    textReplacements: [
+      {from:"Conduct a strategic audit of your assets and liabilities from Grade 9.",to:"Conduct a strategic audit of the assets, liabilities and evidence you carry forward from Form 2."},
+      {from:"Set a strategic intention for Grade 10 that includes what you are willing to sacrifice.",to:"Set a strategic intention for Form 3 that includes what you are willing to give up or change to make it real."},
+      {from:"Myah opened her mouth to tell the story — the grant office, the silence, the cooler box, the first R5 water bottle. But then she stopped.",to:"Myah opened her mouth to tell the story — the committee office, the silence, the cooler box, the first small water sale. But then she stopped."},
+      {from:"Think about your Grade 9 journey. What is one scar you carry — a moment when something failed, hurt, or cost you? That scar is not just pain. It is evidence. It is data. What did it teach you that success never could?",to:"Think about your Form 2 journey. What is one scar you carry — a moment when something failed, hurt or cost you? That scar is not just pain. It is evidence. What did it teach you that success never could?"},
+      {from:"✍️ Activity 1: My Grade 10 Strategic Audit — With Scar Inventory",to:"✍️ Activity 1: My Form 3 Strategic Audit — With Scar Inventory"},
+      {from:"List THREE assets from Grade 9 — skills, habits, mindsets, relationships, evidence — that you will actively use in Grade 10. For each, name one specific situation this term where it will give you an advantage.",to:"List THREE assets from Form 2 — skills, habits, mindsets, relationships or evidence — that you will actively use in Form 3. For each, name one specific situation this term where it may help you."},
+      {from:"List TWO liabilities — patterns, beliefs, blind spots — from Grade 9 that could sabotage you this term. For each, name the specific situation where it might appear AND your counter-move.",to:"List TWO liabilities — patterns, beliefs or blind spots — from Form 2 that could undermine you this term. For each, name the situation where it might appear and your counter-move."},
+      {from:"What is ONE scar you carry from Grade 9 — a failure, a loss, a moment when something broke? What did it teach you that success never could? How will you use that scar in Grade 10?",to:"What is ONE scar you carry from Form 2 — a failure, loss or moment when something broke? What did it teach you that success never could? How will you use that lesson in Form 3?"},
+      {from:"Part D: My Grade 10 Intention — With Sacrifice",to:"Part D: My Form 3 Intention — With Sacrifice"},
+      {from:"Key idea: You are not starting Grade 10 empty. You carry everything from Grade 9 — the scars, the evidence, the skills, the systems you built. The person who walked into the grant office, who borrowed a cooler box, who tracked a habit for 21 days — she is still here. But she is not the same. She is becoming someone who designs, not just reacts. Someone who builds, not just starts.",to:"Key idea: You are not starting Form 3 empty. You carry everything from Form 2 — scars, evidence, skills and systems you built. The person who walked into the committee office, borrowed a cooler box and tracked a habit for 21 days is still here. But she is becoming someone who designs, not just reacts; someone who builds, not just starts."},
+      {from:"Here’s the tension: the skills that made you successful in Grade 9 may not be the skills that make you successful in Grade 10. Acting on instinct, starting before you are ready, pushing through obstacles with sheer persistence — these got you here. But they will not get you where you need to go next. Grade 10 demands something different: not just action, but architecture. Not just starting, but designing. Not just persistence, but prediction. And here is the harder truth: the strategist carries a burden the challenger never knew. When you design a system and it fails, you cannot blame the system. You built it. You own it. You carry the scar.",to:"Here’s the tension: the skills that helped you in Form 2 may not be enough for Form 3. Acting quickly and pushing through obstacles can help you start, but this year asks for more architecture: design, prediction, measurement and revision. When you design a system and it fails, the useful response is not blame. It is to study what broke, own what you controlled and improve the design."},
+      {from:"Your Next Step: What is one situation in Grade 9 where you acted fast — and it worked? What is one situation where acting fast was not enough — where you needed a system, a plan, a design, and you did not have one? What did that cost you? Be specific. What will you do differently in Grade 10?",to:"Your Next Step: What is one Form 2 situation where acting fast worked? What is one situation where action was not enough because you needed a system, plan or design? What did that cost you? What will you do differently in Form 3?"},
+      {from:"Review your Strategic Audit. Myah said: \"A system without a scar is just a theory.\" You named one scar. Now answer: If you do NOT use that scar in Grade 10 — if you forget what it taught you — what is the most likely way it will reappear and sabotage you? Write the scene. Be specific. Then write: what is the ONE action you will take THIS WEEK to ensure the scar serves you rather than sabotaging you?",to:"Review your Strategic Audit. You named one scar. If you ignore what it taught you in Form 3, how could the same pattern reappear? Write the scene. Then name one action you will take this week to use the lesson rather than repeat the mistake."},
+      {from:"| Date | | | Lesson | Lesson 1 — Grade 10 Strategic Audit | | Experiment/Observation | I conducted a strategic audit including scar inventory. | | Result | My most dangerous liability: | | Learning | | | Next Action | My one action this week: |",to:"| Date | | | Lesson | Lesson 1 — Form 3 Strategic Audit | | Experiment/Observation | I conducted a strategic audit including scar inventory. | | Result | My most dangerous liability: | | Learning | | | Next Action | My one action this week: |"},
+    ],
+  },
+  "g10-t1-l02-002": {
+    textReplacements: [
+      {from:"Thandiwe arrived at 7:45, flustered. She had overslept. Her child had been sick. The stove would not light — Mama Rose always lit it. The recipe for the gravy was in Mama Rose's head, not on paper. By 9am, half the customers had left. By noon, the kitchen had served twenty-three plates instead of the usual sixty. Revenue for the day: R345. On a Tuesday that normally brought in R900.",to:"Thandiwe arrived at 7:45, flustered. She had overslept. Her child had been sick. The stove would not light — Mama Rose always lit it. The recipe for the gravy was in Mama Rose's head, not on paper. By 9am, half the customers had left. By noon, the kitchen had served twenty-three plates instead of the usual sixty. In this illustrative example, revenue for the day was US$34.50 instead of the usual US$90."},
+    ],
+    tableTextReplacements: [
+      {from:"A plate of food for R25",to:"A plate of food for US$2.50 in this illustrative example"},
+    ],
+  },
+  "g10-t1-l03-003": {
+    title:"KARABO'S PAYSLIP — UNDERSTANDING THE SYSTEM YOU ENTER",
+    textReplacements: [
+      {from:"Karabo is in Grade 11 now. She works Saturdays at a clothing shop in the mall. She has been collecting her payslips for six months. She came to find Myah at the taxi rank — not to complain, but because she had discovered something that disturbed her.",to:"Karabo is an older learner who works Saturdays at a clothing shop. She has been collecting her payslips for six months. She comes to find Myah at the kombi rank — not to complain, but because she has started asking what every line on the payslip means."},
+      {from:"\"At first I was angry,\" Karabo said. \"I worked those hours. That money was mine. But then I started learning what each deduction was for. PAYE funds schools, roads, clinics. UIF is a safety net. SDL funds training. The union fee gives me collective power I could never have alone. I stopped being angry. I started being... something else.\"",to:"\"At first I was angry,\" Karabo says. \"I worked those hours. Then I started learning what each line meant. PAYE is employee income tax administered by ZIMRA. Other deductions can depend on the law, my employment conditions or choices I have made. I stopped guessing and started checking.\""},
+      {from:"She pointed to a line Myah had not noticed. \"This one. R85. 'Admin fee.' I asked my manager what it was for. She said it covers the cost of processing payroll. I asked if I could opt out. She said no. So I am paying R85 a month for someone to calculate how much of my money to take. That is R1,020 a year. For math.\"",to:"She points to a line Myah had not noticed. \"This one. US$5. An optional savings deduction I agreed to months ago. I had forgotten it was there. The lesson for me is simple: if money leaves my pay, I should know why, whether it is required or optional, and what I receive in return.\""},
+      {from:"\"Nothing. Not about that line. But I can do other things. I opened a TFSA. Contributions are not taxed. I am learning which deductions are mandatory and which are optional — and I am opting out of everything I can, legally. I am not fighting the system. I am navigating it. There is a difference. Fighting a system you cannot change is exhausting. Navigating it is strategic.\"",to:"\"I cannot simply remove a lawful tax deduction because I dislike it. But I can read my payslip, ask questions, check current ZIMRA guidance and understand which deductions are statutory, contractual or voluntary. I am not fighting the system. I am learning how to navigate it responsibly.\""},
+      {from:"4. Karabo's admin fee is R85/month. How much is that per year? R _______",to:"4. Karabo's optional savings deduction is US$5 per month. How much is that over 12 months? US$ _______"},
+      {from:"Question 1: If Karabo earns R1,200 gross and mandatory deductions total 18%, what is her net pay? Show your calculation.",to:"Question 1: In a purely illustrative maths example, if gross pay is US$120 and total deductions are 18%, what is net pay? Show your calculation. Do not treat 18% as a current Zimbabwe tax rate."},
+      {from:"If you cannot ask anyone: Research one deduction — UIF, SDL, or PAYE. Find out: what percentage goes to administration (not actual benefits)? Write down what you find. Does this change how you feel about the deduction?",to:"If you cannot ask anyone: research PAYE on the official ZIMRA website. Find the latest tax table and write down the date of the table you found. What changed when you checked the source instead of relying on a remembered rate?"},
+    ],
+    tableReplacements: [
+      {
+        cellIncludes:"Unemployment Insurance Fund",
+        rows:[
+          ["Payslip line","What it means","What to check"],
+          ["Gross pay","Pay before deductions","Hours/rate or salary agree with the work contract"],
+          ["PAYE","Employee income tax administered by ZIMRA","Use the latest applicable ZIMRA table; rates can change"],
+          ["Other statutory or employment deductions","Only where current law or an employment arrangement applies","What is required, who receives it, and why"],
+          ["Voluntary deductions","Amounts you chose or authorised","Can you change or stop them, and under what rules?"],
+          ["Net pay","What remains after deductions","Gross pay minus all valid deductions"],
+        ],
+      },
+      {
+        cellIncludes:"Gross pay (16 hours × R55)",
+        rows:[
+          ["Item","Illustrative Amount"],
+          ["Gross pay (16 hours × US$5.50)","US$88.00"],
+          ["Illustrative PAYE for the exercise only","-US$8.80"],
+          ["Union or association fee, if voluntarily applicable","-US$3.00"],
+          ["Optional savings deduction","-US$5.00"],
+          ["Net pay in this illustration","US$71.20"],
+        ],
+      },
+    ],
+  },
+  "g10-t1-l04-004": {
+    tableReplacements: [
+      {
+        cellIncludes:"TFSA growth",
+        rows:[
+          ["Stream","Type","Illustrative Monthly Amount","Control (1-5)","What could interrupt it?"],
+          ["Tutoring","Active","US$200","4","Clients can leave, but new clients may be found"],
+          ["Weekend retail","Active","US$120","1","Employer controls shifts"],
+          ["Bursary or scholarship stipend","Conditional","US$150","3","Conditions such as academic progress may apply"],
+          ["Investment growth","Portfolio","US$15","3","Markets can rise or fall; provider and product rules matter"],
+          ["Digital study guides","Business / royalty-like","US$60","4","Demand and platform access can change"],
+        ],
+      },
+    ],
+    textReplacements: [
+      {from:"\"Five streams. R5,450 total. But look at the control scores. R1,200 of that — more than 20% — could disappear tomorrow if my manager decides to cut my hours. R1,500 more could vanish if I fail one subject. That is nearly half my income dependent on decisions other people make.\"",to:"\"Five streams. In this illustration they total US$545 a month. But look at the control scores. US$120 depends heavily on an employer's shifts and US$150 depends on bursary conditions. The amount matters, but so does who controls whether the stream continues.\""},
+      {from:"R1,000 You Control > R3,000 That Can Be Taken Away",to:"Control Matters Alongside Amount"},
+      {from:"Key idea: Zinhle earns R5,450 a month as a student. That is impressive. But the more impressive number is her control percentage. She knows exactly which streams depend on someone else's goodwill and which depend only on her. Most people never ask that question. They count the money. They do not count the control. And then one day the manager cuts their hours, the bursary committee says no, the client leaves — and half their income vanishes overnight.",to:"Key idea: in this illustration Zinhle receives US$545 a month from several sources. The useful insight is not that one stream is 'safe' forever. It is that each stream has different dependencies: employer decisions, client demand, bursary conditions, market movement or platform access. Count both the money and the dependency."},
+      {from:"Here’s the tension: shifting toward control means earning less now. The retail job pays R1,200. The study guides pay R600. If she quits the retail job to focus on study guides, she takes a 50% pay cut temporarily. That is the trap. The streams with the lowest control often pay the most right now. The streams with the highest control pay the least right now. Choosing control means choosing less money now for more freedom later. Not everyone can afford that choice. If you cannot shift yet, do not blame yourself. But know the direction. And move when you can.",to:"Here’s the tension: a stream you control more may earn less today and still carry real risk. A job may provide steadier cash now; a small business may provide more decision-making control but less certainty. Not everyone can afford to trade current stability for future optionality. The goal is not to worship control. It is to understand the trade-offs."},
+      {from:"Your Next Step: If you had to choose TODAY between a R2,000/month job with control score 1 and a R800/month business with control score 5, which would you choose? Why? What does your answer reveal about what you are optimising for?",to:"Your Next Step: if you had to choose between an illustrative US$200/month job with low control and an US$80/month micro-business with higher decision-making control but more risk, what would you choose today? Why? What are you optimising for: stability, learning, control, growth, or something else?"},
+    ],
+    tableTextReplacements: [
+      {from:"Spaza shop",to:"Tuckshop"},
+    ],
+  },
+  "g10-t1-l05-005": {
+    textReplacements: [
+      {from:"But last week, his bike needed a major repair. R450. And he did not have it.",to:"But last week, his bike needed a major repair. In this illustrative example, the repair cost US$45. He did not have it."},
+      {from:"Myah found him at Emmanuel's spaza shop, staring at a piece of paper covered in numbers.",to:"Myah found him at Emmanuel's tuckshop, staring at a piece of paper covered in numbers."},
+      {from:"Thabo had been tracking his revenue carefully. Every delivery. Every payment. R2,400 in a good month. But he had not been tracking his costs with the same discipline. He knew the big ones — bike maintenance, airtime, the occasional snack for an elder. But the small ones? The R20 here for a bolt. The R30 there for a new tyre tube. The R10 for parking at the taxi rank when he had to wait. The R50 he gave his younger cousin to help with a delivery when he was sick. He had not counted any of it.",to:"Thabo had been tracking revenue carefully. Every delivery. Every payment. In a good month, about US$240 in this example. But he had not tracked costs with the same discipline. He knew the obvious costs — bike maintenance and airtime. The small ones were missing: US$2 for a bolt, US$3 for a tyre tube, US$1 for a small rank-related cost, US$5 paid to his younger cousin for helping with a delivery. He had not counted any of it."},
+      {from:"Myah added them up. R680 in a month. On top of the R400 he had budgeted for known expenses. Total costs: R1,080. Revenue: R2,400. Profit: R1,320.",to:"Myah adds them up: US$68 in hidden costs, on top of US$40 in known expenses. Total costs: US$108. Revenue: US$240. Profit: US$132."},
+      {from:"\"That is still profit,\" Thabo said. \"R1,320 a month is good.\"",to:"\"That is still profit,\" Thabo says. \"US$132 a month is still meaningful.\""},
+      {from:"\"Yes. But you did not know about R680 of your costs. You thought your profit was R2,000. You were spending money you did not know you were spending. And when the bike broke, you had already spent the buffer you thought you had. The business did not fail because the bike broke. The business failed because you did not know where your money was going.\"",to:"\"Yes. But you did not know about US$68 of your costs. You thought your profit was US$200. The repair exposed a tracking problem that already existed. The lesson is not 'the bike broke the business.' The lesson is that hidden costs made the buffer look larger than it really was.\""},
+      {from:"Thabo's hidden costs were R680 — 28% of his revenue. If you had to estimate your hidden costs as a percentage, what would they be?",to:"Thabo's hidden costs were US$68 — about 28% of his US$240 revenue. If you had to estimate hidden costs in a small project, what percentage would you test for first, and how would you verify it?"},
+      {from:"Thabo's fix was simple: track every rand. Every bolt. Every parking fee. Every cousin-helping payment. What is ONE system you could put in place to track your hidden costs?",to:"Thabo's fix was simple: track every amount and label the currency. Every bolt. Every fee. Every payment to someone who helps. What is ONE system you could use to track hidden costs?"},
+      {from:"Here’s the tension: tracking every rand is exhausting. It takes time. It takes discipline. Most people will not do it. They would rather live with the illusion of profit than face the reality of their spending. The strategist chooses the discomfort of knowing over the comfort of guessing. The question is not whether you can track every rand. The question is whether you can afford not to. Thabo could not afford not to. And he learned — the hard way, with his grandmother's money, with the shame of borrowing again — that the piper always gets paid. The only question is whether you know when the payment is coming.",to:"Here’s the tension: tracking every small cost takes effort. But ignoring small costs creates false confidence. You do not need a complicated accounting system to begin. You need a consistent one. The strategist chooses evidence over guessing and creates a routine simple enough to keep using."},
+      {from:"Question 1: Thabo's revenue was R2,400. His tracked costs were R400. His hidden costs were R680. What was his ACTUAL profit? What percentage of his revenue was hidden costs? Show your calculations.",to:"Question 1: Thabo's illustrative revenue was US$240. Known costs were US$40 and hidden costs were US$68. What was actual profit? What percentage of revenue was hidden costs? Show your calculations."},
+      {from:"This week, track EVERY rand you spend. Every single one. Even the R2 sweet. Even the R5 airtime. At the end of the week, separate your spending into two columns: \"I Planned For This\" and \"I Did Not Plan For This.\" Total each column.",to:"This week, track every amount you spend and label the currency. Even tiny amounts count. At the end of the week, separate spending into 'I Planned For This' and 'I Did Not Plan For This.' Total each column."},
+      {from:"| Date | | | Lesson | Lesson 5 — Hidden Costs Audit | | Experiment/Observation | I audited my hidden costs and tracked every rand for one week. | | Result | | | Learning | | | Next Action | |",to:"| Date | | | Lesson | Lesson 5 — Hidden Costs Audit | | Experiment/Observation | I audited hidden costs and tracked every amount for one week. | | Result | | | Learning | | | Next Action | |"},
+    ],
+    tableReplacements: [
+      {
+        cellIncludes:"Thabo's Numbers",
+        rows:[
+          ["Term","What It Means","Thabo's Illustrative Numbers"],
+          ["Revenue","All the money customers pay","US$240"],
+          ["Expenses","Everything spent to operate","US$108"],
+          ["Profit","Revenue − expenses","US$132"],
+          ["Hidden costs","Expenses not originally counted","US$68"],
+        ],
+      },
+    ],
+  },
+  "g10-t1-l06-006": {
+    textReplacements: [
+      {from:"Lethabo's clock business has grown. He has helpers. He has orders. He has a system. But he also has a problem: he cannot make enough clocks alone. So three months ago, he took on a partner. His cousin, Sizwe. Sizwe had capital — R3,000 saved from a year of working at a supermarket. Lethabo had the skill, the reputation, the customer relationships. They agreed to split everything 50/50. No written agreement. They were family.",to:"Lethabo's clock business has grown. He has helpers, orders and a system. But he cannot make enough clocks alone. Three months ago he took on a partner, his cousin Sizwe. In this illustrative example, Sizwe contributed US$300 in saved capital. Lethabo contributed skill, reputation and customer relationships. They agreed to split everything 50/50. No written agreement. They were family."},
+      {from:"They argued. Sizwe wanted out. He wanted his R3,000 back. Lethabo did not have it — he had reinvested everything in materials and paying his helpers.",to:"They argued. Sizwe wanted out and wanted his US$300 back. Lethabo did not have it available because the money had been reinvested in materials and helper payments."},
+      {from:"Myah finds Lethabo at Emmanuel's spaza shop, staring at nothing.",to:"Myah finds Lethabo at Emmanuel's tuckshop, staring at nothing."},
+    ],
+  },
+  "g10-t1-l07-007": {
+    textReplacements: [
+      {from:"Thandi's cooperative has grown. Eight members now. Mangoes, avocados, bananas, herbs. A joint savings account. A shared stall at the taxi rank. By all visible measures, it is a success story.",to:"Thandi's cooperative has grown. Eight members now. Mangoes, avocados, bananas and herbs. A joint account. A shared stall near the kombi rank. By all visible measures, it is a success story."},
+      {from:"Myah finds her at the taxi rank on a Thursday afternoon. The stall is open, but Thandi is the only one there. She is supposed to have two partners on shift with her. Neither showed up.",to:"Myah finds her near the kombi rank on a Thursday afternoon. The stall is open, but Thandi is the only one there. She is supposed to have two partners on shift with her. Neither showed up."},
+    ],
+  },
+  "g10-t1-l08-008": {
+    tableReplacements: [
+      {
+        cellIncludes:"With helpers (untrained)",
+        rows:[
+          ["Scale","Clocks Made","Illustrative Total Cost","Illustrative Unit Cost"],
+          ["Alone","8 per week","US$40","US$5.00 per clock"],
+          ["With helpers (untrained)","15 per week","US$65","US$4.33 per clock"],
+          ["With trained team + system","35 per week","US$120","US$3.43 per clock"],
+        ],
+      },
+    ],
+  },
+  "g10-t1-l10-010": {
+    textReplacements: [
+      {from:"Nosipho has been tutoring for six months. She is good at it. Her students pass. Their parents are grateful. She charges R40 per hour.",to:"Nosipho has been tutoring for six months. She is good at it. Her students improve. Their parents are grateful. In this illustrative example, she charges US$4 per hour."},
+      {from:"Last week, a new parent asked her rate. She said R40. The parent paused. Then said: \"Is that all? My friend pays R120 an hour for a tutor who is not half as good as you. You should charge more.\"",to:"Last week, a new parent asked her rate. She said US$4. The parent paused, then said: \"Is that all? I know families paying much more for tutoring. Have you checked the market and the value of your results?\""},
+      {from:"Nosipho did not know what to say. She felt exposed — like someone had seen something she was trying to hide. Later, she told Myah about it at the taxi rank.",to:"Nosipho did not know what to say. She felt exposed — like someone had seen something she was trying to hide. Later, she told Myah about it at the kombi rank."},
+      {from:"\"I do not know how to charge more. R40 feels like... what I am worth. Maybe less. When I think about charging R80, I feel like I am being arrogant. Like someone is going to laugh at me and say: 'Who do you think you are?'\"",to:"\"I do not know how to charge more. US$4 feels tied to what I think I am worth. When I think about charging US$8, I feel arrogant — even though I know pricing should be about the service, the market and the value created, not my worth as a person.\""},
+      {from:"The next week, Nosipho told a new parent: \"R80 per hour.\" The parent said yes without hesitating. Nosipho felt sick. Then she felt something else — something that took her a moment to recognize. It was pride.",to:"The next week, after checking comparable tutoring rates and explaining what her sessions include, Nosipho quotes US$8 per hour to a new parent. The parent says yes. Nosipho feels nervous, then proud that she used evidence rather than shame to set the price."},
+      {from:"Here’s the tension: naming a higher price does not just change what you earn. It changes who you are. When Nosipho said \"R80\" and the parent said yes, something shifted in her. She felt sick — because she was violating an old belief. Then she felt proud — because she was installing a new one. Every time you name your price without apologizing, you are not just making money. You are rewriting your identity. You are telling yourself: I am someone who creates value, and I am not ashamed to be paid for it. That is not arrogance. That is accuracy.",to:"Here’s the tension: pricing can trigger identity and confidence, but a higher price is not automatically the right price. Nosipho's job is to separate self-worth from pricing and test the business facts: customer value, alternatives, her costs, her time, demand and sustainability. A price is a market decision, not a verdict on who she is."},
+    ],
+    tableTextReplacements: [
+      {from:"Materials R10 + labour R30 + margin R10 = R50",to:"Materials US$1 + labour US$3 + margin US$1 = US$5"},
+      {from:"Tutoring that raises a child's grade = R80/hour",to:"Tutoring with strong evidence of value = US$8/hour in this illustration"},
+    ],
+  },
+  "g10-t1-l11-011": {
+    title:"COMPETITION, PESTLE & FIVE FORCES — THE SHOP THAT ADAPTED",
+    textReplacements: [
+      {from:"📘 The Spaza Shop That Refused to Die",to:"📘 The Tuckshop That Refused to Die"},
+      {from:"Emmanuel's family spaza shop has survived for fifteen years. It survived the 2008 recession. It survived COVID. It survived the wholesaler closure that broke their supply chain last year. But the new mall — the one that opened six months ago three streets away — is different. The mall has a supermarket with prices Emmanuel cannot match. It has air conditioning. It has parking. It has bright lights and clean floors and a bakery that fills the air with the smell of fresh bread.",to:"Emmanuel's family tuckshop has survived for fifteen years. It has lived through inflation, supply disruptions and changing customer habits. But a new shopping centre that opened nearby is different. The supermarket has purchasing power Emmanuel cannot match. It has parking, long opening hours, bright displays and a bakery that fills the air with fresh bread."},
+      {from:"Emmanuel's mother has been quiet for weeks. The numbers tell the story: revenue down 35% since the mall opened. Regular customers still come, but they buy less. The bulk of their shopping goes to the supermarket. The spaza shop gets the leftovers — the single eggs, the emergency bread, the late-night milk.",to:"Emmanuel's mother has been quiet for weeks. The numbers tell the story: revenue down 35% since the shopping centre opened. Regular customers still come, but they buy less. The supermarket gets more of the planned shopping. The tuckshop gets the single eggs, emergency bread and late-night milk."},
+      {from:"Choose a real business you know — a spaza shop, a vendor, a service provider, or your own project.",to:"Choose a real business you know — a tuckshop, market stall, vendor, service provider or your own project."},
+      {from:"Key idea: Emmanuel's spaza shop is losing. The mall is bigger, cheaper, shinier. On almost every competitive measure, the mall wins. But competitive analysis is not just about identifying threats. It is about identifying the one place you can win — and betting everything on that. For Emmanuel, that place is cooperation. Every spaza shop in Katlehong faces the same mall. Alone, they are vulnerable. Together, they can buy in bulk, share transport, share marketing, share survival.",to:"Key idea: Emmanuel's tuckshop is under pressure. The shopping centre is bigger and can often buy stock more cheaply. Competitive analysis is not only about listing threats. It is about finding where a smaller business can create a defensible advantage. For Emmanuel, one option is cooperation with other local shops: bulk purchasing, shared transport, joint promotions or other arrangements that reduce cost without pretending trust is automatic."},
+      {from:"Here’s the tension: cooperation requires trust. And trust is exactly what competition destroys. The spaza shop owners have been competing against each other for years. They have undercut each other on prices. They have bad-mouthed each other to customers. Now Emmanuel is asking them to cooperate. Why should they trust him? Why should they trust each other? The same structural analysis that reveals cooperation as the solution also reveals why cooperation is so hard. The strategist does not just identify the right move. The strategist identifies why the right move is difficult — and then figures out how to make it possible anyway.",to:"Here’s the tension: cooperation requires rules and trust. Local shop owners may have competed against one another for years. The same analysis that makes cooperation attractive also explains why it is difficult. A strategist must design the conditions that make cooperation testable: small commitments, transparent records, clear exit rules and evidence before deeper dependence."},
+      {from:"Question 2: Emmanuel identified cooperation as his strategic response to the mall. But the spaza shop owners have been competitors for years. What is the biggest barrier to them cooperating now? If you were Emmanuel, what would you do to overcome that barrier — specifically, practically, tomorrow?",to:"Question 2: Emmanuel identified cooperation as one possible response to the shopping centre. What is the biggest barrier to local shops cooperating? If you were Emmanuel, what low-risk first step would you test tomorrow?"},
+      {from:"Visit a small business in your community — a spaza shop, a vendor, a service provider. Observe for ten minutes. Apply PESTLE in your head. Write down: What is the biggest threat they face? What could they do about it — that they are not currently doing?",to:"Visit or observe a small business in your community — a tuckshop, vendor, market stall or service provider. Apply PESTLE. What is one major external factor affecting them? What response could they test?"},
+    ],
+    tableTextReplacements: [
+      {from:"Spaza shop",to:"Tuckshop"},
+      {from:"spaza shop",to:"tuckshop"},
+      {from:"many spaza shops in Katlehong",to:"many small shops in the same local market"},
+      {from:"Very easy — anyone can open a spaza shop",to:"Relatively easy — small retail competitors can enter the market"},
+      {from:"Load-shedding affects both, but mall has generator",to:"Power interruptions affect both, but larger competitors may have stronger backup systems"},
+    ],
+  },
+  "g10-t1-l12-012": {
+    textReplacements: [
+      {from:"Emmanuel has been thinking about what Myah said. Cooperation. But before he can convince other spaza shop owners to join him, he needs to be clear about who HE is. What his shop stands for. What makes it different from the mall — and from every other spaza shop.",to:"Emmanuel has been thinking about what Myah said. Cooperation. But before he can convince other tuckshop owners to join him, he needs to be clear about what his own shop stands for and why customers choose it."},
+      {from:"\"Emmanuel's Spaza — Open Late, Always Family. 15 Years in Katlehong.\"",to:"\"Emmanuel's Tuckshop — Open Late, Always Family. 15 Years in Chitungwiza.\""},
+      {from:"Key idea: Emmanuel's sign was not clever. It was true. \"Open Late, Always Family. 15 Years in Katlehong.\" Every word is verifiable. Every word has been earned. That is not marketing. That is just telling people who you are. And in a world where most marketing is lies dressed up in design, the truth stands out. It does not need to shout. It just needs to be true.",to:"Key idea: Emmanuel's sign was not clever. It was true: \"Open Late, Always Family. 15 Years in Chitungwiza.\" A strong brand claim should be earned and verifiable. Marketing works best when the promise matches the experience customers actually receive."},
+    ],
+    tableTextReplacements: [
+      {from:"Katlehong residents who value community over price",to:"Local residents who value convenience, trust and community alongside price"},
+    ],
+  },
+  "g10-t1-l13-013": {
+    textReplacements: [
+      {from:"Ms. Daniels stands at the front of the room. The energy is different than in Grade 9. The learners are older. They have built things. They have watched things break. They know that plans are not magic.",to:"Ms. Daniels stands at the front of the room. The energy is different from Form 2. The learners have built things, watched things break and learned that plans are not magic."},
+      {from:"\"Your project is to design something that creates lasting value — for yourself, your community, or both. But this is not the Grade 9 project. In Grade 9, we asked you to start something. In Grade 10, we ask you to design something that could outlast you. Something with systems. Something with structure. Something that does not depend entirely on your presence.\"",to:"\"Your project is to design something that creates lasting value — for yourself, your community or both. This is not the Form 2 project. In Form 2, we asked you to start and execute. In Form 3, we ask you to design something with systems and structure — something that does not depend entirely on your presence.\""},
+      {from:"Key idea: This is not a test. This is a demonstration. You are not proving what you know. You are proving what you can build. In Grade 9, the question was: can you start? In Grade 10, the question is: can you design something that lasts? The difference is not effort. The difference is architecture.",to:"Key idea: this project is a demonstration. In Form 2, the question was: can you start and execute? In Form 3, the question becomes: can you design something more durable? The difference is architecture."},
+    ],
+  },
+  "g10-t1-l15-015": {
+    textReplacements: [
+      {from:"\"In Grade 9, I started a water business. It depended on me. I was there at 6am. I bought the stock. I sold the bottles. If I got sick, the business stopped. This project is different. This project is designed to run without me. That is the difference between a job and a system. That is what Grade 10 taught me.\"",to:"\"In Form 2, I tested a water business. It depended on me. I was there early. I bought the stock. I sold the bottles. If I stopped, the activity stopped. This project is different. I designed roles, steps and checks so the work can continue without every decision depending on me. That is what Form 3 is teaching me about systems.\""},
+    ],
+  },
+  "g10-t1-l16-016": {
+    textReplacements: [
+      {from:"Lesson 1: Strategic Audit. Her scar inventory. The cooler box. The grant office silence — still there, still teaching. Lesson 2: The kitchen that broke. Mama Rose on her back. Thandiwe failing in public. Single point of failure. Lesson 3: Karabo's payslip. Understanding versus agreeing. Navigating systems you did not choose. Lesson 4: Income control. Zinhle's napkin. Amount versus control. The streams you own. Lesson 5: Thabo's hidden costs. R680 he did not know he was spending. Lesson 6: Lethabo and Sizwe. Partnership without agreement. Trust without structure. Lesson 7: Thandi's cooperative. Free riders. Enforcement. The rules you do not write. Lesson 8: Bottlenecks. Lethabo checking every clock. Letting go. Lesson 9: Intellectual property. Protecting what you build. Building what cannot be copied. Lesson 10: Pricing. Nosipho naming R80. The body knowing the truth before the mind. Lesson 11: Competitive analysis. Emmanuel's mall. PESTLE. Porter's Five Forces. Cooperation as defense. Lesson 12: Brand truth. The sign that was true. Marketing as honesty. Lesson 13: Her Value-Creation Plan. The financial literacy workshop. Systematized. Lesson 14: Feedback. The flaw she did not see. …",to:"Lesson 1: Strategic Audit and scar inventory. Lesson 2: The kitchen that broke — single points of failure. Lesson 3: Karabo's payslip — understanding PAYE and deductions before reacting. Lesson 4: Income streams and dependency. Lesson 5: Thabo's hidden costs — US$68 he had not counted. Lesson 6: Lethabo and Sizwe — trust without structure. Lesson 7: Thandi's cooperative — rules, participation and enforcement. Lesson 8: Bottlenecks and scale. Lesson 9: Intellectual property and defensible value. Lesson 10: Pricing with evidence. Lesson 11: PESTLE and competitive forces. Lesson 12: Brand truth. Lessons 13–15: the Value-Creation Plan — designed, tested and presented."},
+      {from:"From me, in Grade 10 Date: _____________________",to:"From me, in Form 3 Date: _____________________"},
+      {from:"You finished Term 1 of Grade 10.",to:"You completed the first Form 3 learning cycle: value creation, business systems and enterprise architecture. Form 3 Term 1 continues with saving, investing and assets."},
+    ],
+  },
   "g9-t1-l01-001": {
     textReplacements: [
       {from:"Recall key learning from Grade 8 and assess what you carry forward.",to:"Recall key learning from Form 1 and assess what you carry forward."},
