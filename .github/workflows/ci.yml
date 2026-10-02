@@ -30,6 +30,9 @@ jobs:
       - name: Zimbabwe Form 2 residue audit
         run: node scripts/audit_zimbabwe_form2.mjs
 
+      - name: Zimbabwe Form 2 money-cycle detail
+        run: node scripts/audit_zimbabwe_form2_money_cycle.mjs
+
       - name: Typecheck
         run: npm run typecheck
 
