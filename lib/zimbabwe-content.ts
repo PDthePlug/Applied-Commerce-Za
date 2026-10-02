@@ -1006,6 +1006,134 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
       {from:"Every Rand That Leaves Without Return Is a Leak",to:"Every Outflow Should Have a Reason"},
     ],
   },
+  "g9-t1-l01-001": {
+    textReplacements: [
+      {from:"Recall key learning from Grade 8 and assess what you carry forward.",to:"Recall key learning from Form 1 and assess what you carry forward."},
+      {from:"Set a strategic intention for Grade 9.",to:"Set a strategic intention for Form 2."},
+      {from:"Three months since she submitted her water project proposal to the community grant committee. She was fifteen then — younger, she thinks now, though it was only June. She had typed the pages carefully at the internet café, R2 for fifteen minutes. She had attached a budget spreadsheet, checked three times. She had letters of support from Auntie Grace at the taxi rank and from her mother's employer, who wrote on letterhead that looked official.",to:"Three months since she submitted her water project proposal to the community committee. She was younger then, she thinks now, though it was only a few months ago. She had typed the pages carefully at an internet café, paying a small fee for computer time. She had attached a budget spreadsheet, checked three times. She had letters of support from Auntie Grace at the kombi rank and from her mother's employer, who wrote on official letterhead."},
+      {from:"She thinks about this as she walks to school. The same taxi rank. The same vendors — Auntie Grace selling vetkoek, the queue marshals shouting destinations, the woman with the flask of coffee who has been there since 5am. She sees it differently now. Last year, in Grade 8, she learned to notice. She learned to trace money flows. She learned that her identity shapes her choices and her habits shape her identity. She tracked a habit for 21 days. She built a budget. She completed a final project.",to:"She thinks about this as she walks to school. The same kombi rank. The same vendors — Auntie Grace selling vetkoek, the rank marshals calling destinations, the woman with the flask of coffee who has been there since before sunrise. She sees it differently now. In Form 1, she learned to notice. She learned to trace money flows. She learned that identity shapes choices and habits reinforce identity. She tracked a habit, built a budget and completed a final project."},
+      {from:"At the school gate, she sees Ms. Daniels — not in the classroom, just there, buying a banana from a vendor. Ms. Daniels taught her in Grade 8. Now she is something else. A mentor. Someone who appears when needed.",to:"At the school gate, she sees Ms. Daniels — not in the classroom, just there, buying a banana from a vendor. Ms. Daniels taught her in Form 1. Now she is something else too: a mentor. Someone who appears when needed."},
+      {from:"Ms. Daniels listens without interrupting. When Myah finishes, she says: \"Grade 8 taught you to notice. Grade 9 will teach you what to do when noticing is not enough. The rules you learned — follow instructions, work hard, be patient — they matter. But they are not always sufficient. Sometimes you do everything right and still lose. That moment is not the end. It is the beginning of agency.\"",to:"Ms. Daniels listens without interrupting. When Myah finishes, she says: \"Form 1 taught you to notice. Form 2 will teach you what to do when noticing is not enough. The rules you learned — follow instructions, work hard, be patient — they matter. But they are not always sufficient. Sometimes you do everything right and still lose. That moment is not the end. It is where agency becomes visible.\""},
+      {from:"This equation is not new to you. You met it in Grade 8. But it means something different now. In Grade 8, it was a principle. In Grade 9, it is a test. What will you do with what you know?",to:"This equation is not new to you. You met it in Form 1. But it means something different now. In Form 1, it was a principle. In Form 2, it becomes a test: what will you do with what you know?"},
+      {from:"Think about your Grade 8 year. What is one thing you learned that you are still carrying? What is one thing you learned but have not yet acted on?",to:"Think about your Form 1 year. What is one thing you learned that you are still carrying? What is one thing you learned but have not yet acted on?"},
+      {from:"✍️ Activity 1: My Grade 9 Strategic Audit",to:"✍️ Activity 1: My Form 2 Strategic Audit"},
+      {from:"List THREE assets from Grade 8 — skills, habits, mindsets, insights — that you will actively use this year. For each, write one sentence about how it will help you in Grade 9.",to:"List THREE assets from Form 1 — skills, habits, mindsets or insights — that you will actively use this year. For each, write one sentence about how it will help you in Form 2."},
+      {from:"Key idea: You are not starting Grade 9 empty. You carry everything from Grade 8 — every experiment, every insight, every Thinking Equation, every failure that taught you something. That foundation is real.",to:"Key idea: You are not starting Form 2 empty. You carry everything from Form 1 — every experiment, insight, Thinking Equation and failure that taught you something. That foundation is real."},
+      {from:"Here’s the tension: the person who wrote your Grade 8 letter to yourself is not gone. She is still inside you — with her old fears, her old habits, her old ways of avoiding hard things. She will fight for control of your future this term. Your new intention is a declaration of war against your old self. You are both the sculptor and the stone. The stone resists. The question is whether you will keep sculpting when it gets hard — or let the old shape reassert itself.",to:"Here’s the tension: the person who wrote your Form 1 letter to yourself is not gone. Old fears, habits and avoidance patterns can return. Your new intention is not a war against yourself; it is a decision to practise a better response when those patterns appear. You are both the sculptor and the stone. The question is whether you keep shaping your behaviour when it gets hard."},
+      {from:"| Date | | | Lesson | Lesson 1 — Strategic Audit | | Experiment/Observation | I conducted a strategic audit of my assets and liabilities for Grade 9. | | Result | My most dangerous liability: | | Learning | | | Next Action | My one action this week: |",to:"| Date | | | Lesson | Lesson 1 — Strategic Audit | | Experiment/Observation | I conducted a strategic audit of my assets and liabilities for Form 2. | | Result | My most dangerous liability: | | Learning | | | Next Action | My one action this week: |"},
+    ],
+  },
+  "g9-t1-l03-003": {
+    textReplacements: [
+      {from:"The community hall where the grant committee meets is a low brick building near the taxi rank. Myah has walked past it a hundred times. She has never gone in — until today.",to:"The community hall where the committee meets is a low brick building near the kombi rank. Myah has walked past it a hundred times. She has never gone in — until today."},
+    ],
+  },
+  "g9-t1-l04-004": {
+    textReplacements: [
+      {from:"Thabo's mother, Grace, works at a crèche on weekdays. Formal work. Payslip. UIF. She earns R3,200 a month. It covers the rent and not much else.",to:"Thabo's mother, Grace, works at an early childhood centre on weekdays. Formal work. Regular pay. In this illustrative story she earns about US$220 a month. It covers major household costs and leaves little room for shocks."},
+      {from:"She wakes at 4am. By 6am, the kitchen is full of the smell of bread and vetkoek. By 7am, she is at the taxi rank with a cooler box and a flask of coffee. She sells to commuters, taxi drivers, queue marshals — anyone who is hungry and in a hurry.",to:"She wakes before dawn. By 6am, the kitchen is full of the smell of bread and vetkoek. By 7am, she is at the kombi rank with a cooler box and a flask of coffee. She sells to commuters, kombi drivers, rank marshals — anyone who is hungry and in a hurry."},
+      {from:"Myah meets Thabo at the taxi rank one Saturday. She watches his mother work — the speed of her hands, the way she remembers who takes sugar and who does not, the way she asks after people's children.",to:"Myah meets Thabo at the kombi rank one Saturday. She watches his mother work — the speed of her hands, the way she remembers who takes sugar and who does not, the way she asks after people's children."},
+      {from:"Key idea: The economy measures work in rands. But rands do not measure care. They do not measure love. They do not measure the grandmother who holds the family together without a salary, the older sibling who gets the younger ones ready for school, the neighbour who checks on the elder next door. You are not your wage. You are your work — all of it, paid and unpaid.",to:"Key idea: Markets put prices on some work, but money does not measure all value. It does not fully measure care, love, unpaid household labour or the neighbour who checks on an elder next door. Your wage is one signal of economic value; it is not the full measure of your contribution."},
+    ],
+    tableTextReplacements: [
+      {from:"Spaza shop owner",to:"Tuckshop owner"},
+      {from:"taxi owner",to:"kombi operator"},
+      {from:"Stokvel organising",to:"Mukando organising"},
+    ],
+  },
+  "g9-t1-l05-005": {
+    textReplacements: [
+      {from:"Twenty years ago, she was a domestic worker in Alexandra. She had four children. Her husband had left. She earned R800 a month, and after rent and transport, there was almost nothing for food.",to:"Twenty years ago, she was a domestic worker in Harare. She had four children. Her husband had left. Her income was small and irregular enough that after rent, transport and other essentials, there was often very little left for food."},
+      {from:"Her children ate. Then her neighbour's children smelled the food and asked for some. Then the neighbour herself came with a plate and R5. Then a taxi driver stopped by on his way home. Then another. Then another.",to:"Her children ate. Then her neighbour's children smelled the food and asked for some. Then the neighbour herself came with a plate and a small payment. Then a kombi driver stopped by on his way home. Then another. Then another."},
+      {from:"Myah watches the customers come and go. A taxi driver in a hurry. An elderly woman who sits slowly. A young mother with a baby. Mama Rose treats each one differently — because each one IS different.",to:"Myah watches the customers come and go. A kombi driver in a hurry. An elderly woman who sits slowly. A young mother with a baby. Mama Rose treats each one differently — because each one is different."},
+      {from:"This week, when you buy from a small business — a spaza shop, a vendor, a service provider — do one thing: learn their name if you do not know it, or use their name if you do. Say thank you specifically for something. Notice how they respond. Notice how you feel.",to:"This week, when you buy from a small business — a tuckshop, market stall, vendor or service provider — do one thing: learn the person's name if you do not know it, or use their name if you do. Say thank you specifically for something. Notice how they respond. Notice how you feel."},
+    ],
+  },
+  "g9-t1-l07-007": {
+    textReplacements: [
+      {from:"Sipho — the same Sipho who in Grade 8 had no goals, spent his R20 on sweets and regretted it, and later fixed a broken classroom chair with nothing but folded cardboard — has been busy.",to:"Sipho — the same Sipho who in Form 1 had no clear goals, spent money impulsively and regretted it, and later fixed a broken classroom chair with folded cardboard — has been busy."},
+      {from:"He did not plan to become someone who fixes things. It just happened. His sister's toy car broke. He fixed it. His grandmother's kettle stopped working. He opened it, saw a loose wire, reconnected it. A neighbour noticed and asked if he could look at their radio. He did. It worked. They paid him R30.",to:"He did not plan to become someone who fixes things. It just happened. His sister's toy car broke. He fixed it. His grandmother's kettle stopped working. He opened it, found a simple fault and repaired it safely with an adult nearby. A neighbour noticed and asked if he could look at their radio. He did. It worked. They paid him a small agreed amount."},
+      {from:"Now, at fifteen, Sipho has a small reputation in his section of Tembisa. He fixes small appliances. He does not have a shop. He does not have a sign. He has his hands and a growing sense that his hands know things his mouth has never been able to say.",to:"Now, Sipho has a small reputation in his neighbourhood in Chitungwiza. He fixes simple items he knows how to handle safely. He does not have a shop. He does not have a sign. He has practical skill and a growing sense that his hands know things his mouth has never been able to say."},
+      {from:"Myah finds him at Emmanuel's spaza shop, buying a replacement switch for a kettle he is repairing. \"You have a business,\" she says.",to:"Myah finds him at Emmanuel's tuckshop, buying a simple replacement part for something he is repairing. \"You have a business,\" she says."},
+    ],
+  },
+  "g9-t1-l08-008": {
+    textReplacements: [
+      {from:"Lerato, visiting her cousin in Tembisa, finds Myah at the taxi rank. Myah shows her the skill list from yesterday's activity. \"I have too many skills,\" Myah says. \"I do not know which one to focus on.\"",to:"Lerato, visiting her cousin in Chitungwiza, finds Myah at the kombi rank. Myah shows her the skill list from yesterday's activity. \"I have too many skills,\" Myah says. \"I do not know which one to focus on.\""},
+    ],
+  },
+  "g9-t1-l09-009": {
+    textReplacements: [
+      {from:"📘 What Myah Sees at the Taxi Rank",to:"📘 What Myah Sees at the Kombi Rank"},
+      {from:"Myah has been coming to this taxi rank her whole life. But since the grant office, since Atlehang's question, since she started seeing differently, the rank has transformed.",to:"Myah has been coming to this kombi rank for years. But since the committee office, since Atlehang's question, since she started seeing differently, the rank has transformed."},
+      {from:"6:45 am. about 40 people waiting. Three queues — Soweto, Tembisa, Johannesburg. The Soweto queue is the longest. People are tired. Some have been here since 5:30.",to:"6:45 am. About 40 people waiting. Several queues — into central Harare, to nearby suburbs and to surrounding areas. One queue is much longer than the others. People are tired. Some have been here since before sunrise."},
+      {from:"Problem 2: Thirst. No one sells water or cold drinks in the morning. The spaza shop opens at 7am. The sun is already hot by 6:30.",to:"Problem 2: Thirst. No one sells water or cold drinks early enough. The nearby tuckshop opens later. The morning is already warm."},
+      {from:"Think about a place you know well — your school, your street, your taxi rank. What problems do people experience there every day? What signals is the market sending?",to:"Think about a place you know well — your school, your street, your kombi rank or market. What problems do people experience there every day? What signals are people giving about unmet needs?"},
+      {from:"Walk through a familiar place in your mind. List TEN problems you notice. For THREE of them, name a specific, real person who experiences it. Not \"commuters\" — \"Mrs. Dlamini, who takes three taxis and carries heavy bags.\"",to:"Walk through a familiar place in your mind. List TEN problems you notice. For THREE of them, name a specific, real person who experiences it. Not \"commuters\" — \"Mrs. Moyo, who changes kombis twice and carries heavy bags.\""},
+    ],
+  },
+  "g9-t1-l10-010": {
+    textReplacements: [
+      {from:"Myah has chosen her problem: thirst at the taxi rank. People are hot. There is no cold water available before 7am. The spaza shop opens late. The vetkoek woman sells food, not drinks.",to:"Myah has chosen her problem: thirst at the kombi rank. People are hot. There is no cold water available early enough. The nearby tuckshop opens later. The vetkoek vendor sells food, not drinks."},
+      {from:"\"I am going to sell water at the taxi rank. No committee. No grant. Just me, a cooler box, and whatever I can buy with my savings.\"",to:"\"I am going to test selling water at the kombi rank. No committee. No grant. Just me, a cooler box, and a small amount from my savings.\""},
+      {from:"\"R60.\"",to:"\"US$6.\""},
+      {from:"\"That buys you about 15 bottles at wholesale. Sell them at R5 each. Profit is about R3 per bottle. If you sell all 15, you make R45. Then you buy more. Then you sell more. That is not a project. That is a business.\"",to:"\"In this example, US$6 buys 15 bottles at about US$0.40 each. If you sell them at US$0.50 each and sell all 15, sales are US$7.50 and gross profit is US$1.50 before any other costs. Then you use the evidence to decide what to do next. That is how a tiny test becomes enterprise learning.\""},
+      {from:"Example: If you think people at the taxi rank are thirsty, do not buy 100 bottles. Buy five. Stand there tomorrow. See if anyone asks to buy one. If they do, your assumption is validated. If they do not, you just learned something important for R20.",to:"Example: If you think people at the kombi rank are thirsty, do not buy 100 bottles. Buy five. Stand there at the relevant time. See whether people actually buy. If they do, you have evidence. If they do not, you just learned something important for a small test cost."},
+      {from:"If you can, run your MVP test this week. Even a tiny version. Even with R20. Even with one person. If you cannot run it, simulate it: write down exactly what you WOULD do, what you WOULD buy, where you WOULD stand, what you WOULD say. Then predict what would happen. The simulation is not the test — but it prepares you for the test.",to:"If you can, run your MVP test this week. Keep it tiny and use only an amount you can safely afford to test — for example US$2 or the equivalent in a clearly labelled currency. If you cannot run it, simulate it: write down exactly what you would do, buy, say and measure. The simulation is not the test, but it prepares you for one."},
+    ],
+  },
+  "g9-t1-l11-011": {
+    textReplacements: [
+      {from:"📘 Myah's First Day at the Taxi Rank",to:"📘 Myah's First Day at the Kombi Rank"},
+      {from:"6:00 am. Taxi rank. Cooler box. Fifteen bottles of water. R5 each.",to:"6:00 am. Kombi rank. Cooler box. Fifteen bottles of water. US$0.50 each in this illustrative example."},
+      {from:"Myah stands near the Soweto queue, where people wait longest. She does not shout. She does not have a sign. She just stands with her cooler box open, bottles visible, watching.",to:"Myah stands near one of the longest queues. She does not shout. She does not have a sign. She just stands with her cooler box open, bottles visible, watching."},
+      {from:"\"R5.\"",to:"\"US$0.50.\""},
+      {from:"The woman hesitates. Then she buys one. Then a man in the queue behind her buys one. Then a taxi driver walking past stops, looks, buys two — \"One for now, one for later.\"",to:"The woman hesitates. Then she buys one. Then a man in the queue behind her buys one. Then a kombi driver walking past stops, looks, buys two — \"One for now, one for later.\""},
+      {from:"By 7:30 am, she has sold twelve bottles. R60 in her pocket. Cost of goods: R48. Profit: R12. Plus two bottles left to sell.",to:"By 7:30 am, she has sold twelve bottles. Sales: US$6.00. Cost of the twelve bottles sold: US$4.80. Gross profit on those sales: US$1.20, with three bottles still in stock."},
+      {from:"What surprised me: The taxi driver bought two. He said he would look for me tomorrow. A regular — on day one.",to:"What surprised me: The kombi driver bought two. He said he would look for me tomorrow. A possible regular customer — on day one."},
+    ],
+  },
+  "g9-t1-l12-012": {
+    textReplacements: [
+      {from:"📘 What Myah Learned About R5",to:"📘 What Myah Learned About a US$0.50 Price"},
+      {from:"She has been selling 15 bottles a day at R5 each. Daily income: R75. Daily cost: R60 (wholesale price). Daily profit: R15.",to:"In this illustrative example, she sells 15 bottles a day at US$0.50 each. Daily sales: US$7.50. Daily stock cost: US$6.00. Gross profit: US$1.50 before any other costs."},
+      {from:"\"R15 a day is not much,\" she says.",to:"\"US$1.50 a day does not feel like much,\" she says."},
+      {from:"\"It is R75 a week,\" Mama Rose says. \"R300 a month. For standing at a taxi rank for two hours before school. That is more than many people earn in a full day of domestic work.\"",to:"\"If you sold out on five mornings, that would be US$7.50 gross profit for the week,\" Mama Rose says. \"The important question is whether the return is worth your time, effort and risk — and what the test is teaching you.\""},
+      {from:"\"But I could charge more. R6. Or R7. People might pay.\"",to:"\"But I could charge more. Maybe US$0.60 or US$0.70. People might pay.\""},
+      {from:"\"Because R5 feels fair. It is a coin. People have R5 coins. They do not have to think about it. At R6, they have to find change. At R7, they start to wonder if it is worth it. R5 is easy. R5 is a decision they do not have to make.\"",to:"\"Because US$0.50 is simple in this example. People understand the price quickly and it still leaves a small margin. At US$0.60 or US$0.70, some customers may start comparing alternatives. Price is not only arithmetic; it changes the decision a customer has to make.\""},
+      {from:"Example: If your R5 water saves a customer R50 in lost time or discomfort, R5 is not a price. It is a bargain.",to:"Example: If a low-cost bottle of water saves a customer significant time or discomfort, the customer may value it above its stock cost. Price and value are related, but they are not the same thing."},
+      {from:"Here’s the tension: the market does not care about the value you think you create. It only cares about its own problem. If your R5 solution saves a customer R500 in time or R5,000 in future damage, charging R5 is not humility. It is a failure of communication and strategy. You are not being \"nice\" by undercharging. You are withholding a solution from someone who desperately needs it — because your low price made it look cheap and unreliable. Underpricing is a form of sabotage. And here is the edge: the fear of charging is not about money. It is about worth. You are afraid to name your price because you are afraid of what it says about you. Too high, and you are arrogant. Too low, and you are worthless. But the price is not about you. It is about the value you create. Separate your identity from your pricing. They are not the same thing.",to:"Here’s the tension: customers judge value from their own problem, alternatives and trust. A low price can help access, but it can also make an offer look unsustainable or unreliable. A high price can signal value, but it can also exclude customers or fail if the benefit is not clear. Pricing is not a judgment of your worth as a person. It is a business decision about value, cost, customer ability to pay, alternatives and sustainability. Keep your identity separate from the price you test."},
+    ],
+  },
+  "g9-t1-l13-013": {
+    textReplacements: [
+      {from:"\"Myah Dlamini. I submitted a proposal three months ago. The water project at the taxi rank.\"",to:"\"Myah Dlamini. I submitted a proposal three months ago. The water project at the kombi rank.\""},
+    ],
+  },
+  "g9-t1-l14-014": {
+    tableReplacements: [
+      {
+        cellIncludes:"40% of Term 1 grade",
+        rows:[
+          ["Element","Description"],
+          ["Duration","3 weeks of focused work"],
+          ["What you will create","A written enterprise project: problem, solution, customer, pricing, plan and reflection"],
+          ["Presentation","3–4 minute pitch to the class"],
+          ["Assessment","Form 2 Term 1 portfolio evidence"],
+        ],
+      },
+    ],
+    textReplacements: [
+      {from:"Here’s the tension: starting fast is not the same as starting recklessly. Myah had R60 saved. She had a cooler box. She had observed the taxi rank for months. She knew her customers before she sold them anything. Fast does not mean blind. It means you do not use \"planning\" as an excuse for avoiding action. The Weekend Test is the filter: if you cannot make one sale by Sunday, your idea might be too big, too vague, or too dependent on resources you do not have. Shrink it until it fits within the weekend. Then start.",to:"Here’s the tension: starting fast is not the same as starting recklessly. Myah had US$6 available for a small test, a cooler box and months of observation at the kombi rank. She knew the problem before she sold anything. Fast does not mean blind. It means you do not use planning as an excuse for avoiding evidence. The Weekend Test is a filter: if you cannot test the smallest useful version quickly and safely, your idea may still be too big, vague or resource-heavy. Shrink the test until it is manageable, then learn from what happens."},
+    ],
+  },
+  "g9-t1-l15-015": {
+    textReplacements: [
+      {from:"Myah goes first. She shares her water business — the cooler box, the 6am start, the R5 price point, the R15 daily profit.",to:"Myah goes first. She shares her water test — the cooler box, the 6am start, the US$0.50 price point and the US$1.50 gross profit when all 15 bottles sell in this illustrative example."},
+      {from:"Atlehang asks: \"What if another seller sees you and starts selling water at R4? What is your competitive response that is not just lowering your price?\"",to:"Atlehang asks: \"What if another seller sees you and starts selling water at US$0.45? What is your competitive response that is not just lowering your price?\""},
+      {from:"Lethabo asks: \"You are making R15 a day. That is R75 a week. Is that enough to make it worth your time? What would 'worth it' mean to you?\"",to:"Lethabo asks: \"If your gross profit is US$1.50 on a sold-out morning, is that enough to make the test worth your time? What would 'worth it' mean to you — money, evidence, repeat customers, or something else?\""},
+    ],
+  },
   "g9-t1-l16-016": {
     title: "ENTERPRISE FOUNDATIONS REVIEW AND PORTFOLIO",
     textReplacements: [
