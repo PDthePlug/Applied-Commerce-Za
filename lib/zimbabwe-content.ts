@@ -1137,6 +1137,9 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
   "g9-t1-l16-016": {
     title: "ENTERPRISE FOUNDATIONS REVIEW AND PORTFOLIO",
     textReplacements: [
+      {from:"✍️ Activity 17: Letter to My Future Self — Term 1",to:"✍️ Activity 17: Letter to My Future Self — Enterprise Foundations Checkpoint"},
+      {from:"Share your Term 1 reflection with someone who matters to you. Let them witness your growth. Or keep it private. It is yours.",to:"Share your enterprise foundations reflection with someone who matters to you. Let them witness your growth. Or keep it private. It is yours."},
+      {from:"Question 2: Look at your Strategic Audit from Lesson 1. You named three liabilities. How many of them did you actively manage this term? How many managed you? What does this tell you about the gap between intention and action — and what will you do about it in Term 2?",to:"Question 2: Look at your Strategic Audit from Lesson 1. You named three liabilities. How many have you actively managed so far? How many have managed you? What does this tell you about the gap between intention and action — and what will you do about it as Form 2 Term 1 continues?"},
       {from:"The term is ending. Myah sits at Mama Rose's kitchen for the last time this term.",to:"The enterprise foundations cycle is closing. Myah sits at Mama Rose's kitchen to review what she has built so far. Form 2 Term 1 is not over yet — the next lessons turn toward how money moves through households and communities."},
       {from:"I started this term thinking I knew the rules.",to:"I started this enterprise cycle thinking I knew the rules."},
       {from:"I end this term knowing that following the rules is not always enough.",to:"I end this cycle knowing that following the rules is not always enough."},
@@ -1155,6 +1158,9 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
       {from:"What I will carry into Term 2:",to:"What I will carry forward:"},
       {from:"You finished Term 1 of Grade 9.",to:"You completed the enterprise foundations cycle of Form 2. Term 1 continues with money flows, households and community economics."},
       {from:"Keep going. Term 2 awaits.",to:"Keep going. Form 2 Term 1 continues."},
+    ],
+    tableTextReplacements: [
+      {from:"You bring everything from Grade 8 forward — and set a strategic intention",to:"You bring everything from Form 1 forward — and set a strategic intention"},
     ],
   },
   "g9-t2-l26-027": {
