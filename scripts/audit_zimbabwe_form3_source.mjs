@@ -31,7 +31,7 @@ const rules=[
   ["sa-tax-language",/\b(?:tax bracket|taxable income|tax deduction|tax credit|PAYE|VAT)\b/i],
   ["retirement-regulation",/\b(?:retirement annuit|pension fund|provident fund|preservation fund)\w*/i],
   ["insurance-regulation",/\b(?:short-term insurance|long-term insurance|life cover|funeral cover)\b/i],
-  ["estate-law",/\b(?:will|executor|estate planning|intestate|heir|beneficiar)\w*/i],
+  ["estate-law",/\b(?:estate planning|executor|intestate|testator|beneficiar\w*|codicil|letters of administration|Wills Act|Administration of Estates)\b/i],
 ];
 
 const blockText=block=>block.kind==="text"?block.text:block.kind==="table"?block.rows.flat().join(" | "):"";
