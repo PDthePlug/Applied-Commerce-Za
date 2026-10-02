@@ -81,13 +81,31 @@ for(const term of bundle.terms){
     const targetTerm=unit.startLesson<=34?1:unit.startLesson<=54?2:3;
     const termMentions=[...value.matchAll(/\bTerm\s+([1-4])\b/gi)].map(match=>Number(match[1]));
     if(termMentions.some(term=>term!==targetTerm)) hits.push("wrong-term");
-    if(hits.length) rows.push({
-      lesson:unit.startLesson,
-      id:unit.id,
-      title:unit.title,
-      hasOverride:Boolean(api.zimbabweContentOverrides[unit.id]),
-      hits,
-    });
+    if(hits.length){
+      const examples=[];
+      unit.blocks.forEach((block,index)=>{
+        const text=blockText(block);
+        const blockHits=rules.filter(([,re])=>re.test(text)).map(([name])=>name);
+        const wrongTerms=[...text.matchAll(/\bTerm\s+([1-4])\b/gi)]
+          .map(match=>Number(match[1]))
+          .filter(term=>term!==targetTerm);
+        if(wrongTerms.length) blockHits.push("wrong-term");
+        if(blockHits.length) examples.push({
+          block:index,
+          kind:block.kind,
+          hits:[...new Set(blockHits)],
+          text:text.length>700?text.slice(0,700)+"…":text,
+        });
+      });
+      rows.push({
+        lesson:unit.startLesson,
+        id:unit.id,
+        title:unit.title,
+        hasOverride:Boolean(api.zimbabweContentOverrides[unit.id]),
+        hits:[...new Set(hits)],
+        examples:examples.slice(0,8),
+      });
+    }
   }
 }
 
