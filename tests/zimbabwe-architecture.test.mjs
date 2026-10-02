@@ -243,3 +243,46 @@ test("Form 3 preserves complete Grade 10 and Grade 11 project cycles",()=>{
   assert.match(titles(g11,[1,2]),/MY LEVERAGE PLAN/);
   assert.match(titles(g11,[1,2]),/MY LEADERSHIP PHILOSOPHY/);
 });
+
+
+test("every Form 3 source lesson is explicitly localised or reviewed as context-neutral",()=>{
+  const overlay=fs.readFileSync("lib/zimbabwe-content.ts","utf8");
+  const explicit=new Set(
+    [...overlay.matchAll(/^\s{2}"(g(?:10|11)-[^"]+)": \{/gm)].map(match=>match[1])
+  );
+  const neutralSection=overlay.match(/zimbabweReviewedNeutralForm3UnitIds = \[([\s\S]*?)\] as const;/);
+  assert.ok(neutralSection,"reviewed-neutral Form 3 registry must exist");
+  const neutral=new Set(
+    [...neutralSection[1].matchAll(/"(g(?:10|11)-[^"]+)"/g)].map(match=>match[1])
+  );
+
+  const g10=bundle(10);
+  const g11=bundle(11);
+  const sourceIds=[
+    ...g10.terms.flatMap(term=>term.units).filter(unit=>unit.type==="lesson").map(unit=>unit.id),
+    ...g11.terms
+      .filter(term=>term.term<=2)
+      .flatMap(term=>term.units)
+      .filter(unit=>unit.type==="lesson")
+      .map(unit=>unit.id),
+  ];
+
+  assert.equal(sourceIds.length,116);
+  assert.equal(explicit.size,101);
+  assert.equal(neutral.size,15);
+  assert.equal(new Set([...explicit,...neutral]).size,116);
+  assert.deepEqual(
+    sourceIds.filter(id=>!explicit.has(id)&&!neutral.has(id)),
+    [],
+    "no Form 3 lesson may enter the Zimbabwe pathway without localisation review",
+  );
+});
+
+test("Form 3 keeps the leverage checkpoint internal and hands the year to Form 4 only after leadership",()=>{
+  const overlay=fs.readFileSync("lib/zimbabwe-content.ts","utf8");
+  assert.match(overlay,/LEVERAGE CYCLE REFLECTION & PORTFOLIO CHECKPOINT/);
+  assert.match(overlay,/You completed the Leverage Cycle of Form 3 Term 3\. The term continues with leadership/);
+  assert.match(overlay,/FORM 3 FINAL PORTFOLIO & LETTER TO FUTURE SELF/);
+  assert.match(overlay,/You have completed Form 3 Term 3 — and the full Form 3 Applied Commerce year/);
+  assert.match(overlay,/Looking Ahead to Form 4 — The O-Level Launch Year/);
+});
