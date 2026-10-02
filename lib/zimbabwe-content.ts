@@ -1764,7 +1764,7 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
         ],
       },
       {
-        cellIncludes:"Provident fund",
+        cellIncludes:"Tax-free savings (TFSA)",
         rows:[
           ["Retirement layer","How it works in principle","What to verify before relying on it"],
           ["NSSA social-security provision","Provides statutory benefits to qualifying contributors","Coverage, contribution record and current qualification rules"],
@@ -1795,7 +1795,7 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
     ],
     tableReplacements:[
       {
-        cellIncludes:"Provident fund",
+        cellIncludes:"Preservation fund",
         rows:[
           ["Term","Definition"],
           ["NSSA retirement benefit","Statutory retirement benefit for qualifying contributors under current NSSA rules"],
@@ -1805,7 +1805,7 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
         ],
       },
       {
-        cellIncludes:"RA",
+        cellIncludes:"Access before retirement",
         rows:[
           ["Feature","NSSA / statutory layer","Employer pension","Individual pension","Personal investments"],
           ["Set up by","Law / statutory system","Employer or occupational scheme","You with a regulated provider","You through suitable regulated channels"],
