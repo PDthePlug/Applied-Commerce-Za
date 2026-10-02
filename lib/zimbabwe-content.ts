@@ -1279,6 +1279,124 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
       {from:"Keep going. Term 3 awaits.",to:"Keep going. Form 2 Term 2 awaits — habits, agency and execution."},
     ],
   },
+  "g9-t3-l35-024": {
+    textReplacements: [
+      {from:"Recall the habit loop (cue, routine, reward) from Grade 8 and apply it with deeper understanding.",to:"Recall the habit loop (cue, routine, reward) from Form 1 and apply it with deeper understanding."},
+      {from:"She stares at the page. She has been tracking her money for months — every rand, every expense. She traced supply chains. She mapped her community's money. She presented her findings at the community hall. But she has never really looked at her own morning. She has never asked herself why she keeps doing something that makes her feel worse.",to:"She stares at the page. She has been tracking money and expenses for months. She traced supply chains. She mapped her community's money. She presented her findings at the community hall. But she has never really looked at her own morning. She has never asked herself why she keeps doing something that makes her feel worse."},
+      {from:"Key idea: You learned the habit loop in Grade 8. Cue. Routine. Reward. It was useful then. But you are not in Grade 8 anymore. The loop is not just a mechanism. It is a voting machine. Every time you perform a habit, you cast a vote for an identity. Save R5, vote for \"I am a saver.\" Scroll for twenty minutes, vote for \"I am someone who starts the day distracted.\" The votes accumulate. Over time, the election is called — and the winner is the identity you have been voting for, whether you meant to or not.",to:"Key idea: You learned the habit loop in Form 1. Cue. Routine. Reward. It was useful then. In Form 2, go deeper: each repetition is also evidence for an identity. Save a small amount consistently, vote for \"I am someone who prepares.\" Scroll for twenty minutes before getting up, vote for \"I am someone who starts the day distracted.\" Repetition accumulates. Over time, the pattern becomes part of how you see yourself."},
+    ],
+  },
+  "g9-t3-l36-025": {
+    textReplacements: [
+      {from:"\"After a month, it was automatic. I did not think about it. So I added another tiny habit: save R5 every day. Just R5. In a jar on my desk.\"",to:"\"After a month, it was automatic. I did not think about it. So I added another tiny habit: save US$0.50 every day in this example. A small amount, in a jar on my desk.\""},
+      {from:"\"A year later, I could do fifty push-ups. I had R1,800 saved. I was studying better — not because I tried to study better, but because the discipline from those tiny habits spilled over. I had proved to myself that I was someone who keeps promises. After that, bigger promises felt possible.\"",to:"\"A year later, I could do fifty push-ups. If I had managed US$0.50 every day for 365 days, that would be about US$182.50 before any withdrawals. I was studying better too — not because one habit magically caused everything else, but because I had evidence that I could keep small promises. Bigger promises started to feel possible.\""},
+      {from:"Choose one tiny habit to start. Make it so small it feels almost too easy. If it feels hard, make it smaller. Ten push-ups too many? Do one. Save R5 too much? Save R1. The size does not matter. The consistency does.",to:"Choose one tiny habit to start. Make it so small it feels almost too easy. If it feels hard, make it smaller. Ten push-ups too many? Do one. A daily saving target too high? Reduce it or choose a non-money habit. The size is less important than a repeatable action."},
+      {from:"Key idea: Themba's R5 a day was not about the money. It was about the identity. Every time he saved R5, he cast a vote for \"I am a saver.\" The R5 itself was almost meaningless. The vote was everything. At first, the votes feel insignificant. R5? That is nothing. Ten push-ups? That will not change my body. But after thirty votes, something shifts. After a hundred votes, the identity starts to lock. After 365 votes, you no longer have to think about it. You just are a saver. You just are someone who exercises. The compound effect works on money. But it works more powerfully on identity. Small actions, repeated, do not just change what you have. They change who you believe you are.",to:"Key idea: Themba's daily saving habit was not only about the amount. It was evidence. Each repetition supported the identity \"I am someone who prepares.\" The same is true of exercise, study or organisation. One repetition feels small. Thirty repetitions are harder to dismiss. Hundreds of repetitions can change what feels normal. Small actions, repeated, do not only change outcomes; they can change what you believe you are capable of."},
+      {from:"Here’s the tension: the compound effect is neutral. It amplifies whatever you feed it. Bad habits compound too. One missed savings day makes the next miss easier. One skipped workout makes the next skip feel normal. One lie makes the next lie less uncomfortable. You are always compounding something. The question is what. And here is the uncomfortable edge: the ability to build tiny habits assumes a baseline of stability. Themba could do push-ups because he had a floor and a body that worked. He could save R5 because he had R5 to save. What if he did not? The tiny habits philosophy is powerful — but it is not equally accessible. Acknowledging that does not excuse inaction. But it explains why some people struggle more than others to build the foundation.",to:"Here’s the tension: repetition can strengthen useful or harmful patterns. One missed day does not destroy a habit, but repeated avoidance can become easier to repeat. The other edge is resources. Themba could exercise because his body and environment allowed it. He could save because he had something available to save. Not everyone has the same starting conditions. Good habit design must respect reality rather than pretending every learner has equal time, money, privacy, safety or support."},
+      {from:"Your Next Step: If your conditions make consistency hard — if you cannot save R5 because you do not have R5, if you cannot exercise because you are working or caring for siblings — what is the SMALLEST possible version of a positive habit you COULD build? One deep breath before you start your day? One kind word to someone? One sentence of gratitude? The size does not matter. The vote does.",to:"Your Next Step: If your conditions make consistency hard — if saving money is not realistic, or exercise time is limited because you work or care for siblings — what is the smallest useful habit you could build? One minute of planning? One kind word? One line in your tracker? Choose something that fits your actual life."},
+    ],
+    tableTextReplacements: [
+      {from:"Save R5 every day",to:"Save US$0.50 a day in this illustrative example"},
+    ],
+  },
+  "g9-t3-l37-026": {
+    textReplacements: [
+      {from:"She talks to Atlehang at the taxi rank.",to:"She talks to Atlehang at the kombi rank."},
+      {from:"Atlehang thinks. \"Remember SMART from Grade 8?\"",to:"Atlehang thinks. \"Remember SMART from Form 1?\""},
+    ],
+  },
+  "g9-t3-l40-029": {
+    textReplacements: [
+      {from:"Then Mrs. October, his biggest customer, told him her daughter was moving back from Johannesburg. Her daughter would do the shopping now. She would not need deliveries anymore.",to:"Then Mrs. October, his biggest customer, told him her daughter was moving back from Bulawayo. Her daughter would do the shopping now. She would not need deliveries anymore."},
+    ],
+  },
+  "g9-t3-l41-030": {
+    textReplacements: [
+      {from:"He made another for a neighbour. Then another. Then a woman from church. Then the clinic down the road ordered ten. Now, nearly two years later, he has made over sixty clocks. He has saved over R2,000. He has taught three younger kids how to make them. He has a small production system — materials sourced, prices set, quality controlled.",to:"He made another for a neighbour. Then another. Then a woman from church. Then the clinic down the road ordered ten. Now, nearly two years later, he has made over sixty clocks. In this story he has saved more than US$200 from the work. He has taught three younger learners how to make them. He has a small production system — materials sourced, prices set, quality controlled."},
+      {from:"Myah finds him at Emmanuel's spaza shop, buying more glue. \"How did you keep going when the first clocks were ugly and people said no?\"",to:"Myah finds him at Emmanuel's tuckshop, buying more glue. \"How did you keep going when the first clocks were ugly and people said no?\""},
+    ],
+  },
+  "g9-t3-l42-031": {
+    title:"LEARNING FROM FAILURE — SMALL, CALCULATED TESTS",
+    textReplacements: [
+      {from:"📘 Sipho's R50 Tuition",to:"📘 Sipho's US$5 Lesson"},
+      {from:"Sipho — the same Sipho who once had no goals, who spent his R20 on sweets in Grade 8 and regretted it, who fixed his sister's toy car, who now repairs small appliances for neighbours — sits at Mama Rose's kitchen, telling a story Myah has not heard before.",to:"Sipho — the same Sipho who once had no clear goals, who spent money impulsively in Form 1 and regretted it, who fixed his sister's toy car, and who now repairs simple items for neighbours — sits at Mama Rose's kitchen, telling a story Myah has not heard before."},
+      {from:"He tells them: a year ago, he tried to sell sweets at school. He bought R50 worth of chocolates — the kind that melt. He did not think about the heat. He did not think about where to store them. By lunchtime, they were a sticky mess. He lost everything.",to:"He tells them: a year ago, he tried to sell sweets at school. In this example he bought US$5 worth of chocolates — the kind that melt. He did not think about the heat or where to store them. By lunchtime, they were a sticky mess. He lost the test money."},
+      {from:"\"No. I asked people what they actually wanted. Chips, they said. Cold drink. Things that do not melt. I tried again — smaller, smarter. Chips and cold drinks from Emmanuel's shop. Sold them at school. Made back my R50 and then some.\"",to:"\"No. I asked people what they actually wanted. Chips, they said. Cold drinks. Things that do not melt. I tried again — smaller, smarter. I bought a small amount from Emmanuel's shop, tested demand, and eventually made back the US$5 I had lost.\""},
+      {from:"\"What did the R50 teach you?\"",to:"\"What did the US$5 test teach you?\""},
+      {from:"Key idea: Sipho paid R50 for a lesson. That is cheap tuition. Some people pay thousands for business courses and learn less. Some people pay with years of their lives on the wrong path. Some never learn at all because they are too afraid of failure to try anything worth learning from. Failure is not the opposite of success. It is a component of success. The people who succeed are not the ones who avoid failure. They are the ones who pay attention when it happens. They extract the lesson. They do not waste the tuition.",to:"Key idea: Sipho lost US$5 on a small test and extracted a useful lesson. The point is not that failure is automatically good. It is that a controlled failure can produce information when you review what happened. Successful experimentation means keeping the downside small enough to survive, measuring the result, and changing the next attempt."},
+      {from:"Here’s the tension: failure as tuition only works if you can afford the tuition. Sipho lost R50 and tried again. What if R50 was all he had? What if failing meant he could not eat? The ability to fail safely and extract the lesson is not equally distributed. Some failures are fatal — you do not get a second chance. Some failures cost so much there is nothing left to rebuild with. This does not mean you should not take risks. It means you should take CALCULATED risks — small enough that failure teaches without destroying. And it means you should never judge someone else's failure without understanding what it cost them.",to:"Here’s the tension: failure only becomes useful tuition when the loss is survivable. Sipho lost US$5 and tried again. If that money had been needed for food or transport, the same experiment would have been irresponsible. The ability to fail safely is not equally distributed. Take calculated risks: small enough to learn from without damaging essential needs, safety or trust. Never judge someone else's failure without understanding what it cost them."},
+    ],
+    tableTextReplacements: [
+      {from:"lost R50",to:"lost US$5"},
+    ],
+  },
+  "g9-t3-l46-035": {
+    textReplacements: [
+      {from:"Lethabo has R200 saved. He has been saving for months.",to:"Lethabo has US$20 saved in this illustrative example. He has been saving for months."},
+      {from:"Now his friends want to go to an amusement park. Entry is R150. Food is extra.",to:"Now his friends want to go to an amusement park. Entry is US$15 in this example. Food and transport are extra."},
+      {from:"1. Go — spend R150, have fun, but savings gone.",to:"1. Go — spend US$15 plus extras, have fun, but use most of the savings."},
+    ],
+  },
+  "g9-t3-l47-036": {
+    textReplacements: [
+      {from:"She knows how this goes. Last time, she went with no money and ended up borrowing from Thabo to buy a cool drink. Now she owes R15.",to:"She knows how this goes. Last time, she went with no money and ended up borrowing from Thabo to buy a cool drink. In this illustrative example she still owes him US$1.50."},
+    ],
+  },
+  "g9-t3-l48-037": {
+    title:"DIGITAL HABITS, SUBSCRIPTIONS & MONEY",
+    textReplacements: [
+      {from:"📘 The R80 That Disappeared",to:"📘 The US$8 That Disappeared"},
+      {from:"Thabo is at Emmanuel's spaza shop, checking his bank balance on his phone. He has been using a banking app since he opened his savings account. It is convenient. But convenient is not always safe.",to:"Thabo is at Emmanuel's tuckshop, checking his account balance on his phone. He has been using a financial app to track his savings. It is convenient. But convenient is not always deliberate."},
+      {from:"He stares at the screen. He had R340 last week. Now he has R260. R80 gone. He does not remember spending it.",to:"He stares at the screen. In this illustrative example he had US$34 last week. Now he has US$26. US$8 gone. He does not remember choosing to spend it."},
+      {from:"R15 — Game Coins",to:"US$1.50 — Game coins"},
+      {from:"R25 — App Subscription (monthly, auto-renewing)",to:"US$2.50 — App subscription (monthly, auto-renewing)"},
+      {from:"R20 — Game Coins again",to:"US$2.00 — Game coins again"},
+      {from:"R20 — Another subscription he forgot he signed up for",to:"US$2.00 — Another subscription he forgot he signed up for"},
+      {from:"R80. Gone. He did not even feel it leaving.",to:"US$8. Gone. He did not feel each small payment leaving."},
+      {from:"\"I just lost R80. In-app purchases. Subscriptions I forgot about. I did not even notice until I checked my balance. It just... disappeared.\"",to:"\"I spent US$8 without paying attention. In-app purchases. Subscriptions I forgot about. I did not notice the total until I checked my balance.\""},
+      {from:"☐ Cancel unused subscriptions ☐ Disable in-app purchases ☐ Turn off one-click buying ☐ Set a 24-hour rule before any digital purchase over R50 ☐ Check transaction history weekly ☐ Other: _________________________________",to:"☐ Cancel unused subscriptions ☐ Disable in-app purchases ☐ Turn off one-click buying ☐ Set a 24-hour rule before any non-essential digital purchase over US$5 or another threshold that fits your currency ☐ Check transaction history weekly ☐ Other: _________________________________"},
+      {from:"Here’s the tension: Thabo discovered his R80 loss because he checked his transaction history. He has a bank app. He has enough literacy to understand what he is looking at. What if he did not? Digital literacy is not equally distributed. The people most vulnerable to digital spending traps are often the people least equipped to detect them. And the deeper tension: the digital economy runs on attention extraction. Even if you protect your money, your attention is still being harvested, packaged, and sold. You are not just a consumer. You are the product. Every free app, every social media platform, every \"free\" service — you pay with your attention, your data, your preferences. The price is just hidden.",to:"Here’s the tension: Thabo noticed the US$8 only because he reviewed his transaction history. Digital literacy is uneven, and recurring payments can be difficult to notice. There is also a second cost: attention and data. Many digital services are designed to keep you engaged because your attention, behaviour and preferences have commercial value. Protecting yourself therefore means checking both what you spend and what you give away in time, attention and information."},
+    ],
+    tableTextReplacements: [
+      {from:"\"Just R10\" — but it adds up",to:"\"Just US$1\" — but repeated purchases add up"},
+    ],
+  },
+  "g9-t3-l49-038": {
+    title:"ONLINE SAFETY, PHISHING & SCAMS",
+    textReplacements: [
+      {from:"Atlehang's phone buzzes while she waits at the taxi rank. A WhatsApp message from an unknown number:",to:"Atlehang's phone buzzes while she waits at the kombi rank. A WhatsApp message from an unknown number:"},
+      {from:"\"Congratulations! You have won a R5,000 shopping voucher! Click here to claim your prize: [link]\"",to:"\"Congratulations! You have won a US$500 shopping voucher! Click here to claim your prize: [link]\""},
+      {from:"Her finger hovers over the link. R5,000. That is more than her mother makes in a week at the kitchen. That could buy ingredients for a month.",to:"Her finger hovers over the link. US$500. It is a large amount for her household. It could cover many real needs."},
+      {from:"She stops. She remembers something Ms. Daniels said during the Community Money Map project: \"If something sounds too good to be true, it almost always is. Nobody gives away R5,000 for free. They want something from you. Your information. Your money. Your identity.\"",to:"She stops. She remembers something Ms. Daniels said during the Community Money Map project: \"If something sounds too good to be true, treat it as a warning. A message promising US$500 for a competition you never entered may be trying to get your information, money or identity.\""},
+      {from:"Later, Atlehang hears that a neighbour's son clicked a similar link. Entered his mother's banking details to \"claim the prize.\" R800 disappeared before she could stop it. It took weeks to get the bank to reverse the charges. The money was never fully recovered.",to:"Later, Atlehang hears that a neighbour's son clicked a similar link and entered financial details to \"claim the prize.\" In this illustrative scenario, US$80 was taken before the account could be secured. Recovery was difficult and incomplete."},
+    ],
+    tableTextReplacements: [
+      {from:"Online ad for new phone for R200 (usually R2,000)",to:"Online ad for a new phone for US$20 when the normal price is around US$200"},
+      {from:"Message saying you won a competition you never entered — just pay R50 to claim your prize",to:"Message saying you won a competition you never entered — just pay US$5 to claim your prize"},
+    ],
+  },
+  "g9-t3-l51-040": {
+    textReplacements: [
+      {from:"Myah is ten days into her habit challenge. She meets her Habit Stokvel at Mama Rose's kitchen — Thabo, Atlehang, and Lethabo.",to:"Myah is ten days into her habit challenge. She meets her Habit Accountability Circle at Mama Rose's kitchen — Thabo, Atlehang and Lethabo."},
+      {from:"Part D: Habit Stokvel Check-In",to:"Part D: Habit Accountability Circle Check-In"},
+      {from:"One insight from my Stokvel: _________________________________",to:"One insight from my Accountability Circle: _________________________________"},
+    ],
+  },
+  "g9-t3-l52-041": {
+    textReplacements: [
+      {from:"Lethabo is trying to build a habit of saving R10 every day. For two weeks, it worked — every day, R10 into the jar on his desk.",to:"Lethabo is trying to build a habit of saving US$1 every day in this illustrative example. For two weeks, it worked — every day, US$1 into the jar on his desk."},
+      {from:"He told Myah at Emmanuel's spaza shop. \"I broke the chain. Fourteen days of ticks, and now nothing. I might as well give up.\"",to:"He told Myah at Emmanuel's tuckshop. \"I broke the chain. Fourteen days of ticks, and now nothing. I might as well give up.\""},
+      {from:"He put R10 in the jar that afternoon. The chain continued — not unbroken, but continued. And that was the point.",to:"He restarted with US$1 that afternoon. The chain continued — not unbroken, but continued. And that was the point."},
+      {from:"Here’s the tension: designing a resilient system requires resources. An emergency fund requires extra money. A backup plan requires options. Not everyone has those resources. If you cannot build the ideal system, build the best system you CAN with what you have. If you cannot save R10 a day, save R2. If you cannot exercise for 30 minutes, do 5. If you cannot study for an hour, do 10 minutes. The system does not need to be perfect. It needs to survive contact with reality. And the most resilient system is the one that can fail and restart without shame. Shame is what keeps people from restarting. Remove the shame. Keep the restart.",to:"Here’s the tension: resilient systems often require resources, and not everyone has the same options. If you cannot build the ideal system, build the best one that fits your reality. If US$1 a day is not realistic, choose a smaller amount or a non-money habit. If thirty minutes of exercise is not possible, try five. If an hour of study is impossible, try ten minutes. The system does not need to be perfect. It needs to survive contact with real life and make restarting easier after a miss."},
+    ],
+  },
+  "g9-t3-l53-042": {
+    textReplacements: [
+      {from:"Your Next Step: What is one way you will use the review habit in Term 4 — not as a project, but as a way of being? A weekly check-in with yourself? A monthly review of a habit? A commitment to track something new every term?",to:"Your Next Step: What is one way you will use the review habit in Form 2 Term 3 — not as a project, but as a way of being? A weekly check-in? A monthly review? A commitment to track one important behaviour while you work on your community project?"},
+      {from:"Question 2: The review habit — noticing and adjusting — is more valuable than any single habit. What is your specific plan to keep it alive in Term 4? Not a wish. A plan.",to:"Question 2: The review habit — noticing and adjusting — can outlast any single project. What is your specific plan to keep it alive in Form 2 Term 3? Not a wish. A plan."},
+    ],
+  },
   "g9-t3-l50-039": {
     title: "HABIT TRANSFORMATION PROJECT — LAUNCH",
     tableReplacements: [
@@ -1293,8 +1411,11 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
       },
     ],
     textReplacements: [
+      {from:"Set up your tracking system and commit to your Habit Stokvel.",to:"Set up your tracking system and commit to your Habit Accountability Circle."},
+      {from:"Track every rand I spend",to:"Track every amount I spend and label the currency"},
+      {from:"My Habit Stokvel members are: _________________",to:"My Habit Accountability Circle members are: _________________"},
       {from:"This is the third-term capstone.",to:"This is the Form 2 Term 2 applied habit project."},
-      {from:"Habit Stokvel",to:"Habit Mukando"},
+      {from:"Habit Stokvel",to:"Habit Accountability Circle"},
     ],
   },
   "g9-t3-l54-043": {
@@ -1323,6 +1444,10 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
       },
     ],
     textReplacements: [
+      {from:"Compile your complete Term 3 Portfolio.",to:"Compile your complete Form 2 Term 2 portfolio."},
+      {from:"Lesson 35: Habits and identity. The phone loop. The vote. Lesson 36: Tiny habits. Themba's story. The R5 that was not about the R5. Lesson 37: SMART+ goals. Emotional connection. Accountability. Lesson 38: Time management. Sipho's four hours on his phone. Lesson 39: Procrastination. The five-minute rule. Action before motivation. Lesson 40: Resilience. The bike that broke again. Internal strength plus external resources. Lesson 41: Grit. Lethabo's sixty clocks. Deciding, over and over, not to quit. Lesson 42: Failure as tuition. Sipho's R50 education. Extract the lesson. Lesson 43-44: Growth mindset. The word \"yet.\" The operating system upgrade. Lesson 45: Self-discipline. The phone in the kitchen. Environment over willpower. Lesson 46: Decision making. Lethabo's fork. Always find the third option. Lesson 47: Peer pressure. Saying no. Paying the cost. Lesson 48: Digital habits. Thabo's R80. Painless spending. Lesson 49: Online safety. Atlehang's near-click. The pause that saves. Lesson 50-53: Her 21-day tracker. The ticks. The crosses. The mirror.",to:"Lesson 35: Habits and identity. The phone loop. The vote. Lesson 36: Tiny habits. Themba's small daily saving example. Lesson 37: SMART+ goals. Emotional connection. Accountability. Lesson 38: Time management. Sipho's four hours on his phone. Lesson 39: Procrastination. The five-minute rule. Action before motivation. Lesson 40: Resilience. The bike that broke again. Internal strength plus external resources. Lesson 41: Grit. Lethabo's sixty clocks. Deciding, over and over, not to quit. Lesson 42: Failure as a small calculated test. Extract the lesson. Lesson 43-44: Growth mindset. The word \"yet.\" The operating system upgrade. Lesson 45: Self-discipline. Environment over willpower. Lesson 46: Decision making. Lethabo's fork. Look for additional options. Lesson 47: Peer pressure. Saying no. Paying the cost. Lesson 48: Digital habits. Thabo's US$8 of unnoticed spending. Lesson 49: Online safety. Atlehang's near-click. The pause that protects. Lesson 50-53: The 21-day tracker. The ticks. The crosses. The mirror."},
+      {from:"You finished Term 3 of Grade 9.",to:"You finished Form 2 Term 2."},
+      {from:"Keep going. Term 4 awaits — the final term. The final project. The fork in the road. Everything you have built is about to come together.",to:"Keep going. Form 2 Term 3 awaits — the community-enterprise project, final portfolio and the chance to apply everything you have built."},
       {from:"Understand the subject choice implications for Grade 10 — and make a preliminary Path Forward declaration.",to:"Identify how your habits, self-management and execution skills will support your community-enterprise work in Term 3."},
       {from:"📘 What We Learned This Term",to:"📘 What We Learned in Form 2 Term 2"},
       {from:"35-36 Habits, identity, tiny habits",to:"35-36 Habits, identity and tiny habits"},
