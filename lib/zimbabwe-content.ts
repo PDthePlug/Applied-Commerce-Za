@@ -1175,16 +1175,6 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
           ["Readiness","Being prepared to apply what you have learned in the next challenge"],
         ],
       },
-      {
-        cellIncludes:"35-36",
-        rows:[
-          ["Lessons","What We Learned"],
-          ["26-34","Community saving, money leakages, the Community Money Map and action from observation"],
-          ["35-44","Habits, identity, tiny habits, goals, time, resilience, grit, failure and growth mindset"],
-          ["45-49","Self-discipline, decision making, peer pressure, digital habits and online safety"],
-          ["50-54","Habit Transformation Project — launch, tracking, obstacles, completion and reflection"],
-        ],
-      },
     ],
     rangeReplacements: [
       {
@@ -1200,6 +1190,16 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
     ],
     textReplacements: [
       {from:"Understand the subject choice implications for Grade 10 — and make a preliminary Path Forward declaration.",to:"Identify how your habits, self-management and execution skills will support your community-enterprise work in Term 3."},
+      {from:"📘 What We Learned This Term",to:"📘 What We Learned in Form 2 Term 2"},
+      {from:"35-36 Habits, identity, tiny habits",to:"35-36 Habits, identity and tiny habits"},
+      {from:"37-38 SMART+ goals, time management",to:"37-38 SMART+ goals and time management"},
+      {from:"39-40 Procrastination, resilience",to:"39-40 Procrastination and resilience"},
+      {from:"41-42 Grit, learning from failure",to:"41-42 Grit and learning from failure"},
+      {from:"43-44 Growth mindset",to:"43-44 Growth mindset"},
+      {from:"45-46 Self-discipline, decision making",to:"45-46 Self-discipline and decision making"},
+      {from:"47-49 Peer pressure, digital habits, online safety",to:"47-49 Peer pressure, digital habits and online safety"},
+      {from:"50-53 Habit Transformation Project",to:"50-53 Habit Transformation Project"},
+      {from:"54 Term reflection and Path Forward",to:"54 Term reflection and Term 3 readiness"},
       {from:"📘 Myah's Final Term 3 Entry",to:"📘 Myah's Form 2 Term 2 Review"},
       {from:"I am ready for Term 4.",to:"I am ready for Term 3."},
       {from:"✍️ Activity 54: My Term 3 Reflection — With Scale",to:"✍️ Activity 54: My Form 2 Term 2 Reflection — With Scale"},
