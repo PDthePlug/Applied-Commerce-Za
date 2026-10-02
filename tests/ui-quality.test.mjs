@@ -202,7 +202,7 @@ test("Form 1 Zimbabwe overlay contains no South African edition residue already 
 test("Form 2 structural localisation is protected",()=>{
   const overlay=read("lib/zimbabwe-content.ts");
   assert.match(overlay,/ENTERPRISE FOUNDATIONS REVIEW AND PORTFOLIO/);
-  assert.match(overlay,/COMMUNITY MONEY MAP REFLECTION — LETTER TO MY FUTURE SELF/);
+  assert.match(overlay,/FORM 2 TERM 1 FAREWELL — LETTER TO MY FUTURE SELF/);
   assert.match(overlay,/TERM 2 REFLECTION — HABITS, EXECUTION & NEXT MOVE/);
   assert.match(overlay,/Looking Ahead to Term 3 — Community Enterprise/);
   assert.match(overlay,/FAREWELL TO FORM 2/);
