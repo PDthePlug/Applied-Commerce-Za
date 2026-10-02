@@ -827,6 +827,163 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
       {index:66,kind:"text",text:"Keep going. Form 2 awaits. And Myah is waiting for you there."},
     ],
   },
+
+  "g9-t1-l16-015": {
+    title: "ENTERPRISE FOUNDATIONS REVIEW AND PORTFOLIO",
+    textReplacements: [
+      {from:"The term is ending. Myah sits at Mama Rose's kitchen for the last time this term.",to:"The enterprise foundations cycle is closing. Myah sits at Mama Rose's kitchen to review what she has built so far. Form 2 Term 1 is not over yet — the next lessons turn toward how money moves through households and communities."},
+      {from:"I started this term thinking I knew the rules.",to:"I started this enterprise cycle thinking I knew the rules."},
+      {from:"I end this term knowing that following the rules is not always enough.",to:"I end this cycle knowing that following the rules is not always enough."},
+      {from:"📘 What We Learned This Term",to:"📘 What We Learned in the Enterprise Foundations Cycle"},
+      {from:"✍️ Activity 16: My Term 1 Reflection",to:"✍️ Activity 16: My Enterprise Foundations Reflection"},
+      {from:"What is the ONE thing you need to do in Term 2 to move up by a single point?",to:"What is the ONE thing you need to do during the rest of Form 2 Term 1 to move up by a single point?"},
+      {from:"You will read this at the end of Term 2 — or years from now, when you need to remember who you were.",to:"You will read this at the end of Form 2 Term 1 — or years from now, when you need to remember who you were."},
+      {from:"What you hope for Term 2",to:"What you hope for the rest of Form 2 Term 1"},
+      {from:"From me, in Grade 9",to:"From me, in Form 2"},
+      {from:"Read it at the end of Term 2.",to:"Read it at the end of Form 2 Term 1."},
+      {from:"The person who wrote your Grade 8 letter to yourself is not gone.",to:"The person who wrote your Form 1 letter to yourself is not gone."},
+      {from:"Will you keep managing them in Term 2, or let them quietly take back control?",to:"Will you keep managing them as Form 2 continues, or let them quietly take back control?"},
+      {from:"What will you carry forward from this term into Term 2 — and into your life?",to:"What will you carry forward from this enterprise cycle into the rest of Form 2 Term 1 — and into your life?"},
+      {from:"Lesson 16 — Term 1 Final Reflection",to:"Lesson 16 — Enterprise Foundations Reflection"},
+      {from:"I reflected on my entire Term 1 journey — enterprise, values, liabilities, and growth.",to:"I reflected on my enterprise foundations journey — enterprise, values, liabilities, and growth."},
+      {from:"What I will carry into Term 2:",to:"What I will carry forward:"},
+      {from:"You finished Term 1 of Grade 9.",to:"You completed the enterprise foundations cycle of Form 2. Term 1 continues with money flows, households and community economics."},
+      {from:"Keep going. Term 2 awaits.",to:"Keep going. Form 2 Term 1 continues."},
+    ],
+  },
+  "g9-t2-l26-025": {
+    title: "THE MUKANDO SYSTEM",
+    textReplacements: [
+      {from:"Stokvel",to:"Mukando"},
+      {from:"stokvel",to:"mukando"},
+      {from:"Stokvels",to:"Mukando groups"},
+      {from:"stokvels",to:"mukando groups"},
+      {from:"In South Africa, mukando groups handle billions of rands every year. They are not informal. They are essential.",to:"In Zimbabwe, mukando and other community savings arrangements are part of how many families pool resources, create accountability and prepare for larger expenses. Their exact rules differ from group to group."},
+    ],
+  },
+  "g9-t2-l34-033": {
+    title: "COMMUNITY MONEY MAP REFLECTION — LETTER TO MY FUTURE SELF",
+    textReplacements: [
+      {from:"Myah writes a final letter to her future self. She will read it at the end of Term 3 — or years from now, when she needs to remember who she was.",to:"Myah writes a letter to her future self at the end of the Community Money Map cycle. She will read it at the end of Form 2 Term 2 — or years from now, when she needs to remember who she was."},
+      {from:"I just finished Term 2 of Grade 9.",to:"I just completed the Community Money Map cycle in Form 2."},
+      {from:"I hope Term 3 brings more confidence.",to:"I hope the next learning cycle brings more confidence."},
+      {from:"✍️ Activity 34: Letter to My Future Self — Term 2",to:"✍️ Activity 34: Letter to My Future Self — Community Money Map Cycle"},
+      {from:"You will read this at the end of Term 3 — or years from now, when you need to remember who you were.",to:"You will read this at the end of Form 2 Term 2 — or years from now, when you need to remember who you were."},
+      {from:"What you learned this term that changed how you see money and community",to:"What you learned in the Community Money Map cycle that changed how you see money and community"},
+      {from:"What you hope for Term 3",to:"What you hope for the rest of Form 2 Term 2"},
+      {from:"From me, in Grade 9",to:"From me, in Form 2"},
+      {from:"Read it at the end of Term 3.",to:"Read it at the end of Form 2 Term 2."},
+      {from:"What is the most important thing you want your future self to remember about who you were in Term 2?",to:"What is the most important thing you want your future self to remember about who you were during the Community Money Map cycle?"},
+      {from:"Save your final Log entry of the term.",to:"Save your final Log entry from the Community Money Map cycle."},
+      {from:"You finished Term 2 of Grade 9.",to:"You completed the Community Money Map cycle of Form 2. Term 2 continues with habits, execution and self-management."},
+      {from:"Keep going. Term 3 awaits.",to:"Keep going. Form 2 Term 2 continues."},
+    ],
+  },
+  "g9-t3-l50-049": {
+    title: "HABIT TRANSFORMATION PROJECT — LAUNCH",
+    tableReplacements: [
+      {
+        cellIncludes:"40% of Term 3 grade",
+        rows:[
+          ["Element","Description"],
+          ["Duration","21 days of tracking"],
+          ["What you will create","Tracker + daily notes + midpoint review + reflection + presentation"],
+          ["Assessment","Form 2 Term 2 portfolio evidence"],
+        ],
+      },
+    ],
+    textReplacements: [
+      {from:"This is the third-term capstone.",to:"This is the Form 2 Term 2 applied habit project."},
+      {from:"Habit Stokvel",to:"Habit Mukando"},
+    ],
+  },
+  "g9-t3-l54-053": {
+    title: "TERM 2 REFLECTION — HABITS, EXECUTION & NEXT MOVE",
+    tableReplacements: [
+      {
+        cellIncludes:"Path Forward",
+        rows:[
+          ["Term","Definition"],
+          ["Reflection","Thinking back on what you have learned"],
+          ["Growth","Getting better over time"],
+          ["Readiness","Being prepared to apply what you have learned in the next challenge"],
+        ],
+      },
+      {
+        cellIncludes:"35-36",
+        rows:[
+          ["Lessons","What We Learned"],
+          ["26-34","Community saving, money leakages, the Community Money Map and action from observation"],
+          ["35-44","Habits, identity, tiny habits, goals, time, resilience, grit, failure and growth mindset"],
+          ["45-49","Self-discipline, decision making, peer pressure, digital habits and online safety"],
+          ["50-54","Habit Transformation Project — launch, tracking, obstacles, completion and reflection"],
+        ],
+      },
+    ],
+    rangeReplacements: [
+      {
+        startIncludes:"📘 The Fork in the Road: Choosing Your Path Forward",
+        endIncludes:"If you cannot share with anyone: Write your Path Forward declaration on a piece of paper. Sign it. Date it. Keep it. This is your contract with yourself.",
+        replacement:[
+          {kind:"text",type:"section",text:"📘 Looking Ahead to Term 3 — Community Enterprise"},
+          {kind:"text",type:"paragraph",text:"Form 2 Term 3 moves outward again. You will use the discipline, observation, planning and problem-solving skills you have built to work on a real community need. The next challenge is not to choose your whole future. It is to choose how you will show up for the next project."},
+          {kind:"text",type:"activity",text:"✍️ Activity 54B: My Term 3 Readiness Plan\n\n1. One habit or system I will carry into Term 3: _________________________________\n2. One community problem I am curious about: _________________________________\n3. One person or group I may need to listen to before acting: _________________________________\n4. One skill I want to practise during the community project: _________________________________\n5. One way I will know I am contributing value rather than assuming what people need: _________________________________"},
+          {kind:"text",type:"reflection",text:"You do not need to know the final answer before Term 3 begins. You need evidence that you can observe, ask, plan, act, review and adjust. That is what the last two terms have been building."},
+        ],
+      },
+    ],
+    textReplacements: [
+      {from:"Understand the subject choice implications for Grade 10 — and make a preliminary Path Forward declaration.",to:"Identify how your habits, self-management and execution skills will support your community-enterprise work in Term 3."},
+      {from:"📘 Myah's Final Term 3 Entry",to:"📘 Myah's Form 2 Term 2 Review"},
+      {from:"I am ready for Term 4.",to:"I am ready for Term 3."},
+      {from:"✍️ Activity 54: My Term 3 Reflection — With Scale",to:"✍️ Activity 54: My Form 2 Term 2 Reflection — With Scale"},
+      {from:"The ONE thing I need to do in Term 4 to move up by a single point:",to:"The ONE thing I need to do in Term 3 to move up by a single point:"},
+      {from:"Lesson 54 — Term 3 Final Reflection",to:"Lesson 54 — Form 2 Term 2 Final Reflection"},
+      {from:"I reflected on my entire Term 3 journey and made a preliminary Path Forward declaration.",to:"I reflected on my Form 2 Term 2 journey and prepared for Term 3 community-enterprise work."},
+      {from:"I have compiled my complete Term 3 Portfolio.",to:"I have compiled my complete Form 2 Term 2 portfolio."},
+      {from:"I have made a preliminary Path Forward declaration.",to:"I have made a Term 3 readiness plan."},
+    ],
+  },
+  "g9-t4-l55-054": {
+    title: "LOOKING BACK — WHAT WE HAVE LEARNED SO FAR",
+    tableReplacements: [
+      {
+        cellIncludes:"Work and Value",
+        rows:[
+          ["Term","Theme","What We Learned"],
+          ["Term 1","Work, Value & How Money Moves","Values, enterprise, skills, customers, pricing, early money flows and household economics"],
+          ["Term 2","Community Money, Habits & Execution","Community saving, money mapping, habits, resilience, decision making, digital habits and the completed Habit Transformation project"],
+          ["Term 3","Community Enterprise & Portfolio","Ahead: apply what you know to a real community need and build evidence through action"],
+        ],
+      },
+    ],
+    textReplacements: [
+      {from:"Recall key learning from Terms 1–3.",to:"Recall key learning from Forms 2 Terms 1–2."},
+      {from:"Prepare for your final capstone project.",to:"Prepare for your Form 2 Term 3 community-enterprise project."},
+      {from:"Myah is at Mama Rose's kitchen, three notebooks spread before her. Term 1. Term 2. Term 3. Evidence of a year.",to:"Myah is at Mama Rose's kitchen with two term portfolios spread before her. Term 1. Term 2. Evidence of how much Form 2 already contains."},
+      {from:"Term 1: Values. Mama Rose. Skills inventory. Her first mini-business — selling water at the taxi rank. The betrayal at the grant office. The choice to start anyway. The cooler box. R84 profit in one week. \"I learned that I do not need permission to create value.\"",to:"Term 1: Values, enterprise, skills, customers, pricing and the first deep look at how money moves. She learned to create value, track evidence and ask better questions."},
+      {from:"Term 2: Where money comes from. Supply chains. Value chains. Her Community Money Map of the taxi rank. The leaks. Mr. Patel's honesty. \"Every rand has a story. Most of the money leaves my community. I cannot un-see it.\"",to:"Term 2: Community saving, money flows, the Community Money Map, habits, resilience and execution. She learned to see systems around her and patterns inside herself."},
+      {from:"Term 3: Habits. Growth mindset. Grit. Resilience. Procrastination. Self-discipline. Environment design. Her 21-day phone challenge. Fourteen ticks. Seven crosses. The meta-habit. \"I can change. Not because someone told me. Because I have evidence.\"",to:"Across both terms, the evidence has accumulated: enterprise action, money-flow data, a community map, a 21-day habit tracker and repeated proof that she can notice, act, review and adjust."},
+      {from:"Term 1 (Values and Enterprise):",to:"Term 1 (Work, value and how money moves):"},
+      {from:"Term 2 (Money Flows and Community):",to:"Term 2 (Community money, habits and execution):"},
+      {from:"Term 3 (Habits and Mindset):",to:"Term 3 readiness — what I want to carry into community enterprise:"},
+      {from:"That gap is not failure. It is your starting point for Term 4.",to:"That gap is not failure. It is useful information for Term 3."},
+      {from:"How I might address it in Term 4:",to:"How I might address it in Term 3:"},
+    ],
+  },
+  "g9-t4-l75-074": {
+    title: "FAREWELL TO FORM 2",
+    textReplacements: [
+      {from:"Say a final goodbye to Grade 9 — with gratitude, pride, and forward momentum.",to:"Say a final goodbye to Form 2 — with gratitude, pride, and forward momentum."},
+      {from:"In Grade 8, you were the quiet observer. You noticed things. You asked questions. In Grade 9, you became the protagonist.",to:"In Form 1, you were the quiet observer. You noticed things. You asked questions. In Form 2, you became the protagonist."},
+      {from:"You have evidence — four terms of it — that you can act on the world and create change.",to:"You have evidence — three terms of it — that you can act on the world and create change."},
+      {from:"Lesson 75 — Farewell to Grade 9",to:"Lesson 75 — Farewell to Form 2"},
+      {from:"I said my final goodbye to Grade 9 — with gratitude, pride, and forward momentum.",to:"I said my final goodbye to Form 2 — with gratitude, pride, and forward momentum."},
+      {from:"I have said a final goodbye to Grade 9 — with gratitude, pride, and forward momentum.",to:"I have said a final goodbye to Form 2 — with gratitude, pride, and forward momentum."},
+      {from:"However your family says goodbye — in English, isiZulu, isiXhosa, Afrikaans, Sepedi, Setswana, or any of the languages of this land — here is a wish for you:",to:"However your family says goodbye — in English, Shona, Ndebele, or any language spoken in your home and community — here is a wish for you:"},
+      {from:"Hamba kahle. Go well. Tsamaya hantle.",to:"Go well. Carry what you learned. Keep becoming."},
+    ],
+  },
 };
 
 export const zimbabweReviewedNeutralUnitIds = [
