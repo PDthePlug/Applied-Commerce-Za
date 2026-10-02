@@ -138,7 +138,9 @@ test("Zimbabwe lesson localisation uses explicit source-preserving overlays",()=
   assert.match(overlay,/Source unit IDs remain unchanged/);
   assert.match(reader,/applyZimbabweUnitOverlay/);
   assert.match(delivery,/applyZimbabweSummaryOverlay/);
-  assert.doesNotMatch(overlay,/replaceAll\(/);
+  assert.match(overlay,/textReplacements/);
+  assert.match(overlay,/applyReviewedTextReplacements/);
+  assert.doesNotMatch(overlay,/replaceAll\([^\n]*(?:rand|South Africa|spaza|stokvel|taxi rank)/i);
 });
 
 
