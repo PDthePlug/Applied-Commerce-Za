@@ -2969,6 +2969,239 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
       {from:"You finished Term 3 of Grade 11.",to:"You completed the advanced wealth cycle of Form 4 Term 1. The legacy cycle begins next."},
     ],
   },
+  "g11-t4-l62-062": {
+    textReplacements:[
+      {from:"Later, at the taxi rank, Myah sees Atlehang Ngwenya. He is helping an elderly woman — not his grandmother this time, but someone else — navigate the queue. He finds her a seat. He carries her bag. He speaks to her quietly, respectfully.",to:"Later, at the kombi rank, Myah sees Atlehang Ngwenya helping an elderly woman navigate the queue. He finds her a seat, carries her bag and speaks to her quietly and respectfully."},
+    ],
+  },
+  "g11-t4-l63-063": {
+    title:"FINANCIAL LEGACY — ESTATE, BENEFICIARIES & SUCCESSION",
+    textReplacements:[
+      {from:"\"I spent 25 years building this factory. If I die tomorrow without a plan, my family would fight over it. The government would take a chunk in estate taxes. The business might collapse — not because it was weak, but because I did not prepare it to survive me.\"",to:"\"I spent 25 years building this factory. If I die without a clear estate and succession plan, my family and employees may face uncertainty, delay, legal costs and conflict. Estate Duty or other obligations may apply depending on current Zimbabwe law. The business could fail not because the factory is weak, but because I did not prepare it to survive me.\""},
+      {from:"\"Financial legacy is not just about having money. It is about having a plan for that money when you are no longer here to manage it. A will. A trust. Beneficiary nominations. A succession plan for the business. These are not documents for the rich. They are documents for the responsible.\"",to:"\"Financial legacy is not just about having money. It is about knowing what should happen to assets, responsibilities and a business when you are no longer here to manage them. A valid will, appropriate beneficiary nominations where a product allows them, proper records, insurance where suitable and a succession plan can all play a role. A trust is a separate legal structure and should only be used when it actually fits the situation.\""},
+      {from:"Without a Will → Government decides who gets what → Family may fight → Delays, costs, stress → Your wishes die with you",to:"Without a valid will → Zimbabwe intestate-succession rules and estate-administration processes apply → Your personal wishes may not control every outcome → Delays, costs and family uncertainty can increase"},
+      {from:"With a Will → You decide who gets what → Family has clarity → Smooth, efficient, peaceful → Your wishes survive you",to:"With a valid will → Your lawful wishes can guide distribution and administration → An executor and family have clearer instructions → The estate process can still involve legal, tax and administrative steps"},
+      {from:"Myah writes in her notebook: A will is not for the dead. It is for the living. It is a final act of love. Everyone who owns anything has an estate. The question is whether it will be distributed by your wishes — or by the government's formula.",to:"Myah writes in her notebook: a will is written for the people and responsibilities you leave behind. Everyone has some form of estate, even if it is small. The question is whether your lawful wishes are documented clearly or whether the applicable intestate-succession rules must determine the distribution."},
+      {from:"The Paradoxical Reversal: But making a will forces you to confront your own mortality. That is uncomfortable. Most people avoid it. They tell themselves they will do it later — when they are older, when they have more, when it matters more. But \"later\" has a way of becoming \"never.\" And \"never\" means the government decides who gets your things — not you. The people who love you are left with confusion, conflict, and costs. The will is not for you. It is for them.",to:"The Paradoxical Reversal: making a will forces you to confront mortality. Many people delay it because the subject is uncomfortable. But if a person dies without a valid will, Zimbabwe's intestate-succession and estate-administration rules apply. That may differ from what the person would have chosen. The practical lesson is not fear. It is preparation."},
+      {from:"Question 2: What did Mr. Patel mean when he said a will is \"a final act of love\"? What happens if someone dies without a will?",to:"Question 2: What did Mr. Patel mean when he called a will a final act of love? What generally changes when someone dies without a valid will, and why should the exact Zimbabwe rules be checked rather than guessed?"},
+      {from:"Question 3 — The Estate Audit: List everything you own — even small things. Now imagine you died without a will. Who would get each item under intestate succession laws? Is that who you would choose? If not, what is one thing you will do THIS YEAR to change that?",to:"Question 3 — The Estate Audit: List what you own, including digital and sentimental assets. Then research the basic idea of intestate succession in Zimbabwe using a reliable legal source. Do not guess who would inherit. What is one estate-planning question you would want qualified help answering?"},
+      {from:"If there is no family member to ask, write a draft will for yourself — not legally binding, just a thinking exercise. Who would get what? Why? Who would be your executor? Who would care for minor children? The act of writing is preparation.",to:"If there is no family member to ask, write a non-binding estate-planning worksheet: assets, people or causes you care about, who you might want as executor, and questions about guardianship or beneficiaries. Label it clearly: THIS IS NOT A LEGAL WILL. The exercise is preparation for informed legal planning."},
+    ],
+    tableReplacements:[
+      {
+        cellIncludes:"Says who gets what, names executor",
+        rows:[
+          ["Tool","Purpose","Zimbabwe Caution"],
+          ["Valid will","Records lawful wishes and names an executor","Formal validity requirements matter; use current Zimbabwe law"],
+          ["Beneficiary nomination","Directs a benefit where a particular regulated product/policy allows it","Rules depend on the product and law; it may not replace estate administration"],
+          ["Life insurance","Can provide money to nominated beneficiaries/dependants subject to policy rules","Check policy terms, exclusions and nomination rules"],
+          ["Succession plan","Prepares who can operate or own a business after the founder","Needs governance, legal and financial planning"],
+          ["Trust","Separate legal arrangement that can hold/administer assets for stated purposes","More complex; not automatically necessary or tax-efficient"],
+        ],
+      },
+      {
+        cellIncludes:"Now (teens/20s)",
+        rows:[
+          ["Stage","Useful Focus"],
+          ["Now / early adulthood","Build records, learn beneficiary and will basics, protect important documents"],
+          ["As assets/responsibilities grow","Create or review a valid will; update nominations where applicable"],
+          ["Business / dependants / complex assets","Add succession planning and obtain qualified legal/financial advice"],
+          ["Later life","Review estate, beneficiaries, documents and legacy intentions regularly"],
+        ],
+      },
+    ],
+    appendBlocks:[
+      {kind:"text",type:"paragraph",text:"Zimbabwe legal check: deceased estates are administered under Zimbabwe law, and Estate Duty may apply depending on the estate. A real will, trust or succession plan should be prepared or reviewed against current Zimbabwe requirements rather than copied from a foreign template."},
+    ],
+  },
+  "g11-t4-l64-064": {
+    title:"WILLS, TRUSTS & VALIDITY — THE ZIMBABWE LEGAL CHECK",
+    textReplacements:[
+      {from:"Wills — The Basics: \"A will is a legal document that says what happens to your belongings after you die. In South Africa, for a will to be valid, it must be: in writing, signed by you, and signed by two witnesses — who cannot be beneficiaries. If you leave something to a witness, that gift is void. The law is precise. Follow the rules.\"",to:"Wills — The Basics: \"A will is a legal document used to record wishes about an estate after death. Zimbabwe has formal rules about validity, signing, witnesses and estate administration. Those rules matter. Do not copy a foreign template and assume it is valid here. When a real will is needed, check current Zimbabwe law and obtain appropriate legal guidance.\""},
+      {from:"\"You do not need a lawyer to make a will. But you do need to follow the requirements exactly. A handwritten will on a piece of paper, signed by you and two witnesses who are not beneficiaries, is legally valid. A fancy typed document missing one signature is not.\"",to:"\"The important lesson is not whether a document looks formal. It is whether it complies with current Zimbabwe legal requirements and accurately records the person's intentions. For a real estate plan, validity should be checked rather than assumed.\""},
+      {from:"Trusts — The Deeper Layer: \"A trust is like a container. You put assets into it. You set rules for how and when those assets are distributed. A trustee manages the trust according to your instructions. Trusts are useful when: you have minor children, you want to control how money is used, you want to protect assets from creditors, or you want to avoid family disputes.\"",to:"Trusts — The Deeper Layer: \"A trust is a legal arrangement in which trustees hold or administer assets for stated purposes or beneficiaries under the governing instrument and law. Trusts can be useful in some family, charitable, succession or asset-management situations, but they are not a universal solution and should not be treated as an automatic tax or creditor shield.\""},
+      {from:"\"A trust can be created during your lifetime — an inter vivos trust — or in your will — a testamentary trust. The testamentary trust only comes into effect when you die. It is a way of saying: 'I trust my children, but I do not trust their 21-year-old judgment. So the money will be released in stages — some at 21, some at 25, some at 30.'\"",to:"\"Trusts can arise in different ways and can have different purposes. The governing rules, trustee duties, tax treatment and estate consequences need to be checked under Zimbabwe law. If the objective is to support a minor or manage assets over time, the legal structure should be designed for that purpose rather than copied from an example.\""},
+      {from:"Requirements for a Valid Will in South Africa",to:"Valid-Will Questions to Verify in Zimbabwe"},
+      {from:"Question 1: What are the requirements for a valid will in South Africa? Why does each matter? What is a trust? When is a trust more useful than a will?",to:"Question 1: What formal requirements for a valid will should be verified under current Zimbabwe law? What is a trust? Why should a trust be used only when its legal purpose and consequences are understood?"},
+      {from:"If there is no family member to ask, research online: \"How to make a valid will in South Africa.\" Write down the steps. What surprised you? What would you need to do to make one?",to:"If there is no family member to ask, research current Zimbabwe guidance on wills and deceased estates from a reliable legal or official source. Write down the validity questions you would need answered before making a real will."},
+    ],
+    tableReplacements:[
+      {
+        cellIncludes:"Oral wills are not valid",
+        rows:[
+          ["Question to Verify","Why It Matters"],
+          ["Who may make a valid will?","Legal capacity rules determine whether the document can operate"],
+          ["What signing/witness formalities apply?","Formal defects can create disputes or invalidate intentions"],
+          ["Can a witness or related person benefit?","Conflict and beneficiary rules may affect validity or benefits"],
+          ["How are changes/revocation handled?","An old or improperly changed will can create uncertainty"],
+          ["Where should the original be kept and who should know?","A valid document is not useful if it cannot be found or administered"],
+        ],
+      },
+    ],
+    appendBlocks:[
+      {kind:"text",type:"paragraph",text:"This lesson is legal literacy, not legal advice. A real Zimbabwe will or trust should be checked against current law and, where appropriate, by a qualified legal professional."},
+    ],
+  },
+  "g11-t4-l66-066": {
+    textReplacements:[
+      {from:"He explains: \"I came from nothing. My parents had nothing. This community gave me chances — small loans from neighbours, customers who trusted me, a stokvel that lent me R5,000 when the bank would not. I built my factory because people believed in me before I had anything to believe in.\"",to:"He explains: \"I came from very little. This community gave me chances — small loans from neighbours, customers who trusted me, and a mukando that once helped me with working capital when formal finance was out of reach. I built the factory because people believed in me before I had much evidence to show.\""},
+    ],
+  },
+  "g11-t4-l67-067": {
+    textReplacements:[
+      {from:"She points to a young man loading a truck. \"That is Sizwe. He dropped out of school in Grade 10. No one would hire him. I trained him. Now he manages the logistics. He is saving to finish his matric. He tells me he wants to start his own business one day. That is the ripple.\"",to:"She points to a young man loading a truck. \"That is Sizwe. He left secondary school before completing O-Level. No one would hire him for the roles he wanted. I trained him. Now he manages the logistics. He is working toward completing the qualification he missed and wants to start a business one day. That is the ripple.\""},
+      {from:"Key idea: Thandiwe's cooperative diverts ten tons of waste a month. But the numbers are not the legacy. The legacy is Gloria, who is no longer invisible. Sizwe, who is finishing matric. The children watching their mother work with dignity. The ripple keeps going. The paradox: the most powerful social legacies are often the ones you cannot measure.",to:"Key idea: Thandiwe's cooperative diverts waste from the environment, but the tonnage is not the whole legacy. The legacy is also Gloria, who is no longer invisible; Sizwe, who is completing the school qualification he missed; and children watching adults work with dignity. Social impact includes numbers and human change."},
+    ],
+  },
+  "g11-t4-l69-069": {
+    title:"BALANCING PRESENT AND FUTURE — MYAH'S DILEMMA",
+    textReplacements:[
+      {from:"Myah has R2,000 saved. She has been saving for months — delivery service, weekend work, the occasional workshop. It is supposed to go toward her TFSA, toward the Wealth Architecture she designed in Term 3.",to:"Myah has US$200 saved in this illustrative example. She has been saving for months — delivery service, weekend work and the occasional workshop. It is part of the long-term Wealth Architecture she designed earlier in Form 4 Term 1."},
+      {from:"But her friends are going to Durban for a weekend. The beach. The ocean. She has never seen the ocean. The trip would cost about R1,500.",to:"But her friends are planning a weekend trip to Kariba. She has never been. The trip would cost about US$150 in this illustrative example."},
+      {from:"Myah considers. She could go for one night instead of two. She could take a bus instead of paying for a ride. She could bring her own food. She could spend R800 instead of R1,500. Save R1,200. Not perfect. But balanced.",to:"Myah considers. She could shorten the trip, choose cheaper transport and bring some food. She could spend US$80 instead of US$150 and keep US$120 saved. Not perfect. But balanced."},
+      {from:"Myah decides: one night in Durban. R800. Save R1,200. See the ocean. Come back and keep building. Both selves honored.",to:"Myah decides: a shorter Kariba trip. US$80 in this illustration. Keep US$120 saved. Enjoy the experience, then come back and keep building. Both selves honoured."},
+      {from:"At the taxi rank later, Myah sees Atlehang Ngwenya. He is counting coins — small piles, neatly arranged on the bench beside him.",to:"At the kombi rank later, Myah sees Atlehang Ngwenya counting small piles of money on the bench beside him."},
+      {from:"This week, make one decision that honors BOTH your present self and your future self. If you tend to over-save, spend a small amount on something that brings you joy — without guilt. If you tend to over-spend, save a small amount — even R10 — toward a future goal. Write down: What did you do? How did it feel? What did you learn about balance?",to:"This week, make one decision that honours both your present self and future self. If you tend to over-save, allow a planned amount for something meaningful now. If you tend to over-spend, set aside a small amount in a clearly labelled currency for a future goal. Write down what you did and what you learned about balance."},
+    ],
+  },
+  "g11-t4-l70-070": {
+    title:"ARCHITECTURE REVIEW — FROM FORM 3 INTO FORM 4",
+    textReplacements:[
+      {from:"See your entire Grade 11 journey in one view.",to:"See the architecture journey that began in Form 3 and continues through Form 4 Term 1."},
+      {from:"📘 Myah Looks Back at Grade 11",to:"📘 Myah Looks Back at the Architecture Journey"},
+      {from:"Myah sits at Mama Rose's kitchen, her four notebooks from Grade 11 spread across the table. Term 1. Term 2. Term 3. Term 4 in progress. She flips through them, amazed at how much ground they have covered.",to:"Myah sits at Mama Rose's kitchen with the evidence from Form 3 and Form 4 Term 1 spread across the table. Leverage. Leadership. Wealth. Legacy. She flips through it, amazed at how much ground the architecture stage has covered."},
+      {from:"Term 1 — Leverage: The ruler. The stone. Archimedes. The six levers at the taxi rank. Financial leverage with Mr. Dlamini. Time leverage — Thabo's delegation. People leverage — hiring. Systems leverage — Mr. Patel's four rules. Technology leverage — Themba's online store. Knowledge leverage — her notebooks. The Leverage Matrix. Her Leverage Plan.",to:"Form 3 — Leverage: the ruler, the stone, Archimedes, and the six levers at the kombi rank. Financial, time, people, systems, technology and knowledge leverage. The Leverage Matrix and her Leverage Plan."},
+      {from:"Term 2 — Leadership: What is leadership? Mama Rose — \"I am just a cook.\" Leading herself first. Emotional intelligence — Ms. Nkosi's driver. Teams. Communication — Lethabo's mistake. Difficult conversations — Thabo's courage. Leading peers — Thandi's cooperative. Leading through change — Emmanuel's spaza shop. Mentorship — Lethabo and Thabiso. Ethical leadership — Mr. Patel's choice. Legal leadership — Adv. Mkhize. Her Leadership Philosophy.",to:"Form 3 — Leadership: leading yourself first, emotional intelligence, teams, communication, difficult conversations, peer leadership, Emmanuel's tuckshop change, mentorship, ethics and legal responsibility. Her Leadership Philosophy."},
+      {from:"She closes the notebooks. She is not the same person who opened the Term 1 book in January. The observer of Grade 8. The challenger of Grade 9. The strategist of Grade 10. The architect of Grade 11. Soon: the launcher of Grade 12.",to:"She closes the notebooks. The observer became the challenger; the challenger became the strategist; the strategist became the architect. In Form 4, the architecture is becoming a launch plan. The work is no longer organised by old source grades. It is one continuous evidence trail."},
+      {from:"At the taxi rank, Myah sees Atlehang. Her friend Atlehang. They sit on the queue marshal's bench together — the one Atlehang Ngwenya fixed months ago.",to:"At the kombi rank, Myah sees Atlehang. They sit on the rank marshal's bench together — the one he fixed months ago."},
+      {from:"✍️ Activity 70: My Grade 11 Review",to:"✍️ Activity 70: My Architecture Review"},
+      {from:"One word to describe my Grade 11 journey: _________________________________",to:"One word to describe my architecture journey so far: _________________________________"},
+      {from:"Key idea: Myah's word for Grade 11: Architect. She had learned to design structures that outlast her — leverage systems, leadership philosophies, wealth architectures, legacy frameworks. The paradox: the more you learn, the more you realise you have not yet built. The structures are designed. But the building is just beginning.",to:"Key idea: Myah's word for this stage is Architect. She has learned to design structures that can outlast a moment — leverage systems, leadership philosophies, wealth architecture and legacy frameworks. The structures are becoming clearer. The real-world building is still beginning."},
+      {from:"Question 2: What is the thread that runs through your entire Grade 11 journey? What is one word that captures this year for you?",to:"Question 2: What thread connects your leverage, leadership, wealth and legacy work? What one word captures this architecture stage for you?"},
+      {from:"Share your Grade 11 review with your family. Let them see how far you have come. Ask them: \"What have you noticed about how I have changed this year? What do you see in me now that was not there in January?\"",to:"Share your architecture review with your family or someone you trust. Ask: \"What have you noticed about how I think, plan or take responsibility now compared with earlier?\""},
+      {from:"If there is no family to share with, read your review out loud to yourself. Let your own voice witness your growth. Then write a letter to your January self — the person who started Grade 11. What would you tell them? What do you know now that they did not know then?",to:"If there is no one to share with, read your review aloud to yourself. Then write to the version of you who started Form 3: what do you know now that you did not know then?"},
+      {from:"| Date | | | Lesson | Lesson 70 — Grade 11 Review | | Experiment/Observation | I reviewed my entire Grade 11 journey. | | Design Decision | | | Prediction | | | Result | | | Learning | | | Next Action | |",to:"| Date | | | Lesson | Lesson 70 — Architecture Review | | Experiment/Observation | I reviewed my leverage, leadership, wealth and legacy evidence. | | Design Decision | | | Prediction | | | Result | | | Learning | | | Next Action | |"},
+    ],
+  },
+  "g11-t4-l71-071": {
+    title:"PROJECT LAUNCH — MY LIFE AND LEGACY PLAN",
+    textReplacements:[
+      {from:"Understand the requirements for your Grade 11 final project.",to:"Understand the requirements for your Form 4 Term 1 Life and Legacy project."},
+      {from:"\"This is it. Your Grade 11 final project. The final project of the year.\"",to:"\"This is your Form 4 Term 1 capstone: the Life and Legacy Plan.\""},
+      {from:"\"This is not just a project. It is a declaration. A declaration of who you are, what you will build, how you will lead, and what you will leave behind. It is the architect's final blueprint for Grade 11 — and the foundation for Grade 12.\"",to:"\"This is not just a project. It is a declaration of who you are, what you will build, how you will lead and what you hope to leave behind. It is the architect's blueprint before Form 4 moves into adult money, work and O-Level transition decisions.\""},
+      {from:"She pauses. \"In Grade 8, you were the observer. In Grade 9, the challenger. In Grade 10, the strategist. In Grade 11, the architect. Next year, Grade 12 — you will become the launcher. This plan is the bridge between the architect and the launcher. Between designing and doing. Between building and becoming.\"",to:"She pauses. \"In Form 1, you learned to observe. In Form 2, you challenged and acted. In Form 3, you became more strategic and architectural. Now, in Form 4, you are moving from architecture toward launch. This plan is one bridge between designing and doing.\""},
+      {from:"This is the biggest project of Grade 11. It brings together everything. How do you feel? What part excites you? What part feels hardest?",to:"This project brings together leverage, leadership, wealth and legacy. How do you feel? What part excites you? What part feels hardest?"},
+    ],
+    tableReplacements:[
+      {
+        cellIncludes:"updated from Grade 9",
+        rows:[
+          ["Section","What to Include"],
+          ["1. My Life Vision","What kind of life do I want? What matters most?"],
+          ["2. My Leverage Strategy","How will I multiply useful impact? — from Form 3"],
+          ["3. My Leadership Philosophy","Who am I as a leader? — from Form 3"],
+          ["4. My Wealth Architecture","How will I build, protect and align wealth? — Form 4 Term 1"],
+          ["5. My Legacy Vision","What do I want to leave behind — financial, values, social and environmental?"],
+          ["6. My Values","Values developed and tested since Form 2"],
+          ["7. Integration","How the pieces fit into one coherent life"],
+          ["8. Timeline & Milestones","Key review points rather than false certainty"],
+          ["9. Reality Checks","How will I know if an assumption is failing?"],
+          ["10. Managing the Downside","What is the shadow or unintended consequence?"],
+          ["11. Letter to My Future Self","A letter to revisit later"],
+          ["12. Reflection","What I learned while designing this architecture"],
+        ],
+      },
+    ],
+  },
+  "g11-t4-l72-072": {
+    textReplacements:[
+      {from:"Myah thinks. \"Values. The values I defined in Grade 9 — updated, deepened, tested. Justice. Integrity. Curiosity. Community. They have not changed. They have just been tested — by the grant office, by the workshops, by the difficult conversations, by the choices about money and impact. Values are the foundation. Everything else is built on them.\"",to:"Myah thinks. \"Values. The values I defined in Form 2 — updated, deepened and tested. Justice. Integrity. Curiosity. Community. They have been tested by rejection, workshops, difficult conversations and choices about money and impact. Values are the foundation. Everything else is built on them.\""},
+    ],
+  },
+  "g11-t4-l73-073": {
+    tableReplacements:[
+      {
+        cellIncludes:"Finish matric",
+        rows:[
+          ["Stage","Illustrative Milestone"],
+          ["Form 4 / O-Level","Complete O-Level strongly. Run a small paid or sponsored financial-capability workshop. Publish one useful digital resource."],
+          ["Next 1–2 years","Choose the next pathway using evidence: A-Level where suitable, tertiary/TVET, employment, enterprise, apprenticeship/skills development or a structured combination."],
+          ["Early adulthood","Build employable capability, continue enterprise experiments and begin regulated saving/investing when income allows."],
+          ["20s","Grow skills and income. Build a liquidity buffer. Increase long-term contributions. Consider property only when financing and buffers are realistic."],
+          ["30s","Review career, enterprise, family responsibilities and wealth architecture. Avoid treating one timeline as destiny."],
+          ["Later decades","Keep reviewing financial independence, contribution, health, relationships, time and legacy as circumstances change."],
+        ],
+      },
+    ],
+  },
+  "g11-t4-l75-075": {
+    textReplacements:[
+      {from:"The community hall is arranged for the final presentations of Grade 11. Mama Rose is in the front row. Mr. Patel is there. Mr. Dlamini. Ms. Nkosi. Gogo Maria. Ms. Daniels sits at the back, watching. The room is full of the people who have shaped these learners over three years.",to:"The community hall is arranged for the Form 4 Term 1 Life and Legacy presentations. Mama Rose is in the front row. Mr. Patel, Mr. Dlamini, Ms. Nkosi and Gogo Maria are there. Ms. Daniels sits at the back, watching."},
+      {from:"Thabo presents first. His plan: grow the delivery business into a logistics company. Hire and train from the community. Build wealth through property and investments. Lead by example. Legacy: create jobs. Pass on skills. Prove that a boy from Tembisa with a broken bike can build something that outlasts him. His Reality Check: \"If I am the only one who can run the business, I have not built a business. I have built a job.\"",to:"Thabo presents first. His plan: grow the delivery business into a logistics company, hire and train from the community, build wealth carefully and pass on skills. He wants to prove that a boy from Chitungwiza with a broken bike can build something that outlasts him. His Reality Check: \"If I am the only one who can run the business, I have not built a business. I have built a job.\""},
+      {from:"Myah presents last on Day 1. She stands at the front. Her four notebooks are in her hands — Grade 9, 10, 11. Evidence of becoming.",to:"Myah presents last on Day 1. She stands at the front with the evidence she has carried from Form 2, Form 3 and Form 4. Evidence of becoming."},
+    ],
+  },
+  "g11-t4-l76-076": {
+    textReplacements:[
+      {from:"Emmanuel presents. Transform the spaza shop into a community hub — delivery, cooperative buying, loyalty systems. Legacy: a business that outlasts his family, a community that is stronger because the shop existed. \"If the shop cannot survive a month without a family member present, we have not built a business. We have built a job that requires our bodies.\"",to:"Emmanuel presents. Transform the tuckshop into a community hub — delivery, cooperative buying and loyalty systems. Legacy: a business that can outlast one person's daily presence and strengthen the community."},
+      {from:"Sipho stands up. This is the Sipho — melted sweets, credit card, bicycle repair. He is 18 now. He will finish matric this year. He looks different. Older. Calmer. More certain.",to:"Sipho stands up. This is the Sipho of the melted sweets and bicycle repair. He is in Form 4 now, approaching the end of O-Level. He looks different. Older. Calmer. More certain."},
+      {from:"\"I had no goals in Grade 8. I did not know what I wanted. I did not know who I was. I failed at selling sweets. I got a credit card and messed up. I cut it up. I started fixing bicycles because it was the only thing I knew how to do.\"",to:"\"I had no goals in Form 1. I did not know what I wanted. I failed at selling sweets. I learned from mistakes with money. I started fixing bicycles because it was the one practical skill I trusted at first.\""},
+      {from:"\"You are leaving Grade 11 with something precious: clarity. Clarity about who you are. Clarity about what you are building. Clarity about why it matters. Clarity about what you will leave behind.\"",to:"\"You are closing this architecture cycle with something precious: greater clarity about who you are, what you are building, why it matters and what you hope will remain after you.\""},
+      {from:"What this project taught me about Grade 11:",to:"What this project taught me about my architecture and legacy:"},
+      {from:"Question 2: How do you feel now that your project — and your Grade 11 journey — is nearly complete?",to:"Question 2: How do you feel now that the Life and Legacy project — and Form 4 Term 1 — is nearing completion?"},
+      {from:"If there is no family to tell, write a letter to yourself about what you learned from this project. What surprised you? What are you proud of? What will you carry forward into Grade 12?",to:"If there is no family to tell, write a letter to yourself about what you learned from this project. What surprised you? What are you proud of? What will you carry forward into the adult-money and transition work next?"},
+    ],
+  },
+  "g11-t4-l77-077": {
+    title:"FORM 4 TERM 1 REFLECTION — WEALTH & LEGACY",
+    textReplacements:[
+      {from:"Lesson 69: Balancing present and future. Her Durban decision. \"Honor both selves.\"",to:"Lesson 69: Balancing present and future. Her Kariba decision. Honour both selves."},
+      {from:"Lesson 70: The Grade 11 journey. Four terms. One arc. Atlehang's story about the badge.",to:"Lesson 70: The architecture journey. Leverage, leadership, wealth and legacy in one arc."},
+      {from:"I started Grade 11 thinking about leverage — how to multiply my impact. I am ending thinking about legacy — what will outlast me. In between, I learned to lead. I learned to build wealth. I learned to integrate everything into an architecture that holds.",to:"I entered the architecture stage thinking about leverage — how to multiply useful impact. I am closing Form 4 Term 1 thinking about legacy — what might outlast me. Between those points I learned to lead, build wealth more deliberately and integrate the pieces."},
+      {from:"I am ready for Grade 12.",to:"I am ready for Form 4 Term 2: adult money, O-Level transition, work and career launch."},
+      {from:"9. The 1-10 Scale: At the start of the term, you were a \"1\" on the legacy literacy scale. Where are you now, honestly? What is the exact number? What is the ONE specific thing you need to do in Grade 12 to move up by a single point?",to:"9. The 1-10 Scale: where are you now on the legacy-literacy scale? What is the exact number? What is ONE specific thing you will do during the rest of Form 4 to move up by a single point?"},
+      {from:"Question 2: Where are you on the 1-10 legacy literacy scale? What is the ONE thing you need to do in Grade 12 to move up by a single point?",to:"Question 2: Where are you on the 1-10 legacy-literacy scale? What is ONE thing you need to do during the rest of Form 4 to move up by a single point?"},
+      {from:"| Date | | | Lesson | Lesson 77 — Term 4 Reflection | | Experiment/Observation | I reflected on my entire Term 4 journey. | | Design Decision | | | Prediction | | | Result | My legacy literacy number: ___ / 10 | | Learning | | | Next Action | The one thing I will do in Grade 12: |",to:"| Date | | | Lesson | Lesson 77 — Form 4 Term 1 Reflection | | Experiment/Observation | I reflected on the advanced wealth and legacy cycle. | | Design Decision | | | Prediction | | | Result | My legacy literacy number: ___ / 10 | | Learning | | | Next Action | The one thing I will carry into Term 2: |"},
+    ],
+  },
+  "g11-t4-l78-078": {
+    title:"FORM 4 TERM 1 PORTFOLIO ASSEMBLY",
+    textReplacements:[
+      {from:"Organize your complete Grade 11 portfolio.",to:"Organize the Form 3 architecture evidence and Form 4 Term 1 wealth/legacy evidence you will carry into the launch-year work."},
+      {from:"📘 Your Complete Grade 11 Portfolio",to:"📘 Your Architecture, Wealth & Legacy Portfolio"},
+      {from:"Term 4: ☐ Legacy Thinking — First Draft (Lesson 61) ☐ Legacy Framework — Four Dimensions (Lesson 62) ☐ Financial Legacy Plan (Lesson 63) ☐ Estate Planning Timeline (Lesson 64) ☐ Values Legacy Letter (Lesson 65) ☐ Giving Vision (Lesson 66) ☐ Social Legacy Plan (Lesson 67) ☐ Environmental Legacy Plan (Lesson 68) ☐ Balance Plan (Lesson 69) ☐ Grade 11 Review (Lesson 70) ☐ final project Outline (Lesson 71) ☐ Integration Map (Lesson 72) ☐ Timeline and Accountability (Lesson 73) ☐ Feedback and Revision Plan (Lesson 74) ☐ Presentation Reflection — Day 1 (Lesson 75) ☐ Presentation Reflection — Day 2 (Lesson 76) ☐ Term 4 Reflection (Lesson 77)",to:"Form 4 Term 1: ☐ Advanced wealth evidence (Lessons 41–60) ☐ Legacy thinking and four-dimension framework (Lessons 61–62) ☐ Financial legacy and Zimbabwe estate-law research (Lessons 63–64) ☐ Values, giving, social and environmental legacy evidence (Lessons 65–68) ☐ Present/future balance plan (Lesson 69) ☐ Architecture review (Lesson 70) ☐ Life and Legacy Plan evidence (Lessons 71–76) ☐ Form 4 Term 1 reflection (Lesson 77)"},
+      {from:"What do you notice when you look through your complete Grade 11 portfolio?",to:"What do you notice when you look across the architecture, wealth and legacy evidence you have built so far?"},
+    ],
+  },
+  "g11-t4-l79-079": {
+    title:"LETTER TO MY FUTURE SELF — FORM 4 TERM 1",
+    textReplacements:[
+      {from:"Write your final letter of Grade 11.",to:"Write your Form 4 Term 1 letter to your future self."},
+      {from:"📘 Myah's Final Letter of Grade 11",to:"📘 Myah's Form 4 Term 1 Letter"},
+      {from:"I am writing this at the end of Grade 11. I am 17. I live in Tembisa with my mother. This year, I learned so much.",to:"I am writing this at the end of Form 4 Term 1. I live in Chitungwiza with my mother. This year is not over, but the architecture, wealth and legacy work has changed what I can see."},
+      {from:"I learned about wealth — that it is five things, not one. Gogo Maria taught me that. Zinhle taught me to rebalance. Thandiwe taught me that every rand is a vote.",to:"I learned that wealth is five things, not one. Gogo Maria taught me that. Zinhle taught me to rebalance. Thandiwe taught me that money has consequences."},
+      {from:"✍️ Activity 79: Letter to My Future Self — Grade 11 Final",to:"✍️ Activity 79: Letter to My Future Self — Form 4 Term 1"},
+      {from:"Write your final letter of Grade 11. Address it to \"Future Me.\"",to:"Write a letter to Future Me at the end of Form 4. What do you hope the next two terms prove?"},
+      {from:"From me, in Grade 11 Date: _____________________",to:"From me, in Form 4 Term 1 Date: _____________________"},
+      {from:"📂 Portfolio: Keep this letter somewhere safe. Read it at the end of Grade 12.",to:"📂 Portfolio: Keep this letter somewhere safe. Read it at the end of Form 4."},
+      {from:"| Date | | | Lesson | Lesson 79 — Final Letter | | Experiment/Observation | I wrote my final letter of Grade 11. | | Design Decision | | | Prediction | | | Result | | | Learning | | | Next Action | |",to:"| Date | | | Lesson | Lesson 79 — Form 4 Term 1 Letter | | Experiment/Observation | I wrote a future-self letter before the transition and career-launch work. | | Design Decision | | | Prediction | | | Result | | | Learning | | | Next Action | |"},
+    ],
+  },
+  "g11-t4-l80-080": {
+    title:"FORM 4 TERM 1 CLOSE — FROM ARCHITECTURE TO LAUNCH",
+    textReplacements:[
+      {from:"Say goodbye to Grade 11.",to:"Close Form 4 Term 1 with a clear handoff into the O-Level transition and career-launch work."},
+      {from:"Step into Grade 12 ready.",to:"Step into Form 4 Term 2 ready."},
+      {from:"\"You started Grade 8 as a quiet girl at the edge of scenes. Watching. Noticing. The seed planted but not yet visible. In Grade 9, you walked into the grant office. You demanded answers. You built the mini-business. Your stillness was preparation. Then you moved. In Grade 10, you became the strategist. You learned systems. You designed your financial future. In Grade 11, you became the architect. You designed leverage systems that multiply. Leadership philosophies that guide. Wealth architectures that hold. Legacy frameworks that endure.\"",to:"\"You started Form 1 as an observer. In Form 2, you challenged, acted and built evidence. In Form 3, you became more strategic and learned to design systems and leadership. In Form 4 Term 1, you extended that architecture into wealth and legacy.\""},
+      {from:"\"Next year, Grade 12. Your final year. You will become the launcher. You will take everything you have designed and launch it into the world. The observer who noticed everything. The challenger who demanded answers. The strategist who built systems. The architect who designed structures. She will now launch. She will walk into adulthood with a plan, a purpose, and herself.\"",to:"\"You do not wait for another school year to become the launcher. Form 4 is already the launch year. The next two terms will turn the architecture into decisions about O-Level transition, contracts, work, career, risk and adult systems.\""},
+      {from:"She walks through the door. Into Grade 12. Into whatever comes next.",to:"She walks through the door into Form 4 Term 2 — still in school, but now preparing deliberately for what may come after O-Level."},
+      {from:"✍️ Activity 80: My Closing Words — Grade 11",to:"✍️ Activity 80: My Term 1 Closing Words — Form 4"},
+      {from:"What I will carry forward to Grade 12:",to:"What I will carry forward into Form 4 Term 2:"},
+      {from:"📂 Portfolio: Save this. This is your final entry of Grade 11.",to:"📂 Portfolio: Save this. This is the final entry of Form 4 Term 1."},
+      {from:"You finished Grade 11.",to:"You finished Form 4 Term 1."},
+      {from:"Keep going. Grade 12 awaits. The launcher is rising.",to:"Keep going. Form 4 Term 2 awaits: adult money, O-Level pathways, contracts, work and career launch."},
+    ],
+  },
   "g9-t1-l01-001": {
     textReplacements: [
       {from:"Recall key learning from Grade 8 and assess what you carry forward.",to:"Recall key learning from Form 1 and assess what you carry forward."},
