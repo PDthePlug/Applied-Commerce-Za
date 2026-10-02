@@ -192,3 +192,54 @@ test("every Form 2 source lesson is explicitly localised or reviewed as context-
     "no Grade 9 lesson may enter Form 2 without localisation review",
   );
 });
+
+
+test("Form 3 preserves complete Grade 10 and Grade 11 project cycles",()=>{
+  const g10=bundle(10);
+  const g11=bundle(11);
+
+  const g10Counts=g10.terms.map(term=>term.units.filter(unit=>unit.type==="lesson").length);
+  const g11Counts=g11.terms.map(term=>term.units.filter(unit=>unit.type==="lesson").length);
+  assert.deepEqual(g10Counts,[16,20,22,18]);
+  assert.deepEqual(g11Counts,[20,20,20,20]);
+
+  const targetCounts=[0,0,0];
+  for(const grade of [g10,g11]){
+    for(const sourceTerm of grade.terms){
+      for(const unit of sourceTerm.units.filter(unit=>unit.type==="lesson")){
+        const [form,targetTerm]=placement(grade.grade,sourceTerm.term,unit.startLesson);
+        if(form===3) targetCounts[targetTerm-1]+=1;
+      }
+    }
+  }
+  assert.deepEqual(targetCounts,[36,40,40]);
+
+  for(const sourceTerm of [1,2]){
+    for(const unit of g10.terms.find(term=>term.term===sourceTerm).units.filter(unit=>unit.type==="lesson")){
+      assert.deepEqual(placement(10,sourceTerm,unit.startLesson),[3,1]);
+    }
+  }
+  for(const sourceTerm of [3,4]){
+    for(const unit of g10.terms.find(term=>term.term===sourceTerm).units.filter(unit=>unit.type==="lesson")){
+      assert.deepEqual(placement(10,sourceTerm,unit.startLesson),[3,2]);
+    }
+  }
+  for(const sourceTerm of [1,2]){
+    for(const unit of g11.terms.find(term=>term.term===sourceTerm).units.filter(unit=>unit.type==="lesson")){
+      assert.deepEqual(placement(11,sourceTerm,unit.startLesson),[3,3]);
+    }
+  }
+
+  const titles=(grade,terms)=>terms.flatMap(term=>
+    grade.terms.find(item=>item.term===term).units
+      .filter(unit=>unit.type==="lesson")
+      .map(unit=>unit.title)
+  ).join("\n");
+
+  assert.match(titles(g10,[1,2]),/MY VALUE-CREATION PLAN/);
+  assert.match(titles(g10,[1,2]),/MY INVESTMENT PLAN/);
+  assert.match(titles(g10,[3,4]),/MY FINANCIAL SYSTEM/);
+  assert.match(titles(g10,[3,4]),/MY FINANCIAL INDEPENDENCE PLAN/);
+  assert.match(titles(g11,[1,2]),/MY LEVERAGE PLAN/);
+  assert.match(titles(g11,[1,2]),/MY LEADERSHIP PHILOSOPHY/);
+});
