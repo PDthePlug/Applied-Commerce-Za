@@ -1741,7 +1741,7 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
     ],
     tableReplacements:[
       {
-        cellIncludes:"Retirement annuity",
+        cellIncludes:"Compound growth",
         rows:[
           ["Term","Definition"],
           ["Retirement","The stage when paid work reduces or stops and income must come from other sources"],
