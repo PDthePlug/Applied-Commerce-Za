@@ -58,11 +58,11 @@ export function zimbabwePlacementForSource(
   if(sourceGrade===9){
     let term:number;
     if(type==="assessment"){
-      term=sourceTerm===1?1:sourceTerm===2?2:3;
+      term=sourceTerm===1?1:sourceTerm===3?2:3;
     }else{
       term=startLesson!=null
-        ? (startLesson<=25?1:startLesson<=50?2:3)
-        : (sourceTerm===1?1:sourceTerm===2?2:3);
+        ? (startLesson<=25?1:startLesson<=54?2:3)
+        : (sourceTerm===1?1:sourceTerm<=3?2:3);
     }
     return {form:2,term:asTerm(term)};
   }
