@@ -247,9 +247,10 @@ test("Form 3 preserves complete Grade 10 and Grade 11 project cycles",()=>{
 
 test("every Form 3 source lesson is explicitly localised or reviewed as context-neutral",()=>{
   const overlay=fs.readFileSync("lib/zimbabwe-content.ts","utf8");
-  const explicit=new Set(
-    [...overlay.matchAll(/^\s{2}"(g(?:10|11)-[^"]+)": \{/gm)].map(match=>match[1])
-  );
+  const explicit=new Set([
+    ...[...overlay.matchAll(/^\s{2}"(g10-[^"]+)": \{/gm)].map(match=>match[1]),
+    ...[...overlay.matchAll(/^\s{2}"(g11-t[12]-[^"]+)": \{/gm)].map(match=>match[1]),
+  ]);
   const neutralSection=overlay.match(/zimbabweReviewedNeutralForm3UnitIds = \[([\s\S]*?)\] as const;/);
   assert.ok(neutralSection,"reviewed-neutral Form 3 registry must exist");
   const neutral=new Set(
