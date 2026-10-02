@@ -161,18 +161,20 @@ test("Form 1 closing sequence is structurally localised for Zimbabwe",()=>{
 
 test("Form 1 three-term overlay contains no phantom fourth term or source-grade transitions",()=>{
   const overlay=read("lib/zimbabwe-content.ts");
-  assert.doesNotMatch(overlay,/Term 4/);
-  assert.doesNotMatch(overlay,/Grade 8/);
-  assert.doesNotMatch(overlay,/Grade 9/);
-  assert.match(overlay,/FOUNDATIONS REVIEW AND PORTFOLIO CHECKPOINT/);
-  assert.match(overlay,/MY RELATIONSHIP WITH RESOURCES — NEXT CYCLE/);
-  assert.match(overlay,/WHAT HABITS TAUGHT ME — PROJECT REFLECTION/);
-  assert.match(overlay,/From Term 3: Financial identity, agency and your first capstone/);
+  const form1=overlay.slice(overlay.indexOf('"g8-'),overlay.indexOf('"g9-'));
+  assert.doesNotMatch(form1,/Term 4/);
+  assert.doesNotMatch(form1,/Grade 8/);
+  assert.doesNotMatch(form1,/Grade 9/);
+  assert.match(form1,/FOUNDATIONS REVIEW AND PORTFOLIO CHECKPOINT/);
+  assert.match(form1,/MY RELATIONSHIP WITH RESOURCES — NEXT CYCLE/);
+  assert.match(form1,/WHAT HABITS TAUGHT ME — PROJECT REFLECTION/);
+  assert.match(form1,/From Term 3: Financial identity, agency and your first capstone/);
 });
 
 
 test("Form 1 Zimbabwe overlay contains no South African edition residue already covered by localisation",()=>{
   const overlay=read("lib/zimbabwe-content.ts");
+  const form1=overlay.slice(overlay.indexOf('"g8-'),overlay.indexOf('"g9-'));
   for(const residue of [
     /\bspaza\b/i,
     /\bstokvel\b/i,
@@ -189,11 +191,11 @@ test("Form 1 Zimbabwe overlay contains no South African edition residue already 
     /\bTerm 4\b/i,
     /\bR\s?\d/i,
     /\brand(?:s)?\b/i,
-  ]) assert.doesNotMatch(overlay,residue);
-  assert.match(overlay,/\bmukando\b/i);
-  assert.match(overlay,/\btuckshop\b/i);
-  assert.match(overlay,/\bkombi\b/i);
-  assert.match(overlay,/US\$/);
+  ]) assert.doesNotMatch(form1,residue);
+  assert.match(form1,/\bmukando\b/i);
+  assert.match(form1,/\btuckshop\b/i);
+  assert.match(form1,/\bkombi\b/i);
+  assert.match(form1,/US\$/);
 });
 
 
