@@ -961,7 +961,7 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
       {from:"Keep going. Term 3 awaits.",to:"Keep going. Form 2 Term 2 continues."},
     ],
   },
-  "g9-t3-l50-051": {
+  "g9-t3-l50-039": {
     title: "HABIT TRANSFORMATION PROJECT — LAUNCH",
     tableReplacements: [
       {
@@ -979,7 +979,7 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
       {from:"Habit Stokvel",to:"Habit Mukando"},
     ],
   },
-  "g9-t3-l54-055": {
+  "g9-t3-l54-043": {
     title: "TERM 2 REFLECTION — HABITS, EXECUTION & NEXT MOVE",
     tableReplacements: [
       {
@@ -1026,7 +1026,7 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
       {from:"I have made a preliminary Path Forward declaration.",to:"I have made a Term 3 readiness plan."},
     ],
   },
-  "g9-t4-l55-057": {
+  "g9-t4-l55-045": {
     title: "LOOKING BACK — WHAT WE HAVE LEARNED SO FAR",
     tableReplacements: [
       {
@@ -1053,7 +1053,7 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
       {from:"How I might address it in Term 4:",to:"How I might address it in Term 3:"},
     ],
   },
-  "g9-t4-l75-077": {
+  "g9-t4-l75-065": {
     title: "FAREWELL TO FORM 2",
     textReplacements: [
       {from:"Say a final goodbye to Grade 9 — with gratitude, pride, and forward momentum.",to:"Say a final goodbye to Form 2 — with gratitude, pride, and forward momentum."},
