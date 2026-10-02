@@ -2720,7 +2720,7 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
         ],
       },
       {
-        cellIncludes:"TFSA",
+        cellIncludes:"Start with active income",
         rows:[
           ["Step","What to Do","Example"],
           ["1. Start with active income","Build capital and skills","Part-time work or freelancing"],
@@ -2751,7 +2751,7 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
         ],
       },
       {
-        cellIncludes:"TFSA",
+        cellIncludes:"Annual Limit",
         rows:[
           ["Area","Zimbabwe Learning Rule","What to Verify"],
           ["Employment / business income","Understand what income is taxable and what records are required","Current ZIMRA rules and thresholds"],
@@ -2782,7 +2782,7 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
         ],
       },
       {
-        cellIncludes:"TFSA |",
+        cellIncludes:"When I Could Start",
         rows:[
           ["Vehicle / Area","When I Could Use It","Illustrative Contribution","What I Must Verify"],
           ["Emergency / short-term savings","","","Access, fees and currency risk"],
