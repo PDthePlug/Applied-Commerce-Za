@@ -2581,6 +2581,394 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
       {kind:"text",type:"paragraph",text:"Form 4 is next. Applied Commerce will move into advanced wealth, growth and legacy, then the adult money, work, contracts, risk and life-launch decisions that sit around the end of O-Level. Carry forward your Leverage Plan, Leadership Philosophy and Form 3 evidence. They are inputs to the launch year — not finished answers."},
     ],
   },
+  "g11-t3-l41-041": {
+    textReplacements:[
+      {from:"\"I am 74 now. I have my pension — R2,000 a month. I still help at the stokvel. I still do piece jobs. By the measure of money, I am not wealthy. I never have been.\"",to:"\"I am 74 now. I have a modest pension income. I still help with our mukando. I still do occasional paid work. By the measure of money alone, I am not wealthy. I never have been.\""},
+      {from:"\"But let me tell you what I do have. I have children who call me every week. I have grandchildren who sit at this table and ask me questions about life. I have a community of women in my stokvel who have known me for forty years — who brought food when my husband died, who prayed with me, who held me up when I could not stand.\"",to:"\"But let me tell you what I do have. I have children who call me every week. I have grandchildren who sit at this table and ask me questions about life. I have a community of women in my mukando who have known me for forty years — who brought food when my husband died, who prayed with me, who held me up when I could not stand.\""},
+      {from:"Key idea: Gogo Maria has no money to leave her children. But she has relational wealth — children who call, grandchildren who ask questions, a community that held her up when she could not stand. The paradox: the things that matter most cannot be measured in rands. But they are the foundation of everything.",to:"Key idea: Gogo Maria may not have a large financial estate, but she has relational wealth — children who call, grandchildren who ask questions, and a community that held her up when she could not stand. The things that matter most cannot all be measured in money, but they shape the life that money is meant to support."},
+      {from:"Question 2: Gogo Maria lives on R2,000 a month. Is she wealthy? Defend your answer using the five forms of wealth. What does your answer reveal about your own definition of wealth?",to:"Question 2: Gogo Maria lives on a modest pension income. Is she wealthy? Defend your answer using the five forms of wealth. What does your answer reveal about your own definition of wealth?"},
+    ],
+  },
+  "g11-t3-l42-042": {
+    title:"ADVANCED INVESTING — ZINHLE'S RETURN",
+    textReplacements:[
+      {from:"Zinhle is 23 now. She qualified as an accountant last year. She works at a firm in Johannesburg, but she still comes back to Tembisa on weekends to see her family — and to eat at Mama Rose's kitchen.",to:"Zinhle is 23 now. She qualified as an accountant last year. She works at a firm in Harare, but she still comes back to Chitungwiza on weekends to see her family — and to eat at Mama Rose's kitchen."},
+      {from:"\"You know the basics of investing from Grade 10,\" Zinhle says, stirring her tea. \"Savings accounts. Fixed deposits. Retail bonds. Unit trusts. ETFs. But now you need the advanced version. The version that helps you build real wealth over decades.\"",to:"\"You know the basics of investing from Form 3,\" Zinhle says, stirring her tea. \"Savings and fixed-term deposits. Collective investment schemes. ETFs and other regulated securities. Now you need the advanced version: how the pieces work together over decades.\""},
+      {from:"\"This is not the portfolio I had at 18. At 18, I had R200 a month going into a TFSA and that was it. This portfolio grew as I grew. Your portfolio should match your life stage, your goals, your risk tolerance.\"",to:"\"This is not the portfolio I had at 18. At 18, I was contributing a small amount to one regulated investment product. The portfolio grew as I grew. Your portfolio should match your life stage, goals, liquidity needs and risk tolerance.\""},
+      {from:"Myah studies the numbers. \"What about rebalancing? You said in Grade 10 that portfolios get out of balance.\"",to:"Myah studies the numbers. \"What about rebalancing? You said in Form 3 that portfolios can drift away from their intended allocation.\""},
+      {from:"This week, research one asset class you did not fully understand before this lesson — REITs, ETFs, retail bonds, or alternatives. Find out: What is it? How do you invest in it from South Africa? What is the minimum investment? What are the fees? Write down your findings. Then decide: would you include this asset class in your portfolio? Why or why not?",to:"This week, research one regulated asset class or collective investment option you did not fully understand before this lesson — for example an ETF, unit trust, money-market fund, bond fund or listed property exposure. Check whether the provider or market participant is regulated in Zimbabwe, the minimum investment, fees, liquidity and risks. Then decide whether it fits a hypothetical portfolio and explain why."},
+    ],
+    tableReplacements:[
+      {
+        cellIncludes:"Top 40 JSE",
+        rows:[
+          ["Asset Class","Illustrative Percentage","What It Is","Why It Might Be Included"],
+          ["Equities / equity funds","55%","Shares or diversified funds holding shares","Long-term growth potential; prices can fall sharply"],
+          ["Listed property / property funds","15%","Regulated exposure to property-linked assets","Income/growth potential without directly managing a tenant"],
+          ["Fixed income","15%","Government or corporate debt through regulated instruments/funds","Income and lower volatility than equities in many conditions"],
+          ["Cash / money market","10%","Highly liquid savings or regulated money-market exposure","Emergency and short-term liquidity"],
+          ["Higher-risk alternatives","5%","Only where lawful, understood and suitable","Small allocation because loss risk can be high"],
+        ],
+      },
+      {
+        cellIncludes:"Bonds, retail bonds",
+        rows:[
+          ["Class","What It Is","Typical Risk","Return Potential","Useful For"],
+          ["Equities / ETFs","Shares or diversified baskets of shares","Medium–High","Higher over long periods, but volatile","Long-term growth"],
+          ["Listed property / property funds","Property-linked securities or funds","Medium","Medium–High","Diversification and property exposure"],
+          ["Fixed income","Bonds and regulated fixed-income funds","Low–Medium","Low–Medium","Income, stability and medium-term goals"],
+          ["Cash / money market","Savings and regulated money-market products","Low","Low","Emergency fund and short-term goals"],
+          ["Higher-risk alternatives","Specialised assets that require strong due diligence","High–Very High","Uncertain","Only a small portion for investors who understand the risks"],
+        ],
+      },
+    ],
+  },
+  "g11-t3-l43-043": {
+    title:"PROPERTY INVESTMENT DEEP DIVE — CASH FLOW, RISK & TAX",
+    tableReplacements:[
+      {
+        cellIncludes:"R450,000",
+        rows:[
+          ["Item","Illustrative Amount"],
+          ["Purchase price","US$45,000"],
+          ["Deposit","US$4,500 (partly supported by a family/mukando arrangement)"],
+          ["Financing","US$40,500 — illustrative only; actual lending terms must be checked"],
+          ["Monthly rent","US$450"],
+          ["Monthly finance cost","US$380"],
+          ["Rates/levies/other recurring property costs","US$60"],
+          ["Maintenance provision","US$30"],
+          ["Monthly cash flow","-US$20 in the early period"],
+          ["Later illustrative property value","US$75,000"],
+          ["Illustrative remaining finance balance","US$31,000"],
+          ["Illustrative equity","US$44,000"],
+          ["Later rent","US$600"],
+          ["Later monthly cash flow","+US$90"],
+        ],
+      },
+      {
+        cellIncludes:"R600,000",
+        rows:[
+          ["Item","Illustrative Amount"],
+          ["Purchase price","US$60,000"],
+          ["Deposit","US$12,000"],
+          ["Later illustrative value","US$85,000"],
+          ["Illustrative equity","US$48,000"],
+        ],
+      },
+      {
+        cellIncludes:"R750,000",
+        rows:[
+          ["Item","Illustrative Amount"],
+          ["Purchase price","US$75,000"],
+          ["Deposit","US$15,000"],
+          ["Later illustrative value","US$90,000"],
+          ["Illustrative equity","US$37,000"],
+        ],
+      },
+      {
+        cellIncludes:"R550,000",
+        rows:[
+          ["Item","Illustrative Amount"],
+          ["Purchase price","US$55,000"],
+          ["Deposit (10%)","US$5,500"],
+          ["Financing","US$49,500 — use an illustrative repayment supplied by your teacher"],
+          ["Monthly finance cost","US$430"],
+          ["Monthly rent","US$500"],
+          ["Rates/levies/other recurring costs","US$50"],
+          ["Maintenance provision","US$30"],
+        ],
+      },
+    ],
+    textReplacements:[
+      {from:"\"The first three years, this property cost me money every month. Negative cash flow. I had to pay R200 from my own pocket just to keep it. My friends thought I was crazy. My family told me to sell. But I held on. Why? Because I knew rents would rise. And they did. Year four, cash flow turned positive. Patience. That is the part nobody tells you about property. Patience.\"",to:"\"The first three years, this property cost me money every month. In this illustration I had to add about US$20 from my own pocket just to keep it. Holding it was not automatically wise — it only made sense because I had a buffer, a long-term thesis and a plan for maintenance, vacancy and financing risk. Later the cash flow improved. Property requires patience, but patience without numbers is not a strategy.\""},
+      {from:"Total equity across three properties: R1,290,000",to:"Illustrative total equity across the three properties: US$129,000"},
+      {from:"\"Started with R45,000 borrowed from a stokvel. Now have nearly R1.3 million in equity. That is the power of leverage plus patience. But it took ten years. And there were months I did not sleep. Property is not a get-rich-quick scheme. It is a get-wealthy-slowly strategy.\"",to:"\"I started with a relatively small deposit, including support from a community-savings arrangement, and built equity over years. That is the potential power of leverage — but also the risk. There were months I struggled. Property is not automatically a path to wealth. The financing, vacancy, maintenance, tax and legal costs all matter.\""},
+      {from:"Monthly cash flow: R5,000 — R4,300 — R500 — R300 = R_______",to:"Monthly cash flow in this illustration: US$500 − US$430 − US$50 − US$30 = US$_______"},
+      {from:"Rental yield: R60,000 ÷ R550,000 = _______%",to:"Gross annual rental yield in this illustration: US$6,000 ÷ US$55,000 = _______%"},
+      {from:"Here’s the tension: not everyone can survive three years of negative cash flow. If you are living month to month, if R200 a month is the difference between eating and not eating, you cannot afford to hold a negative-cash-flow property. The people who need property wealth the most are often the least able to survive the waiting period. That is not a character flaw. That is math.",to:"Here’s the tension: not everyone can survive prolonged negative cash flow. If even US$20 a month would threaten essential needs in this illustration, a negative-cash-flow property is not affordable. Access to deposits, financing and buffers is unequal. That is not a character flaw. It is a resource constraint."},
+      {from:"Question 3 — The Survival Diagnostic: You calculated the cash flow for a R550,000 property. Now answer honestly: could YOU survive the negative cash flow? If yes, for how long? What is your buffer? If no, what would need to change in your financial situation before property investing becomes realistic? Be specific.",to:"Question 3 — The Survival Diagnostic: Using the US$55,000 illustrative property, could you survive a period of negative cash flow? What buffer would be needed for vacancy, repairs and financing costs? What would need to change before direct property investing became realistic?"},
+      {from:"If you cannot research actual properties, use the R550,000 example from Activity 43. But personalize it: How long would it take YOU to save the R55,000 deposit at your current savings rate? Write down the number of months. Let it sink in.",to:"If you cannot research actual properties, use the US$55,000 illustrative example from Activity 43. How long would it take to build a US$5,500 deposit at different monthly saving rates? Then add a separate buffer for legal, tax, vacancy and maintenance costs. Keep the exercise illustrative rather than treating the example as a market price."},
+    ],
+    appendBlocks:[
+      {kind:"text",type:"paragraph",text:"Zimbabwe check: buying, selling or renting property can involve taxes, legal/transfer costs and other obligations. Capital Gains Tax can apply to specified assets, and rental-related rules can change. Before treating any property calculation as real, verify current ZIMRA guidance and obtain appropriate legal/financial advice."},
+    ],
+  },
+  "g11-t3-l44-044": {
+    textReplacements:[
+      {from:"Ms. Nkosi invites Myah, Thabo, and Lethabo back to her logistics company. This time, they are in her office — a small room with a large map of Gauteng on the wall, covered in pins and routes.",to:"Ms. Nkosi invites Myah, Thabo and Lethabo back to her logistics company. This time, they are in her office — a small room with a large map of Harare and surrounding routes on the wall, covered in pins."},
+      {from:"\"Then I moved to market development — same service, new customers. I expanded to new areas. Soweto. Alexandra. Further into the East Rand. Same trucks, same systems, new geography.\"",to:"\"Then I moved to market development — same service, new customers. I expanded to new areas around Harare and then into nearby towns. Same core systems, new geography.\""},
+      {from:"Think of a business you know — Thabo's delivery service, Lethabo's clocks, Emmanuel's spaza shop. Which growth strategy are they using? Which should they use next?",to:"Think of a business you know — Thabo's delivery service, Lethabo's clocks, Emmanuel's tuckshop. Which growth strategy are they using? Which option might they test next, and what evidence would they need first?"},
+    ],
+  },
+  "g11-t3-l45-045": {
+    textReplacements:[
+      {from:"Stage 3: The Ads Mistake (Age 18–19) \"I tried Facebook ads. Spent R2,000. Made R800 back. I did not understand targeting, copywriting, or analytics. I just boosted posts and hoped. Hope is not a strategy. I lost R1,200 and learned that marketing is a skill.\"",to:"Stage 3: The Ads Mistake (Age 18–19) \"I tried paid social ads. In this illustration I spent US$200 and made US$80 back. I did not understand targeting, copywriting or analytics. I just boosted posts and hoped. Hope is not a strategy. I lost US$120 and learned that marketing is a skill.\""},
+      {from:"Stage 6: The System (Now) \"I created templates for every message. I batch-process orders twice a week. I spend five hours a week on the business. It earns R1,500 a month. Not a fortune. But it runs without me. That is the goal. Not to be the engine. To design the engine.\"",to:"Stage 6: The System (Now) \"I created templates for recurring messages. I batch-process orders twice a week. I spend about five hours a week on the business. In this illustration it earns US$150 a month. Not a fortune. But the point is that the system carries more of the routine work. The goal is not to be the engine forever. It is to design the engine.\""},
+    ],
+  },
+  "g11-t3-l46-046": {
+    tableReplacements:[
+      {
+        cellIncludes:"Online store",
+        rows:[
+          ["Stream","Type","Illustrative Monthly Amount","Scalable?","Notes"],
+          ["Online store","Active/systemised","US$150","Yes","Three products, systems in place"],
+          ["Tutoring","Active","US$80","Limited by time","Five students in this example"],
+          ["Savings / investment income","Portfolio","US$6","Depends on capital","Varies with product and return"],
+          ["Digital study guide","Digital product","US$40","Potentially","Created once, still requires platform/marketing"],
+          ["Freelance graphic design","Active","US$100","Limited by time","Project-based and irregular"],
+        ],
+      },
+      {
+        cellIncludes:"TFSA",
+        rows:[
+          ["Step","What to Do","Example"],
+          ["1. Start with active income","Build capital and skills","Part-time work or freelancing"],
+          ["2. Save and invest","Use suitable regulated products","Savings, collective investments, pension products where appropriate"],
+          ["3. Create a reusable product","Make once, sell more than once","Study guide, template or course"],
+          ["4. Systemise a business","Document, automate and delegate","Online store with repeatable processes"],
+          ["5. Reinvest profits","Build additional capability/assets","More tools, products, investments or people"],
+        ],
+      },
+    ],
+    textReplacements:[
+      {from:"Total: R3,760 per month",to:"Illustrative total: US$376 per month"},
+      {from:"\"The study guide is my best lever. I spent 30 hours creating it two years ago. I have not updated it since. It still sells — maybe five copies a month. That is R400 for zero ongoing work. If I created two more guides, that could be R1,200 a month. If I marketed them properly, more. That is the power of scalable streams. Work once. Earn many times.\"",to:"\"The study guide is my best lever. I spent 30 hours creating it two years ago. It still sells about five copies a month — roughly US$40 in this example. It is not truly 'zero work': platforms, updates, support and marketing still matter. But one piece of work can serve more than one customer. That is the leverage.\""},
+      {from:"Key idea: Themba's study guide took 30 hours to create. Two years later, it still sells. R400 a month for zero ongoing work. The paradox: the most scalable streams require the most upfront work. But once they are built, they run without you. Work once. Earn many times.",to:"Key idea: Themba's study guide took 30 hours to create. Two years later, it still sells. In this illustration it produces about US$40 a month while requiring much less time than one-to-one work. Scalable streams often require substantial upfront work and ongoing maintenance, but one unit of effort can serve many customers."},
+    ],
+  },
+  "g11-t3-l47-047": {
+    title:"TAX-AWARE WEALTH BUILDING — ZIMBABWE RULES CHANGE",
+    tableReplacements:[
+      {
+        cellIncludes:"Retirement annuity",
+        rows:[
+          ["Term","Definition"],
+          ["Tax efficiency","Arranging finances lawfully while understanding tax consequences"],
+          ["Pension / retirement product","A regulated long-term retirement arrangement whose rules depend on the product and current law"],
+          ["Capital Gains Tax","Tax that can apply to gains on specified assets under Zimbabwe law"],
+          ["Tax evasion","Illegally hiding income, assets or transactions to avoid tax"],
+        ],
+      },
+      {
+        cellIncludes:"TFSA",
+        rows:[
+          ["Area","Zimbabwe Learning Rule","What to Verify"],
+          ["Employment / business income","Understand what income is taxable and what records are required","Current ZIMRA rules and thresholds"],
+          ["Retirement saving","Compare regulated pension or retirement arrangements","IPEC-regulated provider, product rules, fees and current tax treatment"],
+          ["Investment income","Different products can have different tax consequences","Current ZIMRA treatment and provider disclosures"],
+          ["Property / securities gains","Capital Gains Tax may apply to specified assets","Current ZIMRA CGT rules before a real transaction"],
+          ["Deductions / allowances","Only claim what current law actually permits","Current official guidance or a qualified tax practitioner"],
+        ],
+      },
+      {
+        cellIncludes:"Invest R36,000/year",
+        rows:[
+          ["Strategy","Without Planning","With Tax-Aware Planning","Lesson"],
+          ["Long-term investing","Choose products only for headline returns","Compare return, fees, liquidity, regulation and tax treatment","After-tax outcomes matter"],
+          ["Retirement saving","Ignore employer/pension arrangements until later","Understand the regulated retirement options available to you","Rules and access restrictions matter"],
+          ["Property / securities disposal","Assume the sale price is fully yours","Plan for possible CGT and transaction costs","A gain can create a tax obligation"],
+        ],
+      },
+      {
+        cellIncludes:"TFSA lifetime limit",
+        rows:[
+          ["Rule","Zimbabwe Form 4 Approach"],
+          ["Tax rates and thresholds","Do not memorise an old number; check the latest ZIMRA source"],
+          ["Retirement product rules","Check the regulated product/provider and current withdrawal/tax rules"],
+          ["Capital gains","Check whether the asset is a specified asset and what current CGT rules apply"],
+          ["Property","Include tax, legal and transaction costs before calling an investment profitable"],
+          ["Record keeping","Keep evidence for income, expenses, acquisition cost and other allowable deductions"],
+        ],
+      },
+      {
+        cellIncludes:"TFSA |",
+        rows:[
+          ["Vehicle / Area","When I Could Use It","Illustrative Contribution","What I Must Verify"],
+          ["Emergency / short-term savings","","","Access, fees and currency risk"],
+          ["Regulated collective investment","","","SECZ-regulated provider/product, fees and risk"],
+          ["Pension / retirement product","","","IPEC-regulated provider, product rules and current tax treatment"],
+          ["Direct securities / listed funds","","","Market, broker, fees, liquidity and tax treatment"],
+        ],
+      },
+    ],
+    textReplacements:[
+      {from:"\"Tax is the single biggest cost most people never think about. Not because they evade it. Because they do not plan for it. The difference between someone who plans for tax and someone who does not can be hundreds of thousands of rand over a lifetime — completely legally.\"",to:"\"Tax can materially change a long-term financial result. The point is not to evade tax. It is to understand the rules, keep proper records and make decisions using after-tax numbers instead of pretending tax does not exist.\""},
+      {from:"Tax-Efficient Vehicles in South Africa",to:"Tax-Aware Wealth Building in Zimbabwe"},
+      {from:"\"Here is how it adds up. Imagine you invest R3,000 a month — R36,000 a year — for 20 years at 8% growth. In a normal taxable account, you would pay tax on the interest, dividends, and capital gains. In a TFSA, you pay nothing. Nothing. Over 20 years, the difference could be hundreds of thousands of rand. That is not evasion. That is using the system exactly as it was designed — to encourage saving and investing.\"",to:"\"Here is the durable lesson: two investments with the same headline return can produce different after-tax outcomes. Instead of copying a South African product rule, compare the Zimbabwe products actually available to you, their regulation, fees, liquidity and current tax treatment.\""},
+      {from:"\"The RA is different. You get a tax deduction NOW for contributions. If you earn R200,000 and contribute R20,000 to an RA, you are taxed as if you earned R180,000. The government is effectively paying you to save for retirement. Why? Because they do not want to support you when you are old. Take the deal.\"",to:"\"Retirement products have their own contribution, access and tax rules. Do not assume an arrangement works like a South African RA. Check the regulated Zimbabwe product, the provider, fees, access rules and current tax treatment before relying on any benefit.\""},
+      {from:"Myah writes in her notebook: Tax efficiency is not evasion. It is using the system as designed. TFSA = tax-free growth. RA = tax deduction now. Both are gifts from a government that does not want to support you in old age. Take the gifts. But know the rules. Zinhle's three-year delay cost her hundreds of thousands. Do not repeat her mistake.",to:"Myah writes in her notebook: Tax planning is not tax evasion. Good planning begins with the current law, proper records, regulated products and after-tax comparisons. Never build a long-term plan around a tax rule you have not verified."},
+      {from:"Tax Efficiency = TFSA + RA + Legal Deductions",to:"Tax-Aware Planning = Current Rules + Records + Regulated Products + Legal Deductions"},
+      {from:"The Reality Check: If I am not using a TFSA by age 25, why not? What is the real reason — lack of money, lack of knowledge, or something else?",to:"The Reality Check: By age 25, do I understand the regulated saving/investment and retirement options available to me, or am I avoiding the research? What is the real reason?"},
+      {from:"The Architect's Question: If you were designing a tax-efficiency plan for someone you love — someone who earns the same as you will likely earn — what would you tell them to prioritize? TFSA or RA? Why? Are you willing to follow your own advice?",to:"The Architect's Question: If you were designing a tax-aware plan for someone you love, what would you tell them to verify before choosing a saving, investment or retirement product? Are you willing to follow the same discipline?"},
+      {from:"Question 1: What is a TFSA? What are its limits? Why would the government create such an account? How does an RA reduce tax? Use an example to explain.",to:"Question 1: What makes tax planning different from tax evasion? Name two Zimbabwe financial or investment decisions where current tax treatment should be checked before acting."},
+      {from:"Question 3 — The Tax Efficiency Audit: Imagine you are 25, earning R15,000 per month. You have R2,000 per month to invest. How would you allocate it between TFSA, RA, and other investments to maximize tax efficiency? Show your allocation and explain your reasoning.",to:"Question 3 — The Tax-Aware Audit: Imagine you are 25 and have US$200 per month available to save or invest. Design an illustrative allocation across emergency savings, regulated long-term investments and retirement saving. Explain what current Zimbabwe tax/product rules you would need to verify before making it real."},
+      {from:"This week, research the current TFSA and RA limits for the current tax year. Have they changed from the numbers in this lesson? Write down the current limits. Then calculate: If you maxed your TFSA every year from age 20 to age 30 (R36,000 per year at 8% growth), how much would you have, tax-free, at 30? At 50?",to:"This week, use official Zimbabwe sources to research one current tax rule affecting investments, property or retirement saving. Record the source and date. Then explain why a rule verified today should still be checked again before a future real transaction."},
+      {from:"If you cannot research online, ask someone who invests: \"Do you use a TFSA or RA? Why or why not? What do you wish you had known about tax when you were my age?\" Write down their answers.",to:"If you cannot research online, ask a financially experienced adult what regulated saving, investment or pension products they use and which tax or access rules they had to understand. Treat their answer as experience, not as legal or financial advice."},
+    ],
+    appendBlocks:[
+      {kind:"text",type:"paragraph",text:"Zimbabwe check: use current ZIMRA guidance for tax and official regulator/provider information for financial products. Rates, thresholds and product rules can change, so the learner skill is verification, not memorising a copied foreign rule."},
+    ],
+  },
+  "g11-t3-l48-048": {
+    textReplacements:[
+      {from:"Question 3 — The Protection Gap Analysis: Look at your Protection Audit. Which gap is largest? If that risk materialized tomorrow, what would happen — specifically, in rands, in relationships, in lost opportunities? Now write: what is the ONE protection action you will take THIS YEAR, and by what date?",to:"Question 3 — The Protection Gap Analysis: Look at your Protection Audit. Which gap is largest? If that risk materialised tomorrow, what would happen — in money, relationships and lost opportunities? What is the ONE protection action you will take this year, and by what date?"},
+    ],
+  },
+  "g11-t3-l49-049": {
+    title:"IMPACT INVESTING — PURPOSE, EVIDENCE & GREENWASHING",
+    textReplacements:[
+      {from:"Mr. Patel nods. \"I turned down a contract because the company was corrupt. Your money is a vote. Every rand you spend, save, or invest is a vote for the kind of world you want. The question is whether you will vote intentionally — or just let the market decide for you.\"",to:"Mr. Patel nods. \"I turned down a contract because the company was corrupt. Your money carries consequences. Every amount you spend, save or invest supports something. The question is whether you will investigate those consequences — or ignore them.\""},
+      {from:"Zinhle adds: \"There are practical ways. ESG funds. Green bonds. Community investment notes. You can start small. R500 a month in an ESG fund. It is not perfect — greenwashing is real, and you have to do your research. But it is better than doing nothing. It is better than pretending your money has no impact.\"",to:"Zinhle adds: \"There are investment products that claim environmental or social objectives. Some are credible and some are mostly marketing. Before investing, check whether the product and provider are regulated, what the mandate actually requires, the fees, holdings, reporting and the evidence behind the impact claim.\""},
+      {from:"Myah writes in her notebook: Every rand is a vote. Impact investing = profit + purpose. Not either/or. Both/and. The architect's question: what kind of world am I building with my money?",to:"Myah writes in her notebook: Money has consequences. Impact investing asks whether financial goals and social or environmental goals can be pursued together — without pretending the trade-offs or greenwashing risk disappear."},
+      {from:"Every Rand = A Vote",to:"Every Investment Has Consequences"},
+      {from:"Impact Investing Options in South Africa",to:"Impact-Investing Research Categories"},
+      {from:"Mr. Patel said: \"Every rand is a vote.\" What kind of world am I voting for with my money — right now, with the money I already have? _________________________________",to:"Mr. Patel said money has consequences. What consequences am I already supporting with the money I spend, save or invest? _________________________________"},
+      {from:"The Architect's Question: What is one small step you could take toward impact investing — even with R100, even with just research — this year? What would it mean to take that step?",to:"The Architect's Question: What is one small step you could take toward impact-aware investing — even if the step is only research — this year? What evidence would you need before putting money at risk?"},
+      {from:"Question 2: What is your Red Line — one thing you will never invest in, no matter what? Why did Mr. Patel say \"every rand is a vote\"? What are you voting for with your money?",to:"Question 2: What is your Red Line — one thing you would not knowingly invest in? Why? How would you verify whether a fund or company crosses that line?"},
+      {from:"Question 3 — The Impact Trade-Off: You have R10,000 to invest. Option A: a conventional fund with expected returns of 10% per year, but it includes companies involved in fossil fuels and poor labour practices. Option B: an ESG fund with expected returns of 7% per year, aligned with your values. Which do you choose? Defend your answer. What do you gain? What do you sacrifice?",to:"Question 3 — The Impact Trade-Off: You have an illustrative US$1,000 to invest. Option A has a higher expected return but includes holdings that conflict with your stated values. Option B has a lower expected return and stronger stated impact criteria. What further information would you need before choosing? Then make and defend a decision."},
+      {from:"This week, research ONE ESG fund or green bond available in South Africa. Find out: What does it invest in? What does it screen out? What is the minimum investment? What are the fees? What has been its historical return? Write down your findings. Then decide: would you invest in it? Why or why not?",to:"This week, research ONE impact-oriented or sustainability-labelled investment accessible through a regulated Zimbabwe provider or market. Find out what it invests in, the regulator/provider, minimum, fees, liquidity, historical performance and evidence behind the impact claim. Then decide whether you would investigate it further and why."},
+    ],
+    tableReplacements:[
+      {
+        cellIncludes:"ESG-focused unit trusts",
+        rows:[
+          ["Research Category","Questions to Ask"],
+          ["ESG / sustainability fund","What is screened in or out? Is the methodology public?"],
+          ["Green or thematic bond","Who issued it? What use-of-proceeds rules apply?"],
+          ["Community / development investment","How are returns and impact measured? What is the risk?"],
+          ["Crowdfunded or private project","Is it lawful and regulated where required? What protections exist?"],
+          ["Any impact claim","What evidence exists beyond marketing language?"],
+        ],
+      },
+    ],
+  },
+  "g11-t3-l50-050": {
+    title:"GLOBAL INVESTING — DIVERSIFICATION & CURRENCY RISK",
+    textReplacements:[
+      {from:"Identify ways to invest globally from South Africa.",to:"Identify regulated ways a Zimbabwe investor may obtain global exposure, subject to current exchange-control, provider and tax rules."},
+      {from:"\"South Africa is a small part of the world economy. Less than 1%. If you only invest here, you are missing 99% of the world's opportunities. And you are taking on unnecessary risk — because if the South African economy struggles, everything you own struggles with it.\"",to:"\"Zimbabwe is one part of a much larger world economy. Global diversification can reduce dependence on one country, one currency and one set of industries. It does not remove risk; it changes the mix of risks you carry.\""},
+      {from:"He spins the globe. \"Offshore investing is not about betting against South Africa. It is about not putting all your eggs in one basket.\"",to:"He spins the globe. \"Global investing is not a rejection of Zimbabwe. It is a diversification decision. Do not put every long-term asset in one market or one currency without understanding the concentration risk.\""},
+      {from:"1. Access to global companies: \"Apple. Amazon. Toyota. Alphabet. Companies that do not list on the JSE.\"",to:"1. Access to global companies and industries: international markets can provide exposure to businesses and sectors not available on local exchanges."},
+      {from:"2. Currency protection: \"If the rand weakens — which it has done, on average, over decades — your offshore investments are worth more in rand terms. It is a hedge. Not a guarantee.\"",to:"2. Currency diversification: assets denominated in different currencies can change your exposure to local-currency movements. This is not a guaranteed hedge; exchange rates can move in either direction."},
+      {from:"Ways to Invest Offshore from South Africa",to:"Ways to Research Global Exposure from Zimbabwe"},
+      {from:"Research one way to invest offshore from South Africa.",to:"Research one regulated way a Zimbabwe investor might obtain global exposure. Check the provider, regulation, fees, liquidity, currency conversion, tax and any current exchange-control rules."},
+      {from:"Mr. Patel said: \"Offshore investing is not betting against South Africa. It is not putting all your eggs in one basket.\" What does this mean to you? _________________________________",to:"Mr. Patel said global investing is about diversification rather than rejecting your home country. What does that mean to you? _________________________________"},
+      {from:"Key idea: Mr. Patel invests offshore not because he distrusts South Africa. Because he does not put all his eggs in one basket. The paradox: the people who only invest locally are taking a huge risk without knowing it.",to:"Key idea: global exposure can reduce concentration in one country, currency or market. But international investing introduces its own costs, regulation, tax and currency risks. Diversification is not the same as safety."},
+    ],
+    tableReplacements:[
+      {
+        cellIncludes:"Local ETFs with global exposure",
+        rows:[
+          ["Method","How It Might Work","What to Verify"],
+          ["Locally accessible regulated fund with global assets","A Zimbabwe-regulated collective investment or listed product may hold foreign assets","Regulator, mandate, fees, liquidity and currency exposure"],
+          ["Authorised platform / broker with foreign-market access","Direct or indirect access to international securities","Licensing, custody, FX rules, fees and tax"],
+          ["Foreign-currency account","Holds currency rather than an investment asset by itself","Bank rules, fees, interest and purpose"],
+          ["Employer or pension arrangement with foreign exposure","A regulated fund may diversify internationally","Product mandate, regulator, costs and access rules"],
+        ],
+      },
+      {
+        cellIncludes:"If Rand Strengthens",
+        rows:[
+          ["If Your Home Currency Strengthens","If Your Home Currency Weakens"],
+          ["Foreign assets may be worth less when translated back, all else equal","Foreign assets may be worth more when translated back, all else equal"],
+          ["Imports and foreign travel may become relatively cheaper","Imports and foreign travel may become relatively more expensive"],
+        ],
+      },
+    ],
+  },
+  "g11-t3-l51-051": {
+    textReplacements:[
+      {from:"TFSA",to:"regulated long-term investments"},
+      {from:"\"Values. The values I defined in Grade 9. They have not changed. They have just been tested.\"",to:"\"Values. The values I defined in Form 2. They have not disappeared. They have been tested and refined.\""},
+    ],
+  },
+  "g11-t3-l52-052": {
+    tableTextReplacements:[
+      {from:"TFSA, RA, other vehicles, annual tax planning",to:"current Zimbabwe tax rules, regulated investment/retirement options, annual review"},
+    ],
+  },
+  "g11-t3-l53-053": {
+    tableReplacements:[
+      {
+        cellIncludes:"EasyEquities",
+        rows:[
+          ["Area","Research Needed","Findings"],
+          ["Regulated collective investments","Providers, fees, minimums, liquidity","Use SECZ/provider information; record current findings"],
+          ["Retirement / pension products","Provider, contributions, fees, access rules","Use IPEC/provider information; record current findings"],
+          ["Impact-oriented investments","Mandate, evidence, fees, regulation","Verify claims and regulator/provider"],
+          ["Listed property / property funds","Market availability, fees, liquidity, risks","Use current regulated market information"],
+          ["Digital products","Platforms, payment costs, customer access","Compare terms and economics"],
+        ],
+      },
+      {
+        cellIncludes:"TFSA provider",
+        rows:[
+          ["Area","Options","My Choice","Why?"],
+          ["Savings / emergency account","","",""],
+          ["Regulated collective investment","","",""],
+          ["Retirement / pension product","","",""],
+          ["Investment platform / broker","","",""],
+          ["Impact-oriented option, if suitable","","",""],
+          ["Property exposure, if suitable","","",""],
+        ],
+      },
+    ],
+    textReplacements:[
+      {from:"She uses these to build realistic projections. \"If I max my TFSA from age 20 to 30 — R36,000 a year at 8% growth — that is about R560,000, tax-free. If I add an RA from 25, even R500 a month, that adds another R100,000 by 30. These are real numbers. Not wishes. Math.\"",to:"She uses the research to build scenarios rather than promises. \"I can model an illustrative monthly contribution and growth rate, but I cannot call the result tax-free or guaranteed unless the current Zimbabwe product rules actually say so. The math matters. So do fees, tax, inflation, liquidity and regulation.\""},
+      {from:"At the back of the hall, Atlehang Ngwenya is working alone. He is not researching investments. He is building a spreadsheet — the inventory tracker for his uncle's spaza shop, the one Myah saw at the taxi rank weeks ago. It has grown. More columns. More formulas. More data.",to:"At the back of the hall, Atlehang Ngwenya is working alone. He is not researching investments. He is building a spreadsheet — the inventory tracker for his uncle's tuckshop, the one Myah saw near the kombi rank weeks ago. It has grown. More columns. More formulas. More data."},
+    ],
+  },
+  "g11-t3-l54-054": {
+    textReplacements:[
+      {from:"Investments: TFSA maxed by 22. RA from 20. ESG funds from 20.",to:"Investments: emergency liquidity first; regulated long-term investments from early adulthood; retirement/pension saving when income and product rules make it suitable; impact-oriented options only after due diligence."},
+      {from:"Tax: TFSA, RA. Annual review with a tax practitioner from first job.",to:"Tax: verify current ZIMRA rules annually and use regulated products; obtain qualified advice when the plan becomes real or complex."},
+      {from:"Protection: Emergency fund R10,000 by 22. Income protection insurance from first job.",to:"Protection: build an emergency fund target in a clearly labelled currency; review appropriate insurance as income and responsibilities grow."},
+      {from:"Myah had assumed 10 people per workshop at R200 each. She revises: 5 people. R100 each. More conservative. More honest.",to:"Myah had assumed 10 people per workshop at US$20 each in an illustrative model. She revises to 5 people at US$10 each. More conservative. More honest."},
+      {from:"Lethabo: \"Your property timeline has physical property at 28. Have you checked deposit requirements? R500,000 property needs R50,000–R100,000 deposit. Can you save that by 28?\"",to:"Lethabo: \"Your property timeline has direct property at 28. Have you checked the deposit, financing, legal, tax and maintenance requirements in the market you are actually considering? Can your savings realistically cover both the deposit and a buffer?\""},
+      {from:"Myah runs the numbers. At R1,000 a month from age 22, plus investment growth, she could have about R85,000 by 28. Tight. She adds a contingency: if deposit is short, delay property by one year or use REITs as bridge.",to:"Myah runs several illustrative savings scenarios. The deposit looks possible only under some assumptions. She adds a contingency: if the buffer or financing conditions are not strong enough, delay direct property and keep building diversified assets rather than forcing the timeline."},
+    ],
+  },
+  "g11-t3-l55-055": {
+    textReplacements:[
+      {from:"Zinhle came from Johannesburg.",to:"Zinhle came from Harare."},
+      {from:"Thabo presents first. His plan: grow the delivery service into a full logistics company by 25. Hire three employees. Buy two vehicles — one with a loan, one with savings. Invest 15% of profits into a TFSA and RA. Protection: business insurance, life insurance from 25. Impact: free deliveries for pensioners. His Reality Check: \"If the business is not generating R10,000 a month by age 22, I need to either change the business model or get a formal job to supplement. I will not drift.\"",to:"Thabo presents first. His plan: grow the delivery service into a logistics company, hire and train carefully, and invest a portion of profits through suitable regulated products. Protection: business insurance and other cover as responsibilities justify it. His Reality Check: \"If the business has not reached the operating target in my plan by the review date, I need to change the model or add another income source. I will not drift.\""},
+      {from:"Lethabo presents. His plan: scale clock-making into a small manufacturing business. Digital products — a \"Make Your Own Reminder Clock\" kit. REITs from 20. RA from 22. Impact: teach free workshops to youth. His Reality Check: \"If I have not launched the digital product by the end of Grade 12, I need to ask myself what I am afraid of.\"",to:"Lethabo presents. His plan: scale clock-making into a small manufacturing business, create a digital kit, build diversified investments and teach free workshops to younger people. His Reality Check: \"If I have not tested the digital product by the end of Form 4, I need to identify whether the barrier is skill, evidence, resources or fear.\""},
+      {from:"Nosipho presents. Her plan: teaching career, side tutoring business, investments in TFSA and RA. Property by 30. Impact: free tutoring for disadvantaged students — one afternoon a week. Her Reality Check: \"If my tutoring business is not generating R2,000 a month by age 25, I need to either raise my rates or find a different side stream.\"",to:"Nosipho presents. Her plan: teaching, a side tutoring business, regulated investments and a possible property goal only when the numbers are strong enough. Impact: free tutoring for learners who need support. Her Reality Check: \"If the tutoring business is not reaching the target in my plan by the review date, I need to revisit pricing, demand or the business model.\""},
+      {from:"\"My Reality Check for the workshops: If I have not run at least one paid workshop by the end of Grade 12, I am letting fear of failure stop me. Fear is not a strategy.\"",to:"\"My Reality Check for the workshops: if I have not tested at least one paid workshop by the end of Form 4, I need to identify the real blocker. Fear is not a strategy, but neither is acting without evidence.\""},
+    ],
+  },
+  "g11-t3-l56-056": {
+    textReplacements:[
+      {from:"Emmanuel presents. Spaza shop transformation — delivery service, cooperative buying, loyalty system. Investments from 22. Property by 30. His Reality Check: \"If the shop is not profitable enough to support investments by age 25, I need to either change the business model or start a second income stream. Nostalgia is not a strategy.\"",to:"Emmanuel presents. Tuckshop transformation — delivery service, cooperative buying and a loyalty system. Investments when cash flow supports them; direct property only when the numbers and buffer are strong enough. His Reality Check: \"If the shop is not profitable enough to support reinvestment by the review date, I need to change the model or add another income stream. Nostalgia is not a strategy.\""},
+      {from:"Sipho stands up. This is the Sipho — melted sweets, credit card, bicycle repair. His plan: grow the repair business into a small workshop. Hire and train two mechanics by 25. Invest 10% of profits into a TFSA. His Reality Check: \"If I have not hired my first employee by age 22, I am still trying to do everything myself. That is not a business. That is a job with extra steps.\" His shadow: \"I know what it feels like to be invisible. Every person I hire, I will see. Every person I train, I will remember what it felt like when no one saw me.\"",to:"Sipho stands up. This is the Sipho of the melted sweets and bicycle repair. His plan: grow the repair business into a small workshop, hire and train carefully, and invest a portion of profits through suitable regulated products. His Reality Check: \"If I have not built the first repeatable role by the review date, I am still trying to do everything myself.\" His shadow: \"I know what it feels like to be invisible. Every person I hire, I will see.\""},
+      {from:"\"You are not drifting. You are designing. Thabo, your plan is about community. Lethabo, yours is about passing on skills. Myah, yours is about education that transforms. Sipho — you had no goals in Grade 8. Now you have a wealth plan with a Reality Check and a shadow that honors where you came from. That is not just progress. That is proof.\"",to:"\"You are not drifting. You are designing. Thabo, your plan is about community. Lethabo, yours is about passing on skills. Myah, yours is about education that transforms. Sipho — you had no clear goals in Form 1. Now you have a wealth plan with a Reality Check and a shadow that honours where you came from. That is proof of growth.\""},
+    ],
+  },
+  "g11-t3-l57-057": {
+    textReplacements:[
+      {from:"Lesson 47: Tax efficiency. Zinhle's R18,000 mistake. \"Start early.\"",to:"Lesson 47: Tax-aware planning. Zinhle's lesson: verify the rules, keep records and plan using after-tax numbers."},
+      {from:"Lesson 49: Impact investing. Thandiwe's recycling business. Every rand is a vote.",to:"Lesson 49: Impact investing. Money has consequences; impact claims need evidence."},
+    ],
+  },
+  "g11-t3-l59-059": {
+    title:"LETTER TO MY FUTURE SELF — FORM 4 WEALTH CHECKPOINT",
+    textReplacements:[
+      {from:"I am writing this at the end of Term 3, Grade 11. I am 17. I have built a 10-Year Wealth Plan. Not a wish. A plan — with Reality Checks, with impact priorities, with protection strategies, with five forms of wealth, with Managing the Downside.",to:"I am writing this during Form 4 Term 1, at the end of the advanced wealth cycle. I have built a 10-Year Wealth Plan — not a promise, but a working design with Reality Checks, impact priorities, protection strategies and five forms of wealth."},
+      {from:"I learned that wealth is not just money. Gogo Maria taught me that. She is 74, lives on R2,000 a month, and is one of the wealthiest people I know.",to:"I learned that wealth is not just money. Gogo Maria taught me that. Her financial resources are modest, but her relational and values wealth are enormous."},
+      {from:"I learned that every rand is a vote. Mr. Patel taught me that. Thandiwe taught me that.",to:"I learned that money has consequences. Mr. Patel and Thandiwe taught me to investigate what my spending and investing support."},
+      {from:"Future me — are you following the plan? Did you max the TFSA? Did you start the RA? Did you hold on when cash flow was negative? Did you remember that wealth is five things, not one? Did you vote with your rands for the world you want?",to:"Future me — are you still reviewing the plan? Did you use regulated products and verify tax rules before acting? Did you protect liquidity before forcing a property timeline? Did you remember that wealth is five things, not one?"},
+      {from:"From me, in Grade 11 Date: _____________________",to:"From me, in Form 4 Term 1 Date: _____________________"},
+    ],
+  },
+  "g11-t3-l60-060": {
+    title:"ADVANCED WEALTH CHECKPOINT — LEGACY COMES NEXT",
+    textReplacements:[
+      {from:"\"Next term, Term 4 — your final term of Grade 11. You will explore legacy. What you leave behind. The architect's ultimate question: will the structure outlast you? Will it serve others when you are gone?\"",to:"\"The next learning cycle in Form 4 Term 1 is legacy. You have designed how wealth might be built. Now ask what it is for, who it serves and what should remain after you.\""},
+      {from:"Mama Rose hands Myah a small container of food. \"For the road, child. Do not forget what you learned. Do not forget that wealth is five things, not one. Do not forget that every rand is a vote. Do not forget that you can build something that matters — something that outlasts you.\"",to:"Mama Rose hands Myah a small container of food. \"For the road, child. Do not forget what you learned. Wealth is five things, not one. Money has consequences. Build something that matters — and build it so the value can outlast you.\""},
+      {from:"You finished Term 3 of Grade 11.",to:"You completed the advanced wealth cycle of Form 4 Term 1. The legacy cycle begins next."},
+    ],
+  },
   "g9-t1-l01-001": {
     textReplacements: [
       {from:"Recall key learning from Grade 8 and assess what you carry forward.",to:"Recall key learning from Form 1 and assess what you carry forward."},
