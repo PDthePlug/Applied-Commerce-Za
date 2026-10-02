@@ -1828,7 +1828,7 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
   },
   "g10-t3-l45-045": {
     appendBlocks:[
-      {kind:"text",type:"note",text:"Zimbabwe check: insurance and pensions are regulated by IPEC. Before relying on an insurer or policy, verify the provider, understand the policy wording, exclusions, excess/deductible, claim process and what evidence a claim requires. Product names and prices change."},
+      {kind:"text",type:"paragraph",text:"Zimbabwe check: insurance and pensions are regulated by IPEC. Before relying on an insurer or policy, verify the provider, understand the policy wording, exclusions, excess/deductible, claim process and what evidence a claim requires. Product names and prices change."},
     ],
   },
   "g10-t3-l46-046": {
@@ -1850,7 +1850,7 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
       },
     ],
     appendBlocks:[
-      {kind:"text",type:"note",text:"Zimbabwe check: insurance products, premiums and exclusions vary. IPEC is the sector regulator. Verify the provider and read the actual policy before treating a benefit as guaranteed."},
+      {kind:"text",type:"paragraph",text:"Zimbabwe check: insurance products, premiums and exclusions vary. IPEC is the sector regulator. Verify the provider and read the actual policy before treating a benefit as guaranteed."},
     ],
   },
   "g10-t3-l47-047": {
@@ -1860,7 +1860,7 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
       {from:"Key idea: Gogo Maria does not have much. But she has enough to fight over. And she has seen what happens when families fight over money after someone dies. The dining table becomes a battlefield. The few thousand rand becomes a wound that never heals. Her will is not about distributing wealth. It is about preventing conflict. It is a final act of love — a way of saying: I thought about you, I planned for you, I protected you from each other.",to:"Key idea: succession planning is not only for wealthy people. Clear records and a valid will can reduce uncertainty, but a will must comply with current Zimbabwe law. The lesson is not to draft a legal instrument from a school worksheet; it is to understand why planning, documentation and qualified advice matter."},
     ],
     appendBlocks:[
-      {kind:"text",type:"note",text:"Zimbabwe legal context: wills are governed by the Wills Act [Chapter 6:06], while deceased-estate administration is governed through the Administration of Estates Act [Chapter 6:01] and related law. This lesson is education, not legal advice."},
+      {kind:"text",type:"paragraph",text:"Zimbabwe legal context: wills are governed by the Wills Act [Chapter 6:06], while deceased-estate administration is governed through the Administration of Estates Act [Chapter 6:01] and related law. This lesson is education, not legal advice."},
     ],
   },
   "g10-t3-l48-048": {
