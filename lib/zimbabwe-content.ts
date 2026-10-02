@@ -1358,6 +1358,7 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
   "g10-t2-l25-025": {
     title:"CREDIT RECORDS — THE FILE LENDERS MAY READ",
     textReplacements: [
+      {from:"Credit Score Plan",to:"Credit Record Plan"},
       {from:"📘 Credit Score Ranges",to:"📘 Credit Records and Lender Assessment"},
       {from:"📘 What Affects Your Credit Score",to:"📘 What Can Affect Your Credit Record"},
       {from:"If you cannot ask anyone: Research how to check your credit record in South Africa. Write down the steps. One day you will need them.",to:"If you cannot ask anyone: research Zimbabwe's Central Credit Registry through the Reserve Bank of Zimbabwe. Write down what a credit report or record is used for and where consumers can find current official guidance."},
