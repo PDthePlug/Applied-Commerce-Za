@@ -57,6 +57,9 @@ jobs:
       - name: Zimbabwe Form 3 Term 2 detail
         run: TARGET_GRADE=10 SOURCE_TERMS=3,4 node scripts/audit_zimbabwe_form3_range.mjs
 
+      - name: Zimbabwe Form 3 Term 3 detail
+        run: TARGET_GRADE=11 SOURCE_TERMS=1,2 node scripts/audit_zimbabwe_form3_range.mjs
+
       - name: Zimbabwe Form 3 runtime localisation audit
         run: node scripts/audit_zimbabwe_form3_runtime.mjs
 
