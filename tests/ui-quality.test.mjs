@@ -146,16 +146,17 @@ test("Zimbabwe lesson localisation uses explicit source-preserving overlays",()=
 
 test("Form 1 closing sequence is structurally localised for Zimbabwe",()=>{
   const overlay=read("lib/zimbabwe-content.ts");
-  assert.match(overlay,/LOOKING BACK AT FORM 1/);
-  assert.match(overlay,/LOOKING AHEAD TO FORM 2/);
-  assert.match(overlay,/FINAL PORTFOLIO AND FAREWELL TO FORM 1/);
-  assert.match(overlay,/all three terms/);
-  assert.match(overlay,/Read it in Form 4/);
-  assert.match(overlay,/three terms of evidence/);
-  assert.match(overlay,/kind:"remove"/);
-  assert.match(overlay,/Shona, Ndebele/);
-  assert.doesNotMatch(overlay,/all four terms/);
-  assert.doesNotMatch(overlay,/four terms of evidence/);
+  const form1=overlay.slice(overlay.indexOf('"g8-'),overlay.indexOf('"g9-'));
+  assert.match(form1,/LOOKING BACK AT FORM 1/);
+  assert.match(form1,/LOOKING AHEAD TO FORM 2/);
+  assert.match(form1,/FINAL PORTFOLIO AND FAREWELL TO FORM 1/);
+  assert.match(form1,/all three terms/);
+  assert.match(form1,/Read it in Form 4/);
+  assert.match(form1,/three terms of evidence/);
+  assert.match(form1,/kind:"remove"/);
+  assert.match(form1,/Shona, Ndebele/);
+  assert.doesNotMatch(form1,/all four terms/);
+  assert.doesNotMatch(form1,/four terms of evidence/);
 });
 
 
