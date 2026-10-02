@@ -1178,7 +1178,7 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
       {from:"Visit a small business in your community — a spaza shop, a vendor, a service provider. Observe for ten minutes. Apply PESTLE in your head. Write down: What is the biggest threat they face? What could they do about it — that they are not currently doing?",to:"Visit or observe a small business in your community — a tuckshop, vendor, market stall or service provider. Apply PESTLE. What is one major external factor affecting them? What response could they test?"},
     ],
     tableTextReplacements: [
-      {from:"many tuckshops in Katlehong",to:"many small shops in the local market"},
+      {from:"Katlehong",to:"the local market"},
       {from:"Spaza shop",to:"Tuckshop"},
       {from:"spaza shop",to:"tuckshop"},
       {from:"many spaza shops in Katlehong",to:"many small shops in the same local market"},
@@ -1366,6 +1366,8 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
       {from:"Credit scores",to:"Credit records"},
       {from:"credit score",to:"credit record"},
       {from:"Credit score",to:"Credit record"},
+      {from:"If you cannot ask anyone: Research how to check your credit record in South Africa. Write down the steps. One day you will need them.",to:"If you cannot ask anyone: research Zimbabwe's Central Credit Registry through the Reserve Bank of Zimbabwe. Write down what a credit report or record is used for and where consumers can find current official guidance."},
+      {from:"| Date | | | Lesson | Lesson 25 — Credit Record Plan | | Experiment/Observation | I learned how credit records work and designed a plan to build one. | | Result | | | Learning | | | Next Action | |",to:"| Date | | | Lesson | Lesson 25 — Credit Record Plan | | Experiment/Observation | I learned how credit records and lender screening work and designed a plan for responsible borrowing behaviour. | | Result | | | Learning | | | Next Action | |"},
       {from:"Last month, he applied for a small car loan — R60,000. The bank said no.",to:"Last month, he applied for a small vehicle loan in an illustrative example. The lender said no after reviewing affordability and credit information."},
       {from:"If you cannot ask anyone: Research how to check your credit score in South Africa. Write down the steps. One day you will need them.",to:"If you cannot ask anyone: research Zimbabwe's Central Credit Registry through the Reserve Bank of Zimbabwe. Write down what a credit report/record is used for and where a consumer can find current official guidance."},
     ],
