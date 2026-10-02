@@ -11,12 +11,18 @@ export type ZimbabweRangeReplacement = {
   replacement: ContentBlock[];
 };
 
+export type ZimbabweTableReplacement = {
+  cellIncludes: string;
+  rows: string[][];
+};
+
 export type ZimbabweUnitOverride = {
   title?: string;
   label?: string;
   blocks?: ZimbabweBlockOverride[];
   textReplacements?: Array<{from:string;to:string}>;
   rangeReplacements?: ZimbabweRangeReplacement[];
+  tableReplacements?: ZimbabweTableReplacement[];
   appendBlocks?: ContentBlock[];
 };
 
@@ -846,6 +852,26 @@ function applyZimbabweStructuralDefaults(block:ContentBlock):ContentBlock{
   return {...block,rows:block.rows.map(row=>row.slice(0,2))};
 }
 
+function applyReviewedTableReplacements(
+  blocks:ContentBlock[],
+  replacements:ZimbabweTableReplacement[]=[],
+):ContentBlock[]{
+  if(!replacements.length) return blocks;
+  const matched=new Set<number>();
+  const result=blocks.map(block=>{
+    if(block.kind!=="table") return block;
+    const flat=block.rows.flat();
+    const index=replacements.findIndex(item=>flat.some(cell=>cell.includes(item.cellIncludes)));
+    if(index<0) return block;
+    matched.add(index);
+    return {...block,rows:replacements[index].rows};
+  });
+  replacements.forEach((item,index)=>{
+    if(!matched.has(index)) throw new Error(`Zimbabwe table override not found: ${item.cellIncludes}`);
+  });
+  return result;
+}
+
 function applyReviewedRangeReplacements(
   blocks:ContentBlock[],
   ranges:ZimbabweRangeReplacement[]=[],
@@ -911,7 +937,10 @@ export function applyZimbabweUnitOverlay(unit:UnitContent):UnitContent{
     blocks:[
       ...applyReviewedTextReplacements(
         applyReviewedRangeReplacements(
-          applyBlockOverrides(unit.blocks,override?.blocks),
+          applyReviewedTableReplacements(
+            applyBlockOverrides(unit.blocks,override?.blocks),
+            override?.tableReplacements,
+          ),
           override?.rangeReplacements,
         ),
         override?.textReplacements,
