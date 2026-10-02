@@ -1579,6 +1579,435 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
       {from:"You finished Term 2 of Grade 10.",to:"You completed Form 3 Term 1 — value creation, saving, investing, assets and financial planning."},
     ],
   },
+  "g10-t3-l37-037": {
+    title:"INTRODUCTION TO SYSTEMS THINKING — THE KOMBI RANK AS A SYSTEM",
+    textReplacements:[
+      {from:"📘 The Taxi Rank as a System — Myah's Map, Two Years Later",to:"📘 The Kombi Rank as a System — Myah's Map, Seen Differently"},
+      {from:"Myah is waiting for a taxi. She has been waiting at this rank since Grade 8. But today, she sees it differently.",to:"Myah is waiting for a kombi. She has known this rank since Form 1. But today, she sees it differently."},
+      {from:"She pulls out her notebook — the same one she has kept since Grade 9 — and starts drawing. Taxis arriving and leaving. Queue marshals directing passengers. Vendors selling food and drinks. Commuters rushing, waiting, negotiating. Money changing hands. Information flowing — who is going where, how much, how long.",to:"She pulls out her notebook — the same one she has kept since Form 2 — and starts drawing. Kombis arriving and leaving. Rank marshals directing passengers. Vendors selling food and drinks. Commuters rushing, waiting and negotiating. Money and information flow through the same place."},
+      {from:"She draws arrows connecting everything. The taxi rank is not a collection of people and vehicles. It is a system. Each part depends on the others. If one part changes, everything changes.",to:"She draws arrows connecting everything. The kombi rank is not a collection of people and vehicles. It is a system. Each part affects the others. If one important part changes, other parts may change too."},
+      {from:"\"The taxi rank. As a system. Look. If the taxis raise their prices, what happens?\"",to:"\"The kombi rank. As a system. Look. If fares rise, what might happen?\""},
+      {from:"\"People might take different taxis. Or fewer people travel. Or vendors sell less. Or marshals have less work.\"",to:"\"People might change routes, travel less, spend less with vendors, or adjust how they organise transport.\""},
+      {from:"She shows him her diagram. At the centre: money flowing. Arrows from commuters to taxi drivers to taxi owners. Arrows from vendors to suppliers. Arrows from everyone to the spaza shop, the airtime seller, the queue marshal collecting his R2 per taxi. A web. A system.",to:"She shows him her diagram. At the centre: value and money flowing. Arrows from commuters to drivers and operators. Arrows from vendors to suppliers. Arrows to the tuckshop, airtime seller and rank services. A web. A system."},
+      {from:"\"I drew this exact map in Grade 9 for my Community Money Map project,\" she says. \"But I was just tracing the money then. Now I am seeing the system. The difference is: if one part breaks — if the taxi owners raise prices, if the vendors disappear, if the marshals stop working — the whole thing shifts. Not just one part. Everything.\"",to:"\"I drew a version of this in Form 2 for my Community Money Map,\" she says. \"Then I was tracing flows. Now I am asking how the parts depend on one another — and what happens when a key part changes.\""},
+      {from:"Key idea: A system is not a list. It is a web. The taxi rank is not taxis plus drivers plus passengers. It is the relationships between them — who pays whom, who waits for whom, who depends on whom. Your money is not income plus expenses plus savings. It is the relationships between them — what flows where, what feeds what, what drains what. Seeing the system is the first step. Most people never take it.",to:"Key idea: A system is not a list. It is a web. The kombi rank is not vehicles plus drivers plus passengers. It is the relationships between them — who depends on whom, what flows, where delays happen and what changes when one part moves. Your money works the same way. Seeing the relationships is the first step."},
+      {from:"This week, observe one system in action — your family's morning routine, the tuck shop queue, a taxi rank, a spaza shop. Watch for 10 minutes. Write down: What are the parts? What flows between them? What happens when something changes — a person is late, a price changes, something runs out?",to:"This week, observe one system in action — your family's morning routine, a school queue, a kombi rank, a tuckshop or a market. Watch for 10 minutes. What are the parts? What flows between them? What changes when a person is late, a price moves or something runs out?"},
+    ],
+    tableTextReplacements:[
+      {from:"Taxi rank",to:"Kombi rank"},
+      {from:"Taxis, drivers, passengers, marshals, vendors",to:"Kombis, drivers, passengers, marshals, vendors"},
+    ],
+  },
+  "g10-t3-l38-038": {
+    textReplacements:[
+      {from:"Myah is at Emmanuel's spaza shop. The shelves are full. The customers are steady. Everything looks normal. But six months ago, everything nearly collapsed.",to:"Myah is at Emmanuel's tuckshop. The shelves are full. The customers are steady. Everything looks normal. But six months ago, everything nearly collapsed."},
+      {from:"Old System: Wholesaler → Spaza shop → Customers (Simple. Reliable. One point of failure.)",to:"Old System: Wholesaler → Tuckshop → Customers (Simple. Efficient. One major point of failure.)"},
+      {from:"New System: Supplier A → Spaza shop → Customers Supplier B → Spaza shop → Customers Supplier C → Spaza shop → Customers (More complex. More expensive. But if one fails, the others still work.)",to:"New System: Supplier A → Tuckshop → Customers Supplier B → Tuckshop → Customers Supplier C → Tuckshop → Customers (More complex and sometimes more expensive, but less dependent on one supplier.)"},
+    ],
+  },
+  "g10-t3-l39-039": {
+    textReplacements:[
+      {from:"Myah is at Mama Rose's kitchen, her notebook open. She has been thinking about systems since the taxi rank diagram. Now she wants to map her own money.",to:"Myah is at Mama Rose's kitchen, her notebook open. She has been thinking about systems since the kombi-rank diagram. Now she wants to map her own money."},
+      {from:"She draws her OLD system — the one she had before Grade 9:",to:"She draws her OLD system — the one she had before Form 2:"},
+      {from:"Then she draws her NEW system — the one she built after Grade 9, after the grant office, after the water business, after the habit tracker:",to:"Then she draws her NEW system — the one she built through Form 2 after the committee-office lesson, the water test, the Community Money Map and the habit tracker:"},
+      {from:"Income (delivery service, water sales) → AUTOMATED transfer: R200 to savings (FIRST, before anything else) → Remaining: budgeted expenses (tracked) → Snacks: R50/week, cash only, when it is gone it is gone → Emergency fund: building slowly from extra income → Investing: TFSA, started this year, R100/month",to:"Income (delivery service, small enterprise work) → planned transfer: US$20 to savings in this illustration → remaining money assigned to tracked expenses → discretionary spending capped at US$5/week → emergency buffer built from extra income → long-term investing through a regulated product only after checking fees, risk, access and provider status"},
+    ],
+    tableTextReplacements:[
+      {from:"R200 transfers to savings automatically on payday",to:"US$20 moves to savings first in this illustrative system"},
+    ],
+  },
+  "g10-t3-l40-040": {
+    textReplacements:[
+      {from:"She circles the savings arrow. In the old system, savings happened last — after everything else. Whatever was left. Usually nothing. In the new system, savings happens first. R200 moves automatically before she can spend it. That one change — moving savings from last to first — transformed her entire system.",to:"She circles the savings arrow. In the old system, saving happened last. In the new system, an illustrative US$20 is assigned first. The important leverage point is not the amount; it is the order of operations."},
+      {from:"She circles another point. The snack budget. R50 a week. Cash only. When it is gone, it is gone. That one rule — cash only — removed the need for willpower. She does not resist snacks. The cash runs out. The system says no for her.",to:"She circles another point. Discretionary spending is capped at an illustrative US$5 a week. Once the amount is used, the system requires a pause. The rule reduces repeated decisions and makes the boundary visible."},
+    ],
+  },
+  "g10-t3-l41-041": {
+    title:"THE ZIMBABWE TAX SYSTEM — LEARNING TO READ THE CURRENT RULES",
+    textReplacements:[
+      {from:"Understand how the progressive tax system works in South Africa.",to:"Understand the basic logic of Zimbabwe PAYE and why current ZIMRA tax tables must be checked rather than memorised."},
+      {from:"He moves another piece. \"In South Africa, we have a progressive tax system. That means the more you earn, the higher percentage you pay. But — and this is what most people get wrong — you do NOT pay the higher rate on ALL your income. You only pay it on the portion ABOVE each threshold.\"",to:"He moves another piece. \"Zimbabwe's employee income tax is administered through PAYE by ZIMRA. The tables can change and ZIMRA may publish separate currency tables. The durable lesson is how marginal brackets work: a higher rate applies to the portion of income inside that bracket, not automatically to every dollar you earn.\""},
+      {from:"How Tax Works in South Africa",to:"How to Read a Zimbabwe PAYE Table"},
+      {from:"Key idea: Tax is not theft. It is the price of civilisation. Every time you pay tax, you are paying for roads, schools, clinics, police, parks. You are paying for the society you live in. But you should also understand the system well enough to pay only what you owe — not a rand more. That is not evasion. That is literacy.",to:"Key idea: tax is a legal obligation that helps finance public functions. Financial literacy means understanding what applies to you, keeping records, checking current official information and paying what the law requires — neither inventing extra obligations nor hiding income."},
+      {from:"Here’s the tension: the tax system rewards those who understand it and punishes those who do not. The wealthy have accountants. They know about deductions, tax-free vehicles, legal structures. The working poor have PAYE deducted before they see their money. They pay what the system takes. They do not plan. They do not optimize. The tax system is progressive on paper. The effective rate — after all deductions and strategies — is often lower for the wealthy than for those who earn just enough to cross the threshold. Understanding this is not an excuse for tax evasion. It is a call to learn the rules. The rules exist. Learn them. Use them legally. Pay what you owe. Not a rand more.",to:"Here’s the tension: tax rules can be difficult to understand and they can change. People with professional advice may navigate them more easily than people without it. That is a reason to build source-checking habits, not a reason to evade tax. Learn what applies, use legitimate provisions only when they actually apply to you, and seek qualified help when the situation becomes complex."},
+      {from:"Question 2: If you earn R50,000 per year and the threshold is R95,750, do you pay income tax? Why or why not? What does your answer tell you about who the tax system protects most?",to:"Question 2: Why is it risky to copy an old tax threshold from a textbook into a real-life decision? Which official source should you check for the current Zimbabwe PAYE table, and what date should you record when you use it?"},
+    ],
+    tableReplacements:[
+      {
+        cellIncludes:"R0 – R95,750",
+        rows:[
+          ["Illustrative income band","Illustrative marginal rate"],
+          ["First US$100","0%"],
+          ["Next US$200","10%"],
+          ["Amount above US$300","20%"],
+        ],
+      },
+      {
+        cellIncludes:"Primary rebate: R17,235",
+        rows:[
+          ["Concept","What to check in Zimbabwe"],
+          ["PAYE","Employee income tax administered by ZIMRA"],
+          ["Tax table","Use the latest applicable ZIMRA table and note the currency and effective date"],
+          ["Marginal bracket","A rate applying to the portion of income within a stated band"],
+          ["Other rules","Only apply deductions, credits or exemptions that current law actually allows"],
+        ],
+      },
+      {
+        cellIncludes:"R80,000",
+        rows:[
+          ["Illustrative taxable income","Calculation using the lesson's fictional table","Illustrative tax"],
+          ["US$80","All inside the 0% band","US$0"],
+          ["US$200","First US$100 at 0%; next US$100 at 10%","US$10"],
+          ["US$400","First US$100 at 0%; next US$200 at 10%; last US$100 at 20%","US$40"],
+        ],
+      },
+    ],
+    rangeReplacements:[
+      {
+        startIncludes:"\"And then there is the rebate.",
+        endIncludes:"Understand the system. Then navigate it.\"",
+        replacement:[
+          {kind:"text",type:"paragraph",text:"Mr. Khumalo points to the date on the page. \"This is the habit I want you to learn: never treat a tax table as timeless. ZIMRA publishes the current tables. Before you calculate a real obligation, check the official source, the effective date and the currency.\""},
+          {kind:"text",type:"paragraph",text:"He uses a fictional table to teach the maths: first US$100 at 0%, the next US$200 at 10%, and anything above US$300 at 20%. If taxable income in the exercise is US$400, the calculation is US$0 + US$20 + US$20 = US$40. These are teaching numbers, not Zimbabwe's current tax rates."},
+          {kind:"text",type:"reflection",text:"The durable skill is not memorising a rate. It is knowing how to read the current table, calculate by band and verify your answer."},
+        ],
+      },
+      {
+        startIncludes:"If you earn R120,000 per year:",
+        endIncludes:"Tax payable = R6,305",
+        replacement:[
+          {kind:"text",type:"section",text:"Illustrative Progressive-Tax Practice"},
+          {kind:"text",type:"paragraph",text:"Using the fictional lesson table only, calculate tax on US$250 and US$500. Then explain which parts of the calculation would change if ZIMRA published a new table tomorrow."},
+        ],
+      },
+    ],
+  },
+  "g10-t3-l42-042": {
+    title:"TAX PLANNING — LEGAL, ETHICAL & CURRENT",
+    textReplacements:[
+      {from:"Tax-Free Savings Accounts",to:"Tax Planning Is a Current-Rules Exercise"},
+      {from:"If you were earning R150,000 per year in your first job, what is ONE legal strategy you could use to reduce your taxable income?",to:"Imagine you start earning taxable employment or business income. What is ONE responsible tax-planning habit you should build before looking for any deduction or incentive?"},
+      {from:"Here’s the tension: the line between avoidance and evasion can blur. Some strategies are technically legal but morally questionable. Some exploit loopholes that were never intended for ordinary people. The question is not just \"Is this legal?\" The question is also \"Is this right?\" The tax code cannot answer that question. Only your conscience can. Build your wealth. Minimize your tax legally. But do not become the person who exploits every loophole while the roads crumble and the clinics close. Pay what you owe. Not a rand more. But not a rand less either.",to:"Here’s the tension: legal tax planning still requires judgment. A strategy that applied last year may not apply now. A deduction that applies to one taxpayer may not apply to another. The safe principle is simple: keep accurate records, disclose honestly, use only provisions you can support under current law, and get qualified advice when the facts are complex."},
+      {from:"Question 2: A tax-free savings account allows you to invest R36,000 per year with no tax on growth. Who benefits most from this incentive — the rich, the poor, or everyone? Defend your answer. If it mainly benefits the rich, is the incentive fair?",to:"Question 2: Why is it dangerous to teach a named tax incentive as permanent? Explain how you would verify whether a deduction, exemption or incentive is available in Zimbabwe today before using it in a plan."},
+      {from:"If you cannot ask: Research how to open a TFSA in South Africa. Write down the steps. One day you will need them.",to:"If you cannot ask anyone: use ZIMRA's current official guidance to find one legitimate deduction, exemption or incentive that applies to a clearly defined taxpayer situation. Record the source date and explain who qualifies. Do not assume it applies to you."},
+    ],
+    tableReplacements:[
+      {
+        cellIncludes:"Tax-free savings account",
+        rows:[
+          ["Planning habit","How it helps"],
+          ["Keep accurate records","You can support income, expenses and claims with evidence"],
+          ["Separate business and personal records","Makes legitimate business expenses easier to identify and verify"],
+          ["Check current ZIMRA guidance","Rates, thresholds, deductions and incentives can change"],
+          ["Use only provisions that actually apply","A legal provision is not a personal entitlement unless you meet its conditions"],
+          ["Seek qualified help when needed","Complex tax, business or cross-border situations may require a registered professional"],
+        ],
+      },
+      {
+        cellIncludes:"Maximum per year",
+        rows:[
+          ["Question before using any tax strategy","Why it matters"],
+          ["What rule am I relying on?","Name the current law, ZIMRA guidance or official table"],
+          ["Who qualifies?","Check the conditions instead of copying someone else's strategy"],
+          ["What evidence is required?","Keep the records the rule expects"],
+          ["What is the effective date?","Tax rules change; stale advice can be wrong"],
+          ["Do I need professional advice?","Ask when the facts are complex or the amount is material"],
+        ],
+      },
+    ],
+    rangeReplacements:[
+      {
+        startIncludes:"\"The most powerful one for someone your age is the tax-free savings account.",
+        endIncludes:"That is playing the game as it was designed.\"",
+        replacement:[
+          {kind:"text",type:"paragraph",text:"Mr. Khumalo taps the table. \"Do not build your strategy around a product name from another country or an old textbook. Build it around a process: earn honestly, keep records, separate personal and business money, check current ZIMRA guidance, and use a deduction or incentive only when the current rules say you qualify.\""},
+          {kind:"text",type:"paragraph",text:"\"The smartest tax strategy at your age is source discipline. Know where the rule comes from. Know the date. Know the conditions. And never confuse reducing tax legally with hiding income or falsifying records.\""},
+        ],
+      },
+    ],
+  },
+  "g10-t3-l43-043": {
+    title:"RETIREMENT — GOGO MARIA'S TABLE & THE POWER OF TIME",
+    textReplacements:[
+      {from:"Identify basic retirement vehicles available in South Africa.",to:"Identify the main retirement layers relevant in Zimbabwe and explain why product rules must be checked before choosing one."},
+      {from:"She pulls out a piece of paper — the same one she has carried for years. It is laminated now. She takes it to every stokvel meeting. Every church group. Every community gathering. She calls it \"The Table.\"",to:"She pulls out a piece of paper — the same one she has carried for years. It is laminated now. She takes it to mukando meetings, church groups and community gatherings. She calls it \"The Table.\""},
+      {from:"\"Look at this,\" she says, pointing at the difference between starting at 20 and starting at 30. \"Same R500 a month. Start at 20, you have over R2 million. Start at 30, you have R1.1 million. The difference is not the money you put in. You put in R60,000 more if you start at 20. The difference is the TIME. Those ten extra years of compounding are worth over R1 million. Time is the ingredient you cannot buy. You either have it or you do not. And you —\" she points at Myah \"— you have it. I did not. I learned this at 65. You are learning it at 16. Do not waste it.\"",to:"\"Look at the difference,\" she says. \"In this illustration, the monthly amount is the same — US$20 — but the start date changes. Starting at 20 gives the money ten more years to compound than starting at 30. The exact result depends on the return actually achieved, which is never guaranteed. The lesson is time, not a promised percentage.\""},
+      {from:"Myah stares at the numbers. She has seen them before. But something is different now. She is 16. If she starts at 20, she has 45 years of compounding. Forty-five years. She does the math in her head. R500 a month is not possible right now. But R100? R100 a month from age 20 to 65 at 8% — that is still over R450,000. From R36,000 saved. Time does the heavy lifting.",to:"Myah stares at the numbers. She understands that a learner does not need to start a retirement product today to learn the principle. The action now is to understand compounding, build the saving habit, and later choose a suitable regulated retirement or investment arrangement when income and eligibility make that realistic."},
+      {from:"Retirement Vehicles in South Africa",to:"Retirement Layers in Zimbabwe"},
+      {from:"If you started saving R200 per month for retirement at age 20, what could it grow to by 65? Does that feel possible right now — or impossible? What would need to change to make it possible?",to:"If an adult invested US$20 per month from age 20 to 65 and achieved an illustrative 8% annual return, what does the example show about time? Why must you avoid treating 8% as a guarantee?"},
+      {from:"If you save R200 per month starting at age 20, at 8% growth, about how much will you have at 65? (Use the Rule of 72: 72 ÷ 8 = 9 years to double. In 45 years, about 5 doubles.)",to:"Using the lesson's illustrative US$20/month example and an assumed 8% return, compare starting at age 20 with starting at age 30. Then list three reasons real results could differ: fees, changing returns and interrupted contributions."},
+      {from:"Starting amount after 45 years of R200/month: about R _______ After 5 doubles: about R _______",to:"Illustrative result if the assumptions held: about US$105,491 by age 65 when starting at 20. This is a maths illustration, not a forecast or guarantee."},
+      {from:"Key idea: Gogo Maria's table does not lie. R500 a month from age 20 becomes R2.3 million. The same R500 from age 30 becomes R1.1 million. The difference is not the money. The difference is the time. Time is the ingredient you cannot buy more of. You either start early or you pay for the delay — in rands, in freedom, in options. The math is indifferent to your feelings. It does not care if you are ready. It only cares if you start.",to:"Key idea: Gogo Maria's table is an illustration, not a promise. The durable lesson is that more time can make compounding more powerful. Real returns move, fees matter and contributions can stop. Start by building the habit and learning how regulated retirement and investment options work before committing real money."},
+    ],
+    tableReplacements:[
+      {
+        cellIncludes:"Retirement annuity",
+        rows:[
+          ["Term","Definition"],
+          ["Retirement","The stage when paid work reduces or stops and income must come from other sources"],
+          ["NSSA","Zimbabwe's statutory social-security institution, including retirement benefits for qualifying contributors"],
+          ["Occupational/private pension","A retirement arrangement linked to employment or a private pension scheme, subject to current rules and regulation"],
+          ["Individual pension policy","A personally arranged retirement product offered through an appropriately regulated provider"],
+          ["Compound growth","Growth on earlier contributions and prior growth; actual returns are not guaranteed"],
+        ],
+      },
+      {
+        cellIncludes:"R270,000",
+        rows:[
+          ["Start age","Monthly amount","Years to age 65","Total contributed","Illustrative value at 8%"],
+          ["20","US$20","45","US$10,800","~US$105,491"],
+          ["25","US$20","40","US$9,600","~US$69,820"],
+          ["30","US$20","35","US$8,400","~US$45,878"],
+          ["35","US$20","30","US$7,200","~US$29,807"],
+          ["40","US$20","25","US$6,000","~US$19,021"],
+          ["50","US$20","15","US$3,600","~US$6,921"],
+        ],
+      },
+      {
+        cellIncludes:"Provident fund",
+        rows:[
+          ["Retirement layer","How it works in principle","What to verify before relying on it"],
+          ["NSSA social-security provision","Provides statutory benefits to qualifying contributors","Coverage, contribution record and current qualification rules"],
+          ["Employer occupational pension","May be provided through an employer or occupational scheme","Scheme rules, contributions, vesting, fees and regulator status"],
+          ["Individual pension arrangement","Personally arranged through a regulated provider","Provider status, fees, access rules, risk and benefit structure"],
+          ["Personal long-term saving/investing","Additional assets built outside a pension arrangement","Risk, diversification, liquidity, fees and suitability"],
+        ],
+      },
+    ],
+  },
+  "g10-t3-l44-044": {
+    title:"RETIREMENT LAYERS — WHO BUILDS THE SYSTEM WHEN WORK STOPS?",
+    textReplacements:[
+      {from:"He points to another worker. \"Mr. Nkosi. He has been here eight years. He also has a pension fund. But he also has a retirement annuity — an RA. He set it up himself. He contributes R300 a month. It reduces his taxable income. The money grows. At retirement, he will have both — the pension from me, and the RA from himself. Two streams. He will not be rich. But he will be secure.\"",to:"He points to another worker. \"Mr. Nkosi has been here eight years. He contributes to the statutory and employment-linked arrangements that apply to him, and he also chose an additional individual pension arrangement through a regulated provider. He is building more than one retirement layer instead of assuming one source will be enough.\""},
+      {from:"\"Correct. I have an RA. I contribute every month. I also have a TFSA — for tax-free growth. And I have the business itself — which I will either sell or pass to my children. The employees have structures I build for them. I must build my own. That is the difference between being an employee and being an employer. Employees get structures. Employers must design them. Both have advantages. Both have risks. The key is knowing which one you are — and planning accordingly.\"",to:"\"Correct. As an owner, I must understand which statutory obligations apply to me and my workers, what private pension arrangements I choose, and how the business itself fits into my long-term plan. Being an employer does not remove the need for retirement planning. It makes the design responsibility more visible.\""},
+      {from:"Part B: Your Vehicle",to:"Part B: Your Retirement Layers"},
+      {from:"Based on your likely situation, which retirement vehicle(s) would you choose? Why?",to:"Based on your likely future situation, which retirement layers would you investigate first — NSSA coverage where applicable, an employer pension, an individual pension arrangement, and/or personal long-term investments? Explain what you would need to verify before choosing."},
+      {from:"My vehicle(s): _________________________________",to:"Layers I would investigate: _________________________________"},
+      {from:"Part C: The Tax Benefit",to:"Part C: The Current-Rules Check"},
+      {from:"If you contribute R500/month to an RA (R6,000/year) and you are in the 18% tax bracket, how much tax do you save per year? R _______",to:"Find the current ZIMRA and provider guidance for one retirement arrangement. Does the current tax law provide any relevant treatment or deduction? Record the date and source. Do not assume a benefit from an old textbook."},
+      {from:"The Affirmation: Mr. Patel's workers have pension funds because he set them up. Mr. Patel has an RA because he set it up himself. The employees have structures. The employer must build his own. Neither path is easier. Both require discipline. The employee who ignores their pension fund is no better off than the entrepreneur who never opens an RA. The vehicle matters less than the habit. The habit matters less than the decision to start. The decision to start matters less than the persistence to continue. Retirement is not a product you buy. It is a practice you sustain over decades.",to:"The Affirmation: retirement is not one product. It is a long-term system. Statutory social security, employer pensions, individual pension arrangements and personal long-term assets can play different roles. The exact products and tax treatment can change. What should remain is the habit of contributing, checking fees and rules, and reviewing whether the system still fits your life."},
+      {from:"The Paradoxical Reversal: But here is the tension: the best retirement vehicle is the one you actually use. An RA with great tax benefits is useless if you never open one. A simple TFSA with no tax deduction but easy access might be better if it means you actually start. The perfect vehicle you never use is worse than the imperfect vehicle you contribute to every month. Do not let the search for the best option prevent you from using the good option you have access to right now.",to:"The Paradoxical Reversal: accessibility matters, but so do rules, fees, liquidity and protection. The easiest product is not automatically the best one, and the most sophisticated product is not automatically suitable. Learn the layers, verify the provider and rules, and start only with an arrangement you understand."},
+      {from:"The Personal Pivot: What is the SIMPLEST retirement vehicle you could access right now — even if it is not the \"best\" one? What is stopping you from starting it this year?",to:"The Personal Pivot: what is one retirement concept you can understand this year even if you are not yet ready or eligible to open a product? What question will you ask an older working person about their retirement system?"},
+      {from:"Question 1: What is the difference between a pension fund and a retirement annuity? Which one can you set up yourself?",to:"Question 1: Explain the difference between statutory social-security provision, an employer occupational pension and an individually arranged pension product. Why might one person use more than one layer?"},
+      {from:"Question 2: If you are self-employed and have no employer pension, what is your plan for retirement? If your answer is \"I will figure it out later,\" what does Gogo Maria's table say about the cost of that delay?",to:"Question 2: If you are self-employed and have no employer pension, what questions must you answer about statutory obligations, regulated personal pension options and long-term investing before you can say you have a retirement plan?"},
+      {from:"Ask a working family member: \"What retirement savings do you have? Pension? RA? How did you choose?\" Listen. Write down what they say. Most people have whatever their employer gave them — and nothing else.",to:"Ask a working family member: \"What retirement arrangements do you have — NSSA, an employer pension, a private pension or other long-term investments? How did you choose?\" Listen without assuming their arrangement is right for you."},
+      {from:"If you cannot ask anyone: Research how to open an RA in South Africa. What is the minimum contribution? What are the fees? Write down what you find.",to:"If you cannot ask anyone: use NSSA and IPEC consumer information to map the retirement layers available in Zimbabwe. Pick one private option only if you can verify the provider is appropriately regulated, then record its fees and access rules."},
+    ],
+    tableReplacements:[
+      {
+        cellIncludes:"Provident fund",
+        rows:[
+          ["Term","Definition"],
+          ["NSSA retirement benefit","Statutory retirement benefit for qualifying contributors under current NSSA rules"],
+          ["Occupational pension","Employment-linked retirement arrangement governed by its scheme rules"],
+          ["Individual pension policy","Personal retirement arrangement through an appropriately regulated provider"],
+          ["Personal long-term investments","Additional assets that may support later-life income but are not automatically a pension"],
+        ],
+      },
+      {
+        cellIncludes:"RA",
+        rows:[
+          ["Feature","NSSA / statutory layer","Employer pension","Individual pension","Personal investments"],
+          ["Set up by","Law / statutory system","Employer or occupational scheme","You with a regulated provider","You through suitable regulated channels"],
+          ["Contribution rules","Current statutory rules","Scheme rules","Product and current legal rules","Your plan and product rules"],
+          ["Access / benefits","Current NSSA rules","Scheme rules","Product rules","Depends on asset and provider"],
+          ["Key check","Contribution record and eligibility","Fees, vesting, portability","Fees, provider status, access, risk","Risk, fees, diversification, liquidity"],
+        ],
+      },
+    ],
+    rangeReplacements:[
+      {
+        startIncludes:"The Power of Tax Deductions",
+        endIncludes:"The government gave you R5,000 to save for yourself.",
+        replacement:[
+          {kind:"text",type:"section",text:"Tax Treatment Must Be Checked, Not Assumed"},
+          {kind:"text",type:"paragraph",text:"Retirement arrangements can have tax consequences, but those rules change. Do not copy a South African retirement deduction or an old Zimbabwe rule into a real decision. Check current ZIMRA guidance and the product or scheme rules. If the tax treatment is important to the decision, get qualified advice."},
+        ],
+      },
+    ],
+  },
+  "g10-t3-l45-045": {
+    appendBlocks:[
+      {kind:"text",type:"note",text:"Zimbabwe check: insurance and pensions are regulated by IPEC. Before relying on an insurer or policy, verify the provider, understand the policy wording, exclusions, excess/deductible, claim process and what evidence a claim requires. Product names and prices change."},
+    ],
+  },
+  "g10-t3-l46-046": {
+    title:"TYPES OF INSURANCE — NALEDI AT THE KOMBI RANK",
+    textReplacements:[
+      {from:"📘 Naledi at the Taxi Rank — The Actuary Who Explained Risk",to:"📘 Naledi at the Kombi Rank — The Actuary Who Explained Risk"},
+      {from:"Myah is waiting for a taxi when a young woman sits down next to her.",to:"Myah is waiting for a kombi when a young woman sits down next to her."},
+    ],
+    tableReplacements:[
+      {
+        cellIncludes:"Funeral cover",
+        rows:[
+          ["Term","Definition"],
+          ["Life cover","May provide a benefit when an insured person dies, according to the policy terms"],
+          ["Property / motor cover","May protect vehicles, homes, equipment or possessions against specified losses"],
+          ["Health / medical cover","May help meet specified healthcare costs, depending on the product and provider"],
+          ["Funeral cover","May provide a defined funeral-related benefit, subject to policy terms and exclusions"],
+        ],
+      },
+    ],
+    appendBlocks:[
+      {kind:"text",type:"note",text:"Zimbabwe check: insurance products, premiums and exclusions vary. IPEC is the sector regulator. Verify the provider and read the actual policy before treating a benefit as guaranteed."},
+    ],
+  },
+  "g10-t3-l47-047": {
+    title:"SUCCESSION & LEGACY PLANNING — GOGO MARIA'S WILL",
+    textReplacements:[
+      {from:"\"I watched them — people I love, people who love each other — become enemies over a dining table and a few thousand rand. I decided that would not happen to my children. I do not have much. A small house. Some savings. A few things my children might want. My daughter gets the house. My son gets the savings. My grandchildren get my jewellery. Simple. But if I did not write it down, there would be fights. I know my children. I love them. And I know that money changes people.\"",to:"\"I watched people I love argue over a dining table and a small amount of money. I decided I did not want silence to create more conflict. I do not have much — a small house, some savings and personal items — but I want my wishes recorded properly and legally.\""},
+      {from:"Key idea: Gogo Maria does not have much. But she has enough to fight over. And she has seen what happens when families fight over money after someone dies. The dining table becomes a battlefield. The few thousand rand becomes a wound that never heals. Her will is not about distributing wealth. It is about preventing conflict. It is a final act of love — a way of saying: I thought about you, I planned for you, I protected you from each other.",to:"Key idea: succession planning is not only for wealthy people. Clear records and a valid will can reduce uncertainty, but a will must comply with current Zimbabwe law. The lesson is not to draft a legal instrument from a school worksheet; it is to understand why planning, documentation and qualified advice matter."},
+    ],
+    appendBlocks:[
+      {kind:"text",type:"note",text:"Zimbabwe legal context: wills are governed by the Wills Act [Chapter 6:06], while deceased-estate administration is governed through the Administration of Estates Act [Chapter 6:01] and related law. This lesson is education, not legal advice."},
+    ],
+  },
+  "g10-t3-l48-048": {
+    title:"WILLS, BENEFICIARIES & LEGAL FORMALITIES — ZIMBABWE",
+    textReplacements:[
+      {from:"Identify who can be an heir and who cannot be a witness.",to:"Identify the roles of testator, beneficiary, witness and executor, and explain why current Zimbabwe will formalities must be checked before signing."},
+      {from:"Requirements for a Valid Will in South Africa",to:"Zimbabwe Will Formalities — Verify the Current Law"},
+      {from:"If you died without a will tomorrow, who would get your belongings under the Intestate Succession Act? Is that who you would choose?",to:"If a person dies without a valid will, succession is governed by applicable Zimbabwe law rather than by a private wish. Why is that a reason to seek qualified advice before relying on a homemade document?"},
+      {from:"Part B: The Witness Check",to:"Part B: The Formalities Check"},
+      {from:"Look at your beneficiaries. Who CANNOT be a witness to your will? Why?",to:"What witness, signature and conflict-of-interest rules would you need to verify under the current Zimbabwe Wills Act before signing a real will?"},
+      {from:"Cannot be witnesses: _________________________________",to:"Rules I would verify with a qualified source: _________________________________"},
+      {from:"Question 1: What are the four requirements for a valid will in South Africa? Why can a beneficiary not be a witness?",to:"Question 1: Why is it unsafe to memorise a four-point foreign will checklist and assume it creates a valid Zimbabwe will? Name the Zimbabwe law you would check and one reason to seek qualified legal advice."},
+    ],
+    tableReplacements:[
+      {
+        cellIncludes:"cannot be a beneficiary",
+        rows:[
+          ["Term","Working definition"],
+          ["Testator","The person making the will"],
+          ["Beneficiary","A person or entity intended to receive a benefit under a will"],
+          ["Witness","A person who witnesses the execution of a will subject to current legal rules"],
+          ["Executor","The person responsible for administering the estate under the relevant legal process"],
+          ["Intestate","Dying without a valid will, so applicable succession law governs the estate"],
+        ],
+      },
+      {
+        cellIncludes:"Oral wills generally not valid",
+        rows:[
+          ["Legal-safety question","What to do"],
+          ["Which law applies?","Check the current Zimbabwe Wills Act [Chapter 6:06] and related law"],
+          ["What signing and witness formalities apply?","Verify the current requirements before signing"],
+          ["Are there conflicts or disqualifications?","Check before choosing witnesses or beneficiaries"],
+          ["Who will administer the estate?","Understand the executor / estate-administration process"],
+          ["Is the document legally sufficient?","Use qualified legal advice rather than treating this workbook as a will template"],
+        ],
+      },
+    ],
+    rangeReplacements:[
+      {
+        startIncludes:"\"One: it must be in writing.",
+        endIncludes:"It just applies the formula.\"",
+        replacement:[
+          {kind:"text",type:"paragraph",text:"Advocate Dlamini closes the workbook and says: \"Do not turn a school lesson into a legal checklist. Zimbabwe has a Wills Act, and the formalities matter. The law can contain detailed rules, exceptions and consequences that a simplified paragraph will miss.\""},
+          {kind:"text",type:"paragraph",text:"\"If you ever make a real will, check the current law, make sure the signing and witness requirements are correctly followed, keep the document safely, and get qualified legal advice where the estate or family situation is important or complex.\""},
+          {kind:"text",type:"paragraph",text:"\"If there is no valid will, applicable Zimbabwe succession law governs what happens. That is why the objective here is legal literacy — not DIY legal drafting.\""},
+        ],
+      },
+    ],
+  },
+  "g10-t3-l49-049": {
+    textReplacements:[
+      {from:"Feeling losses more intensely than equivalent gains — losing R100 hurts more than finding R100 feels good",to:"Feeling losses more intensely than equivalent gains — losing US$10 can feel more painful than gaining US$10 feels good"},
+      {from:"\"When I was 30, I inherited R10,000 from my father. It was more money than I had ever had. He told me to save it. Put it away. Let it grow. But I saw a beautiful coat. Expensive. I bought it.\"",to:"\"When I was 30, I inherited the equivalent of US$1,000 in this story. It was more money than I had ever controlled at once. My father had told me to save it. But I saw a beautiful coat. Expensive. I bought it.\""},
+      {from:"She pauses. \"I wore it three times. Then it did not fit. Then it went out of style. Then it was just a coat in the cupboard, and the money was gone. I could have invested that R10,000. It would be worth hundreds of thousands today. Instead, I have a memory of a coat I barely wore.\"",to:"She pauses. \"I wore it three times. Then it did not fit. Then it went out of style. The important lesson is not a fantasy number about what the money 'would definitely be worth' today. It is that I traded a flexible financial asset for a short-lived emotional reward without pausing to compare the alternatives.\""},
+    ],
+    tableTextReplacements:[
+      {from:"Losing R100 hurts more than gaining R100 feels good",to:"Losing US$10 may feel more painful than gaining US$10 feels good"},
+    ],
+  },
+  "g10-t3-l50-050": {
+    textReplacements:[
+      {from:"This term, you have explored the architecture of financial life. Systems. Tax. Retirement. Insurance. Estate planning. The psychology of money. Now it is your turn to design.",to:"In this learning cycle, you have explored the architecture of financial life: systems, tax literacy, retirement, insurance, succession planning and the psychology of money. Now it is your turn to design."},
+      {from:"Your project is to design a complete, integrated financial system for yourself. Not one piece. Everything. Income. Saving. Spending. Debt. Investing. Protection. Tax planning. Retirement. Estate planning. Psychology. All of it. Working together as one system.",to:"Your project is to design a complete, integrated financial system for yourself: income, saving, spending, debt, investing, protection, tax habits, retirement layers, succession/legacy planning and psychology — working together as one system."},
+      {from:"Here’s the tension: the component you are avoiding is the one that will make or break your system. If you skip retirement planning because it feels too far away, your 65-year-old self pays the price. If you skip estate planning because it feels morbid, your family pays the price. If you skip the psychology component because it feels too personal, your own brain will sabotage every other component. The strategist does not avoid the hard parts. The strategist starts with them.",to:"Here’s the tension: the component you avoid can become the weak link. Retirement feels far away. Succession planning feels uncomfortable. Psychology feels personal. The strategist does not need to solve every adult decision now, but does need to understand the questions, build source-checking habits and create a system that can grow with real life."},
+    ],
+    tableReplacements:[
+      {
+        cellIncludes:"TFSA, RA",
+        rows:[
+          ["Component","What to include"],
+          ["Income","Current and future sources, dependencies and reliability"],
+          ["Saving","Amount, purpose, currency and routine"],
+          ["Spending","Budget, tracking and decision rules"],
+          ["Debt","Repayment approach, affordability and red lines"],
+          ["Investing","Time horizon, diversification, fees, risk and regulated-provider checks"],
+          ["Protection","Emergency fund, insurance priorities and backup systems"],
+          ["Tax","Record keeping, current ZIMRA source checks and professional help triggers"],
+          ["Retirement","NSSA / employer / individual pension layers as relevant, plus long-term assets"],
+          ["Succession & legacy","Records, wishes, future will and legal-advice trigger"],
+          ["Psychology","Rules and systems that protect against predictable biases"],
+        ],
+      },
+    ],
+  },
+  "g10-t3-l51-051": {
+    textReplacements:[
+      {from:"Myah is at Mama Rose's kitchen, her notes from three terms spread across the table. Term 1: systems, value, business structures. Term 2: saving, investing, compound interest, debt. Term 3: tax, retirement, insurance, estate planning, psychology.",to:"Myah is at Mama Rose's kitchen, her notes from the Form 3 journey spread across the table. Earlier work: value creation, saving, investing, assets and debt. Current cycle: systems, tax literacy, retirement, insurance, succession planning and psychology."},
+      {from:"Income flows into savings (automated, first). Savings flows into investing (TFSA, retail bonds). Investing flows toward retirement (RA from age 20). Protection wraps around everything (emergency fund, insurance). Tax planning reduces what leaks out. Estate planning ensures what remains goes where it should. Psychology rules protect the whole system from herself.",to:"Income flows into planned saving. Saving supports an emergency buffer and suitable regulated investments. Long-term assets connect to retirement layers. Protection wraps around the system through emergency reserves and insurance. Tax habits keep records and current rules visible. Succession planning protects records, wishes and future legal decisions. Psychology rules protect the system from predictable impulsive behaviour."},
+    ],
+  },
+  "g10-t3-l52-052": {
+    textReplacements:[
+      {from:"Myah points at it. \"This is your weakest link. You have R500 a month going to savings. What if R100 of that went to an RA? You would still save R400. And you would start retirement. The tax benefit alone would give you back about R18 per month. That is free money. From the government. For doing something you should be doing anyway.\"",to:"Myah points at it. \"This is your weakest link. In your illustration you have US$50 a month going to general savings but no retirement layer at all. What if you earmarked US$10 for a regulated long-term retirement or investment arrangement once you are eligible and understand the rules? Do not assume a tax benefit. Verify the product, fees, access and current tax treatment first.\""},
+      {from:"Thabo stares at the page. Then he adds: \"RA: R100/month starting January. TFSA: R200/month for medium-term goals.\" The weakest link just got stronger.",to:"Thabo stares at the page. Then he adds: \"Retirement layer: investigate NSSA / employer / regulated individual options before I start contributing. Medium-term investment: US$20/month in this illustration only after checking risk, fees and provider status.\" The weakest link just got more specific."},
+    ],
+  },
+  "g10-t3-l54-054": {
+    textReplacements:[
+      {from:"Emmanuel presents his spaza shop system. Supply chain redundancy. Tax planning. Insurance. Retirement for his mother. \"I learned that a system is what keeps you alive when things go wrong.\"",to:"Emmanuel presents his tuckshop system. Supply-chain redundancy. Tax record keeping. Insurance. Retirement layers for his mother. \"I learned that a system is what keeps you functioning when one part goes wrong.\""},
+      {from:"Nosipho presents her tutoring system. Income tracking. Tax filing. Retirement annuity. Psychology rules. \"I learned that a system grows with you. What I need now is different from what I will need at 25.\"",to:"Nosipho presents her tutoring system. Income tracking. Tax source checks. A future regulated retirement layer. Psychology rules. \"I learned that a system grows with you. What I need now is different from what I will need at 25.\""},
+      {from:"Sipho presents his repair business system. The same Sipho who had no goals in Grade 8. Who melted his sweets. Who cut up his credit card.",to:"Sipho presents his repair-business system. The same Sipho who had no goals in Form 1, who melted his sweets, learned from the loss and rebuilt."},
+    ],
+  },
+  "g10-t3-l55-055": {
+    title:"SYSTEMS & PROTECTION CYCLE REFLECTION",
+    textReplacements:[
+      {from:"Lesson 37: Systems thinking. The taxi rank as a system — mapped again, seen differently. Lesson 38: Supply chains. Emmanuel's bottleneck. Efficiency vs resilience. Lesson 39-40: Her financial system. Before and after. Automation. Leverage points. Lesson 41-42: Tax. Mr. Khumalo's chess game. The line between avoidance and evasion. Lesson 43-44: Retirement. Gogo Maria's laminated table. Mr. Patel's factory floor. Lesson 45-46: Insurance. Mr. Daniels' burned garage. Naledi at the taxi rank. Lesson 47-48: Estate planning. Gogo Maria's will. Advocate Dlamini's rules. Lesson 49: Psychology. Mrs. Nkosi's coat. The pause where wisdom lives. Lesson 50-54: Her Financial System. Complete. Integrated. Ten components. All connected.",to:"Lessons 37–40: systems thinking, the kombi rank, bottlenecks and personal financial systems. Lessons 41–42: Zimbabwe tax literacy — ZIMRA, current tables, records and the line between legal planning and evasion. Lessons 43–44: retirement layers — NSSA, employer pensions, regulated individual options and the power of time. Lessons 45–46: insurance and regulated-provider checks. Lessons 47–48: succession planning, wills and the need to verify Zimbabwe legal formalities. Lesson 49: money psychology. Lessons 50–54: the integrated Financial System project."},
+      {from:"I started this term thinking systems were boring. Now I know they are freedom. A system is not a cage. It is a track. It is what lets you sleep at night. It is what protects you when things go wrong. I have built a system. It is not perfect. But it is mine. And it will grow with me. I am ready for Term 4.",to:"I started this cycle thinking systems were boring. Now I see them as tracks that make good decisions easier to repeat. My system is not perfect and many adult products or legal decisions will only become relevant later. But I know how to ask better questions, verify current rules and improve the design. I am ready for the financial-independence cycle."},
+      {from:"✍️ Activity 55: My Term 3 Reflection — With Scale",to:"✍️ Activity 55: My Systems & Protection Cycle Reflection — With Scale"},
+      {from:"9. The Scale: At the start of the term, you were a \"1\" on the systems literacy scale. Where are you now — honestly? What is the exact number? What is the ONE thing you need to do in Term 4 to move up by a single point?",to:"9. The Scale: Where were you on the systems-literacy scale at the start of this cycle, and where are you now? What is ONE thing you need to practise during the rest of Form 3 Term 2 to move up by one point?"},
+      {from:"What will you carry forward to Term 4?",to:"What will you carry forward into the financial-independence cycle?"},
+      {from:"Share your Term 3 reflection with your family. Tell them what you learned and what you are proud of.",to:"Share your systems-and-protection reflection with your family. Tell them what you learned and what you are proud of."},
+      {from:"| Date | | | Lesson | Lesson 55 — Term 3 Reflection | | Experiment/Observation | I reflected on my entire Term 3 journey. | | Result | My systems literacy number: ___ / 10 | | Learning | | | Next Action | |",to:"| Date | | | Lesson | Lesson 55 — Systems & Protection Reflection | | Experiment/Observation | I reflected on this Form 3 learning cycle. | | Result | My systems literacy number: ___ / 10 | | Learning | | | Next Action | |"},
+    ],
+  },
+  "g10-t3-l56-056": {
+    title:"SYSTEMS & PROTECTION PORTFOLIO CHECKPOINT",
+    textReplacements:[
+      {from:"Organize your complete Term 3 work.",to:"Organize your complete systems-and-protection cycle work."},
+      {from:"📘 Your Term 3 Portfolio",to:"📘 Your Systems & Protection Portfolio Checkpoint"},
+      {from:"☐ Tax calculation practice (Lesson 41)",to:"☐ Illustrative tax-bracket practice + current ZIMRA source check (Lesson 41)"},
+      {from:"☐ Retirement vehicle choice (Lesson 44)",to:"☐ Zimbabwe retirement-layer comparison (Lesson 44)"},
+      {from:"☐ Estate planning reflection (Lesson 47)",to:"☐ Succession and legacy planning reflection (Lesson 47)"},
+      {from:"☐ Will first draft thinking (Lesson 48)",to:"☐ Zimbabwe will-formalities research and legal-safety reflection (Lesson 48)"},
+      {from:"☐ Term 3 reflection with scale (Lesson 55)",to:"☐ Systems & Protection reflection with scale (Lesson 55)"},
+    ],
+  },
+  "g10-t3-l57-057": {
+    title:"LETTER TO MY FUTURE SELF — SYSTEMS CHECKPOINT",
+    textReplacements:[
+      {from:"I am writing this at the end of Term 3, Grade 10. I am 16. I have designed a complete financial system. Ten components. All connected. It is not perfect. But it is real. And it is mine. I learned that a system is not a cage. It is a track. I learned that tax is the price of civilisation — and that the government rewards things it wants you to do. I learned that retirement starts now. Gogo Maria's table does not lie. I learned that insurance is not waste — it is peace of mind. I learned that a will is an act of love. And I learned that my own brain is my worst financial enemy — but I can out-structure it. Future me — are you following the system? Did it hold when life got hard? What broke? What did you rebuild? I hope you are still building. I hope you are still protecting. I hope you are still becoming. With love, Myah",to:"I am writing this during Form 3 Term 2, after completing the systems-and-protection cycle. I have designed an integrated financial system and learned something more important than memorising products: check the current rule, understand the institution, read the contract, protect against large risks, and design around my own predictable behaviour. Future me — did the system hold? Which rules changed? What did you update when life changed? I hope you are still checking sources, still building and still protecting what matters. With love, Myah"},
+      {from:"From me, in Grade 10",to:"From me, in Form 3"},
+      {from:"📂 Portfolio: Keep this letter safe. Read it at the end of Term 4.",to:"📂 Portfolio: Keep this letter safe. Read it at the end of Form 3 Term 2."},
+    ],
+  },
+  "g10-t3-l58-058": {
+    title:"TRANSITION — FROM FINANCIAL SYSTEMS TO FINANCIAL INDEPENDENCE",
+    textReplacements:[
+      {from:"Say a final goodbye to Term 3.",to:"Close the systems-and-protection learning cycle."},
+      {from:"Step into Term 4 ready.",to:"Step into the financial-independence learning cycle ready."},
+      {from:"There are no more lessons for Term 3. No more activities. No more checkpoints. Just this moment.",to:"The systems-and-protection cycle is complete. Form 3 Term 2 is not over: the next cycle asks what your financial system is ultimately meant to make possible."},
+      {from:"\"You started this term not knowing what a system was. Now you have designed one. A complete one. For your whole financial life. You know about tax. You know about retirement. You know about insurance. You know about estate planning. You know about your own mind. You are not the same person who walked through that door in July. Go. Be. Become.\"",to:"\"You started this cycle without seeing how the pieces connect. Now you can map a financial system, check current tax sources, identify retirement layers, evaluate insurance, understand why will formalities need legal care, and design around your own biases. The next question is what all of that structure is for.\""},
+      {from:"You finished Term 3 of Grade 10.",to:"You completed the systems-and-protection cycle of Form 3 Term 2."},
+      {from:"You explored systems, tax, retirement, insurance, estate planning, and the psychology of money. You designed a complete financial system for yourself. You are not the same person who started Applied Commerce in July. You think in systems. You understand tax and retirement. You protect what matters. You plan for the future. You know how emotions affect money. You have a complete financial system.",to:"You explored systems, Zimbabwe tax literacy, retirement layers, insurance, succession planning and money psychology. You designed an integrated financial system. Now you will use that system to examine financial independence, multiple income streams, ethics, impact and the final Form 3 plan."},
+      {from:"Keep going. Term 4 awaits.",to:"Keep going. Form 3 Term 2 continues."},
+    ],
+  },
   "g9-t1-l01-001": {
     textReplacements: [
       {from:"Recall key learning from Grade 8 and assess what you carry forward.",to:"Recall key learning from Form 1 and assess what you carry forward."},
