@@ -34,7 +34,7 @@ function bundle(grade){
 
 function placement(grade,sourceTerm,startLesson){
   if(grade===8) return [1,startLesson<=26?1:startLesson<=53?2:3];
-  if(grade===9) return [2,startLesson<=25?1:startLesson<=50?2:3];
+  if(grade===9) return [2,startLesson<=25?1:startLesson<=54?2:3];
   if(grade===10) return [3,sourceTerm<=2?1:2];
   if(grade===11) return sourceTerm<=2?[3,3]:[4,1];
   if(grade===12) return [4,sourceTerm<=2?2:3];
@@ -62,7 +62,7 @@ function deliveryCounts(){
 test("Zimbabwe O-Level map uses four Forms and twelve delivery terms",()=>{
   const counts=deliveryCounts();
   assert.deepEqual(counts[1],[26,26,27]);
-  assert.deepEqual(counts[2],[25,25,25]);
+  assert.deepEqual(counts[2],[25,29,21]);
   assert.deepEqual(counts[3],[36,40,40]);
   assert.deepEqual(counts[4],[40,40,32]);
   assert.deepEqual(Object.values(counts).map(terms=>terms.reduce((sum,n)=>sum+n,0)),[79,75,116,112]);
@@ -119,4 +119,19 @@ test("Form 1 gardening story is localised from Limpopo into Zimbabwe",()=>{
   assert.match(overlay,/THE GARDENERS OF MASHONALAND EAST/);
   assert.match(overlay,/The Moyo family lives in a village in Mashonaland East/);
   assert.match(overlay,/Then Gogo Moyo had an idea/);
+});
+
+
+test("Form 2 term boundary preserves the complete 21-day habit project",()=>{
+  const g9=bundle(9);
+  const placements=new Map();
+  for(const sourceTerm of g9.terms){
+    for(const unit of sourceTerm.units.filter(unit=>unit.type==="lesson")){
+      placements.set(unit.startLesson,placement(9,sourceTerm.term,unit.startLesson)[1]);
+    }
+  }
+  assert.equal(placements.get(50),2);
+  assert.equal(placements.get(51),2);
+  assert.equal(placements.get(54),2);
+  assert.equal(placements.get(55),3);
 });
