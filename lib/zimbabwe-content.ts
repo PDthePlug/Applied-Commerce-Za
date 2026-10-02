@@ -1098,6 +1098,7 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
   },
   "g10-t1-l05-005": {
     textReplacements: [
+      {from:"Key idea: Thabo's business looked profitable. It was. But it was less profitable than he thought. And the gap between what he thought and what was true almost broke him. The paradox: the more successful you become, the easier it is to ignore the small leaks. When revenue is growing, R20 here and R30 there feel insignificant. But they add up. And one day, something breaks — a bike, a body, a relationship — and the buffer you thought you had is not there. Because it was never there. You just did not know it.",to:"Key idea: Thabo's business looked profitable, but hidden costs made it less profitable than he thought. Small untracked amounts can look insignificant while revenue is growing, yet they accumulate and weaken the buffer. The strategic response is not fear; it is a simple, repeatable cost-tracking system."},
       {from:"But last week, his bike needed a major repair. R450. And he did not have it.",to:"But last week, his bike needed a major repair. In this illustrative example, the repair cost US$45. He did not have it."},
       {from:"Myah found him at Emmanuel's spaza shop, staring at a piece of paper covered in numbers.",to:"Myah found him at Emmanuel's tuckshop, staring at a piece of paper covered in numbers."},
       {from:"Thabo had been tracking his revenue carefully. Every delivery. Every payment. R2,400 in a good month. But he had not been tracking his costs with the same discipline. He knew the big ones — bike maintenance, airtime, the occasional snack for an elder. But the small ones? The R20 here for a bolt. The R30 there for a new tyre tube. The R10 for parking at the taxi rank when he had to wait. The R50 he gave his younger cousin to help with a delivery when he was sick. He had not counted any of it.",to:"Thabo had been tracking revenue carefully. Every delivery. Every payment. In a good month, about US$240 in this example. But he had not tracked costs with the same discipline. He knew the obvious costs — bike maintenance and airtime. The small ones were missing: US$2 for a bolt, US$3 for a tyre tube, US$1 for a small rank-related cost, US$5 paid to his younger cousin for helping with a delivery. He had not counted any of it."},
@@ -1177,6 +1178,7 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
       {from:"Visit a small business in your community — a spaza shop, a vendor, a service provider. Observe for ten minutes. Apply PESTLE in your head. Write down: What is the biggest threat they face? What could they do about it — that they are not currently doing?",to:"Visit or observe a small business in your community — a tuckshop, vendor, market stall or service provider. Apply PESTLE. What is one major external factor affecting them? What response could they test?"},
     ],
     tableTextReplacements: [
+      {from:"many tuckshops in Katlehong",to:"many small shops in the local market"},
       {from:"Spaza shop",to:"Tuckshop"},
       {from:"spaza shop",to:"tuckshop"},
       {from:"many spaza shops in Katlehong",to:"many small shops in the same local market"},
@@ -1208,6 +1210,8 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
   },
   "g10-t1-l16-016": {
     textReplacements: [
+      {from:"R680",to:"US$68"},
+      {from:"R80",to:"US$8"},
       {from:"Lesson 1: Strategic Audit. Her scar inventory. The cooler box. The grant office silence — still there, still teaching. Lesson 2: The kitchen that broke. Mama Rose on her back. Thandiwe failing in public. Single point of failure. Lesson 3: Karabo's payslip. Understanding versus agreeing. Navigating systems you did not choose. Lesson 4: Income control. Zinhle's napkin. Amount versus control. The streams you own. Lesson 5: Thabo's hidden costs. R680 he did not know he was spending. Lesson 6: Lethabo and Sizwe. Partnership without agreement. Trust without structure. Lesson 7: Thandi's cooperative. Free riders. Enforcement. The rules you do not write. Lesson 8: Bottlenecks. Lethabo checking every clock. Letting go. Lesson 9: Intellectual property. Protecting what you build. Building what cannot be copied. Lesson 10: Pricing. Nosipho naming R80. The body knowing the truth before the mind. Lesson 11: Competitive analysis. Emmanuel's mall. PESTLE. Porter's Five Forces. Cooperation as defense. Lesson 12: Brand truth. The sign that was true. Marketing as honesty. Lesson 13: Her Value-Creation Plan. The financial literacy workshop. Systematized. Lesson 14: Feedback. The flaw she did not see. …",to:"Lesson 1: Strategic Audit and scar inventory. Lesson 2: The kitchen that broke — single points of failure. Lesson 3: Karabo's payslip — understanding PAYE and deductions before reacting. Lesson 4: Income streams and dependency. Lesson 5: Thabo's hidden costs — US$68 he had not counted. Lesson 6: Lethabo and Sizwe — trust without structure. Lesson 7: Thandi's cooperative — rules, participation and enforcement. Lesson 8: Bottlenecks and scale. Lesson 9: Intellectual property and defensible value. Lesson 10: Pricing with evidence. Lesson 11: PESTLE and competitive forces. Lesson 12: Brand truth. Lessons 13–15: the Value-Creation Plan — designed, tested and presented."},
       {from:"From me, in Grade 10 Date: _____________________",to:"From me, in Form 3 Date: _____________________"},
       {from:"You finished Term 1 of Grade 10.",to:"You completed the first Form 3 learning cycle: value creation, business systems and enterprise architecture. Form 3 Term 1 continues with saving, investing and assets."},
@@ -1216,6 +1220,7 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
   "g10-t2-l17-017": {
     title:"SAVING VS INVESTING — PROTECTING MONEY FOR DIFFERENT JOBS",
     textReplacements: [
+      {from:"List any money you have saved — in a bank, in a jar, with a stokvel, anywhere.",to:"List any money you have saved — in a bank, in a jar, through a mukando or another savings arrangement."},
       {from:"📘 The R800 That Shrank",to:"📘 The US$80 That Lost Purchasing Power"},
       {from:"Myah has R800 in a savings account. She put it there eight months ago, after her water business stabilized. She has not touched it. She checks the balance: R812. R12 interest.",to:"Myah has US$80 in a savings account in this illustrative example. She put it there eight months ago and has not touched it. She checks the balance: US$81.20. The number is slightly higher."},
       {from:"She shows her mother. \"Eight months. R12. That is R1.50 a month.\"",to:"She shows her mother. \"Eight months. US$1.20 earned. The balance grew — but only a little.\""},
@@ -1353,6 +1358,10 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
   "g10-t2-l25-025": {
     title:"CREDIT RECORDS — THE FILE LENDERS MAY READ",
     textReplacements: [
+      {from:"📘 Credit Score Ranges",to:"📘 Credit Records and Lender Assessment"},
+      {from:"📘 What Affects Your Credit Score",to:"📘 What Can Affect Your Credit Record"},
+      {from:"If you cannot ask anyone: Research how to check your credit record in South Africa. Write down the steps. One day you will need them.",to:"If you cannot ask anyone: research Zimbabwe's Central Credit Registry through the Reserve Bank of Zimbabwe. Write down what a credit report or record is used for and where consumers can find current official guidance."},
+      {from:"| Date | | | Lesson | Lesson 25 — Credit Score Plan | | Experiment/Observation | I learned how credit records work and designed a plan to build one. | | Result | | | Learning | | | Next Action | |",to:"| Date | | | Lesson | Lesson 25 — Credit Record Plan | | Experiment/Observation | I learned how credit records and lender screening work and designed a plan for responsible borrowing behaviour. | | Result | | | Learning | | | Next Action | |"},
       {from:"credit scores",to:"credit records"},
       {from:"Credit scores",to:"Credit records"},
       {from:"credit score",to:"credit record"},
