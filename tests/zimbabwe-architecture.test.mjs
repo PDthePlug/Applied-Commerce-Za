@@ -34,7 +34,7 @@ function bundle(grade){
 
 function placement(grade,sourceTerm,startLesson){
   if(grade===8) return [1,startLesson<=26?1:startLesson<=53?2:3];
-  if(grade===9) return [2,startLesson<=25?1:startLesson<=54?2:3];
+  if(grade===9) return [2,startLesson<=34?1:startLesson<=54?2:3];
   if(grade===10) return [3,sourceTerm<=2?1:2];
   if(grade===11) return sourceTerm<=2?[3,3]:[4,1];
   if(grade===12) return [4,sourceTerm<=2?2:3];
@@ -62,7 +62,7 @@ function deliveryCounts(){
 test("Zimbabwe O-Level map uses four Forms and twelve delivery terms",()=>{
   const counts=deliveryCounts();
   assert.deepEqual(counts[1],[26,26,27]);
-  assert.deepEqual(counts[2],[25,29,21]);
+  assert.deepEqual(counts[2],[34,20,21]);
   assert.deepEqual(counts[3],[36,40,40]);
   assert.deepEqual(counts[4],[40,40,32]);
   assert.deepEqual(Object.values(counts).map(terms=>terms.reduce((sum,n)=>sum+n,0)),[79,75,116,112]);
@@ -75,8 +75,7 @@ test("restored Grade 9 lessons 23-34 are all present in the Form 2 map",()=>{
   assert.deepEqual(restored.map(unit=>unit.startLesson),Array.from({length:12},(_,i)=>23+i));
 
   const targetTerms=restored.map(unit=>placement(9,2,unit.startLesson)[1]);
-  assert.deepEqual(targetTerms.slice(0,3),[1,1,1]);
-  assert.deepEqual(targetTerms.slice(3),Array(9).fill(2));
+  assert.deepEqual(targetTerms,Array(12).fill(1));
 });
 
 test("Form 4 remains the launch year and A-Level is excluded from the core map",()=>{
@@ -150,4 +149,18 @@ test("Form 2 structural overlay IDs exist in the corrected Grade 9 source",()=>{
     "g9-t4-l55-045",
     "g9-t4-l75-065",
   ]) assert.ok(ids.has(id),`missing corrected Grade 9 source id: ${id}`);
+});
+
+
+test("Form 2 Community Money Map stays inside Term 1",()=>{
+  const g9=bundle(9);
+  const placements=new Map();
+  for(const sourceTerm of g9.terms){
+    for(const unit of sourceTerm.units.filter(unit=>unit.type==="lesson")){
+      placements.set(unit.startLesson,placement(9,sourceTerm.term,unit.startLesson)[1]);
+    }
+  }
+  assert.equal(placements.get(23),1);
+  assert.equal(placements.get(34),1);
+  assert.equal(placements.get(35),2);
 });
