@@ -51,6 +51,9 @@ jobs:
       - name: Zimbabwe Form 3 source localisation audit
         run: node scripts/audit_zimbabwe_form3_source.mjs
 
+      - name: Zimbabwe Form 3 Term 1 detail
+        run: TARGET_GRADE=10 SOURCE_TERMS=1,2 node scripts/audit_zimbabwe_form3_range.mjs
+
       - name: Typecheck
         run: npm run typecheck
 
