@@ -128,13 +128,13 @@ export const zimbabweTargetTerms: ZimbabweTargetTerm[] = [
   },
   {
     form:2,term:2,title:"Enterprise Capability, Habits & Execution",
-    source:["Grade 9 lessons 26–50"],
+    source:["Grade 9 lessons 26–54"],
     competencies:["problem-solving","self-management","planning-organising","technological-skills"],
-    projectFocus:"Community money-map completion and habit transformation",
+    projectFocus:"Community money-map completion and full habit transformation",
   },
   {
     form:2,term:3,title:"Community Enterprise & Portfolio",
-    source:["Grade 9 lessons 51–75"],
+    source:["Grade 9 lessons 55–75"],
     competencies:["entrepreneurship","research","communication-teamwork","leadership","problem-solving"],
     projectFocus:"Community enterprise project",
   },
