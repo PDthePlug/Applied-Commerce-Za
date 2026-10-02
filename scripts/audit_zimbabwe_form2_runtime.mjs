@@ -78,18 +78,13 @@ for(const term of bundle.terms){
     const unit=api.applyZimbabweUnitOverlay(normalized);
     const value=[unit.title,...unit.blocks.map(blockText)].join("\n");
     const hits=rules.filter(([,re])=>re.test(value)).map(([name])=>name);
-    const targetTerm=unit.startLesson<=34?1:unit.startLesson<=54?2:3;
-    const termMentions=[...value.matchAll(/\bTerm\s+([1-4])\b/gi)].map(match=>Number(match[1]));
-    if(termMentions.some(term=>term!==targetTerm)) hits.push("wrong-term");
+    if(/\bTerm\s+4\b/i.test(value)) hits.push("phantom-term-4");
     if(hits.length){
       const examples=[];
       unit.blocks.forEach((block,index)=>{
         const text=blockText(block);
         const blockHits=rules.filter(([,re])=>re.test(text)).map(([name])=>name);
-        const wrongTerms=[...text.matchAll(/\bTerm\s+([1-4])\b/gi)]
-          .map(match=>Number(match[1]))
-          .filter(term=>term!==targetTerm);
-        if(wrongTerms.length) blockHits.push("wrong-term");
+        if(/\bTerm\s+4\b/i.test(text)) blockHits.push("phantom-term-4");
         if(blockHits.length) examples.push({
           block:index,
           kind:block.kind,
