@@ -135,3 +135,19 @@ test("Form 2 term boundary preserves the complete 21-day habit project",()=>{
   assert.equal(placements.get(54),2);
   assert.equal(placements.get(55),3);
 });
+
+
+test("Form 2 structural overlay IDs exist in the corrected Grade 9 source",()=>{
+  const ids=new Set(
+    bundle(9).terms.flatMap(term=>term.units).filter(unit=>unit.type==="lesson").map(unit=>unit.id)
+  );
+  for(const id of [
+    "g9-t1-l16-015",
+    "g9-t2-l26-025",
+    "g9-t2-l34-033",
+    "g9-t3-l50-049",
+    "g9-t3-l54-053",
+    "g9-t4-l55-054",
+    "g9-t4-l75-074",
+  ]) assert.ok(ids.has(id),`missing corrected Grade 9 source id: ${id}`);
+});
