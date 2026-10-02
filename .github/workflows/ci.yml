@@ -36,6 +36,9 @@ jobs:
       - name: Zimbabwe Form 2 runtime localisation audit
         run: node scripts/audit_zimbabwe_form2_runtime.mjs
 
+      - name: Zimbabwe Form 2 Term 1 enterprise detail
+        run: START_LESSON=1 END_LESSON=16 node scripts/audit_zimbabwe_form2_range.mjs
+
       - name: Typecheck
         run: npm run typecheck
 
