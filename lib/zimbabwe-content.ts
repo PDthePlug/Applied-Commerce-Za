@@ -2008,6 +2008,145 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
       {from:"Keep going. Term 4 awaits.",to:"Keep going. Form 3 Term 2 continues."},
     ],
   },
+  "g10-t4-l59-059": {
+    title:"FORM 3 TERM 2 REVIEW — WHAT HAVE I BUILT SO FAR?",
+    textReplacements:[
+      {from:"Myah sits at Mama Rose's kitchen, her three notebooks from Grade 10 spread across the table. Term 1. Term 2. Term 3. Hundreds of pages. Evidence of becoming.",to:"Myah sits at Mama Rose's kitchen with her Form 3 work spread across the table. Value creation. Investing. Systems. Protection. Hundreds of pages. Evidence of becoming."},
+      {from:"Term 3: Systems thinking. Supply chains. Personal financial systems. Tax. Retirement. Insurance. Estate planning. Psychology. Her Financial System — ten components, all connected. Mr. Khumalo's chess game. Naledi at the taxi rank. Advocate Dlamini's rules. Mrs. Nkosi's coat.",to:"Systems & Protection cycle: systems thinking, supply chains, personal financial systems, Zimbabwe tax literacy, retirement layers, insurance, succession planning and psychology. Her Financial System — ten components, all connected."},
+      {from:"Part A: My Assets from Grade 10",to:"Part A: My Assets from Form 3 Term 2 So Far"},
+      {from:"List THREE assets — skills, habits, mindsets, relationships — you built this year. For each, name one specific situation in Grade 11 where it will give you an advantage.",to:"List THREE assets — skills, habits, mindsets or relationships — you have built so far in Form 3. For each, name one situation in the next learning cycle where it could help you."},
+      {from:"Part B: My Liabilities from Grade 10",to:"Part B: My Liabilities from Form 3 Term 2 So Far"},
+      {from:"List TWO liabilities — patterns, beliefs, blind spots — that Grade 10 revealed. For each, name the situation where it might sabotage you in Grade 11 AND your counter-move.",to:"List TWO liabilities — patterns, beliefs or blind spots — that Form 3 has revealed so far. For each, name the situation where it might undermine you in the next cycle and your counter-move."},
+      {from:"What is ONE question about money or life that Grade 10 did NOT answer for you? Write it down. You will return to it at the end of Term 4.",to:"What is ONE question about money or life that Form 3 has not answered yet? Write it down. You will return to it at the end of Term 2."},
+      {from:"Here’s the tension: And the walking requires not just information, but the willingness to act on it. The gap between what you know and what you do — that is the space where your Grade 11 self will be built or broken. Term 4 is not about learning new concepts. It is about proving — to yourself — that the concepts have become part of you. Can you synthesize everything into a single plan? Can you commit to a vision of your own financial independence? Can you face the question of what your money is actually building — in the world, not just in your account?",to:"Here’s the tension: knowledge only matters when it shapes action. The next Form 3 Term 2 cycle is about synthesis. Can you bring income, investing, protection, systems, ethics and life design into one Financial Independence Plan that is realistic enough to review and revise?"},
+      {from:"Question 2: Choose one asset and one liability from your audit. Which will have the bigger impact on your Grade 11 — the asset you leverage or the liability you fail to manage? What is your plan for both?",to:"Question 2: Choose one asset and one liability from your audit. Which will have the bigger impact on the rest of Form 3 Term 2 — the asset you use or the liability you fail to manage? What is your plan for both?"},
+      {from:"| Date | | | Lesson | Lesson 59 — Year in Review | | Experiment/Observation | I audited my Grade 10 learning and identified what is still unclear. | | Result | | | Learning | | | Next Action | |",to:"| Date | | | Lesson | Lesson 59 — Form 3 Term 2 Review | | Experiment/Observation | I audited my Form 3 learning so far and identified what is still unclear. | | Result | | | Learning | | | Next Action | |"},
+    ],
+  },
+  "g10-t4-l60-060": {
+    title:"WHAT IS FINANCIAL INDEPENDENCE? — MYAH'S EQUATION",
+    textReplacements:[
+      {from:"📘 Ms. Daniels' Question at the Taxi Rank",to:"📘 Ms. Daniels' Question at the Kombi Rank"},
+      {from:"Ms. Daniels meets Myah at the taxi rank. The same bench where they sat at the start of Grade 9. The same flows of money, taxis, vendors, commuters. Everything looks different when you have learned to see it.",to:"Ms. Daniels meets Myah at the kombi rank. The same place where earlier lessons taught her to trace money and value. The same movement of commuters, vendors and transport — but she now sees systems, choices and trade-offs."},
+      {from:"Myah thinks. The taxi rank hums around her. Money flowing. People working. Vendors selling. Drivers driving. Queues waiting.",to:"Myah thinks. The kombi rank hums around her. Money flowing. People working. Vendors selling. Drivers driving. Queues waiting."},
+    ],
+  },
+  "g10-t4-l61-061": {
+    textReplacements:[
+      {from:"Themba is 20 now. He asked to meet Myah at Mama Rose's kitchen — the same place where he first shared his story about tiny habits, about R5 a day, about the power of small things.",to:"Themba is 20 now. He asks to meet Myah at Mama Rose's kitchen — the same place where he first shared his story about tiny habits and the power of small repeated actions."},
+    ],
+    tableReplacements:[
+      {
+        cellIncludes:"Part-time job",
+        rows:[
+          ["Stream","Type","Illustrative Monthly Amount","Control (1-5)","Status"],
+          ["Part-time job","Active","US$150","2","Manager controls hours"],
+          ["Online store","Business","US$80–US$200","3","Platform and demand dependent"],
+          ["Tutoring","Active / self-directed","US$60","4","Growing — he controls clients, rate and schedule"],
+          ["Savings interest","Passive","US$3","5","Small, but not dependent on an employer"],
+        ],
+      },
+    ],
+    tableTextReplacements:[
+      {from:"Spaza shop",to:"Tuckshop"},
+    ],
+  },
+  "g10-t4-l62-062": {
+    textReplacements:[
+      {from:"\"I started at 16. Same as you. Part-time job. R200 a month saved. It felt like nothing. But it was not nothing. It was a seed.\"",to:"\"I started at 16. Same as you. Part-time job. In this illustration I saved US$20 a month. It felt small. But it was a seed.\""},
+      {from:"She pauses. \"But the seed that changed everything was not the savings. It was a study guide. I created it from my own notes. Grade 10 maths. Three months of evenings and weekends. I finished it. Put it online. And waited.\"",to:"She pauses. \"But the seed that changed everything was not the savings. It was a study guide I created from my own Form 3 maths notes. Three months of evenings and weekends. I finished it, put it online and waited.\""},
+      {from:"\"My expenses are R1,200 per month. I am free. I still work — I love my work. But I do not have to. That is the difference. That is financial independence.\"",to:"\"In this illustration my core expenses are US$120 per month and these streams average slightly more than that. I still work because I want to keep growing. The useful idea is not that passive income is effortless. It is that some income can become less tied to today's hours of labour.\""},
+    ],
+    tableReplacements:[
+      {
+        cellIncludes:"TFSA growth",
+        rows:[
+          ["Passive / semi-passive stream","Illustrative Monthly Average"],
+          ["Study-guide sales","US$40"],
+          ["Regulated investment growth or distributions","US$50"],
+          ["Dividend income","US$30"],
+          ["Savings interest","US$5"],
+          ["Total","US$125"],
+        ],
+      },
+    ],
+  },
+  "g10-t4-l64-064": {
+    textReplacements:[
+      {from:"📘 Lethabo's Question at the Spaza Shop",to:"📘 Lethabo's Question at the Tuckshop"},
+      {from:"Lethabo is at Emmanuel's spaza shop. He has a question he has been carrying for weeks.",to:"Lethabo is at Emmanuel's tuckshop. He has a question he has been carrying for weeks."},
+    ],
+  },
+  "g10-t4-l65-065": {
+    textReplacements:[
+      {from:"Imagine a situation where crossing your Red Line would earn you R50,000 — more money than you have ever had. Would you cross it? If your answer is \"it depends,\" your Red Line is not a Red Line. It is a preference. What would it take to make your Red Line absolute?",to:"Imagine a situation where crossing your Red Line would earn you the equivalent of US$5,000 — more money than you have ever controlled. Would you cross it? If your answer is 'it depends,' what does that reveal about whether the line is truly a principle or only a preference?"},
+    ],
+  },
+  "g10-t4-l66-066": {
+    textReplacements:[
+      {from:"Myah adds: \"Mr. Patel told us in Term 1 that the farmer earns the least and the brand owner earns the most. What if socially responsible investing is one way to shift that? Every rand we invest is a vote. The question is not whether we will vote. The question is what we are voting for.\"",to:"Myah adds: \"Earlier we learned that value and bargaining power are not shared equally across a chain. Investing can also express priorities, but labels are not enough. We still have to investigate what an investment actually owns, how it behaves and what evidence supports its claims.\""},
+      {from:"Key idea: Atlehang's question is the question behind everything. Can you build wealth without losing your soul? Every rand you invest is a vote for the kind of world you want. The question is not whether you will vote. You are voting every time you spend, save, or invest. The question is whether you will vote intentionally or by default.",to:"Key idea: money decisions have consequences beyond your own balance. But 'impact' claims should be tested, not romanticised. Ask what the investment actually funds, how impact is measured, what trade-offs exist, and whether the provider is appropriately regulated."},
+    ],
+  },
+  "g10-t4-l67-067": {
+    title:"IMPACT INVESTING — THANDIWE'S STORY AT THE KOMBI RANK",
+    textReplacements:[
+      {from:"📘 Thandiwe's Story — The Bottles at the Taxi Rank",to:"📘 Thandiwe's Story — The Bottles at the Kombi Rank"},
+      {from:"Thandiwe is 22. She started a recycling business at 18. Myah meets her at the taxi rank — Thandiwe is there to collect plastic bottles from the vendors. Every Tuesday.",to:"Thandiwe is 22. She started a recycling business at 18. Myah meets her at the kombi rank — Thandiwe is there to collect plastic bottles from vendors. Every Tuesday."},
+    ],
+  },
+  "g10-t4-l68-068": {
+    textReplacements:[
+      {from:"\"We have spent a year talking about money. Saving. Investing. Insurance. Retirement. Estate planning. Systems.\"",to:"\"We have spent Form 3 so far talking about money: saving, investing, insurance, retirement, succession planning and systems.\""},
+    ],
+  },
+  "g10-t4-l69-069": {
+    title:"FORM 3 TERM 2 CAPSTONE — MY FINANCIAL INDEPENDENCE PLAN",
+    textReplacements:[
+      {from:"Understand the requirements for your Grade 10 final project.",to:"Understand the requirements for your Form 3 Term 2 capstone."},
+      {from:"\"This is it. Your Grade 10 final project. You will create a complete, personal, realistic Financial Independence Plan. Use everything from this year. Everything from Grade 9. Everything from Grade 8. This is the synthesis of three years of learning.\"",to:"\"This is your Form 3 Term 2 capstone. You will create a personal, realistic Financial Independence Plan using the strongest evidence from Form 1, Form 2 and Form 3 so far. It is a synthesis project — not the end of Form 3.\""},
+    ],
+  },
+  "g10-t4-l75-071": {
+    textReplacements:[
+      {from:"Atlehang presents her family's plan. Cooperative kitchen expansion. SRI-aligned investments. \"I learned that my money is a vote. Every rand.\"",to:"Atlehang presents her family's plan. Cooperative-kitchen expansion. Investments screened against both financial and impact criteria. \"I learned that money decisions carry consequences, and that I need evidence before I believe an impact label.\""},
+      {from:"Myah presents last. Her complete Financial Independence Plan. Life vision. Current situation. Goals with failure signals. Income strategy with control scores. Investing plan with fee analysis. Protection. Tax. Retirement from age 20 — projected over R3 million by 65. Estate. Systems. Ethics. Her sweet spot — financial education for young people. \"This plan is not just about money. It is about the life I want to build. And now I know how to build it.\"",to:"Myah presents last. Her Financial Independence Plan includes a life vision, current situation, goals with failure signals, income strategy, investing plan with fee analysis, protection, tax source-checking, retirement layers, succession planning, systems and ethics. Any long-term projections are labelled illustrative and assumption-based. \"This plan is not just about money. It is about the life I want to build — and a system I can review when reality changes.\""},
+    ],
+  },
+  "g10-t4-l76-072": {
+    textReplacements:[
+      {from:"Emmanuel presents. Nosipho presents. Sipho presents — the same Sipho who had no goals in Grade 8. His repair business. His Micro-Exit Plan. His journey from melted sweets to a real income.",to:"Emmanuel presents. Nosipho presents. Sipho presents — the same Sipho who had no goals in Form 1. His repair business. His Micro-Exit Plan. His journey from melted sweets to real evidence of value creation."},
+    ],
+  },
+  "g10-t4-l77-073": {
+    title:"FORM 3 TERM 2 REFLECTION",
+    textReplacements:[
+      {from:"📘 Myah's Final Entry — Grade 10",to:"📘 Myah's Form 3 Term 2 Reflection"},
+      {from:"4. What is the ONE thing I need to do in Grade 11 to move up by a single point?",to:"4. What is the ONE thing I need to do in Form 3 Term 3 to move up by a single point?"},
+    ],
+  },
+  "g10-t4-l78-074": {
+    title:"FORM 3 TERM 2 PORTFOLIO ASSEMBLY",
+    textReplacements:[
+      {from:"Complete Grade 10 portfolio checklist — all four terms, all activities, all reflections, all Log entries, all letters to future self.",to:"Complete Form 3 Term 2 portfolio checklist — value creation, investing and assets, systems and protection, financial independence, all activities, reflections, Log entries and checkpoint letters."},
+    ],
+  },
+  "g10-t4-l79-075": {
+    title:"LETTER TO MY FUTURE SELF — FORM 3 TERM 2",
+    textReplacements:[
+      {from:"Myah writes her final letter of Grade 10. She tells her future self about her Financial Independence Plan. About her sweet spot. About her Red Lines. She ends with: \"Future Me, what was I most wrong about in this letter? What did I get right? And did you follow the plan — or build something better?\"",to:"Myah writes her Form 3 Term 2 letter. She tells her future self about the Financial Independence Plan, her sweet spot, her Red Lines and the rules she expects to review as laws, products and life circumstances change. She ends with: \"Future Me, what was I most wrong about? What did I get right? Did you follow the plan — or build something better from new evidence?\""},
+    ],
+  },
+  "g10-t4-l80-076": {
+    title:"FAREWELL TO FORM 3 TERM 2 — LEVERAGE & LEADERSHIP AWAIT",
+    textReplacements:[
+      {from:"\"You started Grade 8 as a quiet girl at the edge of scenes. Watching. Noticing. In Grade 9, you walked into the grant office. You demanded answers. You became the challenger. In Grade 10, you became the strategist. You learned systems. You designed your financial future. You learned to build things that last.\"",to:"\"You started Form 1 learning to notice. In Form 2, you became more active — testing, mapping and building evidence. In Form 3 so far, you became a strategist: designing systems, studying risk, investing, protection and financial independence.\""},
+      {from:"\"Next year, Grade 11. You will become the architect. You will design structures that outlast you. The observer who noticed everything, the challenger who demanded answers, the strategist who built systems — she will now build structures so others do not struggle the way she did.\"",to:"\"Next comes Form 3 Term 3: leverage, leadership and responsibility. The strategist now becomes more of an architect — learning how people, systems, knowledge and technology can multiply impact, and how responsibility grows with that power.\""},
+      {from:"Myah walks through the door. Into Grade 11. Into whatever comes next.",to:"Myah walks through the door. Into Form 3 Term 3. Into leverage, leadership and whatever the next evidence will teach her."},
+      {from:"You finished Grade 10. Not just a book. Not just a course. A year of becoming. You explored systems, investing, protection, and life design. You designed a complete Financial Independence Plan. You know what you value. You know how to build. You know how to protect. You know your Red Lines. You know your sweet spot.",to:"You finished Form 3 Term 2. You explored value creation, investing, systems, protection and life design. You built a Financial Independence Plan. You know more about what you value, how to build, how to protect, where your Red Lines are and which questions still require current sources or qualified advice."},
+      {from:"Keep going. Grade 11 awaits. The architect is rising.",to:"Keep going. Form 3 Term 3 awaits — leverage, leadership and responsibility."},
+    ],
+  },
   "g9-t1-l01-001": {
     textReplacements: [
       {from:"Recall key learning from Grade 8 and assess what you carry forward.",to:"Recall key learning from Form 1 and assess what you carry forward."},
