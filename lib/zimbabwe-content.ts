@@ -1428,7 +1428,7 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
     ],
     tableReplacements: [
       {
-        cellIncludes:"Retail bond",
+        cellIncludes:"Retail Bond",
         rows:[
           ["Feature","ETF Structure","Collective Investment Scheme","Fixed Deposit"],
           ["What it is","Basket of securities traded on an exchange where available","Pooled fund managed under an investment mandate","Bank deposit locked for an agreed term"],
