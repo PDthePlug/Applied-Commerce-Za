@@ -142,12 +142,12 @@ test("Form 2 structural overlay IDs exist in the corrected Grade 9 source",()=>{
     bundle(9).terms.flatMap(term=>term.units).filter(unit=>unit.type==="lesson").map(unit=>unit.id)
   );
   for(const id of [
-    "g9-t1-l16-015",
-    "g9-t2-l26-025",
-    "g9-t2-l34-033",
-    "g9-t3-l50-049",
-    "g9-t3-l54-053",
-    "g9-t4-l55-054",
-    "g9-t4-l75-074",
+    "g9-t1-l16-016",
+    "g9-t2-l26-027",
+    "g9-t2-l34-035",
+    "g9-t3-l50-051",
+    "g9-t3-l54-055",
+    "g9-t4-l55-057",
+    "g9-t4-l75-077",
   ]) assert.ok(ids.has(id),`missing corrected Grade 9 source id: ${id}`);
 });
