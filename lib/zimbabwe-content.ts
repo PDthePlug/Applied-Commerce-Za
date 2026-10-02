@@ -23,6 +23,7 @@ export type ZimbabweUnitOverride = {
   textReplacements?: Array<{from:string;to:string}>;
   rangeReplacements?: ZimbabweRangeReplacement[];
   tableReplacements?: ZimbabweTableReplacement[];
+  tableTextReplacements?: Array<{from:string;to:string}>;
   appendBlocks?: ContentBlock[];
 };
 
@@ -1009,6 +1010,26 @@ function applyZimbabweStructuralDefaults(block:ContentBlock):ContentBlock{
   return {...block,rows:block.rows.map(row=>row.slice(0,2))};
 }
 
+function applyReviewedTableTextReplacements(
+  blocks:ContentBlock[],
+  replacements:Array<{from:string;to:string}>=[],
+):ContentBlock[]{
+  if(!replacements.length) return blocks;
+  return blocks.map(block=>{
+    if(block.kind!=="table") return block;
+    return {
+      ...block,
+      rows:block.rows.map(row=>row.map(cell=>{
+        let value=cell;
+        for(const replacement of replacements){
+          if(value.includes(replacement.from)) value=value.replaceAll(replacement.from,replacement.to);
+        }
+        return value;
+      })),
+    };
+  });
+}
+
 function applyReviewedTableReplacements(
   blocks:ContentBlock[],
   replacements:ZimbabweTableReplacement[]=[],
@@ -1095,7 +1116,10 @@ export function applyZimbabweUnitOverlay(unit:UnitContent):UnitContent{
       ...applyReviewedTextReplacements(
         applyReviewedRangeReplacements(
           applyReviewedTableReplacements(
-            applyBlockOverrides(unit.blocks,override?.blocks),
+            applyReviewedTableTextReplacements(
+              applyBlockOverrides(unit.blocks,override?.blocks),
+              override?.tableTextReplacements,
+            ),
             override?.tableReplacements,
           ),
           override?.rangeReplacements,
