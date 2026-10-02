@@ -85,3 +85,38 @@ test("Form 4 remains the launch year and A-Level is excluded from the core map",
   assert.match(config,/Forms 1–4 · O-Level pathway/);
   assert.doesNotMatch(config,/Form 5 source|Form 6 source/);
 });
+
+
+test("every Form 1 source lesson is explicitly localised or reviewed as context-neutral",()=>{
+  const overlay=fs.readFileSync("lib/zimbabwe-content.ts","utf8");
+  const explicit=new Set(
+    [...overlay.matchAll(/^\s{2}"(g8-[^"]+)": \{/gm)].map(match=>match[1])
+  );
+  const neutralSection=overlay.match(/zimbabweReviewedNeutralUnitIds = \[([\s\S]*?)\] as const;/);
+  assert.ok(neutralSection,"reviewed-neutral Form 1 registry must exist");
+  const neutral=new Set(
+    [...neutralSection[1].matchAll(/"(g8-[^"]+)"/g)].map(match=>match[1])
+  );
+
+  const sourceIds=bundle(8).terms
+    .flatMap(term=>term.units)
+    .filter(unit=>unit.type==="lesson")
+    .map(unit=>unit.id);
+
+  assert.equal(sourceIds.length,79);
+  assert.equal(explicit.size,70);
+  assert.equal(neutral.size,9);
+  assert.equal(new Set([...explicit,...neutral]).size,79);
+  assert.deepEqual(
+    sourceIds.filter(id=>!explicit.has(id)&&!neutral.has(id)),
+    [],
+    "no Grade 8 lesson may enter Form 1 without localisation review",
+  );
+});
+
+test("Form 1 gardening story is localised from Limpopo into Zimbabwe",()=>{
+  const overlay=fs.readFileSync("lib/zimbabwe-content.ts","utf8");
+  assert.match(overlay,/THE GARDENERS OF MASHONALAND EAST/);
+  assert.match(overlay,/The Moyo family lives in a village in Mashonaland East/);
+  assert.match(overlay,/Then Gogo Moyo had an idea/);
+});
