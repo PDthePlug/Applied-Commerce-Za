@@ -122,15 +122,15 @@ export const zimbabweTargetTerms: ZimbabweTargetTerm[] = [
 
   {
     form:2,term:1,title:"Work, Value & How Money Moves",
-    source:["Grade 9 lessons 1–25"],
+    source:["Grade 9 lessons 1–34"],
     competencies:["entrepreneurship","business-financial-literacy","research","critical-thinking"],
-    projectFocus:"Enterprise portfolio and community money-map launch",
+    projectFocus:"Enterprise portfolio and completed Community Money Map",
   },
   {
-    form:2,term:2,title:"Enterprise Capability, Habits & Execution",
-    source:["Grade 9 lessons 26–54"],
+    form:2,term:2,title:"Habits, Agency & Execution",
+    source:["Grade 9 lessons 35–54"],
     competencies:["problem-solving","self-management","planning-organising","technological-skills"],
-    projectFocus:"Community money-map completion and full habit transformation",
+    projectFocus:"Full 21-day Habit Transformation project",
   },
   {
     form:2,term:3,title:"Community Enterprise & Portfolio",
