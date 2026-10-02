@@ -23,7 +23,7 @@ export type ZimbabweUnitOverride = {
   textReplacements?: Array<{from:string;to:string}>;
   rangeReplacements?: ZimbabweRangeReplacement[];
   tableReplacements?: ZimbabweTableReplacement[];
-  tableTextReplacements?: Array<{from:string;to:string}>;
+  tableTextReplacements?: Array<{from:string;to:string;exact?:boolean}>;
   appendBlocks?: ContentBlock[];
 };
 
@@ -1012,7 +1012,7 @@ function applyZimbabweStructuralDefaults(block:ContentBlock):ContentBlock{
 
 function applyReviewedTableTextReplacements(
   blocks:ContentBlock[],
-  replacements:Array<{from:string;to:string}>=[],
+  replacements:Array<{from:string;to:string;exact?:boolean}>=[],
 ):ContentBlock[]{
   if(!replacements.length) return blocks;
   return blocks.map(block=>{
@@ -1022,7 +1022,11 @@ function applyReviewedTableTextReplacements(
       rows:block.rows.map(row=>row.map(cell=>{
         let value=cell;
         for(const replacement of replacements){
-          if(value.includes(replacement.from)) value=value.replaceAll(replacement.from,replacement.to);
+          if(replacement.exact){
+            if(value===replacement.from) value=replacement.to;
+          }else if(value.includes(replacement.from)){
+            value=value.replaceAll(replacement.from,replacement.to);
+          }
         }
         return value;
       })),
