@@ -5,11 +5,19 @@ export type ZimbabweBlockOverride =
   | {index:number; kind:"table"; rows:string[][]}
   | {index:number; kind:"remove"};
 
+export type ZimbabweRangeReplacement = {
+  startIncludes: string;
+  endIncludes: string;
+  replacement: ContentBlock[];
+};
+
 export type ZimbabweUnitOverride = {
   title?: string;
   label?: string;
   blocks?: ZimbabweBlockOverride[];
   textReplacements?: Array<{from:string;to:string}>;
+  rangeReplacements?: ZimbabweRangeReplacement[];
+  appendBlocks?: ContentBlock[];
 };
 
 /**
@@ -838,6 +846,28 @@ function applyZimbabweStructuralDefaults(block:ContentBlock):ContentBlock{
   return {...block,rows:block.rows.map(row=>row.slice(0,2))};
 }
 
+function applyReviewedRangeReplacements(
+  blocks:ContentBlock[],
+  ranges:ZimbabweRangeReplacement[]=[],
+):ContentBlock[]{
+  let result=[...blocks];
+  for(const range of ranges){
+    const start=result.findIndex(block=>block.kind==="text"&&block.text.includes(range.startIncludes));
+    if(start<0) throw new Error(`Zimbabwe range override start not found: ${range.startIncludes}`);
+    const relativeEnd=result.slice(start).findIndex(
+      block=>block.kind==="text"&&block.text.includes(range.endIncludes)
+    );
+    if(relativeEnd<0) throw new Error(`Zimbabwe range override end not found: ${range.endIncludes}`);
+    const end=start+relativeEnd;
+    result=[
+      ...result.slice(0,start),
+      ...range.replacement,
+      ...result.slice(end+1),
+    ];
+  }
+  return result;
+}
+
 function applyReviewedTextReplacements(
   blocks:ContentBlock[],
   replacements:Array<{from:string;to:string}>=[],
@@ -878,10 +908,16 @@ export function applyZimbabweUnitOverlay(unit:UnitContent):UnitContent{
     ...unit,
     title:override?.title ?? unit.title,
     label:override?.label ?? unit.label,
-    blocks:applyReviewedTextReplacements(
-      applyBlockOverrides(unit.blocks,override?.blocks),
-      override?.textReplacements,
-    ),
+    blocks:[
+      ...applyReviewedTextReplacements(
+        applyReviewedRangeReplacements(
+          applyBlockOverrides(unit.blocks,override?.blocks),
+          override?.rangeReplacements,
+        ),
+        override?.textReplacements,
+      ),
+      ...(override?.appendBlocks ?? []),
+    ],
   };
 }
 
