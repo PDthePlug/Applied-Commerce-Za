@@ -2471,6 +2471,106 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
       },
     ],
   },
+  "g11-t2-l23-023": {
+    textReplacements:[
+      {from:"Myah sits with her notebooks from Grade 9 to now. She traces her leadership journey — not the title, but the reality.",to:"Myah sits with her notebooks from Form 2 to now. She traces her leadership journey — not the title, but the reality."},
+      {from:"Grade 9: The grant office. She walked in and demanded answers. That was not just persistence. That was leadership — advocating for herself when the system gave her silence. She started the water project at the taxi rank. She had to organise, ask permission, talk to people. She did not think of it as leadership then. But it was.",to:"Form 2: The committee office. She asked for answers when the system gave her silence. She tested the water project at the kombi rank, organised, asked permission and spoke to people. She did not think of it as leadership then, but it was early evidence."},
+      {from:"Grade 10: She partnered with Thabo on the delivery service. Learned to share decisions, trust someone else, resolve disagreements. She created her Financial Independence Plan. She ran her first workshop — just five people, just one hour, recorded on her phone. The smallest test from her Leverage Plan. It worked.",to:"Form 3 Terms 1–2: she partnered with Thabo, learned to share decisions and resolve disagreements, built a Financial Independence Plan and tested a small workshop. Leadership was becoming less about doing everything herself and more about creating conditions for useful work."},
+      {from:"Grade 11 Term 1: She created her Leverage Plan. The Knowledge + Technology combination. The architect's vision. She learned that leadership is not just guiding others — it is designing structures that guide others even when you are not there.",to:"Form 3 Term 3 — Leverage Cycle: she created her Leverage Plan using knowledge and technology. She learned that leadership is not only guiding people in the moment; it can also mean designing structures that help good work continue when she is not there."},
+    ],
+  },
+  "g11-t2-l26-026": {
+    textReplacements:[
+      {from:"Lethabo sat with that. He found Sipho at the spaza shop the next day. He apologized. \"I should have talked to you privately. I should have asked what was going on. Can we start again?\"",to:"Lethabo sat with that. He found Sipho at the tuckshop the next day. He apologised. \"I should have talked to you privately. I should have asked what was going on. Can we start again?\""},
+    ],
+  },
+  "g11-t2-l27-027": {
+    title:"DIFFICULT CONVERSATIONS — THABO'S TEST AT THE TUCKSHOP",
+    textReplacements:[
+      {from:"📘 Thabo's Difficult Conversation at the Spaza Shop",to:"📘 Thabo's Difficult Conversation at the Tuckshop"},
+      {from:"He talks to Myah at Emmanuel's spaza shop.",to:"He talks to Myah at Emmanuel's tuckshop."},
+      {from:"At the taxi rank the next morning, Myah sees Thabo. He looks different. Lighter.",to:"At the kombi rank the next morning, Myah sees Thabo. He looks different. Lighter."},
+    ],
+  },
+  "g11-t2-l28-028": {
+    title:"DECISION-MAKING UNDER PRESSURE — EMMANUEL'S TUCKSHOP EMERGENCY",
+    textReplacements:[
+      {from:"📘 Emmanuel's Emergency at the Spaza Shop",to:"📘 Emmanuel's Emergency at the Tuckshop"},
+      {from:"Emmanuel is alone at the spaza shop. His mother is at a funeral. The delivery of bread did not arrive. Regular customers are waiting. Some are getting angry.",to:"Emmanuel is alone at the tuckshop. His mother is at a funeral. The bread delivery did not arrive. Regular customers are waiting. Some are getting angry."},
+    ],
+  },
+  "g11-t2-l29-029": {
+    textReplacements:[
+      {from:"📘 Thandi's Challenge at the Taxi Rank",to:"📘 Thandi's Challenge at the Kombi Rank"},
+    ],
+  },
+  "g11-t2-l30-030": {
+    title:"LEADING THROUGH CHANGE — THE TUCKSHOP TRANSFORMS",
+    textReplacements:[
+      {from:"The mall is expanding. A new supermarket is opening even closer to Emmanuel's spaza shop. The family has been in Katlehong for 15 years. His mother built this business from nothing. And now, it feels like everything is threatened.",to:"The shopping centre is expanding. A new supermarket is opening even closer to Emmanuel's tuckshop. The family has served its Chitungwiza community for 15 years. His mother built the business from very little, and now the change feels threatening."},
+    ],
+  },
+  "g11-t2-l32-032": {
+    textReplacements:[
+      {from:"Story 1 — Leading Myself: \"In first year, I had no structure. No one telling me what to do. I nearly failed my first semester. Not because I was not smart enough. Because I was not leading myself. Then I remembered the 21-day tracker from Grade 9. I started tracking again — not a habit, but my time. I built a schedule. My marks improved. Not because I got smarter. Because I started leading myself.\"",to:"Story 1 — Leading Myself: \"In first year, I had no structure. No one telling me what to do. I nearly failed my first semester. Not because I was not smart enough, but because I was not leading myself. Then I remembered the 21-day tracker from Form 2. I started tracking again — this time, my use of time. I built a schedule. My marks improved because my system improved.\""},
+    ],
+  },
+  "g11-t2-l33-033": {
+    textReplacements:[
+      {from:"My core values (from Grade 9, updated): _________________________________",to:"My core values (from Form 2, updated with new evidence): _________________________________"},
+    ],
+  },
+  "g11-t2-l34-034": {
+    title:"LEGAL & ETHICAL RESPONSIBILITY IN LEADERSHIP",
+    textReplacements:[
+      {from:"Fiduciary duty: \"If you manage money for others — a cooperative, a business, even a family stokvel — you have a legal duty to act in their best interest. Not yours. Theirs.\"",to:"Advocate Mkhize says: \"When you manage money, property or decisions for other people — in a business, cooperative, mukando or another formal relationship — legal and contractual duties may apply. Do not assume the same duty applies in every arrangement. Understand the agreement, the current Zimbabwe law and whose interests you are required to protect.\""},
+      {from:"This week, find one contract or agreement in your home or community — a lease, a cellphone contract, a stokvel agreement. Read it. Write down: What is the agreement? Who is bound by it? What happens if someone breaks it? Is it fair?",to:"This week, find one agreement you are allowed to read — for example a lease extract, service contract or mukando/savings-group agreement. Identify: who is bound, what each side promises, what happens if someone breaches it, and which terms you do not understand. Do not share private account or identity details."},
+      {from:"If you cannot find a contract, write a simple contract for a hypothetical agreement — for example, lending R500 to a friend. Include: Who is involved? What are the terms? What happens if someone does not fulfil their part?",to:"If you cannot find an agreement, write a fictional agreement outline for a classroom example — for instance, lending US$50. Include the parties, amount, repayment date, what happens if circumstances change, and questions that would need legal advice. Do not treat the worksheet as a legally sufficient contract."},
+    ],
+    appendBlocks:[
+      {kind:"text",type:"paragraph",text:"Zimbabwe legal-safety note: duties can depend on the legal structure, contract, statute and facts. This lesson teaches the habit of reading obligations and seeking qualified advice; it does not create a legal opinion for a real business, cooperative or savings group."},
+    ],
+  },
+  "g11-t2-l35-035": {
+    textReplacements:[
+      {from:"\"And here is what makes this different from the Grade 10 project,\" she adds. \"In Grade 10, you wrote about leadership principles. In Grade 11, you must ground every principle in your OWN experience — the specific moments, the specific people, the specific failures and recoveries that shaped how you lead. This philosophy must sound like YOU. Not like a textbook. Not like a motivational poster. Like you.\"",to:"\"And here is what makes this different from the earlier Form 3 projects,\" she adds. \"This time, every leadership principle must be grounded in your own evidence — specific moments, people, failures, recoveries and choices that shaped how you lead. It must sound like you, not like a motivational poster.\""},
+    ],
+    tableTextReplacements:[
+      {from:"from Grade 9, updated",to:"from Form 2, updated with new evidence"},
+    ],
+  },
+  "g11-t2-l36-036": {
+    textReplacements:[
+      {from:"After the workshop, Myah walks home. At the taxi rank, Atlehang Ngwenya is sitting on the queue marshal's bench, writing in his notebook.",to:"After the workshop, Myah walks home. At the kombi rank, Atlehang Ngwenya is sitting on the rank marshal's bench, writing in his notebook."},
+    ],
+  },
+  "g11-t2-l37-037": {
+    textReplacements:[
+      {from:"Atlehang presents. Her philosophy: Notice what others miss. The quietest person in the room often has the most important thing to say. My job as a leader is to create the conditions for them to say it. She tells the story of her question in Grade 9 — \"Did you ask them why?\" — and how that single question changed Myah's trajectory.",to:"Atlehang presents. Her philosophy: Notice what others miss. The quietest person in the room may have something important to say. My job as a leader is to create the conditions for them to say it. She tells the story of her Form 2 question — \"Did you ask them why?\" — and how that question changed Myah's next move."},
+      {from:"\"This philosophy was not written in a day. It was written over three years. In the grant office. At Mama Rose's kitchen. In the taxi rank. In workshops with five people and a phone camera. It is not finished. It will grow as I grow. But it is mine. And I know who I am becoming.\"",to:"\"This philosophy was not written in a day. It was written across experiences — the committee office, Mama Rose's kitchen, the kombi rank, small workshops and difficult conversations. It is not finished. It will grow as I grow. But it is mine, and I know who I am becoming.\""},
+    ],
+  },
+  "g11-t2-l38-038": {
+    textReplacements:[
+      {from:"Sipho stands up. This is the same Sipho who had no goals in Grade 8. Who failed at selling sweets. Who cut up his credit card. Who built a bicycle repair business from nothing. His philosophy: I lead by showing up. By failing and not quitting. By proving that the person who starts with nothing can build something — and then help others do the same. He tells his story — the melted sweets, the lost R50, the credit card, the bicycle repair. \"I am not the leader I thought I would be. I am the leader I became by not giving up. That is my philosophy. It is not fancy. But it is real. And it is mine.\"",to:"Sipho stands up. This is the same Sipho who had no goals in Form 1, failed at selling sweets and built a bicycle-repair business through repeated learning. His philosophy: I lead by showing up, learning from failure and helping others build capability too. He tells the story of the melted sweets and the illustrative US$5 loss. \"I am not the leader I imagined. I am the leader I became by learning, restarting and showing up. It is not fancy. But it is mine.\""},
+    ],
+  },
+  "g11-t2-l39-039": {
+    textReplacements:[
+      {from:"Lesson 30: Leading through change. The spaza shop transforms. Acknowledge the loss before the vision.",to:"Lesson 30: Leading through change. The tuckshop transforms. Acknowledge the loss before the vision."},
+    ],
+  },
+  "g11-t2-l40-040": {
+    title:"FORM 3 FINAL PORTFOLIO & LETTER TO FUTURE SELF",
+    textReplacements:[
+      {from:"From me, in Grade 11 Date: _____________________",to:"From me, at the end of Form 3 Date: _____________________"},
+      {from:"You have completed Term 2 of Grade 11.",to:"You have completed Form 3 Term 3 — and the full Form 3 Applied Commerce year."},
+    ],
+    appendBlocks:[
+      {kind:"text",type:"section",text:"Looking Ahead to Form 4 — The O-Level Launch Year"},
+      {kind:"text",type:"paragraph",text:"Form 4 is next. Applied Commerce will move into advanced wealth, growth and legacy, then the adult money, work, contracts, risk and life-launch decisions that sit around the end of O-Level. Carry forward your Leverage Plan, Leadership Philosophy and Form 3 evidence. They are inputs to the launch year — not finished answers."},
+    ],
+  },
   "g9-t1-l01-001": {
     textReplacements: [
       {from:"Recall key learning from Grade 8 and assess what you carry forward.",to:"Recall key learning from Form 1 and assess what you carry forward."},
