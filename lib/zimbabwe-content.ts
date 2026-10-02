@@ -2147,6 +2147,330 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
       {from:"Keep going. Grade 11 awaits. The architect is rising.",to:"Keep going. Form 3 Term 3 awaits — leverage, leadership and responsibility."},
     ],
   },
+  "g11-t1-l01-001": {
+    title:"WELCOME TO FORM 3 TERM 3 — THE LEVERAGE & LEADERSHIP TERM",
+    textReplacements:[
+      {from:"Recall key learning from Grade 10.",to:"Recall key learning from Form 3 Terms 1–2."},
+      {from:"Set intentions for Grade 11.",to:"Set intentions for Form 3 Term 3."},
+      {from:"📘 Myah's Morning — Grade 11",to:"📘 Myah's Morning — Form 3 Term 3"},
+      {from:"Myah wakes before her alarm. She has been doing that for two years now — ever since the 21-day tracker in Grade 9. Some habits stick.",to:"Myah wakes before her alarm. She has been doing that for a long time now — ever since the 21-day tracker in Form 2. Some habits stick."},
+      {from:"She looks at the notebook on her bedside table — the one she has kept since Grade 9. Three years of learning. Three years of becoming.",to:"She looks at the notebook on her bedside table — the one she has kept since Form 2. Years of learning. Years of becoming."},
+      {from:"Grade 9: Values. Mama Rose. The grant office. The cooler box. Learning that the system does not always reward rule-followers. Learning to make herself impossible to ignore.",to:"Form 2: Values. Mama Rose. The committee office. The cooler box. Learning to create value, map money flows and build evidence instead of waiting for permission."},
+      {from:"Grade 10: Investing. Systems. Tax. Retirement. Insurance. Her Financial Independence Plan — with failure signals, control scores, and Red Lines. Learning that money is a tool, not a master.",to:"Form 3 Terms 1–2: Investing. Systems. Zimbabwe tax literacy. Retirement layers. Insurance. Her Financial Independence Plan — with failure signals, control scores and Red Lines. Learning that money is a tool, not a master."},
+      {from:"She is 17 now. Matric next year. The world after that.",to:"Form 4 comes next — the final O-Level year in this Applied Commerce pathway. Beyond that, the world opens wider."},
+      {from:"\"How to do more with less. How to multiply impact. Ms. Daniels says that is what Grade 11 is about.\"",to:"\"How to do more with less. How to multiply impact without multiplying harm. Ms. Daniels says that is what this Form 3 Term 3 cycle is about.\""},
+      {from:"📘 The Taxi Rank",to:"📘 The Kombi Rank"},
+      {from:"Myah walks to the taxi rank. The morning is cool. She is thinking about leverage, about multiplication, about the year ahead.",to:"Myah walks to the kombi rank. The morning is cool. She is thinking about leverage, multiplication and the term ahead."},
+      {from:"She thinks of her friend Atlehang — the one who notices everything, the one whose question changed her life in Grade 9. \"Did you ask them why?\" That question. That moment. The grant office. The cooler box. Everything that followed. Her friend would have something to say about this boy. She always did. But that thought is for another time. Today is about leverage.",to:"She thinks of her friend Atlehang — the one who notices everything, the one whose question changed her direction in Form 2: \"Did you ask them why?\" That question. The committee office. The cooler box. Everything that followed. Today is about leverage."},
+      {from:"📘 What We Learned in Grade 10",to:"📘 What We Built in Form 3 Terms 1–2"},
+      {from:"What is one thing you learned in Grade 10 that you are proud of? What is one thing you want to leverage — multiply — this year? What is the risk of multiplying it?",to:"What is one thing you learned in Form 3 Terms 1–2 that you are proud of? What is one thing you want to leverage — multiply — this term? What is the risk of multiplying it?"},
+      {from:"✍️ Activity 1: My Grade 11 Strategic Audit",to:"✍️ Activity 1: My Form 3 Term 3 Strategic Audit"},
+      {from:"Part A: My Assets from Grade 9 and 10",to:"Part A: My Assets from Form 2 and Form 3 Terms 1–2"},
+      {from:"List three assets (skills, habits, mindsets, relationships) you built in the last two years that you will leverage in Grade 11. For each, name one specific situation this year where it will give you an advantage.",to:"List three assets — skills, habits, mindsets or relationships — you built in Form 2 and Form 3 so far that you will leverage in Term 3. For each, name one situation where it could help you."},
+      {from:"Part C: My Intention for Grade 11 — With Consequence",to:"Part C: My Intention for Form 3 Term 3 — With Consequence"},
+      {from:"Key idea: You are not starting Grade 11 empty. You are starting with everything you built in Grade 9 and Grade 10 — the skills, the evidence, the scars, the wins. The paradox: the more you learn, the more you realise you do not know. But the more you know, the more you can leverage. You are not starting from zero. You are starting from experience.",to:"Key idea: You are not starting Form 3 Term 3 empty. You are starting with everything you built in Form 2 and Form 3 so far — skills, evidence, scars and wins. The more you learn, the more clearly you can see both opportunity and risk. You are not starting from zero. You are starting from experience."},
+      {from:"Question 1: What is the theme of Grade 11? Explain what leverage means in your own words. Look at your Strategic Audit. Which of your assets will be most valuable this year? Why?",to:"Question 1: What is the theme of Form 3 Term 3? Explain leverage in your own words. Which asset from your Strategic Audit could be most useful this term, and what shadow or downside could come with multiplying it?"},
+      {from:"| Date | | | Lesson | Lesson 1 — Grade 11 Strategic Audit | | Experiment/Observation | I conducted a strategic audit of assets and liabilities for Grade 11. | | Design Decision | My intention for this year: | | Prediction | If I succeed: If I fail: | | Result | | | Learning | | | Next Action | My one leverage action this week: |",to:"| Date | | | Lesson | Lesson 1 — Form 3 Term 3 Strategic Audit | | Experiment/Observation | I conducted a strategic audit of assets and liabilities for this term. | | Design Decision | My intention for this term: | | Prediction | If I succeed: If I fail: | | Result | | | Learning | | | Next Action | My one leverage action this week: |"},
+    ],
+    tableReplacements:[
+      {
+        cellIncludes:"Term 4",
+        rows:[
+          ["Cycle","What We Learned"],
+          ["Form 3 Term 1 — Value & Assets","Value creation, enterprise systems, saving, investing, assets, debt and investment planning"],
+          ["Form 3 Term 2 — Systems & Independence","Systems, Zimbabwe tax literacy, retirement layers, insurance, succession planning, financial independence and life design"],
+          ["Form 3 Term 3 — Ahead","Leverage, leadership, responsibility and evidence of how you multiply impact"],
+        ],
+      },
+    ],
+  },
+  "g11-t1-l02-002": {
+    tableReplacements:[
+      {
+        cellIncludes:"Save R10,000",
+        rows:[
+          ["Type","Without Leverage","With Leverage","Illustrative Example"],
+          ["Financial","Use only your own US$1,000","Use US$1,000 plus US$4,000 borrowed or contributed by others","A larger asset or project is controlled — and both gains and losses are amplified"],
+          ["Time","Work 40 hours","Automate or redesign repetitive work","Same result with fewer repeated hours if the system works"],
+          ["People","Do all deliveries alone","Train helpers","More work can be completed, but quality and employment responsibilities increase"],
+          ["Systems","Make each item differently","Standardise a repeatable process","Consistency can improve without the founder making every decision"],
+          ["Technology","Manual records","Use appropriate digital tools","Faster records, but new risks include errors, privacy and platform dependence"],
+          ["Knowledge","Learn once and forget","Document, teach and reuse","One learning effort can help more people over time"],
+        ],
+      },
+    ],
+  },
+  "g11-t1-l03-003": {
+    title:"MYAH'S BIG QUESTION — FORM 4 & POST-O-LEVEL VISION",
+    textReplacements:[
+      {from:"Clarify your post-matric vision.",to:"Clarify your Form 4 and post-O-Level vision."},
+      {from:"\"What do I do after matric? Everyone asks. I do not have one answer. I have pieces. Teaching. Financial literacy. Workshops. Writing. But I do not know how they fit together.\"",to:"\"Form 4 comes next. And after O-Level? Everyone asks. I do not have one answer. I have pieces — teaching, financial literacy, workshops, writing — but I do not yet know how they fit together.\""},
+      {from:"Mapping Your Post-Matric Vision",to:"Mapping Your Form 4 & Post-O-Level Vision"},
+      {from:"What do you want after matric? What levers could help you get there? What is the \"one thing\" that connects your pieces — the core skill Atlehang saw in Myah's vision?",to:"What do you want to strengthen in Form 4, and what possibilities do you want after O-Level? What levers could help? What is the connecting capability behind your different interests?"},
+      {from:"✍️ Activity 3: My Post-Matric Vision and Leverage Map",to:"✍️ Activity 3: My Form 4 & Post-O-Level Vision and Leverage Map"},
+      {from:"The Architect's Audit: If you were designing a post-matric pathway for someone you love — someone with your exact talents and circumstances — what would you tell them to pursue? Are you pursuing it yourself? If not, why not?",to:"The Architect's Audit: if you were designing a Form 4 and post-O-Level pathway for someone with your exact talents and circumstances, what would you tell them to strengthen now, explore later and keep open? Are you giving yourself the same advice?"},
+      {from:"Question 1: Why is it important to have a vision beyond matric? What happens if you only focus on the next step without seeing the bigger picture? How can leverage help you achieve your vision?",to:"Question 1: Why is it useful to see beyond the next school term while still taking Form 4 seriously? How can leverage help you build capability without pretending you already know your final career?"},
+      {from:"| Date | | | Lesson | Lesson 3 — Post-Matric Vision | | Experiment/Observation | I identified my core skill and tested it. | | Design Decision | The core skill I hypothesized: | | Prediction | What I thought the test would reveal: | | Result | What actually happened: | | Learning | | | Next Action | |",to:"| Date | | | Lesson | Lesson 3 — Form 4 & Post-O-Level Vision | | Experiment/Observation | I identified a core capability and tested it. | | Design Decision | The capability I hypothesized: | | Prediction | What I thought the test would reveal: | | Result | What actually happened: | | Learning | | | Next Action | |"},
+    ],
+    tableReplacements:[
+      {
+        cellIncludes:"Post-matric",
+        rows:[
+          ["Term","Definition"],
+          ["Vision","A clear but revisable picture of the future you want to build"],
+          ["Form 4","The final O-Level Applied Commerce year in this Zimbabwe pathway"],
+          ["Post-O-Level","The stage after completing O-Level; possible routes may include further study, work, enterprise, training or combinations"],
+          ["Pathway","A route toward a goal that can change as new evidence appears"],
+        ],
+      },
+    ],
+  },
+  "g11-t1-l04-004": {
+    textReplacements:[
+      {from:"📘 The Six Levers at the Taxi Rank",to:"📘 The Six Levers at the Kombi Rank"},
+      {from:"Ms. Daniels does not lecture. She takes the class to the taxi rank.",to:"Ms. Daniels does not lecture. She takes the class to the kombi rank."},
+      {from:"Financial leverage: The taxi owners. Most do not own their taxis outright — they borrowed from banks or taxi associations. Other people's money, earning for them. One taxi costs R300,000. With a R50,000 deposit and a loan for the rest, the owner controls an asset worth six times their investment. That is 6:1 leverage.",to:"Financial leverage: use a fictional transport-asset example. Suppose an operator contributes US$1,000 of their own capital and finances another US$5,000 under a valid agreement. They control a US$6,000 asset — 6:1 leverage on their own capital. The maths is illustrative, not a claim about Zimbabwe vehicle prices, deposits or loan terms. The debt still has to be repaid if income falls."},
+      {from:"Systems leverage: The loading system itself. Taxis arrive. Marshals direct. Passengers board. Money changes hands. It happens the same way every time. No one invented it from scratch each morning. The system runs.",to:"Systems leverage: the loading system itself. Kombis arrive. Marshals direct. Passengers board. Money changes hands. The process is repeated rather than reinvented from scratch each morning."},
+      {from:"Myah writes in her notebook: The taxi rank is not just a place. It is a leverage laboratory. Every type, in action, every day. I have been looking at this my whole life and never saw it. But now I see something else: every lever has a shadow. The taxi owner's financial leverage is also debt — if the taxi does not earn, the debt still demands payment. The marshal's time leverage is also dependence — if the marshal does not show up, chaos. Every lever is a gift and a risk. The architect sees both.",to:"Myah writes in her notebook: the kombi rank is a leverage laboratory. Every lever has a shadow. Financial leverage can multiply returns but also debt losses. Time leverage can create capacity but also dependence on a system or person. The architect looks at both multiplication and downside."},
+      {from:"This week, find one example of each type of leverage in your daily environment. Not from a textbook. From your actual life. Your home. Your school. Your taxi rank. For each one, identify BOTH the gift and the shadow — what is being multiplied for good, and what is being multiplied that might cause harm. Write down at least three examples.",to:"This week, find examples of leverage in your actual environment — home, school, kombi rank, market, workplace or community. For each, identify both the useful multiplier and the shadow: what could also be amplified if the design fails?"},
+    ],
+    tableReplacements:[
+      {
+        cellIncludes:"Save R10,000",
+        rows:[
+          ["Type","Without Leverage","With Leverage","Illustrative Example"],
+          ["Financial","Use US$1,000 of your own capital","Control a US$5,000 project using US$1,000 of your own capital plus US$4,000 from another source","Returns and losses on your own capital can both be magnified"],
+          ["Time","Repeat every task manually","Automate or delegate repeatable work","More capacity, but dependence on the process grows"],
+          ["People","Do all work alone","Train and coordinate others","Output can grow; leadership and employment responsibilities also grow"],
+          ["Systems","Reinvent every task","Use repeatable standards and checklists","Consistency improves if the system is well designed"],
+          ["Technology","Manual records","Use appropriate digital tools","Speed increases, alongside privacy/platform/error risks"],
+          ["Knowledge","Keep learning private","Document and teach","One insight can benefit many people"],
+        ],
+      },
+    ],
+  },
+  "g11-t1-l05-005": {
+    textReplacements:[
+      {from:"Mr. Dlamini does not come to the classroom. He invites Myah, Thabo, and Lethabo to one of his properties — a small flat in Tembisa that he bought ten years ago.",to:"Mr. Dlamini does not come to the classroom. He invites Myah, Thabo and Lethabo to a small flat in Harare that he uses as a fictional case study for leverage maths."},
+      {from:"\"Ten years ago, I had R100,000 saved. I could have bought one small property outright. R100,000 property, rent R1,000 per month. Not bad. But I did something different.\"",to:"\"For the lesson, imagine I had US$10,000 of my own capital. One option is to buy a US$10,000 asset without debt. Another is to use that US$10,000 as part of a larger financed purchase.\""},
+      {from:"\"I used leverage. I put R100,000 as a deposit on a R500,000 property. Borrowed R400,000 from the bank. The rent is R5,000 per month. The bond payment is R4,000. I make R1,000 per month — same as the small property.\"",to:"\"In the fictional leveraged example, US$10,000 of my money plus US$40,000 borrowed controls a US$50,000 asset. Suppose net cash flow after the required finance payment and specified costs is US$100 a month. The numbers teach leverage mechanics; they are not current Zimbabwe mortgage terms.\""},
+      {from:"\"But here is the magic: the property goes up in value. If it increases by 10%, that is R50,000. On my R100,000 investment, that is a 50% return.\"",to:"\"If the US$50,000 asset rises by 10%, its value rises by US$5,000 — 50% of the original US$10,000 equity before transaction costs, interest and tax. If it falls by 10%, the same leverage magnifies the loss. That is the point.\""},
+      {from:"You have R50,000. You can buy a small business for R50,000 cash, or use leverage.",to:"For this fictional calculation, you have US$5,000. Compare an unleveraged purchase with a larger financed purchase."},
+      {from:"Option A (No leverage): Buy business for R50,000 cash. Business earns R500/month profit. After one year, you sell for R55,000.",to:"Option A (No leverage): use US$5,000 cash. The business produces US$50/month and is later sold for US$5,500."},
+      {from:"Total profit: R500 × 12 = R6,000 + R5,000 = R11,000",to:"Total illustrative profit: US$50 × 12 = US$600 plus US$500 capital gain = US$1,100 before tax/fees."},
+      {from:"Option B (With leverage): Use R50,000 as deposit on R200,000 business. Borrow R150,000 at 10% interest. Business earns R2,000/month profit. After one year, you sell for R220,000.",to:"Option B (With leverage): use US$5,000 of your capital in a US$20,000 business and finance US$15,000 at a fictional 10% annual interest rate. The business produces US$200/month before finance cost and is later sold for US$22,000."},
+      {from:"Monthly profit: R2,000 — loan interest (R150,000 × 10% ÷ 12 = R1,250) = R_______/month",to:"Monthly illustrative amount after interest only: US$200 − (US$15,000 × 10% ÷ 12 = US$125) = US$_______/month. Real finance agreements can include principal repayments and other costs."},
+      {from:"Sale profit: R220,000 — R200,000 = R_______",to:"Illustrative asset-value increase: US$22,000 − US$20,000 = US$_______"},
+      {from:"Return on your R50,000: _______%",to:"Return on your US$5,000 equity before all other costs: _______%"},
+      {from:"Same Option B, but the business loses value. After one year, you sell for R160,000 (a 20% drop).",to:"Now change the assumption: the US$20,000 business falls 20% and is sold for US$16,000."},
+      {from:"Sale loss: R200,000 — R160,000 = R_______",to:"Illustrative value loss: US$20,000 − US$16,000 = US$_______"},
+      {from:"The Architect's Question: You calculated the loss scenario in Part C. If that loss happened to you — if your R50,000 became significantly less — could you survive it? What is your survival plan? If you do not have one, you are not ready for leverage.",to:"The Architect's Question: if the loss scenario happened, could you meet the debt obligation without sacrificing essential needs? If the answer is no, the downside is not survivable. Leverage should never be treated as free multiplication."},
+    ],
+    tableReplacements:[
+      {
+        cellIncludes:"Property value",
+        rows:[
+          ["","No leverage","With leverage — fictional maths"],
+          ["Your money","US$10,000","US$10,000"],
+          ["Asset value","US$10,000","US$50,000"],
+          ["Illustrative 10% asset increase","+US$1,000","+US$5,000"],
+          ["Increase relative to your starting equity","10%","50% before interest, fees, tax and other costs"],
+          ["If the asset falls 10%","-US$1,000","-US$5,000 before other costs"],
+        ],
+      },
+    ],
+  },
+  "g11-t1-l06-006": {
+    title:"PROPERTY LEVERAGE — A FICTIONAL FINANCE CASE",
+    textReplacements:[
+      {from:"\"After five years, the property was worth R700,000. My equity: R700,000 — remaining bond (about R350,000) = R350,000. I turned R100,000 into R350,000 in five years. That is leverage.\"",to:"\"In a fictional scenario, suppose the US$50,000 asset later becomes worth US$70,000 while US$35,000 of the loan remains. Equity would be US$35,000. The lesson is how equity is calculated — not a promise that property rises at that rate.\""},
+      {from:"\"But here is what most people do not tell you. The first R100,000 was the hardest. I did not have it. I borrowed R45,000 from a stokvel and saved the rest over three years. The first deposit is always the hardest. After that, you can use equity from one property to buy the next. The system feeds itself. But you have to get through the first one.\"",to:"\"And this is where leverage can become dangerous. Borrowing the deposit from a mukando, family member or another lender adds another obligation. You must count every debt, fee and repayment. Equity from one asset can sometimes support another transaction, but using it increases exposure if prices, income or interest costs move against you.\""},
+      {from:"You want to buy a property for R600,000. You have R120,000 saved for a deposit (20%). Bond interest rate 9%, bond repayment about R4,300 per month. Expected rent R4,800 per month.",to:"Use this fictional simulator only: asset price US$60,000; your capital US$12,000; financed amount US$48,000; assumed repayment US$430/month; assumed rent US$480/month. These are teaching numbers, not Zimbabwe lender terms."},
+      {from:"Monthly cash flow: R4,800 — R4,300 = R_______",to:"Illustrative cash flow before repairs, vacancies, tax, insurance and other costs: US$480 − US$430 = US$_______"},
+      {from:"The Patience Test: Mr. Dlamini said the first deposit is the hardest. How long would it take you to save R120,000 at R500 per month? _______ months = _______ years.",to:"The Patience Test: how long would it take to save US$12,000 at US$50 per month? _______ months = _______ years. What would inflation, income changes or other priorities do to that plan?"},
+      {from:"Key idea: Mr. Dlamini's first property required R100,000. He did not have it. He borrowed from a stokvel. He saved for three years. The paradox: property looks impossible until you break it into steps. First step: save R100. Second step: save R1,000. Third step: save R10,000. You do not need to buy a property tomorrow. You need to start saving for the deposit.",to:"Key idea: property leverage is not a learner recommendation. It is a way to understand debt, equity and amplified risk. A deposit does not remove risk; borrowing the deposit can compound it. Before any real property-finance decision, the current lender terms, affordability, legal documents, transaction costs, taxes, insurance, vacancy risk and maintenance all matter."},
+      {from:"Question 3 — The Patience Diagnosis: You calculated how long it would take to save a R120,000 deposit. That is a long time. What is the MOST LIKELY reason you would give up before reaching that goal? What system, accountability, or rule could you put in place NOW to prevent that?",to:"Question 3 — The Patience Diagnosis: the simulator shows that large capital goals can take years. What would make you abandon a long-term goal, and what rule could help you review it without sacrificing essential needs?"},
+      {from:"This week, create a \"Property Deposit Simulator.\" Choose a real property listed in your area (or nearby). Find out the price. Calculate the deposit (10% or 20%). Then calculate how long it would take you to save that deposit at R200/month, R500/month, and R1,000/month. Write down the numbers. Which savings rate is realistic for you? What would you have to give up to achieve it?",to:"This week, create a fictional Property Finance Simulator. Choose an imaginary asset price and test several equity contributions, loan amounts and repayment assumptions. Include at least maintenance, vacancy and interest-rate risk. The goal is maths and downside analysis — not shopping for a real loan."},
+      {from:"If you cannot find a real property listing, use R500,000 as a sample. Do the same calculations. The purpose is not accuracy — it is to make the timeline real.",to:"Use US$50,000 as a fictional sample if you need a starting value. Label every assumption. The purpose is to understand leverage mechanics, not to predict property returns."},
+    ],
+    tableReplacements:[
+      {
+        cellIncludes:"Monthly bond payment",
+        rows:[
+          ["Item","Fictional Amount"],
+          ["Asset price","US$50,000"],
+          ["Your equity contribution","US$10,000"],
+          ["Financed amount","US$40,000"],
+          ["Illustrative monthly rent","US$500"],
+          ["Illustrative monthly finance payment","US$400"],
+          ["Cash flow before other costs","US$100"],
+        ],
+      },
+      {
+        cellIncludes:"usually 10–20%",
+        rows:[
+          ["Term","What It Means in the Lesson","Real-Life Check"],
+          ["Asset price","The assumed purchase price","Actual negotiated price and transaction costs"],
+          ["Equity contribution","Your own money in the transaction","Lender and deal-specific requirements"],
+          ["Loan / finance","Money borrowed under an agreement","Current interest, fees, security, term and affordability"],
+          ["Repayment","Amount due under the finance agreement","Actual contract, not a textbook estimate"],
+          ["Rent / income","Money the asset may produce","Vacancy, collection and market risk"],
+          ["Cash flow","Income minus all relevant costs","Include finance, maintenance, tax, insurance and vacancies"],
+          ["Capital growth","Change in asset value","Never guaranteed"],
+        ],
+      },
+    ],
+  },
+  "g11-t1-l07-007": {
+    title:"CALCULATING LEVERAGE — THE MATH AT THE TUCKSHOP",
+    textReplacements:[
+      {from:"📘 The Math of Leverage — Mr. Dlamini at the Spaza Shop",to:"📘 The Math of Leverage — Mr. Dlamini at the Tuckshop"},
+      {from:"Mr. Dlamini meets Myah and Thabo at Emmanuel's spaza shop. He has a napkin and a pen.",to:"Mr. Dlamini meets Myah and Thabo at Emmanuel's tuckshop. He has a napkin and a pen."},
+      {from:"The spaza shop is quiet.",to:"The tuckshop is quiet."},
+      {from:"Question 3 — The Memory Test: Emmanuel's mother said: \"Debt has a memory. It outlives the asset.\" What does this mean? If you borrowed R50,000 for an asset that later became worthless, how long would the debt remember you? What would you do?",to:"Question 3 — The Memory Test: Emmanuel's mother said, \"Debt has a memory. It can outlive the asset.\" What does this mean? In a fictional case, if you still owed US$5,000 after an asset became worthless, what obligations and options would you need to investigate?"},
+    ],
+    tableTextReplacements:[
+      {from:"R100,000",to:"US$10,000"},
+      {from:"R500,000",to:"US$50,000"},
+      {from:"R50,000",to:"US$5,000"},
+      {from:"R200,000",to:"US$20,000"},
+      {from:"+R10,000",to:"+US$1,000"},
+      {from:"+R20,000",to:"+US$2,000"},
+      {from:"+R50,000",to:"+US$5,000"},
+      {from:"-R10,000",to:"-US$1,000"},
+      {from:"-R20,000",to:"-US$2,000"},
+      {from:"-R50,000",to:"-US$5,000"},
+    ],
+  },
+  "g11-t1-l08-008": {
+    textReplacements:[
+      {from:"\"Two years ago, I used leverage to buy shares. R5,000 of my own money, borrowed R5,000 from a family member. 2:1 leverage. The shares went up 20%. I made R2,000 on my R5,000 — a 40% return. I felt like a genius.\"",to:"\"Two years ago, in this cautionary story, I used US$500 of my own money and borrowed another US$500 from a family member to buy shares. That is 2:1 leverage. When the shares rose 20%, the US$1,000 position gained US$200 — a 40% gain on my own US$500 before costs. I felt like a genius.\""},
+      {from:"He pauses. \"Then the shares went down. 30% drop. I lost R3,000 on my R5,000 — a 60% loss. I owed my family member money I did not have. I had to work extra shifts for three months to pay it back.\"",to:"He pauses. \"Then the shares fell 30%. The US$1,000 position lost US$300 — 60% of my own US$500. I still owed the family member the borrowed money. Leverage had multiplied the downside too.\""},
+      {from:"Myah walks Themba to the taxi rank afterwards. Atlehang Ngwenya is there, waiting for his taxi. He is reading a book — something about business. He looks up as they approach.",to:"Myah walks Themba to the kombi rank afterwards. Atlehang Ngwenya is there, waiting for transport and reading a business book. He looks up as they approach."},
+      {from:"\"You are Themba,\" he says. \"The one who lost R2,000 on shares.\"",to:"\"You are Themba,\" he says. \"The one who learned what leveraged losses feel like.\""},
+    ],
+    appendBlocks:[
+      {kind:"text",type:"paragraph",text:"Safety note: borrowing to invest can create losses larger than the investor's own starting capital and still leave debt to repay. This lesson is a leverage-risk simulation, not a recommendation to borrow for shares or other investments."},
+    ],
+  },
+  "g11-t1-l09-009": {
+    textReplacements:[
+      {from:"He sits at Emmanuel's spaza shop, head in his hands. Myah finds him there.",to:"He sits at Emmanuel's tuckshop, head in his hands. Myah finds him there."},
+    ],
+  },
+  "g11-t1-l10-010": {
+    title:"PEOPLE LEVERAGE — THABO BRINGS SOMEONE INTO THE BUSINESS",
+    textReplacements:[
+      {from:"📘 Thabo's Big Decision at the Spaza Shop",to:"📘 Thabo's Big Decision at the Tuckshop"},
+      {from:"He sits with Myah and Emmanuel at the spaza shop, a notebook open.",to:"He sits with Myah and Emmanuel at the tuckshop, a notebook open."},
+      {from:"You run a small business. You work 20 hours per week and earn R2,000. You could hire someone for R50/hour to do half your work (10 hours). You would pay R500/week. In your free 10 hours, you could earn an extra R800.",to:"In a fictional business example, you work 20 hours per week and generate US$200. You consider paying someone US$5/hour for 10 hours of work — US$50. If the freed 10 hours could generate another US$80, calculate the apparent financial difference, then list the costs and legal responsibilities the simple arithmetic leaves out."},
+    ],
+    tableReplacements:[
+      {
+        cellIncludes:"R1,200/week",
+        rows:[
+          ["Item","Current casual-help model","Proposed regular-worker model — illustrative"],
+          ["Revenue","US$120/week","US$120/week before any growth"],
+          ["Payments to helpers","US$60/week variable","US$80/week agreed wage"],
+          ["Thabo's direct delivery time","15 hours","15 hours initially"],
+          ["Potential free time","Limited","More time may become available for customers, training and supervision"],
+          ["Hidden question","Unclear consistency","Can the business afford the worker once all obligations and slow weeks are counted?"],
+        ],
+      },
+      {
+        cellIncludes:"UIF",
+        rows:[
+          ["Responsibility","What It Means"],
+          ["Pay fairly","Agree compensation clearly and pay on time"],
+          ["Train well","Show the person how to do the work safely and correctly"],
+          ["Supervise","Check quality and give useful feedback"],
+          ["Respect","Treat workers with dignity"],
+          ["Protect","Provide safe working conditions"],
+          ["Follow current Zimbabwe law","Check contracts, tax/social-security and labour obligations that actually apply before treating someone as an employee"],
+        ],
+      },
+    ],
+  },
+  "g11-t1-l12-012": {
+    textReplacements:[
+      {from:"Myah sees Atlehang Ngwenya at the taxi rank later. He is on his phone. She expects him to be scrolling. He is not. He is building a spreadsheet.",to:"Myah sees Atlehang Ngwenya at the kombi rank later. He is on his phone. She expects him to be scrolling. He is not. He is building a spreadsheet."},
+      {from:"\"Inventory tracker. For my uncle's spaza shop. He still counts everything by hand. Takes him three hours every Sunday. I am building him something that will take ten minutes.\"",to:"\"Inventory tracker. For my uncle's tuckshop. He still counts everything by hand. It takes hours every week. I am building him something that should make the count faster — if the data is entered correctly.\""},
+    ],
+    tableReplacements:[
+      {
+        cellIncludes:"22seven",
+        rows:[
+          ["Tool Type","Examples","What It Can Do","Risk / Check"],
+          ["Budgeting","Spreadsheet or budgeting app","Track spending and categories","Privacy, data quality, fees"],
+          ["Saving","Bank or regulated savings app","Schedule or track transfers","Provider legitimacy and account terms"],
+          ["Investing","Appropriately regulated broker or investment platform available in Zimbabwe","Access suitable securities or funds","Verify SEC Zimbabwe / relevant regulator status, fees and risk"],
+          ["Learning","Videos, courses, podcasts, official guidance","Expand knowledge","Source quality and outdated information"],
+          ["Communication","WhatsApp, email templates","Reach people quickly","Privacy, professionalism and scams"],
+          ["Organisation","Calendars, reminders, task tools","Reduce forgetting","Dependence on a device or platform"],
+          ["Business","Design, accounting or marketing tools","Systemise repeatable work","Subscription cost, data ownership, accuracy"],
+        ],
+      },
+    ],
+  },
+  "g11-t1-l13-013": {
+    textReplacements:[
+      {from:"Myah has been keeping notebooks since Grade 9. Three years of learning. Three years of capturing. Three years of connecting.",to:"Myah has been keeping notebooks since Form 2. Years of learning, capturing and connecting."},
+      {from:"Grade 9: Values. Enterprise. The grant office. Mama Rose. Mrs. Nkosi. The cooler box. \"Business is people.\" \"The system does not reward rule-followers. It rewards visibility.\"",to:"Form 2: Values. Enterprise. The committee office. Mama Rose. Mrs. Nkosi. The cooler box. Learning that business is people, evidence and action."},
+      {from:"Grade 10: Compound interest. Gogo Maria's worn piece of paper. Systems. Tax. Retirement. Insurance. \"Money is a tool. Life is the project.\"",to:"Form 3 Terms 1–2: Compound growth. Gogo Maria's table. Systems. Zimbabwe tax literacy. Retirement layers. Insurance. \"Money is a tool. Life is the project.\""},
+      {from:"Grade 11: Leverage. Mr. Dlamini's properties. Mr. Patel's four rules. Themba's risk lesson. \"Control what you can control.\"",to:"Form 3 Term 3: Leverage. Mr. Dlamini's fictional leverage maths. Mr. Patel's systems. Themba's risk lesson. \"Control what you can control.\""},
+      {from:"\"But here is the thing,\" Myah says. \"I do not just write things down. I review them. Every Sunday. I look for patterns. I connect ideas across years. Grade 9's 'visibility' connects to Grade 10's 'marketing' connects to Grade 11's 'leverage.' They are the same idea, deepening over time.\"",to:"\"But here is the thing,\" Myah says. \"I do not just write things down. I review them. I look for patterns across Forms and terms. Enterprise connects to marketing; systems connect to leverage; leadership connects to all of them. The ideas deepen over time.\""},
+      {from:"At the taxi rank later, Myah sees Atlehang Ngwenya sitting on the queue marshal's bench. He has a notebook too — smaller than hers, worn at the edges.",to:"At the kombi rank later, Myah sees Atlehang Ngwenya sitting on the rank marshal's bench. He has a notebook too — smaller than hers, worn at the edges."},
+      {from:"What is one idea from Grade 9 or 10 that I still use today? _________________________________",to:"What is one idea from Form 2 or earlier in Form 3 that I still use today? _________________________________"},
+      {from:"The Architect's Question: You have been learning Applied Commerce for three years. If you had to teach the single most important lesson you have learned to a Grade 8 learner — in five minutes — what would you say?",to:"The Architect's Question: if you had five minutes to teach the most important Applied Commerce lesson you have learned to a Form 1 learner, what would you say?"},
+      {from:"Question 2: What is one idea from Grade 9 or 10 that you still use today? What is one idea from this year that connects to something you learned earlier?",to:"Question 2: What is one idea from Form 2 or earlier in Form 3 that you still use? What idea from this term connects to it?"},
+      {from:"Question 3 — The Five-Minute Test: You have five minutes to teach the single most important lesson from three years of Applied Commerce to a Grade 8 learner. What do you say? Write it. Then deliver it to someone this week. The act of teaching is the act of compounding.",to:"Question 3 — The Five-Minute Test: you have five minutes to teach one important Applied Commerce lesson to a Form 1 learner. Write it, then deliver it to someone if appropriate. Teaching exposes whether you really understand."},
+      {from:"If there is no one to teach, create a one-page resource — a simple explanation of one concept from this course. Write it as if you were teaching a Grade 9 learner. The act of writing is teaching.",to:"If there is no one to teach, create a one-page explanation of one concept for a Form 2 learner. The act of writing is also a test of understanding."},
+    ],
+  },
+  "g11-t1-l14-014": {
+    textReplacements:[
+      {from:"Question 2: What is one combination of leverage types that could help you with your post-matric goals? Explain how they would work together. What is the shadow of that combination?",to:"Question 2: What combination of leverage types could help with your Form 4 and post-O-Level goals? Explain how they work together and what downside the combination could amplify."},
+    ],
+  },
+  "g11-t1-l15-015": {
+    textReplacements:[
+      {from:"Ms. Daniels gathers everyone at the community hall. The same hall where they presented their Financial Independence Plans in Grade 10. But everything feels different now. They are older. They know more. They have built more.",to:"Ms. Daniels gathers everyone at the community hall. The same hall where they presented their Financial Independence Plans earlier in Form 3. The learners have more evidence now — and new questions."},
+      {from:"\"This term, we have explored leverage — financial, time, people, systems, technology, knowledge. You found leverage at the taxi rank. You calculated ratios with Mr. Dlamini. You learned risk from Themba. You built systems with Mr. Patel. Now it is your turn to create a plan.\"",to:"\"This term, we have explored financial, time, people, systems, technology and knowledge leverage. You found leverage at the kombi rank. You calculated fictional ratios with Mr. Dlamini. You learned downside risk from Themba. Now it is your turn to create a plan.\""},
+    ],
+  },
+  "g11-t1-l19-019": {
+    textReplacements:[
+      {from:"Emmanuel presents. Systems + Technology leverage for the spaza shop. Inventory tracking. Customer loyalty program via WhatsApp. His Reality Check: If stockouts happen more than twice in a month after the system is live, the system is broken.",to:"Emmanuel presents. Systems + Technology leverage for the tuckshop. Inventory tracking. Customer loyalty via WhatsApp. His Reality Check: if stockouts happen more than twice in a month after the system is live, the system needs revision."},
+      {from:"Sipho presents. This is the same Sipho who had no goals in Grade 8. Who failed at selling sweets. Who cut up his credit card. Who built a bicycle repair business from nothing. His plan: People + Systems leverage. Train a second repair person. Create a repair manual. His Reality Check: If my trainee cannot complete a basic puncture repair after two weeks of training, my manual is not clear enough. His shadow: What if I train someone who leaves and becomes my competitor? The answer is not to stop training. The answer is to treat them so well they do not want to leave.",to:"Sipho presents. This is the same Sipho who had no goals in Form 1, who failed at selling sweets and later built a repair business from small tests. His plan: People + Systems leverage. Train a second repair person and create a repair manual. His Reality Check: if the trainee cannot safely complete a basic puncture repair after two weeks of training, the training system needs revision. His shadow: a trained person may leave or become a competitor. The answer is not to avoid training; it is to build a fair relationship and a resilient business."},
+      {from:"Themba joins via video call from university. \"The leverage plan I wrote in Grade 11? I still use it. I update it every year. It is not a school project. It is a life tool.\"",to:"Themba joins via video call. \"The leverage plan I wrote as a learner? I still use the logic. I update it as my circumstances change. A useful school project can become a life tool when you keep reviewing it.\""},
+      {from:"\"Thabo, you learned that letting go is not losing. Lethabo, you learned that one tutorial, recorded once, can teach for years. Myah, you learned that the architect's work is building structures that outlast you. Sipho — you had no goals in Grade 8. Now you have a leverage plan with Managing the Downside. That is not just progress. That is proof.\"",to:"\"Thabo, you learned that letting go is not losing. Lethabo, you learned that one tutorial can teach more than one person. Myah, you learned that architecture means structures that can work beyond one moment. Sipho — you had no goals in Form 1. Now you have a leverage plan with Managing the Downside. That is evidence of growth.\""},
+      {from:"Question 3 — The Sipho Mirror: Sipho had no goals in Grade 8. Now he has a leverage plan. What version of yourself — from an earlier grade — would be most surprised by the plan you presented today? What would that younger you say?",to:"Question 3 — The Sipho Mirror: Sipho had no goals in Form 1. Now he has a leverage plan. What earlier version of yourself would be most surprised by the plan you presented today? What would that younger you say?"},
+    ],
+  },
+  "g11-t1-l20-020": {
+    title:"LEVERAGE CYCLE REFLECTION & PORTFOLIO CHECKPOINT",
+    textReplacements:[
+      {from:"Lesson 3: Her post-matric vision. Atlehang's insight: All the pieces are one thing.",to:"Lesson 3: Her Form 4 and post-O-Level vision. Atlehang's insight: the pieces may share a connecting capability."},
+      {from:"Lesson 4: The taxi rank. Finding all six levers — and their shadows — in one place.",to:"Lesson 4: The kombi rank. Finding all six levers — and their shadows — in one place."},
+      {from:"From me, in Grade 11 Date: _____________________",to:"From me, in Form 3 Term 3 — after the Leverage Cycle Date: _____________________"},
+      {from:"You have completed Term 1 of Grade 11.",to:"You completed the Leverage Cycle of Form 3 Term 3. The term continues with leadership, responsibility and your Leadership Philosophy."},
+    ],
+    tableReplacements:[
+      {
+        cellIncludes:"post-matric vision",
+        rows:[
+          ["Lessons","What We Learned"],
+          ["1–4","Leverage mindset, six types, Form 4/post-O-Level vision and shadow assessment"],
+          ["5–8","Financial leverage maths, property case simulation, ratios, risk and downside"],
+          ["9–10","Time leverage, delegation and people leverage with employment responsibilities"],
+          ["11–13","Systems, technology and knowledge leverage"],
+          ["14","Integration — the Leverage Matrix"],
+          ["15–19","Leverage Plan project: design, feedback, refinement and presentations"],
+          ["20","Leverage Cycle reflection and portfolio checkpoint"],
+        ],
+      },
+    ],
+  },
   "g9-t1-l01-001": {
     textReplacements: [
       {from:"Recall key learning from Grade 8 and assess what you carry forward.",to:"Recall key learning from Form 1 and assess what you carry forward."},
