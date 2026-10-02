@@ -1700,6 +1700,21 @@ export const zimbabweReviewedNeutralUnitIds = [
   "g8-t4-l75-074",
 ] as const;
 
+export const zimbabweReviewedNeutralForm2UnitIds = [
+  "g9-t1-l02-002",
+  "g9-t1-l06-006",
+  "g9-t2-l30-031",
+  "g9-t3-l38-027",
+  "g9-t3-l39-028",
+  "g9-t3-l43-032",
+  "g9-t3-l44-033",
+  "g9-t3-l45-034",
+  "g9-t4-l64-054",
+  "g9-t4-l65-055",
+  "g9-t4-l67-057",
+  "g9-t4-l68-058",
+] as const;
+
 const SOUTH_AFRICAN_LANGUAGE_HEADER=/^(?:\*\*)?(?:isiZulu|isiXhosa|Afrikaans|Sepedi|Setswana)(?:\*\*)?$/i;
 
 function applyZimbabweStructuralDefaults(block:ContentBlock):ContentBlock{
