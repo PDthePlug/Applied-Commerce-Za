@@ -287,3 +287,48 @@ test("Form 3 keeps the leverage checkpoint internal and hands the year to Form 4
   assert.match(overlay,/You have completed Form 3 Term 3 — and the full Form 3 Applied Commerce year/);
   assert.match(overlay,/Looking Ahead to Form 4 — The O-Level Launch Year/);
 });
+
+
+test("every Form 4 source lesson is explicitly localised or reviewed as context-neutral",()=>{
+  const overlay=fs.readFileSync("lib/zimbabwe-content.ts","utf8");
+  const explicit=new Set([
+    ...[...overlay.matchAll(/^\s{2}"(g11-t[34]-[^"]+)": \{/gm)].map(match=>match[1]),
+    ...[...overlay.matchAll(/^\s{2}"(g12-[^"]+)": \{/gm)].map(match=>match[1]),
+  ]);
+  const neutralSection=overlay.match(/zimbabweReviewedNeutralForm4UnitIds = \[([\s\S]*?)\] as const;/);
+  assert.ok(neutralSection,"reviewed-neutral Form 4 registry must exist");
+  const neutral=new Set(
+    [...neutralSection[1].matchAll(/"(g(?:11|12)-[^"]+)"/g)].map(match=>match[1])
+  );
+
+  const g11=bundle(11);
+  const g12=bundle(12);
+  const sourceIds=[
+    ...g11.terms
+      .filter(term=>term.term>=3)
+      .flatMap(term=>term.units)
+      .filter(unit=>unit.type==="lesson")
+      .map(unit=>unit.id),
+    ...g12.terms
+      .flatMap(term=>term.units)
+      .filter(unit=>unit.type==="lesson")
+      .map(unit=>unit.id),
+  ];
+
+  assert.equal(sourceIds.length,112);
+  assert.equal(explicit.size,94);
+  assert.equal(neutral.size,18);
+  assert.equal(new Set([...explicit,...neutral]).size,112);
+  assert.deepEqual(
+    sourceIds.filter(id=>!explicit.has(id)&&!neutral.has(id)),
+    [],
+    "no Form 4 lesson may enter the Zimbabwe pathway without localisation review",
+  );
+});
+
+test("Form 4 runtime cleanup remains unit-scoped and Zimbabwe-specific",()=>{
+  const overlay=fs.readFileSync("lib/zimbabwe-content.ts","utf8");
+  assert.match(overlay,/zimbabweFinalCleanupOverrides/);
+  assert.match(overlay,/applyReviewedTableTextReplacements\(transformed,cleanup\?\.tableText\)/);
+  assert.match(overlay,/applyReviewedTextReplacements\([\s\S]*cleanup\?\.text/);
+});
