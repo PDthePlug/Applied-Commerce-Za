@@ -3970,7 +3970,11 @@ function applyReviewedTableReplacements(
   const result=blocks.map(block=>{
     if(block.kind!=="table") return block;
     const flat=block.rows.flat();
-    const index=replacements.findIndex(item=>flat.some(cell=>cell.includes(item.cellIncludes)));
+    const index=replacements.findIndex(
+      (item,replacementIndex)=>
+        !matched.has(replacementIndex)&&
+        flat.some(cell=>cell.includes(item.cellIncludes))
+    );
     if(index<0) return block;
     matched.add(index);
     return {...block,rows:replacements[index].rows};
