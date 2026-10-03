@@ -3624,6 +3624,153 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
       {from:"You have completed Term 2 of Grade 12.",to:"You have completed Form 4 Term 2: transition, work, career launch and income strategy."},
     ],
   },
+  "g12-t3-l41-041": {
+    textReplacements:[
+      {from:"Then, three years ago, a fire started in the storage room. An electrical fault. A spark. By the time the fire brigade arrived, half the factory was smoke-damaged and the storage room was gone. R200,000 in damage. Three weeks of lost production. Twelve employees who could not work while repairs were underway.",to:"Then, three years ago, a fire started in the storage room. An electrical fault. A spark. By the time the fire brigade arrived, half the factory was smoke-damaged and the storage room was gone. In this illustrative scenario, the direct damage was US$20,000, plus three weeks of disrupted production and twelve employees affected by the shutdown."},
+    ],
+  },
+  "g12-t3-l42-042": {
+    title:"INSURANCE DEEP DIVE — TRANSFERRING THE RISKS YOU CANNOT CARRY",
+    textReplacements:[
+      {from:"\"When I started this company, I had one truck. I insured it against accidents and theft. That was all I thought I needed. Then a driver got injured on the job. I had no workers' compensation insurance. His family sued me. I had no liability insurance. I had to pay R80,000 out of my own pocket—money I had saved for a second truck. One injury. One gap in my insurance. And it cost me a year of growth.\"",to:"\"When I started this company, I had one truck. I insured the vehicle, but I had not mapped all the other risks around employees, third parties and business interruption. Then an injury exposed the gap. The lesson was not that one named policy solves everything. It was that I needed professional advice and regulated cover matched to the risks my business actually carried.\""},
+      {from:"\"Yes. It costs me R12,000 a month. But that R12,000 protects a business that generates R300,000 a month. Insurance is not a cost. It is a transfer of risk. I pay someone else to carry the risks that would destroy me. The premium is the price of peace. And the price of peace is worth paying.\"",to:"\"Insurance is a real cost. I pay the premium because, for selected risks, transferring part of the financial loss is worth that cost. The policy does not remove the risk, and it does not cover everything. I still need prevention, emergency reserves and a clear understanding of exclusions, limits and claim conditions.\""},
+      {from:"Key idea: Ms. Nkosi pays R12,000 a month for insurance. That sounds like a lot. But that R12,000 protects R300,000 in monthly revenue. Insurance is not a cost. It is a transfer of risk. You pay someone else to carry the risks that would destroy you. The premium is the price of peace.",to:"Key idea: insurance is one risk-management tool. You pay a premium to transfer defined financial risks under a contract. The decision should compare the potential loss, probability, premium, exclusions, limits, excess/deductible and the insurer's regulation and claims terms. IPEC is the relevant Zimbabwe regulator for insurance and pensions; verify providers and current consumer guidance before buying."},
+      {from:"Here’s the tension: insurance is also a product sold by companies that profit from your fear. Not all insurance is necessary. Some is overpriced. Some covers risks so unlikely that the premium is not worth it. The art is discernment—knowing which risks are worth insuring and which are worth accepting. Ms. Nkosi's rule is simple: insure what would break you. Accept what would annoy you. The phone that costs R3,000 to replace? Annoying. The illness that costs R300,000 to treat? Catastrophic. Insure the catastrophic. Accept the annoying. And here is the deeper truth: the people who sell you insurance are not your friends. They are businesses. Their job is to maximize profit. Your job is to minimize risk. These two goals are in tension. Read the policy. Understand the exclusions. Know what you are buying. The fine print is where the protection ends and the profit begins.",to:"Here’s the tension: not every risk should be insured, and not every policy is good value. A small loss may be better carried through savings; a catastrophic loss may be impossible to carry alone. But severity is only one factor. Read the policy wording. Understand exclusions, waiting periods, limits, excesses, disclosure duties and claims procedures. Compare regulated providers. Insurance should fit the risk—not fear, pressure or a sales pitch."},
+      {from:"Question 3 — The Insurance Pre-Mortem: You do not have health insurance. You are in an accident. The hospital bill is R150,000. You have no savings. Write the scene. Now write: What will you do THIS YEAR to ensure that scene never happens?",to:"Question 3 — The Protection Pre-Mortem: Imagine a serious health or accident cost that your household could not comfortably absorb. What financial and non-financial protections could reduce the impact—appropriate insurance, emergency savings, workplace cover where applicable, public/private care options, safer behaviour or another measure? Which facts would you need to verify before choosing?"},
+    ],
+  },
+  "g12-t3-l43-043": {
+    textReplacements:[
+      {from:"\"Thabo, what happens if one of your drivers causes an accident and someone is seriously injured? The medical bills are R500,000. The family sues. Who pays?\"",to:"\"Thabo, what happens if one of your drivers causes an accident and someone is seriously injured? The claim could be far larger than the cash the business has available. Who carries that liability, what does the business structure change, and what insurance or other protection actually applies?\""},
+    ],
+  },
+  "g12-t3-l44-044": {
+    title:"ESTATE PLANNING — WILLS, ESTATES & BENEFICIARIES IN ZIMBABWE",
+    rangeReplacements:[
+      {
+        startIncludes:"Requirements for a valid will in South Africa:",
+        endIncludes:"The Choice Is Yours. Make It Now.",
+        replacement:[
+          {kind:"text",type:"section",text:"Zimbabwe Will Formalities — Verify the Current Law"},
+          {kind:"text",type:"paragraph",text:"Zimbabwe's Wills Act sets legal formalities for a valid will. A will should be in writing and executed with the required signatures and witnesses. Witness choices can affect benefits under the will, and special situations can change the legal analysis. Because estate law is consequential, use the current Wills Act and qualified legal advice rather than relying on a classroom checklist as legal advice."},
+          {kind:"text",type:"paragraph",text:"If someone dies without a valid will, the estate is administered under Zimbabwe's intestate-succession and estate-administration rules. That does not mean 'the government takes everything'. It means the law determines how the estate is administered and who is entitled according to the applicable rules."},
+          {kind:"text",type:"equation",text:"Estate Planning = Clear Wishes + Valid Documents + Updated Records + Current Legal Advice"},
+        ],
+      },
+    ],
+    tableReplacements:[
+      {
+        cellIncludes:"Living will",
+        rows:[
+          ["Document / Tool","Purpose","Zimbabwe Learning Rule"],
+          ["Will","Records wishes for distribution of an estate and can nominate an executor or address guardianship issues","Must satisfy current Zimbabwe legal formalities; use legal advice for a real will"],
+          ["Beneficiary / nomination form","May direct benefits under a particular policy, pension or product where that product and law allow it","Check the specific product rules; do not assume every account has one"],
+          ["Trust","A separate legal arrangement that may hold/manage assets for beneficiaries","Trust law, costs, trustee duties and suitability require professional advice"],
+          ["Estate records","List of assets, liabilities, policies, documents and key contacts","Keep accurate, accessible and updated records so the estate can be administered"],
+        ],
+      },
+    ],
+    tableTextReplacements:[
+      {from:"R",to:"Currency + amount",exact:true},
+    ],
+    textReplacements:[
+      {from:"Here’s the tension: making a will forces you to confront your own mortality. That is uncomfortable. Most people avoid it. They tell themselves they will do it later—when they are older, when they have more, when it matters more. But \"later\" has a way of becoming \"never.\" And \"never\" means the government decides who gets your things. And here is the deeper truth: a will is not just about distributing assets. It is about preventing conflict. Grief does strange things to people. Families that love each other can tear each other apart over a dining table, a few thousand rand, a piece of jewellery. The will is not just a legal document. It is a peace treaty. It says: I have made these decisions so you do not have to fight about them. The will is not about you. It is about protecting the people you love from each other.",to:"Here’s the tension: making a will forces you to confront mortality, and that is uncomfortable. But delay can leave an estate to be handled without clear recorded wishes. A valid will can reduce uncertainty, but it does not eliminate every dispute, tax, debt or administration step. The responsible approach is to keep the document valid, review it after major life changes, keep estate records organised and get professional advice where the estate is complex."},
+      {from:"Question 1: What is a will? What are the four requirements for a valid will in South Africa? Why can a beneficiary not be a witness?",to:"Question 1: What is a will? Using the current Zimbabwe Wills Act or qualified guidance, identify the formalities that apply to executing a valid will. Why must witness and beneficiary issues be handled carefully?"},
+    ],
+  },
+  "g12-t3-l45-045": {
+    title:"TRUSTS, BENEFICIARY NOMINATIONS & DOCUMENT ALIGNMENT",
+    rangeReplacements:[
+      {
+        startIncludes:"Beneficiary nominations: \"Your life insurance policy.",
+        endIncludes:"All Three Must Align. If They Conflict → Chaos.",
+        replacement:[
+          {kind:"text",type:"paragraph",text:"Beneficiary or nomination forms can apply to some insurance, pension or investment products. The effect depends on the product contract and current Zimbabwe law. Do not assume a bank account, policy and pension all use the same nomination rules, and do not assume a nomination automatically overrides a will in every case. Check the governing document and get advice where the outcome matters."},
+          {kind:"text",type:"paragraph",text:"A trust is a separate legal arrangement in which trustees hold or manage assets according to the trust instrument and law for stated beneficiaries or purposes. Trusts can be useful in some family, succession, charitable or asset-management situations, but they carry costs, duties and legal consequences. They are not a universal tax-saving or asset-protection shortcut."},
+          {kind:"text",type:"paragraph",text:"Example: where a family wants money managed for a minor beneficiary, a lawyer can help determine whether a testamentary trust or another lawful structure is appropriate. The design must reflect Zimbabwe law, the beneficiary's needs, trustee responsibilities, costs and the actual assets involved."},
+          {kind:"text",type:"equation",text:"Alignment = Will + Product Documents + Trust Documents (if any) + Current Law + Updated Records"},
+        ],
+      },
+    ],
+    tableReplacements:[
+      {
+        cellIncludes:"Direct transfer of specific assets",
+        rows:[
+          ["Tool","What It Does","What to Verify"],
+          ["Will","Records estate wishes and nominations within the will","Execution formalities, estate administration and whether later life changes require an update"],
+          ["Trust","Creates a legal arrangement for assets to be managed under stated rules","Trust deed/will terms, trustee duties, fees, tax and suitability"],
+          ["Beneficiary / nomination form","Directs benefits for a specific product where its rules allow","Product terms, governing law, current nominated person and how it interacts with the estate"],
+        ],
+      },
+    ],
+    textReplacements:[
+      {from:"What accounts or policies do I have that require beneficiary nominations? (Bank accounts, TFSA, RA, life insurance, etc.)",to:"What policies, pension arrangements or investment products do I have—or expect to have—that use a beneficiary or nomination form? I will verify each product rather than assume: _________________________________"},
+      {from:"The Affirmation: A will says who gets what. A trust says how and when. A beneficiary nomination transfers assets directly, outside the will. All three must align. If they conflict—if your will says one thing and your nomination says another—the result is chaos. The beneficiaries fight. The lawyers profit. The estate is consumed. Alignment is not optional. It is the foundation of a peaceful transfer of what you have built.",to:"The Affirmation: wills, trusts and product nominations are different legal tools. Their effects depend on their documents and the law that governs them. Alignment matters because inconsistent documents can create uncertainty, delay or disputes. The first step is not to guess which document 'wins'. The first step is to identify the asset, the governing document and the applicable law."},
+      {from:"Check your beneficiary nominations this week—on your bank accounts, your TFSA, your RA, any policies. Are they up to date? Do they reflect your current wishes? If you do not have accounts with nominations yet, make a note to set them up when you do—and to review them annually.",to:"If you already have an insurance, pension or investment product with a beneficiary or nomination feature, check the provider's current record and rules. If you do not, make a future-action note: when I open a product, I will ask whether it has a nomination feature, what legal effect it has, and how often I should review it."},
+    ],
+  },
+  "g12-t3-l46-046": {
+    title:"INVESTMENT CONSOLIDATION — SEEING THE WHOLE PORTFOLIO",
+    tableReplacements:[
+      {
+        cellIncludes:"Equities (local)",
+        rows:[
+          ["Asset Class","Illustrative Amount","Percentage","Target","Status"],
+          ["Zimbabwe / local equities","US$4,500","45%","40%","Overweight"],
+          ["Global equities","US$2,500","25%","25%","On target"],
+          ["Property / listed property exposure","US$1,500","15%","15%","On target"],
+          ["Fixed-income / money-market exposure","US$1,000","10%","15%","Underweight"],
+          ["Cash","US$500","5%","5%","On target"],
+        ],
+      },
+      {
+        cellIncludes:"Type (TFSA, RA, Shares, etc.)",
+        rows:[
+          ["Provider / Account","Product Type","Balance / Currency","Fees","Regulator / Verification"],
+          ["","","","",""],
+          ["","","","",""],
+          ["","","","",""],
+        ],
+      },
+    ],
+    textReplacements:[
+      {from:"\"When I started investing at 18, I opened a TFSA with one provider. Then I heard about another provider with lower fees, so I opened another TFSA. Then my employer offered a pension fund. Then I started an RA with yet another provider. Then I bought some shares through an app. Five different places. Five different logins. Five different fee structures. And I had no idea what my overall asset allocation looked like.\"",to:"\"When I started investing, I opened products in different places as I learned about them—an employer pension arrangement, a collective investment, some direct shares and a cash product. Different providers. Different fees. Different currencies and risks. I eventually realised I did not know what my total portfolio looked like.\""},
+      {from:"\"I consolidated. I moved everything into two platforms—one for my TFSA and RA, one for my direct shares. I calculated my overall asset allocation for the first time. I discovered I was 85% in equities—way too high for my age and goals. I was taking more risk than I realized because I had never looked at the whole picture. Consolidation is not just about convenience. It is about clarity. You cannot manage what you cannot see.\"",to:"\"I built one consolidated view first. That did not automatically mean moving every account. Some products have transfer costs, tax consequences, access rules or employer restrictions. The first win was visibility: asset class, currency, fees, provider, regulator, liquidity and purpose. Only then could I decide whether actual consolidation made sense.\""},
+    ],
+  },
+  "g12-t3-l47-047": {
+    title:"FRAUD PREVENTION — THE PAUSE THAT PROTECTS YOU",
+    tableTextReplacements:[
+      {from:"Pay R500 to get R50,000",to:"Pay US$50 to unlock US$5,000",exact:false},
+    ],
+    textReplacements:[
+      {from:"But something stops him. He remembers a lesson from Grade 11—Ms. Daniels talking about fraud. \"Banks never ask for your PIN or password via SMS. If you are unsure, call the bank directly—using the number on their website, not the number in the message.\"",to:"But something stops him. He remembers an earlier Applied Commerce fraud lesson: never trust contact details inside an unexpected message. If a message claims to be from a bank or institution, use a separately verified official channel."},
+      {from:"\"Pause. Always pause. No legitimate institution will demand immediate action via SMS. No bank will ask for your password. No SARS official will call threatening arrest unless you pay immediately. No investment opportunity will guarantee 20% monthly returns. The pause is your protection. Five seconds of thinking can save you years of recovery.\"",to:"\"Pause. Urgency and fear are common scam tools. Do not disclose passwords, PINs or one-time codes because an unexpected caller or message asks. A caller claiming to be ZIMRA, a bank, police, employer or investment provider can be impersonated. End the contact and verify independently through the institution's official channel. Guaranteed extraordinary returns are a warning sign, not proof of an opportunity.\""},
+      {from:"Banks Do Not Ask for Passwords. SARS Does Not Threaten Arrest. If It Sounds Too Good to Be True, It Is.",to:"Pause. Verify Independently. Protect Passwords, PINs and One-Time Codes."},
+    ],
+  },
+  "g12-t3-l48-048": {
+    textReplacements:[
+      {from:"Myah has been using the same password for everything since Grade 9. Her email. Her banking app. Her social media. Her TFSA. Her digital product platform. One password. Easy to remember. Easy to type. Easy to guess.",to:"Myah realises she has reused the same password since Form 2 across email, banking, social media, an investment platform and her digital-product account. One password. Easy to remember. Easy for one breach to turn into several compromised accounts."},
+    ],
+  },
+  "g12-t3-l49-049": {
+    textReplacements:[
+      {from:"Question 3 — The Wealth Audit: You have R1 million in the bank. But your health is ruined by overwork. Your relationships are broken by neglect. You have no time for anything you love. You have no memories that bring you joy. Are you wealthy? Write the scene. Now write: What is ONE thing you will do THIS WEEK to protect a form of wealth you have been neglecting?",to:"Question 3 — The Wealth Audit: Imagine you have enough financial assets to feel secure, but your health is damaged by overwork, your relationships are neglected and you have no time for anything meaningful. Are you wealthy? Write the scene. Then name ONE action you will take this week to protect a non-financial form of wealth you have been neglecting."},
+    ],
+  },
+  "g12-t3-l52-052": {
+    title:"RISK & PROTECTION CYCLE REFLECTION",
+    textReplacements:[
+      {from:'9. The 1-10 Scale: At the start of the term, you were a "1" on the protection literacy scale. Where are you now, honestly? What is the exact number? What is the ONE specific thing you need to do in Term 4 to move up by a single point?',to:'9. The 1-10 Scale: Where were you on the protection-literacy scale at the start of this cycle, and where are you now? What is ONE specific thing you need to strengthen before the Life Launch integration work?'},
+      {from:'Write a letter to yourself. Address it to "Future Me." Tell your future self who you are now, what you learned this term, what your Risk and Protection Plan includes, what you are proud of, what you hope for Term 4, and what you want to remember.',to:'Write a letter to yourself. Address it to "Future Me." Tell your future self what you learned in the risk-and-protection cycle, what your plan now covers, what is still uncertain, and what you want to carry into the Life Launch integration work.'},
+      {from:"From me, in Grade 12 Date: _________________",to:"From me, in Form 4 Date: _________________"},
+      {from:"📂 Portfolio: Keep this letter somewhere safe. Read it at the end of Term 4.",to:"📂 Portfolio: Keep this letter somewhere safe. Read it at the end of Form 4."},
+      {from:"Question 2: Where are you on the 1-10 protection literacy scale? What is the ONE specific thing you need to do in Term 4 to move up by a single point?",to:"Question 2: Where are you on the 1-10 protection-literacy scale? What is ONE specific protection gap you need to address before the final Life Launch Plan?"},
+      {from:"You have completed Term 3 of Grade 12.",to:"You have completed the risk-and-protection cycle inside Form 4 Term 3."},
+      {from:"One term to go. The final launch. See you in Term 4.",to:"The final integration and Life Launch work comes next. There is no fourth Zimbabwe school term—the remaining source lessons complete Form 4 Term 3."},
+    ],
+  },
   "g9-t1-l01-001": {
     textReplacements: [
       {from:"Recall key learning from Grade 8 and assess what you carry forward.",to:"Recall key learning from Form 1 and assess what you carry forward."},
