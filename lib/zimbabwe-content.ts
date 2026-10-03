@@ -3771,6 +3771,149 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
       {from:"One term to go. The final launch. See you in Term 4.",to:"The final integration and Life Launch work comes next. There is no fourth Zimbabwe school term—the remaining source lessons complete Form 4 Term 3."},
     ],
   },
+  "g12-t4-l61-053": {
+    title:"FORM 4 JOURNEY REVIEW — READY TO INTEGRATE",
+    tableReplacements:[
+      {
+        cellIncludes:"post-matric options",
+        rows:[
+          ["Zimbabwe Term","Theme","What We Built"],
+          ["Form 4 Term 1","Advanced Wealth & Legacy","10-Year Wealth Plan, protection, giving, estate/legacy thinking and the Life and Legacy Plan"],
+          ["Form 4 Term 2","Transition, Work & Career Launch","Post-O-Level Transition Plan, career strategy, CV/interview/networking evidence and income strategy"],
+          ["Form 4 Term 3","Risk, Protection & Life Launch","Risk and Protection Plan completed; integration and final Life Launch work now in progress"],
+        ],
+      },
+    ],
+    textReplacements:[
+      {from:"📘 Myah Looks Back at Grade 12",to:"📘 Myah Looks Back at Form 4"},
+      {from:"Myah sits at Mama Rose's kitchen, her three notebooks from Grade 12 spread across the table. Term 1. Term 2. Term 3. She flips through them, amazed at how much ground they have covered—and how close she is to the end.",to:"Myah sits at Mama Rose's kitchen with her Form 4 portfolio spread across the table. Advanced wealth and legacy. Transition and career launch. Risk and protection. She is close to the end—but the pieces still need to become one Life Launch architecture."},
+      {from:"Funding. Zinhle: \"NSFAS is a loan with grace.\"",to:"Funding. Zinhle: \"Read the conditions. A bursary, scholarship, sponsorship and student loan are not the same thing.\""},
+      {from:"She closes the notebooks. Three terms. One year. And before that, Grade 9, Grade 10, Grade 11. The observer who noticed everything. The challenger who demanded answers. The strategist who built systems. The architect who designed structures. The operator who maintained them. Now: the launcher. The one who takes everything designed and built and maintained—and releases it into the world.",to:"She closes the notebooks. Behind Form 4 sit Form 1, Form 2 and Form 3. The observer learned to notice. The challenger learned to act. The strategist and architect learned to design systems. In Form 4, the operator and launcher must make those systems real."},
+      {from:"She writes on a fresh page: I am not the same person who opened the Grade 9 book. I have plans. I have purpose. I have a financial architecture. I have a career vision. I have risk protection. I have evidence—four years of it—that I can act on the world and create change. I am ready for the final final project. I am ready to launch.",to:"She writes on a fresh page: I am not the same person who opened the Form 1 book. I have purpose, plans, evidence, financial architecture, a career direction and a protection strategy. I have four years of evidence that I can notice, act, design, review and change. I am ready to integrate it."},
+      {from:"✍️ Activity 61: My Grade 12 Review",to:"✍️ Activity 61: My Form 4 Review"},
+      {from:"One word to describe my Grade 12 journey so far: _________________________________",to:"One word to describe my Form 4 journey so far: _________________________________"},
+      {from:"The Affirmation: Myah's word for Grade 12 so far: Launch. Everything has been building to this. The paradox: the more you learn, the more you realise how much you do not know. But the more you know, the more you can launch. You are not starting the final term empty. You are starting with everything you have built over four years.",to:"The Affirmation: Myah's word for Form 4 is Launch. Everything has been building toward the point where plans meet evidence. You are not beginning the final integration work empty. You bring four years of learning and the humility to keep updating what you think you know."},
+      {from:"Question 2: What is the thread that ties your Grade 12 journey together? What is one word that captures this year for you?",to:"Question 2: What is the thread that ties your Form 4 journey together? What is one word that captures this year for you?"},
+      {from:"Share your Grade 12 review with your family. Let them see how far you have come. Ask them: \"What growth have you seen in me this year? What do you see in me now that was not there in January?\"",to:"Share your Form 4 review with someone who has witnessed your growth. Ask: \"What growth have you seen in me? What evidence do you notice that I might overlook?\""},
+      {from:"| Date | | | Lesson | Lesson 61 — Grade 12 Review | | Launch Decision | What I still need to do before I launch: | | Prediction | | | Result | | | Learning | | | Next Action | |",to:"| Date | | | Lesson | Lesson 61 — Form 4 Review | | Launch Decision | What I still need to do before O-Level launch: | | Prediction | | | Result | | | Learning | | | Next Action | |"},
+    ],
+  },
+  "g12-t4-l62-054": {
+    textReplacements:[
+      {from:"Term 1: Transition Plan — Path: Hybrid. UNISA part-time BEd. Business part-time. Shared flat in Pretoria. Budget balanced.",to:"Form 4 Term 2 Transition Plan — Path: Hybrid. Further study option still subject to confirmed entry requirements and funding. Workshops and digital products continue part-time. Shared-living option in Harare if needed. Budget uses current verified costs."},
+      {from:"The Affirmation: Myah saw that her plans were aligned. The Transition Plan got her to UNISA and the business. The Career Plan kept her earning. The Risk Plan kept her protected. The paradox: a life is not a collection of separate plans. It is one plan with many parts. Do not see your plans as separate. See them as one.",to:"The Affirmation: Myah sees that her plans must support one another. The Transition Plan explains the next route and logistics. The Career Plan explains how she will build capability and income. The Risk Plan protects the people, assets and systems she depends on. A life is not a folder of unrelated plans. It is one system with connected parts."},
+    ],
+  },
+  "g12-t4-l63-055": {
+    title:"MY TRANSITION PLAN — FINAL FORM 4 UPDATE",
+    tableReplacements:[
+      {
+        cellIncludes:"NSFAS + business income",
+        rows:[
+          ["Element","Earlier Plan","Current Evidence / Update","What I Learned"],
+          ["Path","Hybrid: further study + business","Shortlist confirmed; final route still depends on results, admission, cost and funding","A plan can be clear without pretending uncertain decisions are already final"],
+          ["Business","Workshops + digital products","Four workshops delivered; two products tested; revenue is growing but variable","Marketing and repeat demand require as much attention as creating"],
+          ["Funding","Bursary / student finance / business income options","Applications and eligibility checked against current official sources; no unconfirmed funding counted as income","Funding is not real until terms and approval are confirmed"],
+          ["Living","Shared-living option if relocation is required","Two realistic options costed; roommate expectations discussed","Housing is a financial, safety and relationship decision"],
+          ["Budget","Illustrative launch budget","Rebuilt with current prices and clearly labelled currencies; buffer included","Old estimates expire"],
+          ["Timeline","Applications, results, decisions, start dates","Each date has an official source or a review trigger","A timeline is only as reliable as its evidence"],
+          ["Backup","Family / work / alternative study or skills route","Defined trigger for when the preferred path becomes unworkable","Backup plans protect momentum, not ego"],
+        ],
+      },
+    ],
+  },
+  "g12-t4-l64-056": {
+    title:"MY CAREER LAUNCH & RISK PLANS — FINAL UPDATE",
+    tableReplacements:[
+      {
+        cellIncludes:"R10,000 target",
+        rows:[
+          ["Element","Earlier Plan","Current Update","Status / Next Check"],
+          ["Insurance","Contents, liability, health / medical protection where relevant","Products to be chosen only after comparing regulated cover, exclusions and cost","Verify IPEC / provider and policy wording"],
+          ["Estate","Will and estate records","Will formalities and estate documents to be checked under current Zimbabwe law","Legal review when the document becomes real"],
+          ["Investments","Consolidated low-cost diversified portfolio","One portfolio view created across providers, currencies, fees and asset classes","Verify provider / regulator and rebalance only for a reason"],
+          ["Fraud prevention","Protocols in place","Two-factor authentication, password manager and independent-verification routine active","Review after any breach or device/account change"],
+          ["Emergency fund","Target based on essential expenses","Current amount tracked in the actual currencies held; target recalculated when costs change","Monthly review"],
+        ],
+      },
+    ],
+  },
+  "g12-t4-l65-057": {
+    title:"MY LEGACY VISION — FINAL FORM 4 UPDATE",
+    textReplacements:[
+      {from:"Review and update your Legacy Vision from Grade 11.",to:"Review and update the Legacy Vision you developed earlier in Form 4."},
+      {from:"Myah pulls out her Grade 11 Legacy Vision—the four dimensions she defined in Term 4 of last year. She reads it. She still believes it. But it needs updating. She is not the same person who wrote it. She knows more. She has built more. She has more evidence.",to:"Myah pulls out the Legacy Vision she developed earlier in Form 4. She still believes in its direction, but evidence has changed some of the details. A legacy vision should mature as the person and the context change."},
+      {from:"Original (Grade 11):",to:"Earlier Form 4 version:"},
+      {from:"Updated (Grade 12 Term 4):",to:"Final Form 4 update:"},
+      {from:"Financial: The same. But now specific: R50,000 in a scholarship fund by age 35. A paid-off property by 50. A will that directs assets to financial education causes.",to:"Financial: build a dedicated education-support fund over time, own productive assets only when the economics make sense, and keep estate documents aligned with the causes and people I intend to support. The amounts and vehicles will be updated as income, law and opportunities change."},
+      {from:"Look at your Legacy Vision from Grade 11. Does it still ring true? How do your launch plans support it? What is one specific, measurable legacy goal you can set?",to:"Look at your earlier Legacy Vision. Does it still ring true? How do your launch plans support it? What is one measurable legacy action you can take within the next year rather than only decades from now?"},
+      {from:"Original legacy vision (Grade 11): _________________________________",to:"Earlier legacy vision: _________________________________"},
+      {from:"Updated legacy vision (Grade 12):",to:"Updated Form 4 legacy vision:"},
+    ],
+  },
+  "g12-t4-l66-058": {
+    textReplacements:[
+      {from:"Ms. Daniels stands at the front of the community hall for her final formal lesson. The hall is full—not just her current class, but former students who have come back. Themba is there. Zinhle is there. Sipho is there from Grade 9, now with his workshop and his employees. The room is quiet.",to:"Ms. Daniels stands at the front of the community hall for her final formal lesson. The hall is full—not just her current class, but former learners and mentors who have come back. Themba is there. Zinhle is there. Sipho is there from Form 2, now with his workshop and employees. The room is quiet."},
+      {from:"Here’s the tension: the deepest truth she named is also the hardest to believe: you are already enough. Not you will be enough when you have the degree, the job, the house, the portfolio. You are enough now. The person who has been becoming for four years—the observer, the challenger, the strategist, the architect, the operator, the launcher—that person is enough. The plans are impressive. The person is extraordinary. And the launch is not about becoming someone new. It is about releasing into the world the person you already are. The person you have been becoming since Grade 9. All of them are you. All of them have always been you. Now go be them in the world.",to:"Here’s the tension: launch culture can make you believe that your worth begins only after the qualification, job, business or income arrives. It does not. Applied Commerce has asked you to build capability, not to earn the right to matter. Across four years you practised observing, challenging, strategising, architecting, operating and launching. Those are modes you can use—not identities you must perform perfectly."},
+    ],
+  },
+  "g12-t4-l67-059": {
+    textReplacements:[
+      {from:"\"Looking back, I see it now. Every person I fed. Every child who grew up eating my food. Every neighbour who knew they could come to me when they had nothing. Every taxi driver who started his day with my coffee. Every elder who ended her day with my soup. I did not plan any of it. I just showed up. Every day. For twenty years.\"",to:"\"Looking back, I see it now. Every person I fed. Every child who grew up eating my food. Every neighbour who knew they could come to me when they had nothing. Every kombi driver who started the day with my coffee. Every elder who ended the day with my soup. I did not design a grand legacy. I kept showing up.\""},
+      {from:"The Launch Commitment: If I leave Grade 12 without thanking the people who shaped me, I am carrying debt, not gratitude. My gratitude action this week is: _________________________________",to:"The Launch Commitment: If I leave Form 4 without thanking at least one person who shaped me, I am missing part of the handoff. My gratitude action this week is: _________________________________"},
+    ],
+  },
+  "g12-t4-l68-060": {
+    title:"FINAL CAPSTONE LAUNCH — MY LIFE LAUNCH PLAN",
+    tableReplacements:[
+      {
+        cellIncludes:"Grade 9 values",
+        rows:[
+          ["Section","What to Include","Evidence to Draw From"],
+          ["1. My Purpose and Values","What matters most? What do I stand for?","Values evidence from Forms 1–4"],
+          ["2. My Post-O-Level Transition Plan","Next 1–2 years: pathway, prerequisites, logistics, living and budget","Form 4 Term 2 transition cycle, updated in this final sequence"],
+          ["3. My Career Launch Plan","Career direction, income strategy, brand, network and skills","Form 4 Term 2 career cycle"],
+          ["4. My Risk and Protection Plan","Insurance, estate records, investments, fraud/digital security and emergency buffer","Form 4 Term 3 risk cycle"],
+          ["5. My Life Integration","How work, money, people, health, joy and purpose connect","All four forms"],
+          ["6. My Legacy Vision","What I want to contribute and pass on","Form 4 Term 1 + final update"],
+          ["7. My Mentorship Plan","Who I learn from and who I help","Evidence across the programme"],
+          ["8. My Ethics Framework","Principles, red lines and how I handle conflicts","Leadership and ethics evidence"],
+          ["9. My Contingency Plans","What if the preferred route fails or an unexpected opportunity appears?","Transition, career and risk plans"],
+          ["10. My Launch Timeline","Near-term actions and later review milestones","Current dates and realistic checkpoints"],
+          ["11. My Reality Checks","For each major section: what evidence says it is working or failing?","All forms"],
+          ["12. My Downside Management","What could go wrong and how will I reduce, transfer or accept the risk?","Risk and protection work"],
+          ["13. My Reflection","What I learned creating the plan and through Applied Commerce","Portfolio evidence"],
+        ],
+      },
+    ],
+    textReplacements:[
+      {from:"\"This is it. Your final capstone. The project that brings together everything—from Grade 9 to now.\"",to:"\"This is it. Your final capstone. The project that brings together the evidence you have built from Form 1 to Form 4.\""},
+    ],
+  },
+  "g12-t4-l69-061": {
+    title:"FINAL CAPSTONE WORKSHOP — DRAFTING YOUR LIFE LAUNCH PLAN",
+    textReplacements:[
+      {from:"Purpose and Values: To help people understand money—through stories, through tension, through truth. Justice. Integrity. Curiosity. Community. These have not changed since Grade 9. They have only been tested—and confirmed.",to:"Purpose and Values: To help people understand money through stories, questions and practical evidence. Justice. Integrity. Curiosity. Community. These values have been tested since Form 2 and refined through experience."},
+      {from:"Transition Plan: Hybrid path. UNISA part-time BEd. Workshops and digital products part-time. Shared flat in Pretoria. Roommate agreement signed. Budget balanced with R700 buffer. Move-in: 15 January. First lecture: February. First workshop of the year: March.",to:"Transition Plan: Hybrid path remains the preferred direction, but the exact study institution, intake and funding remain conditional on confirmed requirements and offers. Workshops and digital products continue part-time. Housing and budget decisions use current costs and a defined cash buffer."},
+      {from:"Risk and Protection Plan: Health insurance on family plan until 21. Contents insurance for flat. Liability insurance for business. Income protection planned. Will signed and witnessed. Emergency fund R8,400, target R10,000. Two-factor authentication on all accounts. Password manager active.",to:"Risk and Protection Plan: appropriate health/medical protection to be verified; contents and business liability cover compared with regulated providers if needed; estate documents checked under Zimbabwe law; emergency fund tracked against essential expenses; two-factor authentication and a password manager active."},
+      {from:"Life Integration: Purpose: financial education. Work: UNISA + business. Money: budget + emergency fund + investments. People: mother, Atlehang, mentors, mentees. Health: one full day off per week (Atlehang holds me accountable). Joy: reading, nature, cooking.",to:"Life Integration: Purpose: financial education. Work: further study or training + business, subject to final route. Money: budget + emergency fund + diversified investments. People: mother, Atlehang, mentors and mentees. Health: protected recovery time. Joy: reading, nature and cooking."},
+      {from:"Legacy Vision: Financial: R50,000 scholarship fund by 35. Values: integrity, curiosity, justice, community—passed on through teaching. Social: 20 trained educators, resources in 50 schools. Environmental: carbon-neutral business operations by 30.",to:"Legacy Vision: build an education-support fund when income allows; pass on integrity, curiosity, justice and community through teaching; train other educators; expand useful learning resources; reduce the environmental footprint of the work as the business grows."},
+      {from:"Contingency Plans: If UNISA does not work: full-time business + short courses. If business income drops: tutoring to fill gap. If health suffers: reduce commitments, not purpose. If unexpected opportunity arises: evaluate against purpose and values before accepting.",to:"Contingency Plans: If the preferred study route does not work, reassess A-Level, tertiary, technical, work or structured-skills alternatives against the same purpose and constraints. If business income drops, use the income-contingency plan. If health suffers, reduce commitments. Evaluate unexpected opportunities against purpose, cost, risk and evidence."},
+      {from:"January: Move in. Set up workspace. Register for UNISA.",to:"First transition month: confirm the next route, complete required registration or onboarding, and set up the workspace/living system only after dates and costs are verified."},
+      {from:"Age 25: TFSA maxed. RA started. Teaching formally.",to:"Later milestone: regulated investing and retirement saving established in products that fit the law, income, goals and risk at that time; teaching or facilitation pathway reviewed against real progress."},
+      {from:"Here’s the tension: the plan is evidence. Evidence of growth. Evidence of becoming. Evidence that the observer of Grade 9, the challenger of Grade 9, the strategist of Grade 10, the architect of Grade 11, the operator and launcher of Grade 12—all of them are real. All of them have built something. This plan is the proof. Not proof of future success—that is not guaranteed. Proof of present readiness. Proof that you have done the work. Proof that you are ready to launch.",to:"Here’s the tension: a plan is evidence of thinking, not proof that the future will cooperate. Your four-year portfolio shows that you can observe, test, revise and build. The Life Launch Plan should therefore contain both direction and revision triggers. Readiness is not certainty. It is the ability to respond when certainty disappears."},
+    ],
+  },
+  "g12-t4-l70-062": {
+    title:"FINAL CAPSTONE WORKSHOP — FEEDBACK & REFINEMENT",
+    textReplacements:[
+      {from:"Learners work in their final small groups at Mama Rose's kitchen. Myah is with Thabo, Lethabo, and Atlehang—the same group that has workshopped every plan since Grade 10.",to:"Learners work in their final small groups at Mama Rose's kitchen. Myah is with Thabo, Lethabo and Atlehang—the same group that has workshopped major plans since Form 3."},
+      {from:"Thabo studies her numbers. \"Your timeline has you completing your BEd by age 20. That is fast for part-time study. Are you sure UNISA allows that pace? What if it takes longer?\"",to:"Thabo studies her timeline. \"You have written a completion date for a study route that is not final yet. What official source supports that duration? What happens if admission, funding or the pace of study changes?\""},
+      {from:"Good question. Myah checks the UNISA requirements. \"You are right. Part-time BEd takes longer—typically 5–6 years. I revise: complete by age 23, not 20. The Reality Check: if I have not completed at least two modules per year, I am not progressing. I will either increase my study hours or reduce business commitments.\"",to:"Good question. Myah removes the invented certainty. Her plan now says: confirm the programme, workload and expected duration from the chosen institution before setting the completion milestone; then review progress against the institution's actual academic rules and her health/work capacity."},
+      {from:"Lethabo: \"Your scholarship fund goal is R50,000 by 35. But you have not specified how you will build it. Is it a separate account? A percentage of income? A specific investment vehicle?\"",to:"Lethabo: \"Your education-support fund is a value statement, but where is the mechanism? What contribution rule will you use when income becomes stable? How will you keep the money separate and choose a regulated product that fits the time horizon?\""},
+      {from:"Another good question. Myah adds: \"I will open a separate TFSA designated for the scholarship fund. R200/month starting at age 25, increasing to R500/month by 30. At 8% growth, that reaches about R55,000 by 35. The Reality Check: if the fund has less than R20,000 by age 30, I am not prioritizing it. I will either increase contributions or admit it is not a real goal.\"",to:"Another good question. Myah adds a flexible mechanism: once income and emergency reserves are stable, allocate a defined percentage of surplus to a separate education-support fund. Review the product, fees, regulation, tax treatment and target annually. The Reality Check is contribution consistency and progress relative to the current target—not an invented guaranteed return."},
+    ],
+  },
   "g9-t1-l01-001": {
     textReplacements: [
       {from:"Recall key learning from Grade 8 and assess what you carry forward.",to:"Recall key learning from Form 1 and assess what you carry forward."},
