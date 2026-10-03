@@ -3388,6 +3388,143 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
       {from:"If there is no young entrepreneur to talk to, write a reflection on what business you would start and why. What would be your R20 version—the smallest possible test?",to:"If there is no young entrepreneur to talk to, write a reflection on what business you would test and why. What is the smallest possible version that gives you real evidence?"},
     ],
   },
+  "g12-t1-l11-011": {
+    title:"FIRST-YEAR TERTIARY EXPERIENCE — THE REAL VERSION",
+    textReplacements:[
+      {from:"Financially: \"I had a budget. NSFAS covered my basics. But I blew my living allowance in the first two months—takeaways, data, going out. By March, I was eating pap and nothing else. I had to call my mother for money. It was humiliating. After that, I tracked every rand. I still do. The tracking app on my phone is the only reason I am still afloat.\"",to:"Financially: \"I had a budget and some student funding for the basics. But I spent too much of my living money early—takeaways, data, going out. Later I had to ask my family for help. After that, I tracked every amount and labelled the currency. The lesson was not that a budget exists. It was that the budget has to survive actual behaviour.\""},
+    ],
+  },
+  "g12-t1-l12-012": {
+    title:"STARTING WORK — YOUR FIRST PAYSLIP",
+    tableReplacements:[
+      {
+        cellIncludes:"Unemployment Insurance Fund",
+        rows:[
+          ["Term","Definition"],
+          ["Probation","A trial or assessment period at the start of some jobs, subject to the employment agreement and law"],
+          ["Contract","A legal agreement setting out work terms and responsibilities"],
+          ["Payslip","A statement showing gross pay, deductions and net pay"],
+          ["PAYE","Employee income tax deducted by the employer and remitted to ZIMRA under current rules"],
+          ["NSSA contribution","A statutory social-security contribution where the employment is covered; current rates and ceilings must be verified"],
+        ],
+      },
+      {
+        cellIncludes:"Gross salary",
+        rows:[
+          ["Description","Illustrative Amount"],
+          ["Gross salary","US$500"],
+          ["Illustrative PAYE for the exercise only","-US$50"],
+          ["Illustrative NSSA / statutory contribution","-US$20"],
+          ["Other agreed pension, medical or voluntary deductions","-US$30"],
+          ["Illustrative net pay","US$400"],
+        ],
+      },
+    ],
+    textReplacements:[
+      {from:"\"I expected R12,000. I got R8,580. R3,420 disappeared before it reached me. I was angry. I felt robbed. I called my mother. She said: 'Welcome to adulthood.'\"",to:"\"I expected to receive my gross salary. Then I saw the payslip and realised gross pay and net pay are different. Some deductions were statutory; others depended on my employment arrangements. I was frustrated because I had built my budget around the wrong number.\""},
+      {from:"\"Then I learned what each deduction was for. PAYE—income tax. That pays for roads, schools, clinics. UIF—unemployment insurance. If I lose my job, that fund helps me survive. Pension—my future self. Medical aid—my health. The money was not stolen. It was allocated. But nobody had explained it to me. I had to figure it out on my own. That is why I am telling you now. So you are not surprised on your first payday.\"",to:"\"Then I learned to read every line. PAYE is employee income tax administered by ZIMRA. NSSA contributions apply to covered employment under current rules. A private pension, medical arrangement, union fee or voluntary deduction only belongs on my plan if it actually applies to me. The adult skill is not memorising one old payslip. It is knowing how to verify what each deduction means.\""},
+      {from:"If you start working full-time, what are you most excited about? Most nervous about? What would you do if your first payslip was R3,420 less than you expected?",to:"If you start formal work, what are you most excited about? Most nervous about? What would you do if net pay was materially lower than the gross salary you used in your budget?"},
+      {from:"Key idea: Zinhle's first payslip was R3,420 less than she expected. She learned the hard way. The paradox: your gross salary sounds amazing. Your net salary is what you actually get. Understand the difference. Plan for it. Or be surprised—and possibly in trouble—on your first payday.",to:"Key idea: gross pay and net pay are not the same. Your budget must be based on the amount you can actually use after valid deductions. The exact PAYE table, NSSA rate or other deduction can change, so verify current official rules rather than relying on an old example."},
+      {from:"Here’s the tension: the deductions are not theft. They are allocations. PAYE pays for the society you live in. UIF is a safety net. The pension is your future self. Medical aid is your health. You can resent them. Or you can understand them. The resentment does not change the numbers. The understanding lets you plan. The adult learns what each deduction is for—and budgets accordingly. The child complains and is perpetually surprised. The choice is yours. And here is the deeper truth: the payslip shock is not just about money. It is about the loss of an illusion—the illusion that the number you agreed to is the number you will receive. That loss is a small grief. Allow yourself to feel it. Then do the math. Then adjust. The grief passes. The math remains.",to:"Here’s the tension: not every deduction has the same purpose or legal basis. Some are statutory, some contractual and some voluntary. Do not treat every deduction as automatically correct, and do not assume every deduction is optional. Read the payslip, compare it with your contract and current official rules, ask questions where something is unclear, and budget from verified net pay."},
+      {from:"If there is no family member to ask, research the current minimum wage in South Africa. Write down: What is it? What jobs pay minimum wage? What does a person earning minimum wage take home after deductions?",to:"If there is no family member to ask, use official sources to find the current ZIMRA PAYE table and NSSA contribution guidance. Record the date of each source. What would you need to know before calculating a real person's net pay?"},
+    ],
+  },
+  "g12-t1-l13-013": {
+    title:"MOVING OUT? — THE REAL COST OF INDEPENDENCE",
+    textReplacements:[
+      {from:"Thabo is thinking about moving out after matric. His delivery business has grown. He has five part-time employees now. Revenue is about R12,000 a month. Profit about R7,000 after paying everyone. He wants independence. He wants his own space.",to:"Thabo is thinking about moving out after Form 4. His delivery business has grown. In this illustrative example, revenue is about US$1,200 a month and profit about US$700 after paying business costs and helpers. He wants independence. He wants his own space."},
+      {from:"He sits with Myah at Emmanuel's spaza shop. They work through the numbers.",to:"He sits with Myah at Emmanuel's tuckshop. They work through the numbers."},
+      {from:"His profit: R7,000.",to:"His illustrative profit: US$700."},
+      {from:"Gap: R2,000.",to:"Illustrative gap: US$200."},
+    ],
+    tableReplacements:[
+      {
+        cellIncludes:"Rent (shared flat, own room)",
+        rows:[
+          ["Expense","Illustrative Monthly Cost"],
+          ["Rent (shared room / flat arrangement)","US$280"],
+          ["Electricity and water","US$50"],
+          ["Internet / data","US$40"],
+          ["Food","US$180"],
+          ["Transport","US$90"],
+          ["Phone / airtime","US$35"],
+          ["Toiletries and household","US$30"],
+          ["Clothing","US$40"],
+          ["Emergency saving","US$70"],
+          ["Entertainment","US$50"],
+          ["Unexpected / replacement","US$35"],
+          ["Total","US$900"],
+        ],
+      },
+    ],
+  },
+  "g12-t1-l14-014": {
+    textReplacements:[
+      {from:"Myah is planning to share a flat when she moves to Pretoria for her part-time studies and business. She has never shared a living space with anyone except her mother. She is nervous.",to:"Myah is considering a shared flat in Harare if her study-and-business plan requires her to move. She has never shared a living space with anyone except family. She is nervous—and she knows that affordability is only one part of the decision."},
+    ],
+  },
+  "g12-t1-l15-015": {
+    title:"PROJECT LAUNCH — MY POST-O-LEVEL TRANSITION PLAN",
+    tableTextReplacements:[
+      {from:"My Post-Matric Path",to:"My Post-O-Level Path",exact:true},
+      {from:"NSFAS? Bursaries? Loans? Work?",to:"Government student loan? Bursary? Scholarship? Sponsorship? Loan? Work?"},
+    ],
+    textReplacements:[
+      {from:"Ms. Daniels gathers everyone at the community hall. The same hall where they have presented their plans since Grade 9. The same chairs. The same sense of occasion. But everything feels different now. This is the last Term 1 project of their school career. The launch is imminent.",to:"Ms. Daniels gathers everyone at the community hall. The same hall where they have presented plans since Form 2. This project closes the transition cycle inside Form 4 Term 2. O-Level completion is getting closer, and the plans now need dates, evidence and contingencies."},
+      {from:"\"This term, we have explored transition—what changes at 18, your options after matric, funding, living independently, roommates. Now it is time to create your personal plan.\"",to:"\"In this cycle, we explored legal adulthood, pathways after Form 4, tertiary and skills applications, funding, work, enterprise and the costs of independence. Now it is time to build your transition plan.\""},
+      {from:"MY POST-MATRIC TRANSITION PLAN",to:"MY POST-O-LEVEL TRANSITION PLAN"},
+      {from:"\"Your task is to create a realistic, actionable plan for the next 1–2 years after matric. This is not a wish list. It is a strategy. It must include your path, your timeline, your funding, your living situation, your budget, and your contingency plans. It must include Reality Checks—because a plan without honesty checks is just a fantasy. It must include Managing the Downside—because every strategy casts a shadow, and the shadow you do not see is the one that will undermine you.\"",to:"\"Your task is to create a realistic plan for the next one to two years after Form 4. It may include A-Level, tertiary or technical study, apprenticeship, work, enterprise, a structured gap period or a hybrid. Include the prerequisites, timeline, funding, living situation, budget, contingencies, Reality Checks and downside management relevant to your actual path.\""},
+      {from:"\"This plan is the bridge between the architect you became in Grade 11 and the operator you are becoming in Grade 12. It is the first document of your adult life. Treat it with that weight.\"",to:"\"This plan is the bridge between the architecture you built through Form 3 and Form 4 Term 1 and the operator you are becoming now. Treat it as a living document: serious enough to guide action, flexible enough to change when evidence changes.\""},
+      {from:"This is the first final project of Grade 12. What part are you most confident about? What part feels hardest? What section are you most avoiding?",to:"This is the first major launch project of Form 4. What part are you most confident about? What part feels hardest? What section are you most avoiding?"},
+      {from:"My post-matric path: _________________________________",to:"My post-O-Level / next pathway: _________________________________"},
+      {from:"The Shadow Audit: For your primary post-matric strategy, what is the shadow—the unintended consequence, the risk, the downside? Name it. Then name your management plan.",to:"The Shadow Audit: For your primary transition strategy, what is the main unintended consequence or downside? Name it. Then name your management plan."},
+      {from:"| Date | | | Lesson | Lesson 15 — Transition Plan Launch | | Launch Decision | My post-matric path: | | Prediction | | | Result | | | Learning | | | Next Action | |",to:"| Date | | | Lesson | Lesson 15 — Transition Plan Launch | | Launch Decision | My next pathway: | | Prediction | | | Result | | | Learning | | | Next Action | |"},
+    ],
+  },
+  "g12-t1-l16-016": {
+    textReplacements:[
+      {from:"Myah shares her plan: Hybrid path. UNISA part-time BEd. Business part-time—workshops, digital products. NSFAS funding. Shared flat in Pretoria. Budget balanced with R500 buffer.",to:"Myah shares her plan: a hybrid path combining part-time further study with workshops and digital products. She has identified two possible institutions and will only confirm one after checking current admission, cost and funding conditions. Her illustrative budget has a US$50 buffer and a shared-living option in Harare."},
+      {from:"Thabo studies her numbers. \"Your budget has a R500 buffer. That is tight. What if rent increases? What if a client does not pay? What is your plan B for months when business income dips? And what is the shadow of the hybrid path? What suffers when you are doing both?\"",to:"Thabo studies her numbers. \"Your budget has a US$50 buffer in this illustration. That is tight. What if rent increases? What if a client does not pay? What is your plan B for months when business income dips? And what is the shadow of the hybrid path? What suffers when you are doing both?\""},
+      {from:"Good questions. Myah adds a specific contingency: \"If business income drops below R2,000 in any month, I will take on tutoring students to fill the gap.\" And for the shadow: \"The shadow of hybrid is burnout. I am doing two things, each demanding full attention. My management plan: one full day off per week, non-negotiable. If I miss it two weeks in a row, I reconfigure my schedule.\"",to:"Good questions. Myah adds a contingency: \"If business income drops below the minimum level required by my budget for two review periods, I will reduce optional costs and add tutoring or other paid work before using emergency savings.\" For the shadow she writes: \"Hybrid can create burnout. I need protected recovery time and a trigger that tells me when the schedule must change.\""},
+      {from:"Another good question. Myah adds a backup: \"If I cannot find a place by January 15, I will stay with my cousin in Pretoria for the first three months while I search.\"",to:"Another good question. Myah adds a backup: \"If I cannot secure suitable accommodation by my decision date, I will stay with family temporarily while I reassess transport, cost and safety.\""},
+    ],
+  },
+  "g12-t1-l17-017": {
+    title:"TRANSITION PLAN PRESENTATIONS — DAY 1",
+    textReplacements:[
+      {from:"Thabo presents first. His plan: grow the delivery business into a full logistics company. Hire two more employees. Save for a vehicle. Study business part-time at a TVET college. Live at home for one more year to save. His Reality Check: \"If the business is not generating R15,000 a month by December next year, I will get a part-time job to supplement. I will not let pride keep me from stability.\" His shadow: \"The shadow of growth is complexity. More employees means more management. My management plan: weekly team check-ins, clear roles, documented processes.\"",to:"Thabo presents first. His plan: grow the delivery business carefully, save toward a vehicle, explore part-time business or technical study, and live at home for one more year if that remains workable. His Reality Check uses a profit target based on his actual business records—not a borrowed number from a textbook. If the target is missed for the agreed review period, he will add paid work rather than let pride destroy stability."},
+      {from:"Nosipho presents. Her plan: university, teaching degree, NSFAS, tutoring business on the side. Residence first year. Her Reality Check: \"If I fail more than one module in first year, I am not managing my time. I will either reduce my tutoring hours or get academic support.\"",to:"Nosipho presents. Her plan: follow the academic pathway required for teacher training, apply to suitable institutions, pursue bursaries or student finance where eligible, and continue tutoring only if it does not undermine her studies. Her Reality Check is tied to actual academic performance and workload."},
+      {from:"\"I have been designing this since Grade 9. The grant office taught me that waiting is a trap. The cooler box taught me that starting small is better than waiting for perfect. Mrs. Nkosi taught me that the need is not always what you think. Gogo Maria taught me that compound interest is magic—but only if you start early. Mr. Patel taught me that integrity compounds. Ms. Daniels taught me that money is a tool. Life is the project. Mama Rose taught me that business is people.\"",to:"\"I have been building this since Form 2. The committee office taught me not to confuse waiting with strategy. The cooler box taught me to test small. Mrs. Nkosi taught me to investigate the real need. Gogo Maria taught me why time matters in compounding. Mr. Patel taught me that integrity compounds too. Ms. Daniels taught me that money is a tool. Mama Rose taught me that business is people.\""},
+    ],
+  },
+  "g12-t1-l18-018": {
+    textReplacements:[
+      {from:"Emmanuel presents. His plan: spaza shop transformation—delivery service, cooperative buying with other shops, part-time business diploma. His Reality Check: \"If the shop is not generating enough profit to pay me a sustainable salary by age 22, I will either restructure or get a second income stream. Nostalgia is not a strategy.\" His shadow: \"The shadow of family business is unclear boundaries. I will separate business finances from family finances and have a formal employment contract with my mother.\"",to:"Emmanuel presents. His plan: transform the family tuckshop through delivery, better records, cooperative purchasing tests with other shops and part-time business learning. His Reality Check is whether the business can produce a sustainable return without confusing family money with business money."},
+      {from:"\"I had no goals in Grade 8. I failed at selling sweets. I got a credit card and messed up. I cut it up. I started fixing bicycles because it was the only thing I knew how to do. Now I have a plan. I know where I am going. I know what I am building. That is not just progress. That is proof. Proof that change is possible. Proof that the person who starts with nothing can build something. And if I can do it, anyone can.\"",to:"\"I had no goals in Form 1. I failed at a small selling experiment. I made later money mistakes and had to repair them. I started fixing bicycles because it was a skill I could use. Now I have a plan and evidence. That does not mean everyone has the same starting conditions. It means change is possible when learning, support and repeated action come together.\""},
+      {from:"\"Thabo. From a broken bike and a handful of customers to a logistics company with employees and a growth plan. Lethabo. From one ugly clock for your grandmother to a manufacturing business and a digital product line. Atlehang. From a single question in Grade 9—'Did you ask them why?'—to a gap year with intention and a vision for community development. Myah. From the grant office. From the cooler box. From silence and rejection. To an integrated transition plan—hybrid path, business and study, Reality Checks for every section, a budget that works, a living plan that protects her health. Sipho. From no goals. From melted sweets. From a cut-up credit card. To a business. To a plan. To a future. To a workshop with employees and a buffer to protect them.\"",to:"\"Thabo: from a broken bike and a handful of customers to a business with systems and a growth plan. Lethabo: from one rough prototype to manufacturing and digital products. Atlehang: from one question in Form 2 to a structured community-development direction. Myah: from the committee office and cooler box to an integrated transition plan. Sipho: from no goals and failed experiments to a workshop, employees and a buffer designed to protect them.\""},
+      {from:"Question 3 — The Sipho Mirror: Sipho had no goals in Grade 8. Now he has a Transition Plan with a Reality Check and Managing the Downside. What version of yourself—from an earlier grade—would be most surprised by the plan you presented today? What would that younger you say?",to:"Question 3 — The Sipho Mirror: Sipho had no goals in Form 1. Now he has a Transition Plan with Reality Checks and downside management. What earlier version of yourself would be most surprised by your current plan? What would that younger you say?"},
+    ],
+  },
+  "g12-t1-l19-019": {
+    title:"TRANSITION CYCLE REFLECTION",
+    textReplacements:[
+      {from:"Lesson 1: Welcome to Grade 12. The launch year. Her mother's words: \"Make yourself impossible to ignore in the world.\" Her Launch Commitment.",to:"Lesson 1: Form 4 launch phase. Her Launch Commitment and the decision to turn architecture into action."},
+      {from:"Lesson 8: Funding. Zinhle: \"NSFAS is a loan with grace.\"",to:"Lesson 8: Funding. Bursaries, scholarships, current student-loan schemes, sponsorships and the discipline of reading conditions."},
+      {from:"Lesson 12: Zinhle's first job. The payslip shock. R3,420 gone before it reached her.",to:"Lesson 12: Zinhle's first job. Gross pay versus net pay. PAYE, NSSA and the need to verify each deduction."},
+      {from:"I started this term unsure about everything after matric. Now I have a plan. A real, detailed, possible plan. Hybrid path. UNISA part-time BEd. Business part-time. Budget that works. Roommate agreement template. Reality Checks for every section. Managing the Downside. I know where I am going. I know how I will get there. I know what to do if things change. I am not the same person who started Applied Commerce in January. I am the operator now. The launcher. The one who takes everything designed and makes it real.",to:"I started this cycle unsure about what comes after Form 4. Now I have a transition plan with prerequisites, official-source checks, funding options, a budget, living arrangements, Reality Checks and downside management. I do not know exactly what will happen. But I know how I will update the plan when reality changes."},
+      {from:"1. Before this term, what did I think about life after matric?",to:"1. Before this cycle, what did I think about life after Form 4 / O-Level?"},
+    ],
+  },
+  "g12-t1-l20-020": {
+    title:"TRANSITION PORTFOLIO & LETTER TO FUTURE SELF",
+    textReplacements:[
+      {from:"☐ Grade 12 Strategic Audit (Lesson 1) ☐ Adult Readiness Checklist (Lesson 2) ☐ Contract Readiness Plan (Lesson 3) ☐ Banking and Money Management Plan (Lesson 4) ☐ Post-Matric Decision Matrix (Lesson 5) ☐ Pathway Research (Lesson 6) ☐ University Application Plan (Lesson 7) ☐ Funding Plan (Lesson 8) ☐ Gap Year Plan (if applicable) (Lesson 9) ☐ Entrepreneurship Readiness Assessment (if applicable) (Lesson 10) ☐ University/College Readiness Plan (Lesson 11) ☐ First Job Preparation Plan (Lesson 12) ☐ Independent Living Budget (Lesson 13) ☐ Roommate Agreement Template (Lesson 14) ☐ Transition Plan Outline (Lesson 15) ☐ Feedback and Revision Plan (Lesson 16) ☐ Presentation Reflection — Day 1 (Lesson 17) ☐ Presentation Reflection — Day 2 (Lesson 18) ☐ Term 1 Reflection (Lesson 19)",to:"☐ Form 4 Launch Audit (Lesson 1) ☐ Adult Readiness Checklist (Lesson 2) ☐ Contract Readiness Plan (Lesson 3) ☐ Banking and Money Management Plan (Lesson 4) ☐ Post-O-Level Decision Matrix (Lesson 5) ☐ Pathway Research (Lesson 6) ☐ Tertiary / Skills Application Tracker (Lesson 7) ☐ Funding Plan (Lesson 8) ☐ Gap-Year Plan if applicable (Lesson 9) ☐ Entrepreneurship Readiness Assessment if applicable (Lesson 10) ☐ Tertiary Readiness Reflection (Lesson 11) ☐ First Job Preparation Plan (Lesson 12) ☐ Independent Living Budget (Lesson 13) ☐ Roommate Agreement Template (Lesson 14) ☐ Transition Plan (Lesson 15) ☐ Feedback and Revision Plan (Lesson 16) ☐ Presentation Reflections (Lessons 17–18) ☐ Transition Cycle Reflection (Lesson 19)"},
+      {from:"From me, in Grade 12 Date: _________________",to:"From me, in Form 4 Date: _________________"},
+      {from:"You have completed Term 1 of Grade 12.",to:"You have completed the transition cycle inside Form 4 Term 2."},
+      {from:"You have explored transition—what changes at 18, your options after matric, how to plan for the next chapter. You have created a Transition Plan—with Reality Checks, with a budget, with a living plan, with contingency plans, with Managing the Downside.",to:"You have explored transition—legal adulthood, pathways after Form 4, applications, funding, work, enterprise and the costs of independence. You created a Transition Plan with official-source checks, Reality Checks, a budget, contingencies and downside management."},
+      {from:"You are someone who understands legal adulthood. Can make big decisions using a matrix. Knows your post-matric options. Has a funding plan. Knows what first year of university or work might be like. Understands the costs of independence. Has a roommate agreement template. Has a complete Transition Plan. Has Reality Checks to keep yourself honest. Has named your shadows. Has a Launch Commitment. Has evidence of your readiness.",to:"You are someone who can investigate legal adulthood, compare pathways, verify admissions and funding information, build a first-job budget, estimate the cost of independence and create a Transition Plan. You have evidence of readiness—but you also know which parts still depend on future results, admission, funding and real-world conditions."},
+    ],
+  },
   "g9-t1-l01-001": {
     textReplacements: [
       {from:"Recall key learning from Grade 8 and assess what you carry forward.",to:"Recall key learning from Form 1 and assess what you carry forward."},
