@@ -81,6 +81,9 @@ jobs:
       - name: Zimbabwe Form 4 runtime localisation audit
         run: node scripts/audit_zimbabwe_form4_runtime.mjs
 
+      - name: Zimbabwe all-forms runtime audit
+        run: node scripts/audit_zimbabwe_all_runtime.mjs
+
       - name: Typecheck
         run: npm run typecheck
 
