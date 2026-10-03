@@ -3914,6 +3914,186 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
       {from:"Another good question. Myah adds: \"I will open a separate TFSA designated for the scholarship fund. R200/month starting at age 25, increasing to R500/month by 30. At 8% growth, that reaches about R55,000 by 35. The Reality Check: if the fund has less than R20,000 by age 30, I am not prioritizing it. I will either increase contributions or admit it is not a real goal.\"",to:"Another good question. Myah adds a flexible mechanism: once income and emergency reserves are stable, allocate a defined percentage of surplus to a separate education-support fund. Review the product, fees, regulation, tax treatment and target annually. The Reality Check is contribution consistency and progress relative to the current target—not an invented guaranteed return."},
     ],
   },
+  "g12-t4-l71-063": {
+    title:"LIFE LAUNCH PLAN PRESENTATIONS — DAY 1",
+    textReplacements:[
+      {from:"Thabo presents first. His Life Launch Plan: grow the delivery business into a logistics company. Part-time business diploma. Hire and train from the community. Build wealth through property and investments. Lead by example. Legacy: create jobs, pass on skills, prove that a boy from Tembisa with a broken bike can build something that outlasts him. His personal board: Mr. Patel (business), Myah (accountability), his grandmother (values).",to:"Thabo presents first. His Life Launch Plan: grow the delivery business carefully, continue business learning through a suitable part-time route, hire and train from the community, and build assets without allowing growth to outrun cash flow. His legacy goal is to create useful work and pass on skills. He remembers the boy from Chitungwiza with the broken bike—not as a slogan, but as evidence of how much can change."},
+    ],
+  },
+  "g12-t4-l72-064": {
+    title:"LIFE LAUNCH PLAN PRESENTATIONS — DAY 2",
+    textReplacements:[
+      {from:"Emmanuel presents. His Life Launch Plan: spaza shop transformation into a community commerce hub. Part-time business diploma. Property by 30. Legacy: a business that serves generations, a community that is stronger because the shop existed. His personal board: Mr. Patel (business), his mother (values), Thabo (accountability).",to:"Emmanuel presents. His Life Launch Plan: transform the family tuckshop into a stronger community-commerce business through better systems, delivery, purchasing discipline and customer service. He will keep learning part-time, and he will only pursue property when the cash flow, financing, legal and tax facts make sense. His legacy is a business that serves generations."},
+      {from:"\"I had no goals in Grade 8. I failed at selling sweets. I got a credit card and messed up. I cut it up. My laptop died and I had no emergency fund. I learned every lesson the hard way. But I kept going. I am still going. And now I have a Life Launch Plan. With Reality Checks. With a personal board of directors. With a legacy vision. With a house for my grandmother. That is not just progress. That is proof. Proof that change is possible. Proof that the person who starts with nothing can build something. Proof that failure is not the end—it is tuition. And I have paid my tuition. Now I am ready to graduate.\"",to:"\"I had no goals in Form 1. I failed at a small selling experiment. I made credit and emergency-fund mistakes later. I learned slowly and sometimes painfully. But I kept reviewing the evidence. Now I have a Life Launch Plan with Reality Checks, mentors, contingencies and a legacy vision. That is proof of change—not proof that the future will be easy.\""},
+      {from:"\"Thabo. From a broken bike and a handful of customers to a logistics company with a life plan. Lethabo. From one ugly clock for your grandmother to a craftsman's future and a legacy of skill. Atlehang. From a single question in Grade 9—'Did you ask them why?'—to a life plan centred on community and connection. Nosipho. From tutoring younger kids to a teaching career and a vision of financially literate students. Emmanuel. From a spaza shop threatened by a mall to a community commerce hub and a legacy of service.\"",to:"\"Thabo: from a broken bike and a handful of customers to a logistics plan with systems. Lethabo: from one rough clock to a future built around craft and skill. Atlehang: from one difficult question in Form 2 to a life plan centred on community and connection. Nosipho: from tutoring younger learners to a teaching direction. Emmanuel: from a tuckshop under competitive pressure to a community-commerce vision.\""},
+      {from:"Question 3 — The Sipho Mirror: Sipho had no goals in Grade 8. Now he has a Life Launch Plan, a workshop, employees, and a house for his grandmother. What version of yourself—from an earlier grade—would be most surprised by the plan you presented? What would that younger you say?",to:"Question 3 — The Sipho Mirror: Sipho had no goals in Form 1. Now he has a Life Launch Plan, a workshop and people who depend on his decisions. What earlier version of yourself would be most surprised by your plan? What would that younger you say?"},
+    ],
+  },
+  "g12-t4-l73-065": {
+    title:"REVIEW — THE FORM 4 LAUNCH YEAR",
+    tableReplacements:[
+      {
+        cellIncludes:"post-matric options",
+        rows:[
+          ["Zimbabwe Term","Theme","What We Learned"],
+          ["1","Advanced Wealth & Legacy","Wealth building, diversification, property/business growth, tax awareness, protection, giving and legacy"],
+          ["2","Transition, Career & Income","Legal adulthood, post-O-Level pathways, applications/funding, work, CVs, interviews, networking, side hustles and career planning"],
+          ["3","Risk, Protection & Life Launch","Insurance, estate planning, investment review, fraud/digital security, integration and the Life Launch Plan"],
+        ],
+      },
+    ],
+    textReplacements:[
+      {from:"📘 Myah Looks Back at Grade 12",to:"📘 Myah Looks Back at Form 4"},
+      {from:"Myah sits at Mama Rose's kitchen, her three notebooks from Grade 12 spread across the table. Term 1. Term 2. Term 3. She flips through them, tracing the arc of her final year.",to:"Myah sits at Mama Rose's kitchen with her Form 4 portfolio open. Term 1: advanced wealth and legacy. Term 2: transition and career launch. Term 3: risk, protection and Life Launch. She traces how the final year turned earlier plans into operating decisions."},
+      {from:"Funding. Zinhle: \"NSFAS is a loan with grace.\"",to:"Funding. Zinhle: \"Read the conditions—funding can be a bursary, scholarship, sponsorship or loan, and the obligations are different.\""},
+      {from:"Zinhle's first job. The payslip shock. R3,420 gone before it reached her.",to:"Zinhle's first job. The payslip lesson: gross pay is not net pay; verify PAYE, NSSA and any other deductions that actually apply."},
+      {from:"She writes on a fresh page: I started Grade 12 thinking about transition—how to get from school to whatever comes next. I am ending thinking about integration—how everything I have learned fits together into one life. Transition. Career. Protection. They are not separate. They are one architecture. And I am the architect. The operator. The launcher. All of them. I am ready for the final final project. I am ready to launch.",to:"She writes on a fresh page: I started Form 4 thinking about wealth and legacy. Then transition and career turned the architecture toward the real world. Risk and protection forced me to ask what could break. Now integration asks whether all of it can live together. I am ready to complete the Life Launch Plan."},
+      {from:"Grade 12 = Transition + Career + Protection → Launch",to:"Form 4 = Wealth & Legacy + Transition & Career + Risk & Protection → Life Launch"},
+      {from:"✍️ Activity 73: My Grade 12 Review",to:"✍️ Activity 73: My Form 4 Review"},
+    ],
+  },
+  "g12-t4-l74-066": {
+    textReplacements:[
+      {from:"Term 1: Transition Plan — Path: Hybrid. UNISA part-time BEd. Business part-time. Shared flat in Pretoria. Budget balanced.",to:"Transition Plan — Preferred direction: hybrid further study/training plus business, conditional on confirmed entry, funding and workload. Shared-living option in Harare if relocation is necessary. Budget uses verified current costs."},
+      {from:"Key idea: Myah saw that her plans were aligned. The Transition Plan got her to UNISA and the business. The Career Plan gave her income and purpose. The Risk Plan protected both. The paradox: a life is not a collection of separate plans. It is one plan with many parts. Do not see your plans as separate. See them as one.",to:"Key idea: Myah sees that alignment is not about one institution or one job. The Transition Plan must support capability and living arrangements. The Career Plan must generate learning and income. The Risk Plan must protect what both depend on. One life, many connected systems."},
+    ],
+  },
+  "g12-t4-l75-067": {
+    title:"MY TRANSITION PLAN — FINAL EVIDENCE UPDATE",
+    tableReplacements:[
+      {
+        cellIncludes:"NSFAS + business income",
+        rows:[
+          ["Element","Earlier Plan","Final Form 4 Evidence / Update","What I Learned"],
+          ["Path","Hybrid: further study/training + business","Preferred route identified; final institution/path depends on confirmed results, offers, funding and entry requirements","Direction can be clear while details remain conditional"],
+          ["Business","Workshops + digital products","Real delivery evidence and customer feedback recorded; revenue remains variable","Marketing and repeat demand need systems"],
+          ["Funding","Bursary / scholarship / student-finance / income options","Applications and criteria checked; only confirmed funding enters the final budget","Never build a budget on hoped-for funding"],
+          ["Living","Shared accommodation if relocation is required","Options costed for Harare / relevant destination; safety and roommate expectations included","Housing is more than rent"],
+          ["Budget","Launch budget","Updated with current prices, currencies and a buffer; stale figures removed","A budget expires when reality changes"],
+          ["Timeline","Applications, decisions, start dates","Dates linked to official sources or review triggers","A timeline needs provenance"],
+          ["Backup","Alternative study/work/skills route","Trigger defined for when the preferred path is no longer viable","A backup protects momentum"],
+        ],
+      },
+      {
+        cellIncludes:"Updated (Term 4)",
+        rows:[
+          ["Element","Earlier Plan","Final Form 4 Update","What I Learned"],
+          ["Path","","",""],
+          ["Applications","","",""],
+          ["Funding","","",""],
+          ["Living","","",""],
+          ["Budget","","",""],
+          ["Timeline","","",""],
+          ["Backup","","",""],
+        ],
+      },
+    ],
+  },
+  "g12-t4-l76-068": {
+    title:"MY CAREER LAUNCH & RISK PLANS — FINAL EVIDENCE UPDATE",
+    tableReplacements:[
+      {
+        cellIncludes:"fellow UNISA students",
+        rows:[
+          ["Element","Earlier Career Plan","Final Form 4 Update","Status / Evidence"],
+          ["Career vision","Financial education through workshops, digital products and teaching","Direction retained; exact study/training route remains conditional on confirmed admissions and opportunity","Evidence from workshops/products"],
+          ["Income streams","Freelance + digital + tutoring","Real streams tracked separately by revenue, costs, time and reliability","Growing / review quarterly"],
+          ["Professional brand","I help young people understand money","Portfolio and public profile show examples of the work rather than claims alone","Building"],
+          ["Network","Mentors, clients and peers","Added real clients, peers and potential mentors from actual work/study applications","Expanding"],
+          ["Skill development","Public speaking, curriculum design, sales","Priority skills ranked by current evidence gaps","Active"],
+        ],
+      },
+      {
+        cellIncludes:"TFSA contributions maintained",
+        rows:[
+          ["Element","Earlier Risk Plan","Final Form 4 Update","Status / Next Check"],
+          ["Insurance","Contents, liability and health/medical protection where relevant","Compare regulated products and activate only where risk/cost justify it","Verify policy and IPEC/provider status"],
+          ["Estate","Will / estate records","Real documents to follow current Zimbabwe formalities; records and review triggers defined","Legal check required when executed"],
+          ["Investments","Diversified regulated products","Portfolio view includes provider, regulator, currency, fees, asset class and liquidity; no TFSA/RA assumptions","Review annually or after major change"],
+          ["Fraud prevention","Protocols in place","2FA, password manager and independent-verification rule active","Ongoing"],
+          ["Emergency fund","Target based on essentials","Actual target defined from current essential monthly costs and currencies","Monthly review"],
+        ],
+      },
+    ],
+  },
+  "g12-t4-l77-069": {
+    title:"THE FIVE MODES — MYAH'S FOUR-FORM ARC",
+    tableReplacements:[
+      {
+        cellIncludes:"Watched her mother count coins",
+        rows:[
+          ["Mode","Where It Emerged","What It Means","Evidence in Myah's Journey","Evidence in Your Journey"],
+          ["Observer","Form 1","Noticing, gathering data, asking better questions","Watched money and value move through home and the kombi rank",""],
+          ["Challenger","Form 2","Questioning, acting, testing small","Faced silence, tested the cooler-box business and mapped community money",""],
+          ["Strategist","Form 3","Thinking in systems, planning and measuring","Built investment, systems and financial-independence architecture",""],
+          ["Architect","Form 3 → Form 4 Term 1","Designing structures that can outlast one action or one person","Built leverage, leadership, wealth and legacy frameworks",""],
+          ["Operator / Launcher","Form 4","Executing, protecting, integrating and handing plans to reality","Built transition, career, protection and Life Launch plans with evidence and review triggers",""],
+        ],
+      },
+      {
+        cellIncludes:"Observer (Grade 8)",
+        rows:[
+          ["Mode","My Evidence"],
+          ["Observer (Form 1)",""],
+          ["Challenger (Form 2)",""],
+          ["Strategist (Form 3)",""],
+          ["Architect (Form 3 → Form 4 Term 1)",""],
+          ["Operator / Launcher (Form 4)",""],
+        ],
+      },
+    ],
+    textReplacements:[
+      {from:"See Myah's complete journey from Grade 8 to Grade 12.",to:"See Myah's complete journey across Forms 1–4."},
+      {from:"Ms. Daniels writes five words on the board at the community hall. The same hall where they have presented their plans since Grade 9. The same chairs. The same sense of occasion. But everything feels different now. This is the final review before the final final project.",to:"Ms. Daniels writes five modes on the board at the community hall. The same hall where they have presented major plans since Form 2. Five modes, four school years: some modes emerge within the same Form because growth does not follow a neat one-stage-per-year timetable."},
+      {from:"Grade 8 — The Observer: Myah was barely there. A quiet figure at the edge of scenes. Watching. Noticing. The seed planted but not yet visible. She did not speak much. But she saw everything. She noticed that her mother counted coins every morning. She noticed that the taxi rank was a system of money flows. She noticed that some people had more coins than others. The observer gathers data. The observer sees patterns. The observer prepares—without knowing she is preparing.",to:"Form 1 — The Observer: Myah watched. She noticed her mother counting money. She noticed that the kombi rank was a system of money and value flows. The observer gathers data, sees patterns and asks questions before acting."},
+      {from:"Grade 9 — The Challenger: The observer acted. She walked into the grant office. She demanded answers. She built the mini-business. Her stillness was preparation. Now she moved. The challenger questions the system. The challenger refuses to accept silence. The challenger starts things—small things, imperfect things, real things. The cooler box. The water sales. The first workshop. The challenger learns that starting small is better than waiting for perfect.",to:"Form 2 — The Challenger: the observer acted. She confronted silence, tested a small cooler-box business, mapped community money and learned that action should produce evidence. The challenger questions systems and tests what can be changed."},
+      {from:"Grade 10 — The Strategist: The challenger learned to think in systems. She designed her financial architecture. She learned about compound interest, tax, retirement, insurance. She built her Financial Independence Plan—with failure signals, control scores, and Red Lines. She found her sweet spot: financial education that actually works. The strategist does not just act. She plans. She builds frameworks. She thinks long-term.",to:"Form 3 — The Strategist: the challenger learned to think in systems. She built financial architecture, studied investing, tax, independence, leverage and leadership, and began designing plans with failure signals, control scores and Red Lines."},
+      {from:"Grade 11 — The Architect: The strategist learned to design structures that outlast her. She built leverage systems. She articulated her Leadership Philosophy. She created a 10-Year Wealth Plan. She designed a Life and Legacy Plan. The architect does not just build for herself. She builds for others. She builds for the future. She builds what will remain after she is gone.",to:"Form 3 into Form 4 Term 1 — The Architect: the strategist began designing structures that could outlast one moment—leverage systems, a Leadership Philosophy, a 10-Year Wealth Plan and a Life and Legacy Plan."},
+      {from:"Grade 12 — The Operator/Launcher: The architect's blueprints became the operator's reality. She built the Transition Plan. The Career Launch Plan. The Risk and Protection Plan. She integrated everything—purpose, money, work, people, health, joy, legacy—into one architecture. She built her professional brand. She built her network. She built her resilience. The operator maintains what the architect designed. The launcher releases it into the world.",to:"Form 4 — The Operator/Launcher: the architecture met reality. Myah built transition, career and protection plans, updated them with evidence, and integrated purpose, money, work, people, health, joy and legacy into the Life Launch Plan. The operator maintains and revises; the launcher acts."},
+      {from:"Where are you in your arc? What evidence do you have of each stage? What comes next—after Grade 12?",to:"Where are you in your arc? What evidence do you have of each mode? What comes next after Form 4 / O-Level?"},
+    ],
+  },
+  "g12-t4-l78-070": {
+    textReplacements:[
+      {from:"Sipho writes: \"Ms. Daniels—for not giving up on me when I had no goals. For seeing something in me I could not see in myself. For teaching me that failure is tuition—if you learn from it. My grandmother—for giving me R20 and letting me learn what happens when you spend it all on sweets. That lesson cost R20. It was worth millions.\"",to:"Sipho writes: \"Ms. Daniels—for not giving up on me when I had no goals. For seeing something in me I could not see. My grandmother—for letting me learn from an early pocket-money mistake instead of rescuing me from every consequence. The amount was small. The lesson lasted.\""},
+      {from:"Myah writes: \"Ms. Daniels—for seeing me before I could see myself. For teaching me that noticing is a skill. For creating the conditions for discovery—and then stepping back to let me discover. Mama Rose—for proving that business is people. For giving me an ethical test I will use for the rest of my life. For twenty years of showing up. Mr. Patel—for teaching me that integrity compounds. Gogo Maria—for the worn piece of paper and the five forms of wealth. Zinhle—for explaining payslips and tax and TFSA and RA, always with patience, always with honesty. Themba—for sharing your failures so we could learn from them. Atlehang—for asking the questions that changed everything. For being my accountability partner. For being my friend. My mother—for counting coins every morning. For teaching me that leverage is an old survival skill. For believing in me. Atlehang Ngwenya—for the badge you gave back without complaint. For teaching me that legacy is not about recognition. It is about impact.\"",to:"Myah writes: \"Ms. Daniels—for teaching me that noticing is a skill. Mama Rose—for proving that business is people. Mr. Patel—for teaching me that integrity compounds. Gogo Maria—for the five forms of wealth. Zinhle—for teaching me to read payslips, tax rules, pension and investment products instead of memorising product names. Themba—for sharing failures. Atlehang—for asking the questions that changed everything. My mother—for showing me that resourcefulness and leverage are old survival skills. And everyone who taught me that legacy is not recognition. It is impact.\""},
+    ],
+  },
+  "g12-t4-l79-071": {
+    textReplacements:[
+      {from:"5. You are enough. \"You do not need to be perfect. You do not need to have it all figured out. You do not need to be the smartest person in the room. You just need to keep showing up. Keep learning. Keep growing. Keep caring. The person who shows up consistently, with integrity, with curiosity, with care—that person will build a life that matters. You are already that person. You have been becoming that person for five years. Do not forget who you are.\"",to:"5. Keep becoming. \"You do not need to be perfect or have everything figured out. Keep showing up, learning, growing and caring. Across four years you have built evidence of who you can be under pressure. Do not confuse a finished school programme with a finished person.\""},
+      {from:"\"I have watched you grow for five years. Myah—from the grant office to this moment. Thabo—from a broken bike to a logistics company. Sipho—from no goals to a Life Launch Plan. Atlehang—from a single question to a network that amplifies quiet voices. I have seen you struggle. I have seen you rise. I have seen you become.\"",to:"\"I have watched this Applied Commerce cohort grow across four years. Myah—from the committee office to this moment. Thabo—from a broken bike to a logistics plan. Sipho—from no goals to a Life Launch Plan. Atlehang—from a single question to a network that amplifies quiet voices. I have seen struggle, revision and growth.\""},
+      {from:"The Paradoxical Reversal: But here is the deepest truth she named: you are already enough. You have been becoming for five years. The plans are impressive. The person is extraordinary. The launch is not about becoming someone new. It is about releasing into the world the person you already are—the person you have been becoming since Grade 8. The observer. The challenger. The strategist. The architect. The operator. The launcher. All of them are you. All of them have always been you. Now go be them in the world. And her sixth lesson—\"the parcels are the excuse, the visit is the point\"—is the key that unlocks the entire Applied Commerce journey. The curriculum was the excuse. Your becoming was the point. The textbooks, the activities, the checkpoints, the Thinking Equations, the Tension/Experiment Logs—all of them were parcels. You were the visit. You were the point. The entire five-year curriculum was designed not to teach you about money. It was designed to help you become you. And you have. Not perfectly. Not completely. But really. The evidence is in this room. The evidence is in your portfolio. The evidence is in you.",to:"The Paradoxical Reversal: the launch is not about becoming a completely new person overnight. Across four years you practised different modes: observer, challenger, strategist, architect, operator and launcher. The curriculum, activities, Thinking Equations and Tension/Experiment Logs were tools. The deeper purpose was building agency and evidence. The programme is ending. The process of becoming is not."},
+      {from:"The Launcher's Question: What is one thing you have become over these five years that you did not know you could become? When did you first realize it? And who witnessed it?",to:"The Launcher's Question: What is one capability you built across these four years that you did not know you could build? When did you first see evidence of it, and who witnessed it?"},
+    ],
+  },
+  "g12-t4-l80-072": {
+    title:"THE LIFE LAUNCH PLAN — FINAL CAPSTONE",
+    tableReplacements:[
+      {
+        cellIncludes:"Grade 9 values",
+        rows:[
+          ["Section","What to Include","Evidence Source"],
+          ["1. My Purpose and Values","What matters most? What do I stand for?","Values and identity evidence across Forms 1–4"],
+          ["2. My Post-O-Level Transition Plan","Next 1–2 years: route, prerequisites, logistics, living and budget","Form 4 Term 2, final update"],
+          ["3. My Career Launch Plan","Career direction, income strategy, brand, network and skills","Form 4 Term 2, final update"],
+          ["4. My Risk and Protection Plan","Insurance, estate planning, investments, fraud/digital security and emergency buffer","Form 4 Term 3, final update"],
+          ["5. My Wealth Architecture","How I build, protect and align financial resources","Form 3 + Form 4 Term 1"],
+          ["6. My Leadership Philosophy","How I lead self and others, including red lines","Form 3"],
+          ["7. My Legacy Vision","What I want to contribute and pass on","Form 4 Term 1 + final update"],
+          ["8. My Life Integration","How work, money, people, health, joy and purpose connect","All four forms"],
+          ["9. My Launch Timeline","Near-term actions plus later review milestones","Current Form 4 evidence"],
+          ["10. My Reality Checks","How I will know a plan is working or failing","All four forms"],
+          ["11. My Downside Management","Main risks and how I reduce, transfer, accept or redesign them","Form 4 Term 3"],
+          ["12. My Reflection","What the evidence says I learned and became","Portfolio across Forms 1–4"],
+        ],
+      },
+    ],
+    textReplacements:[
+      {from:"\"This is it. Your final capstone. The project that brings together everything—from Grade 8 to now. Five years of learning. Five years of becoming. One final plan.\"",to:"\"This is it. Your final capstone. The project that brings together the evidence from Form 1 to Form 4. Four years of Applied Commerce. One living plan that you will keep revising after school.\""},
+      {from:"\"Your task is to create a comprehensive, integrated plan for launching into adulthood. This plan brings together your Transition Plan from Term 1, your Career Launch Plan from Term 2, your Risk and Protection Plan from Term 3—and everything you have learned across five years. Your values. Your purpose. Your identity. Your resources. Your habits. Your leverage. Your leadership. Your wealth architecture. Your legacy vision. Everything.\"",to:"\"Your task is to create a comprehensive, integrated plan for the transition beyond Form 4. It brings together your Post-O-Level Transition Plan, Career Launch Plan, Risk and Protection Plan, wealth architecture, leadership philosophy, values and legacy vision—and the habits, evidence and agency built across four years.\""},
+    ],
+  },
   "g9-t1-l01-001": {
     textReplacements: [
       {from:"Recall key learning from Grade 8 and assess what you carry forward.",to:"Recall key learning from Form 1 and assess what you carry forward."},
