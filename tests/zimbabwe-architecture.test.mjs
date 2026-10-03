@@ -183,8 +183,8 @@ test("every Form 2 source lesson is explicitly localised or reviewed as context-
     .map(unit=>unit.id);
 
   assert.equal(sourceIds.length,75);
-  assert.equal(explicit.size,63);
-  assert.equal(neutral.size,12);
+  assert.equal(explicit.size,64);
+  assert.equal(neutral.size,11);
   assert.equal(new Set([...explicit,...neutral]).size,75);
   assert.deepEqual(
     sourceIds.filter(id=>!explicit.has(id)&&!neutral.has(id)),
