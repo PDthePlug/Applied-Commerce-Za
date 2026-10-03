@@ -4094,6 +4094,11 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
       {from:"\"Your task is to create a comprehensive, integrated plan for launching into adulthood. This plan brings together your Transition Plan from Term 1, your Career Launch Plan from Term 2, your Risk and Protection Plan from Term 3—and everything you have learned across five years. Your values. Your purpose. Your identity. Your resources. Your habits. Your leverage. Your leadership. Your wealth architecture. Your legacy vision. Everything.\"",to:"\"Your task is to create a comprehensive, integrated plan for the transition beyond Form 4. It brings together your Post-O-Level Transition Plan, Career Launch Plan, Risk and Protection Plan, wealth architecture, leadership philosophy, values and legacy vision—and the habits, evidence and agency built across four years.\""},
     ],
   },
+  "g9-t1-l02-002": {
+    textReplacements:[
+      {from:"It is a Saturday afternoon. Myah is at Mama Rose's kitchen in Alexandra, helping chop vegetables. She has been coming here since the grant office silence began. Mama Rose does not ask questions. She just hands Myah a knife and a pile of onions and lets the work do its work.",to:"It is a Saturday afternoon. Myah is at Mama Rose's kitchen in Harare, helping chop vegetables. She has been coming here since the committee-office silence began. Mama Rose does not ask questions. She just hands Myah a knife and a pile of onions and lets the work do its work."},
+    ],
+  },
   "g9-t1-l01-001": {
     textReplacements: [
       {from:"Recall key learning from Grade 8 and assess what you carry forward.",to:"Recall key learning from Form 1 and assess what you carry forward."},
@@ -4779,6 +4784,38 @@ type ZimbabweFinalCleanup = {
 };
 
 export const zimbabweFinalCleanupOverrides: Record<string,ZimbabweFinalCleanup> = {
+  "g8-t1-l09-009":{
+    tableText:[
+      {from:"School shoes, matric dance",to:"School shoes, a Form 4 school-leaving event"},
+    ],
+  },
+  "g8-t2-l23-023":{
+    text:[
+      {from:"Myah goes with Thabo to visit his friend Sipho in Tembisa on a Saturday.",to:"Myah goes with Thabo to visit his friend Sipho in Chitungwiza on a Saturday."},
+      {from:"Mrs. Ndlovu is in the kitchen. The smell of vetkoek fills the air. She has been baking since 5am. On weekdays, she works at a crèche. Formal work. Payslip. UIF. But the salary is not enough.",to:"Mrs. Ndlovu is in the kitchen. The smell of vetkoek fills the air. She has been baking since before sunrise. On weekdays, she works at an early childhood centre. Formal work. Payslip. Statutory deductions where applicable. But the salary is not enough."},
+      {from:"\"Monday to Friday, I am at the warehouse,\" he says. \"Formal work. Payslip. UIF. Tax. But the salary — it covers the bond, not much else.\"",to:"\"Monday to Friday, I am at the warehouse,\" he says. \"Formal work. Payslip. Tax and statutory deductions where applicable. But the salary covers the biggest household costs, not much else.\""},
+    ],
+  },
+  "g8-t2-l24-024":{
+    text:[
+      {from:"📂 Portfolio: Save this. You will return to it in Grade 10.",to:"📂 Portfolio: Save this. You will return to it in Form 3."},
+    ],
+  },
+  "g8-t4-l63-062":{
+    text:[
+      {from:"The Mkhize family gardeners of Limpopo — teaching patience and invisible growth",to:"The Moyo family gardeners of Mashonaland East — teaching patience and invisible growth"},
+    ],
+  },
+  "g9-t1-l05-005":{
+    text:[
+      {from:"Now, twenty years later, she runs a kitchen that feeds sixty people a day. She has three plastic tables, a few chairs, a hand-painted sign, and a reputation that stretches across Alexandra. She knows everyone's name. She knows who needs extra gravy and who is watching their salt. She knows who just lost a job and who just had a baby.",to:"Now, twenty years later, she runs a kitchen that feeds sixty people a day. She has three plastic tables, a few chairs, a hand-painted sign, and a reputation that stretches across her part of Harare. She knows everyone's name. She knows who needs extra gravy and who is watching their salt. She knows who just lost a job and who just had a baby."},
+    ],
+  },
+  "g9-t2-l20-021":{
+    text:[
+      {from:"Her grandmother laughed. \"Nothing is always here. I planted this tree forty years ago. My mother gave me the seed. She brought it from KwaZulu-Natal when she married and moved here. Her mother grew it in her yard before that. And before any of that, the tree came from the earth, the rain, the sun.\"",to:"Her grandmother laughed. \"Nothing is always here. I planted this tree forty years ago. My mother gave me the seed. She brought it from Manicaland when she married and moved here. Her mother grew it in her yard before that. And before any of that, the tree came from the earth, the rain, the sun.\""},
+    ],
+  },
   "g11-t3-l47-047":{
     text:[
       {from:"\"Here is the durable lesson: two investments with the same headline return can produce different after-tax outcomes. Instead of copying a South African product rule, compare the Zimbabwe products actually available to you, their regulation, fees, liquidity and current tax treatment.\"",to:"\"Here is the durable lesson: two investments with the same headline return can produce different after-tax outcomes. Compare the Zimbabwe products actually available to you, their regulation, fees, liquidity and current tax treatment.\""},
@@ -4901,7 +4938,6 @@ export const zimbabweReviewedNeutralUnitIds = [
 ] as const;
 
 export const zimbabweReviewedNeutralForm2UnitIds = [
-  "g9-t1-l02-002",
   "g9-t1-l06-006",
   "g9-t2-l30-031",
   "g9-t3-l38-027",
