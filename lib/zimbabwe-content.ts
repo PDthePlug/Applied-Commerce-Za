@@ -4773,6 +4773,121 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
   },
 };
 
+type ZimbabweFinalCleanup = {
+  text?: Array<{from:string;to:string}>;
+  tableText?: Array<{from:string;to:string;exact?:boolean}>;
+};
+
+export const zimbabweFinalCleanupOverrides: Record<string,ZimbabweFinalCleanup> = {
+  "g11-t3-l47-047":{
+    text:[
+      {from:"\"Here is the durable lesson: two investments with the same headline return can produce different after-tax outcomes. Instead of copying a South African product rule, compare the Zimbabwe products actually available to you, their regulation, fees, liquidity and current tax treatment.\"",to:"\"Here is the durable lesson: two investments with the same headline return can produce different after-tax outcomes. Compare the Zimbabwe products actually available to you, their regulation, fees, liquidity and current tax treatment.\""},
+      {from:"\"Retirement products have their own contribution, access and tax rules. Do not assume an arrangement works like a South African RA. Check the regulated Zimbabwe product, the provider, fees, access rules and current tax treatment before relying on any benefit.\"",to:"\"Retirement products have their own contribution, access and tax rules. Do not assume one pension or retirement arrangement works like another. Check the Zimbabwe-regulated product, provider, fees, access rules and current tax treatment before relying on any benefit.\""},
+    ],
+  },
+  "g11-t3-l50-050":{
+    tableText:[
+      {from:"Rand hedge",to:"Currency hedge"},
+      {from:"Investment that protects against rand weakness",to:"Investment or strategy intended to reduce exposure to adverse currency moves"},
+    ],
+  },
+  "g11-t3-l51-051":{
+    tableText:[
+      {from:"TFSA, RA, deductions, planning",to:"Current Zimbabwe tax rules, regulated pension/investment products, lawful deductions and planning"},
+    ],
+  },
+  "g12-t1-l01-001":{
+    tableText:[
+      {from:"Term 4",to:"Legacy cycle"},
+    ],
+  },
+  "g12-t1-l07-007":{
+    text:[
+      {from:"\"UNISA,\" Mrs. Botha says, \"is distance learning. You study from home. No lectures. No campus. It is harder than it sounds—you need discipline, because no one checks if you are keeping up. But it is flexible. You can work while you study. For your hybrid plan, it might be the best fit.\"",to:"\"Distance and flexible-learning programmes can be useful,\" Mrs. Botha says. \"But compare the actual Zimbabwe or regional institutions available to you. Check accreditation, programme entry requirements, delivery mode, cost and whether the qualification fits your goal before choosing.\""},
+      {from:"Myah highlights UNISA. Part-time BEd. Flexible. Affordable. She can build the business while she studies. The hybrid path becomes real.",to:"Myah highlights several possible flexible-study routes, but she does not name a winner yet. The hybrid path is a direction; the institution must still survive her evidence check."},
+    ],
+  },
+  "g12-t1-l15-015":{
+    tableText:[
+      {from:"My Post-Matric Path",to:"My Post-O-Level Path"},
+    ],
+  },
+  "g12-t1-l17-017":{
+    text:[
+      {from:"Myah presents last on Day 1. She walks through her plan—the hybrid path, the decision matrix, the UNISA part-time BEd, the business, the budget, the roommate agreement template, the Reality Checks for every section, the Managing the Downside plan.",to:"Myah presents last on Day 1. She walks through her hybrid direction, decision matrix, shortlisted further-study routes, business, budget, roommate agreement template, Reality Checks and downside-management plan. She clearly labels the study route as conditional until admission and funding are confirmed."},
+    ],
+  },
+  "g12-t2-l23-023":{
+    text:[
+      {from:"Professional Summary: Financial literacy facilitator and digital product creator with four years of experience designing and delivering workshops for young people. Skilled in curriculum development, public speaking, and small business management. Currently pursuing a BEd through UNISA.",to:"Professional Summary: Financial capability facilitator and digital product creator with experience designing and delivering workshops for young people. Skilled in curriculum development, public speaking and small-business management. Further study: list only a confirmed programme or current application accurately."},
+    ],
+  },
+  "g12-t2-l24-024":{
+    text:[
+      {from:"I am writing to apply for the part-time tutor position at your learning centre. I have been facilitating financial literacy workshops and tutoring students for four years—reaching over 150 learners and helping students improve their grades by an average of 15%. I am currently pursuing a BEd through UNISA, which gives me both practical experience and academic grounding in how people learn.",to:"I am writing to apply for the part-time tutor position at your learning centre. I have experience facilitating financial capability workshops and tutoring learners. I have attached evidence of the work and outcomes I can verify. I am also exploring further study in education; I will name a programme only when the application or enrolment status is accurate."},
+    ],
+  },
+  "g12-t2-l25-025":{
+    tableText:[
+      {from:"In Grade 11, I was running a delivery service with three helpers...",to:"In Form 3, I was helping run a delivery service with three helpers..."},
+    ],
+  },
+  "g12-t2-l39-039":{
+    text:[
+      {from:"Myah shares her draft plan. Career vision: financial education through workshops, digital products, and teaching. Income strategy: freelance facilitation, digital product sales, part-time tutoring, UNISA BEd. Professional brand: \"I help young people understand money.\" Network: Zinhle, Ms. Daniels, Themba, workshop clients. Skill development: public speaking certification, advanced curriculum design.",to:"Myah shares her draft plan. Career vision: financial education through workshops, digital products and teaching. Income strategy: freelance facilitation, digital product sales and part-time tutoring. Further study remains a verified-choice item rather than a named institution. Professional brand: \"I help young people understand money.\" Network: Zinhle, Ms. Daniels, Themba and workshop clients. Skill development: public speaking and advanced curriculum design."},
+    ],
+  },
+  "g12-t4-l61-053":{
+    text:[
+      {from:"Key idea: Myah's word for Grade 12 so far: Launch. Everything has been building to this. The paradox: the more you learn, the more you realise how much you do not know. But the more you know, the more you can launch. You are not starting the final term empty. You are starting with everything you have built over four years.",to:"Key idea: Myah's word for Form 4 is Launch. Everything has been building toward action. The more she learns, the more carefully she distinguishes evidence from assumption. She enters the final integration work with four years of portfolio evidence—not with certainty about the future."},
+    ],
+  },
+  "g12-t4-l62-054":{
+    text:[
+      {from:"Key idea: Myah saw that her plans were aligned. The Transition Plan got her to UNISA and the business. The Career Plan kept her earning. The Risk Plan kept her protected. The paradox: a life is not a collection of separate plans. It is one plan with many parts. Do not see your plans as separate. See them as one.",to:"Key idea: Myah sees that alignment is not about one institution or one job. The Transition Plan must support capability and living arrangements. The Career Plan must generate learning and income. The Risk Plan must protect what both depend on. One life, many connected systems."},
+    ],
+  },
+  "g12-t4-l63-055":{
+    tableText:[
+      {from:"Updated (Term 4)",to:"Final Form 4 Update"},
+    ],
+  },
+  "g12-t4-l64-056":{
+    tableText:[
+      {from:"Updated (Term 4)",to:"Final Form 4 Update"},
+    ],
+  },
+  "g12-t4-l68-060":{
+    text:[
+      {from:"\"This is it. Your final final project. The project that brings together everything—from Grade 9 to now.\"",to:"\"This is it. Your final capstone. It brings together evidence from Form 1 to Form 4.\""},
+    ],
+  },
+  "g12-t4-l73-065":{
+    text:[
+      {from:"One word to describe my Grade 12 journey so far: _________________________________",to:"One word to describe my Form 4 journey so far: _________________________________"},
+      {from:"Key idea: Myah's word for Grade 12 so far: Integration. She had learned to transition, to build a career, to protect what she builds. The paradox: the more you learn, the more you realise how much you do not know. But the more you know, the more you can integrate—and the more you can launch. You are not the same person who started Applied Commerce in January.",to:"Key idea: Myah's word for Form 4 is Integration. Wealth, legacy, transition, career and protection are not separate subjects anymore. The more she learns, the more she sees what still needs verification. Integration means keeping the parts aligned as evidence changes."},
+      {from:"Question 2: How do these three terms connect? What is the thread that ties them together? What is one word that captures your Grade 12 journey so far?",to:"Question 2: How do the three Form 4 terms connect? What is the thread that ties them together? What is one word that captures your Form 4 journey?"},
+      {from:"Share your Grade 12 review with your family. Let them see how far you have come. Ask them: \"What growth have you seen in me this year?\"",to:"Share your Form 4 review with someone who witnessed your growth. Ask: \"What growth have you seen in me this year?\""},
+      {from:"| Date | | | Lesson | Lesson 73 — Grade 12 Review | | Launch Decision | What I will carry forward to the final final project: | | Prediction | | | Result | | | Learning | | | Next Action | |",to:"| Date | | | Lesson | Lesson 73 — Form 4 Review | | Launch Decision | What I will carry into the final Life Launch Plan: | | Prediction | | | Result | | | Learning | | | Next Action | |"},
+    ],
+  },
+  "g12-t4-l76-068":{
+    tableText:[
+      {from:"no TFSA/RA assumptions",to:"no imported product assumptions"},
+    ],
+  },
+  "g12-t4-l79-071":{
+    text:[
+      {from:"Here’s the tension: you are already enough. You have been becoming for five years. The plans are impressive. The person is extraordinary. The launch is not about becoming someone new. It is about releasing into the world the person you already are—the person you have been becoming since Grade 8. The observer. The challenger. The strategist. The architect. The operator. The launcher. All of them are you. All of them have always been you. Now go be them in the world. And her sixth lesson—\"the parcels are the excuse, the visit is the point\"—is the key that unlocks the entire Applied Commerce journey. The curriculum was the excuse. Your becoming was the point. The textbooks, the activities, the checkpoints, the Thinking Equations, the Tension/Experiment Logs—all of them were parcels. You were the visit. You were the point. The entire five-year curriculum was designed not to teach you about money. It was designed to help you become you. And you have. Not perfectly. Not completely. But really. The evidence is in this room. The evidence is in your portfolio. The evidence is in you.",to:"Here’s the tension: the programme is ending, but becoming is not. Across four years you practised observing, challenging, strategising, architecting, operating and launching. The curriculum, activities, checkpoints, Thinking Equations and Tension/Experiment Logs were tools for building agency and evidence. The portfolio does not prove that your future will be easy. It proves that you know how to learn from what happens next."},
+    ],
+  },
+  "g12-t4-l80-072":{
+    text:[
+      {from:"\"This is it. Your final final project. The project that brings together everything—from Grade 8 to now. Five years of learning. Five years of becoming. One final plan.\"",to:"\"This is it. Your final capstone. It brings together Form 1 to Form 4: four years of learning, evidence and becoming, organised into one living plan.\""},
+    ],
+  },
+};
+
 export const zimbabweReviewedNeutralUnitIds = [
   "g8-t1-l08-008",
   "g8-t1-l14-014",
@@ -4935,26 +5050,31 @@ function applyBlockOverrides(blocks:ContentBlock[],overrides:ZimbabweBlockOverri
 
 export function applyZimbabweUnitOverlay(unit:UnitContent):UnitContent{
   const override=zimbabweContentOverrides[unit.id];
+  const cleanup=zimbabweFinalCleanupOverrides[unit.id];
+  const transformed=[
+    ...applyReviewedTextReplacements(
+      applyReviewedRangeReplacements(
+        applyReviewedTableReplacements(
+          applyReviewedTableTextReplacements(
+            applyBlockOverrides(unit.blocks,override?.blocks),
+            override?.tableTextReplacements,
+          ),
+          override?.tableReplacements,
+        ),
+        override?.rangeReplacements,
+      ),
+      override?.textReplacements,
+    ),
+    ...(override?.appendBlocks ?? []),
+  ];
   return {
     ...unit,
     title:override?.title ?? unit.title,
     label:override?.label ?? unit.label,
-    blocks:[
-      ...applyReviewedTextReplacements(
-        applyReviewedRangeReplacements(
-          applyReviewedTableReplacements(
-            applyReviewedTableTextReplacements(
-              applyBlockOverrides(unit.blocks,override?.blocks),
-              override?.tableTextReplacements,
-            ),
-            override?.tableReplacements,
-          ),
-          override?.rangeReplacements,
-        ),
-        override?.textReplacements,
-      ),
-      ...(override?.appendBlocks ?? []),
-    ],
+    blocks:applyReviewedTextReplacements(
+      applyReviewedTableTextReplacements(transformed,cleanup?.tableText),
+      cleanup?.text,
+    ),
   };
 }
 
