@@ -3525,6 +3525,105 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
       {from:"You are someone who understands legal adulthood. Can make big decisions using a matrix. Knows your post-matric options. Has a funding plan. Knows what first year of university or work might be like. Understands the costs of independence. Has a roommate agreement template. Has a complete Transition Plan. Has Reality Checks to keep yourself honest. Has named your shadows. Has a Launch Commitment. Has evidence of your readiness.",to:"You are someone who can investigate legal adulthood, compare pathways, verify admissions and funding information, build a first-job budget, estimate the cost of independence and create a Transition Plan. You have evidence of readiness—but you also know which parts still depend on future results, admission, funding and real-world conditions."},
     ],
   },
+  "g12-t2-l21-021": {
+    title:"THE WORLD OF WORK — WHAT AWAITS YOU IN ZIMBABWE",
+    textReplacements:[
+      {from:"Ms. Nkosi invites Myah, Thabo, and Lethabo to her logistics company. They have been here before—in Grade 10, when she taught them about emotional intelligence. In Grade 11, when she taught them about scaling a business. But today, she is not here to teach. She is here to warn.",to:"Ms. Nkosi invites Myah, Thabo and Lethabo to her logistics company. They have been here before—in Form 3, when they learned about leadership and systems, and in Form 4 Term 1, when they looked at growth and scale. Today she wants them to look at the labour market with evidence rather than assumptions."},
+      {from:"📘 Growing Industries in South Africa",to:"📘 Investigating Growing and Changing Industries in Zimbabwe"},
+      {from:"Is this field growing or shrinking in South Africa? ☐ Growing ☐ Shrinking ☐ Stable ☐ I do not know",to:"What does current Zimbabwe evidence suggest about this field? ☐ Growing ☐ Shrinking ☐ Changing ☐ Stable ☐ I do not know yet"},
+      {from:"Question 2: What is one industry that is growing in South Africa? Why is it growing? What opportunities does it create? What is one industry that is shrinking? What should someone in that industry do?",to:"Question 2: Using a dated source, identify one Zimbabwe industry or occupation where demand appears to be growing or changing. What evidence supports that conclusion? What skills or qualifications does it create demand for?"},
+      {from:"Research one growing industry in South Africa. Find out: What jobs exist in this industry? What qualifications do you need? What is the starting salary? What skills are in demand? Write down your findings. This is fact-finding for your own career.",to:"Research one Zimbabwe industry or occupational field. Use a current source and record the date. Find out: What roles exist? What qualifications or skills are requested? What do current vacancies or sector reports say about pay and demand? Treat advertised salaries as evidence from a particular employer/date, not a universal wage."},
+    ],
+  },
+  "g12-t2-l23-023": {
+    textReplacements:[
+      {from:"Myah sits at her laptop in her room. She has been putting off writing her CV for weeks. She does not know where to start. What has she done? Sold water at a taxi rank. Helped Thabo with deliveries. Run a few workshops. Created some digital products. It does not feel like much.",to:"Myah sits at her laptop in her room. She has been putting off writing her CV for weeks. What has she done? Tested water sales at a kombi rank. Helped Thabo with deliveries. Run workshops. Created digital products. The challenge is translating informal and project experience into evidence an employer or client can understand."},
+      {from:"Financial Literacy Facilitator (2023–present): Designed and delivered workshops on money management for 150+ learners. Created digital resources used by 200+ people. Generated R12,000+ in revenue from digital products.",to:"Financial Capability Facilitator: Designed and delivered money-management workshops for 150+ learners. Created digital resources used by 200+ people. Tracked participation, feedback and revenue from paid products."},
+      {from:"Small Business Owner, Water Sales (2021–2022): Launched a water vending business at the taxi rank. Managed inventory, pricing, and customer relationships. Generated consistent weekly profit.",to:"Small Enterprise Project, Water Sales: Tested a water-selling concept at a kombi rank. Managed inventory, pricing, customer feedback and simple profit tracking."},
+      {from:"Education: Grade 12, Tembisa High School (current). BEd (accepted, UNISA, starting February).",to:"Education: Form 4 / O-Level, current. Further-study or training applications: list only confirmed applications, offers or programmes."},
+      {from:"Here’s the tension: telling that story requires you to see your own experience as valuable—and many young people do not. You look at what you have done—sold water, helped with deliveries, tutored a cousin—and think: \"That is not a real job.\" But informal experience is still experience. The skills you built selling water at a taxi rank are the same skills a retail manager uses: inventory management, customer service, pricing, cash handling. The skills you built helping with deliveries are the same skills a logistics coordinator uses: scheduling, routing, client communication. The problem is not your experience. The problem is your inability to translate it into the language of the professional world. Translation is a skill. Learn it.",to:"Here’s the tension: informal and project experience can build real skills, but a CV must not exaggerate them. Selling water at a kombi rank can demonstrate stock control, customer service and pricing; helping with deliveries can demonstrate routing and client communication. Translate honestly. Evidence is stronger than inflated titles."},
+    ],
+  },
+  "g12-t2-l25-025": {
+    tableTextReplacements:[
+      {from:"In Grade 11, I was running a delivery service with three helpers...",to:"In Form 3, I was helping run a delivery service with three helpers...",exact:true},
+    ],
+  },
+  "g12-t2-l28-028": {
+    title:"SIDE HUSTLES, FREELANCING & MULTIPLE INCOME STREAMS",
+    tableReplacements:[
+      {
+        cellIncludes:"Part-time job (retail)",
+        rows:[
+          ["Stream","Type","Illustrative Monthly Amount","Control Score (1–5)","Notes"],
+          ["Part-time retail work","Active","US$180","2","Employer controls hours; employment rights depend on the job and law"],
+          ["Online store","Active / systemised","US$120","3","Platform access, demand and operations matter"],
+          ["Tutoring","Active","US$90","4","Depends on clients and reputation"],
+          ["Digital study guide","Digital product","US$35","4","Reusable, but still needs updates/marketing/platform access"],
+          ["Savings / investment income","Portfolio","US$8","3","Depends on capital, product, market and fees"],
+          ["Illustrative total","","US$433","",""],
+        ],
+      },
+    ],
+    textReplacements:[
+      {from:"\"When I first talked to you about income streams in Grade 11, I had four. Now I have five. Let me show you the real picture—not the textbook version.\"",to:"\"When I first talked to you about income streams in Form 4 Term 1, I was thinking mostly about scale. Now let me show you the management problem too—not the fantasy version.\""},
+      {from:"Key idea: Themba's R80 from investments is not about the money. It is about the principle. The paradox: passive income starts small. Almost laughably small. But small is not nothing. Small is the seed. Start. Even small. Especially small.",to:"Key idea: Themba's illustrative US$8 of portfolio income is not impressive by itself. The useful lesson is that different streams behave differently. Active work depends on time. A product can scale but still needs maintenance. Investment income depends on capital, risk, fees and market performance. Small can be a seed—but only if the underlying system is sound."},
+      {from:"Here’s the tension: multiple streams are exhausting. The fantasy is freedom. The reality is management. Five things to track. Five things to maintain. Five things that can break. The people who succeed with multiple streams are not the ones who chase every opportunity. They are the ones who build systems, who automate what they can, who know when to cut a stream that is draining more than it gives. More is not always better. Better is better. And here is the deeper truth: the side hustle economy can be exploitative. It can promise freedom while delivering precarity—no benefits, no security, no protection. The gig economy takes the risks that employers used to carry and transfers them to workers. You are not an employee. You are a contractor. You have no leave, no pension, no UIF. You have flexibility—and you have vulnerability. The wise side hustler understands both. Celebrate the freedom. Protect against the precarity.",to:"Here’s the tension: multiple streams can create resilience or simply create five fragile obligations. Contract and gig work can offer flexibility, but legal status, benefits, social-security coverage, insurance and protections depend on the actual arrangement and current law. Do not assume a side hustle is automatically freedom, or that every contractor has the same protections as an employee. Read the contract, count your own costs and build buffers for risks you carry yourself."},
+    ],
+  },
+  "g12-t2-l29-029": {
+    title:"THE GIG ECONOMY — FLEXIBILITY, COSTS & CONTRACT RISK",
+    tableReplacements:[
+      {
+        cellIncludes:"No sick leave, no pension, no UIF",
+        rows:[
+          ["Promise","Risk to Investigate"],
+          ["Work when you want","Income may be unpredictable and peak times may determine earnings"],
+          ["Be your own boss","Your contract or platform rules may still control key decisions"],
+          ["Earn more by working more","You may carry fuel, maintenance, data, tax and equipment costs yourself"],
+          ["No traditional boss","An algorithm or platform policy can still affect access to work and pricing"],
+          ["Flexibility","Employee benefits and statutory protections may differ depending on your true legal status"],
+          ["Easy to start","Entry can be easy, and competition or platform changes can reduce income"],
+        ],
+      },
+    ],
+    textReplacements:[
+      {from:"\"The flexibility is real,\" he tells Myah at Emmanuel's spaza shop. \"But so is the precarity. Last week, the app changed its pricing algorithm. My per-delivery rate dropped by 15%. No warning. No consultation. No appeal. The platform decided, and I had to accept it or stop driving.\"",to:"\"The flexibility is real,\" he tells Myah at Emmanuel's tuckshop. \"But so is platform risk. Last week, the app changed its pricing algorithm and my per-delivery rate dropped by 15%. I had to decide whether the work still made sense after my own costs.\""},
+      {from:"\"I could. But I need the income while I build my own logistics company. The gig work is a bridge, not a destination. But here is what people do not tell you about bridges: they are not built for you. They are built for the people who own them. The platform takes a commission—sometimes 20%, sometimes 30%. You pay for your own fuel, your own vehicle maintenance, your own phone data. You have no leave, no pension, no UIF, no protection. If you get sick, you do not earn. If the app goes down, you do not earn. If the algorithm decides there are too many drivers in your area, you earn less. You are not an employee. You are an independent contractor. That sounds empowering. It means the platform has no responsibility for you.\"",to:"\"I need the income while I build my own logistics company. But before I call gig work 'freedom', I count platform commission, fuel, maintenance, phone data, tax, downtime and what happens if I cannot work. I also check the contract and legal status instead of assuming I am either an employee or contractor from the app's marketing language alone. The bridge only helps if I understand who carries each risk.\""},
+    ],
+  },
+  "g12-t2-l31-031": {
+    textReplacements:[
+      {from:"Then she types \"Myah Mokoena Tembisa.\" A few results appear—a mention in a community newsletter, a photo from a workshop she facilitated. But nothing curated. Nothing intentional. Nothing that tells the story she wants to tell.",to:"Then she searches her own name together with Harare. A few results appear—a community-newsletter mention and a workshop photo. Nothing harmful, but nothing intentional either. She realises that a professional digital presence is partly about what you publish and partly about what already exists."},
+    ],
+  },
+  "g12-t2-l33-033": {
+    textReplacements:[
+      {from:"\"Step one: Start stupidly small. My first 'delivery service' was just me, my bike, and my grandmother. One customer. I did not build a website or print business cards. I just delivered groceries and asked if she would pay me R10. She said yes. That was my MVP—my minimum viable product. The smallest possible version of the idea that I could test with real money.\"",to:"\"Step one: start very small. My first delivery test was just me, my bike and my grandmother. One customer. In this illustrative story, I asked if she would pay US$1 for the service. That was my minimum viable test—the smallest version that could produce real evidence.\""},
+      {from:"\"Step two: Validate before you invest. When my grandmother told her neighbour, and the neighbour asked for deliveries too, I did not buy a fleet of bikes. I asked the neighbour: 'Will you pay R15?' She said yes. Now I had two customers. The demand was validated. Only then did I start thinking about expansion.\"",to:"\"Step two: validate before you invest. When a neighbour asked for deliveries too, I tested an illustrative US$1.50 price rather than buying more equipment. One extra customer was evidence—not proof of a giant market, but enough to justify another small test.\""},
+    ],
+    tableTextReplacements:[
+      {from:"Neighbour asked for deliveries, offered to pay R15",to:"Neighbour asked for deliveries and accepted the test price",exact:true},
+    ],
+  },
+  "g12-t2-l34-034": {
+    textReplacements:[
+      {from:"\"Pricing. When I started, I charged too little. I was afraid of scaring clients away. I quoted R200 for a custom clock that took me eight hours to make. That is R25 an hour—less than minimum wage for skilled work. I was undercutting myself. Then a client said: 'You are charging too little. I would have paid R500.' That was a wake-up call. I had been pricing based on what I thought I was worth, not on what the market would pay.\"",to:"\"Pricing. When I started, I charged too little. In this illustrative example, I quoted US$20 for a custom clock that took eight hours plus materials. The price did not cover the time and costs well enough to be sustainable. A client told me they would have paid more. That was a wake-up call: pricing should not come from fear or ego. It should come from costs, customer value, alternatives, demand and the return needed to keep the work viable.\""},
+      {from:"Key idea: Lethabo learned that pricing is not about what you think you are worth. It is about what the market will pay—and what you need to earn to make the work sustainable. Undercharging is not humility. It is self-sabotage. When you charge too little, you devalue not just your own work, but the work of everyone in your field. The client who pays R200 for eight hours of skilled labour is not getting a bargain. They are getting exploitation—and you are the one enabling it.",to:"Key idea: your price is not your personal worth. A sustainable freelance price has to cover relevant costs, time, taxes or fees where applicable, risk and the value delivered—while still making sense to the customer. A low price can be strategic for a test, but repeated underpricing without understanding the economics can make good work impossible to sustain."},
+    ],
+  },
+  "g12-t2-l39-039": {
+    textReplacements:[
+      {from:"Good question. Myah adds a baseline income target and a contingency: \"If freelance income drops below R2,000 in any month, I will take on additional tutoring students to fill the gap.\"",to:"Good question. Myah adds a baseline income target calculated from her own budget. Her contingency is specific: if earned income stays below that verified minimum for the agreed review period, she will add tutoring, cut optional costs or revise the plan before using emergency savings."},
+    ],
+  },
+  "g12-t2-l40-040": {
+    title:"FORM 4 TERM 2 — CAREER LAUNCH REFLECTION & LETTER",
+    textReplacements:[
+      {from:"From me, in Grade 12 Date: _________________",to:"From me, in Form 4 Date: _________________"},
+      {from:"You have completed Term 2 of Grade 12.",to:"You have completed Form 4 Term 2: transition, work, career launch and income strategy."},
+    ],
+  },
   "g9-t1-l01-001": {
     textReplacements: [
       {from:"Recall key learning from Grade 8 and assess what you carry forward.",to:"Recall key learning from Form 1 and assess what you carry forward."},
