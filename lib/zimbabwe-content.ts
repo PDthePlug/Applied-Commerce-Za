@@ -3233,6 +3233,161 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
       {from:"Keep going. Grade 12 awaits. The launcher is rising.",to:"Keep going. Form 4 Term 2 awaits: adult money, O-Level pathways, contracts, work and career launch."},
     ],
   },
+  "g12-t1-l01-001": {
+    title:"FORM 4 TERM 2 — THE LAUNCH PHASE",
+    textReplacements:[
+      {from:"Recall key learning from Grade 11.",to:"Recall the architecture you built in Form 3 and Form 4 Term 1."},
+      {from:"📘 Myah's Morning — Grade 12",to:"📘 Myah's Morning — Form 4 Term 2"},
+      {from:"Myah wakes before her alarm. She has been doing that for three years now—ever since the 21-day tracker in Grade 9. Some habits stick.",to:"Myah wakes before her alarm. The habit is old now—ever since the 21-day tracker in Form 2. Some habits stick."},
+      {from:"She looks at the notebook on her bedside table—the one she has kept since Grade 9. Four years of learning. Four years of becoming.",to:"She looks at the notebook on her bedside table—the one she has kept since Form 2. Three completed school years of evidence sit behind her. Form 4 is now turning that evidence into launch decisions."},
+      {from:"Grade 9: Values. Mama Rose. The grant office. The cooler box. Learning that the system does not always reward rule-followers. Learning to make herself impossible to ignore.",to:"Form 2: Values. Mama Rose. The committee office. The cooler box. Enterprise, community money, habits, execution and the discovery that agency requires action."},
+      {from:"Grade 10: Investing. Systems. Tax. Retirement. Insurance. Her Financial Independence Plan—with failure signals, control scores, and Red Lines. Her sweet spot: financial education that actually works.",to:"Form 3: Investing. Systems. Tax. Financial independence. Leverage. Leadership. Her plans became more rigorous—failure signals, control scores, Red Lines and evidence."},
+      {from:"Grade 11: Leverage. Leadership. Wealth Building. Legacy. Her Leverage Plan. Her Leadership Philosophy. Her 10-Year Wealth Plan. Her Life and Legacy Plan. The architect's blueprints—complete.",to:"Form 4 Term 1: Advanced wealth and legacy. Her 10-Year Wealth Plan and Life and Legacy Plan now sit beside the leverage and leadership architecture she built earlier. The blueprints exist. The next question is how to live them."},
+      {from:"📘 What We Learned in Grade 11",to:"📘 What We Carry into the Launch Phase"},
+      {from:"What is one thing from Grade 11 that you are most proud of? What is one thing you want to launch—make real—this year? What are you afraid might happen when your plans meet reality?",to:"What is one piece of evidence from Form 3 or Form 4 Term 1 that you are most proud of? What is one thing you want to make real before Form 4 ends? What are you afraid might happen when your plans meet reality?"},
+      {from:"✍️ Activity 1: My Grade 12 Strategic Audit",to:"✍️ Activity 1: My Form 4 Launch Audit"},
+      {from:"Part A: My Assets from Grade 9, 10, and 11",to:"Part A: My Assets from Forms 2–4"},
+      {from:"Part C: My Intention for Grade 12",to:"Part C: My Intention for the Rest of Form 4"},
+      {from:"Key idea: You are not starting Grade 12 empty. You are starting with everything you built in Grade 9, Grade 10, and Grade 11—the skills, the evidence, the scars, the wins. The paradox: the more you learn, the more you realise you do not know. But the more you know, the more you can launch. You are not starting from zero. You are starting from everything you have become.",to:"Key idea: you are not entering the launch phase empty. You carry the skills, evidence, scars, systems and wins built across Forms 1–4. The more you learn, the more you notice what you still need to learn. That is not weakness. It is a better starting point for real decisions."},
+      {from:"Question 1: What is the theme of Grade 12? Why is this called the \"launch year\"? Look back at your Grade 11 Life and Legacy Plan. What is one thing from that plan that you want to launch this year?",to:"Question 1: Why is Form 4 the launch year? Look back at your Life and Legacy Plan. What is one part of that architecture you want to make real before O-Level ends?"},
+      {from:"Question 3 — The Reality Forecast: You have designed plans for years. In Grade 12, those plans meet reality. Predict: what part of your plan is most likely to break on contact with the real world? What will you do when it breaks—revise, persist, or abandon?",to:"Question 3 — The Reality Forecast: your plans are meeting reality now. What part is most likely to break first? What evidence would tell you to revise, persist or abandon that part?"},
+      {from:"Share your intention for Grade 12 with one person who will hold you accountable. Say: \"This is what I intend to do this year. Ask me about it in June. If I have not made progress, you have permission to ask hard questions.\" Write down their name and the date you told them. This is your first Launch Task. Not a simulation. A real commitment made to a real person.",to:"Share your Form 4 launch intention with one person who will hold you accountable. Give them a specific review date. This is a real commitment to a real person, not a simulation."},
+      {from:"| Date | | | Lesson | Lesson 1 — Grade 12 Strategic Audit | | Launch Decision | My intention for this year: | | Prediction | What I think will happen when my plans meet reality: | | Result | | | Learning | | | Next Action | My one action this week: |",to:"| Date | | | Lesson | Lesson 1 — Form 4 Launch Audit | | Launch Decision | My intention for the rest of Form 4: | | Prediction | What I think will happen when my plans meet reality: | | Result | | | Learning | | | Next Action | My one action this week: |"}
+    ],
+  },
+  "g12-t1-l03-003": {
+    title:"LEGAL ADULTHOOD — CONTRACTS, RIGHTS & WHERE TO GET HELP",
+    tableReplacements:[
+      {
+        cellIncludes:"Legal Aid South Africa",
+        rows:[
+          ["Resource","What It Offers","Cost / Rule"],
+          ["Legal Aid Directorate","Legal advice and representation for qualifying people in civil, criminal and related matters","Eligibility applies; verify current Legal Aid Directorate guidance"],
+          ["University legal clinic","Supervised legal assistance where a university clinic offers it","Availability and eligibility vary"],
+          ["Small Claims Court","A magistrates court can act as a small claims court for qualifying civil claims","Jurisdiction and monetary limits are set by current Zimbabwe law; verify before filing"],
+          ["Private legal practitioner","Professional legal advice and representation","Paid"],
+        ],
+      },
+    ],
+  },
+  "g12-t1-l04-004": {
+    title:"MANAGING YOUR OWN MONEY — MYAH'S FIRST ACCOUNT",
+    textReplacements:[
+      {from:"Myah turns 18. First thing she does after her birthday: open a bank account in her own name. She has been saving for this. Her delivery service income. Her workshop fees. The money from the digital products she created after Themba's advice in Grade 11—create once, earn many times.",to:"Myah turns 18. One of the first things she does is open an account in her own name. She has been saving for this through delivery income, workshop fees and digital products. She compares account fees, access, transaction limits and what protections apply before choosing."},
+      {from:"She goes to the bank with her ID and R500. Not her mother. Not Ms. Daniels. Her. Alone. She is nervous. But she remembers what she learned about the grant office in Grade 9: the system rewards visibility. Show up. Ask questions. Make yourself impossible to ignore.",to:"She goes to the bank with her identification documents and US$50 in this illustrative story. Not her mother. Not Ms. Daniels. Her. She asks what documents are required, what fees apply, how the account handles different currencies, and whether eligible deposits are protected through the Deposit Protection Corporation."},
+      {from:"No credit card — not yet. She is not ready. She knows herself. She remembers Sipho's story from Grade 10—the credit card, the minimum payments, the trap.",to:"No borrowing product yet. She is not ready. She remembers the earlier credit lesson: access to credit is not the same as readiness to use it."},
+      {from:"Key idea: Myah set up a simple system: savings account for goals, cheque account for spending, debit card only, weekly transfer, weekly review. She felt in control. The paradox: a bank account is just a tool. The system around it is what matters. You can have a million rand in the bank. If you have no system, it will disappear. You can have R500. If you have a system, it will grow.",to:"Key idea: Myah sets up a simple system: one place for goals, one place for day-to-day spending, controlled payment access, regular transfers and a weekly review. The account is only a tool. The system around it—fees, security, habits, records and purpose—is what gives it value."},
+      {from:"Here’s the tension: the system only works if you follow it. The best budget in the world is worthless if you ignore it. The most brilliant tracking method is useless if you stop after two weeks. The architect designed her financial architecture in Grade 11. The operator must now live it—every day, every week, every month. The design is complete. The living is the work. And here is the deeper truth: the first month of managing your own money is the hardest. Everything is new. Every decision is conscious. The cognitive load is exhausting. Most people abandon their systems in the first month—not because the system was bad, but because the effort of maintaining it was greater than they expected. The key is to survive the first month. After that, the system becomes habit. After that, it runs in the background. But you have to survive the first month first.",to:"Here’s the tension: a good money system still requires maintenance. Fees change. Fraud risks change. Your income changes. The first months of managing money independently can feel demanding because every decision is new. Simplify the routine enough to keep it: review balances, verify transactions, protect credentials, move money toward goals and adjust when reality changes."},
+    ],
+  },
+  "g12-t1-l05-005": {
+    title:"MYAH'S FIRST BIG DECISION — THE POST-O-LEVEL MATRIX",
+    tableTextReplacements:[
+      {from:"Post-matric",to:"Post-O-Level / post-school",exact:true},
+      {from:"After finishing school",to:"After Form 4 / O-Level, or after another school-leaving point",exact:true},
+    ],
+    textReplacements:[
+      {from:"Identify major post-matric options.",to:"Identify major pathways after Form 4 / O-Level."},
+      {from:"She has options. More than she expected. The workshops she started in Grade 10 have grown. The digital products—the study guides, the financial literacy resources—sell quietly in the background. The delivery service with Thabo still brings in income. And she has been accepted to university—a Bachelor of Education, the teaching degree she has been working toward since Grade 10 when she found her sweet spot.",to:"She has options. More than she expected. Her workshops and digital products have grown. The delivery service with Thabo still brings in income. She is also exploring further study. For Myah, the question is not whether one path is universally best. It is which combination fits her goals, readiness, finances and entry requirements."},
+      {from:"Ms. Daniels puts down her tea. \"Then let us use a tool you have not used since Grade 10. The decision matrix. But this time, it is not a school exercise. This is your life.\"",to:"Ms. Daniels puts down her tea. \"Use the decision matrix again. This time, compare real Form 4 pathways: A-Level where appropriate, university or college routes, polytechnic or technical training, apprenticeship or skills development, employment, entrepreneurship, or a structured hybrid.\""},
+      {from:"Myah is quiet. Then: \"Hybrid feels right. I do not want to choose between learning and doing. I want both. I have been doing both since Grade 9—studying and building. Why would I stop now?\"",to:"Myah is quiet. Then: \"Hybrid feels right. I do not want to choose between learning and doing. I want both. I have been combining study and building since Form 2. Why would I stop now?\""},
+      {from:"What are your post-matric options? What criteria matter most to you? What does your head say? What does your heart say? Where do they agree—and where do they conflict?",to:"What are your realistic pathways after Form 4? Which options require A-Level first? Which can begin after O-Level? What criteria matter most to you—cost, entry requirements, income, skill development, location, family responsibilities, time or something else?"},
+      {from:"✍️ Activity 5: My Post-Matric Decision Matrix",to:"✍️ Activity 5: My Post-O-Level Decision Matrix"},
+      {from:"Question 2: What is one option you are considering after matric? What criteria matter most to you in making this decision? Myah chose the hybrid path. Why did it score highest—and why did it feel right to her?",to:"Question 2: What is one option you are considering after Form 4? Does it require A-Level, tertiary admission, an apprenticeship, employment readiness, capital or another prerequisite? What criteria matter most in your decision?"},
+      {from:"| Date | | | Lesson | Lesson 5 — Post-Matric Decision Matrix | | Launch Decision | My post-matric path: | | Prediction | | | Result | | | Learning | | | Next Action | |",to:"| Date | | | Lesson | Lesson 5 — Post-O-Level Decision Matrix | | Launch Decision | My next pathway: | | Prediction | | | Result | | | Learning | | | Next Action | |"},
+    ],
+  },
+  "g12-t1-l06-006": {
+    title:"PATHWAYS AFTER FORM 4 — THE PANEL AT THE COMMUNITY HALL",
+    textReplacements:[
+      {from:"Understand the range of post-matric options.",to:"Understand the range of pathways after Form 4 / O-Level."},
+      {from:"A young woman named Thuli (22, TVET graduate): \"I did electrical engineering at a TVET college. Two years. Very practical. I had a job offer before I graduated. I earn R12,000 a month as an apprentice electrician. In five years, I will be qualified and earning double. University is not the only path. Skilled trades are in demand. And you earn while you learn.\"",to:"A young woman named Thuli describes a technical route: \"I chose practical training in electrical engineering. I combined classroom learning with workplace experience and moved into an apprenticeship. University is not the only path. The important questions are whether the programme is recognised, what practical experience it gives you, what it costs, and what work it can realistically lead to.\""},
+      {from:"Question 1: Name three post-matric pathways. For each, state one advantage and one disadvantage. What is one advantage of an apprenticeship or learnership over university? What is one advantage of university over an apprenticeship?",to:"Question 1: Name three pathways after Form 4. For each, state one advantage, one risk and one prerequisite. Compare A-Level, tertiary/technical study, apprenticeship or skills training, employment and enterprise without assuming one route is best for everyone."},
+    ],
+  },
+  "g12-t1-l07-007": {
+    title:"TERTIARY APPLICATIONS — BUILD YOUR TRACKER",
+    tableTextReplacements:[
+      {from:"APS score",to:"Entry requirements",exact:true},
+      {from:"Admission Point Score — calculated from matric results",to:"Subjects, grades and other criteria required by the institution",exact:true},
+    ],
+    tableReplacements:[
+      {
+        cellIncludes:"APS Required",
+        rows:[
+          ["Institution / Route","Programme","Entry Requirements","Application Window","Application Cost","Where to Verify"],
+          ["University of Zimbabwe","Relevant degree","Check current programme and subject requirements","Verify current intake","Verify current fee","Official UZ admissions information"],
+          ["National University of Science and Technology","Relevant degree","Check current programme and subject requirements","Verify current intake","Verify current fee","Official NUST admissions information"],
+          ["Polytechnic / teachers college / other tertiary institution","Relevant diploma, certificate or teacher-training programme","Check current institutional and Ministry requirements","Verify current intake","Verify current fee","Official institution / Ministry source"],
+        ],
+      },
+    ],
+    textReplacements:[
+      {from:"\"The biggest mistake students make,\" Mrs. Botha says, \"is waiting. They think they have time. They do not. Most university applications close between June and September—months before matric finals. If you wait until after your results, you have already missed the deadline. Apply early. Even if you are not sure. You can always decline later. You cannot apply after the deadline.\"",to:"\"The biggest mistake students make is assuming every institution uses the same timetable,\" Mrs. Botha says. \"They do not. Intake dates, entry requirements, fees and application windows differ. Build your tracker from official sources and update it whenever an institution publishes a new intake.\""},
+      {from:"Here’s the tension: the system rewards the early. The people who apply in March get considered before the people who apply in September. The people who wait until the last minute are competing for fewer spots. The early bird does not just get the worm—it gets the worm because the late bird never had a chance. This is not fair. But it is true. The university application system, like the grant office in Grade 9, rewards those who show up early, who follow up, who make themselves impossible to ignore. Myah learned that lesson in Grade 9. She is applying it now. The grant office taught her that waiting is a trap. She is not waiting.",to:"Here’s the tension: an application can fail for reasons unrelated to your ability—missing documents, an expired deadline, a programme whose requirements you did not check, or an assumption that an old prospectus still applies. Agency here means building a reliable system: official source, deadline, documents, submission proof and follow-up date."},
+    ],
+  },
+  "g12-t1-l08-008": {
+    title:"BURSARIES, SCHOLARSHIPS, LOANS & FUNDING",
+    tableReplacements:[
+      {
+        cellIncludes:"National Student Financial Aid Scheme",
+        rows:[
+          ["Term","Definition"],
+          ["Bursary","Funding for study that may be merit-, need-, employer- or programme-based; conditions vary"],
+          ["Scholarship","Funding usually tied to stated criteria such as merit, need, field or sponsorship conditions"],
+          ["Student loan","Money borrowed for eligible study costs and repaid according to the loan agreement"],
+          ["Government student-loan scheme","Public student finance available under current Zimbabwe rules and participating-institution arrangements"],
+          ["Repayment","Paying back borrowed funding according to the contract"],
+        ],
+      },
+      {
+        cellIncludes:"Household income below",
+        rows:[
+          ["Option","What It Is","Repay?","What to Verify"],
+          ["Government student-loan scheme","Public student finance available under current rules","Usually yes; terms vary","Current Ministry/institution process, eligibility, participating institutions and repayment terms"],
+          ["Institutional bursary / scholarship","Funding offered by a university, college or partner","Usually no if conditions are met","Eligibility, coverage, renewal conditions and deadlines"],
+          ["Company / foundation sponsorship","External organisation funds eligible study","Depends on agreement","Work obligations, field restrictions and all contract conditions"],
+          ["Bank / private student loan","Commercial borrowing for study","Yes, with interest/fees","Total cost, guarantor/security requirements, repayment start and default risk"],
+          ["Part-time work / enterprise","Earn while studying where feasible","No loan repayment","Time cost, academic impact, income reliability and legal/work conditions"],
+        ],
+      },
+    ],
+    textReplacements:[
+      {from:"\"When I finished matric, I had good marks. I got into university. And then I saw the fees. R40,000 a year. My mother earned R6,000 a month. The math did not work.\"",to:"\"When I reached the point of applying for further study, I had the marks for admission but not enough money to ignore the cost. Tuition, accommodation, transport, books and daily living all had to be funded. The maths did not work without a funding plan.\""},
+      {from:"\"NSFAS covered my tuition, accommodation, books, and a living allowance. I would not be an accountant without it. But here is what nobody tells you: NSFAS is not a gift. If you graduate and get a job, you repay a percentage of your salary. It is a loan with grace. And the application process is brutal—documents, deadlines, follow-ups. You have to fight for it. But it is worth fighting for.\"",to:"\"I eventually used a combination of student finance and bursary support. The important lesson was not the name of one scheme. It was reading every condition: what costs were covered, whether the funding had to be repaid, what performance requirements applied, what documents were needed and what happened if circumstances changed.\""},
+      {from:"Myah checks her household income. Her mother earns below R350,000 a year. She qualifies. She starts the NSFAS application that afternoon.",to:"Myah builds a funding tracker that afternoon. She lists current government student-loan options, institutional bursaries, scholarships, employer or foundation funding and commercial loans. For every option she records eligibility, coverage, deadline, repayment terms and the official source."},
+      {from:"NSFAS: Do I qualify? ☐ Yes ☐ No ☐ Not sure",to:"Current government student-loan option: Am I eligible? ☐ Yes ☐ No ☐ Not sure — Official source checked: __________________"},
+      {from:"Zinhle said NSFAS is \"a loan with grace.\" What does that mean? Why is it important to understand the repayment terms—even if they seem far away? _________________________________",to:"If a funding option is a loan, what triggers repayment? What interest, fees, guarantor requirements or penalties apply? Why must you know this before accepting the money? _________________________________"},
+      {from:"Here’s the tension: the funding system is labyrinthine. Forms. Deadlines. Supporting documents. Proof of income. Certified copies. Online portals that crash. Helplines that do not answer. The people who need funding most are often the people least equipped to navigate the bureaucracy—less access to internet, less experience with forms, less support at home. The system is not designed for them. It is designed for people who already know how to work the system. That is not fair. But it is true. Zinhle got through it because she was stubborn. Because she asked for help. Because she refused to give up. The grant office in Grade 9 taught Myah that waiting is a trap. The funding system teaches the same lesson. Do not wait. Do not give up. Ask for help. Be stubborn. The money is there. But you have to fight for it.",to:"Here’s the tension: funding processes can be document-heavy and difficult to navigate, and available schemes can change. Do not build your future around money that has not been confirmed. Apply broadly where you genuinely qualify, keep proof of every submission, ask institutions for current guidance, and maintain a backup plan if the preferred funding does not arrive."},
+      {from:"Question 1: What is the difference between a bursary and a loan? Which would you prefer? Why? What does NSFAS cover? Who qualifies? What are the repayment conditions?",to:"Question 1: What is the difference between a bursary, scholarship and student loan? For one current Zimbabwe funding option, identify what it covers, who qualifies and whether repayment or work obligations apply."},
+      {from:"Question 2: Zinhle said NSFAS is \"a loan with grace.\" What does that mean? What is one funding option you could explore? What is your first step to apply?",to:"Question 2: What is one funding option you could genuinely explore? What is the first official source you need to check, and what document do you need to prepare?"},
+      {from:"Start one funding application this week. NSFAS. A bursary. Something. Open the form. Read the requirements. Gather one document. Take the first step. This is not a simulation. This is your actual funding for your actual future. Start.",to:"Start one real funding action this week if you are eligible: open an official application or funding-information page, read the requirements, and gather one required document. If no current application applies to you, build a dated funding tracker instead."},
+      {from:"If you cannot start an application, talk to your family about funding. Ask: \"Do you have any experience with bursaries or loans? What do you know about NSFAS? Can you help me gather the documents I need?\" Write down what you learn.",to:"If you cannot start an application, talk to your family or school about funding. Ask what they know about bursaries, scholarships, government student loans, sponsorships and the documents you may need. Then verify anything important against an official source."},
+    ],
+  },
+  "g12-t1-l09-009": {
+    title:"STRUCTURED GAP YEAR OPTIONS — SIPHO'S STORY",
+    textReplacements:[
+      {from:"Sipho sits at Mama Rose's kitchen. He is 18 now. He has been through a lot—the melted sweets in Grade 9, the credit card in Grade 10, the bicycle repair business, the slow climb from no goals to something resembling a plan. He now has a workshop. Two employees. Real income. Real responsibility.",to:"Sipho sits at Mama Rose's kitchen. He is 18 now. He has been through a lot—the failed sweets test in Form 2, later money mistakes, the bicycle repair business, and the slow climb from no goals to a real plan. He now has a workshop, two employees and responsibilities that make a gap year a serious decision rather than a holiday."},
+      {from:"January–March: Worked at Emmanuel's spaza shop. Saved R3,000. Learned inventory, customer service, the rhythm of a business.",to:"January–March: Worked at Emmanuel's tuckshop. In this illustrative story he saved US$300 and learned inventory, customer service and the rhythm of a small business."},
+      {from:"April–June: Took an online course in digital marketing—R500 on Udemy. Learned how to run ads, write copy, build a simple website.",to:"April–June: Took an online digital-marketing course after comparing providers and cost. Learned the basics of ads, copy and a simple website."},
+      {from:"The Launcher's Question: If you are not taking a gap year, what could you do in a \"gap summer\"—the three months between matric results and your next step—to gain skills, money, or clarity?",to:"The Launcher's Question: If you are not taking a gap year, how could you use the transition months after O-Level to gain skills, money, experience or clarity without assuming every learner has the same calendar?"},
+      {from:"If you are not taking a gap year, write a one-page plan for your \"gap summer\"—the months between matric and your next step. What will you do to prepare? What skills will you build? What money will you save?",to:"If you are not taking a gap year, write a one-page transition-period plan. What will you do before your next formal step begins? What skill, work experience, application task or savings goal will you complete?"},
+    ],
+  },
+  "g12-t1-l10-010": {
+    title:"ENTREPRENEURSHIP AFTER FORM 4 — LETHABO'S DECISION",
+    textReplacements:[
+      {from:"Understand entrepreneurship as a post-matric path.",to:"Understand entrepreneurship as one possible pathway after Form 4."},
+      {from:"Lethabo's clock business has grown beyond what anyone expected—including him. What started as a reminder clock for his grandmother in Grade 9 is now a small manufacturing operation. He has three part-time helpers. He sells clocks to clinics, old age homes, and individual customers. He has a digital guide—\"How to Make Your Own Reminder Clock\"—that sells online. He earns about R4,000 a month. He is fielding inquiries from outside Gauteng. People want his clocks in Limpopo, in KwaZulu-Natal. Growth is pulling at him.",to:"Lethabo's clock business has grown beyond what anyone expected—including him. What started as a reminder clock in Form 2 is now a small manufacturing operation with three part-time helpers. He sells to clinics, care facilities and individual customers. He also has a digital guide. In this illustrative story the business produces about US$400 a month, and inquiries are arriving from other parts of Zimbabwe. Growth is pulling at him."},
+      {from:"He is 18 now. Matric is ending. And he has a decision.",to:"He is 18 now. Form 4 is ending. And he has a decision."},
+      {from:"They talk through the options. Lethabo calls Mr. Patel—the factory owner who has mentored him since Grade 10.",to:"They talk through the options. Lethabo calls Mr. Patel—the factory owner who has mentored him since Form 3."},
+      {from:"Could you start a business right after school? What would you need? What do you already have? What is the \"R20 version\" of your business idea—the smallest possible test?",to:"Could you start a business after Form 4? What would you need? What do you already have? What is the smallest safe version of the idea you could test without borrowing money needed for essentials?"},
+      {from:"The Launch Commitment: Lethabo started with R20 and a problem. What is the smallest, cheapest version of your business idea—the version you could test THIS MONTH without borrowing money?",to:"The Launch Commitment: Lethabo started with a problem and a tiny test. What is the smallest, cheapest version of your business idea that you could test this month without borrowing money?"},
+      {from:"If there is no young entrepreneur to talk to, write a reflection on what business you would start and why. What would be your R20 version—the smallest possible test?",to:"If there is no young entrepreneur to talk to, write a reflection on what business you would test and why. What is the smallest possible version that gives you real evidence?"},
+    ],
+  },
   "g9-t1-l01-001": {
     textReplacements: [
       {from:"Recall key learning from Grade 8 and assess what you carry forward.",to:"Recall key learning from Form 1 and assess what you carry forward."},
