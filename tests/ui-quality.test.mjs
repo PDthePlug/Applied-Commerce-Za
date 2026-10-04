@@ -219,3 +219,18 @@ test("Zimbabwe vocabulary-column cleaner accepts bold and plain South African la
   assert.match(overlay,/\(\?:\\\*\\\*\)\?/);
   assert.match(overlay,/isiZulu\|isiXhosa\|Afrikaans\|Sepedi\|Setswana/);
 });
+
+
+test("institutional HBC alignment matrix remains visible and explicit",()=>{
+  const page=read("app/institutions/alignment/page.tsx");
+  const institutions=read("app/institutions/page.tsx");
+  assert.match(page,/HBC Alignment Matrix|Curriculum alignment/i);
+  assert.match(page,/382/);
+  assert.match(page,/12/);
+  assert.match(page,/Applied context/);
+  assert.match(page,/Applied evidence/);
+  assert.match(page,/does not imply Ministry approval|does not turn every Applied Commerce project into an official School-Based Project/i);
+  assert.match(page,/zimbabweTargetTerms/);
+  assert.match(page,/hbcCompetencyLabels/);
+  assert.match(institutions,/\/institutions\/alignment/);
+});
