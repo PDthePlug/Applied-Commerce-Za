@@ -236,6 +236,7 @@ test("institutional HBC alignment matrix remains visible and explicit",()=>{
   assert.match(page,/does not turn every Applied Commerce[\s\S]*official School-Based Project/i);
   assert.match(page,/zimbabweTargetTerms/);
   assert.match(page,/hbcCompetencyLabels/);
+  assert.doesNotMatch(page,/term\.source/);
   assert.match(institutions,/\/institutions\/alignment/);
 });
 
