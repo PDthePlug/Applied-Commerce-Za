@@ -234,3 +234,15 @@ test("institutional HBC alignment matrix remains visible and explicit",()=>{
   assert.match(page,/hbcCompetencyLabels/);
   assert.match(institutions,/\/institutions\/alignment/);
 });
+
+
+test("Zimbabwe learner chrome hides source-manuscript implementation details",()=>{
+  const library=read("components/learn-library.tsx");
+  const formMap=read("components/form-map.tsx");
+  const unitPage=read("app/learn/[grade]/term/[term]/[unit]/page.tsx");
+  assert.doesNotMatch(library,/five authored source years/i);
+  assert.doesNotMatch(formMap,/source lessons/i);
+  assert.match(formMap,/>\{lessons\.length\} lessons</);
+  assert.match(unitPage,/zimbabwePlacementForSource/);
+  assert.match(unitPage,/Term \$\{placement\.term\}/);
+});
