@@ -12,6 +12,7 @@ import {
   zimbabweCurriculum,
   zimbabwePlacementForSource,
 } from "@/lib/zimbabwe-curriculum";
+import { hbcCompetencyLabels } from "@/lib/zimbabwe";
 import type {
   ZimbabweFormIndex,
   ZimbabwePlacement,
@@ -48,6 +49,8 @@ export function LessonReader({grade,term,unitId}:{grade:number;term:number;unitI
  const pos=sequence.findIndex(item=>item.id===unitId);
  const prev=pos>0?sequence[pos-1]:null;
  const next=pos>=0&&pos<sequence.length-1?sequence[pos+1]:null;
+ const currentRef=pos>=0?sequence[pos]:null;
+ const hbc=currentRef?.hbc ?? null;
  const response=state.responses[unitId]??"";
  const complete=completedIds.has(unitId);
  const pct=sequence.length?Math.round((Math.max(pos,0)+1)/sequence.length*100):0;
@@ -95,6 +98,23 @@ export function LessonReader({grade,term,unitId}:{grade:number;term:number;unitI
        <p className="eyebrow">Form {placement.form} · Term {placement.term} · {unit.label}</p>
        <h1>{unit.title}</h1>
       </header>
+      {hbc&&<section className="hbc-evidence" aria-label="Heritage-Based Curriculum learning evidence">
+        <div className="hbc-evidence-copy">
+          <small>HBC learning evidence</small>
+          <strong>{hbc.evidenceMode==="assessment"?"Assessment":hbc.evidenceMode[0].toUpperCase()+hbc.evidenceMode.slice(1)}</strong>
+          <p>
+            {hbc.communityApplication
+              ?"This lesson applies learning to household, community or local economic life."
+              :"This lesson builds capability that feeds into the term's applied evidence."}
+            {hbc.heritageApplication
+              ?" It also connects learning to community knowledge, relationships or locally rooted practice."
+              :""}
+          </p>
+        </div>
+        <div className="hbc-evidence-tags">
+          {hbc.competencies.slice(0,6).map(id=><span key={id}>{hbcCompetencyLabels[id]}</span>)}
+        </div>
+      </section>}
       <ContentBlocks
         blocks={unit.blocks}
         unitId={unitId}
