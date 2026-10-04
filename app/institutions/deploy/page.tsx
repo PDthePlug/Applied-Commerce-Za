@@ -30,7 +30,7 @@ export default function DeployAppliedCommercePage() {
       </p>
       <div className="institutional-actions">
         <Link className="institutional-primary" href="/institutions/demo">View institutional demo <ArrowRight/></Link>
-        <Link className="institutional-text-link dark-link" href="/">Open learner platform <ArrowRight/></Link>
+        <Link className="institutional-text-link" href="/institutions/delivery">View school delivery model <ArrowRight/></Link>
       </div>
     </section>
 
@@ -67,7 +67,10 @@ export default function DeployAppliedCommercePage() {
       <p className="eyebrow">Pilot principle</p>
       <h2>Proof before a national-scale commitment.</h2>
       <p>Start with one school or cohort, measure participation and learner evidence, then use the results to decide what should scale.</p>
-      <Link className="institutional-primary" href="/institutions/demo">Open the demo <ArrowRight/></Link>
+      <div className="institutional-actions final-actions">
+        <Link className="institutional-primary" href="/institutions/demo">Open the demo <ArrowRight/></Link>
+        <Link className="institutional-text-link dark-link" href="/institutions/delivery">Inspect delivery pacing <ArrowRight/></Link>
+      </div>
     </section>
   </div>;
 }
