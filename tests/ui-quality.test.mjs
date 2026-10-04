@@ -260,3 +260,12 @@ test("lesson reader navigates within Zimbabwe target-term sequence",()=>{
   assert.match(reader,/const next=pos>=0&&pos<sequence\.length-1\?sequence\[pos\+1\]:null/);
   assert.doesNotMatch(reader,/curriculum\.term\(/);
 });
+
+
+test("legacy source-grade entry routes redirect into Zimbabwe Forms",()=>{
+  const legacy=read("app/learn/[grade]/page.tsx");
+  assert.match(legacy,/redirect\(/);
+  assert.match(legacy,/defaultZimbabweFormForSourceGrade/);
+  assert.match(legacy,/\/learn\/form\//);
+  assert.doesNotMatch(legacy,/GradeMap/);
+});
