@@ -104,6 +104,8 @@ if(counts.lessons!==382){
 for(const term of zimbabweApi.zimbabweTargetTerms){
   if(!term.competencies?.length) failures.push({reason:`Form ${term.form} Term ${term.term} has no competencies`});
   if(!term.projectFocus?.trim()) failures.push({reason:`Form ${term.form} Term ${term.term} has no project focus`});
+  if(!term.applicationContext?.trim()) failures.push({reason:`Form ${term.form} Term ${term.term} has no local application context`});
+  if(!term.learnerEvidence?.length) failures.push({reason:`Form ${term.form} Term ${term.term} has no learner evidence outputs`});
 }
 
 console.log(JSON.stringify({
