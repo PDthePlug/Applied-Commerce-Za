@@ -224,12 +224,15 @@ test("Zimbabwe vocabulary-column cleaner accepts bold and plain South African la
 test("institutional HBC alignment matrix remains visible and explicit",()=>{
   const page=read("app/institutions/alignment/page.tsx");
   const institutions=read("app/institutions/page.tsx");
+  const config=read("lib/zimbabwe.ts");
   assert.match(page,/HBC Alignment Matrix|Curriculum alignment/i);
   assert.match(page,/382/);
   assert.match(page,/12/);
   assert.match(page,/Applied context/);
   assert.match(page,/Applied evidence/);
-  assert.match(page,/does not imply Ministry approval|does not turn every Applied Commerce project into an official School-Based Project/i);
+  assert.match(page,/zimbabweEdition\.alignmentNotice/);
+  assert.match(config,/does not imply Ministry approval/i);
+  assert.match(page,/does not turn every Applied Commerce[\s\S]*official School-Based Project/i);
   assert.match(page,/zimbabweTargetTerms/);
   assert.match(page,/hbcCompetencyLabels/);
   assert.match(institutions,/\/institutions\/alignment/);
