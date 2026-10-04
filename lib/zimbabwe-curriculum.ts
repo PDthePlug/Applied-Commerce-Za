@@ -2,6 +2,8 @@ import { curriculum } from "./curriculum";
 import type { UnitSummary } from "./types";
 import { zimbabweOLevelPlan, zimbabweTargetTerms } from "./zimbabwe";
 import type { HbcCompetencyId } from "./zimbabwe";
+import { hbcAlignmentForUnit } from "./zimbabwe-hbc";
+import type { HbcAlignment } from "./zimbabwe-hbc";
 import { applyZimbabweSummaryOverlay } from "./zimbabwe-content";
 
 export type ZimbabwePlacement = {
@@ -13,6 +15,7 @@ export type ZimbabweUnitRef = UnitSummary & {
   sourceGrade: number;
   sourceTerm: number;
   href: string;
+  hbc: HbcAlignment;
 };
 
 export type ZimbabweDeliveryTerm = {
@@ -128,24 +131,32 @@ export const zimbabweCurriculum = {
         for(const unit of sourceTerm.units){
           const placement=zimbabwePlacementForSource(grade.grade,sourceTerm.term,unit.startLesson,unit.type);
           if(placement.form!==form) continue;
-          terms[placement.term-1].units.push(applyZimbabweSummaryOverlay({
+          const overlaid=applyZimbabweSummaryOverlay({
             ...unit,
             sourceGrade:grade.grade,
             sourceTerm:sourceTerm.term,
             href:`/learn/${grade.grade}/term/${sourceTerm.term}/${unit.id}`,
-          }));
+          });
+          terms[placement.term-1].units.push({
+            ...overlaid,
+            hbc:hbcAlignmentForUnit(overlaid,placement,terms[placement.term-1].competencies),
+          });
         }
 
         for(const assessment of sourceTerm.assessments){
           const placement=zimbabwePlacementForSource(grade.grade,sourceTerm.term,assessment.startLesson,assessment.type);
           if(placement.form!==form) continue;
           terms[placement.term-1].assessmentCount+=1;
-          terms[placement.term-1].units.push(applyZimbabweSummaryOverlay({
+          const overlaid=applyZimbabweSummaryOverlay({
             ...assessment,
             sourceGrade:grade.grade,
             sourceTerm:sourceTerm.term,
             href:`/learn/${grade.grade}/term/${sourceTerm.term}/${assessment.id}`,
-          }));
+          });
+          terms[placement.term-1].units.push({
+            ...overlaid,
+            hbc:hbcAlignmentForUnit(overlaid,placement,terms[placement.term-1].competencies),
+          });
         }
       }
     }
