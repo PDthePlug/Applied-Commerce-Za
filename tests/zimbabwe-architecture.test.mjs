@@ -349,3 +349,32 @@ test("Form 4 runtime cleanup remains unit-scoped and Zimbabwe-specific",()=>{
   assert.match(overlay,/applyReviewedTableTextReplacements\(transformed,cleanup\?\.tableText\)/);
   assert.match(overlay,/applyReviewedTextReplacements\([\s\S]*cleanup\?\.text/);
 });
+
+
+test("Zimbabwe school delivery model covers all twelve terms without treating source units as periods",()=>{
+  const delivery=fs.readFileSync("lib/zimbabwe-delivery.ts","utf8");
+  const page=fs.readFileSync("app/institutions/delivery/page.tsx","utf8");
+  assert.match(delivery,/school-periods/);
+  assert.match(delivery,/weekly-workshop/);
+  assert.match(delivery,/intensive-programme/);
+  assert.match(delivery,/source lesson units per sequence/);
+  assert.match(page,/not treated as\s*one-period lessons/i);
+  assert.match(page,/recommended operating patterns, not Ministry timetable prescriptions/i);
+
+  const counts={
+    "1-1":26,"1-2":26,"1-3":27,
+    "2-1":34,"2-2":20,"2-3":21,
+    "3-1":36,"3-2":40,"3-3":40,
+    "4-1":40,"4-2":40,"4-3":32,
+  };
+  for(const [key,count] of Object.entries(counts)){
+    assert.match(delivery,new RegExp(`"${key}":${count}`));
+  }
+
+  assert.match(delivery,/share:15/);
+  assert.match(delivery,/share:35/);
+  assert.match(delivery,/id:"orient"/);
+  assert.match(delivery,/id:"build"/);
+  assert.match(delivery,/id:"apply"/);
+  assert.match(delivery,/id:"evidence"/);
+});
