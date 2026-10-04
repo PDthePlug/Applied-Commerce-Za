@@ -58,3 +58,8 @@
 .term-hbc-focus>div span{padding:5px 8px;border-radius:999px;background:#edf2ef;color:var(--ink-2);font-size:8px;font-weight:800}
 .term-hbc-focus p{margin:0;color:var(--muted);font-size:9px;line-height:1.45}
 .term-hbc-focus p strong{color:var(--ink)}
+
+.term-hbc-focus .term-evidence-list{display:grid;gap:5px;margin-top:2px}
+.term-hbc-focus .term-evidence-list>small{color:var(--ink);font-size:8px;font-weight:900;letter-spacing:.06em;text-transform:uppercase}
+.term-hbc-focus .term-evidence-list ul{display:grid;gap:4px;margin:0;padding-left:15px}
+.term-hbc-focus .term-evidence-list li{color:var(--muted);font-size:9px;line-height:1.4}
