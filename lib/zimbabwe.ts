@@ -98,6 +98,8 @@ export type ZimbabweTargetTerm = {
   source: string[];
   competencies: HbcCompetencyId[];
   projectFocus: string;
+  applicationContext: string;
+  learnerEvidence: string[];
 };
 
 export const zimbabweTargetTerms: ZimbabweTargetTerm[] = [
@@ -106,18 +108,24 @@ export const zimbabweTargetTerms: ZimbabweTargetTerm[] = [
     source:["Grade 8 lessons 1–26"],
     competencies:["business-financial-literacy","critical-thinking","self-management"],
     projectFocus:"Personal money foundations portfolio",
+    applicationContext:"Household money beliefs, saving practices, local earning opportunities and the learner's own economic environment.",
+    learnerEvidence:["Identity and belief audit","Saving or first-income evidence","Personal money reflection"],
   },
   {
     form:1,term:2,title:"Earning, Spending, Budgeting & Habit Formation",
     source:["Grade 8 lessons 27–53"],
     competencies:["business-financial-literacy","entrepreneurship","planning-organising","problem-solving"],
     projectFocus:"Budget and habit evidence",
+    applicationContext:"Everyday spending, local trade, budgeting decisions and repeated behaviours that affect household resources.",
+    learnerEvidence:["Budget or money-flow record","Spending/earning evidence","Habit tracker and review"],
   },
   {
     form:1,term:3,title:"Financial Identity, Agency & First Capstone",
     source:["Grade 8 lessons 54–80"],
     competencies:["self-management","planning-organising","problem-solving","communication-teamwork"],
     projectFocus:"First Applied Commerce capstone",
+    applicationContext:"A learner-selected need or goal that brings together identity, resources, habits and action.",
+    learnerEvidence:["21-day habit evidence","Completed capstone artefact","Presentation and end-of-year reflection"],
   },
 
   {
@@ -125,18 +133,24 @@ export const zimbabweTargetTerms: ZimbabweTargetTerm[] = [
     source:["Grade 9 lessons 1–34"],
     competencies:["entrepreneurship","business-financial-literacy","research","critical-thinking"],
     projectFocus:"Enterprise portfolio and completed Community Money Map",
+    applicationContext:"Kombi ranks, tuckshops, markets, households, supply chains and community money/value flows.",
+    learnerEvidence:["Enterprise test evidence","Community Money Map","Term reflection and future-self letter"],
   },
   {
     form:2,term:2,title:"Habits, Agency & Execution",
     source:["Grade 9 lessons 35–54"],
     competencies:["problem-solving","self-management","planning-organising","technological-skills"],
     projectFocus:"Full 21-day Habit Transformation project",
+    applicationContext:"Learner routines, digital behaviour, goal execution, peer influence and resilience in real school/home life.",
+    learnerEvidence:["21-day transformation tracker","Midpoint adjustment evidence","Final habit-system reflection"],
   },
   {
     form:2,term:3,title:"Community Enterprise & Portfolio",
     source:["Grade 9 lessons 55–75"],
     competencies:["entrepreneurship","research","communication-teamwork","leadership","problem-solving"],
     projectFocus:"Community enterprise project",
+    applicationContext:"A real local need investigated with community members, small businesses or households before action.",
+    learnerEvidence:["Needs-assessment evidence","Project plan/budget/partnership record","Completed project and presentation"],
   },
 
   {
@@ -144,18 +158,24 @@ export const zimbabweTargetTerms: ZimbabweTargetTerm[] = [
     source:["Grade 10 Terms 1–2"],
     competencies:["business-financial-literacy","critical-thinking","entrepreneurship","planning-organising"],
     projectFocus:"Value-creation and investment plans",
+    applicationContext:"Zimbabwean earning, saving, investing, small-business systems and asset-building decisions.",
+    learnerEvidence:["Value-creation system plan","Savings/investment comparison","Asset-building decision record"],
   },
   {
     form:3,term:2,title:"Systems, Tax & Financial Independence",
     source:["Grade 10 Terms 3–4"],
     competencies:["business-financial-literacy","critical-thinking","problem-solving","planning-organising"],
     projectFocus:"Financial system and financial-independence plan",
+    applicationContext:"Zimbabwe tax, retirement, insurance, estate and financial-independence decisions using current official sources.",
+    learnerEvidence:["Personal financial-system map","Risk/tax/retirement research evidence","Financial-independence plan"],
   },
   {
     form:3,term:3,title:"Leverage, Leadership & Responsibility",
     source:["Grade 11 Terms 1–2"],
     competencies:["leadership","communication-teamwork","self-management","planning-organising","problem-solving"],
     projectFocus:"Leverage plan and leadership philosophy",
+    applicationContext:"School, household, enterprise and community situations where learners coordinate people, time, knowledge and systems responsibly.",
+    learnerEvidence:["Leverage audit and plan","Leadership case evidence","Personal leadership philosophy"],
   },
 
   {
@@ -163,18 +183,24 @@ export const zimbabweTargetTerms: ZimbabweTargetTerm[] = [
     source:["Grade 11 Terms 3–4"],
     competencies:["business-financial-literacy","critical-thinking","leadership","planning-organising"],
     projectFocus:"10-year wealth plan and life-and-legacy plan",
+    applicationContext:"Long-horizon Zimbabwean wealth building, stewardship, family responsibility, estate thinking and legacy.",
+    learnerEvidence:["10-year wealth plan","Legacy/stewardship decisions","Life-and-legacy plan"],
   },
   {
     form:4,term:2,title:"Adult Money, Contracts, Work & Career Launch",
     source:["Grade 12 Terms 1–2"],
     competencies:["communication-teamwork","entrepreneurship","self-management","planning-organising","technological-skills"],
     projectFocus:"Post-O-Level transition and career-launch plans",
+    applicationContext:"Zimbabwe post-O-Level pathways, work, enterprise, contracts, applications, employability and career decisions.",
+    learnerEvidence:["Post-O-Level transition plan","Career/application artefacts","Contract/workplace decision evidence"],
   },
   {
     form:4,term:3,title:"Risk, Protection, Integration & Life Launch",
     source:["Grade 12 Terms 3–4"],
     competencies:["problem-solving","business-financial-literacy","self-management","planning-organising","leadership"],
     projectFocus:"Risk-and-protection plan and final Life Launch Plan",
+    applicationContext:"Adult financial risk, protection, household responsibilities and the learner's first years beyond O-Level.",
+    learnerEvidence:["Risk-and-protection plan","Integrated financial decisions","Final Life Launch Plan and presentation"],
   },
 ];
 
