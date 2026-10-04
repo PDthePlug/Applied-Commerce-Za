@@ -27,7 +27,7 @@ export default function InstitutionsPage() {
         </p>
         <div className="institutional-actions">
           <Link className="institutional-primary" href="/institutions/demo">View the Zimbabwe school demo <ArrowRight/></Link>
-          <a className="institutional-text-link" href="#offers">Explore the two offers <ArrowRight/></a>
+          <Link className="institutional-text-link" href="/institutions/alignment">View HBC alignment <ArrowRight/></Link>
         </div>
       </div>
       <aside className="institutional-proof-card">
@@ -122,7 +122,10 @@ export default function InstitutionsPage() {
       <p className="eyebrow">Alignment note</p>
       <h2>Designed to support HBC competencies without claiming Ministry approval.</h2>
       <p>The Zimbabwe edition is being localised for the three-term school calendar, Forms 1–4 and Zimbabwean economic life, with Form 4 as the Launch Year. Formal prescribed-textbook approval is a separate process.</p>
-      <Link className="institutional-primary" href="/institutions/demo">Open the institutional demo <ArrowRight/></Link>
+      <div className="institutional-actions final-actions">
+        <Link className="institutional-primary" href="/institutions/demo">Open the institutional demo <ArrowRight/></Link>
+        <Link className="institutional-text-link dark-link" href="/institutions/alignment">Inspect the HBC alignment matrix <ArrowRight/></Link>
+      </div>
     </section>
   </div>;
 }
