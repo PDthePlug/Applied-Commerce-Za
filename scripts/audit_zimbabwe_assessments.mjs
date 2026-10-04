@@ -100,9 +100,30 @@ for(const gradeNumber of [8,9,10,11,12]){
   }
 }
 
+const renderedAssessmentsWithResidue=rows.filter(row=>row.hits.length);
+const failures=[];
+if(rows.length!==3) failures.push(`Expected 3 Form 2 assessments, found ${rows.length}`);
+if(counts.F2T1!==1||counts.F2T2!==1||counts.F2T3!==1){
+  failures.push("Form 2 assessments must map one each to Terms 1, 2 and 3.");
+}
+if(renderedAssessmentsWithResidue.length){
+  failures.push(`${renderedAssessmentsWithResidue.length} rendered assessment(s) still contain Zimbabwe localisation residue.`);
+}
+for(const row of rows){
+  if(!/^FORM 2 TERM [123] APPLIED ASSESSMENT$/.test(row.renderedLabel)){
+    failures.push(`${row.id} has an unexpected learner-facing label: ${row.renderedLabel}`);
+  }
+  if(row.renderedTitle!==row.renderedLabel){
+    failures.push(`${row.id} assessment title and label are inconsistent.`);
+  }
+}
+
 console.log(JSON.stringify({
   assessmentCount:rows.length,
   counts,
-  renderedAssessmentsWithResidue:rows.filter(row=>row.hits.length).length,
+  renderedAssessmentsWithResidue:renderedAssessmentsWithResidue.length,
   rows,
+  failures,
 },null,2));
+
+if(failures.length) process.exit(1);
