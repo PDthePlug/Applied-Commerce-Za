@@ -90,6 +90,9 @@ jobs:
       - name: Zimbabwe navigation boundary audit
         run: node scripts/audit_zimbabwe_navigation.mjs
 
+      - name: Zimbabwe assessment placement audit
+        run: node scripts/audit_zimbabwe_assessments.mjs
+
       - name: Typecheck
         run: npm run typecheck
 
