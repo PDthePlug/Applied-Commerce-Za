@@ -51,7 +51,7 @@ export function FormMap({form}:{form:number}){
             <div><p>Term {term.term}</p><h2>{term.title}</h2></div>
           </header>
           <div className="term-stats">
-            <span>{lessons.length} source lessons</span>
+            <span>{lessons.length} lessons</span>
             {term.assessmentCount>0&&<span>{term.assessmentCount} assessment{term.assessmentCount>1?"s":""}</span>}
           </div>
           <div className="term-hbc-focus">
