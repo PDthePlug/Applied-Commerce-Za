@@ -125,7 +125,8 @@ test("Zimbabwe Form maps expose HBC competency and project evidence metadata",()
   assert.match(map,/Applied context:/);
   assert.match(map,/Project focus:/);
   assert.match(map,/Expected learner evidence/);
-  assert.match(map,/source lessons/);
+  assert.match(map,/>\{lessons\.length\} lessons</);
+  assert.doesNotMatch(map,/source lessons/i);
   assert.match(config,/business-financial-literacy/);
   assert.match(config,/communication-teamwork/);
   assert.match(config,/planning-organising/);
