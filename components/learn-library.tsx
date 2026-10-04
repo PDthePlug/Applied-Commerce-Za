@@ -28,7 +28,7 @@ export function LearnLibrary(){
     <section className="page-intro">
       <p className="eyebrow">Zimbabwe O-Level pathway</p>
       <h1>Four Forms. Three terms each. One launch journey.</h1>
-      <p>Applied Commerce now follows the four-year O-Level pathway. The five authored source years remain preserved underneath while learners move through twelve Zimbabwe delivery terms.</p>
+      <p>Applied Commerce follows a four-year O-Level pathway across twelve Zimbabwe school terms, building from money foundations to enterprise, systems, leadership and the Form 4 Life Launch.</p>
     </section>
     <div className="grade-grid compact">
       {forms.map(form=><FormCard key={form.form} form={form} completed={completedFor(form)}/>)}
