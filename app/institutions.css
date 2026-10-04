@@ -258,3 +258,41 @@
 @media(max-width:1100px){.hbc-term-row{grid-template-columns:1fr 1fr}.hbc-term-row>div:nth-child(2){border-right:0}.hbc-term-row>div:nth-child(-n+2){border-bottom:1px solid var(--line)}}
 @media(max-width:760px){.hbc-alignment-summary{grid-template-columns:1fr 1fr}.hbc-alignment-intro{grid-template-columns:1fr}.hbc-term-row{grid-template-columns:1fr}.hbc-term-row>div{border-right:0!important;border-bottom:1px solid var(--line)!important}.hbc-term-row>div:last-child{border-bottom:0!important}.hbc-form-heading{grid-template-columns:54px 1fr;padding:22px 18px}.hbc-form-number{width:48px;height:48px}.hbc-form-heading h2{font-size:25px}}
 @media(max-width:480px){.hbc-alignment-summary{grid-template-columns:1fr 1fr}.hbc-alignment-summary article{padding:16px}.hbc-alignment-summary strong{font-size:27px}}
+
+.delivery-hero{display:grid;gap:18px}
+.delivery-principle{display:flex;align-items:flex-start;gap:10px;max-width:900px;padding:14px 16px;border:1px solid rgba(255,255,255,.14);border-radius:14px;background:rgba(255,255,255,.055);color:#dbe4e1;font-size:10px;line-height:1.6}
+.delivery-principle svg{width:17px;flex:0 0 auto;color:#dcb48e}
+.delivery-intro{padding-bottom:26px}
+.delivery-mode-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.delivery-mode-grid article{display:flex;min-height:360px;flex-direction:column;padding:28px;border:1px solid var(--line);border-radius:21px;background:white}
+.delivery-mode-icon{display:grid;width:46px;height:46px;place-items:center;margin-bottom:24px;border-radius:13px;background:var(--warm)}
+.delivery-mode-icon svg{width:21px;color:var(--accent)}
+.delivery-mode-grid h3{margin:8px 0 12px;font:500 25px/1.14 var(--serif)}
+.delivery-mode-grid article>span{display:block;margin-bottom:18px;color:var(--teal);font-size:9px;font-weight:900;line-height:1.45}
+.delivery-mode-grid article>p:last-child{margin:auto 0 0;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:11px;line-height:1.65}
+.delivery-sequence-section{margin-top:86px}
+.delivery-form-stack{display:grid;gap:22px;margin-top:30px}
+.delivery-form{overflow:hidden;border:1px solid var(--line);border-radius:22px;background:white}
+.delivery-form>header{display:flex;align-items:center;gap:13px;padding:20px 24px;border-bottom:1px solid var(--line);background:#f7f5ef}
+.delivery-form>header>span{display:grid;width:42px;height:42px;place-items:center;border-radius:11px;background:var(--ink);color:white;font:500 18px var(--serif)}
+.delivery-form>header h3{margin:0;font:500 25px var(--serif)}
+.delivery-term{padding:26px;border-bottom:1px solid var(--line)}
+.delivery-term:last-child{border-bottom:0}
+.delivery-term-head>span{color:var(--accent);font-size:8px;font-weight:900;text-transform:uppercase}
+.delivery-term-head h4{margin:5px 0 6px;font:500 27px/1.08 var(--serif)}
+.delivery-term-head small{color:var(--muted);font-size:9px}
+.delivery-sequence-size{margin:14px 0 0;color:var(--teal);font-size:10px;font-weight:850}
+.delivery-phases{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin-top:18px}
+.delivery-phases>div{display:grid;align-content:start;min-height:154px;padding:16px;border-radius:14px;background:#f8f7f3}
+.delivery-phases strong{font:500 25px var(--serif)}
+.delivery-phases span{margin:5px 0 8px;color:var(--ink);font-size:9px;font-weight:900;text-transform:uppercase}
+.delivery-phases small{color:var(--muted);font-size:8.5px;line-height:1.5}
+.delivery-term-evidence{display:grid;grid-template-columns:.9fr 1.1fr;gap:12px;margin-top:12px}
+.delivery-term-evidence>div{padding:17px;border:1px solid var(--line);border-radius:14px}
+.delivery-term-evidence p{margin:0 0 7px;color:var(--accent);font-size:8px;font-weight:900;text-transform:uppercase}
+.delivery-term-evidence strong{color:#34443e;font-size:11px;line-height:1.5}
+.delivery-term-evidence ul{display:grid;gap:6px;margin:0;padding:0;list-style:none}
+.delivery-term-evidence li{display:flex;align-items:flex-start;gap:6px;color:var(--muted);font-size:9px;line-height:1.4}
+.delivery-term-evidence li svg{width:12px;flex:0 0 auto;color:var(--success)}
+@media(max-width:980px){.delivery-mode-grid{grid-template-columns:1fr}.delivery-mode-grid article{min-height:0}.delivery-phases{grid-template-columns:1fr 1fr}}
+@media(max-width:650px){.delivery-phases,.delivery-term-evidence{grid-template-columns:1fr}.delivery-term{padding:20px}.delivery-phases>div{min-height:0}}
