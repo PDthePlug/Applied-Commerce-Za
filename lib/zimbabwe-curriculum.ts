@@ -25,6 +25,8 @@ export type ZimbabweDeliveryTerm = {
   assessmentCount: number;
   competencies: HbcCompetencyId[];
   projectFocus: string;
+  applicationContext: string;
+  learnerEvidence: string[];
 };
 
 export type ZimbabweFormIndex = {
@@ -118,6 +120,8 @@ export const zimbabweCurriculum = {
         assessmentCount:0,
         competencies:architecture?.competencies ?? [],
         projectFocus:architecture?.projectFocus ?? "",
+        applicationContext:architecture?.applicationContext ?? "",
+        learnerEvidence:architecture?.learnerEvidence ?? [],
       };
     };
     const terms:[ZimbabweDeliveryTerm,ZimbabweDeliveryTerm,ZimbabweDeliveryTerm]=[
