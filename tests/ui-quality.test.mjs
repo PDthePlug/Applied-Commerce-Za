@@ -249,3 +249,13 @@ test("Zimbabwe learner chrome hides source-manuscript implementation details",()
   assert.match(unitPage,/zimbabwePlacementForSource/);
   assert.match(unitPage,/Term \$\{placement\.term\}/);
 });
+
+
+test("lesson reader navigates within Zimbabwe target-term sequence",()=>{
+  const reader=read("components/lesson-reader.tsx");
+  assert.match(reader,/const targetTerm=placement&&formData/);
+  assert.match(reader,/const sequence=useMemo<ZimbabweUnitRef\[\]>\(\(\)=>targetTerm\?\.units \?\? \[\]/);
+  assert.match(reader,/const prev=pos>0\?sequence\[pos-1\]:null/);
+  assert.match(reader,/const next=pos>=0&&pos<sequence\.length-1\?sequence\[pos\+1\]:null/);
+  assert.doesNotMatch(reader,/curriculum\.term\(/);
+});
