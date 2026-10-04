@@ -169,7 +169,12 @@ test("Form 2 Community Money Map stays inside Term 1",()=>{
 test("every Form 2 source lesson is explicitly localised or reviewed as context-neutral",()=>{
   const overlay=fs.readFileSync("lib/zimbabwe-content.ts","utf8");
   const explicit=new Set(
-    [...overlay.matchAll(/^\s{2}"(g9-[^"]+)": \{/gm)].map(match=>match[1])
+    [...overlay.matchAll(/^\s{2}"(g9-[^"]+)": \{/gm)]
+      .map(match=>match[1])
+      .filter(id=>!id.includes("-assessment-"))
+  );
+  const assessmentOverlays=new Set(
+    [...overlay.matchAll(/^\s{2}"(g9-[^"]*assessment[^"]*)": \{/gm)].map(match=>match[1])
   );
   const neutralSection=overlay.match(/zimbabweReviewedNeutralForm2UnitIds = \[([\s\S]*?)\] as const;/);
   assert.ok(neutralSection,"reviewed-neutral Form 2 registry must exist");
@@ -185,11 +190,23 @@ test("every Form 2 source lesson is explicitly localised or reviewed as context-
   assert.equal(sourceIds.length,75);
   assert.equal(explicit.size,64);
   assert.equal(neutral.size,11);
+  assert.equal(assessmentOverlays.size,3);
   assert.equal(new Set([...explicit,...neutral]).size,75);
   assert.deepEqual(
     sourceIds.filter(id=>!explicit.has(id)&&!neutral.has(id)),
     [],
     "no Grade 9 lesson may enter Form 2 without localisation review",
+  );
+
+  const assessmentIds=bundle(9).terms
+    .flatMap(term=>term.units)
+    .filter(unit=>unit.type==="assessment")
+    .map(unit=>unit.id);
+  assert.equal(assessmentIds.length,3);
+  assert.deepEqual(
+    assessmentIds.filter(id=>!assessmentOverlays.has(id)),
+    [],
+    "every Grade 9 assessment must have an explicit Zimbabwe localisation overlay",
   );
 });
 
