@@ -1,18 +1,12 @@
-import type { Metadata } from "next";
-import { notFound } from "next/navigation";
-import { GradeMap } from "@/components/grade-map";
-import { zimbabweStage } from "@/lib/zimbabwe";
+import { notFound, redirect } from "next/navigation";
+import { defaultZimbabweFormForSourceGrade } from "@/lib/zimbabwe-curriculum";
 
-export async function generateMetadata({params}:{params:Promise<{grade:string}>}):Promise<Metadata>{
-  const {grade:raw}=await params;
-  const grade=Number(raw);
-  const stage=zimbabweStage(grade);
-  return {title:`${stage.stage} · ${stage.schoolPlacement}`};
-}
-
-export default async function GradePage({params}:{params:Promise<{grade:string}>}){
+export default async function LegacySourceGradePage({params}:{params:Promise<{grade:string}>}){
   const {grade:raw}=await params;
   const grade=Number(raw);
   if(![8,9,10,11,12].includes(grade)) notFound();
-  return <GradeMap grade={grade}/>;
+
+  // Source-grade routes remain valid only as legacy entry points.
+  // Learners always enter the four-year Zimbabwe Form architecture.
+  redirect(`/learn/form/${defaultZimbabweFormForSourceGrade(grade)}`);
 }
