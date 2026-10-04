@@ -57,7 +57,12 @@ export function FormMap({form}:{form:number}){
           <div className="term-hbc-focus">
             <small>HBC competency focus</small>
             <div>{term.competencies.map(id=><span key={id}>{hbcCompetencyLabels[id]}</span>)}</div>
-            <p><strong>Project evidence:</strong> {term.projectFocus}</p>
+            <p><strong>Applied context:</strong> {term.applicationContext}</p>
+            <p><strong>Project focus:</strong> {term.projectFocus}</p>
+            <div className="term-evidence-list">
+              <small>Expected learner evidence</small>
+              <ul>{term.learnerEvidence.map(item=><li key={item}>{item}</li>)}</ul>
+            </div>
           </div>
           <div className="progress-track small"><i style={{width:`${tp}%`}}/></div>
           <div className="term-preview">
