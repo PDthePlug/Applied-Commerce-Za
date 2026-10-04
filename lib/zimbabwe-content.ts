@@ -4099,6 +4099,36 @@ export const zimbabweContentOverrides: Record<string,ZimbabweUnitOverride> = {
       {from:"It is a Saturday afternoon. Myah is at Mama Rose's kitchen in Alexandra, helping chop vegetables. She has been coming here since the grant office silence began. Mama Rose does not ask questions. She just hands Myah a knife and a pile of onions and lets the work do its work.",to:"It is a Saturday afternoon. Myah is at Mama Rose's kitchen in Harare, helping chop vegetables. She has been coming here since the committee-office silence began. Mama Rose does not ask questions. She just hands Myah a knife and a pile of onions and lets the work do its work."},
     ],
   },
+  "g9-t1-assessment-1": {
+    label:"FORM 2 TERM 1 APPLIED ASSESSMENT",
+    title:"FORM 2 TERM 1 APPLIED ASSESSMENT",
+    blocks:[
+      {index:23,kind:"text",text:"a) What problem is Nosipho solving? (2 marks) b) Who are her potential customers? (2 marks) c) Nosipho considers charging US$5 per hour. A parent offers US$50 for a 10-week term. What pricing approach is the parent proposing? Which option would you recommend, and why? (3 marks) d) What hidden skills does Nosipho have inside her tutoring skill? Name TWO. (3 marks)"},
+      {index:24,kind:"text",text:"17. Thabo wants to start a delivery service for elders in his street. He has 5 potential customers, charges US$2 per delivery, and his bike maintenance costs US$4 per week. (10 marks)"},
+      {index:25,kind:"text",text:"a) Calculate Thabo's weekly income. (2 marks) b) Calculate his weekly profit. (2 marks) c) What is Thabo's profit per customer per week? (2 marks) d) If Thabo wants to save US$20 for bike repairs and saves all of this weekly profit, how many full weeks will it take? (2 marks) e) What is one risk Thabo faces as a sole proprietor? (2 marks)"},
+      {index:26,kind:"text",text:"18. Sipho wants to price his artwork. Paper costs US$0.50, charcoal costs US$0.20, and he values his time at US$3 per hour for 2 hours. (10 marks)"},
+      {index:27,kind:"text",text:"a) Calculate Sipho's material costs per drawing. (2 marks) b) Calculate Sipho's base price if he includes materials plus the value of his time. (2 marks) c) A customer offers US$6. Should Sipho accept if his goal is to cover that base price? Why or why not? (3 marks) d) If demand for Sipho's drawings rises, what should he consider before changing his price? (3 marks)"},
+    ],
+  },
+  "g9-t3-assessment-2": {
+    label:"FORM 2 TERM 2 APPLIED ASSESSMENT",
+    title:"FORM 2 TERM 2 APPLIED ASSESSMENT",
+    blocks:[
+      {index:24,kind:"text",text:"17. Themba put US$200 into a risky online business without first testing the opportunity or protecting essential money. He lost the full amount. (10 marks)"},
+    ],
+  },
+  "g9-t4-assessment-3": {
+    label:"FORM 2 TERM 3 APPLIED ASSESSMENT",
+    title:"FORM 2 TERM 3 APPLIED ASSESSMENT",
+    blocks:[
+      {index:11,kind:"text",text:"9. The next stage after Form 2 in the Applied Commerce Zimbabwe pathway is: a) Leaving school immediately b) Continuing to Form 3 c) Only working d) Only starting a business"},
+      {index:12,kind:"text",text:"10. A strong Form 3 direction plan should: a) Close off every option immediately b) Identify capabilities and learning areas to strengthen while continuing O-Level c) Ignore practical skills d) Copy another learner's plan"},
+      {index:18,kind:"text",text:"14. Give TWO elements of a strong Form 3 direction plan and explain why each matters. (4 marks)"},
+      {index:24,kind:"text",text:"17. Thabo's delivery service has 12 regular customers. He charges US$1.50 per delivery. His weekly expenses are US$6. (10 marks)"},
+      {index:25,kind:"text",text:"a) Calculate Thabo's weekly income. (2 marks) b) Calculate his weekly profit. (2 marks) c) Thabo wants to save US$30 for a new bike part. If he saves all of this weekly profit, how many full weeks will it take? (2 marks) d) If Thabo reinvests US$2 of his profit into advertising each week, how much profit remains after that reinvestment? (2 marks) e) Why might reinvesting some profit help Thabo's business grow? (2 marks)"},
+      {index:27,kind:"text",text:"a) What is the High-Agency Challenge? (2 marks) b) What was Sipho's survival asset? (2 marks) c) Sipho earned US$3 on his first repair. If he protects US$1.50 as seed capital for tools or materials, how much remains available for other needs? (2 marks) d) Why is protecting seed capital important when someone is starting with very little capital? (2 marks) e) What did Sipho prove to himself by completing the High-Agency Challenge? (2 marks)"},
+    ],
+  },
   "g9-t1-l01-001": {
     textReplacements: [
       {from:"Recall key learning from Grade 8 and assess what you carry forward.",to:"Recall key learning from Form 1 and assess what you carry forward."},
