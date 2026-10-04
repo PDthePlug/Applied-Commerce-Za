@@ -84,6 +84,9 @@ jobs:
       - name: Zimbabwe all-forms runtime audit
         run: node scripts/audit_zimbabwe_all_runtime.mjs
 
+      - name: Zimbabwe HBC alignment audit
+        run: node scripts/audit_zimbabwe_hbc.mjs
+
       - name: Typecheck
         run: npm run typecheck
 
