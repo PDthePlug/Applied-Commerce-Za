@@ -62,7 +62,7 @@ export default function HbcAlignmentPage(){
               <div className="hbc-term-title">
                 <span>Term {term.term}</span>
                 <h3>{term.title}</h3>
-                <small>{term.source.join(" · ")}</small>
+                <small>Zimbabwe O-Level · Form {term.form} · Term {term.term}</small>
               </div>
 
               <div className="hbc-term-column">
