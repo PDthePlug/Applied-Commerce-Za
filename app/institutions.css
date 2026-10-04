@@ -216,3 +216,45 @@
 }
 
 /* Institutional launch checkpoint */
+
+.hbc-alignment-page{max-width:1440px}
+.hbc-alignment-hero{display:grid;gap:18px}
+.hbc-alignment-hero h1{max-width:1050px}
+.hbc-alignment-notice{display:flex;align-items:flex-start;gap:10px;max-width:900px;margin-top:8px;padding:14px 16px;border:1px solid rgba(255,255,255,.14);border-radius:14px;background:rgba(255,255,255,.055);color:#dbe4e1;font-size:10px;line-height:1.6}
+.hbc-alignment-notice svg{width:17px;flex:0 0 auto;color:#dcb48e}
+.hbc-alignment-summary{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:20px}
+.hbc-alignment-summary article{display:grid;gap:4px;padding:22px;border:1px solid var(--line);border-radius:17px;background:white}
+.hbc-alignment-summary strong{font:500 31px var(--serif)}
+.hbc-alignment-summary span{color:var(--muted);font-size:9px;font-weight:850;text-transform:uppercase}
+.hbc-alignment-intro{display:grid;grid-template-columns:1fr .9fr;gap:42px;align-items:end;padding:76px 0 30px}
+.hbc-alignment-intro h2{max-width:720px;margin:8px 0 0;font:500 clamp(34px,4vw,52px)/1.02 var(--serif);letter-spacing:-.04em}
+.hbc-alignment-intro>p{margin:0;color:var(--muted);font-size:12px;line-height:1.7}
+.hbc-form-stack{display:grid;gap:24px}
+.hbc-form-section{overflow:hidden;border:1px solid var(--line);border-radius:24px;background:white;box-shadow:0 10px 32px rgba(23,49,59,.035)}
+.hbc-form-heading{display:grid;grid-template-columns:72px 1fr;gap:18px;align-items:center;padding:26px 28px;border-bottom:1px solid var(--line);background:#f7f5ef}
+.hbc-form-number{display:grid;width:58px;height:58px;place-items:center;border-radius:15px;background:var(--ink);color:white;font:500 24px var(--serif)}
+.hbc-form-heading p{margin:0;color:var(--accent);font-size:9px;font-weight:900;text-transform:uppercase}
+.hbc-form-heading h2{margin:4px 0 5px;font:500 29px var(--serif)}
+.hbc-form-heading span{color:var(--muted);font-size:10px;line-height:1.5}
+.hbc-term-matrix{display:grid}
+.hbc-term-row{display:grid;grid-template-columns:minmax(190px,.75fr) minmax(230px,1fr) minmax(240px,1fr) minmax(220px,.9fr);gap:0;border-bottom:1px solid var(--line)}
+.hbc-term-row:last-child{border-bottom:0}
+.hbc-term-row>div{padding:23px;border-right:1px solid var(--line)}
+.hbc-term-row>div:last-child{border-right:0}
+.hbc-term-title>span{color:var(--accent);font-size:8px;font-weight:900;text-transform:uppercase}
+.hbc-term-title h3{margin:6px 0 9px;font:500 24px/1.1 var(--serif)}
+.hbc-term-title small{color:var(--muted);font-size:8px;line-height:1.45}
+.hbc-term-column>p{display:flex;align-items:center;gap:7px;margin:0 0 10px;color:var(--ink);font-size:8px;font-weight:900;letter-spacing:.06em;text-transform:uppercase}
+.hbc-term-column>p svg{width:14px;color:var(--accent)}
+.hbc-term-column>span{color:var(--muted);font-size:10px;line-height:1.6}
+.hbc-term-column>strong{display:block;color:#34443e;font-size:11px;line-height:1.5}
+.hbc-term-column ul{display:grid;gap:6px;margin:12px 0 0;padding:0;list-style:none}
+.hbc-term-column li{display:flex;align-items:flex-start;gap:6px;color:var(--muted);font-size:9px;line-height:1.4}
+.hbc-term-column li svg{width:12px;flex:0 0 auto;color:var(--success)}
+.hbc-term-competencies>div{display:flex;flex-wrap:wrap;gap:6px}
+.hbc-term-competencies>div span{padding:6px 8px;border-radius:999px;background:#edf2ef;color:var(--ink-2);font-size:8px;font-weight:800}
+.final-actions{margin-top:18px}
+.final-actions .institutional-primary{margin-top:0}
+@media(max-width:1100px){.hbc-term-row{grid-template-columns:1fr 1fr}.hbc-term-row>div:nth-child(2){border-right:0}.hbc-term-row>div:nth-child(-n+2){border-bottom:1px solid var(--line)}}
+@media(max-width:760px){.hbc-alignment-summary{grid-template-columns:1fr 1fr}.hbc-alignment-intro{grid-template-columns:1fr}.hbc-term-row{grid-template-columns:1fr}.hbc-term-row>div{border-right:0!important;border-bottom:1px solid var(--line)!important}.hbc-term-row>div:last-child{border-bottom:0!important}.hbc-form-heading{grid-template-columns:54px 1fr;padding:22px 18px}.hbc-form-number{width:48px;height:48px}.hbc-form-heading h2{font-size:25px}}
+@media(max-width:480px){.hbc-alignment-summary{grid-template-columns:1fr 1fr}.hbc-alignment-summary article{padding:16px}.hbc-alignment-summary strong{font-size:27px}}
