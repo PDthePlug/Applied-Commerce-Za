@@ -25,28 +25,15 @@
   background:var(--learner-document-paper);
 }
 
-/* Keep navigation in the chrome, clear of every writing area while scrolling. */
+/* The BIS signature Menu stays floating at bottom centre on every learner page.
+   Reserve space in the workbook and scroll margins for reachable controls. */
 .reader-shell .reader-topbar{
-  grid-template-columns:235px minmax(0,1fr) 164px;
+  grid-template-columns:235px minmax(0,1fr) 60px;
 }
 
 .reader-shell .reader-menu-button{
   justify-self:end;
   margin-right:12px;
-}
-
-.focused-reader .app-menu-trigger{
-  top:13px;
-  right:70px;
-  bottom:auto;
-  left:auto;
-  transform:none;
-  min-width:0;
-  height:42px;
-  padding:0 12px;
-  border-radius:10px;
-  font-size:11px;
-  box-shadow:none;
 }
 
 .reader-shell .learner-document-stage{
@@ -365,14 +352,23 @@
 }
 
 .reader-shell .learner-document .thinking-equation-copy>strong{
-  font:500 24px/1.4 var(--serif);
+  font:750 20px/1.5 var(--sans);
+}
+
+.reader-shell .learner-document .thinking-equation-notice{
+  padding:18px 20px!important;
+  border:1px solid var(--learner-document-border);
+  border-radius:14px!important;
+  background:var(--learner-document-soft);
 }
 
 .reader-shell .learner-document .equation{
-  padding:0!important;
-  border-radius:0!important;
-  background:transparent;
+  padding:18px 20px!important;
+  border:1px solid var(--learner-document-border);
+  border-radius:14px!important;
+  background:var(--learner-document-soft);
   color:var(--learner-document-ink);
+  font:750 20px/1.5 var(--sans);
 }
 
 .reader-shell .learner-document :is(.deepening-insight,.home-alternative-path,.previous-combined-response){
@@ -403,28 +399,52 @@
 
 .reader-shell .learner-document :is(textarea,input,select){
   min-width:0;
-  border-radius:3px;
-  background:#fbfcfa;
+  border-radius:12px;
+  background:#fff;
   font-size:16px;
 }
 
 .reader-shell .learner-document :is(.choice-option,.choice-detail){
-  border-radius:3px;
+  border-radius:14px;
 }
 
 .reader-shell .learner-document .choice-option{
-  padding:12px 0;
-  border:0;
-  border-bottom:1px solid var(--learner-document-soft-border);
-  background:transparent;
+  min-height:56px;
+  padding:14px 16px;
+  border:1px solid #c9d2cc;
+  background:#fff;
+  gap:14px;
 }
 
 .reader-shell .learner-document .choice-option strong{
-  font-size:15px;
+  font-size:16px;
+  line-height:1.5;
 }
 
 .reader-shell .learner-document .choice-option-wrap.selected .choice-option{
-  background:var(--learner-document-soft);
+  border-color:var(--learner-document-accent);
+  background:#edf5f2;
+  color:#245c53;
+}
+
+.reader-shell .learner-document .choice-option[role="radio"]>span{
+  border-radius:50%;
+}
+
+.reader-shell .learner-document .choice-options{
+  gap:10px;
+}
+
+.reader-shell .learner-document-body :is(.question-prompt,.choice-prefix p,.multi-field-answerable h4){
+  margin:0 0 16px;
+  color:var(--learner-document-ink);
+  font:750 20px/1.45 var(--sans);
+}
+
+.reader-shell .learner-document .prompt-response-control textarea{
+  min-height:112px;
+  padding:16px;
+  line-height:1.65;
 }
 
 .reader-shell .learner-document .source-table-wrap{
@@ -434,7 +454,7 @@
 }
 
 .reader-shell .learner-document .workbook-table .editable-cell textarea{
-  border-radius:3px;
+  border-radius:10px;
   font-size:16px;
 }
 
@@ -464,7 +484,7 @@
 
 @media(max-width:1040px){
   .reader-shell .reader-topbar{
-    grid-template-columns:210px minmax(0,1fr) 164px;
+    grid-template-columns:210px minmax(0,1fr) 60px;
   }
 
   .reader-shell .learner-document-stage{
@@ -477,17 +497,11 @@
   .reader-shell{--learner-document-inline:24px}
 
   .reader-shell .reader-topbar{
-    grid-template-columns:minmax(0,1fr) 142px;
+    grid-template-columns:minmax(0,1fr) 60px;
   }
 
   .reader-shell .reader-progress{
     right:0;
-  }
-
-  .focused-reader .app-menu-trigger{
-    top:10px;
-    right:60px;
-    height:44px;
   }
 
   .reader-shell .learner-document-stage{

@@ -10,7 +10,8 @@ The page itself is the learning surface. This evolves the certified BIS renderer
 - Kept one readable page measure, continuous authored flow, section rules and the existing activity/reflection/evidence hierarchy.
 - Embedded writing controls in that flow, retaining visible input boundaries and accessible focus treatment.
 - Preserved relational tables and table-local overflow on narrow screens.
-- Moved the reader's application menu into the top chrome so it cannot float over writing areas. The term map has a distinct list icon; the menu retains its existing destinations, dialog and Escape behaviour.
+- Restored the BIS signature floating Menu at bottom centre after the user's correction. The term map has a distinct list icon; the menu retains its existing destinations, dialog and Escape behaviour. Bottom page space and scroll margins keep controls reachable.
+- Refined the canvas with readable bold questions, rounded writing fields, bounded choice panels with clear selection state, and quiet equation panels. Cards are appropriate where they clarify interaction; the page and task groups remain continuous.
 - Labelled lesson notes for assistive technology.
 
 The content compiler, Zimbabwe overlays, Forms 1–4 placement, HBC mappings, source indices, response keys, portfolio bindings and storage schema are unchanged. No database migration is required. Persistence acceptance covers the existing device-local workbook store; this release does not claim cloud account or cohort persistence.

@@ -39,9 +39,10 @@ for(const viewport of viewports){
       expect(metrics.documentWidth).toBeLessThanOrEqual(metrics.viewportWidth);
 
       // Assert the delivered CSS, including legacy important panel styles.
-      // A continuous workbook must not regress into a panel around every task.
+      // The page remains continuous; useful controls and equation panels may
+      // have boundaries without becoming a card around every task.
       const surfaces=await learnerDocument.evaluate(element=>{
-        return [element,...element.querySelectorAll(".response-surface,.answerable-block,.multi-field-answerable,.choice-answerable,.learning-notice,.thinking-equation-notice,.deepening-insight,.home-alternative-path,.previous-combined-response")].map(surface=>{
+        return [element,...element.querySelectorAll(".response-surface,.answerable-block,.multi-field-answerable,.choice-answerable,.learning-notice,.deepening-insight,.home-alternative-path,.previous-combined-response")].map(surface=>{
           const style=getComputedStyle(surface);
           return {radius:style.borderTopLeftRadius,shadow:style.boxShadow,background:style.backgroundColor};
         });
@@ -54,7 +55,13 @@ for(const viewport of viewports){
 
       const menu=page.getByRole("button",{name:"Open Applied Commerce menu",exact:true});
       const chrome=await menu.boundingBox();
-      expect(chrome?.y).toBeLessThan(68);
+      expect(chrome).not.toBeNull();
+      expect(chrome!.x+chrome!.width/2).toBeCloseTo(viewport.width/2,0);
+      expect(chrome!.y).toBeGreaterThan(viewport.height-100);
+      expect(chrome!.y+chrome!.height).toBeLessThanOrEqual(viewport.height);
+      await page.locator('.learner-document-footer').scrollIntoViewIfNeeded();
+      const afterScroll=await menu.boundingBox();
+      expect(afterScroll!.y).toBeCloseTo(chrome!.y,0);
       await menu.click();
       await expect(page.getByRole("dialog",{name:"Applied Commerce menu"})).toBeVisible();
       await page.keyboard.press("Escape");
@@ -70,6 +77,29 @@ test("Form 4 learner metadata does not leak the Grade 11 source bridge",async({p
 });
 
 for(const viewport of viewports){
+  test(`${viewport.label} presents distinct readable choices and keeps selections`,async({page})=>{
+    await page.setViewportSize({width:viewport.width,height:viewport.height});
+    await page.goto('/learn/8/term/3/g8-t3-l54-053',{waitUntil:'networkidle'});
+    const choice=page.locator('.choice-option').first();
+    await expect(choice).toBeVisible();
+    await choice.scrollIntoViewIfNeeded();
+    const label=await choice.innerText();
+    const styles=await choice.evaluate(element=>{
+      const style=getComputedStyle(element);
+      const text=getComputedStyle(element.querySelector('strong')!);
+      return {radius:parseFloat(style.borderRadius),border:parseFloat(style.borderTopWidth),font:parseFloat(text.fontSize)};
+    });
+    expect(styles.radius).toBeGreaterThanOrEqual(12);
+    expect(styles.border).toBeGreaterThanOrEqual(1);
+    expect(styles.font).toBeGreaterThanOrEqual(16);
+    await choice.click();
+    await expect(choice).toHaveAttribute('aria-checked','true');
+    await page.reload({waitUntil:'networkidle'});
+    await expect(choice).toHaveAttribute('aria-checked','true');
+    expect(await choice.innerText()).toContain(label.replace('✓','').trim());
+    expect(await page.evaluate(()=>document.documentElement.scrollWidth)).toBeLessThanOrEqual(viewport.width+1);
+  });
+
   test(`${viewport.label} keeps workbook responses through refresh and browser Back`,async({page})=>{
     await page.setViewportSize({width:viewport.width,height:viewport.height});
     const path="/learn/8/term/1/g8-t1-l02-002";

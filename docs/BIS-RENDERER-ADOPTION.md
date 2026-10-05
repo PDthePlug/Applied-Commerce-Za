@@ -36,12 +36,14 @@ Every lesson uses:
 4. quiet progress and lesson-position metadata;
 5. visible capability/evidence metadata without technical source-manuscript language;
 6. continuous authored learning flow;
-7. prompts embedded in the page, with clear writing boundaries on inputs only;
+7. clear prompts embedded in the page, with rounded writing fields and distinct choice panels;
 8. tables that preserve row/column relationships and scroll locally when necessary;
 9. lesson notes inside the document rather than as a competing dashboard card;
 10. one clear endpoint hierarchy with Next/Term completion as the primary action.
 
 Sections use typography, spacing, restrained rules and existing activity icons. Capability and lesson metadata use text rather than collections of badges. Expandable insights remain in the reading flow. The page stays wide enough for table relationships and centres a readable content measure; navigation stays outside this measure.
+
+The BIS signature Menu always floats at the bottom centre, including in the reader. Do not move it into top navigation. Reserve bottom page space and scroll margins so the final controls remain reachable. A continuous canvas does not prohibit cards: choices, equations and controls use bounded surfaces when they improve clarity and readability.
 
 ## Responsive acceptance
 
