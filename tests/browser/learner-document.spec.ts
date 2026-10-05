@@ -19,14 +19,14 @@ for(const viewport of viewports){
       await page.setViewportSize({width:viewport.width,height:viewport.height});
       await page.goto(route.path,{waitUntil:"networkidle"});
 
-      const document=page.locator(".learner-document");
-      await expect(document).toBeVisible();
-      await expect(document.locator(".learner-document-header")).toBeVisible();
-      await expect(document.locator(".learner-document-body")).toBeVisible();
-      await expect(document.locator(".learner-document-footer")).toBeVisible();
-      await expect(document.getByText(new RegExp(`Form ${route.form} · Term `))).toBeVisible();
+      const learnerDocument=page.locator(".learner-document");
+      await expect(learnerDocument).toBeVisible();
+      await expect(learnerDocument.locator(".learner-document-header")).toBeVisible();
+      await expect(learnerDocument.locator(".learner-document-body")).toBeVisible();
+      await expect(learnerDocument.locator(".learner-document-footer")).toBeVisible();
+      await expect(learnerDocument.getByText(new RegExp(`Form ${route.form} · Term `))).toBeVisible();
 
-      const primary=document.locator('[data-document-primary="true"]');
+      const primary=learnerDocument.locator('[data-document-primary="true"]');
       await expect(primary).toBeVisible();
 
       const metrics=await page.evaluate(()=>({
