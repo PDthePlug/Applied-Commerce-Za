@@ -1,18 +1,16 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { LessonReader } from "@/components/lesson-reader";
-import { zimbabweStage } from "@/lib/zimbabwe";
 import { zimbabwePlacementForSource } from "@/lib/zimbabwe-curriculum";
 
 export async function generateMetadata({params}:{params:Promise<{grade:string;term:string;unit:string}>}):Promise<Metadata>{
   const p=await params;
   const grade=Number(p.grade);
   const sourceTerm=Number(p.term);
-  const stage=zimbabweStage(grade);
   const lessonMatch=p.unit.match(/-l(\d+)-/);
   const startLesson=lessonMatch?Number(lessonMatch[1]):undefined;
   const placement=zimbabwePlacementForSource(grade,sourceTerm,startLesson,p.unit.includes("-assessment-")?"assessment":"lesson");
-  return {title:`${stage.schoolPlacement} · Term ${placement.term}`};
+  return {title:`Form ${placement.form} · Term ${placement.term}`};
 }
 
 export default async function UnitPage({params}:{params:Promise<{grade:string;term:string;unit:string}>}){
