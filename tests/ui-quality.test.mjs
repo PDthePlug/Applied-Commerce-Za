@@ -26,8 +26,8 @@ test("book-era platform language does not leak into product chrome",()=>{
   const files=[
     "components/home-dashboard.tsx",
     "components/learn-library.tsx",
-    "components/grade-map.tsx",
-    "components/grade-card.tsx",
+    "components/form-map.tsx",
+    "components/form-card.tsx",
     "components/portfolio-dashboard.tsx",
     "components/progress-dashboard.tsx",
     "components/lesson-reader.tsx",
