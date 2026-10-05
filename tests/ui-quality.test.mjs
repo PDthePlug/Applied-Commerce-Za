@@ -249,7 +249,9 @@ test("Zimbabwe learner chrome hides source-manuscript implementation details",()
   assert.doesNotMatch(formMap,/source lessons/i);
   assert.match(formMap,/>\{lessons\.length\} lessons</);
   assert.match(unitPage,/zimbabwePlacementForSource/);
+  assert.match(unitPage,/Form \$\{placement\.form\}/);
   assert.match(unitPage,/Term \$\{placement\.term\}/);
+  assert.doesNotMatch(unitPage,/zimbabweStage\(/);
 });
 
 
