@@ -8,6 +8,8 @@ The BIS implementation is the source of truth for document-stage layout, publica
 
 Applied Commerce-specific controls may continue to evolve underneath this contract, but they must not replace the BIS document architecture.
 
+The October 5 product direction evolves that surface into a **continuous workbook canvas**: the page itself is the learning surface. The BIS hierarchy and source-preservation contract remain; the outer rounded publication panel and nested activity/response panels are removed. Reading, questions, tables, evidence and notes share one uninterrupted page.
+
 ## Authored-content boundary
 
 The renderer must not rewrite, shorten, reorder, reinterpret or silently "improve" Zimbabwe curriculum content merely to improve presentation.
@@ -29,15 +31,17 @@ If content renders badly, repair the renderer or presentation treatment first.
 Every lesson uses:
 
 1. one centred document stage;
-2. one continuous publication surface;
+2. one continuous page surface with no outer border, radius or shadow;
 3. a document header with Form/Term/Lesson context;
 4. quiet progress and lesson-position metadata;
 5. visible capability/evidence metadata without technical source-manuscript language;
 6. continuous authored learning flow;
-7. evidence controls that are visually stronger than passive prose;
+7. prompts embedded in the page, with clear writing boundaries on inputs only;
 8. tables that preserve row/column relationships and scroll locally when necessary;
 9. lesson notes inside the document rather than as a competing dashboard card;
 10. one clear endpoint hierarchy with Next/Term completion as the primary action.
+
+Sections use typography, spacing, restrained rules and existing activity icons. Capability and lesson metadata use text rather than collections of badges. Expandable insights remain in the reading flow. The page stays wide enough for table relationships and centres a readable content measure; navigation stays outside this measure.
 
 ## Responsive acceptance
 

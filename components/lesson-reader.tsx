@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
-import { ArrowLeft, ArrowRight, Check, CheckCircle2, Menu, NotebookPen, X } from "lucide-react";
+import { ArrowLeft, ArrowRight, Check, CheckCircle2, List, NotebookPen, X } from "lucide-react";
 import { curriculum } from "@/lib/curriculum";
 import type { UnitContent } from "@/lib/types";
 import { applyZimbabweUnitOverlay } from "@/lib/zimbabwe-content";
@@ -71,7 +71,7 @@ export function LessonReader({grade,term,unitId}:{grade:number;term:number;unitI
     <div className="progress-track"><i style={{width:`${pct}%`}}/></div>
     <strong>{pos+1}/{sequence.length}</strong>
    </div>
-   <button className="reader-menu-button" onClick={()=>setMenu(true)} aria-label="Open term map"><Menu/></button>
+   <button className="reader-menu-button" onClick={()=>setMenu(true)} aria-label="Open term map"><List/></button>
   </header>
 
   <aside className={`reader-rail ${menu?"open":""}`}>
@@ -154,7 +154,7 @@ export function LessonReader({grade,term,unitId}:{grade:number;term:number;unitI
        <section className="workbook-panel learner-document-notes">
         <div className="workbook-title"><NotebookPen/><div><p className="eyebrow">Lesson notes</p><h2>Anything you want to remember</h2></div></div>
         <p>Your responses are captured beside each activity, reflection, table and workbook field. Use this separate space only for extra notes you want to keep about the lesson.</p>
-        <textarea value={response} onChange={event=>saveResponse(unitId,event.target.value)} placeholder="Add a note about this lesson…" rows={6}/>
+        <textarea aria-label="Lesson notes" value={response} onChange={event=>saveResponse(unitId,event.target.value)} placeholder="Add a note about this lesson…" rows={6}/>
         <div className="workbook-actions">
          <span>{response?"Note kept on this device":"No lesson note yet"}</span>
         </div>
