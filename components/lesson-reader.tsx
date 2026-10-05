@@ -54,6 +54,9 @@ export function LessonReader({grade,term,unitId}:{grade:number;term:number;unitI
  const response=state.responses[unitId]??"";
  const complete=completedIds.has(unitId);
  const pct=sequence.length?Math.round((Math.max(pos,0)+1)/sequence.length*100):0;
+ const evidenceLabel=hbc
+   ? hbc.evidenceMode==="assessment"?"Assessment":hbc.evidenceMode[0].toUpperCase()+hbc.evidenceMode.slice(1)
+   : null;
 
  if(!unit||!formData||!placement||!targetTerm) return <div className="reader-loading">Opening lesson…</div>;
 
@@ -92,16 +95,39 @@ export function LessonReader({grade,term,unitId}:{grade:number;term:number;unitI
 
   {menu&&<button className="reader-scrim" onClick={()=>setMenu(false)} aria-label="Close menu"/>}
 
-  <main className="reader-stage">
-    <article className="lesson-document">
-      <header className="lesson-heading">
-       <p className="eyebrow">Form {placement.form} · Term {placement.term} · {unit.label}</p>
-       <h1>{unit.title}</h1>
+  <main className="reader-stage learner-document-stage">
+    <article className="lesson-document learner-document" aria-label={`${unit.label}: ${unit.title}`}>
+      <header className="lesson-heading learner-document-header">
+       <div className="learner-document-heading-row">
+        <div className="learner-document-heading">
+         <p className="eyebrow learner-document-eyebrow">Form {placement.form} · Term {placement.term} · {unit.label}</p>
+         <h1 className="learner-document-title">{unit.title}</h1>
+         <p className="learner-document-purpose">{targetTerm.title}</p>
+        </div>
+        <span className="learner-document-status-pill" aria-label={`Lesson ${pos+1} of ${sequence.length}`}>{pos+1}/{sequence.length}</span>
+       </div>
+
+       {hbc&&<div className="learner-document-outcomes" aria-label="Capability focus">
+        <strong>Capability focus</strong>
+        {hbc.competencies.slice(0,6).map(id=><span key={id}>{hbcCompetencyLabels[id]}</span>)}
+       </div>}
+
+       <div className="learner-document-meta" aria-label="Lesson metadata">
+        {evidenceLabel&&<span>Evidence · {evidenceLabel}</span>}
+        {hbc?.communityApplication&&<span>Local application</span>}
+        {hbc?.heritageApplication&&<span>Community knowledge</span>}
+       </div>
+
+       <div className="learner-document-progress" aria-label={`${pct}% through this term`}>
+        <i style={{width:`${pct}%`}}/>
+       </div>
       </header>
-      {hbc&&<section className="hbc-evidence" aria-label="Heritage-Based Curriculum learning evidence">
+
+      <div className="learner-document-body">
+       {hbc&&<section className="hbc-evidence learner-document-context" aria-label="Heritage-Based Curriculum learning evidence">
         <div className="hbc-evidence-copy">
           <small>HBC learning evidence</small>
-          <strong>{hbc.evidenceMode==="assessment"?"Assessment":hbc.evidenceMode[0].toUpperCase()+hbc.evidenceMode.slice(1)}</strong>
+          <strong>{evidenceLabel}</strong>
           <p>
             {hbc.communityApplication
               ?"This lesson applies learning to household, community or local economic life."
@@ -111,40 +137,46 @@ export function LessonReader({grade,term,unitId}:{grade:number;term:number;unitI
               :""}
           </p>
         </div>
-        <div className="hbc-evidence-tags">
+        <div className="hbc-evidence-tags" aria-hidden="true">
           {hbc.competencies.slice(0,6).map(id=><span key={id}>{hbcCompetencyLabels[id]}</span>)}
         </div>
-      </section>}
-      <ContentBlocks
-        blocks={unit.blocks}
-        unitId={unitId}
-        promptResponses={state.promptResponses}
-        onSavePromptResponse={savePromptResponse}
-      />
-    </article>
+       </section>}
 
-    <section className="workbook-panel">
-      <div className="workbook-title"><NotebookPen/><div><p className="eyebrow">Lesson notes</p><h2>Anything you want to remember</h2></div></div>
-      <p>Your responses are captured beside each activity, reflection, table and workbook field. Use this separate space only for extra notes you want to keep about the lesson.</p>
-      <textarea value={response} onChange={event=>saveResponse(unitId,event.target.value)} placeholder="Add a note about this lesson…" rows={6}/>
-      <div className="workbook-actions">
-       <span>{response?"Note kept on this device":"No lesson note yet"}</span>
-       <button className={complete?"completed":""} onClick={()=>markComplete(unitId,!complete)}>
-        {complete?<><CheckCircle2/>Completed</>:<><Check/>Mark lesson complete</>}
-       </button>
+       <section className="learner-document-content">
+        <ContentBlocks
+          blocks={unit.blocks}
+          unitId={unitId}
+          promptResponses={state.promptResponses}
+          onSavePromptResponse={savePromptResponse}
+        />
+       </section>
+
+       <section className="workbook-panel learner-document-notes">
+        <div className="workbook-title"><NotebookPen/><div><p className="eyebrow">Lesson notes</p><h2>Anything you want to remember</h2></div></div>
+        <p>Your responses are captured beside each activity, reflection, table and workbook field. Use this separate space only for extra notes you want to keep about the lesson.</p>
+        <textarea value={response} onChange={event=>saveResponse(unitId,event.target.value)} placeholder="Add a note about this lesson…" rows={6}/>
+        <div className="workbook-actions">
+         <span>{response?"Note kept on this device":"No lesson note yet"}</span>
+        </div>
+       </section>
       </div>
-    </section>
 
-    <footer className="reader-footer">
-      {prev
-       ? <Link href={prev.href}><ArrowLeft/><span><small>Previous</small><strong>{prev.title}</strong></span></Link>
-       : <span/>}
-      {next
-       ? <Link className="next" href={next.href}><span><small>Next</small><strong>{next.title}</strong></span><ArrowRight/></Link>
-       : <Link className="next" href={`/learn/form/${placement.form}`}>
-          <span><small>Term complete</small><strong>Return to Form {placement.form}</strong></span><ArrowRight/>
-         </Link>}
-    </footer>
+      <footer className="learner-document-footer">
+       {prev
+        ? <Link className="document-nav previous" href={prev.href}><ArrowLeft/><span><small>Previous</small><strong>{prev.title}</strong></span></Link>
+        : <span/>}
+
+       <button className={`learner-completion-toggle ${complete?"completed":""}`} onClick={()=>markComplete(unitId,!complete)}>
+        {complete?<><CheckCircle2/>Completed</>:<><Check/>Mark complete</>}
+       </button>
+
+       {next
+        ? <Link className="document-nav next" data-document-primary="true" href={next.href}><span><small>Next</small><strong>{next.title}</strong></span><ArrowRight/></Link>
+        : <Link className="document-nav next" data-document-primary="true" href={`/learn/form/${placement.form}`}>
+           <span><small>Term complete</small><strong>Return to Form {placement.form}</strong></span><ArrowRight/>
+          </Link>}
+      </footer>
+    </article>
   </main>
  </div>;
 }
