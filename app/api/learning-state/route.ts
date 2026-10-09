@@ -13,6 +13,7 @@ type ProgressRow = {
 };
 type NoteRow = { unitId: string; grade: number; term: number; note: string };
 type PromptRow = { key: string; unitId: string; grade: number; term: number; value: string };
+type ArtifactRow = { unitId: string; grade: number; term: number; markerKey: string; title: string; evidence: Array<{ key: string; label: string; position: number }> };
 type Snapshot = {
   version: 1;
   activeGrade?: number;
@@ -46,8 +47,8 @@ function validTimestamp(value: unknown): value is string {
 function snapshotValid(value: unknown): value is Snapshot {
   if (!value || typeof value !== "object" || Array.isArray(value)) return false;
   const s = value as Partial<Snapshot>;
-  if (s.version !== 1 || !s.completed || !s.responses || !s.promptResponses || !Array.isArray(s.progressRows) || !Array.isArray(s.noteRows) || !Array.isArray(s.promptRows)) return false;
-  if (s.progressRows.length > MAX_ROWS || s.noteRows.length > MAX_ROWS || s.promptRows.length > MAX_ROWS) return false;
+  if (s.version !== 1 || !s.completed || !s.responses || !s.promptResponses || !Array.isArray(s.progressRows) || !Array.isArray(s.noteRows) || !Array.isArray(s.promptRows) || !Array.isArray(s.artifactRows)) return false;
+  if (s.progressRows.length > MAX_ROWS || s.noteRows.length > MAX_ROWS || s.promptRows.length > MAX_ROWS || s.artifactRows.length > MAX_ROWS) return false;
   if (Object.keys(s.completed).length > MAX_ROWS || Object.keys(s.responses).length > MAX_ROWS || Object.keys(s.promptResponses).length > MAX_ROWS) return false;
   if (![s.completed, s.responses, s.promptResponses].every(map => Object.entries(map ?? {}).every(([key, item]) => validText(key, 500) && validText(item, 20000)))) return false;
   if (s.activeForm !== undefined && ![1,2,3,4].includes(s.activeForm)) return false;
@@ -140,6 +141,40 @@ export async function POST(request: Request) {
     if (progress.length) { const result = await supabase.from("lesson_progress").upsert(progress,{onConflict:"learner_id,curriculum_version,unit_id"}); if (result.error) throw result.error; }
     if (notes.length) { const result = await supabase.from("lesson_notes").upsert(notes,{onConflict:"learner_id,curriculum_version,unit_id"}); if (result.error) throw result.error; }
     if (prompts.length) { const result = await supabase.from("prompt_responses").upsert(prompts,{onConflict:"learner_id,curriculum_version,unit_id,prompt_key"}); if (result.error) throw result.error; }
+    if (body.artifactRows.length) {
+      const artifacts = body.artifactRows.map(row => ({
+        learner_id: userId, curriculum_version: version, grade: row.grade, term: row.term,
+        unit_id: row.unitId, marker_key: row.markerKey, title: row.title,
+        artifact_type: "curriculum_evidence" as const, status: "captured" as const, updated_at: now,
+      }));
+      const savedArtifacts = await supabase.from("portfolio_artifacts").upsert(artifacts, {
+        onConflict: "learner_id,curriculum_version,unit_id,marker_key",
+      }).select("id,unit_id,marker_key");
+      if (savedArtifacts.error) throw savedArtifacts.error;
+      const responseIds = await supabase.from("prompt_responses").select("id,unit_id,prompt_key")
+        .eq("learner_id", userId).eq("curriculum_version", version);
+      if (responseIds.error) throw responseIds.error;
+      const responseIdByKey = new Map((responseIds.data ?? []).map(row => [row.prompt_key, row.id]));
+      const artifactIdByKey = new Map((savedArtifacts.data ?? []).map(row => [`${row.unit_id}::${row.marker_key}`, row.id]));
+      const links: Array<{ artifact_id: string; prompt_response_id: string; label: string; position: number }> = [];
+      const artifactIds = [...artifactIdByKey.values()];
+      for (const row of body.artifactRows) {
+        const artifactId = artifactIdByKey.get(`${row.unitId}::${row.markerKey}`);
+        if (!artifactId) continue;
+        for (const evidence of row.evidence) {
+          const responseId = responseIdByKey.get(evidence.key);
+          if (responseId) links.push({ artifact_id: artifactId, prompt_response_id: responseId, label: evidence.label, position: evidence.position });
+        }
+      }
+      if (artifactIds.length) {
+        const removedLinks = await supabase.from("portfolio_evidence").delete().in("artifact_id", artifactIds);
+        if (removedLinks.error) throw removedLinks.error;
+      }
+      if (links.length) {
+        const savedLinks = await supabase.from("portfolio_evidence").insert(links);
+        if (savedLinks.error) throw savedLinks.error;
+      }
+    }
     const profile = body.profile ?? {};
     const grade = profile.grade ?? body.activeGrade ?? null;
     const form = profile.form ?? body.activeForm ?? null;
