@@ -141,6 +141,16 @@ export async function POST(request: Request) {
     if (progress.length) { const result = await supabase.from("lesson_progress").upsert(progress,{onConflict:"learner_id,curriculum_version,unit_id"}); if (result.error) throw result.error; }
     if (notes.length) { const result = await supabase.from("lesson_notes").upsert(notes,{onConflict:"learner_id,curriculum_version,unit_id"}); if (result.error) throw result.error; }
     if (prompts.length) { const result = await supabase.from("prompt_responses").upsert(prompts,{onConflict:"learner_id,curriculum_version,unit_id,prompt_key"}); if (result.error) throw result.error; }
+    if (body.promptRows.length) {
+      const evidence = body.promptRows.map(row => ({
+        learner_id: userId, response_key: row.key, response_value: row.value,
+        status: "captured" as const, updated_at: now,
+      }));
+      const savedEvidence = await supabase.from("evidence_records").upsert(evidence, {
+        onConflict: "learner_id,response_key",
+      });
+      if (savedEvidence.error) throw savedEvidence.error;
+    }
     if (body.artifactRows.length) {
       const artifacts = body.artifactRows.map(row => ({
         learner_id: userId, curriculum_version: version, grade: row.grade, term: row.term,
