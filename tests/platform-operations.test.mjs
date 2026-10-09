@@ -9,6 +9,7 @@ const institutionUi=fs.readFileSync("components/institution-admin-dashboard.tsx"
 const platformApi=fs.readFileSync("app/api/platform-admin/institutions/route.ts","utf8");
 const platformUi=fs.readFileSync("components/platform-admin-dashboard.tsx","utf8");
 const migration=fs.readFileSync("supabase/migrations/20261009235541_ac_zw_institution_operations.sql","utf8");
+const reviewMigration=fs.readFileSync("supabase/migrations/20261009235803_ac_zw_review_integrity.sql","utf8");
 const persistence=fs.readFileSync("app/api/learning-state/route.ts","utf8");
 const bridge=fs.readFileSync("components/learning-persistence-bridge.tsx","utf8");
 
@@ -41,6 +42,7 @@ test("platform institution provisioning requires trusted registry and assigns ow
  assert.match(migration,/if v_actor is null or not private\.is_platform_admin\(\)/);
  assert.match(migration,/insert into public\.school_memberships\(school_id,user_id,role,status\)[\s\S]*?'owner','active'/);
  assert.match(migration,/cohorts_zimbabwe_form_check/);
+ assert.match(reviewMigration,/unique index if not exists evidence_reviews_record_reviewer_uidx/);
 });
 
 test("portfolio artefacts and evidence records are persisted with learner-owned response keys",()=>{
