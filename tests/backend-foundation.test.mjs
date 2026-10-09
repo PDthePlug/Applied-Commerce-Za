@@ -2,8 +2,8 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 
-const foundation = fs.readFileSync("supabase/migrations/20261010090000_ac_zw_platform_foundation.sql", "utf8");
-const hardening = fs.readFileSync("supabase/migrations/20261010093000_ac_zw_rls_hardening.sql", "utf8");
+const foundation = fs.readFileSync("supabase/migrations/20261009232116_ac_zw_platform_foundation.sql", "utf8");
+const hardening = fs.readFileSync("supabase/migrations/20261009232153_ac_zw_rls_hardening.sql", "utf8");
 const delivery = fs.readFileSync("lib/zimbabwe-delivery.ts", "utf8");
 const architecture = fs.readFileSync("tests/zimbabwe-architecture.test.mjs", "utf8");
 const env = fs.readFileSync(".env.example", "utf8");
