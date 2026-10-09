@@ -9,7 +9,7 @@ const proxy=fs.readFileSync("lib/supabase/proxy.ts","utf8");
 const preferences=fs.readFileSync("app/api/preferences/route.ts","utf8");
 const settings=fs.readFileSync("components/settings-dashboard.tsx","utf8");
 const authPanel=fs.readFileSync("components/auth-panel.tsx","utf8");
-const migration=fs.readFileSync("supabase/migrations/20261010090000_ac_zw_platform_foundation.sql","utf8");
+const migration=fs.readFileSync("supabase/migrations/20261009232116_ac_zw_platform_foundation.sql","utf8");
 
 test("auth integration uses only the dedicated publishable key and typed Supabase clients",()=>{
  assert.match(browserClient,/NEXT_PUBLIC_SUPABASE_URL/);
