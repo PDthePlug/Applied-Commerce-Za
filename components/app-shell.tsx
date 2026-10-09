@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
-import { Archive, BarChart3, BookOpen, Home, Menu, UserRound, X } from "lucide-react";
+import { Archive, BarChart3, BookOpen, Home, Menu, Settings, UserRound, X } from "lucide-react";
 import { Brand } from "./brand";
 import { zimbabweEdition } from "@/lib/zimbabwe";
 
@@ -12,6 +12,7 @@ const nav=[
   {href:"/portfolio",label:"Portfolio",detail:"Evidence captured from your work",icon:Archive},
   {href:"/progress",label:"Progress",detail:"See what you have completed",icon:BarChart3},
   {href:"/profile",label:"Profile",detail:"Your learner record and current Form",icon:UserRound},
+  {href:"/settings",label:"Settings",detail:"Appearance, reading and account",icon:Settings},
 ];
 
 export function AppShell({children}:{children:React.ReactNode}) {
@@ -58,18 +59,18 @@ export function AppShell({children}:{children:React.ReactNode}) {
   },[menuOpen]);
 
   return <div className={"app-shell "+(focusedReader?"focused-reader ":"")+(institutional?"institutional-shell":"")}>
-    {!focusedReader && <header className="topbar">
+    {!focusedReader && !authPage && <header className="topbar">
       <Brand
         href={institutional?"/institutions":"/"}
         subtitle={institutional?"Zimbabwe · Institutions":"Zimbabwe Edition"}
       />
       {institutional
         ? <div className="topbar-note institutional-topbar-note"><Link href="/">Learner platform</Link><span>For institutions</span></div>
-        : <div className="topbar-note"><span>{zimbabweEdition.editionLabel} · {zimbabweEdition.schoolSpan}</span><Link className="topbar-institution-link" href="/institutions">For institutions</Link></div>}
+        : <div className="topbar-note"><span>{zimbabweEdition.editionLabel} · {zimbabweEdition.schoolSpan}</span><Link className="topbar-account-link" href="/auth">Account</Link><Link className="topbar-institution-link" href="/institutions">For institutions</Link></div>}
     </header>}
     <main>{children}</main>
 
-    {!institutional && menuOpen && <>
+    {!institutional && !authPage && menuOpen && <>
       <button className="app-menu-scrim" type="button" onClick={()=>setMenuOpen(false)} aria-label="Close Applied Commerce menu"/>
       <section className="app-menu-sheet" role="dialog" aria-modal="true" aria-label="Applied Commerce menu">
        <header>
@@ -88,7 +89,7 @@ export function AppShell({children}:{children:React.ReactNode}) {
       </section>
     </>}
 
-    {!institutional && <button ref={triggerRef} className="app-menu-trigger" type="button" onClick={()=>setMenuOpen(true)} aria-label="Open Applied Commerce menu" aria-haspopup="dialog" aria-expanded={menuOpen}>
+    {!institutional && !authPage && <button ref={triggerRef} className="app-menu-trigger" type="button" onClick={()=>setMenuOpen(true)} aria-label="Open Applied Commerce menu" aria-haspopup="dialog" aria-expanded={menuOpen}>
       <Menu/><span>Menu</span>
     </button>}
   </div>;
