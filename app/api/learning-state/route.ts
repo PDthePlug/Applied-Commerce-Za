@@ -77,6 +77,7 @@ export async function GET() {
     const { data: auth, error: authError } = await supabase.auth.getUser();
     if (authError || !auth.user) return fail("Sign in to sync learning progress.", 401);
     const userId = auth.user.id;
+    if (!(await learnerAccountAllowed(supabase, userId))) return fail("Learning-state sync is reserved for learner accounts; staff and platform-admin roles remain separate.", 403);
     const [profileResult, learnerResult, progressResult, notesResult, promptsResult] = await Promise.all([
       supabase.from("profiles").select("display_name").eq("id", userId).maybeSingle(),
       supabase.from("learner_profiles").select("current_grade,current_form,preferred_name").eq("user_id", userId).maybeSingle(),
@@ -130,6 +131,7 @@ export async function POST(request: Request) {
     try { body = await request.json(); } catch { return fail("Learning snapshot is not valid JSON.", 400); }
     if (!snapshotValid(body)) return fail("Learning snapshot failed validation.", 400);
     const userId = auth.user.id;
+    if (!(await learnerAccountAllowed(supabase, userId))) return fail("Learning-state sync is reserved for learner accounts; staff and platform-admin roles remain separate.", 403);
     const version = "ac-zw-source-v1";
     const now = new Date().toISOString();
     const progress = body.progressRows.map(row => ({
