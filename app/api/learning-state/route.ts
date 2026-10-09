@@ -69,9 +69,9 @@ export async function GET() {
     const [profileResult, learnerResult, progressResult, notesResult, promptsResult] = await Promise.all([
       supabase.from("profiles").select("display_name").eq("id", userId).maybeSingle(),
       supabase.from("learner_profiles").select("current_grade,current_form,preferred_name").eq("user_id", userId).maybeSingle(),
-      supabase.from("lesson_progress").select("grade,term,unit_id,status,completed_at,last_opened_at").eq("learner_id", userId),
-      supabase.from("lesson_notes").select("unit_id,note").eq("learner_id", userId),
-      supabase.from("prompt_responses").select("unit_id,prompt_key,response").eq("learner_id", userId),
+      supabase.from("lesson_progress").select("grade,term,unit_id,status,completed_at,last_opened_at").eq("learner_id", userId).eq("curriculum_version", "ac-zw-source-v1"),
+      supabase.from("lesson_notes").select("unit_id,note").eq("learner_id", userId).eq("curriculum_version", "ac-zw-source-v1"),
+      supabase.from("prompt_responses").select("unit_id,prompt_key,response").eq("learner_id", userId).eq("curriculum_version", "ac-zw-source-v1"),
     ]);
     const errors = [profileResult.error, learnerResult.error, progressResult.error, notesResult.error, promptsResult.error].filter(Boolean);
     if (errors.length) throw errors[0];
@@ -129,11 +129,11 @@ export async function POST(request: Request) {
       last_opened_at: row.lastOpenedAt ?? null,
       updated_at: now,
     }));
-    const notes = body.noteRows.filter(row => row.note.trim()).map(row => ({
+    const notes = body.noteRows.map(row => ({
       learner_id: userId, curriculum_version: version, grade: row.grade, term: row.term, unit_id: row.unitId,
       note: row.note, updated_at: now,
     }));
-    const prompts = body.promptRows.filter(row => row.value.trim()).map(row => ({
+    const prompts = body.promptRows.map(row => ({
       learner_id: userId, curriculum_version: version, grade: row.grade, term: row.term, unit_id: row.unitId,
       prompt_key: row.key, response_kind: "text", response: { text: row.value }, answered_at: now, updated_at: now,
     }));
