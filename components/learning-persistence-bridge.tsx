@@ -73,7 +73,18 @@ async function buildSnapshot(state: LearningState): Promise<SyncSnapshot> {
     const position = metadata.get(unitId);
     if (position) promptRows.push({ key, unitId, ...position, value });
   }
-  const artifactRows: ArtifactRow[] = [];\n  const unitIds = [...new Set(Object.keys(state.promptResponses).map(key => key.split("::")[0]))];\n  for (const unitId of unitIds) {\n    const position = metadata.get(unitId);\n    if (!position) continue;\n    const unit = await cachedUnit(position.grade, position.term, unitId);\n    for (const definition of buildPortfolioDefinitions(unit)) {\n      const evidence = responsesForPortfolio(unit, definition, state.promptResponses).map((item, index) => ({ key: item.key, label: item.label, position: index }));\n      artifactRows.push({ unitId, ...position, markerKey: definition.id, title: definition.title, evidence });\n    }\n  }\n  return { ...state, progressRows, noteRows, promptRows, artifactRows };
+  const artifactRows: ArtifactRow[] = [];
+  const unitIds = [...new Set(Object.keys(state.promptResponses).map(key => key.split("::")[0]))];
+  for (const unitId of unitIds) {
+    const position = metadata.get(unitId);
+    if (!position) continue;
+    const unit = await cachedUnit(position.grade, position.term, unitId);
+    for (const definition of buildPortfolioDefinitions(unit)) {
+      const evidence = responsesForPortfolio(unit, definition, state.promptResponses).map((item, index) => ({ key: item.key, label: item.label, position: index }));
+      artifactRows.push({ unitId, ...position, markerKey: definition.id, title: definition.title, evidence });
+    }
+  }
+  return { ...state, progressRows, noteRows, promptRows, artifactRows };
 }
 
 async function requestSnapshot(method: "GET" | "POST", userId: string, snapshot?: SyncSnapshot) {
