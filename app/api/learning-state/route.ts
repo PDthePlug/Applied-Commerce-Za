@@ -28,6 +28,16 @@ type Snapshot = {
   promptRows: PromptRow[];
 };
 
+async function learnerAccountAllowed(supabase: Awaited<ReturnType<typeof createClient>>, userId: string) {
+  const [membership, staff, platform] = await Promise.all([
+    supabase.from("school_memberships").select("id").eq("user_id", userId).eq("status", "active").limit(1),
+    supabase.from("cohort_staff").select("id").eq("user_id", userId).eq("status", "active").limit(1),
+    supabase.rpc("is_platform_admin"),
+  ]);
+  if (membership.error || staff.error || platform.error) throw membership.error ?? staff.error ?? platform.error;
+  return !(membership.data?.length || staff.data?.length || platform.data === true);
+}
+
 function fail(message: string, status: number) {
   return Response.json({ error: message }, { status, headers: PRIVATE_HEADERS });
 }
