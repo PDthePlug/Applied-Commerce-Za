@@ -8,6 +8,8 @@ const EVENT = "applied-commerce-learning-state-change";
 const emptyState: LearningState = { version: 1, completed: {}, responses: {}, promptResponses: {} };
 const emptyRaw = JSON.stringify(emptyState);
 
+export function readLocalLearningState(): LearningState { return parse(readRaw()); }
+
 function readRaw(): string {
   if (typeof window === "undefined") return emptyRaw;
   return localStorage.getItem(KEY) ?? emptyRaw;
@@ -32,7 +34,7 @@ function parse(raw: string): LearningState {
   }
 }
 
-function write(state: LearningState) {
+export function replaceLearningState(state: LearningState) {
   localStorage.setItem(KEY, JSON.stringify(state));
   window.dispatchEvent(new Event(EVENT));
 }
@@ -57,7 +59,7 @@ export function useLearningStore() {
   const state = useMemo(() => parse(raw), [raw]);
 
   const update = useCallback((fn: (current: LearningState) => LearningState) => {
-    write(fn(parse(readRaw())));
+    replaceLearningState(fn(parse(readRaw())));
   }, []);
 
   const markComplete = useCallback((unitId: string, complete=true) => update(current => {
