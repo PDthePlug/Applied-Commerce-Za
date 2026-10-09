@@ -514,6 +514,7 @@ export type Database = {
       learner_profiles: {
         Row: {
           created_at: string
+          current_form: number | null
           current_grade: number | null
           preferred_name: string | null
           updated_at: string
@@ -521,6 +522,7 @@ export type Database = {
         }
         Insert: {
           created_at?: string
+          current_form?: number | null
           current_grade?: number | null
           preferred_name?: string | null
           updated_at?: string
@@ -528,6 +530,7 @@ export type Database = {
         }
         Update: {
           created_at?: string
+          current_form?: number | null
           current_grade?: number | null
           preferred_name?: string | null
           updated_at?: string
