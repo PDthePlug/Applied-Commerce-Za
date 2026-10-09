@@ -6,7 +6,7 @@ const api=fs.readFileSync("app/api/learning-state/route.ts","utf8");
 const bridge=fs.readFileSync("components/learning-persistence-bridge.tsx","utf8");
 const store=fs.readFileSync("lib/learning-store.ts","utf8");
 const layout=fs.readFileSync("app/layout.tsx","utf8");
-const migration=fs.readFileSync("supabase/migrations/20261010110000_ac_zw_learning_state.sql","utf8");
+const migration=fs.readFileSync("supabase/migrations/20261009234929_ac_zw_learning_state.sql","utf8");
 const types=fs.readFileSync("lib/database.types.ts","utf8");
 
 test("learning sync requires a verified session and binds every write to auth.uid()",()=>{
