@@ -3,6 +3,8 @@
 import { useEffect, useRef, useState } from "react";
 import { useAuth, isSupabaseConfigured } from "@/lib/auth-context";
 import { curriculum } from "@/lib/curriculum";
+import { buildPortfolioDefinitions, responsesForPortfolio } from "@/lib/portfolio-model";
+import type { UnitContent } from "@/lib/types";
 import { readLocalLearningState, replaceLearningState, useLearningStore } from "@/lib/learning-store";
 import type { LearningState } from "@/lib/types";
 
@@ -10,9 +12,17 @@ type Position = { grade: number; term: number };
 type ProgressRow = { unitId: string; grade: number; term: number; completedAt?: string; lastOpenedAt?: string };
 type NoteRow = { unitId: string; grade: number; term: number; note: string };
 type PromptRow = { key: string; unitId: string; grade: number; term: number; value: string };
-type SyncSnapshot = LearningState & { progressRows: ProgressRow[]; noteRows: NoteRow[]; promptRows: PromptRow[] };
+type ArtifactRow = { unitId: string; grade: number; term: number; markerKey: string; title: string; evidence: Array<{ key: string; label: string; position: number }> };
+type SyncSnapshot = LearningState & { progressRows: ProgressRow[]; noteRows: NoteRow[]; promptRows: PromptRow[]; artifactRows: ArtifactRow[] };
 
 let metadataPromise: Promise<Map<string, Position>> | null = null;
+const unitCache = new Map<string, Promise<UnitContent>>();
+function cachedUnit(grade: number, term: number, unitId: string) {
+  const key = `${grade}/${term}/${unitId}`;
+  let promise = unitCache.get(key);
+  if (!promise) { promise = curriculum.unit(grade, term, unitId); unitCache.set(key, promise); }
+  return promise;
+}
 function unitMetadata() {
   return metadataPromise ??= (async () => {
     const index = await curriculum.index();
@@ -63,7 +73,7 @@ async function buildSnapshot(state: LearningState): Promise<SyncSnapshot> {
     const position = metadata.get(unitId);
     if (position) promptRows.push({ key, unitId, ...position, value });
   }
-  return { ...state, progressRows, noteRows, promptRows };
+  const artifactRows: ArtifactRow[] = [];\n  const unitIds = [...new Set(Object.keys(state.promptResponses).map(key => key.split("::")[0]))];\n  for (const unitId of unitIds) {\n    const position = metadata.get(unitId);\n    if (!position) continue;\n    const unit = await cachedUnit(position.grade, position.term, unitId);\n    for (const definition of buildPortfolioDefinitions(unit)) {\n      const evidence = responsesForPortfolio(unit, definition, state.promptResponses).map((item, index) => ({ key: item.key, label: item.label, position: index }));\n      artifactRows.push({ unitId, ...position, markerKey: definition.id, title: definition.title, evidence });\n    }\n  }\n  return { ...state, progressRows, noteRows, promptRows, artifactRows };
 }
 
 async function requestSnapshot(method: "GET" | "POST", userId: string, snapshot?: SyncSnapshot) {
