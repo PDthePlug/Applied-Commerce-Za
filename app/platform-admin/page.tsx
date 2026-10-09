@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import "../settings/settings.css";
 import { requireWorkspaceAccess } from "@/lib/server/workspace-access";
 import { createClient } from "@/lib/supabase/server";
 export const metadata: Metadata = { title: "Platform administration" };
