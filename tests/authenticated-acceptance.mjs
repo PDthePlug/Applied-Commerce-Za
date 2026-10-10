@@ -28,6 +28,8 @@ async function signIn(name, email, password) {
   const { data, error } = await client.auth.signInWithPassword({ email, password });
   assert.ifError(error);
   assert.ok(data.user, `${name} did not authenticate`);
+  const expectedId = ids[name];
+  if (expectedId) assert.equal(data.user.id, expectedId, `${name} authenticated as an unexpected user`);
   clients.set(name, client);
   return client;
 }
@@ -42,9 +44,9 @@ function denied(result, message) {
 
 const adminA = await signIn("platformAdminA", "pdmpofu@gmail.com", process.env.AC_ZW_PLATFORM_ADMIN_PASSWORD);
 const adminB = await signIn("platformAdminB", "pdmpofu1@gmail.com", process.env.AC_ZW_PLATFORM_ADMIN_2_PASSWORD);
-const learner = await signIn("learner", "ac-test-learner@ac.com", process.env.AC_ZW_TEST_LEARNER_PASSWORD);
-const institutionAdmin = await signIn("institutionAdmin", "ac-test-institution-admin@ac.com", process.env.AC_ZW_TEST_INSTITUTION_ADMIN_PASSWORD);
-const facilitator = await signIn("facilitator", "ac-test-facilitator@ac.com", process.env.AC_ZW_TEST_FACILITATOR_PASSWORD);
+const learner = await signIn("learner", process.env.AC_ZW_TEST_LEARNER_EMAIL, process.env.AC_ZW_TEST_LEARNER_PASSWORD);
+const institutionAdmin = await signIn("institutionAdmin", process.env.AC_ZW_TEST_INSTITUTION_ADMIN_EMAIL, process.env.AC_ZW_TEST_INSTITUTION_ADMIN_PASSWORD);
+const facilitator = await signIn("facilitator", process.env.AC_ZW_TEST_FACILITATOR_EMAIL, process.env.AC_ZW_TEST_FACILITATOR_PASSWORD);
 
 for (const [name, client] of [["platform admin A", adminA], ["platform admin B", adminB]]) {
   const result = ok(await client.rpc("is_platform_admin"), `${name} registry check failed`);
@@ -59,7 +61,7 @@ for (const [name, client] of [["learner", learner], ["institution admin", instit
 
 const visible = async (client, table, id) => {
   const result = await client.from(table).select("id").eq("id", id);
-  return ok(result, `select ${table} failed").length;
+  return ok(result, `select ${table} failed`).length;
 };
 assert.equal(await visible(institutionAdmin, "schools", ids.schoolA), 1, "institution admin should see own school");
 assert.equal(await visible(institutionAdmin, "schools", ids.schoolB), 0, "institution admin must not see another school");
