@@ -157,7 +157,37 @@ test("platform administrator can open institution provisioning and see the insti
   await expect(page.getByRole("heading", { level: 2, name: "Institutions", exact: true })).toBeVisible();
   const response = await page.request.get("/api/platform-admin/institutions");
   expect(response.status()).toBe(200);
-  expect((await response.json()).schools).toBeInstanceOf(Array);
+  const initial = await response.json() as {
+    schools: Array<{ id: string; name: string; slug: string }>;
+    memberships: Array<{ school_id: string; role: string; status: string }>;
+  };
+  expect(initial.schools).toBeInstanceOf(Array);
+
+  // One intentionally persistent, uniquely named staging fixture prevents CI from
+  // creating a new institution on every run. The first run exercises the real
+  // provisioning write; later runs verify its atomic owner assignment remains intact.
+  const fixtureSlug = "ac-zw-ci-provisioning-fixture";
+  let fixture = initial.schools.find(school => school.slug === fixtureSlug);
+  if (!fixture) {
+    const create = await page.request.post("/api/platform-admin/institutions", {
+      data: {
+        name: "AC Zimbabwe CI Provisioning Fixture",
+        slug: fixtureSlug,
+        ownerEmail: credentials["institution-admin"].email,
+      },
+    });
+    expect(create.status()).toBe(200);
+    const refreshed = await page.request.get("/api/platform-admin/institutions");
+    expect(refreshed.status()).toBe(200);
+    const data = await refreshed.json();
+    fixture = data.schools.find((school: { slug: string }) => school.slug === fixtureSlug);
+    expect(fixture, "Provisioning must create the staging fixture").toBeTruthy();
+    expect(data.memberships.some((row: { school_id: string; role: string; status: string }) =>
+      row.school_id === fixture!.id && row.role === "owner" && row.status === "active")).toBe(true);
+  } else {
+    expect(initial.memberships.some(row =>
+      row.school_id === fixture!.id && row.role === "owner" && row.status === "active")).toBe(true);
+  }
 });
 
 test("second platform administrator can independently open the institution registry", async ({ page }) => {
