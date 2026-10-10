@@ -61,6 +61,16 @@ Rewrite the example as a whole rather than globally substituting a country name,
 - Review names, character ages, locations, household economics, and recurring story callbacks together.
 - Verify that each adapted activity remains feasible for a Zimbabwe learner and produces the evidence expected by the target Form/Term.
 
+## Primary Zimbabwe reference points for factual review
+
+Use these as starting points, record the access/review date in the unit review sheet, and re-check the current version before publishing a claim.
+
+- **PAYE and tax tables:** [ZIMRA — PAYE explained](https://zimra.co.zw/domestic-taxes/individual/paye-explained) and [ZIMRA — tax tables](https://www.zimra.co.zw/domestic-taxes/tax-tables). ZIMRA explains the escalating PAYE scale, points users to current USD/ZiG tables, and notes how mixed-currency salaries are handled. Avoid hard-coded rates or thresholds without a dated source. 
+- **Credit records:** [Reserve Bank of Zimbabwe — Central Credit Registry overview](https://www.rbz.co.zw/index.php/financial-stability/credit-registry/overview). Use the registry's current guidance rather than South African credit-score services.
+- **Capital markets and investments:** [SECZ — capital markets in Zimbabwe](https://seczim.co.zw/capital-markets-in-zimbabwe), [SECZ — FAQs on regulated instruments](https://seczim.co.zw/faqs/), and [SECZ — currently licensed entities](https://seczim.co.zw/regulated-entities/). Teach categories and risk principles, and direct learners to current licensed providers; do not imply every source-edition product is locally available.
+- **Insurance and pensions:** [Insurance and Pensions Commission — consumer education](https://ipec.co.zw/consumer-education/) and [IPEC — understanding insurance and pensions](https://ipec.co.zw/local-news/understanding-insurance-and-pensions/). Use these for regulator terminology and consumer-protection context; verify specific policy and pension rules against current product terms.
+- **Wills and estates:** [Zimbabwe Wills Act (ZimLII)](https://zimlii.org/akn/zw/act/1987/13/eng%402016-12-31), [Administration of Estates Act (ZimLII)](https://zimlii.org/akn/zw/act/ord/1907/6/eng%402025-02-24), and [Administration of Estates Amendment Act, 2024](https://zimlii.org/akn/zw/act/2024/3/eng%402024-11-22). The consolidated Acts page identifies its own update cut-off; check subsequent amendments and qualified legal guidance before treating any classroom summary as current law.
+
 ## Publication evidence required per reviewed unit
 
 Each reviewed unit must have a disposition recorded in a durable review sheet:
