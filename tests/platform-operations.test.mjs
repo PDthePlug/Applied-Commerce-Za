@@ -12,6 +12,7 @@ const migration=fs.readFileSync("supabase/migrations/20261009235541_ac_zw_instit
 const reviewMigration=fs.readFileSync("supabase/migrations/20261009235803_ac_zw_review_integrity.sql","utf8");
 const aclMigration=fs.readFileSync("supabase/migrations/20261009235935_ac_zw_owner_rpc_acl.sql","utf8");
 const authTrigger=fs.readFileSync("supabase/migrations/20261010000133_ac_zw_auth_profile_trigger.sql","utf8");
+const ownerInvoker=fs.readFileSync("supabase/migrations/20261010000354_ac_zw_owner_rpc_invoker.sql","utf8");
 const persistence=fs.readFileSync("app/api/learning-state/route.ts","utf8");
 const bridge=fs.readFileSync("components/learning-persistence-bridge.tsx","utf8");
 
@@ -47,6 +48,8 @@ test("platform institution provisioning requires trusted registry and assigns ow
  assert.match(reviewMigration,/unique index if not exists evidence_reviews_record_reviewer_uidx/);
  assert.match(aclMigration,/revoke execute on function public\.create_school_with_owner\(text,text,text\) from public, anon/i);
  assert.match(authTrigger,/after insert on auth\.users[\s\S]*?execute function private\.handle_new_auth_user\(\)/i);
+ assert.match(ownerInvoker,/create or replace function public\.create_school_with_owner[\s\S]*?security invoker/i);
+ assert.match(ownerInvoker,/create or replace function private\.create_school_with_owner_impl[\s\S]*?security definer/i);
 });
 
 test("portfolio artefacts and evidence records are persisted with learner-owned response keys",()=>{
