@@ -18,6 +18,19 @@ The source-level review scripts report these review flags at the baseline:
 
 A source flag is a review lead, not an automatic defect count. For example, a historical reference to a learner's earlier Grade may be valid narrative continuity, while an instruction to research a South African credit score is not suitable for the Zimbabwe edition without rewriting.
 
+### Source-flag reconciliation completed
+
+The flagged IDs from these three CI outputs were cross-checked against `zimbabweContentOverrides` at the current feature head:
+
+| Source block | Flagged IDs | Explicit unit-level override | Missing override |
+|---|---:|---:|---:|
+| Form 2 / source Grade 9 | 64 | 64 | 0 |
+| Form 3 / source Grade 10 + Grade 11 Terms 1–2 | 100 | 100 | 0 |
+| Form 4 / source Grade 11 Terms 3–4 + Grade 12 | 93 | 93 | 0 |
+| **Total** | **257** | **257** | **0** |
+
+The all-forms runtime audit was also expanded to check spelled-out South African institutions and named South African legal instruments; the audit passed on the updated branch. This establishes explicit overlay coverage and no matches for the defined runtime markers. It does **not** by itself prove every remaining financial/legal claim is current or legally correct in Zimbabwe, nor does an override's presence alone constitute editorial approval.
+
 ## Required editorial decisions
 
 ### P0 — factual, legal and regulated-finance review
