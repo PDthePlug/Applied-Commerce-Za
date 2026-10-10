@@ -70,7 +70,7 @@ test("platform administrator can open institution provisioning and see the insti
   await signIn(page, "platform-admin", "/platform-admin");
   await expect(page.getByRole("heading", { level: 1, name: "Platform administration" })).toBeVisible();
   await expect(page.getByRole("heading", { name: "Create institution and assign owner" })).toBeVisible();
-  await expect(page.getByRole("heading", { name: "Institutions", exact: true })).toBeVisible();
+  await expect(page.getByRole("heading", { level: 2, name: "Institutions", exact: true })).toBeVisible();
   const response = await page.request.get("/api/platform-admin/institutions");
   expect(response.status()).toBe(200);
   expect((await response.json()).schools).toBeInstanceOf(Array);
