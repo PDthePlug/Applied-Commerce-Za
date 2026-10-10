@@ -4,11 +4,13 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { ArrowRight, Archive, BookOpenCheck, Database, NotebookPen } from "lucide-react";
 import { useLearningStore } from "@/lib/learning-store";
+import { useAuth } from "@/lib/auth-context";
 import { defaultZimbabweFormForSourceGrade, zimbabweCurriculum } from "@/lib/zimbabwe-curriculum";
 import type { ZimbabweFormIndex } from "@/lib/zimbabwe-curriculum";
 
 export function ProfileDashboard(){
   const {state,setProfile}=useLearningStore();
+  const {user,loading}=useAuth();
   const form=(state.profile?.form ?? state.activeForm ?? defaultZimbabweFormForSourceGrade(state.activeGrade)) as 1|2|3|4;
   const [formData,setFormData]=useState<ZimbabweFormIndex|null>(null);
 
@@ -75,7 +77,7 @@ export function ProfileDashboard(){
 
       <aside className="profile-record-note">
         <Database aria-hidden="true"/>
-        <div><strong>Your learning record currently stays on this device.</strong><p>When learner accounts are introduced, this profile will become the place your progress and portfolio travel with you.</p></div>
+        <div><strong>{loading ? "Checking account sync…" : user ? "Your learning record is linked to this account." : "Your learning record is saved on this device."}</strong><p>{user ? "Progress, lesson notes and activity responses sync to the signed-in account when the connection is available. This device copy is retained so local work is not discarded." : "Sign in to bring this device’s existing progress, lesson notes and activity responses into an account and continue learning on another device."}</p></div>
       </aside>
     </section>
   </div>;

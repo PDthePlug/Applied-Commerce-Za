@@ -3,6 +3,7 @@
 import { createContext, useContext, useEffect, useMemo, useState } from "react";
 import type { Session, User } from "@supabase/supabase-js";
 import { createClient } from "@/lib/supabase/client";
+import { setLearningStorageScope } from "@/lib/learning-store";
 
 type AuthContextValue = { user: User | null; session: Session | null; loading: boolean };
 const AuthContext = createContext<AuthContextValue>({ user: null, session: null, loading: true });
@@ -23,16 +24,23 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     const { data } = supabase.auth.onAuthStateChange((_event, nextSession) => {
       if (!active) return;
       authEventReceived = true;
+      setLearningStorageScope(nextSession?.user.id ?? null);
       setSession(nextSession);
       setLoading(false);
     });
     void supabase.auth.getSession().then(({ data: sessionData }) => {
       if (!active) return;
-      if (!authEventReceived) setSession(sessionData.session);
+      if (!authEventReceived) {
+        setLearningStorageScope(sessionData.session?.user.id ?? null);
+        setSession(sessionData.session);
+      }
       setLoading(false);
     }).catch(() => {
       if (!active) return;
-      if (!authEventReceived) setSession(null);
+      if (!authEventReceived) {
+        setLearningStorageScope(null);
+        setSession(null);
+      }
       setLoading(false);
     });
     return () => { active = false; data.subscription.unsubscribe(); };

@@ -39,8 +39,9 @@ const rules=[
   ["legacy-transport",/\btaxi rank\b|\btaxi driver\b|\btaxis\b/i],
   ["legacy-retail",/\bspaza\b|\bstokvels?\b/i],
   ["sa-place",/\b(?:Johannesburg|Soweto|Tembisa|Cape Town|Durban|Umlazi|Pretoria|Atteridgeville|Limpopo|Katlehong|Alexandra|Gauteng|KwaZulu-Natal)\b/i],
-  ["sa-institution",/\b(?:NSFAS|UNISA|SARS|UIF|SDL|CAPS|DBE)\b/i],
-  ["sa-product",/\bTFSA\b|Tax-Free Savings Account|\bretirement annuit(?:y|ies)\b/i],
+  ["sa-institution",/\\b(?:NSFAS|National Student Financial Aid Scheme|UNISA|University of South Africa|SARS|South African Revenue Service|UIF|Unemployment Insurance Fund|SDL|Skills Development Levy|CAPS|DBE|Department of Basic Education|JSE|Johannesburg Stock Exchange|NSC|National Senior Certificate)\\b/i],
+  ["sa-product",/\\bTFSA\\b|Tax-Free Savings Account|\\bretirement annuit(?:y|ies)\\b/i],
+  ["sa-legal-instrument",/\\b(?:National Credit Act|Wills Act|Administration of Estates Act|Intestate Succession Act|South African law)\\b/i],
 ];
 
 function normalizeRestoredGrade9(unit){
