@@ -40,7 +40,7 @@ export function FacilitatorEvidenceDashboard() {
     }
   }, []);
 
-  useEffect(() => { void load(); }, [load]);
+  useEffect(() => { const timer = window.setTimeout(() => { void load(); }, 0); return () => window.clearTimeout(timer); }, [load]);
 
   async function save(item: Evidence) {
     setSaving(item.id);
