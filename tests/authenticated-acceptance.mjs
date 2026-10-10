@@ -49,6 +49,8 @@ const facilitator = await signIn("facilitator", "ac-test-facilitator@ac.com", pr
 for (const [name, client] of [["platform admin A", adminA], ["platform admin B", adminB]]) {
   const result = ok(await client.rpc("is_platform_admin"), `${name} registry check failed`);
   assert.equal(result, true, `${name} is not registered as a platform administrator`);
+  assert.equal(await visible(client, "schools", ids.schoolA), 1, `${name} should see Institution A`);
+  assert.equal(await visible(client, "schools", ids.schoolB), 1, `${name} should see Institution B`);
 }
 for (const [name, client] of [["learner", learner], ["institution admin", institutionAdmin], ["facilitator", facilitator]]) {
   const result = ok(await client.rpc("is_platform_admin"), `${name} registry check failed`);
@@ -121,9 +123,9 @@ try {
     unit_id: unitId, marker_key: unitId, title: "Must be denied",
   }), "learner cross-user portfolio write");
 
-  const facilitatorUpdate = await facilitator.from("cohort_enrolments").update({ status: "active" })
-    .eq("cohort_id", ids.cohortA).eq("learner_id", ids.learner);
-  ok(facilitatorUpdate, "facilitator assigned-cohort enrolment update failed");
+  const facilitatorUpdate = ok(await facilitator.from("cohort_enrolments").update({ status: "active" })
+    .eq("cohort_id", ids.cohortA).eq("learner_id", ids.learner).select("id"), "facilitator assigned-cohort enrolment update failed");
+  assert.equal(facilitatorUpdate.length, 1, "facilitator should update enrolment in assigned cohort");
   console.log("PASS: authenticated role registry, institution/cohort scoping, learner-owned persistence, cross-user write denials, and facilitator enrolment operation.");
 } finally {
   for (const [table, id] of created.reverse()) {
