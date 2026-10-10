@@ -34,6 +34,7 @@ async function signIn(page: Page, role: Role, target: string) {
 }
 
 test("learner can sign in, open the Zimbabwe Forms library and enter a lesson", async ({ page }) => {
+  test.skip(!credentials.learner.email || !credentials.learner.password, "Requires authenticated learner test secrets.");
   await signIn(page, "learner", "/learn");
   await expect(page.getByRole("heading", { name: /Four Forms\. Three terms each/i })).toBeVisible();
   await page.getByRole("link", { name: /^Form\s*2\b/i }).click();
@@ -45,6 +46,7 @@ test("learner can sign in, open the Zimbabwe Forms library and enter a lesson", 
 });
 
 test("facilitator can sign in and open the assigned-cohort evidence workspace", async ({ page }) => {
+  test.skip(!credentials.facilitator.email || !credentials.facilitator.password, "Requires authenticated facilitator test secrets.");
   await signIn(page, "facilitator", "/facilitator");
   await expect(page.getByRole("heading", { level: 1, name: "Facilitator workspace" })).toBeVisible();
   await expect(page.getByRole("heading", { name: "Learner evidence and review" })).toBeVisible();
@@ -55,6 +57,7 @@ test("facilitator can sign in and open the assigned-cohort evidence workspace", 
 });
 
 test("institution administrator can open membership, cohort, facilitator and enrolment operations", async ({ page }) => {
+  test.skip(!credentials["institution-admin"].email || !credentials["institution-admin"].password, "Requires authenticated institution-admin test secrets.");
   await signIn(page, "institution-admin", "/institution-admin");
   await expect(page.getByRole("heading", { level: 1, name: "Institution administration" })).toBeVisible();
   await expect(page.getByRole("heading", { name: "Create a cohort" })).toBeVisible();
@@ -67,6 +70,7 @@ test("institution administrator can open membership, cohort, facilitator and enr
 });
 
 test("platform administrator can open institution provisioning and see the institution registry", async ({ page }) => {
+  test.skip(!credentials["platform-admin"].password, "Requires authenticated platform-admin test secret.");
   await signIn(page, "platform-admin", "/platform-admin");
   await expect(page.getByRole("heading", { level: 1, name: "Platform administration" })).toBeVisible();
   await expect(page.getByRole("heading", { name: "Create institution and assign owner" })).toBeVisible();
