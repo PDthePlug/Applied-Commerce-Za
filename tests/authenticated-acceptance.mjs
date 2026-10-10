@@ -42,6 +42,11 @@ function denied(result, message) {
   assert.equal(result.error.code, "42501", `${message}: expected row-level security denial, got ${result.error.code}: ${result.error.message}`);
 }
 
+const visible = async (client, table, id) => {
+  const result = await client.from(table).select("id").eq("id", id);
+  return ok(result, `select ${table} failed`).length;
+};
+
 const adminA = await signIn("platformAdminA", "pdmpofu@gmail.com", process.env.AC_ZW_PLATFORM_ADMIN_PASSWORD);
 const adminB = await signIn("platformAdminB", "pdmpofu1@gmail.com", process.env.AC_ZW_PLATFORM_ADMIN_2_PASSWORD);
 const learner = await signIn("learner", process.env.AC_ZW_TEST_LEARNER_EMAIL, process.env.AC_ZW_TEST_LEARNER_PASSWORD);
@@ -59,10 +64,6 @@ for (const [name, client] of [["learner", learner], ["institution admin", instit
   assert.equal(result, false, `${name} unexpectedly has platform-admin privileges`);
 }
 
-const visible = async (client, table, id) => {
-  const result = await client.from(table).select("id").eq("id", id);
-  return ok(result, `select ${table} failed`).length;
-};
 assert.equal(await visible(institutionAdmin, "schools", ids.schoolA), 1, "institution admin should see own school");
 assert.equal(await visible(institutionAdmin, "schools", ids.schoolB), 0, "institution admin must not see another school");
 assert.equal(await visible(institutionAdmin, "cohorts", ids.cohortA), 1, "institution admin should see own cohort");
