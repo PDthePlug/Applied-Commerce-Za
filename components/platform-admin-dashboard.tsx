@@ -27,7 +27,7 @@ export function PlatformAdminDashboard() {
       setError(cause instanceof Error ? cause.message : "Platform data could not be loaded.");
     } finally { setLoading(false); }
   }, []);
-  useEffect(() => { void load(); }, [load]);
+  useEffect(() => { const timer = window.setTimeout(() => { void load(); }, 0); return () => window.clearTimeout(timer); }, [load]);
 
   async function createInstitution(event: FormEvent) {
     event.preventDefault();
