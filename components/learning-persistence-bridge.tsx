@@ -107,18 +107,20 @@ export function LearningPersistenceBridge() {
   const [readyUser, setReadyUser] = useState<string | null>(null);
   const activeUser = useRef<string | null>(null);
   const latestState = useRef(state);
-  latestState.current = state;
+  const bootstrappedUser = useRef<string | null>(null);
+
+  useEffect(() => { latestState.current = state; }, [state]);
 
   useEffect(() => {
     if (loading) return;
     if (!isSupabaseConfigured() || !user) {
       activeUser.current = null;
-      setReadyUser(null);
+      bootstrappedUser.current = null;
       return;
     }
     let cancelled = false;
     activeUser.current = user.id;
-    setReadyUser(null);
+    bootstrappedUser.current = null;
     (async () => {
       try {
         const remote = await requestSnapshot("GET", user.id);
@@ -126,6 +128,7 @@ export function LearningPersistenceBridge() {
         const local = readLocalLearningState();
         const merged = mergeState(local, remote.state ?? {});
         replaceLearningState(merged);
+        bootstrappedUser.current = user.id;
         setReadyUser(user.id);
         const snapshot = await buildSnapshot(merged);
         if (!cancelled && activeUser.current === user.id) await requestSnapshot("POST", user.id, snapshot);
@@ -134,10 +137,10 @@ export function LearningPersistenceBridge() {
       }
     })();
     return () => { cancelled = true; };
-  }, [user?.id, loading]);
+  }, [user, loading]);
 
   useEffect(() => {
-    if (!hydrated || !user || readyUser !== user.id || activeUser.current !== user.id) return;
+    if (!hydrated || !user || readyUser !== user.id || activeUser.current !== user.id || bootstrappedUser.current !== user.id) return;
     let cancelled = false;
     const timer = window.setTimeout(() => {
       void buildSnapshot(latestState.current)
@@ -148,7 +151,7 @@ export function LearningPersistenceBridge() {
         .catch(error => console.error("Learning sync failed; the local copy was preserved.", error));
     }, 700);
     return () => { cancelled = true; window.clearTimeout(timer); };
-  }, [state, hydrated, user?.id, readyUser]);
+  }, [state, hydrated, user, readyUser]);
 
   return null;
 }
