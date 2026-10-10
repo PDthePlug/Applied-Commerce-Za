@@ -71,6 +71,21 @@ Use these as starting points, record the access/review date in the unit review s
 - **Insurance and pensions:** [Insurance and Pensions Commission — consumer education](https://ipec.co.zw/consumer-education/) and [IPEC — understanding insurance and pensions](https://ipec.co.zw/local-news/understanding-insurance-and-pensions/). Use these for regulator terminology and consumer-protection context; verify specific policy and pension rules against current product terms.
 - **Wills and estates:** [Zimbabwe Wills Act (ZimLII)](https://zimlii.org/akn/zw/act/1987/13/eng%402016-12-31), [Administration of Estates Act (ZimLII)](https://zimlii.org/akn/zw/act/ord/1907/6/eng%402025-02-24), and [Administration of Estates Amendment Act, 2024](https://zimlii.org/akn/zw/act/2024/3/eng%402024-11-22). The consolidated Acts page identifies its own update cut-off; check subsequent amendments and qualified legal guidance before treating any classroom summary as current law.
 
+## Targeted high-risk content spot-check — 10 October 2026
+
+These runtime overlays were inspected against the primary references above. This is a recorded spot-check of high-risk examples, not a claim that every unit has received legal review.
+
+| Unit ID | Editorial disposition | Verification basis |
+|---|---|---|
+| `g10-t1-l03-003` | Replaced South African deductions and TFSA narrative with payslip literacy, lawful deductions and ZIMRA checking. | ZIMRA's PAYE guidance describes PAYE as tax on remuneration and points to current official tables. |
+| `g10-t2-l25-025` | Replaced South African credit-score instructions with credit-record learning and the RBZ Central Credit Registry. | RBZ maintains a Central Credit Registry information page. |
+| `g10-t2-l26-026` | Replaced named South African vehicles and availability claims with broad categories, risk/liquidity comparisons and a current-provider verification task. | SECZ material describes local shares, collective investment schemes and licensed intermediaries; availability must be rechecked before naming a product. |
+| `g10-t3-l41-041` | Replaced South African tax explanation with a conceptual marginal-bracket lesson and explicit current-ZIMRA-table caveat; removed unsupported public-spending and tax-optimisation claims. | ZIMRA describes an escalating PAYE scale and publishes currency-specific tables. |
+| `g10-t3-l42-042` | Removed the TFSA limit example and asks learners to verify current applicable rules rather than assume an incentive. | Current ZIMRA guidance is the appropriate source for tax treatment. |
+| `g10-t3-l43-043`, `g11-t3-l47-047` | Replaced named South African retirement/tax products with regulated-category and verification language. | IPEC regulates insurance/pensions; SECZ regulates capital-market intermediaries. |
+| `g11-t4-l64-064`, `g12-t3-l44-044`, `g12-t3-l45-045` | Removed the South African will-validity checklist; the runtime directs learners to current Zimbabwe law and qualified advice and avoids definitive product/beneficiary rules. | Zimbabwe Wills Act and estate-administration materials are linked above; amendment status must be checked for any precise legal claim. |
+| `g12-t1-l03-003` | Replaced South African legal-aid references and frames court limits as requiring current verification. | Zimbabwe's Ministry of Justice lists the Legal Aid Directorate; the Small Claims Courts Act establishes the jurisdictional framework. |
+
 ## Publication evidence required per reviewed unit
 
 Each reviewed unit must have a disposition recorded in a durable review sheet:
