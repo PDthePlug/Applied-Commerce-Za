@@ -4,6 +4,31 @@
 **Status:** Open — not approved for learner-facing publication  
 **Scope:** Form 1–4 runtime, source-content residue, Zimbabwe legal/financial accuracy, three-term placement, HBC alignment, and narrative continuity.
 
+## Live staging migration/schema reconciliation — 10 October 2026
+
+The dedicated **Applied Commerce Zimbabwe** Supabase project (`hkarxzjmttjetotduvyx`) was inspected against the feature branch migration directory. The database migration ledger contains all 10 migration versions currently present in `supabase/migrations`, with matching names and no extra live-ledger entry:
+
+| Migration version | Ledger name |
+|---|---|
+| `20261009232116` | `ac_zw_platform_foundation` |
+| `20261009232153` | `ac_zw_rls_hardening` |
+| `20261009232404` | `ac_zw_preferences_parity` |
+| `20261009234929` | `ac_zw_learning_state` |
+| `20261009235541` | `ac_zw_institution_operations` |
+| `20261009235803` | `ac_zw_review_integrity` |
+| `20261009235935` | `ac_zw_owner_rpc_acl` |
+| `20261010000133` | `ac_zw_auth_profile_trigger` |
+| `20261010000354` | `ac_zw_owner_rpc_invoker` |
+| `20261010004952` | `ac_zw_cohort_enrolment_rls_recursion_fix` |
+
+The live table inventory confirms RLS is enabled on the inspected public operational tables and the private platform-admin registry. The live `private.platform_admins` table has two rows, matching the requirement for two independent platform administrators. The current schema includes the Zimbabwe Form constraint on cohorts and the non-recursive enrolment management policies from the final migration. A live `pg_policies` inspection also confirms learner-owned write policies for lesson progress, notes and prompt responses; review writes require the authenticated reviewer identity and a learner within assigned review scope; and institution/cohort writes are guarded by school role or cohort scope.
+
+This is a ledger/schema inspection, not a full proof that every function, trigger, grant and data invariant matches source SQL byte-for-byte. Re-run the authenticated acceptance suite after any migration change, and keep runtime activation blocked until the new browser-write test and authorization cases have passed on the current head.
+
+### Supabase Auth leaked-password protection
+
+The live security advisor reports `auth_leaked_password_protection` as **disabled** on the Zimbabwe project. No migration controls this Auth dashboard setting, and no change was needed to reach the requested setting. It remains disabled as requested for the current plan; this is a security trade-off because compromised passwords are not checked against the leaked-password corpus. Revisit the setting if the project plan or account configuration changes.
+
 ## What automation establishes
 
 The CI suite passes the current structural checks: 382 uniquely placed lessons across 12 Form/Term slots, Grade 9 Term 2 restoration, all-forms runtime keyword scan, three assessment placements, and HBC metadata coverage. These checks do not certify that every lesson is locally accurate or editorially complete.
