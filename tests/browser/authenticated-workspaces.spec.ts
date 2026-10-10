@@ -88,7 +88,7 @@ test("platform administrator can open institution provisioning and see the insti
 });
 
 test("second platform administrator can independently open the institution registry", async ({ page }) => {
-  test.skip(!credentials["platform-admin-2"].password, "Requires the second authenticated platform-admin test secret.");
+  expect(credentials["platform-admin-2"].password, "AC_ZW_PLATFORM_ADMIN_2_PASSWORD must be supplied; do not skip this authorization check").toBeTruthy();
   await signIn(page, "platform-admin-2", "/platform-admin");
   await expect(page.getByRole("heading", { level: 1, name: "Platform administration" })).toBeVisible();
   const response = await page.request.get("/api/platform-admin/institutions");
