@@ -19,6 +19,12 @@ export function AuthPanel({ compact = false }: { compact?: boolean }) {
   if (loading) return <p className="auth-status">Getting your account ready…</p>;
   if (user) return <div className={compact ? "auth-panel auth-panel-compact" : "auth-panel"}><div><span className="eyebrow">Account</span><strong>{user.email}</strong><p>Your account is signed in. Available workspaces depend on roles assigned to this account.</p></div><button type="button" disabled={busy} onClick={async () => { setBusy(true); setError(null); try { const { error } = await createClient().auth.signOut(); if (error) setError(friendlyAuthError(error, "We couldn’t sign you out. Please try again.")); } catch (err) { setError(friendlyAuthError(err, "We couldn’t sign you out. Please try again.")); } finally { setBusy(false); } }}>{busy ? "Signing out…" : "Sign out"}</button>{error && <p role="alert" className="auth-error">{error}</p>}</div>;
 
+  function continueAfterAuth() {
+    const requested = new URLSearchParams(window.location.search).get("next");
+    const target = requested && requested.startsWith("/") && !requested.startsWith("//") ? requested : "/";
+    window.location.assign(target);
+  }
+
   async function submit(event: FormEvent) {
     event.preventDefault();
     setBusy(true);
@@ -38,7 +44,7 @@ export function AuthPanel({ compact = false }: { compact?: boolean }) {
         : await supabase.auth.signUp({ email: email.trim(), password, options: { emailRedirectTo: window.location.origin + "/auth" } });
       if (result.error) setError(friendlyAuthError(result.error));
       else if (mode === "signup" && !result.data.session) setMessage("Account created. Check the email inbox to confirm the account, then sign in.");
-      else setMessage("Signed in. Available workspaces depend on access assigned to this account.");
+      else { setMessage("Signed in. Available workspaces depend on access assigned to this account."); continueAfterAuth(); }
     } catch (err) {
       setError(friendlyAuthError(err));
     } finally {

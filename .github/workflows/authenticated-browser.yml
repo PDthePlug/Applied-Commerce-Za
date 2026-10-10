@@ -1,0 +1,54 @@
+name: Authenticated workspace journeys
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  authenticated-browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.AC_ZW_SUPABASE_URL }}
+      NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY: ${{ secrets.AC_ZW_SUPABASE_PUBLISHABLE_KEY }}
+      AC_ZW_TEST_LEARNER_EMAIL: ${{ secrets.AC_ZW_TEST_LEARNER_EMAIL }}
+      AC_ZW_TEST_LEARNER_PASSWORD: ${{ secrets.AC_ZW_TEST_LEARNER_PASSWORD }}
+      AC_ZW_TEST_FACILITATOR_EMAIL: ${{ secrets.AC_ZW_TEST_FACILITATOR_EMAIL }}
+      AC_ZW_TEST_FACILITATOR_PASSWORD: ${{ secrets.AC_ZW_TEST_FACILITATOR_PASSWORD }}
+      AC_ZW_TEST_INSTITUTION_ADMIN_EMAIL: ${{ secrets.AC_ZW_TEST_INSTITUTION_ADMIN_EMAIL }}
+      AC_ZW_TEST_INSTITUTION_ADMIN_PASSWORD: ${{ secrets.AC_ZW_TEST_INSTITUTION_ADMIN_PASSWORD }}
+      AC_ZW_PLATFORM_ADMIN_PASSWORD: ${{ secrets.AC_ZW_PLATFORM_ADMIN_PASSWORD }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+      - name: Set up Node.js 22
+        uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - name: Check required secrets are present
+        shell: bash
+        run: |
+          set -euo pipefail
+          for name in NEXT_PUBLIC_SUPABASE_URL NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY AC_ZW_TEST_LEARNER_EMAIL AC_ZW_TEST_LEARNER_PASSWORD AC_ZW_TEST_FACILITATOR_EMAIL AC_ZW_TEST_FACILITATOR_PASSWORD AC_ZW_TEST_INSTITUTION_ADMIN_EMAIL AC_ZW_TEST_INSTITUTION_ADMIN_PASSWORD AC_ZW_PLATFORM_ADMIN_PASSWORD; do
+            if [[ -z "${!name:-}" ]]; then echo "::error::Required repository secret is missing: ${name}"; exit 1; fi
+          done
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+      - name: Build against the staging Supabase project
+        run: npm run build
+      - name: Install Playwright Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Run authenticated role journeys
+        run: npx playwright test
+      - name: Upload Playwright failure evidence
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: authenticated-workspace-playwright-failure
+          path: |
+            test-results/
+            playwright-report/
+          if-no-files-found: ignore
