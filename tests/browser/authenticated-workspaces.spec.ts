@@ -95,3 +95,81 @@ test("second platform administrator can independently open the institution regis
   expect(response.status()).toBe(200);
   expect((await response.json()).schools).toBeInstanceOf(Array);
 });
+
+
+test("learner can persist and reload progress, a note, and an activity response through the authenticated route", async ({ page }) => {
+  test.skip(!credentials.learner.email || !credentials.learner.password, "Requires authenticated learner test secrets.");
+  const { createClient } = await import("@supabase/supabase-js");
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const publishableKey = process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY;
+  expect(supabaseUrl, "Missing staging Supabase URL").toBeTruthy();
+  expect(publishableKey, "Missing staging Supabase publishable key").toBeTruthy();
+
+  await signIn(page, "learner", "/learn");
+  const originalResponse = await page.request.get("/api/learning-state");
+  expect(originalResponse.status()).toBe(200);
+  const original = (await originalResponse.json()).state as {
+    version: 1; completed: Record<string,string>; responses: Record<string,string>;
+    promptResponses: Record<string,string>; activeGrade?: number; activeForm?: 1|2|3|4;
+    profile?: { displayName?: string; grade?: number; form?: 1|2|3|4 };
+  };
+  const suffix = `ac-zw-browser-${Date.now()}-${Math.random().toString(36).slice(2,8)}`;
+  const responseKey = `${suffix}::activity-response`;
+  const timestamp = new Date().toISOString();
+  const note = "Authenticated browser acceptance note — temporary test data.";
+  const answer = "Authenticated browser acceptance response — temporary test data.";
+  const snapshot = {
+    version: 1 as const,
+    activeGrade: original.activeGrade,
+    activeForm: original.activeForm,
+    completed: { [suffix]: timestamp },
+    responses: { [suffix]: note },
+    promptResponses: { [responseKey]: answer },
+    profile: original.profile ?? {},
+    progressRows: [{ unitId: suffix, grade: 9, term: 1, completedAt: timestamp, lastOpenedAt: timestamp }],
+    noteRows: [{ unitId: suffix, grade: 9, term: 1, note }],
+    promptRows: [{ key: responseKey, unitId: suffix, grade: 9, term: 1, value: answer }],
+    artifactRows: [],
+    // A hostile client-supplied owner field must never override the verified session identity.
+    learner_id: "c7bd10bd-cfac-4b91-98fc-becb57f4d1da",
+  };
+
+  const cleanup = createClient(supabaseUrl!, publishableKey!, {
+    auth: { persistSession: false, autoRefreshToken: false, detectSessionInUrl: false },
+  });
+  const authResult = await cleanup.auth.signInWithPassword({
+    email: credentials.learner.email!, password: credentials.learner.password!,
+  });
+  expect(authResult.error, "Cleanup identity must authenticate as the learner fixture").toBeNull();
+  try {
+    const wrongAccount = await page.request.post("/api/learning-state", {
+      headers: { "content-type": "application/json", "x-ac-expected-user-id": "c7bd10bd-cfac-4b91-98fc-becb57f4d1da" },
+      data: snapshot,
+    });
+    expect(wrongAccount.status()).toBe(409);
+
+    const saved = await page.request.post("/api/learning-state", {
+      headers: { "content-type": "application/json", "x-ac-expected-user-id": authResult.data.user!.id },
+      data: snapshot,
+    });
+    expect(saved.status()).toBe(200);
+
+    const reloaded = await page.request.get("/api/learning-state");
+    expect(reloaded.status()).toBe(200);
+    const state = (await reloaded.json()).state;
+    expect(state.completed[suffix]).toBe(timestamp);
+    expect(state.responses[suffix]).toBe(note);
+    expect(state.promptResponses[responseKey]).toBe(answer);
+  } finally {
+    const userId = authResult.data.user!.id;
+    const cleanupResults = await Promise.all([
+      cleanup.from("portfolio_evidence").delete().eq("artifact_id", suffix),
+      cleanup.from("evidence_records").delete().eq("learner_id", userId).eq("response_key", responseKey),
+      cleanup.from("prompt_responses").delete().eq("learner_id", userId).eq("unit_id", suffix),
+      cleanup.from("lesson_notes").delete().eq("learner_id", userId).eq("unit_id", suffix),
+      cleanup.from("lesson_progress").delete().eq("learner_id", userId).eq("unit_id", suffix),
+    ]);
+    for (const result of cleanupResults) expect(result.error, "Temporary browser acceptance data must be cleaned up").toBeNull();
+    await cleanup.auth.signOut();
+  }
+});
