@@ -36,6 +36,9 @@ async function signIn(page: Page, role: Role, target: string) {
 test("learner can sign in, open the Zimbabwe Forms library and enter a lesson", async ({ page }) => {
   test.skip(!credentials.learner.email || !credentials.learner.password, "Requires authenticated learner test secrets.");
   await signIn(page, "learner", "/learn");
+  const stateResponse = await page.request.get("/api/learning-state");
+  expect(stateResponse.status()).toBe(200);
+  expect((await stateResponse.json()).state.version).toBe(1);
   await expect(page.getByRole("heading", { name: /Four Forms\. Three terms each/i })).toBeVisible();
   await page.getByRole("link", { name: /^Form\s*2\b/i }).click();
   await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
