@@ -15,6 +15,9 @@ test("learning sync requires a verified session and binds every write to auth.ui
  assert.match(api,/learner_id: userId/);
  assert.match(api,/user_id: userId/);
  assert.match(api,/x-ac-expected-user-id/);
+ assert.match(api,/learnerAccountAllowed\(supabase, userId\)/);
+ assert.match(api,/from\("school_memberships"\).*?eq\("status", "active"\)/);
+ assert.match(api,/from\("cohort_staff"\).*?eq\("status", "active"\)/);
  assert.match(api,/MAX_BODY_BYTES/);
  assert.match(api,/snapshotValid\(body\)/);
  assert.doesNotMatch(api,/service_role|SERVICE_ROLE|SUPABASE_SERVICE_ROLE_KEY/i);
