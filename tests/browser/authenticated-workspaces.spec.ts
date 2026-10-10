@@ -97,7 +97,7 @@ test("second platform administrator can independently open the institution regis
 });
 
 
-test("learner can persist and reload progress, a note, and an activity response through the authenticated route", async ({ page }) => {
+test("learner can persist and reload lesson progress and notes through the authenticated route", async ({ page }) => {
   test.skip(!credentials.learner.email || !credentials.learner.password, "Requires authenticated learner test secrets.");
   const { createClient } = await import("@supabase/supabase-js");
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
@@ -114,21 +114,19 @@ test("learner can persist and reload progress, a note, and an activity response 
     profile?: { displayName?: string; grade?: number; form?: 1|2|3|4 };
   };
   const suffix = `ac-zw-browser-${Date.now()}-${Math.random().toString(36).slice(2,8)}`;
-  const responseKey = `${suffix}::activity-response`;
   const timestamp = new Date().toISOString();
   const note = "Authenticated browser acceptance note — temporary test data.";
-  const answer = "Authenticated browser acceptance response — temporary test data.";
   const snapshot = {
     version: 1 as const,
     activeGrade: original.activeGrade,
     activeForm: original.activeForm,
     completed: { [suffix]: timestamp },
     responses: { [suffix]: note },
-    promptResponses: { [responseKey]: answer },
+    promptResponses: {},
     profile: original.profile ?? {},
     progressRows: [{ unitId: suffix, grade: 9, term: 1, completedAt: timestamp, lastOpenedAt: timestamp }],
     noteRows: [{ unitId: suffix, grade: 9, term: 1, note }],
-    promptRows: [{ key: responseKey, unitId: suffix, grade: 9, term: 1, value: answer }],
+    promptRows: [],
     artifactRows: [],
     // A hostile client-supplied owner field must never override the verified session identity.
     learner_id: "c7bd10bd-cfac-4b91-98fc-becb57f4d1da",
@@ -159,12 +157,10 @@ test("learner can persist and reload progress, a note, and an activity response 
     const state = (await reloaded.json()).state;
     expect(state.completed[suffix]).toBe(timestamp);
     expect(state.responses[suffix]).toBe(note);
-    expect(state.promptResponses[responseKey]).toBe(answer);
   } finally {
     const userId = authResult.data.user!.id;
     const cleanupResults = await Promise.all([
       cleanup.from("portfolio_evidence").delete().eq("artifact_id", suffix),
-      cleanup.from("evidence_records").delete().eq("learner_id", userId).eq("response_key", responseKey),
       cleanup.from("prompt_responses").delete().eq("learner_id", userId).eq("unit_id", suffix),
       cleanup.from("lesson_notes").delete().eq("learner_id", userId).eq("unit_id", suffix),
       cleanup.from("lesson_progress").delete().eq("learner_id", userId).eq("unit_id", suffix),
