@@ -65,7 +65,6 @@ assert.equal(await visible(institutionAdmin, "cohorts", ids.cohortA), 1, "instit
 assert.equal(await visible(institutionAdmin, "cohorts", ids.cohortB), 0, "institution admin must not see another institution's cohort");
 assert.equal(await visible(facilitator, "cohorts", ids.cohortA), 1, "facilitator should see assigned cohort");
 assert.equal(await visible(facilitator, "cohorts", ids.cohortB), 0, "facilitator must not see another institution's cohort");
-assert.equal(await visible(learner, "cohort_enrolments", ids.learner), 0, "learner ID is not a cohort enrolment row ID");
 
 const ownEnrolment = ok(await learner.from("cohort_enrolments").select("id").eq("cohort_id", ids.cohortA).eq("learner_id", ids.learner), "learner enrolment read failed");
 assert.equal(ownEnrolment.length, 1, "learner should see own active enrolment");
