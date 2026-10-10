@@ -73,7 +73,80 @@ test("institution administrator can open membership, cohort, facilitator and enr
   await expect(page.getByRole("heading", { name: "Enrol a learner" })).toBeVisible();
   const response = await page.request.get("/api/institution-admin");
   expect(response.status()).toBe(200);
-  expect((await response.json()).schools).toBeInstanceOf(Array);
+  const initial = await response.json() as {
+    schools: Array<{ id: string }>;
+    cohorts: Array<{ id: string; school_id: string }>;
+    memberships: Array<{ id: string; school_id: string; user_id: string; role: string; status: string }>;
+  };
+  expect(initial.schools).toBeInstanceOf(Array);
+  expect(initial.schools.length).toBeGreaterThan(0);
+  const schoolId = initial.schools[0].id;
+  const { createClient } = await import("@supabase/supabase-js");
+  const cleanup = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY!, {
+    auth: { persistSession: false, autoRefreshToken: false, detectSessionInUrl: false },
+  });
+  const signedIn = await cleanup.auth.signInWithPassword({
+    email: credentials["institution-admin"].email!, password: credentials["institution-admin"].password!,
+  });
+  expect(signedIn.error).toBeNull();
+  let cohortId: string | undefined;
+  let facilitatorUserId: string | undefined;
+  let originalMembership: { id: string; role: string; status: string } | undefined;
+  try {
+    const cohortWrite = await page.request.post("/api/institution-admin", {
+      data: { action: "create-cohort", schoolId, name: `Browser acceptance ${Date.now()}`, form: 2, academicYear: 2026 },
+    });
+    expect(cohortWrite.status()).toBe(200);
+    const cohortBody = await cohortWrite.json();
+    cohortId = cohortBody.cohort.id as string;
+    expect(cohortBody.cohort.zimbabwe_form).toBe(2);
+    expect(cohortBody.cohort.grade).toBe(9);
+
+    const memberWrite = await page.request.post("/api/institution-admin", {
+      data: { action: "add-member", schoolId, email: credentials.facilitator.email, role: "educator" },
+    });
+    expect(memberWrite.status()).toBe(200);
+    facilitatorUserId = (await memberWrite.json()).userId as string;
+    originalMembership = initial.memberships.find(row => row.school_id === schoolId && row.user_id === facilitatorUserId);
+
+    const staffWrite = await page.request.post("/api/institution-admin", {
+      data: { action: "add-cohort-staff", cohortId, email: credentials.facilitator.email, role: "educator" },
+    });
+    expect(staffWrite.status()).toBe(200);
+
+    const enrolmentWrite = await page.request.post("/api/institution-admin", {
+      data: { action: "enrol-learner", cohortId, email: credentials.learner.email },
+    });
+    expect(enrolmentWrite.status()).toBe(200);
+
+    const after = await page.request.get("/api/institution-admin");
+    expect(after.status()).toBe(200);
+    const data = await after.json();
+    expect(data.cohorts.some((row: { id: string }) => row.id === cohortId)).toBe(true);
+    expect(data.staff.some((row: { cohort_id: string; user_id: string }) => row.cohort_id === cohortId && row.user_id === facilitatorUserId)).toBe(true);
+    expect(data.enrolments.some((row: { cohort_id: string }) => row.cohort_id === cohortId)).toBe(true);
+  } finally {
+    if (cohortId) {
+      const removed = await cleanup.from("cohorts").delete().eq("id", cohortId);
+      expect(removed.error, "Temporary cohort and its staff/enrolment rows must be cleaned up").toBeNull();
+    }
+    if (facilitatorUserId) {
+      if (originalMembership) {
+        const restored = await cleanup.from("school_memberships").update({ role: originalMembership.role, status: originalMembership.status })
+          .eq("id", originalMembership.id);
+        expect(restored.error, "Pre-existing facilitator membership must be restored").toBeNull();
+      } else {
+        const removed = await cleanup.from("school_memberships").delete().eq("school_id", schoolId).eq("user_id", facilitatorUserId);
+        expect(removed.error, "Temporary facilitator membership must be cleaned up").toBeNull();
+      }
+    }
+    await cleanup.auth.signOut();
+  }
+
+  const crossInstitutionWrite = await page.request.post("/api/institution-admin", {
+    data: { action: "create-cohort", schoolId: "a1000000-0000-4000-8000-000000000002", name: `Forbidden cross-institution cohort ${Date.now()}`, form: 2, academicYear: 2026 },
+  });
+  expect(crossInstitutionWrite.status()).toBe(403);
 });
 
 test("platform administrator can open institution provisioning and see the institution registry", async ({ page }) => {
