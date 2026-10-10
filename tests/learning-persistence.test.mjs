@@ -34,9 +34,14 @@ test("local-first migration merges local and remote records before initial uploa
  assert.match(store,/applied-commerce-learning-state-v1/);
  assert.match(store,/export function readLocalLearningState/);
  assert.match(store,/export function replaceLearningState/);
+ assert.match(store,/setLearningStorageScope\(userId: string \| null\)/);
+ assert.match(store,/\$\{KEY\}:\$\{resolved\}/);
  assert.match(bridge,/function mergeState\(local: LearningState, remote: Partial<LearningState>\)/);
  assert.match(bridge,/completed: \{ \...\(remote\.completed \?\? \{\}\), \...local\.completed \}/);
- assert.match(bridge,/replaceLearningState\(merged\)/);
+ assert.match(bridge,/replaceLearningState\(merged, user\.id\)/);
+ assert.match(bridge,/applied-commerce-learning-state-claimed-user-v1/);
+ assert.match(bridge,/readLocalLearningState\(claimedUser \? user\.id : null\)/);
+ assert.match(bridge,/local learning data was preserved/i);
  assert.match(bridge,/local learning data was preserved/i);
  assert.match(layout,/LearningPersistenceBridge/);
 });
