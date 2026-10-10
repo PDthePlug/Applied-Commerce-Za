@@ -272,3 +272,47 @@ test("learner can persist and reload lesson progress and notes through the authe
     await cleanup.auth.signOut();
   }
 });
+
+
+test("learner activity responses persist and the assigned facilitator can save a review", async ({ page }) => {
+  test.skip(!credentials.learner.email || !credentials.learner.password || !credentials.facilitator.email || !credentials.facilitator.password,
+    "Requires the learner and assigned facilitator acceptance accounts.");
+  await signIn(page, "learner", "/learn");
+  const stateResponse = await page.request.get("/api/learning-state");
+  expect(stateResponse.status()).toBe(200);
+  const state = (await stateResponse.json()).state;
+  const unitId = "ac-zw-browser-review-fixture";
+  const responseKey = `${unitId}::response`;
+  const responseValue = "Persistent browser acceptance response; this is a staging test fixture.";
+  const saved = await page.request.post("/api/learning-state", {
+    headers: { "content-type": "application/json" },
+    data: {
+      version: 1, activeGrade: state.activeGrade, activeForm: state.activeForm,
+      completed: {}, responses: {}, promptResponses: { [responseKey]: responseValue },
+      profile: state.profile ?? {}, progressRows: [], noteRows: [],
+      promptRows: [{ key: responseKey, unitId, grade: 9, term: 1, value: responseValue }],
+      artifactRows: [],
+    },
+  });
+  expect(saved.status()).toBe(200);
+  const reloaded = await page.request.get("/api/learning-state");
+  expect(reloaded.status()).toBe(200);
+  expect((await reloaded.json()).state.promptResponses[responseKey]).toBe(responseValue);
+
+  await signIn(page, "facilitator", "/facilitator");
+  const queue = await page.request.get("/api/facilitator/evidence");
+  expect(queue.status()).toBe(200);
+  const evidence = (await queue.json()).evidence as Array<{ id: string; response_key: string; status: string; reviews: Array<{ feedback: string }> }>;
+  const fixture = evidence.find(item => item.response_key === responseKey);
+  expect(fixture, "The assigned facilitator must see the learner's saved response").toBeTruthy();
+
+  const review = await page.request.post("/api/facilitator/evidence", {
+    data: { evidenceRecordId: fixture!.id, status: "accepted", feedback: "Automated acceptance review: response received and review persisted.", criteriaScores: {} },
+  });
+  expect(review.status()).toBe(200);
+  const refreshed = await page.request.get("/api/facilitator/evidence");
+  expect(refreshed.status()).toBe(200);
+  const reviewed = (await refreshed.json()).evidence.find((item: { id: string }) => item.id === fixture!.id);
+  expect(reviewed.status).toBe("accepted");
+  expect(reviewed.reviews.some((item: { feedback: string }) => item.feedback === "Automated acceptance review: response received and review persisted.")).toBe(true);
+});
