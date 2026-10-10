@@ -26,6 +26,7 @@ type Snapshot = {
   progressRows: ProgressRow[];
   noteRows: NoteRow[];
   promptRows: PromptRow[];
+  artifactRows: ArtifactRow[];
 };
 
 async function learnerAccountAllowed(supabase: Awaited<ReturnType<typeof createClient>>, userId: string) {
