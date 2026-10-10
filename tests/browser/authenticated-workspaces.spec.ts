@@ -1,6 +1,6 @@
 import { expect, test, type Page } from "@playwright/test";
 
-type Role = "learner" | "facilitator" | "institution-admin" | "platform-admin";
+type Role = "learner" | "facilitator" | "institution-admin" | "platform-admin" | "platform-admin-2";
 
 const credentials: Record<Role, { email: string | undefined; password: string | undefined }> = {
   learner: {
@@ -18,6 +18,10 @@ const credentials: Record<Role, { email: string | undefined; password: string | 
   "platform-admin": {
     email: "pdmpofu@gmail.com",
     password: process.env.AC_ZW_PLATFORM_ADMIN_PASSWORD,
+  },
+  "platform-admin-2": {
+    email: "pdmpofu1@gmail.com",
+    password: process.env.AC_ZW_PLATFORM_ADMIN_2_PASSWORD,
   },
 };
 
@@ -78,6 +82,15 @@ test("platform administrator can open institution provisioning and see the insti
   await expect(page.getByRole("heading", { level: 1, name: "Platform administration" })).toBeVisible();
   await expect(page.getByRole("heading", { name: "Create institution and assign owner" })).toBeVisible();
   await expect(page.getByRole("heading", { level: 2, name: "Institutions", exact: true })).toBeVisible();
+  const response = await page.request.get("/api/platform-admin/institutions");
+  expect(response.status()).toBe(200);
+  expect((await response.json()).schools).toBeInstanceOf(Array);
+});
+
+test("second platform administrator can independently open the institution registry", async ({ page }) => {
+  test.skip(!credentials["platform-admin-2"].password, "Requires the second authenticated platform-admin test secret.");
+  await signIn(page, "platform-admin-2", "/platform-admin");
+  await expect(page.getByRole("heading", { level: 1, name: "Platform administration" })).toBeVisible();
   const response = await page.request.get("/api/platform-admin/institutions");
   expect(response.status()).toBe(200);
   expect((await response.json()).schools).toBeInstanceOf(Array);
