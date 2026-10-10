@@ -1,0 +1,28 @@
+name: AC Zimbabwe authenticated acceptance
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  authenticated-acceptance:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      AC_ZW_SUPABASE_URL: ${{ secrets.AC_ZW_SUPABASE_URL }}
+      AC_ZW_SUPABASE_PUBLISHABLE_KEY: ${{ secrets.AC_ZW_SUPABASE_PUBLISHABLE_KEY }}
+      AC_ZW_PLATFORM_ADMIN_PASSWORD: ${{ secrets.AC_ZW_PLATFORM_ADMIN_PASSWORD }}
+      AC_ZW_PLATFORM_ADMIN_2_PASSWORD: ${{ secrets.AC_ZW_PLATFORM_ADMIN_2_PASSWORD }}
+      AC_ZW_TEST_LEARNER_PASSWORD: ${{ secrets.AC_ZW_TEST_LEARNER_PASSWORD }}
+      AC_ZW_TEST_INSTITUTION_ADMIN_PASSWORD: ${{ secrets.AC_ZW_TEST_INSTITUTION_ADMIN_PASSWORD }}
+      AC_ZW_TEST_FACILITATOR_PASSWORD: ${{ secrets.AC_ZW_TEST_FACILITATOR_PASSWORD }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+      - name: Run authenticated Supabase role and RLS acceptance
+        run: node tests/authenticated-acceptance.mjs
