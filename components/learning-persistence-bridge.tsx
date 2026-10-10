@@ -125,9 +125,12 @@ export function LearningPersistenceBridge() {
       try {
         const remote = await requestSnapshot("GET", user.id);
         if (cancelled || activeUser.current !== user.id) return;
-        const local = readLocalLearningState();
+        const claimKey = "applied-commerce-learning-state-claimed-user-v1";
+        const claimedUser = window.localStorage.getItem(claimKey);
+        const local = readLocalLearningState(claimedUser ? user.id : null);
         const merged = mergeState(local, remote.state ?? {});
-        replaceLearningState(merged);
+        replaceLearningState(merged, user.id);
+        if (!claimedUser) window.localStorage.setItem(claimKey, user.id);
         bootstrappedUser.current = user.id;
         setReadyUser(user.id);
         const snapshot = await buildSnapshot(merged);
