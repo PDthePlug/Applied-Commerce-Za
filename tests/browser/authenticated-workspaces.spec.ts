@@ -40,15 +40,6 @@ async function signIn(page: Page, role: Role, target: string) {
 test("learner can sign in, open the Zimbabwe Forms library and enter a lesson", async ({ page }) => {
   test.skip(!credentials.learner.email || !credentials.learner.password, "Requires authenticated learner test secrets.");
   await signIn(page, "learner", "/learn");
-  const { createClient } = await import("@supabase/supabase-js");
-  const cleanup = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY!, {
-    auth: { persistSession: false, autoRefreshToken: false, detectSessionInUrl: false },
-  });
-  const learnerAuth = await cleanup.auth.signInWithPassword({
-    email: credentials.learner.email!, password: credentials.learner.password!,
-  });
-  expect(learnerAuth.error).toBeNull();
-  const learnerId = learnerAuth.data.user!.id;
   const stateResponse = await page.request.get("/api/learning-state");
   expect(stateResponse.status()).toBe(200);
   expect((await stateResponse.json()).state.version).toBe(1);
@@ -287,6 +278,15 @@ test("learner activity responses persist and the assigned facilitator can save a
   test.skip(!credentials.learner.email || !credentials.learner.password || !credentials.facilitator.email || !credentials.facilitator.password,
     "Requires the learner and assigned facilitator acceptance accounts.");
   await signIn(page, "learner", "/learn");
+  const { createClient } = await import("@supabase/supabase-js");
+  const cleanup = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY!, {
+    auth: { persistSession: false, autoRefreshToken: false, detectSessionInUrl: false },
+  });
+  const learnerAuth = await cleanup.auth.signInWithPassword({
+    email: credentials.learner.email!, password: credentials.learner.password!,
+  });
+  expect(learnerAuth.error).toBeNull();
+  const learnerId = learnerAuth.data.user!.id;
   const stateResponse = await page.request.get("/api/learning-state");
   expect(stateResponse.status()).toBe(200);
   const state = (await stateResponse.json()).state;
