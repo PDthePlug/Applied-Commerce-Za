@@ -326,11 +326,12 @@ test("learner activity responses persist and the assigned facilitator can save a
     expect(reviewed.status).toBe("accepted");
     expect(reviewed.reviews.some((item: { feedback: string }) => item.feedback === "Automated acceptance review: response received and review persisted.")).toBe(true);
   } finally {
-    const cleanupResults = await Promise.all([
-      cleanup.from("evidence_records").delete().eq("learner_id", learnerId).eq("response_key", responseKey),
-      cleanup.from("prompt_responses").delete().eq("learner_id", learnerId).eq("unit_id", unitId),
-    ]);
-    for (const result of cleanupResults) expect(result.error, "Temporary review evidence must be cleaned up").toBeNull();
+    // Evidence records are intentionally append/update-only under the live RLS policy.
+    // Keep this single stable acceptance evidence row as a staging audit fixture; remove
+    // the learner's source response row, which is independently learner-deletable.
+    const removedResponse = await cleanup.from("prompt_responses").delete()
+      .eq("learner_id", learnerId).eq("unit_id", unitId);
+    expect(removedResponse.error, "Learner-owned response cleanup must succeed").toBeNull();
     await cleanup.auth.signOut();
   }
 });
