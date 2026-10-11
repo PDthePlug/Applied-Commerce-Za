@@ -221,12 +221,12 @@ test("learner can persist and reload lesson progress and notes through the authe
   const note = "Authenticated browser acceptance note — temporary test data.";
   const snapshot = {
     version: 1 as const,
-    activeGrade: original.activeGrade,
-    activeForm: original.activeForm,
+    activeGrade: original.activeGrade ?? undefined,
+    activeForm: original.activeForm ?? undefined,
     completed: { [suffix]: timestamp },
     responses: { [suffix]: note },
     promptResponses: {},
-    profile: original.profile ?? {},
+    profile: { displayName: original.profile?.displayName ?? "" },
     progressRows: [{ unitId: suffix, grade: 9, term: 1, completedAt: timestamp, lastOpenedAt: timestamp }],
     noteRows: [{ unitId: suffix, grade: 9, term: 1, note }],
     promptRows: [],
@@ -297,9 +297,9 @@ test("learner activity responses persist and the assigned facilitator can save a
     const saved = await page.request.post("/api/learning-state", {
       headers: { "content-type": "application/json" },
       data: {
-        version: 1, activeGrade: state.activeGrade, activeForm: state.activeForm,
+        version: 1, activeGrade: state.activeGrade ?? undefined, activeForm: state.activeForm ?? undefined,
         completed: {}, responses: {}, promptResponses: { [responseKey]: responseValue },
-        profile: state.profile ?? {}, progressRows: [], noteRows: [],
+        profile: { displayName: state.profile?.displayName ?? "" }, progressRows: [], noteRows: [],
         promptRows: [{ key: responseKey, unitId, grade: 9, term: 1, value: responseValue }],
         artifactRows: [],
       },
