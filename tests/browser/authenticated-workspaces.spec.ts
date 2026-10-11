@@ -309,7 +309,7 @@ test("learner activity responses persist and the assigned facilitator can save a
     expect(reloaded.status()).toBe(200);
     expect((await reloaded.json()).state.promptResponses[responseKey]).toBe(responseValue);
 
-    // Supabase auth persists in the browser context. Clear the learner session before\n    // exercising the independent facilitator session; otherwise middleware redirects\n    // the still-authenticated learner back to /learn and the URL wait times out.\n    await page.evaluate(() => window.localStorage.clear());\n    await signIn(page, "facilitator", "/facilitator");
+    // Supabase auth can persist in both local storage and cookies. Clear both before\n    // exercising the independent facilitator session so the role switch is real.\n    await page.context().clearCookies();\n    await page.evaluate(() => window.localStorage.clear());\n    await signIn(page, "facilitator", "/facilitator");
   const queue = await page.request.get("/api/facilitator/evidence");
   expect(queue.status()).toBe(200);
   const evidence = (await queue.json()).evidence as Array<{ id: string; response_key: string; status: string; reviews: Array<{ feedback: string }> }>;
