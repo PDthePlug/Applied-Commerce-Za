@@ -40,6 +40,15 @@ async function signIn(page: Page, role: Role, target: string) {
 test("learner can sign in, open the Zimbabwe Forms library and enter a lesson", async ({ page }) => {
   test.skip(!credentials.learner.email || !credentials.learner.password, "Requires authenticated learner test secrets.");
   await signIn(page, "learner", "/learn");
+  const { createClient } = await import("@supabase/supabase-js");
+  const cleanup = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY!, {
+    auth: { persistSession: false, autoRefreshToken: false, detectSessionInUrl: false },
+  });
+  const learnerAuth = await cleanup.auth.signInWithPassword({
+    email: credentials.learner.email!, password: credentials.learner.password!,
+  });
+  expect(learnerAuth.error).toBeNull();
+  const learnerId = learnerAuth.data.user!.id;
   const stateResponse = await page.request.get("/api/learning-state");
   expect(stateResponse.status()).toBe(200);
   expect((await stateResponse.json()).state.version).toBe(1);
@@ -284,22 +293,23 @@ test("learner activity responses persist and the assigned facilitator can save a
   const unitId = "ac-zw-browser-review-fixture";
   const responseKey = `${unitId}::response`;
   const responseValue = "Persistent browser acceptance response; this is a staging test fixture.";
-  const saved = await page.request.post("/api/learning-state", {
-    headers: { "content-type": "application/json" },
-    data: {
-      version: 1, activeGrade: state.activeGrade, activeForm: state.activeForm,
-      completed: {}, responses: {}, promptResponses: { [responseKey]: responseValue },
-      profile: state.profile ?? {}, progressRows: [], noteRows: [],
-      promptRows: [{ key: responseKey, unitId, grade: 9, term: 1, value: responseValue }],
-      artifactRows: [],
-    },
-  });
-  expect(saved.status()).toBe(200);
-  const reloaded = await page.request.get("/api/learning-state");
-  expect(reloaded.status()).toBe(200);
-  expect((await reloaded.json()).state.promptResponses[responseKey]).toBe(responseValue);
+  try {
+    const saved = await page.request.post("/api/learning-state", {
+      headers: { "content-type": "application/json" },
+      data: {
+        version: 1, activeGrade: state.activeGrade, activeForm: state.activeForm,
+        completed: {}, responses: {}, promptResponses: { [responseKey]: responseValue },
+        profile: state.profile ?? {}, progressRows: [], noteRows: [],
+        promptRows: [{ key: responseKey, unitId, grade: 9, term: 1, value: responseValue }],
+        artifactRows: [],
+      },
+    });
+    expect(saved.status()).toBe(200);
+    const reloaded = await page.request.get("/api/learning-state");
+    expect(reloaded.status()).toBe(200);
+    expect((await reloaded.json()).state.promptResponses[responseKey]).toBe(responseValue);
 
-  await signIn(page, "facilitator", "/facilitator");
+    await signIn(page, "facilitator", "/facilitator");
   const queue = await page.request.get("/api/facilitator/evidence");
   expect(queue.status()).toBe(200);
   const evidence = (await queue.json()).evidence as Array<{ id: string; response_key: string; status: string; reviews: Array<{ feedback: string }> }>;
@@ -313,6 +323,14 @@ test("learner activity responses persist and the assigned facilitator can save a
   const refreshed = await page.request.get("/api/facilitator/evidence");
   expect(refreshed.status()).toBe(200);
   const reviewed = (await refreshed.json()).evidence.find((item: { id: string }) => item.id === fixture!.id);
-  expect(reviewed.status).toBe("accepted");
-  expect(reviewed.reviews.some((item: { feedback: string }) => item.feedback === "Automated acceptance review: response received and review persisted.")).toBe(true);
+    expect(reviewed.status).toBe("accepted");
+    expect(reviewed.reviews.some((item: { feedback: string }) => item.feedback === "Automated acceptance review: response received and review persisted.")).toBe(true);
+  } finally {
+    const cleanupResults = await Promise.all([
+      cleanup.from("evidence_records").delete().eq("learner_id", learnerId).eq("response_key", responseKey),
+      cleanup.from("prompt_responses").delete().eq("learner_id", learnerId).eq("unit_id", unitId),
+    ]);
+    for (const result of cleanupResults) expect(result.error, "Temporary review evidence must be cleaned up").toBeNull();
+    await cleanup.auth.signOut();
+  }
 });
