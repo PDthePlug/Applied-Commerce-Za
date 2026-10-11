@@ -240,6 +240,7 @@ export type Database = {
           starts_on: string | null
           status: string
           updated_at: string
+          zimbabwe_form: number | null
         }
         Insert: {
           academic_year: number
@@ -252,6 +253,7 @@ export type Database = {
           starts_on?: string | null
           status?: string
           updated_at?: string
+          zimbabwe_form?: number | null
         }
         Update: {
           academic_year?: number
@@ -264,6 +266,7 @@ export type Database = {
           starts_on?: string | null
           status?: string
           updated_at?: string
+          zimbabwe_form?: number | null
         }
         Relationships: [
           {
@@ -514,6 +517,7 @@ export type Database = {
       learner_profiles: {
         Row: {
           created_at: string
+          current_form: number | null
           current_grade: number | null
           preferred_name: string | null
           updated_at: string
@@ -521,6 +525,7 @@ export type Database = {
         }
         Insert: {
           created_at?: string
+          current_form?: number | null
           current_grade?: number | null
           preferred_name?: string | null
           updated_at?: string
@@ -528,6 +533,7 @@ export type Database = {
         }
         Update: {
           created_at?: string
+          current_form?: number | null
           current_grade?: number | null
           preferred_name?: string | null
           updated_at?: string
@@ -1023,6 +1029,24 @@ export type Database = {
       }
       create_school: {
         Args: { p_name: string; p_slug: string }
+        Returns: {
+          created_at: string
+          id: string
+          metadata: Json
+          name: string
+          slug: string
+          status: string
+          updated_at: string
+        }
+        SetofOptions: {
+          from: "*"
+          to: "schools"
+          isOneToOne: true
+          isSetofReturn: false
+        }
+      }
+      create_school_with_owner: {
+        Args: { p_name: string; p_owner_email: string; p_slug: string }
         Returns: {
           created_at: string
           id: string

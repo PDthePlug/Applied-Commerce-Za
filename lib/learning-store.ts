@@ -5,12 +5,25 @@ import type { LearnerProfile, LearningState } from "./types";
 
 const KEY = "applied-commerce-learning-state-v1";
 const EVENT = "applied-commerce-learning-state-change";
+let activeStorageScope: string | null = null;
+
+function storageKey(scope?: string | null) {
+  const resolved = scope === undefined ? activeStorageScope : scope;
+  return resolved ? `${KEY}:${resolved}` : KEY;
+}
+
+export function setLearningStorageScope(userId: string | null) {
+  activeStorageScope = userId;
+  if (typeof window !== "undefined") window.dispatchEvent(new Event(EVENT));
+}
 const emptyState: LearningState = { version: 1, completed: {}, responses: {}, promptResponses: {} };
 const emptyRaw = JSON.stringify(emptyState);
 
-function readRaw(): string {
+export function readLocalLearningState(scope?: string | null): LearningState { return parse(readRaw(scope)); }
+
+function readRaw(scope?: string | null): string {
   if (typeof window === "undefined") return emptyRaw;
-  return localStorage.getItem(KEY) ?? emptyRaw;
+  return localStorage.getItem(storageKey(scope)) ?? emptyRaw;
 }
 
 function parse(raw: string): LearningState {
@@ -32,8 +45,8 @@ function parse(raw: string): LearningState {
   }
 }
 
-function write(state: LearningState) {
-  localStorage.setItem(KEY, JSON.stringify(state));
+export function replaceLearningState(state: LearningState, scope?: string | null) {
+  localStorage.setItem(storageKey(scope), JSON.stringify(state));
   window.dispatchEvent(new Event(EVENT));
 }
 
@@ -57,7 +70,7 @@ export function useLearningStore() {
   const state = useMemo(() => parse(raw), [raw]);
 
   const update = useCallback((fn: (current: LearningState) => LearningState) => {
-    write(fn(parse(readRaw())));
+    replaceLearningState(fn(parse(readRaw())));
   }, []);
 
   const markComplete = useCallback((unitId: string, complete=true) => update(current => {
