@@ -125,6 +125,10 @@ test("institution administrator can open membership, cohort, facilitator and enr
     expect(data.cohorts.some((row: { id: string }) => row.id === cohortId)).toBe(true);
     expect(data.staff.some((row: { cohort_id: string; user_id: string }) => row.cohort_id === cohortId && row.user_id === facilitatorUserId)).toBe(true);
     expect(data.enrolments.some((row: { cohort_id: string }) => row.cohort_id === cohortId)).toBe(true);
+    const crossInstitutionWrite = await page.request.post("/api/institution-admin", {
+      data: { action: "create-cohort", schoolId: "a1000000-0000-4000-8000-000000000002", name: `Forbidden cross-institution cohort ${Date.now()}`, form: 2, academicYear: 2026 },
+    });
+    expect(crossInstitutionWrite.status()).toBe(403);
   } finally {
     if (cohortId) {
       const removed = await cleanup.from("cohorts").delete().eq("id", cohortId);
@@ -143,10 +147,6 @@ test("institution administrator can open membership, cohort, facilitator and enr
     await cleanup.auth.signOut();
   }
 
-  const crossInstitutionWrite = await page.request.post("/api/institution-admin", {
-    data: { action: "create-cohort", schoolId: "a1000000-0000-4000-8000-000000000002", name: `Forbidden cross-institution cohort ${Date.now()}`, form: 2, academicYear: 2026 },
-  });
-  expect(crossInstitutionWrite.status()).toBe(403);
 });
 
 test("platform administrator can open institution provisioning and see the institution registry", async ({ page }) => {
@@ -216,7 +216,7 @@ test("learner can persist and reload lesson progress and notes through the authe
     promptResponses: Record<string,string>; activeGrade?: number; activeForm?: 1|2|3|4;
     profile?: { displayName?: string; grade?: number; form?: 1|2|3|4 };
   };
-  const suffix = `ac-zw-browser-${Date.now()}-${Math.random().toString(36).slice(2,8)}`;
+  const suffix = crypto.randomUUID();
   const timestamp = new Date().toISOString();
   const note = "Authenticated browser acceptance note — temporary test data.";
   const snapshot = {
@@ -290,7 +290,7 @@ test("learner activity responses persist and the assigned facilitator can save a
   const stateResponse = await page.request.get("/api/learning-state");
   expect(stateResponse.status()).toBe(200);
   const state = (await stateResponse.json()).state;
-  const unitId = "ac-zw-browser-review-fixture";
+  const unitId = "a2000000-0000-4000-8000-000000000001";
   const responseKey = `${unitId}::response`;
   const responseValue = "Persistent browser acceptance response; this is a staging test fixture.";
   try {
