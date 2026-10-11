@@ -56,6 +56,20 @@ The flagged IDs from these three CI outputs were cross-checked against `zimbabwe
 
 The all-forms runtime audit was also expanded to check spelled-out South African institutions and named South African legal instruments; the audit passed on the updated branch. This establishes explicit overlay coverage and no matches for the defined runtime markers. It does **not** by itself prove every remaining financial/legal claim is current or legally correct in Zimbabwe, nor does an override's presence alone constitute editorial approval.
 
+
+## Source-currency recheck — 11 October 2026
+
+A fresh check of official source pages found an important currency distinction for any future lesson that might state actual tax values: ZIMRA's general PAYE explainer still displays its 1 January–31 December 2025 threshold table, while ZIMRA search indexing also exposes a 2026 USD PAYE tax-table download. Do not copy the figures in the general explainer into a 2026 lesson. Open the current official tax-table page and select the applicable currency/year table at the time of review; preserve the exact table title, effective dates and access date in the unit's evidence record. The lesson overlays in this branch deliberately avoid hard-coded tax thresholds and instruct learners to verify the current tables, but any remaining calculation or worked example must still be checked for implicit stale rates.
+
+- [ZIMRA PAYE explainer](https://zimra.co.zw/domestic-taxes/individual/pay-as-you-earn-paye) — explanatory principles; the page's displayed numerical table is labelled 2025.
+- [ZIMRA tax tables](https://www.zimra.co.zw/domestic-taxes/tax-tables) — use the latest effective currency-specific table.
+- [ZIMRA 2026 USD PAYE table download](https://www.zimra.co.zw/?download=4523%3Ausd-paye-tax-tables-2026) — current 2026 source surfaced by ZIMRA search indexing; verify the document itself and effective dates before quoting any value.
+- [SECZ currently licensed investment managers](https://seczim.co.zw/investment-managers/) and [regulated entities](https://seczim.co.zw/regulated-entities/) — live lists, so any lesson naming a provider needs a dated check and must not imply endorsement.
+- [IPEC consumer education](https://ipec.co.zw/consumer-education/) — official insurance/pensions consumer education; specific policy terms and legal entitlements must be checked against the applicable Act, circular and contract.
+- [Administration of Estates Act, Chapter 6:01 (ZimLII)](https://zimlii.org/akn/zw/act/ord/1907/6/eng%402025-02-24) and [Administration of Estates Amendment Act, 2024](https://zimlii.org/akn/zw/act/2024/3/eng%402024-11-22) — the consolidated text identifies a 31 December 2016 update cut-off while recording the 2024 amendment's commencement; verify the amendment and any later instruments together before approving a legal proposition.
+
+This source-currency recheck improves the reference set but does not close the P0 unit review. In particular, the tax, investment, insurance, wills and estate lessons still need individual passage-level disposition records and a reviewer/date before editorial approval can be granted.
+
 ## Required editorial decisions
 
 ### P0 — factual, legal and regulated-finance review
