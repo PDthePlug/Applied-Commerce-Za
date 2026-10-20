@@ -52,14 +52,14 @@ export default function DeployAppliedCommercePage() {
 
     <section className="institutional-pricing-section">
       <div className="institutional-section-heading">
-        <p className="eyebrow">Indicative Zimbabwe launch model</p>
-        <h2>Start with one defined pilot, prove the learning, then scale.</h2>
-        <p>USD figures are reference prices. Where applicable, schools can be quoted an equivalent ZiG amount at the prevailing official rate.</p>
+        <p className="eyebrow">A plan for your school</p>
+        <h2>Explore the fit, then agree the scope.</h2>
+        <p>Explore the demonstration first. If it looks useful, we can discuss your learner numbers, delivery timetable, device access and support needs before preparing a tailored proposal.</p>
       </div>
       <div className="institutional-pricing-grid">
-        <article><School/><span>One-term school pilot</span><strong>US$2,500</strong><p>One defined school cohort with onboarding, delivery support and outcome reporting.</p></article>
-        <article><Users/><span>School licence</span><strong>US$8,500 / year</strong><p>Forms 1–4 access within an agreed learner and implementation scope.</p></article>
-        <article><Users/><span>Sponsored deployment</span><strong>US$18 / learner</strong><p>For funded school networks, foundations and youth programmes.</p></article>
+        <article><School/><span>Start with one cohort</span><strong>School introduction</strong><p>Agree a manageable starting point, onboarding and teacher support around your school timetable.</p></article>
+        <article><Users/><span>Plan wider use</span><strong>School deployment</strong><p>Define the Forms, learner numbers, access arrangements and ongoing support your school needs.</p></article>
+        <article><Users/><span>Discuss your needs</span><strong>Tailored proposal</strong><p>Costs follow the agreed scope, with setup and ongoing services explained separately.</p><a className="institutional-text-link dark-link" href="mailto:pdmpofu@gmail.com?subject=Applied%20Commerce%20Zimbabwe%20school%20enquiry">Discuss school fit <ArrowRight/></a></article>
       </div>
     </section>
 
