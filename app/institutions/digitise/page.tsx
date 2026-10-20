@@ -77,13 +77,14 @@ export default function DigitiseProgrammePage() {
 
     <section className="institutional-pricing-section">
       <div className="institutional-section-heading">
-        <p className="eyebrow">Indicative implementation bands · USD reference</p>
-        <h2>Built as product infrastructure, not ordinary web development.</h2>
+        <p className="eyebrow">Scope before a quote</p>
+        <h2>A proposal shaped around your programme.</h2>
+        <p>We first review your existing material, learner activities and delivery needs. A tailored proposal then sets out what will be built, what it will cost and what ongoing services are included.</p>
       </div>
       <div className="institutional-pricing-grid">
-        <article><span>Focused conversion</span><strong>US$8k–14k</strong><p>One defined programme with a focused operating model.</p></article>
-        <article><span>Programme operating system</span><strong>US$14k–28k</strong><p>Deeper roles, evidence, cohort management and reporting.</p></article>
-        <article><span>Enterprise</span><strong>US$28k+</strong><p>Multiple programmes, integrations or larger organisational infrastructure.</p></article>
+        <article><span>Your material</span><strong>Programme review</strong><p>Identify the modules, activities, assessments and content rights involved.</p></article>
+        <article><span>Your delivery</span><strong>Implementation scope</strong><p>Agree learner access, facilitator roles, evidence, reporting and any integrations.</p></article>
+        <article><span>Your proposal</span><strong>Clear costs</strong><p>Separate one-time digitisation work from ongoing licensing, hosting and support.</p><a className="institutional-text-link dark-link" href="mailto:pdmpofu@gmail.com?subject=Applied%20Commerce%20programme%20digitisation%20enquiry">Discuss your programme <ArrowRight/></a></article>
       </div>
     </section>
 
