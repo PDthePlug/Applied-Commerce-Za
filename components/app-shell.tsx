@@ -12,7 +12,7 @@ const nav=[
   {href:"/portfolio",label:"Portfolio",detail:"Evidence captured from your work",icon:Archive},
   {href:"/progress",label:"Progress",detail:"See what you have completed",icon:BarChart3},
   {href:"/profile",label:"Profile",detail:"Your learner record and current Form",icon:UserRound},
-  {href:"/settings",label:"Settings",detail:"Appearance, reading and account",icon:Settings},
+  {href:"/settings",label:"Settings",detail:"Install app, appearance and account",icon:Settings},
 ];
 
 export function AppShell({children}:{children:React.ReactNode}) {
