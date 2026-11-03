@@ -1,5 +1,6 @@
 "use client";
 
+import { ChevronDown, Check, Download, Menu, Share2, Smartphone, WifiOff } from "lucide-react";
 import { createContext, useContext, useEffect, useState, type ReactNode } from "react";
 
 interface InstallPromptEvent extends Event {
@@ -7,7 +8,10 @@ interface InstallPromptEvent extends Event {
   userChoice: Promise<{ outcome: "accepted" | "dismissed" }>;
 }
 
+type InstallPlatform = "android" | "ios" | "desktop";
+
 type PwaState = {
+  platform: InstallPlatform;
   installed: boolean;
   canInstall: boolean;
   install: () => Promise<void>;
@@ -17,6 +21,7 @@ type PwaState = {
 const PwaContext = createContext<PwaState | null>(null);
 
 export function PwaProvider({ children }: { children: ReactNode }) {
+  const [platform, setPlatform] = useState<InstallPlatform>("android");
   const [prompt, setPrompt] = useState<InstallPromptEvent | null>(null);
   const [installed, setInstalled] = useState(false);
   const [offline, setOffline] = useState(false);
@@ -28,8 +33,11 @@ export function PwaProvider({ children }: { children: ReactNode }) {
     const refreshConnection = () => setOffline(!navigator.onLine);
     const capturePrompt = (event: Event) => { event.preventDefault(); setPrompt(event as InstallPromptEvent); };
     const didInstall = () => { setInstalled(true); setPrompt(null); setMessage("Applied Commerce Zimbabwe is installed on this device."); };
-    refreshInstalled();
-    refreshConnection();
+    const frame = requestAnimationFrame(() => {
+      setPlatform(/iPhone|iPad|iPod/.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1) ? "ios" : /Android/.test(navigator.userAgent) ? "android" : "desktop");
+      refreshInstalled();
+      refreshConnection();
+    });
     displayMode.addEventListener("change", refreshInstalled);
     window.addEventListener("online", refreshConnection);
     window.addEventListener("offline", refreshConnection);
@@ -41,6 +49,7 @@ export function PwaProvider({ children }: { children: ReactNode }) {
       void navigator.serviceWorker.register("/sw.js", { scope: "/", updateViaCache: "none" }).catch(() => {});
     }
     return () => {
+      cancelAnimationFrame(frame);
       displayMode.removeEventListener("change", refreshInstalled);
       window.removeEventListener("online", refreshConnection);
       window.removeEventListener("offline", refreshConnection);
@@ -61,23 +70,53 @@ export function PwaProvider({ children }: { children: ReactNode }) {
     }
   }
 
-  return <PwaContext.Provider value={{ installed, canInstall: Boolean(prompt), install, message }}>
+  return <PwaContext.Provider value={{ platform, installed, canInstall: Boolean(prompt), install, message }}>
     {offline ? <div className="pwa-offline-notice" role="status">You’re offline. Keep this lesson open to continue. Answers saved on this device stay here. Account sync and opening pages need a connection.</div> : null}
     {children}
   </PwaContext.Provider>;
+}
+
+const platformLabels: Record<InstallPlatform, string> = { android: "Android", ios: "iPhone / iPad", desktop: "Computer" };
+
+function InstallCard() {
+  const pwa = useContext(PwaContext);
+  const [chosenPlatform, setChosenPlatform] = useState<InstallPlatform | null>(null);
+  if (!pwa) return null;
+  const platform = chosenPlatform ?? pwa.platform;
+  return <div className="pwa-install-card">
+    <div className="pwa-install-heading">
+      <span className="pwa-app-mark" aria-hidden="true">AC</span>
+      <div><p className="pwa-eyebrow">Zimbabwe · On your device</p><h2>A place on your home screen.</h2></div>
+    </div>
+    <p className="pwa-install-description">Your learning space, one tap away. Open Applied Commerce in its own app window.</p>
+    {pwa.canInstall ? <button className="pwa-install-button" type="button" onClick={() => void pwa.install()}><Download aria-hidden="true"/> Install Applied Commerce</button> : <div className="pwa-install-guide">
+      <div className="pwa-platforms" role="group" aria-label="Your device">
+        {(Object.keys(platformLabels) as InstallPlatform[]).map(value => <button key={value} type="button" aria-pressed={platform === value} onClick={() => setChosenPlatform(value)}>{platformLabels[value]}</button>)}
+      </div>
+      <ol className="pwa-install-steps" aria-label={`${platformLabels[platform]} installation steps`}>
+        <li><span aria-hidden="true">1</span>{platform === "ios" ? <p>Open this site in <strong>Safari</strong>, then tap <Share2 aria-label="Share"/> <strong>Share</strong>.</p> : <p>Open {platform === "android" ? "Chrome" : "Chrome or Edge"} and select the <Menu aria-hidden="true"/> <strong>browser menu</strong>.</p>}</li>
+        <li><span aria-hidden="true">2</span><p>Choose <strong>{platform === "ios" ? "Add to Home Screen" : "Install app"}</strong>{platform !== "ios" ? <> or <strong>Add to Home Screen</strong></> : null}, then confirm.</p></li>
+      </ol>
+    </div>}
+    {pwa.message ? <p className="pwa-feedback" role="status">{pwa.message}</p> : null}
+    <p className="pwa-install-footnote">A connection is needed to open lessons and sync your work.</p>
+  </div>;
+}
+
+export function PwaProfileInstall() {
+  const pwa = useContext(PwaContext);
+  if (!pwa || pwa.installed) return null;
+  return <details id="install" className="pwa-profile-install">
+    <summary><span className="pwa-summary-icon"><Smartphone aria-hidden="true"/></span><span>Install Applied Commerce<small>Keep your learning close.</small></span><ChevronDown className="pwa-chevron" aria-hidden="true"/></summary>
+    <InstallCard/>
+  </details>;
 }
 
 export function PwaInstallSettings() {
   const pwa = useContext(PwaContext);
   if (!pwa) return null;
   return <>
-    <div className="pwa-settings-heading"><h2>Install Applied Commerce Zimbabwe</h2><p>Keep Applied Commerce Zimbabwe on your home screen and open it in its own app window.</p></div>
-    {pwa.installed ? <p className="pwa-feedback" role="status">Applied Commerce Zimbabwe is running as an installed app.</p> : <>
-      {pwa.canInstall ? <button className="pwa-install-button" type="button" onClick={() => void pwa.install()}>Install Applied Commerce Zimbabwe</button> : null}
-      <p className="pwa-feedback">On Android or a computer, open your browser’s menu and choose <strong>Install app</strong> or <strong>Add to Home Screen</strong>. If the option is missing, open this site in Chrome or Edge.</p>
-      <p className="pwa-feedback">On iPhone or iPad, open this site in Safari, tap <strong>Share</strong>, then <strong>Add to Home Screen</strong>.</p>
-    </>}
-    {pwa.message ? <p className="pwa-feedback" role="status">{pwa.message}</p> : null}
-    <div className="pwa-settings-heading"><h2>When your connection drops</h2><p>Keep the current lesson open. Work successfully saved on this device remains here, and pending account changes retry when you reconnect. Opening pages, loading lessons, sign-in and staff tools need an internet connection. Installing the app does not download the curriculum.</p></div>
+    {pwa.installed ? <div className="pwa-installed"><Check aria-hidden="true"/><div><h2>You’re all set.</h2><p>Applied Commerce is running as an installed app.</p></div></div> : <InstallCard/>}
+    <details className="pwa-connection-details"><summary><WifiOff aria-hidden="true"/> When your connection drops <ChevronDown className="pwa-chevron" aria-hidden="true"/></summary><p>Keep your current lesson open to continue. Work successfully saved on this device stays here, and account sync retries when you reconnect. Opening lessons, sign-in and staff tools need a connection. Installing the app does not download the curriculum.</p></details>
   </>;
 }

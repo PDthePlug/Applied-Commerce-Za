@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { ArrowRight, Archive, BookOpenCheck, Database, NotebookPen } from "lucide-react";
+import { PwaProfileInstall } from "@/components/pwa-provider";
 import { useLearningStore } from "@/lib/learning-store";
 import { useAuth } from "@/lib/auth-context";
 import { defaultZimbabweFormForSourceGrade, zimbabweCurriculum } from "@/lib/zimbabwe-curriculum";
@@ -49,6 +50,8 @@ export function ProfileDashboard(){
         </label>
       </div>
     </section>
+
+    <PwaProfileInstall/>
 
     <section className="profile-grid">
       <article className="profile-card">
