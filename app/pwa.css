@@ -1,0 +1,5 @@
+.pwa-offline-notice{padding:12px max(18px,env(safe-area-inset-right)) 12px max(18px,env(safe-area-inset-left));border-bottom:1px solid var(--line);background:var(--accent-soft);color:var(--ink);font-size:13px;line-height:1.6;overflow-wrap:anywhere}
+@media (display-mode:standalone){body{padding-top:env(safe-area-inset-top)}}
+@media print{.pwa-offline-notice{display:none}}
+
+.pwa-settings-heading p,.pwa-feedback{color:var(--muted);font-size:14px;line-height:1.65;overflow-wrap:anywhere}.pwa-settings-heading:not(:first-child){margin-top:24px}.pwa-install-button{min-height:44px;max-width:100%;padding:12px 16px;border:0;border-radius:10px;background:var(--ink);color:var(--paper);font-weight:750;cursor:pointer}.settings-nav{max-height:calc(100dvh - 40px);overflow-y:auto}@media(max-width:640px){.settings-nav{flex-wrap:wrap;overflow:visible}.settings-nav a{min-height:44px}}

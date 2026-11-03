@@ -81,3 +81,11 @@ npm run build
 ## Source-preservation rule
 
 Do not manufacture lesson numbering, silently remove authored tension, or bulk-replace national terms without checking meaning. Zimbabwe localisation is an editorial restructuring, not a string-replacement exercise.
+
+## Installable app
+
+The Zimbabwe edition has its own PWA identity (AC Zimbabwe), Android/desktop install controls in Settings → Install app, Safari installation guidance and standalone launch metadata. The worker caches only the public offline recovery page and icons. It never caches account pages, API responses, authentication callbacks, RSC payloads or learner answers.
+
+An already open lesson can continue saving responses in the existing account-scoped local store while offline. Reopening pages, loading lessons, sign-in and staff tools require connectivity; installation does not download the curriculum. Online events restart account synchronisation, and failed curriculum-metadata requests can retry. Replacement workers wait until existing app windows close instead of reloading active lessons.
+
+Validation: `npm ci`, `npm test`, `npm run typecheck`, `npm run lint`, `npm run build`, then `npx playwright test tests/browser/pwa.spec.mjs`. The browser tests cover manifest/icon dimensions and worker headers, install event dismissal/completion, responsive settings, offline answer persistence and recovery, and the cache allowlist. Cloud sync against the live Zimbabwe backend and physical Android/iOS installation must be checked separately before claiming those paths are verified.

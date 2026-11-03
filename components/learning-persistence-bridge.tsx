@@ -20,7 +20,7 @@ const unitCache = new Map<string, Promise<UnitContent>>();
 function cachedUnit(grade: number, term: number, unitId: string) {
   const key = `${grade}/${term}/${unitId}`;
   let promise = unitCache.get(key);
-  if (!promise) { promise = curriculum.unit(grade, term, unitId); unitCache.set(key, promise); }
+  if (!promise) { promise = curriculum.unit(grade, term, unitId).catch(error => { unitCache.delete(key); throw error; }); unitCache.set(key, promise); }
   return promise;
 }
 function unitMetadata() {
@@ -34,7 +34,7 @@ function unitMetadata() {
       }
     }
     return map;
-  })();
+  })().catch(error => { metadataPromise = null; throw error; });
 }
 
 function mergeState(local: LearningState, remote: Partial<LearningState>): LearningState {
@@ -104,6 +104,12 @@ async function requestSnapshot(method: "GET" | "POST", userId: string, snapshot?
 export function LearningPersistenceBridge() {
   const { user, loading } = useAuth();
   const { state, hydrated } = useLearningStore();
+  const [reconnect, setReconnect] = useState(0);
+  useEffect(() => {
+    const retry = () => setReconnect(value => value + 1);
+    window.addEventListener("online", retry);
+    return () => window.removeEventListener("online", retry);
+  }, []);
   const [readyUser, setReadyUser] = useState<string | null>(null);
   const activeUser = useRef<string | null>(null);
   const latestState = useRef(state);
@@ -140,7 +146,7 @@ export function LearningPersistenceBridge() {
       }
     })();
     return () => { cancelled = true; };
-  }, [user, loading]);
+  }, [user, loading, reconnect]);
 
   useEffect(() => {
     if (!hydrated || !user || readyUser !== user.id || activeUser.current !== user.id || bootstrappedUser.current !== user.id) return;
