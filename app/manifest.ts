@@ -4,7 +4,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     id: "/",
     name: "Applied Commerce Zimbabwe",
-    short_name: "Applied Commerce Zimbabwe",
+    short_name: "AC Zimbabwe",
     description: "Practical financial capability, enterprise and life-readiness learning for Zimbabwe Forms 1–4.",
     start_url: "/",
     scope: "/",

@@ -12,7 +12,7 @@ test("manifest, icons and worker headers support installation", async ({ page, r
   await page.goto("/settings");
   const manifestUrl = await page.locator('link[rel="manifest"]').getAttribute("href");
   const manifest = await (await request.get(manifestUrl)).json();
-  expect(manifest).toMatchObject({ id: "/", name: "Applied Commerce Zimbabwe", start_url: "/", scope: "/", display: "standalone" });
+  expect(manifest).toMatchObject({ id: "/", name: "Applied Commerce Zimbabwe", short_name: "AC Zimbabwe", start_url: "/", scope: "/", display: "standalone" });
   for (const icon of manifest.icons) {
     const response = await request.get(icon.src);
     expect(response.ok()).toBe(true);
